@@ -1,0 +1,11 @@
+# CENJ
+
+STATES = {
+# British Isles
+    s:STATE_WEST_COUNTRY = {
+        add_homeland = cornish
+    }
+    s:STATE_LANCASHIRE = {
+        add_homeland = cumbric
+    }
+}
