@@ -1,11 +1,153 @@
-# CENJ
-
-STATES = {
-# British Isles
-    s:STATE_WEST_COUNTRY = {
-        add_homeland = cornish
+﻿STATES = {
+# 00_west_europe
+    s:STATE_SCANIA = {
+        add_homeland = scanian
     }
     s:STATE_LANCASHIRE = {
         add_homeland = cumbric
+    }
+    s:STATE_HIGHLANDS = {
+        add_homeland = highland_scottish
+    }
+    s:STATE_WEST_COUNTRY = {
+        add_homeland = cornish
+    }
+    s:STATE_ULSTER = {
+        add_homeland = ulster_scots
+    }
+    s:STATE_NORMANDY = {
+        add_homeland = norman
+    }
+    s:STATE_RHONE = {
+        add_homeland = francoprovencal
+    }
+    s:STATE_PICARDY = {
+        add_homeland = picard
+    }
+    s:STATE_ALSACE_LORRAINE = {
+        add_homeland = alsatian_german
+    }
+    s:STATE_FRIESLAND = {
+        add_homeland = frisian
+    }
+    s:STATE_AUSTRIA = {
+        add_homeland = austrian_german
+    }
+    s:STATE_BOHEMIA = {
+        add_homeland = sudeten_german
+    }
+    s:STATE_MORAVIA = {
+        add_homeland = sudeten_german
+    }
+    s:STATE_STYRIA = {
+        add_homeland = austrian_german
+    }
+    s:STATE_TYROL = {
+        add_homeland = tyrolean_german
+    }
+    s:STATE_SOUTH_TYROL = {
+        add_homeland = tyrolean_german
+    }
+    s:STATE_POMERANIA = {
+        add_homeland = pomeranian_german
+    }
+    s:STATE_ELBE = {
+        add_homeland = low_saxon
+    }
+    s:STATE_WESTPHALIA = {
+        add_homeland = westphalian_german
+    }
+    s:STATE_RHINELAND = {
+        add_homeland = rhine_german
+    }
+    s:STATE_NORTH_RHINE = {
+        add_homeland = rhine_german
+    }
+    s:STATE_SCHLESWIG_HOLSTEIN = {
+        add_homeland = low_saxon
+        add_homeland = frisian
+    }
+    s:STATE_WURTTEMBERG = {
+        add_homeland = swabian_german
+    }
+    s:STATE_BAVARIA = {
+        add_homeland = bavarian_german
+    }
+    s:STATE_FRANCONIA = {
+        add_homeland = franconian_german
+    }
+    s:STATE_SAXONY = {
+        add_homeland = upper_saxon
+    }
+# 02_east_europe
+    s:STATE_VOLHYNIA = {
+        add_homeland = volhynian_german
+    }
+    s:STATE_CRIMEA = {
+        add_homeland = crimean_german
+    }
+    s:STATE_LUHANSK = {
+        add_homeland = black_sea_german
+    }
+    s:STATE_CHERSON = {
+        add_homeland = black_sea_german
+    }
+    s:STATE_ESTONIA = {
+        add_homeland = baltic_german
+    }
+    s:STATE_LATVIA = {
+        add_homeland = baltic_german
+    }
+    s:STATE_MAZOVIA = {
+        add_homeland = vistula_german
+    }
+    s:STATE_SILESIA = {
+        add_homeland = silesian
+        add_homeland = silesian_german
+    }
+    s:STATE_WEST_PRUSSIA = {
+        add_homeland = prussian_german
+    }
+    s:STATE_EAST_PRUSSIA = {
+        add_homeland = prussian_german
+    }
+    s:STATE_WEST_GALICIA = {
+        add_homeland = galician_german
+    }
+    s:STATE_EAST_GALICIA = {
+        add_homeland = galician_german
+    }
+    s:STATE_CENTRAL_HUNGARY = {
+        add_homeland = danube_swabian
+    }
+    s:STATE_BEKES = {
+        add_homeland = danube_swabian
+    }
+    s:STATE_TRANSDANUBIA = {
+        add_homeland = danube_swabian
+    }
+    s:STATE_DELVIDEK = {
+        add_homeland = danube_swabian
+    }
+    s:STATE_BANAT = {
+        add_homeland = danube_swabian
+        add_homeland = banat_swabian
+    }
+    s:STATE_EAST_SLOVAKIA = {
+        add_homeland = zipser_german
+    }
+    s:STATE_SOUTHERN_TRANSYLVANIA = {
+        add_homeland = trans_landler
+        add_homeland = trans_saxon
+    }
+    s:STATE_NORTHERN_TRANSYLVANIA = {
+        add_homeland = trans_landler
+        add_homeland = trans_saxon
+    }
+    s:STATE_MOLDAVIA = {
+        add_homeland = buchenland_german
+    }
+    s:STATE_WALLACHIA = {
+        add_homeland = regat_german
     }
 }

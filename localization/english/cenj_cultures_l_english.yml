@@ -1,4 +1,48 @@
 ﻿l_english:
-# British Isles
+# overwrites
+ north_german:0 "Low German"
+ south_german:0 "German"
+
+# cultural Traits
+
+# cultures
+## 00_west_europe
+ alsatian_german:0 "Alsatian"
+ austrian_german:0 "Austrian"
+ bavarian_german:0 "Bavarian"
  cornish:0 "Cornish"
  cumbric:0 "Cumbric"
+ franconian_german:0 "Franconian"
+ francoprovencal:0 "Francoprovençal"
+ frisian:0 "Frisian"
+ highland_scottish:0 "Highland Scottish"
+ low_saxon:0 "Low Saxon"
+ norman:0 "Norman"
+ picard:0 "Picard"
+ pomeranian_german:0 "Pomeranian"
+ rhine_german:0 "Rhinelander"
+ scanian:0 "Scanian"
+ sudeten_german:0 "Sudeten German"
+ swabian_german:0 "Swabian"
+ tyrolean_german:0 "Tyrolean"
+ ulster_scots:0 "Ulster Scots"
+ upper_saxon:0 "Upper Saxon"
+ westphalian_german:0 "Westphalian"
+## 02_east_europe
+ baltic_german:0 "Baltic German"
+ banat_swabian:0 "Banat Swabian"
+ black_sea_german:0 "Black Sea German"
+ buchenland_german:0 "Buchenland German"
+ crimean_german:0 "Crimean German"
+ danube_swabian:0 "Danube Swabian"
+ galician_german:0 "Galician German"
+ prussian_german:0 "Low Prussian"
+ regat_german:0 "Regat German"
+ sathmar_swabian:0 "Satu Mare German"
+ silesian:0 "Silesian"
+ silesian_german:0 "Silesian German"
+ trans_landler:0 "Transylvanian Landler"
+ trans_saxon:0 "Transylvanian Saxon"
+ vistula_german:0 "Vistula German"
+ volhynian_german:0 "Volhynian German"
+ zipser_german:0 "Zipser German"

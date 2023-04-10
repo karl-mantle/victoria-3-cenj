@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cultures, Events, Nations, Journals aka CENJ
 
 Cultures, Events, Nations, Journals aka CENJ is an experimental mod for Victoria 3.
@@ -31,7 +30,7 @@ To do.
 
 # Compatibility
 
-This mod is written for the latest* version of Victoria 3 - patch 1.28
+This mod is written for the latest* version of Victoria 3 - patch 1.2.7
 
 Please note: this mod will inherently cause the game to run slower than vanilla, especially from the midgame onwards.
 
