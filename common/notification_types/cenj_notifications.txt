@@ -1,0 +1,7 @@
+cenj_migration_notification = {
+    type = country
+    texture = "gfx/interface/icons/notification_icons/pops.dds"
+    notification_type = toast
+    days = 31
+    on_created_soundeffect = "event:/SFX/UI/Alerts/Toasts/migration_target"
+}

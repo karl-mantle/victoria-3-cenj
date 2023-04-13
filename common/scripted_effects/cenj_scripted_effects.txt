@@ -1,0 +1,154 @@
+﻿change_pop_culture_full = {
+    if  = {
+        every_scope_state = {
+            limit = { owner = c:$TAG$ }
+            every_scope_pop = {
+                limit = { culture = { AND = { $FROMCULTURE$ } } }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = $AMOUNT$
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_single = {
+    if  = {
+        every_scope_state = {
+            limit = { owner = c:$TAG$ }
+            every_scope_pop = {
+                limit = { has_pop_culture = $FROMCULTURE$ }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = $AMOUNT$
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_nationalism = {
+    if  = {
+        limit = { has_technology_researched = nationalism }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { culture = { AND = { $FROMCULTURE$ } } }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = $AMOUNT$
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_pan_nationalism = {
+    if  = {
+        limit = { has_technology_researched = pan_nationalism }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { culture = { AND = { $FROMCULTURE$ } } }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = $AMOUNT$
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_migrant = {
+    if = {
+        limit = {
+            $ROOT$ = {
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 5
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:migrant
+            value = 0.005
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 4
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:migrant
+            value = 0.01
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 3
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:migrant
+            value = 0.015
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 2
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:migrant
+            value = 0.025
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 1
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:migrant
+            value = 0.03
+        }
+    }
+}
+
+# changes Austria's primary culture to Austrian if it is not part of Grossdeutschland
+#change_primary_culture_austria {
+#    if {
+#        limit = {
+#            any_scope_country = {
+#                has_flag = germany
+#            }
+#        }
+#        any_scope_country = {
+#            limit = {
+#                owner = c:AUS
+#            }
+#            change_primary_culture = {}
+#        }
+#    }
+#}

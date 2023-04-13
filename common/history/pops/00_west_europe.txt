@@ -583,7 +583,11 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1444400
+				size = 1244400
+			}
+			create_pop = {
+				culture = gallo
+				size = 200000
 			}
 		}
 	}
@@ -665,7 +669,11 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 692572
+				size = 292572
+			}
+			create_pop = {
+				culture = gallo
+				size = 400000
 			}
 			create_pop = {
 				culture = breton
@@ -716,7 +724,7 @@
 	s:STATE_AQUITAINE = {
 		region_state:FRA = {
 			create_pop = {
-				culture = occitan
+				culture = gascon
 				size = 1546844
 			}
 			create_pop = {

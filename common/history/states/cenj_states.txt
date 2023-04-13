@@ -27,6 +27,12 @@
     s:STATE_ALSACE_LORRAINE = {
         add_homeland = alsatian_german
     }
+    s:STATE_BRITTANY = {
+        add_homeland = gallo
+    }
+    s:STATE_AQUITAINE = {
+        add_homeland = gascon
+    }
     s:STATE_FRIESLAND = {
         add_homeland = frisian
     }
@@ -80,23 +86,43 @@
         add_homeland = upper_saxon
     }
 # 02_east_europe
+    s:STATE_INGRIA = {
+        add_homeland = ingrian
+    }
     s:STATE_VOLHYNIA = {
         add_homeland = volhynian_german
+    }
+    s:STATE_EAST_KARELIA = {
+        add_homeland = karelian
+    }
+    s:STATE_ARKHANGELSK = {
+        add_homeland = nenet
+    }
+    s:STATE_TVER = {
+        add_homeland = veps
     }
     s:STATE_CRIMEA = {
         add_homeland = crimean_german
     }
     s:STATE_LUHANSK = {
         add_homeland = black_sea_german
+        add_homeland = cossack
     }
     s:STATE_CHERSON = {
         add_homeland = black_sea_german
+    }
+    s:STATE_ROSTOV = {
+        add_homeland = cossack
+    }
+    s:STATE_PERM = {
+        add_homeland = komi
     }
     s:STATE_ESTONIA = {
         add_homeland = baltic_german
     }
     s:STATE_LATVIA = {
         add_homeland = baltic_german
+        add_homeland = livonian
     }
     s:STATE_MAZOVIA = {
         add_homeland = vistula_german
@@ -116,6 +142,7 @@
     }
     s:STATE_EAST_GALICIA = {
         add_homeland = galician_german
+        add_homeland = rusyn
     }
     s:STATE_CENTRAL_HUNGARY = {
         add_homeland = danube_swabian
@@ -128,13 +155,16 @@
     }
     s:STATE_DELVIDEK = {
         add_homeland = danube_swabian
+        add_homeland = rusyn
     }
     s:STATE_BANAT = {
         add_homeland = danube_swabian
         add_homeland = banat_swabian
+        add_homeland = rusyn
     }
     s:STATE_EAST_SLOVAKIA = {
         add_homeland = zipser_german
+        add_homeland = rusyn
     }
     s:STATE_SOUTHERN_TRANSYLVANIA = {
         add_homeland = trans_landler
@@ -149,5 +179,19 @@
     }
     s:STATE_WALLACHIA = {
         add_homeland = regat_german
+    }
+# 09_central_asia
+    s:STATE_KUBAN = {
+        add_homeland = cossack
+    }
+    s:STATE_KAZAN = {
+        add_homeland = mordvin
+    }
+    s:STATE_TARTARIA = {
+        add_homeland = volga_german
+    }
+# 14_siberia
+    s:STATE_NENETSIA = {
+        add_homeland = nenet
     }
 }

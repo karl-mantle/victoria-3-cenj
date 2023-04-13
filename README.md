@@ -7,14 +7,18 @@ I have created this mod for two reasons; one is that I wanted to see if the migr
 The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.
 
 # Features
-*Current version number is 0.0.2 - see changelog for detailed changes*
+*Current version number is 0.0.5 - see changelog for detailed changes*
 ## Current
 
-- New cultures in the British Isles and continental Europe
+- New cultures in the New World, Europe and the Middle East
 - Migration waves larger and more frequent
-- Closed Borders works like Border Controls and Border Controls works like Open Borders law-wise because Closed Borders prevents internal migration at present.
+- New World diaspora cultures with automatic assimilation e.g. Irish POPs in the USA will assimilate to Irish-American
+- Closed Borders works as Migration Controls because there's no way to close only external borders
+- Migration Controls works as Open Borders
+- Open Borders now will result in POPs who have a lower SOL in neighbouring countries border states moving to the Open Border's countries border states e.g. some POPs in Spanish-owned Catalonia may move to Languedoc if the average SOL is greater in French-owned Languedoc.
+- Cultural Exclusion now discriminates against anyone not holding a cultural trait
 - Increased the effect of discrimination on where POPs choose to move to (hopefully should counter-act the above change somewhat)
-- Increased assimilation rate of POPs so that it doesn't run at a total snail's pace with all the separated POPs.
+- Increased assimilation rate and chunk size of POPs that assimilate so that it doesn't run at a total snail's pace with all the separated POPs.
 
 ## Planned
 - More cultures for the geographical definition of Europe
@@ -26,7 +30,7 @@ The main idea for this came from a mod I started and never finished over a decad
 
 # Installation
 
-To do.
+Download the contents of this project and place it in your Victoria 3 mods folder. On Windows this can be found in your documents folder "~/documents/paradox interactive/victoria 3/mods/".
 
 # Compatibility
 
@@ -34,11 +38,19 @@ This mod is written for the latest* version of Victoria 3 - patch 1.2.7
 
 Please note: this mod will inherently cause the game to run slower than vanilla, especially from the midgame onwards.
 
-Most of the files within this mod will work as overrides so it should be compatible with other mods, the exception is the directories listed below where I have overwritten the default file. Any other mod you have installed won't be compatible with CENJ if it also overwrites these files.
+Most of the files within this mod will work as seperate overwrites so it should be compatible with other mods, the exception is the directories listed below where I have overwritten the vanilla file(s). Any other mod you have installed won't be compatible with CENJ if it also overwrites these vanilla files without making a compatibility patch.
 
-## Overwritten files
+## Overwrite files
+
+There are overwrites to migration and culture laws, a number of vanilla cultures and ____. They are in seperate files, with the exception of the following:
+
+### Overwritten vanilla files
 
 - /common/history/pops/00_west_europe.txt
+- /common/history/pops/01_south_europe.txt
+- /common/history/pops/02_east_europe.txt
+- /common/history/pops/09_central_asia.txt
+- /common/history/pops/14_siberia.txt
 
 # Translation
 

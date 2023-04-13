@@ -1,0 +1,64 @@
+﻿on_monthly_pulse_country = {
+    events = {
+        cenj_migration.1
+    }
+    
+    effect = {
+
+        # American cultures
+        # Irish-American
+        change_pop_culture_single = {
+            FROMCULTURE = "irish"
+            TOCULTURE = "irish_american"
+            TAG = "USA"
+            AMOUNT = "0.01"
+        }
+        # Anglo-American
+        change_pop_culture_full = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
+            TOCULTURE = "yankee"
+            TAG = "USA"
+            AMOUNT = "0.01"
+        }
+        # German-American - need to figure out how to merge 3 discriminated traits into one effect for this
+        change_pop_culture_full = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
+            TOCULTURE = "german_american"
+            TAG = "USA"
+            AMOUNT = "0.01"
+        }
+        change_pop_culture_full = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = high_german"
+            TOCULTURE = "german_american"
+            TAG = "USA"
+        }
+        change_pop_culture_full = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = low_german"
+            TOCULTURE = "german_american"
+            TAG = "USA"
+            AMOUNT = "0.01"
+        }
+        # Jewish-American
+        change_pop_culture_full = {
+            FROMCULTURE = "has_discrimination_trait = jewish_group"
+            TOCULTURE = "jewish_american"
+            TAG = "USA"
+            AMOUNT = "0.01"
+        }
+        # Afro-American
+        change_pop_culture_full = {
+            FROMCULTURE = "has_discrimination_trait = african_heritage"
+            TOCULTURE = "afro_american"
+            TAG = "USA"
+            AMOUNT = "0.01"
+        }
+
+        # Nationalist cultures
+        # North German
+        change_pop_culture_nationalism = {
+            FROMCULTURE = "has discrimination_trait = european_heritage has_discrimination_trait = low_german"
+            TOCULTURE = "north_german"
+            AMOUNT = "0.025"
+        }
+    }
+}

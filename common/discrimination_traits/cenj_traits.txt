@@ -1,0 +1,13 @@
+﻿# heritage
+mestizo_heritage = {
+    heritage = yes
+}
+# linguistic
+langue_doil = {
+}
+langue_doc = {
+}
+low_german = {
+}
+high_german = {
+}

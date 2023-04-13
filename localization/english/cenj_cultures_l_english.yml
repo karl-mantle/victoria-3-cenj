@@ -1,11 +1,20 @@
 ﻿l_english:
-# overwrites
- north_german:0 "Low German"
- south_german:0 "German"
-
-# cultural Traits
-
+# overrides
+ ugrian:0 "Khanty"
+# cultural traits
+ mestizo_heritage:0 "Mestizo Heritage"
+ langue_doil:0 "Langue d'Oil"
+ langue_doc:0 "Langue d'Oc"
+ low_german:0 "Low German"
+ high_german:0 "High German"
 # cultures
+## migration
+ migrant:0 "Migrant"
+## american_people
+ irish_american:0 "Irish-American"
+ jewish_american:0 "Jewish-American"
+ german_american:0 "German-American"
+
 ## 00_west_europe
  alsatian_german:0 "Alsatian"
  austrian_german:0 "Austrian"
@@ -15,6 +24,8 @@
  franconian_german:0 "Franconian"
  francoprovencal:0 "Francoprovençal"
  frisian:0 "Frisian"
+ gallo:0 "Gallo"
+ gascon:0 "Gascon"
  highland_scottish:0 "Highland Scottish"
  low_saxon:0 "Low Saxon"
  norman:0 "Norman"
@@ -28,6 +39,8 @@
  ulster_scots:0 "Ulster Scots"
  upper_saxon:0 "Upper Saxon"
  westphalian_german:0 "Westphalian"
+## 01_south_europe
+ pontic_greek:0 "Pontic Greek"
 ## 02_east_europe
  baltic_german:0 "Baltic German"
  banat_swabian:0 "Banat Swabian"
@@ -36,13 +49,26 @@
  crimean_german:0 "Crimean German"
  danube_swabian:0 "Danube Swabian"
  galician_german:0 "Galician German"
+ ingrian:0 "Ingrian"
+ karelian:0 "Karelian"
+ komi:0 "Komi"
+ lipovan:0 "Lipovan"
+ livonian:0 "Livonian"
  prussian_german:0 "Low Prussian"
  regat_german:0 "Regat German"
+ rusyn:0 "Rusyn"
  sathmar_swabian:0 "Satu Mare German"
  silesian:0 "Silesian"
  silesian_german:0 "Silesian German"
  trans_landler:0 "Transylvanian Landler"
  trans_saxon:0 "Transylvanian Saxon"
+ veps:0 "Veps"
  vistula_german:0 "Vistula German"
  volhynian_german:0 "Volhynian German"
  zipser_german:0 "Zipser German"
+## 09_central_asia
+ cossack:0 "Cossack"
+ mordvin:0 "Mordvin"
+ volga_german:0 "Volga German"
+## 14_siberia
+ nenet:0 "Nenets"
