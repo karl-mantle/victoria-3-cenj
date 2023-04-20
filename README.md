@@ -7,12 +7,12 @@ I have created this mod for two reasons; one is that I wanted to see if the migr
 The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.
 
 # Features
-*Current version number is 0.0.5 - see changelog for detailed changes*
+*Current version number is 0.0.6 - see changelog for detailed changes*
 ## Current
 
 - New cultures in the New World, Europe and the Middle East
 - Migration waves larger and more frequent
-- New World diaspora cultures with automatic assimilation e.g. Irish POPs in the USA will assimilate to Irish-American
+- New World diaspora cultures with automatic assimilation and homelands e.g. Irish POPs in the USA will assimilate to Irish-American
 - Closed Borders works as Migration Controls because there's no way to close only external borders
 - Migration Controls works as Open Borders
 - Open Borders now will result in POPs who have a lower SOL in neighbouring countries border states moving to the Open Border's countries border states e.g. some POPs in Spanish-owned Catalonia may move to Languedoc if the average SOL is greater in French-owned Languedoc.
