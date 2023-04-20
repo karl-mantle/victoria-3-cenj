@@ -1,64 +1,225 @@
-﻿on_monthly_pulse_country = {
+﻿on_half_yearly_pulse_country = {
+    on_actions = {
+        change_pop_culture_on_action
+        migration_event_on_action
+    }
+}
+on_monthly_pulse_country = {
+    on_actions = {
+        change_primary_culture_on_action
+    }
+}
+migration_event_on_action = {
     events = {
         cenj_migration.1
     }
-    
-    effect = {
-
-        # American cultures
-        # Irish-American
-        change_pop_culture_single = {
-            FROMCULTURE = "irish"
-            TOCULTURE = "irish_american"
-            TAG = "USA"
-            AMOUNT = "0.01"
-        }
-        # Anglo-American
-        change_pop_culture_full = {
-            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
-            TOCULTURE = "yankee"
-            TAG = "USA"
-            AMOUNT = "0.01"
-        }
-        # German-American - need to figure out how to merge 3 discriminated traits into one effect for this
-        change_pop_culture_full = {
-            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
-            TOCULTURE = "german_american"
-            TAG = "USA"
-            AMOUNT = "0.01"
-        }
-        change_pop_culture_full = {
-            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = high_german"
-            TOCULTURE = "german_american"
-            TAG = "USA"
-        }
-        change_pop_culture_full = {
-            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = low_german"
-            TOCULTURE = "german_american"
-            TAG = "USA"
-            AMOUNT = "0.01"
-        }
-        # Jewish-American
-        change_pop_culture_full = {
-            FROMCULTURE = "has_discrimination_trait = jewish_group"
-            TOCULTURE = "jewish_american"
-            TAG = "USA"
-            AMOUNT = "0.01"
-        }
+}
+change_pop_culture_on_action = {
+   effect = {
+        # American minors
         # Afro-American
-        change_pop_culture_full = {
+        change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = african_heritage"
             TOCULTURE = "afro_american"
-            TAG = "USA"
-            AMOUNT = "0.01"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+        }
+        # Jewish-American
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = jewish_group"
+            TOCULTURE = "jewish_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        # German-American - need to figure out how to merge 3 discriminated traits into one effect for this
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
+            TOCULTURE = "german_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_german_minor"
+            TOCULTURE = "german_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_german_minor"
+            TOCULTURE = "german_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        # French-American
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = french_minor"
+            TOCULTURE = "franco_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_minor"
+            TOCULTURE = "franco_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        # Irish-American
+        change_pop_culture_culture = {
+            FROMCULTURE = "irish"
+            TOCULTURE = "irish_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        # Italian American
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = italophone"
+            TOCULTURE = "italian_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        # Scottish American
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = caledonian"
+            TOCULTURE = "scots_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
         }
 
-        # Nationalist cultures
+        # Canadian minors
+        # Afro-Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = african_heritage"
+            TOCULTURE = "afro_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        # Scottish Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = caledonian"
+            TOCULTURE = "scots_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        # Anglo-Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
+            TOCULTURE = "anglo_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        # Irish-Canadian
+        change_pop_culture_culture = {
+            FROMCULTURE = "irish"
+            TOCULTURE = "irish_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        # Franco-Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = french_minor"
+            TOCULTURE = "franco_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_minor"
+            TOCULTURE = "franco_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        # Greek Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = greek_culture"
+            TOCULTURE = "greek_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        # German Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
+            TOCULTURE = "german_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_german_minor"
+            TOCULTURE = "german_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_german_minor"
+            TOCULTURE = "german_canadian"
+            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            
+        }
+
+        # Nationalism
         # North German
-        change_pop_culture_nationalism = {
-            FROMCULTURE = "has discrimination_trait = european_heritage has_discrimination_trait = low_german"
+        change_pop_culture_technology = {
+            TECHNOLOGY = "nationalism"
+            FROMCULTURE = "has_discrimination_trait = north_german_minor"
             TOCULTURE = "north_german"
-            AMOUNT = "0.025"
+            OWNERCULTURES = "OR = { country_has_primary_culture = cu:north_german country_has_primary_culture = cu:south_german }"
+        }
+        # South German
+        change_pop_culture_technology = {
+            TECHNOLOGY = "nationalism"
+            FROMCULTURE = "has_discrimination_trait = south_german_minor"
+            TOCULTURE = "south_german"
+            OWNERCULTURES = "OR = { country_has_primary_culture = cu:north_german country_has_primary_culture = cu:south_german }"
+        }
+        # North Italian
+        change_pop_culture_technology = {
+            TECHNOLOGY = "nationalism"
+            FROMCULTURE = "has_discrimination_trait = north_italian_minor"
+            TOCULTURE = "north_italian"
+            OWNERCULTURES = "OR = { country_has_primary_culture = cu:north_italian country_has_primary_culture = cu:south_italian }"
+        }
+        # South Italian
+        change_pop_culture_technology = {
+            TECHNOLOGY = "nationalism"
+            FROMCULTURE = "has_discrimination_trait = south_italian_minor"
+            TOCULTURE = "south_italian"
+            OWNERCULTURES = "OR = { country_has_primary_culture = cu:north_italian country_has_primary_culture = cu:south_italian }"
+        }
+        # French
+        change_pop_culture_technology = {
+            TECHNOLOGY = "nationalism"
+            FROMCULTURE = "has_discrimination_trait = french_minor"
+            TOCULTURE = "french"
+            OWNERCULTURES = "OR = { country_has_primary_culture = cu:french country_has_primary_culture = cu:occitan }"
+        }
+        # Occitan
+        change_pop_culture_technology = {
+            TECHNOLOGY = "nationalism"
+            FROMCULTURE = "has_discrimination_trait = occitan_minor"
+            TOCULTURE = "occitan"
+            OWNERCULTURES = "OR = { country_has_primary_culture = cu:french country_has_primary_culture = cu:occitan }"
+        }
+
+        # Pan-Nationalism
+        # Yankee
+        change_pop_culture_technology = {
+            TECHNOLOGY = "pan-nationalism"
+            FROMCULTURE = "has_discrimination_trait = american_minor"
+            TOCULTURE = "yankee"
+            OWNERCULTURES = "country_has_primary_culture = cu:yankee"
+        }
+        # Dixie
+        change_pop_culture_technology = {
+            TECHNOLOGY = "pan-nationalism"
+            FROMCULTURE = "has_discrimination_trait = american_minor"
+            TOCULTURE = "dixie"
+            OWNERCULTURES = "country_has_primary_culture = cu:dixie"
+        }
+    }
+}
+
+change_primary_culture_on_action = {
+    effect = {
+        # North German minors
+        change_primary_culture_german_minor = {
+#            TARGET_COUNTRY = "HAN"
+#            OLD_PRIMARY = "north_german"
+#            NEW_PRIMARY = "westphalian"
         }
     }
 }

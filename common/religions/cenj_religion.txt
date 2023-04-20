@@ -7,23 +7,38 @@
 	color = { 0.6 0.3 0.2 }
 }
 old_believer = {
-	texture = "gfx/interface/icons/religion_icons/orthodox.dds"
+	texture = "gfx/interface/icons/religion_icons/orthodox.dds" #needs new icon
 	traits = {
 		christian
 	}
 	color = { 0.6 0.3 0.2 }
 }
 anglican = {
-	texture = "gfx/interface/icons/religion_icons/protestant.dds"
+	texture = "gfx/interface/icons/religion_icons/anglican.dds"
 	traits = {
 		christian
 	}
 	color = { 0.6 0.3 0.2 }
 }
 reformed = {
-	texture = "gfx/interface/icons/religion_icons/protestant.dds"
+	texture = "gfx/interface/icons/religion_icons/reformed.dds"
 	traits = {
 		christian
+	}
+	color = { 0.6 0.3 0.2 }
+}
+ibadi = {
+	texture = "gfx/interface/icons/religion_icons/ibadi.dds"
+	traits = {
+		muslim
+	}
+	color = { 0.6 0.3 0.2 }
+}
+# placeholder until 1.3
+atheist = {
+	texture = "gfx/interface/icons/religion_icons/atheist_placeholder.dds"
+	traits = {
+		animist
 	}
 	color = { 0.6 0.3 0.2 }
 }

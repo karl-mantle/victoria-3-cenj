@@ -1,4 +1,4 @@
 ﻿l_english:
  notification_cenj_migration_notification_tooltip:0 "#header $notification_cenj_migration_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cenj_migration_notification_desc$"
- notification_cenj_migration_notification_name:0 "[SCOPE.sCulture('migrant_culture').GetName] illegal immigrants"
- notification_cenj_migration_notification_desc:0 "A number of [SCOPE.sCulture('migrant_culture').GetName] people have travelled to our nation from [SCOPE.sState('migrant_source').GetName] and settled in [SCOPE.sState('migrant_target').GetName]."
+ notification_cenj_migration_notification_name:0 "[SCOPE.sCulture('immigrant_culture').GetName] illegal immigrants"
+ notification_cenj_migration_notification_desc:0 "A number of [SCOPE.sCulture('immigrant_culture').GetName] people have travelled to our nation from [SCOPE.sState('immigrant_source').GetName] and settled in [SCOPE.sState('immigrant_target').GetName]."

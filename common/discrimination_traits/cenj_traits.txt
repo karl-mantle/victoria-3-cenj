@@ -1,13 +1,13 @@
 ﻿# heritage
-mestizo_heritage = {
-    heritage = yes
-}
-# linguistic
-langue_doil = {
-}
-langue_doc = {
-}
-low_german = {
-}
-high_german = {
-}
+mestizo_heritage = { heritage = yes }
+# cultural
+american_minor = {}
+canadian_minor = {}
+north_german_minor = {}
+south_german_minor = {}
+french_minor = {}
+occitan_minor = {}
+north_italian_minor = {}
+south_italian_minor = {}
+arpitan = {}
+caledonian = {}

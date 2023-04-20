@@ -1,42 +1,129 @@
-﻿change_pop_culture_full = {
+﻿change_pop_culture_trait = {
     if  = {
+        limit = { $LIMIT$ }
         every_scope_state = {
-            limit = { owner = c:$TAG$ }
             every_scope_pop = {
-                limit = { culture = { AND = { $FROMCULTURE$ } } }
+                limit = { culture = { $FROMCULTURE$  } }
                 change_pop_culture = {
                     target = cu:$TOCULTURE$
-                    value = $AMOUNT$
+                    value = 0.05
                 }
             }
         }
     }
 }
 
-change_pop_culture_single = {
+change_pop_culture_culture = {
     if  = {
+        limit = { $LIMIT$ }
         every_scope_state = {
-            limit = { owner = c:$TAG$ }
             every_scope_pop = {
                 limit = { has_pop_culture = $FROMCULTURE$ }
                 change_pop_culture = {
                     target = cu:$TOCULTURE$
-                    value = $AMOUNT$
+                    value = 0.05
                 }
             }
         }
     }
 }
 
-change_pop_culture_nationalism = {
+change_pop_culture_technology = {
     if  = {
-        limit = { has_technology_researched = nationalism }
+        limit = {
+            ROOT = { has_technology_researched = $TECHNOLOGY$ }
+            $OWNERCULTURES$
+        }
         every_scope_state = {
             every_scope_pop = {
-                limit = { culture = { AND = { $FROMCULTURE$ } } }
+                limit = { culture = { $FROMCULTURE$ } }
+                if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 1
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.01
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 2
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.02
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 3
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.03
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 4
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.04
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 5
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.05
+                    }
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_technology_backup = {
+    if  = {
+        limit = {
+            has_technology_researched = $TECHNOLOGY$
+            $OWNERCULTURES$
+        }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { culture = { $FROMCULTURE$ } }
                 change_pop_culture = {
                     target = cu:$TOCULTURE$
-                    value = $AMOUNT$
+                    value = 0.02
                 }
             }
         }
@@ -45,7 +132,7 @@ change_pop_culture_nationalism = {
 
 change_pop_culture_pan_nationalism = {
     if  = {
-        limit = { has_technology_researched = pan_nationalism }
+        limit = { has_technology_researched = pan-nationalism }
         every_scope_state = {
             every_scope_pop = {
                 limit = { culture = { AND = { $FROMCULTURE$ } } }
@@ -58,10 +145,11 @@ change_pop_culture_pan_nationalism = {
     }
 }
 
-change_pop_culture_migrant = {
+change_pop_culture_to_immigrant_culture = {
     if = {
         limit = {
             $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
                 institution_investment_level = {
                     institution = institution_police
                     value = 5
@@ -70,13 +158,14 @@ change_pop_culture_migrant = {
         }
         
         change_pop_culture = {
-            target = cu:migrant
+            target = cu:immigrant_culture
             value = 0.005
         }
     }
     else_if = {
         limit = {
             $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
                 institution_investment_level = {
                     institution = institution_police
                     value = 4
@@ -85,13 +174,14 @@ change_pop_culture_migrant = {
         }
         
         change_pop_culture = {
-            target = cu:migrant
+            target = cu:immigrant_culture
             value = 0.01
         }
     }
     else_if = {
         limit = {
             $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
                 institution_investment_level = {
                     institution = institution_police
                     value = 3
@@ -100,13 +190,14 @@ change_pop_culture_migrant = {
         }
         
         change_pop_culture = {
-            target = cu:migrant
+            target = cu:immigrant_culture
             value = 0.015
         }
     }
     else_if = {
         limit = {
             $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
                 institution_investment_level = {
                     institution = institution_police
                     value = 2
@@ -115,13 +206,14 @@ change_pop_culture_migrant = {
         }
         
         change_pop_culture = {
-            target = cu:migrant
+            target = cu:immigrant_culture
             value = 0.025
         }
     }
     else_if = {
         limit = {
             $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
                 institution_investment_level = {
                     institution = institution_police
                     value = 1
@@ -130,8 +222,292 @@ change_pop_culture_migrant = {
         }
         
         change_pop_culture = {
-            target = cu:migrant
+            target = cu:immigrant_culture
             value = 0.03
+        }
+    }
+}
+
+change_primary_culture = {
+    if = {
+        limit = {
+            ROOT = { has_technology_researched = pan-nationalism }
+            exists = c:$MAJOR_TAG$
+        }
+        if = {
+            limit = {
+                    ROOT = c:$TARGET_COUNTRY$
+                    country_has_primary_culture = cu:$OLD_PRIMARY$
+            }
+            remove_primary_culture = cu:$OLD_PRIMARY$
+            add_primary_culture = cu:$NEW_PRIMARY$
+        }
+    }
+}
+
+change_primary_culture_german_minor = {
+    if = {
+        limit = {
+            OR = { exists = c:NGF exists = c:GER }
+        }
+        if = {
+            limit = {
+                    ROOT = c:ANH
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:eastphalian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:BRE
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:BRA
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:eastphalian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:DZG
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:prussian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:FRM
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:hessian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:HAM
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:HAN
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:HES
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:hessian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:HEK
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:hessian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:HOL
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:LIP
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:LUB
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:MEC
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:MST
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:NAS
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:hessian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:OLD
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:POM
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:pomeranian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:COB
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:thuringian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:MEI
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:thuringian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:WEI
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:upper_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:SAX
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:upper_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:SCM
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:SCW
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:thuringian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:WLD
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:WES
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:SCH
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = {
+                    ROOT = c:PRU
+                    country_has_primary_culture = cu:north_german
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:prussian
+        }
+    }
+    if = {
+        limit = { OR = { exists = c:SGF exists = c:GER } }
+        if = {
+            limit = {
+                    ROOT = c:AUS
+                    country_has_primary_culture = cu:south_german
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austrian
+        }
+        if = {
+            limit = {
+                    ROOT = c:BAD
+                    country_has_primary_culture = cu:south_german
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:alemannic
+        }
+        if = {
+            limit = {
+                    ROOT = c:BAV
+                    country_has_primary_culture = cu:south_german
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:bavarian
+        }
+        if = {
+            limit = {
+                    ROOT = c:HOH
+                    country_has_primary_culture = cu:south_german
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:swabian
+        }
+        if = {
+            limit = {
+                    ROOT = c:WUR
+                    country_has_primary_culture = cu:south_german
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:swabian
         }
     }
 }

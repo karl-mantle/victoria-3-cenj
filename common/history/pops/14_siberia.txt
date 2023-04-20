@@ -104,7 +104,7 @@
 	s:STATE_OB = {
 		region_state:RUS = {
 			create_pop = {
-				culture = nenet
+				culture = samoyed
 				size = 10776
 			}
 			create_pop = {
@@ -120,7 +120,7 @@
 				size = 20204
 			}
 			create_pop = {
-				culture = nenet
+				culture = samoyed
 				size = 16000
 			}
 		}

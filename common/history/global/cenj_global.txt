@@ -1,0 +1,37 @@
+﻿GLOBAL = {
+    # adds homelands for new migrant cultures
+    every_country = {
+        if = {
+            limit = { country_has_primary_culture = cu:yankee }
+            every_scope_state = {
+                THIS.state_region = {
+                    add_homeland = franco_american
+                    add_homeland = irish_american
+                    add_homeland = italian_american
+                    add_homeland = jewish_american
+                    add_homeland = german_american
+                    add_homeland = scots_american
+                }
+            }
+        }
+        else_if = {
+            limit = { country_has_primary_culture = cu:anglo_canadian }
+            every_scope_state = {
+                THIS.state_region = {
+                    add_homeland = afro_canadian
+                    add_homeland = dutch_canadian
+                    add_homeland = franco_canadian
+                    add_homeland = german_canadian
+                    add_homeland = greek_canadian
+                    add_homeland = irish_canadian
+                    add_homeland = scots_canadian
+                }
+            }
+        }
+
+    }
+
+    c:ORG = {
+        remove_primary_culture = cu:yankee
+    }
+}

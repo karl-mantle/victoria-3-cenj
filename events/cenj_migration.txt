@@ -1,68 +1,84 @@
 ﻿namespace = cenj_migration
 
 cenj_migration.1 = {
-    type = country_event
-    hidden = yes
-
-    trigger = {
+	type = country_event
+	hidden = yes
+	trigger = {
+		#is_ai = no # Type an '#' before to make it a comment
         has_law = law_type:law_no_migration_controls
-        AND = {
-            any_scope_state = {
-                average_sol > 15
-                any_neighbouring_state = {
-                    NOT = { owner = ROOT }
-                }
-                average_sol < PREV.average_sol
-            }
-        }
-    }
-
-    immediate = {
-		# change to random_scope_state if it doesn't work
-        random_scope_state = {
-            limit = {
-                average_sol > 15
-                random_neighbouring_state = {
-                    NOT = { owner = ROOT }
-                }
-                average_sol < PREV.average_sol
-            }
-        save_scope_as = migrant_target
-        random_neighbouring_state = {
-                limit = {
-                    NOT = { owner = ROOT }
-                    average_sol < PREV.average_sol
-                }
-                save_scope_as = migrant_source
-            }
-        }
-
-        scope:migrant_source = {
-            random_scope_pop = {
-                limit = { is_pop_type = peasants }
-                change_pop_culture_migrant = { ROOT = ROOT }
-                culture = { save_scope_as = migrant_culture }
-            }
-            random_scope_pop = {
-                limit = { culture = cu:migrant }
-                save_scope_as = migrant
-            }
-        }
-
-        if = {
-            limit = { exists = scope:migrant }
-            scope:migrant = { move_pop = scope:migrant_target }
-            random_scope_pop = {
-                limit = { culture = cu:migrant }
-                change_pop_culture = {
-                    target = scope:migrant_culture
-                    value = 1
-                }
-            }
-            #if = {
-            #    limit = { is_ai = no }
-            #    post_notification = cenj_migration_notification
-            #}
-        }
-    }
+		any_scope_state = {
+			average_sol > 15
+			any_neighbouring_state = {
+				not = {
+					owner = root
+				}
+				average_sol < prev.average_sol
+			}
+		}
+	}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				average_sol > 15
+				any_neighbouring_state = {
+					not = {
+						owner = root
+					}
+					average_sol < prev.average_sol
+				}
+			}
+			save_scope_as = immigrant_target
+			random_neighbouring_state = {
+				limit = {
+					not = {
+						owner = root
+					}
+					average_sol < prev.average_sol
+				}
+				save_scope_as = immigrant_source
+			}
+		}
+		scope:immigrant_source = {
+			random_scope_pop = {
+				limit = {
+					is_pop_type = peasants
+				}
+				change_pop_culture_to_immigrant_culture = {
+					ROOT = root
+				}
+				culture = {
+					save_scope_as = immigrant_culture
+				}
+			}
+			random_scope_pop = {
+				limit = {
+					culture = cu:immigrant_culture
+				}
+				save_scope_as = illegal_immigrant
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:illegal_immigrant
+			}
+			scope:illegal_immigrant = {
+				move_pop = scope:immigrant_target
+			}
+			random_scope_pop = {
+				limit = {
+					culture = cu:immigrant_culture
+				}
+				change_pop_culture = {
+					target = scope:immigrant_culture
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				post_notification = cenj_migration_notification
+			}
+		}
+	}
 }
