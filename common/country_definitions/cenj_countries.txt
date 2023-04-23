@@ -185,7 +185,7 @@ CLI = { #Cilli
 	color = { 159 174 96 }
 	country_type = recognized
 	tier = city_state
-	cultures = { slovenian }
+	cultures = { slovene }
 	capital = STATE_SLOVENIA
 }
 CNN = { #Clanricarde
@@ -332,7 +332,7 @@ HRZ = { #Herzegovina
 	color = { 72 113 160 }
 	country_type = recognized
 	tier = principality
-	cultures = { serbian }
+	cultures = { bosniak }
 	capital = STATE_BOSNIA
 }
 HSC = { #Gaeldom

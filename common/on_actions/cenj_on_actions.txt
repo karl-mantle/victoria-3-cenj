@@ -110,16 +110,16 @@ change_pop_culture_on_action = {
 
         # Canadian minors
         # Newfies
-        change_pop_culture_trait_state = {
-            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
-            TOCULTURE = "newfoundlander"
-            LIMIT = "THIS = s:STATE_NEWFOUNDLAND"
-        }
-        change_pop_culture_trait_state = {
-            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = celtic_people"
-            TOCULTURE = "newfoundlander"
-            LIMIT2 = "THIS = s:STATE_NEWFOUNDLAND"
-        }
+#        change_pop_culture_trait_state = {
+#            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
+#            TOCULTURE = "newfoundlander"
+#            LIMIT = "THIS = s:STATE_NEWFOUNDLAND"
+#        }
+#        change_pop_culture_trait_state = {
+#            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = celtic_people"
+#            TOCULTURE = "newfoundlander"
+#            LIMIT = "THIS = s:STATE_NEWFOUNDLAND"
+#        }
         # Afro-Canadian
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = african_heritage"

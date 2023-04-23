@@ -1,4 +1,9 @@
-
+## 0.0.10
+### New
+- made many of the new countries releasable ~90% of them, some need changes
+### Changes
+- commented out code for newfie assimilation for now
+- fixed incorrect culture references
 ## 0.0.9
 ###
 - added 1 new culture - fantefolk
