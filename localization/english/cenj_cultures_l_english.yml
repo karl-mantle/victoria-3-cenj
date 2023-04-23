@@ -14,16 +14,20 @@
  south_italian_minor:0 "South Italian minor"
  arpitan:0 "Arpitan"
  caledonian:0 "Caledonian"
+ nomadic:0 "Nomadic"
 #dummy
  immigrant_culture:0 "Immigrant Placeholder"
 #american_minor
  franco_american:0 "Franco-American"
+ hispano_american:0 "Hispano-American"
  irish_american:0 "Irish-American"
  italian_american:0 "Italo-American"
  jewish_american:0 "Jewish-American"
  german_american:0 "Germano-American"
+ luso_american:0 "Luso-American"
  scots_american:0 "Scots-American"
 #canadian_minor
+ newfoundlander:0 "Newfoundlander"
  afro_canadian:0 "Afro-Canadian"
  dutch_canadian:0 "Dutch-Canadian"
  german_canadian:0 "Germano-Canadian"
@@ -80,7 +84,24 @@
  limousin:0 "Limousin"
  provencal:0 "Provençal"
 #north_italian_minor
+ dalmatian:0 "Dalmatian"
+ emilian:0 "Emilian"
+ ligurian:0 "Ligurian"
+ lombard:0 "Lombard"
+ piedmontese:0 "Piedmontese"
+ romagnol:0 "Romagnol"
+ savoyard:0 "Savoyard"
+ tuscan:0 "Tuscan"
+ venetian:0 "Venetian"
 #south_italian_minor
+ abruzzese:0 "Abruzzese"
+ apulian:0 "Apulian"
+ calabrian:0 "Calabrian"
+ neapolitan:0 "Neapolitan"
+ roman:0 "Roman"
+ sardinian:0 "Sardinian"
+ sicilian:0 "Sicilian"
+ umbrian:0 "Umbrian"
 #romance_general
  francoprovencal:0 "Francoprovençal"
 #germanic_general
@@ -98,6 +119,12 @@
  silesian:0 "Silesian"
 #hellenic_general
  pontic_greek:0 "Pontic Greek"
+#romani_groups
+ kale:0 "Kale"
+ roma:0 "Romany"
+ romanichal:0 "Romanichal"
+ sinti:0 "Sinti"
+ yenish:0 "Yenish"
 #uralic_minor
  ingrian:0 "Ingrian"
  karelian:0 "Karelian"
@@ -106,3 +133,6 @@
  mordvin:0 "Mordvin"
  samoyed:0 "Samoyed"
  veps:0 "Veps"
+#caucasian
+ chechen:0 "Chechen"
+ dagestani:0 "Dagestani"

@@ -1,4 +1,4 @@
-cenj_migration_notification = {
+﻿cenj_migration_notification = {
     type = country
     texture = "gfx/interface/icons/notification_icons/pops.dds"
     notification_type = toast

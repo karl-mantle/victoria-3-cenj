@@ -13,6 +13,10 @@
 				culture = ashkenazi
 				size = 1000
 			}
+			create_pop = {
+				culture = romanichal
+				size = 2000
+			}
 		}
 	}
 	s:STATE_GOTALAND = {
@@ -29,6 +33,10 @@
 				culture = ashkenazi
 				size = 100
 			}
+			create_pop = {
+				culture = romanichal
+				size = 2000
+			}
 		}
 	}
 	s:STATE_SCANIA = {
@@ -40,6 +48,10 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 200
+			}
+			create_pop = {
+				culture = romanichal
+				size = 1500
 			}
 		}
 	}
@@ -73,6 +85,10 @@
 				culture = danish
 				size = 548908
 			}
+			create_pop = {
+				culture = romanichal
+				size = 1000
+			}
 		}
 	}
 	s:STATE_ZEALAND = {
@@ -89,6 +105,10 @@
 				culture = ashkenazi
 				size = 4400
 			}
+			create_pop = {
+				culture = romanichal
+				size = 1000
+			}
 		}
 	}
 	s:STATE_WESTERN_NORWAY = {
@@ -96,6 +116,14 @@
 			create_pop = {
 				culture = norwegian
 				size = 546800
+			}
+			create_pop = {
+				culture = romanichal
+				size = 2500
+			}
+			create_pop = {
+				culture = fantefolk
+				size = 5000
 			}
 		}
 	}
@@ -124,6 +152,10 @@
 			create_pop = {
 				culture = danish
 				size = 7000
+			}
+			create_pop = {
+				culture = romanichal
+				size = 2000
 			}
 		}
 	}
@@ -175,6 +207,10 @@
 				culture = russian
 				size = 300
 			}
+			create_pop = {
+				culture = kale
+				size = 2000
+			}
 		}
 	}
 	s:STATE_WEST_KARELIA = {
@@ -223,6 +259,10 @@
 				culture = sami
 				size = 18000
 			}
+			create_pop = {
+				culture = kale
+				size = 2000
+			}
 		}
 	}
 	s:STATE_HOME_COUNTIES = {
@@ -244,6 +284,10 @@
 			create_pop = {
 				culture = irish
 				size = 28400
+			}
+			create_pop = {
+				culture = romanichal
+				size = 5000
 			}
 		}
 	}
@@ -271,6 +315,10 @@
 				culture = irish
 				size = 80700
 			}
+			create_pop = {
+				culture = romanichal
+				size = 2000
+			}
 		}
 	}
 	s:STATE_WALES = {
@@ -282,6 +330,10 @@
 			create_pop = {
 				culture = british
 				size = 194639
+			}
+			create_pop = {
+				culture = kale
+				size = 7500
 			}
 		}
 	}
@@ -333,6 +385,10 @@
 			create_pop = {
 				culture = irish
 				size = 12000
+			}
+			create_pop = {
+				culture = kale
+				size = 2000
 			}
 		}
 	}
@@ -389,6 +445,10 @@
 			create_pop = {
 				culture = irish
 				size = 52400
+			}
+			create_pop = {
+				culture = romanichal
+				size = 7000
 			}
 		}
 	}
@@ -553,7 +613,7 @@
 	s:STATE_RHONE = {
 		region_state:FRA = {
 			create_pop = {
-				culture = burgundian
+				culture = francoprovencal
 				size = 876897
 			}
 			create_pop = {
@@ -613,6 +673,10 @@
 				religion = protestant
 				size = 418004
 			}
+			create_pop = {
+				culture = yenish
+				size = 5000
+			}
 		}
 	}
 	s:STATE_POITOU = {
@@ -665,6 +729,10 @@
 				culture = burgundian
 				size = 2192800
 			}
+			create_pop = {
+				culture = yenish
+				size = 2000
+			}
 		}
 	}
 	s:STATE_CHAMPAGNE = {
@@ -688,6 +756,10 @@
 			create_pop = {
 				culture = alemannic
 				size = 28004
+			}
+			create_pop = {
+				culture = yenish
+				size = 4500
 			}
 		}
 	}
@@ -748,6 +820,10 @@
 				culture = sephardic # "Portuguese" Jews
 				size = 2908
 			}
+			create_pop = {
+				culture = sinti
+				size = 4000
+			}
 		}
 	}
 	# Friesland, Overijssel, Groningen, and Drenthe
@@ -799,6 +875,10 @@
 				religion = catholic
 				size = 19201
 			}
+			create_pop = {
+				culture = sinti
+				size = 2000
+			}
 		}
 	}
 	s:STATE_WALLONIA = {
@@ -811,6 +891,10 @@
 				culture = rhine_german
 				religion = catholic
 				size = 71996
+			}
+			create_pop = {
+				culture = yenish
+				size = 2000
 			}
 		}
 		region_state:BEL = {
@@ -829,6 +913,10 @@
 			create_pop = {
 				culture = dutch
 				size = 16000
+			}
+			create_pop = {
+				culture = yenish
+				size = 2000
 			}
 		}
 	}
@@ -876,6 +964,10 @@
 				religion = protestant
 				size = 8000
 			}
+			create_pop = {
+				culture = roma
+				size = 2000
+			}
 		}
 	}
 	s:STATE_BOHEMIA = {
@@ -892,6 +984,10 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 75996
+			}
+			create_pop = {
+				culture = roma
+				size = 2000
 			}
 		}
 	}
@@ -914,6 +1010,10 @@
 				culture = polish
 				size = 56004
 			}
+			create_pop = {
+				culture = roma
+				size = 4000
+			}
 		}
 	}
 	s:STATE_STYRIA = {
@@ -930,6 +1030,10 @@
 				culture = slovene
 				size = 72000
 			}
+			create_pop = {
+				culture = roma
+				size = 2000
+			}
 		}
 	}
 	s:STATE_TYROL = {
@@ -942,6 +1046,10 @@
 				culture = south_german
 				size = 299652
 			}
+			create_pop = {
+				culture = sinti
+				size = 2000
+			}
 		}
 	}
 	s:STATE_SOUTH_TYROL = {
@@ -953,6 +1061,10 @@
 			create_pop = {
 				culture = north_italian
 				size = 5900
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
 			}
 		}
 	}
@@ -1017,6 +1129,11 @@
 				culture = swiss
 				size = 388400
 			}
+			create_pop = {
+				culture = sinti
+				size = 2000
+			}
+
 		}
 	}
 	s:STATE_WEST_SWITZERLAND = {
@@ -1029,6 +1146,14 @@
 				culture = swiss
 				religion = catholic
 				size = 336560
+			}
+			create_pop = {
+				culture = yenish
+				size = 3500
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
 			}
 		}
 	}
@@ -1047,6 +1172,10 @@
 				culture = westphalian
 				size = 506715
 			}
+			create_pop = {
+				culture = yenish
+				size = 4500
+			}
 		}
 		region_state:LIP = {
 			create_pop = {
@@ -1058,6 +1187,10 @@
 				culture = westphalian
 				size = 27336
 			}
+			create_pop = {
+				culture = yenish
+				size = 500
+			}
 		}	
 		region_state:SCM = {
 			create_pop = {
@@ -1068,6 +1201,10 @@
 			create_pop = {
 				culture = westphalian
 				size = 8045
+			}
+			create_pop = {
+				culture = yenish
+				size = 200
 			}
 		}			
 	}
@@ -1085,6 +1222,10 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 2996
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
 			}
 		}
 		region_state:ANH = {
@@ -1114,6 +1255,14 @@
 				culture = rhine_german
 				size = 323992
 			}
+			create_pop = {
+				culture = yenish
+				size = 12000
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
+			}
 		}
 		region_state:BAV = {
 			create_pop = {
@@ -1128,6 +1277,10 @@
 				culture = rhine_german
 				religion = protestant
 				size = 303996
+			}
+			create_pop = {
+				culture = yenish
+				size = 4500
 			}
 		}
 	}
@@ -1150,6 +1303,14 @@
 				culture = ashkenazi
 				size = 3004
 			}
+			create_pop = {
+				culture = yenish
+				size = 8000
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
+			}
 		}
 	}
 	s:STATE_BRANDENBURG = {
@@ -1170,6 +1331,14 @@
 			create_pop = {
 				culture = polish
 				size = 20000
+			}
+			create_pop = {
+				culture = yenish
+				size = 1500
+			}
+			create_pop = {
+				culture = roma
+				size = 2000
 			}
 		}
 	}
@@ -1230,6 +1399,14 @@
 				culture = swabian
 				size = 604068
 			}
+			create_pop = {
+				culture = yenish
+				size = 4500
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
+			}
 		}
 		region_state:HOH = {
 			create_pop = {
@@ -1241,7 +1418,8 @@
 				culture = swabian
 				size = 21024
 			}
-		}		
+		}
+				
 	}
 	s:STATE_BADEN = {
 		region_state:BAD = {
@@ -1270,6 +1448,14 @@
 				culture = swabian
 				religion = protestant
 				size = 125500
+			}
+			create_pop = {
+				culture = yenish
+				size = 10000
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
 			}
 		}
 	}
@@ -1315,6 +1501,14 @@
 			create_pop = {
 				culture = dutch
 				size = 4004
+			}
+			create_pop = {
+				culture = yenish
+				size = 4500
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
 			}
 		}
 	}
@@ -1363,6 +1557,10 @@
 				culture = ashkenazi
 				size = 5004
 			}
+			create_pop = {
+				culture = sinti
+				size = 3500
+			}
 		}
 	}
 	s:STATE_FRANCONIA = {
@@ -1388,6 +1586,10 @@
 				culture = franconian
 				religion = protestant
 				size = 410200
+			}
+			create_pop = {
+				culture = sinti
+				size = 2000
 			}
 		}
 	}

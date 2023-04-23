@@ -4,7 +4,7 @@
 		christian
         animist
 	}
-	color = { 0.6 0.3 0.2 }
+	color = { 0.6 0.3 0.1 }
 }
 old_believer = {
 	texture = "gfx/interface/icons/religion_icons/orthodox.dds" #needs new icon
@@ -31,14 +31,6 @@ ibadi = {
 	texture = "gfx/interface/icons/religion_icons/ibadi.dds"
 	traits = {
 		muslim
-	}
-	color = { 0.6 0.3 0.2 }
-}
-# placeholder until 1.3
-atheist = {
-	texture = "gfx/interface/icons/religion_icons/atheist_placeholder.dds"
-	traits = {
-		animist
 	}
 	color = { 0.6 0.3 0.2 }
 }

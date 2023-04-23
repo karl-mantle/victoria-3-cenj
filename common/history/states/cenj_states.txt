@@ -147,6 +147,51 @@
         add_homeland = low_saxon
         add_homeland = pomeranian
     }
+# 01_south_europe
+    s:STATE_LOMBARDY = {
+        add_homeland = lombard
+    }
+    s:STATE_PIEDMONT = {
+        add_homeland = piedmontese
+        add_homeland = ligurian
+    }
+    s:STATE_SARDINIA = {
+        add_homeland = sardinian
+    }
+    s:STATE_UMBRIA = {
+        add_homeland = umbrian
+    }
+    s:STATE_CAMPANIA = {
+        add_homeland = neapolitan
+    }
+    s:STATE_APULIA = {
+        add_homeland = apulian
+    }
+    s:STATE_ABRUZZO = {
+        add_homeland = abruzzese
+    }
+    s:STATE_SAVOY = {
+        add_homeland = savoyard
+        add_homeland = francoprovencal
+    }
+    s:STATE_EMILIA = {
+        add_homeland = emilian
+    }
+    s:STATE_TUSCANY = {
+        add_homeland = tuscan
+    }
+    s:STATE_ROMAGNA = {
+        add_homeland = romagnol
+    }
+    s:STATE_LAZIO = {
+        add_homeland = roman
+    }
+    s:STATE_VENETIA = {
+        add_homeland = venetian
+    }
+    s:STATE_SICILY = {
+        add_homeland = sicilian
+    }
 # 02_east_europe
     s:STATE_INGRIA = {
         add_homeland = ingrian
@@ -241,6 +286,10 @@
     }
     s:STATE_WALLACHIA = {
         add_homeland = regat_german
+    }
+# 05_north_america
+    s:STATE_NEWFOUNDLAND = {
+        add_homeland = newfoundlander
     }
 # 09_central_asia
     s:STATE_KUBAN = {

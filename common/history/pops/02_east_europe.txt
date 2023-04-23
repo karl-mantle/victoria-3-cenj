@@ -210,6 +210,10 @@
 				culture = sami
 				size = 5000
 			}
+			create_pop = {
+				culture = kale
+				size = 1000
+			}
 		}
 	}
 	s:STATE_ARKHANGELSK = {
@@ -597,6 +601,10 @@
 				religion = catholic
 				size = 60000
 			}
+			create_pop = {
+				culture = roma
+				size = 1500
+			}
 		}
 	}
 	s:STATE_GREATER_POLAND = {
@@ -717,6 +725,10 @@
 				religion = catholic
 				size = 141160
 			}
+			create_pop = {
+				culture = roma
+				size = 1000
+			}
 		}
 	}
 	s:STATE_WEST_GALICIA = {
@@ -740,6 +752,10 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 136000
+			}
+			create_pop = {
+				culture = roma
+				size = 1000
 			}
 		}
 		region_state:KRA = {
@@ -783,6 +799,10 @@
 				culture = ashkenazi
 				size = 180000
 			}
+			create_pop = {
+				culture = roma
+				size = 1500
+			}
 		}
 	}
 	s:STATE_CENTRAL_HUNGARY = {
@@ -808,6 +828,10 @@
 			create_pop = {
 				culture = slovak
 				size = 31996
+			}
+			create_pop = {
+				culture = roma
+				size = 5000
 			}
 		}
 	}
@@ -846,6 +870,10 @@
 				culture = hungarian
 				religion = jewish
 				size = 16004
+			}
+			create_pop = {
+				culture = roma
+				size = 7500
 			}
 		}
 	}
@@ -890,6 +918,10 @@
 				culture = slovene
 				size = 59996
 			}
+			create_pop = {
+				culture = roma
+				size = 1500
+			}
 		}
 	}
 	s:STATE_DELVIDEK = {
@@ -917,6 +949,10 @@
 			create_pop = {
 				culture = romanian
 				size = 44000
+			}
+			create_pop = {
+				culture = roma
+				size = 2500
 			}
 		}
 	}
@@ -964,6 +1000,10 @@
 				religion = protestant
 				size = 64956
 			}
+			create_pop = {
+				culture = roma
+				size = 2500
+			}
 		}
 	}
 	s:STATE_WEST_SLOVAKIA = {
@@ -1000,6 +1040,10 @@
 			create_pop = {
 				culture = polish
 				size = 8000
+			}
+			create_pop = {
+				culture = roma
+				size = 7500
 			}
 		}
 	}
@@ -1042,6 +1086,10 @@
 				culture = zipser
 				size = 40080
 			}
+			create_pop = {
+				culture = roma
+				size = 7500
+			}
 		}
 	}
 	s:STATE_SOUTHERN_TRANSYLVANIA = {
@@ -1070,6 +1118,10 @@
 			create_pop = {
 				culture = trans_saxon
 				size = 87996
+			}
+			create_pop = {
+				culture = roma
+				size = 10000
 			}
 		}
 	}
@@ -1100,6 +1152,10 @@
 				culture = ashkenazi
 				size = 32800
 			}
+			create_pop = {
+				culture = roma
+				size = 10000
+			}
 		}
 	}
 	s:STATE_MOLDAVIA = {
@@ -1128,6 +1184,10 @@
 				culture = buchenlander
 				size = 32000
 			}
+			create_pop = {
+				culture = roma
+				size = 4000
+			}
 		}
 		region_state:MOL = {
 			create_pop = {
@@ -1140,7 +1200,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = romanian
+				culture = roma
 				size = 10000
 			}
 		}
@@ -1161,7 +1221,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = romanian
+				culture = roma
 				size = 10000
 			}
 		}

@@ -6,10 +6,12 @@
             every_scope_state = {
                 THIS.state_region = {
                     add_homeland = franco_american
+                    add_homeland = hispano_american
                     add_homeland = irish_american
                     add_homeland = italian_american
                     add_homeland = jewish_american
                     add_homeland = german_american
+                    add_homeland = luso_american
                     add_homeland = scots_american
                 }
             }
@@ -28,7 +30,6 @@
                 }
             }
         }
-
     }
 
     c:ORG = {

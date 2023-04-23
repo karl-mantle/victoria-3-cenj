@@ -30,6 +30,20 @@ change_pop_culture_on_action = {
             LIMIT = "country_has_primary_culture = cu:yankee"
             
         }
+        # Hispanic-American
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = hispanophone"
+            TOCULTURE = "hispano_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        # Luso-American
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = lusophone"
+            TOCULTURE = "luso_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
         # German-American - need to figure out how to merge 3 discriminated traits into one effect for this
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
@@ -74,6 +88,18 @@ change_pop_culture_on_action = {
             LIMIT = "country_has_primary_culture = cu:yankee"
             
         }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_italian_minor"
+            TOCULTURE = "italian_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_italian_minor"
+            TOCULTURE = "italian_american"
+            LIMIT = "country_has_primary_culture = cu:yankee"
+            
+        }
         # Scottish American
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = caledonian"
@@ -83,6 +109,17 @@ change_pop_culture_on_action = {
         }
 
         # Canadian minors
+        # Newfies
+        change_pop_culture_trait_state = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
+            TOCULTURE = "newfoundlander"
+            LIMIT = "THIS = s:STATE_NEWFOUNDLAND"
+        }
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = celtic_people"
+            TOCULTURE = "newfoundlander"
+            LIMIT2 = "THIS = s:STATE_NEWFOUNDLAND"
+        }
         # Afro-Canadian
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = african_heritage"
@@ -210,16 +247,28 @@ change_pop_culture_on_action = {
             TOCULTURE = "dixie"
             OWNERCULTURES = "country_has_primary_culture = cu:dixie"
         }
+        # German
+        change_pop_culture_technology = {
+            TECHNOLOGY = "pan-nationalism"
+            FROMCULTURE = "has_discrimination_trait = german-speaking"
+            TOCULTURE = "yankee"
+            OWNERCULTURES = "country_has_primary_culture = cu:german"
+        }
+        # Italian
+        change_pop_culture_technology = {
+            TECHNOLOGY = "pan-nationalism"
+            FROMCULTURE = "has_discrimination_trait = italophone"
+            TOCULTURE = "yankee"
+            OWNERCULTURES = "country_has_primary_culture = cu:italian"
+        }
     }
 }
 
 change_primary_culture_on_action = {
     effect = {
-        # North German minors
-        change_primary_culture_german_minor = {
-#            TARGET_COUNTRY = "HAN"
-#            OLD_PRIMARY = "north_german"
-#            NEW_PRIMARY = "westphalian"
-        }
+        # Minor cultures en masse
+        change_primary_culture_german_minor = {}
+        change_primary_culture_italian_minor = {}
+        # Targetted cultures
     }
 }

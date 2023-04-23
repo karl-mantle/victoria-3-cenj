@@ -2495,7 +2495,7 @@ franco_canadian={
 corsican = {
 	color= hsv{ 0.49 0.51 0.84 }
 	religion = catholic
-	traits = { european_heritage italophone }
+	traits = { european_heritage north_italian_minor }
 	male_common_first_names={
 		Joseph
 		Louis

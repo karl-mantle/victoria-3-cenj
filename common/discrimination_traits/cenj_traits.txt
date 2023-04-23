@@ -11,3 +11,4 @@ north_italian_minor = {}
 south_italian_minor = {}
 arpitan = {}
 caledonian = {}
+nomadic = {}

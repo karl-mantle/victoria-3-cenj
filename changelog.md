@@ -1,3 +1,17 @@
+# 0.0.8
+
+## New
+- 140 new countries added
+
+# 0.0.7
+## New
+- Added Italian minor cultures
+- New American diaspora cultures for Hispanophones and Lusophones
+- Italian minors change to their respective local culture if left outside of Italy
+- Added Romani gypsy populations to various parts of Europe
+- New primary cultures added to relevant countries
+- Added Newfies
+
 # 0.0.6
 ## New
 - German minor cultures automatically assimilate to their respective North and South cultures.

@@ -189,6 +189,216 @@ franco_american={
 		1 = caucasian
 	}
 }
+hispano_american={
+	color=hsv{ 0.99 0.50 0.65 }
+	religion = catholic
+	traits = { hispanophone mestizo_heritage }
+	male_common_first_names={
+		Adrian_2
+		Agustin
+		Ambrosio
+		Amilcar
+		Anastasio
+		Andres
+		Antonio
+		Bernardo
+		Blas
+		Dionisio
+		Eleuterio
+		Emeterio
+		Emiliano
+		Emilio
+		Enrique
+		Ernesto
+		Fausto
+		Felipe
+		Francisco
+		Francisco_Javier
+		Felix
+		Flavio
+		Gabriel
+		Gaspar
+		Genovevo
+		Gregorio
+		Ignacio
+		Jeronimo
+		Joaquin
+		Jesus
+		Jose
+		Jose_Manuel
+		Jose_Maria
+		Juan
+		Juan_Bautista
+		Justo
+		Lazaro
+		Manuel
+		Mariano
+		Martin_2
+		Melchor
+		Miguel
+		Moises
+		Nicolas_2
+		Pablo
+		Pascual
+		Pedro
+		Policarpio
+		Porfirio
+		Ramon
+		Reynaldo
+		Ricardo
+		Romulo
+		Salvador
+		Sebastian
+		Tiburcio
+		Tomas
+		Valentin
+		Valeriano
+		Venustiano
+		Vicente
+		Victoriano
+		Alvaro
+		Angel
+	}
+	female_common_first_names = {
+		Carlota
+		Carmen
+		Camerina
+		Concepcion
+		Cristina
+		Eulalia
+		Gertrudis
+		Ignacia
+		Isabel
+		Josefa
+		Laureana
+		Leona
+		Luisa
+		Manuela
+		Maria
+		Mercedes
+		Rita
+		Teodora
+	}	
+	noble_last_names = {
+		Diaz_2
+		Huarte
+		de_Ampudia
+		de_Cos
+		de_Iturbide
+		Lerdo_de_Tejada
+		de_Romay
+		de_Terreros
+		de_Yermo
+	}
+	common_last_names={
+		Aceituno
+		Alarcon
+		Almonte
+		Arciniegas
+		Arguello
+		Arista
+		Ayanegui
+		Baranda
+		Barberena
+		Barragan
+		Berriozabal
+		Betanzos
+		Bocanegra
+		Bravo
+		Bustamante
+		Bustillos
+		Canalizo
+		Carracosa
+		Carranza
+		Carreon
+		Caserta
+		Castellanos
+		Ceron
+		Cervantes
+		Coello
+		Comonfort
+		Corona
+		Corra
+		Corral
+		Correa
+		Corzo
+		Couto
+		Echeverria
+		Escandon
+		Escobedo
+		Esquinca
+		Fagoaga
+		Farfan
+		Fernandez_del_Valle
+		Flores
+		Fuentes
+		Garza
+		Gonzalez
+		Guerrero
+		Godoy
+		Gomez
+		Hinojosa
+		Hoyos
+		Huerta
+		Kosterlitzky
+		Lara
+		Larrainzar
+		Lozada
+		Lopez_de_Santa_Anna
+		Magana
+		Magon
+		Maldonado
+		Martinez_del_Rio
+		Mejia
+		Miramon
+		Moguel
+		Molina
+		Muzquiz
+		Obregon
+		Ogazon
+		Ojeda
+		Ortega
+		Palacio
+		Palafox
+		Parada
+		Parres
+		Pedraza
+		Pimentel
+		Pineda
+		Pineiro
+		Preciado
+		Rabasa
+		Ramos
+		Reyes
+		Rincon_Gallardo
+		Robles
+		Rodriguez
+		Rojas
+		Ruiz_2
+		Salas
+		Sarmaniego_del_Castillo
+		Sanchez
+		Tajonar
+		Tovilla
+		Trejo
+		Utrilla
+		Villa
+		Villalobos
+		Vazquez
+		Vazquez_de_la_Cadena
+		Velasco
+		Woll
+		Zapata
+		Zaragoza
+		Zuloaga
+		Alvarez
+		Zimbron
+	}
+	ethnicities = {
+		1 = south_american
+	}
+	graphics = generic
+}
 irish_american={
 	color= hsv{ 0.35 0.58 0.54 }
 	religion = catholic
@@ -658,6 +868,144 @@ german_american={
 		1 = caucasian
 	}
 }
+luso_american={
+	color= hsv{ 0.50 0.53 0.40 }
+	religion = catholic
+	traits = { lusophone mestizo_heritage }
+	male_common_first_names={
+		Afonso
+		Antonio_3
+		Artur
+		Augusto
+		Aurelio_2
+		Benjamin
+		Carlos
+		Celso
+		Custodio
+		Candido
+		Delfim
+		Deodoro
+		Eduardo
+		Emilio_2
+		Epitacio
+		Ernesto
+		Federico
+		Fernando
+		Filipe
+		Floriano
+		Francisco_Xavier
+		Francisco_de_Paula
+		Fabio_2
+		Gaspar
+		Gastao
+		Getulio
+		Henrique
+		Hermes
+		Humberto
+		Isaias
+		Joaquim
+		Jose
+		Joao
+		Juscelino
+		Julio_2
+		Luis_2
+		Manuel
+		Marco_Antonio_2
+		Miguel
+		Mario_2
+		Nereu
+		Nilo
+		Paulo
+		Pedro
+		Prudente
+		Silviano
+		Tancredo
+		Urbano
+		Venceslau
+		Vital
+	}
+	female_common_first_names = {
+		Adelia
+		Amalia_2
+		Beatriz
+		Carmen
+		Cristina
+		Domitila
+		Emilia
+		Francisca
+		Isabel
+		Josefina
+		Julia
+		Maria
+		Mariana
+		Narcisa
+		Teresa
+		Veridiana
+		Violanta
+	}	
+	noble_last_names = {
+		Boaventura
+		de_Beaurepaire-Rohan
+		de_Braganca
+		de_Carvalho
+		de_Lima_e_Silva
+		da_Camara
+		da_Costa
+		da_Fonseca
+		de_Aguiar
+		de_Barros
+		de_Itapevi
+		de_Melo
+		de_Noronha
+		de_Oliveira
+		de_Orleans
+		de_Souza_Neto
+		de_Suruf
+		de_Castro
+		de_Alcantara
+		da_Silva_Prado
+	}
+	common_last_names={
+		Barreto
+		Bernardes
+		Bittencourt
+		Brandao
+		Bras
+		Cabral_da_Silva
+		Caldwell
+		Constant
+		Costa
+		Dutra
+		Fragoso
+		Frontin
+		Galvao
+		Jordao_2
+		Labatut
+		Lopes
+		Maciel
+		Mallet
+		Marques
+		Marques_de_Sousa
+		Maurity
+		Moreira
+		Osorio_2
+		Peixoto
+		Pena
+		Pessoa
+		Pinto
+		Rondon
+		Saldanha_da_Gama
+		Santos
+		Soares
+		Tavares
+		Vargas
+		Wandenkolk
+	}
+	ethnicities = {
+		1 = south_american
+	}
+	graphics = generic
+}
 scots_american={
 	color={ 72 79 127 }
 	religion = protestant
@@ -777,6 +1125,212 @@ scots_american={
 	graphics = european
 }
 #canadian_minor
+newfoundlander={
+	color= hsv{ 0.35 0.58 0.34 }
+	religion = protestant
+	traits = { anglophone european_heritage canadian_minor }
+	male_common_first_names={
+		Albert
+		Alexander
+		Alfred
+		Angus
+		Archibald
+		Arthur
+		Charles
+		Christopher
+		Colin
+		David
+		Edmund
+		Frederick
+		George
+		Gordon
+		Hugh
+		James
+		John
+		Joseph
+		Mackenzie
+		Mark
+		Matthew
+		Michael
+		Nicholas
+		Norman
+		Patrick
+		Paul
+		Peter
+		Robert
+		Samuel
+		Simon
+		Sydney
+		Thomas
+		William
+	}
+	female_common_first_names = {
+		Agnes
+		Alice
+		Amelia
+		Anne
+		Berengera
+		Caroline
+		Charlotte
+		Clara
+		Clementina
+		Constance
+		Edith
+		Eleanor
+		Eliza
+		Ellen
+		Emily
+		Ethelwyn
+		Florence
+		Frances
+		Georgina
+		Grizelda
+		Harriet
+		Helena
+		Henriette
+		Hortense
+		Jane
+		Josephine
+		Julia
+		Katie
+		Lily
+		Louisa
+		Lucy
+		Margaret
+		Martha
+		Mary
+		Matilda
+		Pamelia
+		Pauline
+		Pearl
+		Rebecca
+		Rhoda
+		Rosanna
+		Sarah
+		Victoria
+		Virna
+	}	
+	noble_last_names = {
+		Abbott
+		Acheson
+		Bishop
+		Byng
+		Colborne
+		Hamilton-Temple-Blackwood
+		Kempt
+		Lambton
+		Lansdowne
+		Lennox
+		Lisgar
+		Lorne
+		Macdonald
+		Monck
+		Preston
+		Stanley
+		Thomson
+		Whitworth-Aylmer
+		Young
+	}
+	common_last_names={
+		Affleck
+		Armour
+		Bates
+		Beavan
+		Beckwith
+		Bernard
+		Bethune
+		Bishop
+		Blewett
+		Borden
+		Bowell
+		Bradford
+		Brown
+		Calder
+		Campbell
+		Caron
+		Churchill
+		Clark
+		Coleman
+		Conan
+		Corrigan
+		Crawford
+		Currie
+		Curzon
+		Cushing
+		Deeks
+		Dickey
+		Diggs
+		Dougall
+		Duncan
+		Field
+		Fleming
+		Garner
+		Graham
+		Guthrie
+		Harrison
+		Hayes
+		Herbert
+		Holmes
+		Hughes
+		Jennings
+		Jones
+		Katzmann
+		Kemp
+		Kennedy
+		King
+		Langton
+		Lawson
+		Lefevre
+		Leprohon
+		Mackenzie
+		MacNab
+		Maitland
+		McDonald
+		McIlwraith
+		McIsaac
+		McKellar
+		Merrick
+		Mewburn
+		Mitchell
+		Monthomery
+		Moodie
+		Morin
+		Mountcastle
+		Murray
+		Neil
+		Newhall
+		Panet
+		Parke
+		Patterson
+		Piers
+		Pope
+		Pottinger
+		Rae
+		Robertson
+		Rogers
+		Ross
+		Sedgewick
+		Shaw
+		Sheard
+		Sivell
+		Smith
+		Strong
+		Thompson
+		Tisdale
+		Tonge
+		Traill
+		Trenholme
+		Vail
+		Vining
+		Walker
+		Walshe
+		Wetherald
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
 afro_canadian={
 	color= hsv{ 0.10 0.10 0.24 }
 	religion = protestant
@@ -5561,7 +6115,7 @@ zipser={
 }
 #french_minor
 angevin={
-	color= rgb{ 76 118 155 }
+	color= hsv{ 0.66 0.45 0.75 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -5675,7 +6229,7 @@ angevin={
 	}
 }
 burgundian={
-	color= rgb{ 76 118 155 }
+	color= hsv{ 0.66 0.25 0.45 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -5789,7 +6343,7 @@ burgundian={
 	}
 }
 champenois={
-	color= rgb{ 76 118 155 }
+	color= hsv{ 0.66 0.25 0.55 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -5904,7 +6458,7 @@ champenois={
 	}
 }
 comtois={
-	color= rgb{ 76 118 155 }
+	color= hsv{ 0.66 0.25 0.65 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -6018,7 +6572,7 @@ comtois={
 	}
 }
 gallo={
-	color= hsv{ 0.66 0.25 0.85 }
+	color= hsv{ 0.66 0.45 0.65 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -6246,7 +6800,7 @@ norman={
 	}
 }
 orleanais={
-	color= rgb{ 76 118 155 }
+	color= hsv{ 0.66 0.25 0.35 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -6361,7 +6915,7 @@ orleanais={
 	}
 }
 picard={
-	color= hsv{ 0.66 0.25 0.65 }
+	color= hsv{ 0.66 0.45 0.85 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -6475,7 +7029,7 @@ picard={
 	}
 }
 poitevin={
-	color= rgb{ 76 118 155 }
+	color= hsv{ 0.66 0.45 0.25 }
 	religion = catholic
 	traits = { french_minor european_heritage }
 	
@@ -6591,7 +7145,7 @@ poitevin={
 }
 #occitan_minor
 auvergnat={
-	color= hsv{ 0.55 0.20 0.75 }
+	color= hsv{ 0.55 0.20 0.35 }
 	religion = catholic
 	traits = { occitan_minor european_heritage }
 
@@ -6659,7 +7213,7 @@ auvergnat={
 	}
 }
 gascon={
-	color= hsv{ 0.55 0.20 0.85 }
+	color= hsv{ 0.55 0.20 0.45 }
 	religion = catholic
 	traits = { occitan_minor european_heritage }
 
@@ -6727,7 +7281,7 @@ gascon={
 	}
 }
 limousin={
-	color= hsv{ 0.55 0.20 0.65 }
+	color= hsv{ 0.55 0.20 0.55 }
 	religion = catholic
 	traits = { occitan_minor european_heritage }
 
@@ -6863,10 +7417,1416 @@ provencal={
 	}
 }
 #north_italian_minor
+dalmatian={
+	color= hsv{ 0.38 0.27 0.30 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+emilian={
+	color= hsv{ 0.38 0.27 0.60 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+ligurian={
+	color= hsv{ 0.38 0.27 0.40 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+		wine
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+lombard={
+	color= hsv{ 0.38 0.27 0.35 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+piedmontese={
+	color= hsv{ 0.38 0.27 0.45 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+romagnol={
+	color= hsv{ 0.38 0.27 0.55 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+savoyard={
+	color= hsv{ 0.55 0.20 0.85 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage arpitan }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+tuscan={
+	color= hsv{ 0.38 0.27 0.75 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+venetian={
+	color= hsv{ 0.38 0.27 0.65 }
+	religion = catholic
+	traits = { north_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
 #south_italian_minor
+abruzzese={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+apulian={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+calabrian={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+neapolitan={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+roman={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+	
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+sardinian={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+sicilian={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+umbrian={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { south_italian_minor european_heritage }
+	
+	obsessions = {
+		
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
 #romance_general
 francoprovencal={
-	color= hsv{ 0.55 0.20 0.95 }
+	color= hsv{ 0.55 0.20 0.75 }
 	religion = catholic
 	traits = { arpitan occitan_minor european_heritage }
 
@@ -6928,6 +8888,85 @@ francoprovencal={
 		VigE_r VerdiE_r Verlhac	
 	}
 
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+italian={
+	color= hsv{ 0.35 0.25 0.55 }
+	religion = catholic
+	traits = { italophone european_heritage }
+	
+	obsessions = {
+		wine
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
 	graphics = european
 	ethnicities = {
 		1 = caucasian
@@ -7178,6 +9217,125 @@ frisian={
 		Sophie
 		Wilhelmina
 	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+german={
+	color= rgb{ 82 97 120 }
+	religion = protestant
+	traits = { german_speaking european_heritage }
+	male_common_first_names={
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno		
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor
+		Wilhelm Wolfgang
+	}
+	female_common_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+	noble_last_names = {
+		Herwarth_von_Bittenfeld
+		Vogel_von_Falkenstein
+		von_Falkenstein
+		von_Alten von_Anhalt von_Arentschildt von_Arens
+		von_Bismarck-Bohlen von_Bittenfeld von_Blomberg von_Blumenthal von_Borries von_Boyen von_Braunschweig von_Breitenbach von_Bulow von_Boyneburg-Lengsfeld von_Breidbach-BUrresheim
+		von_Clemm von_Cramm
+		von_Doenhoff von_Dieskau
+		von_Eck
+		von_Fritsch Firnhaber_von_Eberstein
+		von_Gebser von_Gagern de_Greiff von_GO_rtz von_GU_nderrode von_der_Gabelentz
+		von_Halkett von_Hannover von_Hessen-Darmstadt von_Hessen-Kassel von_Hindenburg von_Hohenzollern von_Holstein-Gottorp von_Hennig von_der_Heydt von_Haupt von_Heyden
+		von_Isenburg-BU_dingen-Meerholz
+		von_Kleefeld von_Knorr von_dem_Knesebeck
+		zur_Lippe
+		MU_ller_von_KO_nigswinter von_Manteuffel von_Mecklenburg-Schwerin von_Mecklenburg-Strelitz von_Moltke von_Madai
+		von_Niezychowski von_Nordeck_zur_Rabenau
+		von_Oldenburg
+		von_PlO_nnies
+		Riedesel_zu_Eisenbach von_Rauch von_Ravensberg von_Reuter von_Richthofen von_Roon von_Radowitz von_Reichenbach
+		von_Sachsen-Altenburg von_Sachsen-Coburg-Gotha von_Sachsen-Meiningen von_Sachsen-Weimar-Eisenach von_Schlieffen von_Schwarzburg von_Spee zu_Stolberg-Wernigerode von_Sybel von_Solms-Laubach von_Stein von_StO_ssert von_Spesshardt
+		Treusch_von_Butlar von_Tirpitz von_ThU_nen
+		von_Vahlkampf
+		von_Waldeck_und_Pyrmont von_Wettin von_Wrangel von_Willich von_Watzdorf Waitz_von_Eschen
+		von_Zieten von_Zwierlein
+		
+		von_Jons
+	}	
+	common_last_names={
+		Abegg Anger Arendt Ackermann Arntz
+		Behncke Boermel Borsig Brill Brommy Blum Baltzer Bever BA_hren Bischoff Brauweiler BrockmU_ller Broix BU_rgers BO_cking Biedermann BlO_de BO_hler Brockhaus Bauer Birnbaum Brunck Buff Bolten Briegleb Bardorf
+		Clebsch Cordemann Culemeyer Caspers Cetto Clossett Colonius Compes Carriere Cretzschmar Cratz Cropp
+		Dahlmann Dieffenbach Diestel Dreyer Droste Depre Dietze Detering Dietz DuprE_ Dresel
+		Ehlert Eichelbaum Eckert Eisenstuck Eissengarthen Elwert Emmerling Ettlinger Erichson
+		Feyerabend Fritsch Friedenthal Fabarius Forst Frings Freudentheil Felsing FlU_gge
+		Garbe Gerlach Gloger Goerdeler Goetz Grebe Groener Groth Gerlich Giersberg Glaubrech Gail GU_lich
+		Hagen Harkort Harych Hassenpflug Heppendorf Hirschfeld Hoffmann Hubatsch Hammer Hecker Herrmann HO_nninghaus Haustein Hensel Henkel Hildebrand Hallwachs Heldmann Hestermann Hesse Hoffmann HU_gel Hollandt
+		Jastrow Johow Junghans Jahn Jordan Jungbluth Jungblutte Jucho
+		Katz Kempner Kirchweger Koffka Krohn Krummnow Knocke Kehl Keiffenheim Kullich KU_hne Kahlert Kinscherf Kloch Kierulff Kriegk Kugler
+		Lasker Leistikow Leonhardt Ludendorff Lehmkuhl Laist Lamberts Landfermann Leue Lingmann Lintz Lederer Lehne Lotheissen Leisler Lang
+		Mittwoch Moll Mallmann Marcks Maurer MU_lhens Minckwitz Mohr Manecke Marktscheffel Mappes
+		NettstrA_tter Neuerburg Neunzig Nohl
+		Olbers Oetker
+		Pelz Pax Peiser Plange Pagenstecher Peters Pfeiffer Philippi Prinzen Proff PflU_ger Pitschaft PrA_torius Preusser Pogge Pohle
+		Rehfisch Roepke RU_ckert Ronge Reichensperger Reinartz Rittinghausen Ritz Rewitzer Rauschenplat RO_ssler RU_hl Ramspeck Rauschers Reh Runge Reinganum
+		Scherfke Schimmelfennig Schmidt Schree Schurz Schnitter SchlO_ffel Stahlschmidt Schwetschke Schnake Schneider Schuchart SchU_renberg Schigard Scheidt Scherer Schleicher SchlO_sser Schmitz SchO_ller Stapper Stedmann Strom Schaffrath SchlU_ter Schnabel Schwarzenberg Steuernagel Stoll Strecker Schleiden Schlettwein Schnelle Stever Sonnenkalb Souchay
+		Treibe TU_rke Theyssen Thilmany Trombetta
+		Umbscheiden
+		Venedy Vogt Volhard Varrentrapp Vorwerck
+		Weydemeyer Wittfeld Woehlert Wiesner Wislicenus Wachendorf Waldschmidt Weckbecker Welcker WerlE_ Wesendonck Weilhelmi Winneritz Wirtz Wolfermann Wigard Wuttke Wippermann Wentorp Wendhausen
+		Zerrahn ZO_ller Zell Zimmermann ZachariA_ Zulauf Zais
+	}
+
+	male_regal_first_names = {
+		Adalbert
+		Friedrich Friedrich_Wilhelm
+		Georg
+		Heinrich
+		Joachim
+		Oskar
+		Sigismund
+		Wilhelm Waldermar
+	}
+	female_regal_first_names = {
+		Augusta
+		Charlotte
+		Elisabeth
+		Luise
+		Margarethe
+		Sophie
+		Victoria
+	}
+
 	graphics = european
 	ethnicities = {
 		1 = caucasian
@@ -7756,7 +9914,7 @@ ulster_scots={
 cossack={
 	color= hsv{ 0.16 0.32 0.42 }
 	religion = orthodox
-	traits = { east_slavic european_heritage }
+	traits = { east_slavic european_heritage nomadic }
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -8348,8 +10506,333 @@ pontic_greek={
 	graphics = european
 }
 
-#uralic_minor
+#romani_and_gypsies
+kale={
+	color= hsv{ 0.24 0.16 0.90 }
+	religion = syncretic
+	traits = { south_asian_heritage hindustani nomadic }
+	male_common_first_names={
+		Bhagwant
+		Bhai
+		Durga
+		Fateh
+		Harsha
+		Hayat
+		Hussain
+		Jawapala
+		Malik
+		Mirza_Raja
+		Muhammad
+		Rai
+		Rao
+		Sardar
+		Sawai
+		Umar
+		Veer
+	}
+	female_common_first_names = {
+		Gayatri
+		Indira
+		Kishore
+		Maji
+		Marudhar
+	}	
+	noble_last_names = {
+		Gujar
+		Jethwa
+		Kunwar
+		Raksel
+	}
+	common_last_names={
+		Bachittar_Singh
+		Bhatti
+		Qaim
+		Shekha
+		Singh
+		Tiwana
+		ur_Rahman
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+roma={
+	color= hsv{ 0.24 0.16 0.80 }
+	religion = syncretic
+	traits = { south_asian_heritage hindustani nomadic }
+	male_common_first_names={
+		Bhagwant
+		Bhai
+		Durga
+		Fateh
+		Harsha
+		Hayat
+		Hussain
+		Jawapala
+		Malik
+		Mirza_Raja
+		Muhammad
+		Rai
+		Rao
+		Sardar
+		Sawai
+		Umar
+		Veer
+	}
+	female_common_first_names = {
+		Gayatri
+		Indira
+		Kishore
+		Maji
+		Marudhar
+	}	
+	noble_last_names = {
+		Gujar
+		Jethwa
+		Kunwar
+		Raksel
+	}
+	common_last_names={
+		Bachittar_Singh
+		Bhatti
+		Qaim
+		Shekha
+		Singh
+		Tiwana
+		ur_Rahman
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+romanichal={
+	color= hsv{ 0.24 0.16 0.70 }
+	religion = syncretic
+	traits = { south_asian_heritage hindustani nomadic }
+	male_common_first_names={
+		Bhagwant
+		Bhai
+		Durga
+		Fateh
+		Harsha
+		Hayat
+		Hussain
+		Jawapala
+		Malik
+		Mirza_Raja
+		Muhammad
+		Rai
+		Rao
+		Sardar
+		Sawai
+		Umar
+		Veer
+	}
+	female_common_first_names = {
+		Gayatri
+		Indira
+		Kishore
+		Maji
+		Marudhar
+	}	
+	noble_last_names = {
+		Gujar
+		Jethwa
+		Kunwar
+		Raksel
+	}
+	common_last_names={
+		Bachittar_Singh
+		Bhatti
+		Qaim
+		Shekha
+		Singh
+		Tiwana
+		ur_Rahman
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+sinti={
+	color= hsv{ 0.24 0.16 0.60 }
+	religion = syncretic
+	traits = { south_asian_heritage hindustani nomadic }
+	male_common_first_names={
+		Bhagwant
+		Bhai
+		Durga
+		Fateh
+		Harsha
+		Hayat
+		Hussain
+		Jawapala
+		Malik
+		Mirza_Raja
+		Muhammad
+		Rai
+		Rao
+		Sardar
+		Sawai
+		Umar
+		Veer
+	}
+	female_common_first_names = {
+		Gayatri
+		Indira
+		Kishore
+		Maji
+		Marudhar
+	}	
+	noble_last_names = {
+		Gujar
+		Jethwa
+		Kunwar
+		Raksel
+	}
+	common_last_names={
+		Bachittar_Singh
+		Bhatti
+		Qaim
+		Shekha
+		Singh
+		Tiwana
+		ur_Rahman
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+yenish={
+	color= hsv{ 0.24 0.16 0.50 }
+	religion = catholic
+	traits = { north_german_minor european_heritage nomadic }
+	male_common_first_names={
+		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
+		Bernhard Benignus
+		Christian
+		Edmund Eduard Engelbert Ernst Erwin Emil Eugen Emanuel
+		Ferdinand Franz Friedrich Felix
+		Gebhard Gerhard Gottfried Gustav Gunther Gottleib
+		Heinrich Hermann Horst Hugo
+		Jakob Joachim Johann Joseph Julius
+		Karl Konrad Kurt Kasimir Klemens
+		Leonhard Leopold Lorenz Lothar Ludwig Luitpold
+		Maximilian Michael Martin Moritz
+		Nikolaus Nepomuk
+		Otto
+		Peter Paul
+		Reinhold Rudolf Rupprecht
+		Stefan Siegmund
+		Theodor Thomas Theophil
+		Valentin Viktor Vitus Veit
+		Walter Werner Wilhelm Wolfgang Walther
+		Xaver
+	}
+	female_common_first_names = {
+		Anna Adelgunde Alexandra Augusta
+		Charlotte
+		Dorothea Dietlinde
+		Elisabeth
+		Gundelinde
+		Helmtrude
+		Karoline
+		Ludwiga Luise Ludovika
+		Maria Maria_Anna Maria_Beatrix Mathilde
+		Notburga
+		Therese
+		Ulrike
+		Wiltrud Wilhelmine
+	}	
+	noble_last_names = {
+		d_Aspre_von_Hoobreuk von_Adelmann von_Andlaw-Birseck
+		von_Baader von_Baden von_Benedek von_Brudermann von_Bohm-Ermolli von_Bissingen-Nippenburg von_Berlichingen von_Binder von_Buss von_Bosch von_Bomhard von_Bothmer von_Brug von_Berchem von_Le_Bret-Nucourt von_Benzino von_Bibra von_Baligand
+		Cotton_von_Cottendorf von_Clam-Gallas von_Closen von_Crailsheim
+		von_Denis von_Dietrich von_Diemar von_Deroy von_DU_rckheim-Montmartin von_DU_well
+		von_Endres
+		von_Fleischmann von_Fray von_Freyen-Seyboltstorff von_Fels von_Froberg-Montjoye von_Freyberg-Eisenberg von_Fleury_auf_Hilling von_Fritsch
+		von_Gablenz von_Grunne von_Giech von_Geldern von_Greis von_Gumppenberg von_Grauvogl von_Godin von_Gonnermann von_Gebsattel von_Gravenreuth von_Gramich von_Grossschedel von_GO_riz von_Gyssling
+		von_Hartmann von_Haynau von_Helmholtz von_Hertel von_Hess von_Hohenhausen von_Hortstein von_Hotzendorf zu_Hohenlohe von_Habsburg von_Hegnenberg-Dux von_Herder von_Hafner Hofer_von_Lobenstein von_Hohenlohe-Langenburg von_Hornstein-Bussmannshausen von_Hohenlohe-O_hringen von_Hertling von_Hagens von_Helvig von_Horn von_Hartz von_Hoyos-Sprinzenstein
+		von_Itzstein
+		von_Jeetze
+		Kress_von_Kressenstein von_Kirbach von_Kobratin von_Kettner Keller_von_Schleitheim
+		Leutrum_von_Ertingen von_Lotzbeck von_Lepel von_Leonrod von_Lindheimer von_Lossow
+		von_Maffei von_Mayersbach von_Montgelas von_Mohl von_Massenbach von_Meldegg von_MalaisE_ von_Madroux von_Maillinger von_Menz
+		von_Neipperg von_Nesselrode-Hugenpoet von_Neubeck von_Nagel_zu_Aichberg von_Mieg
+		von_Oettigen-Wallerstein
+		Poschinger_von_Frauenau von_Pauli von_Pfeufer von_Pranckh von_Parseval von_Pechmann von_Pfetten-Arnbach von_Preysing-Moos zu_Pappenheim von_Pillement
+		von_Quadt-Wykradt-Isny
+		von_Rotenhan von_Zu_Rhein von_Rinecker von_RO_mer von_Rechberg von_La_Roche-Starkenfels Rinck_von_Baldenstein von_Rochau RU_dt_von_Collenberg von_Ruckteschell von_Reichlin-Meldegg von_Reysing
+		Schnorr_von_Carolsfeld von_Schonburg von_Scherer von_Struve von_sch_Onborn-Wiesentheid von_Seutter von_Sternenfels von_Soiron von_Stockhorner-Starein von_StO_sser von_Speti von_Stockum-Sternfels von_SchO_nprunn von_Seyssel_d_Aix von_Safferling von_Schuh von_Le_Suire von_Saporta
+		von_Tegetthoff von_der_Tann von_Thurnberg von_TA_uffenbach von_der_Tann-Rathsamhausen
+		von_Uchatius
+		Vogt_von_Hunoltstein von_VarnBU_ler von_Vallade
+		von_Weigert von_Wittelsbach von_Wurttemberg von_Wrede von_WA_chter von_Waechter-Spittler von_WO_llwarth von_Waldburg-Zeil von_Wirthmann von_WalderstO_tten von_Wallbrunn von_Welsch von_Winneberger
+		von_Xylander
+		von_Zahringen von_Zandt von_Zwanziger
+	}
+	common_last_names={
+		Auerbach Aldinger
+		Bachmann Beck-Rzikowsky Blos Barchet Bantlin Bech Bassermann Baum Bissing Bleidorn Beckmund Bedall
+		Christmann CarovE_ Correck Cella
+		Dankl Dauer Dollmann Depre Doll Deusch Dennig Deuringer Denzler Deppert
+		Eisner Eppelsheimer Exter Eppelsheim Eisenmann Edel Ermarth Ehrensberger Eder
+		Foerderreuther Frauendorfer Friedel Frommknecht Federer Fetzer Frueth Fallenstein Frech Fasbender
+		Geiss Gerber Goering Gollwitzer Graff Groeschel Groth Grohe Gervinus GA_tschenberger Gloss_ Gruny
+		Hainisch Haus Held Hellpach Helmerich Hoffmann Homberger Hummel Hepp HA_gelin Hagen HA_usser Hecker Helbing Helmreich Hoff HO_genstaller Horadam Hinzler Hitzen Hopffer Hebberling
+		Ipfelkofer
+		Junghannss
+		Kessler Kohler Kolb Keil KO_lliker Kapp KlU_ber Kemmer Killermann Kiessling Krazeisen
+		Lakner Lehmkuhl LanghA_user
+		Mergenthaler Miklas MO_gling Mohl Murschel Mack Mathy Mez Mittermaier Margreither
+		Nebenius Neumann Neuffer
+		Olbers Orff Obermair
+		Platner Prang Press Platner Pfaff Pauer Prand Pfluegl Pesenecker
+		Quitzmann
+		Rahl Remmele Rosenhaupt Riedl RO_dinger Reyscher Ruoff Rau Richter Reisterer
+		Schmitt Schobber Seitz Steeb Stolzer Strauss Sailer Spatz Schott Seeger Stierlen Schweickhardt SchU_bler Sachs Schaaff Scheffold Seltzam Siegler Speyerer Solger Seekirchner Schmauss Schmidtler
+		Trient Trunk Teutsch Titus Tafel
+		Unglaub Uhland Ullrich Usselmann
+		Voelcker Veiel
+		Wagner Wittmann Willich Wolf Wiedmann Walchner Welcker Weller Welte Werner Winter Weiss-Jonak
+		Zeller Zenger Zink Zentner Zittel Zerreiss
+	}
+	male_regal_first_names={
+		Albert
+		Ernst
+		Franz Felix
+		Karl Karl_Ludwig
+		Lugwig
+		Maximilian
+		Otto
+		Rudolf
+	}
+	female_regal_first_names={
+		Amalie Adelheid
+		Charlotte
+		Eugenie Elisabeth
+		Gisela
+		Maria_Theresia Maria_Josepha
+		Theresia
+		Sophie
+	}
+	regal_last_names={
+		von_Habsburg von_Hohenberg
+		von_Meran
+		von_Wittelsbach
+		von_Zahringen
+	}
 
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+#uralic_minor
 ingrian={
 	color= hsv{ 0.07 0.23 0.99 }
 	religion = orthodox
@@ -9279,3 +11762,99 @@ veps={
 		1 = caucasian
 	}
 }
+#caucasian
+chechen={
+	color= hsv{ 0.17 0.26 0.99 }
+	religion = sunni
+	traits = { caucasus_group middle_eastern_heritage }
+	male_common_first_names={
+		Aslan
+		Hamza
+		Jamal_al-Din
+		Mansur
+		Mohammad
+		Murad
+		Ruslan
+		Shamil
+		Soferbi
+		Zamudin
+	}
+	female_common_first_names = {
+		Albina
+		Irina
+		Jilfidan
+		Maria
+		Melek
+		Nadia
+		Svetlana
+		Tamara
+	}	
+	noble_last_names = {
+		Cherkassky
+		Chetao
+		Dipsheu
+		Kuadzhe
+		Tkhaghapseu
+	}
+	common_last_names={
+		Bek
+		Chemiakin
+		Guchev
+		Mollah
+		Nafash
+		Natkho
+		Shaaban
+	}
+	ethnicities = {
+		1 = north_caucasian
+	}
+	graphics = european
+}
+dagestani={
+	color= hsv{ 0.17 0.26 0.99 }
+	religion = sunni
+	traits = { caucasus_group middle_eastern_heritage }
+	male_common_first_names={
+		Aslan
+		Hamza
+		Jamal_al-Din
+		Mansur
+		Mohammad
+		Murad
+		Ruslan
+		Shamil
+		Soferbi
+		Zamudin
+	}
+	female_common_first_names = {
+		Albina
+		Irina
+		Jilfidan
+		Maria
+		Melek
+		Nadia
+		Svetlana
+		Tamara
+	}	
+	noble_last_names = {
+		Cherkassky
+		Chetao
+		Dipsheu
+		Kuadzhe
+		Tkhaghapseu
+	}
+	common_last_names={
+		Bek
+		Chemiakin
+		Guchev
+		Mollah
+		Nafash
+		Natkho
+		Shaaban
+	}
+	ethnicities = {
+		1 = north_caucasian
+	}
+	graphics = european
+}
+
