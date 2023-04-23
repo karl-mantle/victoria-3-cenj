@@ -1,4 +1,4 @@
-AAC = { #Aachen
+﻿AAC = { #Aachen
     flag_definition = {
         coa = AAC
         subject_canton = AAC
@@ -527,7 +527,7 @@ BAR = { #Bar
         }
     }
 }
-BER = { #Berry
+BRY = { #Berry
     flag_definition = {
         coa = BER
         subject_canton = BER
@@ -558,7 +558,7 @@ BER = { #Berry
         }
     }
 }
-BLG = { #Bologna
+BLN = { #Bologna
     flag_definition = {
         coa = BLG
         subject_canton = BLG

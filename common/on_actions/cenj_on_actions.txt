@@ -115,7 +115,7 @@ change_pop_culture_on_action = {
             TOCULTURE = "newfoundlander"
             LIMIT = "THIS = s:STATE_NEWFOUNDLAND"
         }
-        change_pop_culture_trait = {
+        change_pop_culture_trait_state = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = celtic_people"
             TOCULTURE = "newfoundlander"
             LIMIT2 = "THIS = s:STATE_NEWFOUNDLAND"
@@ -250,7 +250,7 @@ change_pop_culture_on_action = {
         # German
         change_pop_culture_technology = {
             TECHNOLOGY = "pan-nationalism"
-            FROMCULTURE = "has_discrimination_trait = german-speaking"
+            FROMCULTURE = "has_discrimination_trait = german_speaking"
             TOCULTURE = "yankee"
             OWNERCULTURES = "country_has_primary_culture = cu:german"
         }

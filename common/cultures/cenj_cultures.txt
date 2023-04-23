@@ -10507,6 +10507,117 @@ pontic_greek={
 }
 
 #romani_and_gypsies
+fantefolk={
+	color= rgb{ 105 39 70 }
+	religion = syncretic
+	traits = { scandinavian_culture_group european_heritage }
+	male_common_first_names={
+		Adrian Alfred Amund Anders Andreas Arne Arve August
+		Bernt Bernhard Birger Bj_Orn Blostrup
+		Carl Caspar Christen Christian Christopher Cort
+		Dagfin
+		Einar Elias Emil Erik Eggert Erich
+		Fordel Fredrik
+		Georg Gerhard Gustav
+		Haakon Hans Hans_Magne Harald Herman
+		Ivar Ingvald
+		Jacob Johan Johannes J_Orgen Jon
+		Karl Knud
+		Lauritz Ludvig
+		Magne Mathias 
+		Nils
+		Ogmund Olaf Olav Ole Osvald Otto
+		Palme Peter Petter
+		Roar
+		Sigurd
+		Theodor Thomas
+		Zacharias
+	}
+	female_common_first_names = {
+		Alette Alvide Anna Anne Ane Augusta
+		Barbara Bertha Birgitte Berthe
+		Camilla Catharina Christine Christiane Conradine
+		Dorothea
+		Elisabeth Elise Eldrid Ermegaard Elen
+		Gustava
+		Hanna Halldis Helga Hendrikke Hermana Hilchen
+		Inga Inger Ingeborg Irene Ingebor
+		Jacobine Jensine Josephine Jensenette Johanne
+		Kari Karen Karoline Kristine
+		Lucia
+		Maren Martha Marthe Margrethe Marie Marit Maria
+		Oline
+		Nicoline
+		Petra Petrine
+		Ragnhild
+		Sara Sophie Susanne Sanna Sigrid Siri
+		Thea Tora
+	}	
+	noble_last_names = {
+		Anker
+		Bagge Benkestok Bjelke Brodtkorb
+		Cappelen Cloumann Collett
+		Darre de_Tonsberg
+		Gyldenkrantz
+		Haslum Holck
+		Kane Knagenhjelm Kollerud Konow Krohg
+		Lovenskiold
+		Mellebye Meltzer Midelfart Morgenstierne Motzfeldt
+		Prydz
+		Rosenvinge
+		Skanke Stabell Steenstrup Stoltenberg Sverdrup
+		von_Holstein-Glucksburg von_Klenow von_Westen_Sylow_Koren
+		Wedel-Jarlsberg Werenskiold Wergeland
+		Zeiner-Gundersen Zwilgmeyer
+	}
+	common_last_names={
+		Andersen Andreassen Adeler
+		Balchen Berg Berge Bloch Borresen Bratzland Brentzon
+		Carlsen Carstensen Christiansen
+		Dahl
+		Egge
+		Falsen Fleicher Frisvold
+		Gjeranger Gundersen
+		Hansen Henriksen Hjermann Hund Huvestad
+		Jaatun Jacobsen Jensen Johansen Johannessen J_Orgensen
+		Kaldager Karlsen
+		Lambrechts Larsen Loftesnaes Lie Lund Lundegaard
+		Moen Munthe M_Oller M_Orch
+		Nielsen Nilsen
+		Olsen
+		Pedersen Pettersen
+		Rein Rolfsen Rye
+		Schmidt Sissener S_Orensen
+		Thorsen
+		Vika
+		Weidemann Wiborg With
+	}
+	male_regal_first_names = {
+		Erik
+		Haakon Harald
+		Magnus
+		Olav
+		Sverre
+	}
+	female_regal_first_names = {
+		Anna Astrid
+		Ingrid
+		Kristine
+		Marie Margrete Maud
+		Ragnhild
+		Sofie Sonja
+	}
+	regal_last_names = {
+		Bernadotte
+		Coucheron_Aamot
+		von_Glucksburg
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
 kale={
 	color= hsv{ 0.24 0.16 0.90 }
 	religion = syncretic

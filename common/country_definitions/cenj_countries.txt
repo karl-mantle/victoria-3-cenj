@@ -104,14 +104,14 @@ BAR = { #Bar
 	cultures = { french }
 	capital = STATE_FRANCHE_COMTE
 }
-BER = { #Berry
+BRY = { #Berry
 	color = { 85 65 215 }
 	country_type = recognized
 	tier = principality
 	cultures = { french }
 	capital = STATE_LIMOUSIN
 }
-BLG = { #Bologna
+BLN = { #Bologna
 	color = { 236 95 0 }
 	country_type = recognized
 	tier = city_state
@@ -249,7 +249,7 @@ EPI = { #Epirus
 	country_type = recognized
 	tier = principality
 	cultures = { greek }
-	capital = STATE_THESSALY
+	capital = STATE_THESSALIA
 }
 ETR = { #Etruria
 	color = { 114 154 143 } 
@@ -332,7 +332,7 @@ HRZ = { #Herzegovina
 	color = { 72 113 160 }
 	country_type = recognized
 	tier = principality
-	cultures = { bosnian }
+	cultures = { serbian }
 	capital = STATE_BOSNIA
 }
 HSC = { #Gaeldom
@@ -584,7 +584,7 @@ NOL = { #Northumberland
 	color = { 83 149 105 }
 	country_type = recognized
 	tier = principality
-	cultures = { english }
+	cultures = { british }
 	capital = STATE_YORKSHIRE
 }
 NOV = { #Novgorod
@@ -605,7 +605,7 @@ NSS = { #New Providence
 	color = { 66 51 70 }
 	country_type = recognized
 	tier = principality
-	cultures = { english }
+	cultures = { british }
 	capital = STATE_BAHAMAS
 }
 NUM = { #Nuremberg
@@ -682,7 +682,7 @@ PRY = { #Port Royal
 	color = { 151 47 32 }
 	country_type = recognized
 	tier = principality
-	cultures = { english }
+	cultures = { british }
 	capital = STATE_JAMAICA
 }
 PSK = { #Pskov
@@ -864,7 +864,7 @@ TOR = { #Tortuga
 	color = { 67 81 55 }
 	country_type = recognized
 	tier = principality
-	cultures = { french english }
+	cultures = { french british }
 	capital = STATE_HAITI
 }
 TOU = { #Toulouse
