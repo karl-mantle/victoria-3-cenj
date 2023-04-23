@@ -7,7 +7,7 @@ I have created this mod for two reasons; one is that I wanted to see if the migr
 The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.
 
 # Features
-*Current version number is 0.0.8 - see changelog for detailed changes*
+
 ## Current
 
 - 140 new countries in North America and Europe
