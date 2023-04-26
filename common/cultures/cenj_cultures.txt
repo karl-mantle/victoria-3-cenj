@@ -1006,6 +1006,266 @@ luso_american={
 	}
 	graphics = generic
 }
+polish_american={
+	color= hsv{ 0 0.22 0.5 }
+	religion = catholic
+	traits = { west_slavic european_heritage }
+	male_common_first_names={
+		Adam
+		Aleksander
+		Antoni
+		Boleslaw
+		Bonawentura
+		Bronislaw
+		Dezydery
+		Edmund
+		Edward
+		Emil
+		Eustachy
+		Felicjan
+		Franciszek
+		Gustaw
+		Henryk
+		Ignacy
+		Jakub
+		Jan
+		Jedrzej
+		Juliusz
+		Jozef_2
+		Karol
+		Kazimierz
+		Klemens
+		Konstanty
+		Lech
+		Leon_2
+		Leopold
+		Lucjan
+		Ludwik
+		Maciej
+		Marceli
+		Marian
+		Mariusz
+		Melchior
+		Michal
+		Mieczyslaw
+		Rodryg
+		Roman
+		Romuald
+		Samuel
+		Stanislaw
+		Stefan
+		Tadeusz
+		Tomasz
+		Waclaw
+		Wilhelm
+		Witold
+		Wladyslaw
+		Wojciech
+		Zygmunt
+	}
+	female_common_first_names = {
+		Anna
+		Barbara
+		Eleonora
+		Elzbieta
+		Emilia
+		Ewelina
+		Franciszka
+		Gertruda
+		Helena
+		Izabela
+		Jozefa
+		Karolina
+		Konstancja
+		Maria
+		Marianna
+		Paula
+		Regina
+		Stefania
+		Teresa
+		Ursula
+		Zofia
+	}	
+	noble_last_names = {
+		Bor-Komorowski
+		Dunin
+		Glowacki
+		Hauke-Boask
+		Iwaszkiewicz
+		Pilsudski
+		Plater
+		Potocki
+		Radziwill
+		Rola-Zymierski
+		Rydz-Smigly
+		Sapieha
+		Tutkowski
+		Wielopolski
+		Wieniawa-Dlugoszowski
+		Maklowicz
+		Lankowski
+	}
+	common_last_names={
+		Bem
+		Brzoska
+		Bukowicz
+		Chalasinski
+		Chlaposwski
+		Chlopicki
+		Chrzanowski
+		Dabrowski
+		Dembinski
+		Drzymala
+		Fabrycy
+		Idzikowski
+		Jasinski
+		Klicki
+		Konopczynski
+		Krukowiecki
+		Kruszewski
+		Kozlowski
+		Langiewicz
+		Madalinski
+		Mieroslawski
+		Mikolajczyk
+		Mokronowski
+		Niepokolczycki
+		Nowak
+		Ostrowski
+		Pac
+		Poniatowski
+		Preadzynski
+		Rokossowski
+		Rybinski
+		Rozicky
+		Sanguszko
+		Skrzynecki
+		Soltyk
+		Sowinski
+		Taczaneowski
+		Traugutt
+		Wawrzecki
+		Wybicki
+		Wysocki
+		Zajaczek
+		Zaluski
+		Zamoyski
+		Zeligowski
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+russian_american={
+	color= hsv{ 0.35 0.40 0.37 }
+	religion = orthodox
+	traits = { east_slavic european_heritage }
+	male_common_first_names={
+		Aleksandr Alexei Andrei Anton
+		Boris
+		Dmitry
+		Fyodor
+		Gennady Giorgi Grigoriy
+		Igor Ivan
+		Kirill Konstantin
+		Lavr Leonid Lev
+		Maxim Mikhail
+		Nikita Nikolai
+		Oleg
+		Pavel Pyotr
+		Roman
+		Semyon Sergei
+		Valery Vasily Viktor Vladimir Vladislav
+		Yegor Yevgeny Yuri
+	}
+	female_common_first_names = {
+		Aleksandra Anastasiya Anna Avdotya
+		Daria
+		Elena Elizabeta Evgenia Evlalia
+		Kira
+		Lydia Lyobov
+		Maria
+		Olga
+		Sofia
+		Tatiana
+		Varvara Vera Yekaterina Yulia
+		Xenia
+		Zinaida
+	}	
+	noble_last_names = {
+		Adlerberg
+		Barclay_de_Tolly Bestuzhev-Ryumin Bulatovich Buturlin
+		Dolgorukov Demidov
+		Fikelmon
+		Greig Gruzinsky Golitsyn
+		Ignatiev Ivelich
+		Kamensky Kelch Kern Kushelev-Bezborodko Kutaisov Kurakin
+		Hoyningen-Huene
+		Lopukhin Lobanov-Rostovsky
+		Matveyev von_Mohrenheim Meshchersky
+		Orlov
+		Pistohlkors Putyatin
+		Rostopchin Rumyantsev Romanov
+		Saltykov
+		Tolstoy
+		Volkonsky
+		Witte
+		Yengalychev Yusupov Yuryevsky
+	}
+	common_last_names={
+		Alexseyev Antonov Azarov
+		Badanov Brusilov Budyonny
+		Chibisov
+		Denikin Dragomirov
+		Frolov
+		Golovin Grishin Gurko
+		Ivanov
+		Kasso Kolchak Konev Konstantinov Kornilov Kuropatkin
+		Lazarev
+		Makarov Menshikov 
+		Nakhimov Nebogatov Nikolaevich
+		Ostrovsky
+		Pavlov Putyatin
+		Rozhestvensky
+		Shuvalov Skobelev Surkov Sorokin
+		Tukhachevsky
+		Vorontsov Voroshilov 
+		Yegorov Yudenich
+		Zavoyko
+	}
+	male_regal_first_names = {
+		Aleksandr Alexei
+		Ivan
+		Kirill Konstantin
+		Mikhail
+		Nikolai
+		Pavel Pyotr
+	}
+	female_regal_first_names = {
+		Anastasiya Anna
+		Elena Elizabeta Evgenia
+		Kira
+		Maria
+		Olga
+		Xenia
+		Yekaterina
+	}
+	regal_last_names = {
+		Belevsky-Zhukovsky
+		Konstantinovich
+		Mikhailovich
+		Nikolaevich
+		Pavlovich Paley
+		Romanov
+		Vladimirovich
+	}
+
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
 scots_american={
 	color={ 72 79 127 }
 	religion = protestant
@@ -1124,6 +1384,7 @@ scots_american={
 	}
 	graphics = european
 }
+
 #canadian_minor
 newfoundlander={
 	color= hsv{ 0.35 0.58 0.34 }
@@ -2064,6 +2325,295 @@ irish_canadian={
 	ethnicities = {
 		1 = caucasian
 	}
+}
+luso_canadian={
+	color= hsv{ 0.50 0.53 0.40 }
+	religion = catholic
+	traits = { lusophone mestizo_heritage }
+	male_common_first_names={
+		Afonso
+		Antonio_3
+		Artur
+		Augusto
+		Aurelio_2
+		Benjamin
+		Carlos
+		Celso
+		Custodio
+		Candido
+		Delfim
+		Deodoro
+		Eduardo
+		Emilio_2
+		Epitacio
+		Ernesto
+		Federico
+		Fernando
+		Filipe
+		Floriano
+		Francisco_Xavier
+		Francisco_de_Paula
+		Fabio_2
+		Gaspar
+		Gastao
+		Getulio
+		Henrique
+		Hermes
+		Humberto
+		Isaias
+		Joaquim
+		Jose
+		Joao
+		Juscelino
+		Julio_2
+		Luis_2
+		Manuel
+		Marco_Antonio_2
+		Miguel
+		Mario_2
+		Nereu
+		Nilo
+		Paulo
+		Pedro
+		Prudente
+		Silviano
+		Tancredo
+		Urbano
+		Venceslau
+		Vital
+	}
+	female_common_first_names = {
+		Adelia
+		Amalia_2
+		Beatriz
+		Carmen
+		Cristina
+		Domitila
+		Emilia
+		Francisca
+		Isabel
+		Josefina
+		Julia
+		Maria
+		Mariana
+		Narcisa
+		Teresa
+		Veridiana
+		Violanta
+	}	
+	noble_last_names = {
+		Boaventura
+		de_Beaurepaire-Rohan
+		de_Braganca
+		de_Carvalho
+		de_Lima_e_Silva
+		da_Camara
+		da_Costa
+		da_Fonseca
+		de_Aguiar
+		de_Barros
+		de_Itapevi
+		de_Melo
+		de_Noronha
+		de_Oliveira
+		de_Orleans
+		de_Souza_Neto
+		de_Suruf
+		de_Castro
+		de_Alcantara
+		da_Silva_Prado
+	}
+	common_last_names={
+		Barreto
+		Bernardes
+		Bittencourt
+		Brandao
+		Bras
+		Cabral_da_Silva
+		Caldwell
+		Constant
+		Costa
+		Dutra
+		Fragoso
+		Frontin
+		Galvao
+		Jordao_2
+		Labatut
+		Lopes
+		Maciel
+		Mallet
+		Marques
+		Marques_de_Sousa
+		Maurity
+		Moreira
+		Osorio_2
+		Peixoto
+		Pena
+		Pessoa
+		Pinto
+		Rondon
+		Saldanha_da_Gama
+		Santos
+		Soares
+		Tavares
+		Vargas
+		Wandenkolk
+	}
+	ethnicities = {
+		1 = south_american
+	}
+	graphics = generic
+}
+polish_canadian={
+	color= hsv{ 0 0.22 0.5 }
+	religion = catholic
+	traits = { west_slavic european_heritage }
+	male_common_first_names={
+		Adam
+		Aleksander
+		Antoni
+		Boleslaw
+		Bonawentura
+		Bronislaw
+		Dezydery
+		Edmund
+		Edward
+		Emil
+		Eustachy
+		Felicjan
+		Franciszek
+		Gustaw
+		Henryk
+		Ignacy
+		Jakub
+		Jan
+		Jedrzej
+		Juliusz
+		Jozef_2
+		Karol
+		Kazimierz
+		Klemens
+		Konstanty
+		Lech
+		Leon_2
+		Leopold
+		Lucjan
+		Ludwik
+		Maciej
+		Marceli
+		Marian
+		Mariusz
+		Melchior
+		Michal
+		Mieczyslaw
+		Rodryg
+		Roman
+		Romuald
+		Samuel
+		Stanislaw
+		Stefan
+		Tadeusz
+		Tomasz
+		Waclaw
+		Wilhelm
+		Witold
+		Wladyslaw
+		Wojciech
+		Zygmunt
+	}
+	female_common_first_names = {
+		Anna
+		Barbara
+		Eleonora
+		Elzbieta
+		Emilia
+		Ewelina
+		Franciszka
+		Gertruda
+		Helena
+		Izabela
+		Jozefa
+		Karolina
+		Konstancja
+		Maria
+		Marianna
+		Paula
+		Regina
+		Stefania
+		Teresa
+		Ursula
+		Zofia
+	}	
+	noble_last_names = {
+		Bor-Komorowski
+		Dunin
+		Glowacki
+		Hauke-Boask
+		Iwaszkiewicz
+		Pilsudski
+		Plater
+		Potocki
+		Radziwill
+		Rola-Zymierski
+		Rydz-Smigly
+		Sapieha
+		Tutkowski
+		Wielopolski
+		Wieniawa-Dlugoszowski
+		Maklowicz
+		Lankowski
+	}
+	common_last_names={
+		Bem
+		Brzoska
+		Bukowicz
+		Chalasinski
+		Chlaposwski
+		Chlopicki
+		Chrzanowski
+		Dabrowski
+		Dembinski
+		Drzymala
+		Fabrycy
+		Idzikowski
+		Jasinski
+		Klicki
+		Konopczynski
+		Krukowiecki
+		Kruszewski
+		Kozlowski
+		Langiewicz
+		Madalinski
+		Mieroslawski
+		Mikolajczyk
+		Mokronowski
+		Niepokolczycki
+		Nowak
+		Ostrowski
+		Pac
+		Poniatowski
+		Preadzynski
+		Rokossowski
+		Rybinski
+		Rozicky
+		Sanguszko
+		Skrzynecki
+		Soltyk
+		Sowinski
+		Taczaneowski
+		Traugutt
+		Wawrzecki
+		Wybicki
+		Wysocki
+		Zajaczek
+		Zaluski
+		Zamoyski
+		Zeligowski
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
 }
 scots_canadian={
 	color={ 72 79 127 }
@@ -10510,7 +11060,7 @@ pontic_greek={
 fantefolk={
 	color= rgb{ 105 39 70 }
 	religion = syncretic
-	traits = { scandinavian_culture_group european_heritage }
+	traits = { scandinavian_culture_group european_heritage nomadic }
 	male_common_first_names={
 		Adrian Alfred Amund Anders Andreas Arne Arve August
 		Bernt Bernhard Birger Bj_Orn Blostrup
@@ -10617,7 +11167,6 @@ fantefolk={
 		1 = caucasian
 	}
 }
-
 kale={
 	color= hsv{ 0.24 0.16 0.90 }
 	religion = syncretic

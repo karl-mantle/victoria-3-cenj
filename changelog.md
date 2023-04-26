@@ -1,3 +1,15 @@
+## 0.0.11
+### New
+- rewrote primary culture changing script for italian and german minors
+- dutch, russian and polish new world cultures
+### Changes
+- alsace primary culture changed to south german
+- fantefolk now nomadic
+- fixed flags not working for burgundy, gascony and herzegovina
+- fixed muscovy's borders
+- alsace's romance population from french to comtois (temporary)
+- modified savoy POPs
+- fixed country tag conflicts PAL and ACH
 ## 0.0.10
 ### New
 - made many of the new countries releasable ~90% of them, some need changes

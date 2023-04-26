@@ -260,374 +260,425 @@ change_primary_culture = {
     }
 }
 
-change_primary_culture_german_minor = {
+change_primary_culture_north_german_minor = {
     if = {
         limit = {
             OR = { exists = c:NGF exists = c:GER }
         }
         if = {
-            limit = {
-                    ROOT = c:ANH
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:eastphalian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:BRE
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:low_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:BRA
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:eastphalian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:DZG
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:prussian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:FRM
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:hessian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:HAM
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:low_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:HAN
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:westphalian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:HES
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:hessian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:HEK
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:hessian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:HOL
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:low_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:LIP
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:westphalian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:LUB
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:low_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:MEC
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:low_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:MST
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:low_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:NAS
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:hessian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:OLD
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:low_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:POM
-                    country_has_primary_culture = cu:north_german
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_POMERANIA
+                }
             }
             remove_primary_culture = cu:north_german
             add_primary_culture = cu:pomeranian
         }
         else_if = {
-            limit = {
-                    ROOT = c:COB
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:thuringian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:MEI
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:thuringian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:WEI
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:upper_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:SAX
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:upper_saxon
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:SCM
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:westphalian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:SCW
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:thuringian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:WLD
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:westphalian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:WES
-                    country_has_primary_culture = cu:north_german
-            }
-            remove_primary_culture = cu:north_german
-            add_primary_culture = cu:westphalian
-        }
-        else_if = {
-            limit = {
-                    ROOT = c:SCH
-                    country_has_primary_culture = cu:north_german
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ELBE
+                }
             }
             remove_primary_culture = cu:north_german
             add_primary_culture = cu:low_saxon
         }
         else_if = {
-            limit = {
-                    ROOT = c:PRU
-                    country_has_primary_culture = cu:north_german
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_WESTPHALIA
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ANHALT
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:eastphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_WEST_PRUSSIA
+                }
             }
             remove_primary_culture = cu:north_german
             add_primary_culture = cu:prussian
         }
-    }
-    if = {
-        limit = { OR = { exists = c:SGF exists = c:GER } }
-        if = {
-            limit = {
-                    ROOT = c:AUS
-                    country_has_primary_culture = cu:south_german
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_EAST_PRUSSIA
+                }
             }
-            remove_primary_culture = cu:south_german
-            add_primary_culture = cu:austrian
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:prussian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_RHINELAND
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:rhine_german
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_NORTH_RHINE
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:rhine_german
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_HANNOVER
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SAXONY
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:upper_saxon
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_BRUNSWICK
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:eastphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_HESSE
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:hessian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_MECKLENBURG
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:pomeranian
+        }
+    }
+}
+
+change_primary_culture_south_german_minor = {
+    if = {
+        limit = {
+            OR = { exists = c:SGF exists = c:GER }
         }
         if = {
-            limit = {
-                    ROOT = c:BAD
-                    country_has_primary_culture = cu:south_german
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ALSACE_LORRAINE
+                }
             }
             remove_primary_culture = cu:south_german
             add_primary_culture = cu:alemannic
         }
-        if = {
-            limit = {
-                    ROOT = c:BAV
-                    country_has_primary_culture = cu:south_german
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_AUSTRIA
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austrian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_STYRIA
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austrian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_TYROL
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:tyrolean
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SOUTH_TYROL
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:tyrolean
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_WURTTEMBERG
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:swabian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_BADEN
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:alemannic
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_BAVARIA
+                }
             }
             remove_primary_culture = cu:south_german
             add_primary_culture = cu:bavarian
         }
-        if = {
-            limit = {
-                    ROOT = c:HOH
-                    country_has_primary_culture = cu:south_german
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_FRANCONIA
+                }
             }
             remove_primary_culture = cu:south_german
-            add_primary_culture = cu:swabian
-        }
-        if = {
-            limit = {
-                    ROOT = c:WUR
-                    country_has_primary_culture = cu:south_german
-            }
-            remove_primary_culture = cu:south_german
-            add_primary_culture = cu:swabian
+            add_primary_culture = cu:franconian
         }
     }
 }
-change_primary_culture_italian_minor = {
+
+change_primary_culture_north_italian_minor = {
     if = {
-        limit = { exists = c:ITA }
+        limit = {
+            exists = c:ITA
+        }
         if = {
-            limit = {
-                owner = c:LOM
-                country_has_primary_culture = cu:north_italian
-            }
-            remove_primary_culture = cu:north_italian
-            add_primary_culture = cu:lombard
-        }
-        else_if = {
-            limit = {
-                owner = c:LUC
-                country_has_primary_culture = cu:north_italian
-            }
-            remove_primary_culture = cu:north_italian
-            add_primary_culture = cu:emilian
-        }
-        else_if = {
-            limit = {
-                owner = c:MOD
-                country_has_primary_culture = cu:north_italian
-            }
-            remove_primary_culture = cu:north_italian
-            add_primary_culture = cu:emilian
-        }
-        else_if = {
-            limit = {
-                owner = c:PAR
-                country_has_primary_culture = cu:north_italian
-            }
-            remove_primary_culture = cu:north_italian
-            add_primary_culture = cu:emilian
-        }
-        else_if = { # need to add a check if owns sardinia
-            limit = {
-                owner = c:SAR
-                country_has_primary_culture = cu:north_italian
-            }
-            remove_primary_culture = cu:north_italian
-            add_primary_culture = cu:piedmontese
-            add_primary_culture = cu:sardinian
-        }
-        else_if = {
-            limit = {
-                owner = c:TRE
-                country_has_primary_culture = cu:north_italian
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_VENETIA
+                }
             }
             remove_primary_culture = cu:north_italian
             add_primary_culture = cu:venetian
         }
         else_if = {
-            limit = {
-                owner = c:TUS
-                country_has_primary_culture = cu:north_italian
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SAVOY
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:savoyard
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_EMILIA
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:emilian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_TUSCANY
+                }
             }
             remove_primary_culture = cu:north_italian
             add_primary_culture = cu:tuscan
         }
         else_if = {
-            limit = {
-                owner = c:VEN
-                country_has_primary_culture = cu:north_italian
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ROMAGNA
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:romagnol
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ISTRIA
+                }
             }
             remove_primary_culture = cu:north_italian
             add_primary_culture = cu:venetian
         }
         else_if = {
-            limit = {
-                owner = c:PAP
-                country_has_primary_culture = cu:north_italian
-                country_has_primary_culture = cu:south_italian
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_LOMBARDY
+                }
             }
             remove_primary_culture = cu:north_italian
-            remove_primary_culture = cu:south_italian
-            add_primary_culture = cu:roman
+            add_primary_culture = cu:lombard
         }
-        else_if = { # need to add a check if owns sicily
-            limit = {
-                owner = c:SIC
-                country_has_primary_culture = cu:south_italian
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_PIEDMONT
+                }
             }
-            remove_primary_culture = cu:south_italian
-            add_primary_culture = cu:neapolitan
-            add_primary_culture = cu:sicilian
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:piedmontese
+            add_primary_culture = cu:ligurian
         }
     }
 }
-# changes Austria's primary culture to Austrian if it is not part of Grossdeutschland
-#change_primary_culture_austria {
-#    if {
-#        limit = {
-#            any_scope_country = {
-#                has_flag = germany
-#            }
-#        }
-#        any_scope_country = {
-#            limit = {
-#                owner = c:AUS
-#            }
-#            change_primary_culture = {}
-#        }
-#    }
-#}
+
+change_primary_culture_south_italian_minor = {
+    if = {
+        limit = {
+            exists = c:ITA
+        }
+        if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SICILY
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:sicilian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_LAZIO
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:roman
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_CAMPANIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:neapolitan
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ABRUZZO
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:abruzzese
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_CALABRIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:calabrian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_APULIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:apulian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SARDINIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:sardinian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_UMBRIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:umbrian
+        }
+    }
+}

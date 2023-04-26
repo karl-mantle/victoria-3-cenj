@@ -37,39 +37,39 @@
         }
     }
 }
-ACH = { #Achaea
+ACA = { #Achaea
     flag_definition = {
-        coa = ACH
-        subject_canton = ACH
+        coa = ACA
+        subject_canton = ACA
         priority = 1
     }
     flag_definition = {
-        coa = ACH_communist
-        subject_canton = ACH_communist
+        coa = ACA_communist
+        subject_canton = ACA_communist
         priority = 1500
         trigger = {
             coa_def_communist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = ACH_fascist
-        subject_canton = ACH_fascist
+        coa = ACA_fascist
+        subject_canton = ACA_fascist
         priority = 1500
         trigger = {
             coa_def_fascist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = ACH_monarchy
-        subject_canton = ACH_monarchy
+        coa = ACA_monarchy
+        subject_canton = ACA_monarchy
         priority = 20
         trigger = {
             coa_def_absolute_monarchy_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = ACH_republic
-        subject_canton = ACH_republic
+        coa = ACA_republic
+        subject_canton = ACA_republic
         priority = 20
         trigger = {
             coa_def_republic_flag_trigger = yes
@@ -3051,31 +3051,31 @@ PAD = { #Paderborn
         }
     }
 }
-PAL = { #The Palatinate
+PLL = { #The Palatinate
     flag_definition = {
-        coa = PAL
-        subject_canton = PAL
+        coa = PLL
+        subject_canton = PLL
         priority = 1
     }
     flag_definition = {
-        coa = PAL_communist
-        subject_canton = PAL_communist
+        coa = PLL_communist
+        subject_canton = PLL_communist
         priority = 1500
         trigger = {
             coa_def_communist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = PAL_fascist
-        subject_canton = PAL_fascist
+        coa = PLL_fascist
+        subject_canton = PLL_fascist
         priority = 1500
         trigger = {
             coa_def_fascist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = PAL_republic
-        subject_canton = PAL_republic
+        coa = PLL_republic
+        subject_canton = PLL_republic
         priority = 20
         trigger = {
             coa_def_republic_flag_trigger = yes

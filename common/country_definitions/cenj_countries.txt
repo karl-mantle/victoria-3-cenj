@@ -6,7 +6,7 @@ AAC = { #Aachen
 	cultures = { north_german }
 	capital = STATE_NORTH_RHINE
 }
-ACH = { #Achaea
+ACA = { #Achaea
  	color = { 255 213 51 }
 	country_type = recognized
 	tier = principality
@@ -31,7 +31,7 @@ ALS = { #Alsace
  	color = { 246 223 15 }
 	country_type = recognized
 	tier = principality
-	cultures = { north_german }
+	cultures = { south_german }
 	capital = STATE_ALSACE_LORRAINE
 }
 AMG = { #Armagnac
@@ -636,7 +636,7 @@ PAD = { #Paderborn
 	cultures = { north_german }
 	capital = STATE_WESTPHALIA
 }
-PAL = { #The Palatinate
+PLL = { #The Palatinate
 	color = { 57 151 142 }
 	country_type = recognized
 	tier = principality

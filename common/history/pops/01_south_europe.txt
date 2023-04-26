@@ -120,11 +120,11 @@
 	s:STATE_SAVOY = {
 		region_state:SAR = {
 			create_pop = {
-				culture = francoprovencal
+				culture = savoyard
 				size = 287600
 			}
 			create_pop = {
-				culture = savoyard
+				culture = francoprovencal
 				size = 181200
 			}
 		}

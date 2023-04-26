@@ -1,5 +1,8 @@
 ﻿GLOBAL = {
     # adds homelands for new migrant cultures
+    c:ORG = {
+        remove_primary_culture = cu:yankee
+    }   
     every_country = {
         if = {
             limit = { country_has_primary_culture = cu:yankee }
@@ -13,6 +16,8 @@
                     add_homeland = german_american
                     add_homeland = luso_american
                     add_homeland = scots_american
+                    add_homeland = polish_american
+                    add_homeland = russian_american
                 }
             }
         }
@@ -27,12 +32,10 @@
                     add_homeland = greek_canadian
                     add_homeland = irish_canadian
                     add_homeland = scots_canadian
+                    add_homeland = luso_canadian
+                    add_homeland = polish_canadian
                 }
             }
         }
-    }
-
-    c:ORG = {
-        remove_primary_culture = cu:yankee
     }
 }

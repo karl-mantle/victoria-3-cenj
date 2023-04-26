@@ -657,7 +657,7 @@
 	s:STATE_ALSACE_LORRAINE = {
 		region_state:FRA = {
 			create_pop = {
-				culture = french
+				culture = comtois
 				size = 510008
 			}
 			create_pop = {

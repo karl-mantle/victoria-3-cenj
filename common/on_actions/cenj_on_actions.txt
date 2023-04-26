@@ -124,67 +124,81 @@ change_pop_culture_on_action = {
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = african_heritage"
             TOCULTURE = "afro_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         # Scottish Canadian
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = caledonian"
             TOCULTURE = "scots_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         # Anglo-Canadian
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
             TOCULTURE = "anglo_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         # Irish-Canadian
         change_pop_culture_culture = {
             FROMCULTURE = "irish"
             TOCULTURE = "irish_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         # Franco-Canadian
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = french_minor"
             TOCULTURE = "franco_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_minor"
             TOCULTURE = "franco_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         # Greek Canadian
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = greek_culture"
             TOCULTURE = "greek_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         # German Canadian
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
             TOCULTURE = "german_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_german_minor"
             TOCULTURE = "german_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
         change_pop_culture_trait = {
             FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_german_minor"
             TOCULTURE = "german_canadian"
-            LIMIT = "country_has_primary_culture = cu:anglo_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
+            
+        }
+        # Dutch Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = beneluxian_culture_group"
+            TOCULTURE = "dutch_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
+            
+        }
+        # Polish Canadian
+        change_pop_culture_trait = {
+            FROMCULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = west_slavic"
+            TOCULTURE = "polish_canadian"
+            LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
             
         }
 
@@ -267,8 +281,10 @@ change_pop_culture_on_action = {
 change_primary_culture_on_action = {
     effect = {
         # Minor cultures en masse
-        change_primary_culture_german_minor = {}
-        change_primary_culture_italian_minor = {}
+        change_primary_culture_north_german_minor = {}
+        change_primary_culture_south_german_minor = {}
+        change_primary_culture_north_italian_minor = {}
+        change_primary_culture_south_italian_minor = {}
         # Targetted cultures
     }
 }

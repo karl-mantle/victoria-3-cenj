@@ -60,7 +60,7 @@ AAC_republic = {
 		color2 = "yellow"
 	}
 }
-ACH = {
+ACA = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -74,7 +74,7 @@ ACH = {
 		color1 = "blue"
 	}
 }
-ACH_communist = {
+ACA_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -89,7 +89,7 @@ ACH_communist = {
 		color1 = "blue"
 	}
 }
-ACH_fascist = {
+ACA_fascist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -99,7 +99,7 @@ ACH_fascist = {
 		color2 = "black"
 	}
 }
-ACH_monarchy = {
+ACA_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -108,7 +108,7 @@ ACH_monarchy = {
 		color1 = "yellow"
 	}
 }
-ACH_republic = {
+ACA_republic = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -1060,8 +1060,10 @@ BRG_fascist = {
 BUU = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
-	textured_emblem = {
-		texture = "te_peacock.dds"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = "red"
 	}
 }
 BUU_communist = {
@@ -1069,43 +1071,27 @@ BUU_communist = {
 	color1 = "red"
 
 	colored_emblem = {
-		texture = "ce_canton.dds"
-		color1 = "blue"
-		instance = { position = { 0.4 0.5 } }
-	}
-
-	colored_emblem = {
-		texture = "ce_star_05.dds"
+		texture = "ce_star_05_hollow.dds"
 		color1 = "white"
-		instance = { scale = { 0.4 0.4 } position = { 0.2 0.25 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.15 0.12 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.25 0.12 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.1 0.29 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.3 0.29 } }
-		instance = { scale = { 0.15 0.15 } position = { 0.2 0.4 } }
+		color2 = "red"
 	}
 }
 BUU_fascist = {
-    textured_emblem = { texture = "EU4toVic2/BUR_fascist.tga" }
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = "white"
+	}
 }
 BUU_republic = {
 	pattern = "pattern_solid.tga"
-	color1 = "yellow"
+	color1 = "white"
 
 	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "green"
-		color2 = "red"
-	}
-
-	colored_emblem = {
-		texture = "ce_frame_circle.dds"
-		color1 = "white"
-		instance = { scale = { 0.6 0.6 } }
-	}
-	textured_emblem = {
-		texture = "te_peacock.dds"
-		instance = { scale = { 0.5 0.5 } }
+		texture = "ce_cross_burgundy.dds"
+		color1 = "red"
 	}
 }
 BYT = {
@@ -2115,61 +2101,72 @@ GOT_republic = {
 }
 GUY = {
 	pattern = "pattern_solid.tga"
-	color1 = "green"
+	color1 = "red"
 
 	colored_emblem = {
-		texture = "ce_rhombus.dds"
+		texture = "ce_saltire.dds"
 		color1 = "white"
-		instance = { scale = { 2 1 } position = { 0 0.5 } }
-	}
-	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "yellow"
-		instance = { scale = { 2 1 } position = { -0.1 0.5 } }
-	}
-	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "black"
-		instance = { scale = { 1 1 } position = { 0 0.5 } }
-	}
-	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "red"
-		instance = { scale = { 1 1 } position = { -0.1 0.5 } }
 	}
 }
 GUY_communist = {
 	pattern = "pattern_solid.tga"
-	color1 = "black"
+	color1 = "red"
 
 	colored_emblem = {
-		texture = "ce_tricolor_vertical.dds"
-		color1 = "red"
-		color2 = "yellow"
+		texture = "ce_hammer_and_sickle.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.3 0.3 } position = { 0.2 0.2 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant_long.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.66 0.66 } position = { 0.66 0.66 } }
 	}
 }
 GUY_fascist = {
 	pattern = "pattern_solid.tga"
-	color1 = "red_dark"
+	color1 = "blue"
 
 	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "black"
-		instance = { scale = { 2 1 } position = { 0 0.5 } }
-	}
-	colored_emblem = {
-		texture = "ce_rhombus.dds"
+		texture = "ce_solid.dds"
 		color1 = "red"
-		instance = { scale = { 2 1 } position = { -0.1 0.5 } }
+		instance = { scale = { 1 0.2 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
 	}
 	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "black"
-		instance = { scale = { 1 1 } position = { 0 0.5 } }
+		texture = "ce_lion_passant_guardant_long.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.5 0.5 } }
 	}
 }
 GUY_monarchy = { 
-    textured_emblem = { texture = "EU4toVic2/GUY_monarchy.tga" } 
+	pattern = "pattern_checkers_01.tga"
+	color2 = "red"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_lion_rampant.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "pearl"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.25 } }
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.75 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_wheat_garb.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.75 } }
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.25 } }
+	}
 }
 HLL = {
 	pattern = "pattern_solid.tga"
@@ -2257,12 +2254,12 @@ HRZ_fascist = {
 	}
 }
 HRZ_monarchy = { 
-    textured_emblem = { texture = "EU4toVic2/HRZ_monarchy.tga" } 
-}
-HRZ_republic = {
 	pattern = "pattern_horizontal_split_01.tga"
 	color2 = "yellow"
 	color1 = "red_dark"
+}
+HRZ_republic = {
+    textured_emblem = { texture = "EU4toVic2/HRZ_republic.tga" } 
 }
 HSC = { 
     textured_emblem = { texture = "EU4toVic2/HSC.tga" } 
@@ -4182,7 +4179,7 @@ PAD_monarchy = {
 PAD_republic = { 
     textured_emblem = { texture = "EU4toVic2/PAD_republic.tga" } 
 }
-PAL = {
+PLL = {
 	pattern = "pattern_lozengy_bend.dds"
 	color1 = "blue_light"
 	color2 = "white"
@@ -4201,7 +4198,7 @@ PAL = {
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.75 } }
 	}
 }
-PAL_communist = {
+PLL_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "purple"
 
@@ -4218,7 +4215,7 @@ PAL_communist = {
 		instance = { scale = { 0.5 0.5 } }
 	}
 }
-PAL_fascist = {
+PLL_fascist = {
 	pattern = "pattern_solid.tga"
 	color1 = "black"
 
@@ -4229,7 +4226,7 @@ PAL_fascist = {
 		color3 = "white"
 	}
 }
-PAL_republic = {
+PLL_republic = {
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "yellow"
 	color2 = "red"
