@@ -1,3 +1,12 @@
+### 0.0.12
+### New
+- added a migration malus to malaria traits
+- different icons for severe and regular malaria
+- newfoundland independent in 1836 (crown colony)
+- added maghreb union
+### Changes
+- fixed bugs in scripted_effects
+- changed unification play for maghreb union to major and added diplomatic play (need leadership play)
 ## 0.0.11
 ### New
 - rewrote primary culture changing script for italian and german minors

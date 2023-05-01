@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:NEW = {
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Henry"
+			last_name = "Prescott"
+			ruler = yes
+			ig_leader = yes
+			culture = cu:british # English Admiral
+			age = 53
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer
+			traits = {
+				reserved
+                experienced_naval_commander
+			}
+		}
+    }
+}

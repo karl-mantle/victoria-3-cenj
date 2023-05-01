@@ -6,7 +6,7 @@
                 limit = { culture = { $FROMCULTURE$  } }
                 change_pop_culture = {
                     target = cu:$TOCULTURE$
-                    value = 0.05
+                    value = 0.1
                 }
             }
         }
@@ -21,7 +21,7 @@ change_pop_culture_trait_state = {
                 limit = { culture = { $FROMCULTURE$  } }
                 change_pop_culture = {
                     target = cu:$TOCULTURE$
-                    value = 0.05
+                    value = 0.1
                 }
             }
         }
@@ -36,7 +36,7 @@ change_pop_culture_culture = {
                 limit = { has_pop_culture = $FROMCULTURE$ }
                 change_pop_culture = {
                     target = cu:$TOCULTURE$
-                    value = 0.05
+                    value = 0.1
                 }
             }
         }
@@ -63,7 +63,7 @@ change_pop_culture_technology = {
                     }
                     change_pop_culture = {
                         target = cu:$TOCULTURE$
-                        value = 0.01
+                        value = 0.02
                     }
                 }
                 else_if = {
@@ -77,7 +77,7 @@ change_pop_culture_technology = {
                     }
                     change_pop_culture = {
                         target = cu:$TOCULTURE$
-                        value = 0.02
+                        value = 0.04
                     }
                 }
                 else_if = {
@@ -91,7 +91,7 @@ change_pop_culture_technology = {
                     }
                     change_pop_culture = {
                         target = cu:$TOCULTURE$
-                        value = 0.03
+                        value = 0.06
                     }
                 }
                 else_if = {
@@ -105,7 +105,7 @@ change_pop_culture_technology = {
                     }
                     change_pop_culture = {
                         target = cu:$TOCULTURE$
-                        value = 0.04
+                        value = 0.08
                     }
                 }
                 else_if = {
@@ -119,7 +119,7 @@ change_pop_culture_technology = {
                     }
                     change_pop_culture = {
                         target = cu:$TOCULTURE$
-                        value = 0.05
+                        value = 0.1
                     }
                 }
             }

@@ -61,11 +61,13 @@ Other languages will be added in the future, if you would like to add a translat
 
 # Credits
 
-To do.
+Title, Author, Workshop ID
 
+- "Unify the Maghreb" *strong bird* (2880314605)
+- "Independent Newfoundland" *Dungeon Master* (2880478571)
 ## Licence
 
-You can (re-)use any part of this mod in whatever way you want.
+You can (re-)use any part of this mod that I personally created in whatever way you want.
 
 ## Notes
 

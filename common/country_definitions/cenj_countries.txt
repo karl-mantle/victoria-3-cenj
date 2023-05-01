@@ -972,6 +972,13 @@ VRN = { #Verona
 	cultures = { north_italian }
 	capital = STATE_VENETIA
 }
+XXM = { #Maghreb Union
+	color = { 40 85 45 }
+	country_type = unrecognized
+	tier = empire
+	cultures = { maghrebi berber }
+	capital = STATE_TUNISIA
+}
 YAR = { #Yaroslavl
 	color = { 131 141 142 }
 	country_type = recognized
