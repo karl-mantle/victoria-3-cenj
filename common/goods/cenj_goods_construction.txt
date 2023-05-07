@@ -1,0 +1,10 @@
+﻿construction = {
+	texture = "gfx/interface/icons/goods_icons/construction.dds"
+	cost = 40
+	category = staple
+	tradeable = yes
+	
+	prestige_factor = 5
+	
+	consumption_tax_cost = 200
+}

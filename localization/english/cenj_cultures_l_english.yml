@@ -1,6 +1,6 @@
 ﻿l_english:
 #overwrites
- ugrian:0 "Khanty"
+ #ugrian:0 "Khanty"
 #heritage_traits
  mestizo_heritage:0 "Mestizo Heritage"
 #cultural_traits
@@ -55,7 +55,7 @@
  westphalian:0 "Westphalian"
 #south_german_minor
  alemannic:0 "Alemannic"
- austrian:0 "Austrian"
+ #austrian:0 "Austrian"
  banat_swabian:0 "Banat Swabian"
  bavarian:0 "Bavarian"
  black_sea_german:0 "Black Sea German"

@@ -1,0 +1,24 @@
+﻿securities = {
+	texture = "gfx/interface/icons/goods_icons/securities.dds"
+	cost = 250
+	category = luxury
+	
+	prestige_factor = 15
+	convoy_cost_multiplier = 0.25
+}
+
+currency = {
+	texture = "gfx/interface/icons/goods_icons/currency.dds"
+	cost = 20
+	category = staple
+	tradeable = no
+}
+
+gold = {
+	texture = "gfx/interface/icons/goods_icons/gold.dds"
+	cost = 100
+	category = luxury
+
+	prestige_factor = 5
+    convoy_cost_multiplier = 1.25
+}

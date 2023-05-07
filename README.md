@@ -2,6 +2,8 @@
 
 Cultures, Events, Nations, Journals aka CENJ is an experimental mod for Victoria 3.
 
+** Please note this mod is currently unbalanced and may be unstable **
+
 I have created this mod for two reasons; one is that I wanted to see if the migration wave mechanic would work better with more granular POPs. The second is that I just wanted to create a more varied experience for myself whilst playing - even if it does slow the game down!
 
 The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.

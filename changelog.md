@@ -1,3 +1,18 @@
+# Changelog
+### 0.0.13
+## New
+- private construction sector (work in progress)
+- construction materials goods and accompanying factory
+- finance industry (work in progress)
+- finance sector building and central bank building
+- currency and securities goods with POP needs
+- currency standards law (no prescribed money aka bartering, silver, bimetallic, gold standard, fiat) with IG support
+### Changes
+- added construction materials factories to states with already existing construction sectors
+- gold now tradeable
+- fixed incorrect encoding on files
+- fixed mistake in flag_definitions for XXM's algerian flag
+- changed math in defines relating to POP growth as per /u/supermap on reddit
 ### 0.0.12
 ### New
 - added a migration malus to malaria traits

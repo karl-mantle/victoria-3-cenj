@@ -1,4 +1,4 @@
-state_trait_stjohns_harbor = {
+﻿state_trait_stjohns_harbor = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {

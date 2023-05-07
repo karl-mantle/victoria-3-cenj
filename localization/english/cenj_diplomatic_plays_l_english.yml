@@ -1,5 +1,5 @@
 ﻿l_english:
  dp_unify_maghreb:0 "Unify the Maghreb"
- dp_unify_arabia_tooltip:1 "#header Start a $dp_unify_maghreb$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_maghreb_desc$"
+ dp_unify_maghreb_tooltip:1 "#header Start a $dp_unify_maghreb$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_maghreb_desc$"
  dp_unify_maghreb_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Maghrebi countries."
  XXM_tt:1 "[SCOPE.sCountry('target').GetName] can unify the Maghreb"

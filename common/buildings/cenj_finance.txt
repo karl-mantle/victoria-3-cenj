@@ -1,0 +1,39 @@
+﻿building_finance_sector = {
+	building_group = bg_finance
+	texture = "gfx/interface/icons/building_icons/finance_sector.dds"
+	
+	unlocking_technologies = {
+	}
+	
+	production_method_groups = {
+		pmg_base_building_finance_sector
+		pmg_ownership_finance_sector
+	}
+	
+	required_construction = construction_cost_high
+	
+}
+
+building_central_bank = {
+	building_group = bg_central_bank
+	texture = "gfx/interface/icons/building_icons/central_bank.dds"
+	unique = yes
+
+	unlocking_technologies = {
+		central_banking
+	}
+	production_method_groups = {
+		pmg_base_building_central_bank
+		pmg_ownership_central_bank
+	}
+
+    required_construction = construction_cost_very_high
+	downsizeable = no
+	
+	#possible = {
+	#	error_check = {
+	#		severity = invalid
+	#		this.state = { is_capital = yes }
+	#	}
+	#}
+}

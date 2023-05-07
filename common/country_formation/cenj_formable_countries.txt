@@ -1,4 +1,4 @@
-XXM = { #Maghreb Union
+﻿XXM = { #Maghreb Union
 	states = {
 		STATE_FEZ
 		STATE_INNER_MOROCCO

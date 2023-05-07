@@ -1,0 +1,51 @@
+﻿pmg_base_building_finance_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_finance_sector_silver_standard
+		pm_finance_sector_bimetallic_standard
+		pm_finance_sector_gold_standard
+		pm_finance_sector_fiat_money
+	}
+}
+
+pmg_ownership_finance_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_finance_sector
+		pm_publicly_traded_finance_sector
+		pm_government_run_finance_sector
+		pm_worker_cooperative_finance_sector
+	}
+}
+
+pmg_base_building_central_bank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_central_bank_quantative_easing
+		pm_central_bank_base
+		pm_central_bank_raised_interest_rates
+	}
+}
+
+pmg_ownership_central_bank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_central_bank
+		pm_publicly_traded_central_bank
+		pm_government_run_central_bank
+		pm_worker_cooperative_central_bank
+	}
+}
+
+pmg_urban_center_currency_issue = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_decentralised_currency
+		pm_local_currency
+		pm_government_issued_currency
+	}
+}

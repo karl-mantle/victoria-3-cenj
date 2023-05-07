@@ -1,4 +1,4 @@
-dp_unify_maghreb = { #Maghreb Union
+﻿dp_unify_maghreb = { #Maghreb Union
 	war_goal = annex_country
 	
 	texture = "gfx/interface/icons/war_goals/annex_country.dds"

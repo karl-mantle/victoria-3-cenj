@@ -1,0 +1,14 @@
+﻿l_english:
+#law groups
+ lawgroup_currency_policy:0 "Currency Policy"
+#laws
+ law_bartering:0 "Bartering"
+ law_bartering_desc:0 "An economy that isn't reliant on a fungible intermediate unit of exchange."
+ law_silver_standard:0 "Silver Standard"
+ law_silver_standard_desc:0 "The national or local currency is convertible to a fixed amount of silver."
+ law_bimetallic_standard:0 "Bimetallic Standard"
+ law_bimetallic_standard_desc:0 "The national currency is convertible to a fixed amount of both gold and silver."
+ law_gold_standard:0 "Gold Standard"
+ law_gold_standard_desc:0 "The national currency is convertible to a fixed amount of gold."
+ law_fiat_money:0 "Fiat Money"
+ law_fiat_money_desc:0 "The national currency is no longer convertible to any fungible resource good."

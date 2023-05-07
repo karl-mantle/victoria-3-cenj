@@ -4649,11 +4649,13 @@ XXM = { #Maghreb Union
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				OR = {
-					capital = {state_region = s:STATE_ALGIERS}
-					capital = {state_region = s:STATE_CONSTANTINE}
-					capital = {state_region = s:STATE_TLEMCEN}
-				}
+				capital = { 
+                    #OR = {
+                        state_region = s:STATE_ALGIERS
+                        #state_region = s:STATE_CONSTANTINE 
+                        #state_region = s:STATE_TLEMCEN
+                    #}
+                }
 			}
 		}
 	}
@@ -4667,11 +4669,13 @@ XXM = { #Maghreb Union
 			coa_def_republic_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				OR = {
-					capital = {state_region = s:STATE_ALGIERS}
-					capital = {state_region = s:STATE_CONSTANTINE}
-					capital = {state_region = s:STATE_TLEMCEN}
-				}
+				capital = { 
+                    #OR = {
+                        state_region = s:STATE_ALGIERS
+                        #state_region = s:STATE_CONSTANTINE 
+                        #state_region = s:STATE_TLEMCEN
+                    #}
+                }
 			}
 		}
 	}
@@ -4685,11 +4689,13 @@ XXM = { #Maghreb Union
 			coa_def_monarchy_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				OR = {
-					capital = {state_region = s:STATE_ALGIERS}
-					capital = {state_region = s:STATE_CONSTANTINE}
-					capital = {state_region = s:STATE_TLEMCEN}
-				}
+				capital = { 
+                    #OR = {
+                        state_region = s:STATE_ALGIERS
+                        #state_region = s:STATE_CONSTANTINE 
+                        #state_region = s:STATE_TLEMCEN
+                    #}
+                }
 			}
 		}
 	}	
@@ -4703,11 +4709,13 @@ XXM = { #Maghreb Union
 			coa_def_theocracy_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				OR = {
-					capital = {state_region = s:STATE_ALGIERS}
-					capital = {state_region = s:STATE_CONSTANTINE}
-					capital = {state_region = s:STATE_TLEMCEN}
-				}
+				capital = { 
+                    #OR = {
+                        state_region = s:STATE_ALGIERS
+                        #state_region = s:STATE_CONSTANTINE 
+                        #state_region = s:STATE_TLEMCEN
+                    #}
+                }
 			}
 		}
 	}	
@@ -4721,11 +4729,13 @@ XXM = { #Maghreb Union
 			coa_def_communist_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				OR = {
-					capital = {state_region = s:STATE_ALGIERS}
-					capital = {state_region = s:STATE_CONSTANTINE}
-					capital = {state_region = s:STATE_TLEMCEN}
-				}
+				capital = { 
+                    #OR = {
+                        state_region = s:STATE_ALGIERS
+                        #state_region = s:STATE_CONSTANTINE 
+                        #state_region = s:STATE_TLEMCEN
+                    #}
+                }
 			}
 		}
 	}
@@ -4738,7 +4748,7 @@ XXM = { #Maghreb Union
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				capital = {state_region = s:STATE_TUNISIA}
+				capital = { state_region = s:STATE_TUNISIA }
 			}
 		}
 	}
@@ -4752,7 +4762,7 @@ XXM = { #Maghreb Union
 			coa_def_republic_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				capital = {state_region = s:STATE_TUNISIA}
+				capital = { state_region = s:STATE_TUNISIA }
 			}
 		}
 	}
