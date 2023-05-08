@@ -1,16 +1,16 @@
 ﻿building_output_construction_add = {
-	good = yes
-	percent = no
+    good = yes
+    percent = no
 }
 
 building_input_construction_add = {
-	good = yes
-	percent = no
+    good = no
+    percent = no
 }
 
 country_construction_add = {
-	good = yes
-	percent = no
-	
-	ai_value = 40 # 1 construction = 500 -> 40 pounds of calculated profit per point of construction (base price of construction good and the base cost of its inputs)
+    good = yes
+    percent = no
+    
+    ai_value = 40
 }

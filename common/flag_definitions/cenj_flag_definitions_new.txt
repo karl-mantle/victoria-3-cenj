@@ -4647,35 +4647,10 @@ XXM = { #Maghreb Union
 		coa_with_overlord_canton = XXM_subject			
 		priority = 1005
 		trigger = {
+            coa_def_republic_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				capital = { 
-                    #OR = {
-                        state_region = s:STATE_ALGIERS
-                        #state_region = s:STATE_CONSTANTINE 
-                        #state_region = s:STATE_TLEMCEN
-                    #}
-                }
-			}
-		}
-	}
-	flag_definition = {
-		coa = XXM
-		subject_canton = XXM
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 1005
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = { 
-                    #OR = {
-                        state_region = s:STATE_ALGIERS
-                        #state_region = s:STATE_CONSTANTINE 
-                        #state_region = s:STATE_TLEMCEN
-                    #}
-                }
+				capital = { state_region = s:STATE_ALGIERS }
 			}
 		}
 	}
@@ -4689,13 +4664,7 @@ XXM = { #Maghreb Union
 			coa_def_monarchy_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				capital = { 
-                    #OR = {
-                        state_region = s:STATE_ALGIERS
-                        #state_region = s:STATE_CONSTANTINE 
-                        #state_region = s:STATE_TLEMCEN
-                    #}
-                }
+				capital = { state_region = s:STATE_ALGIERS }
 			}
 		}
 	}	
@@ -4709,13 +4678,7 @@ XXM = { #Maghreb Union
 			coa_def_theocracy_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				capital = { 
-                    #OR = {
-                        state_region = s:STATE_ALGIERS
-                        #state_region = s:STATE_CONSTANTINE 
-                        #state_region = s:STATE_TLEMCEN
-                    #}
-                }
+				capital = { state_region = s:STATE_ALGIERS }
 			}
 		}
 	}	
@@ -4729,26 +4692,7 @@ XXM = { #Maghreb Union
 			coa_def_communist_flag_trigger = yes
 			exists = scope:actor
 			scope:actor = {
-				capital = { 
-                    #OR = {
-                        state_region = s:STATE_ALGIERS
-                        #state_region = s:STATE_CONSTANTINE 
-                        #state_region = s:STATE_TLEMCEN
-                    #}
-                }
-			}
-		}
-	}
-	flag_definition = { # republic, default
-		coa = XXM_tunisia
-		subject_canton = XXM_tunisia
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 1005
-		trigger = {
-			exists = scope:actor
-			scope:actor = {
-				capital = { state_region = s:STATE_TUNISIA }
+				capital = { state_region = s:STATE_ALGIERS }
 			}
 		}
 	}

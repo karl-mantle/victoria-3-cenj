@@ -7,6 +7,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_privately_owned" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
 			}
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
 		}
 	}
 	s:STATE_TIANSHAN={
@@ -148,6 +154,12 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
+			create_building={
 				building="building_iron_mine"
 				level=1
 				reserves=1
@@ -266,6 +278,12 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
+			create_building={
 				building="building_construction_sector"
 				level=3
 				reserves=1
@@ -322,6 +340,12 @@
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
 			}
 			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
+			create_building={
 				building="building_livestock_ranch"
 				level=10
 				reserves=1
@@ -377,6 +401,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
 			}
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
 			create_building={
 				building="building_livestock_ranch"
 				level=2
@@ -471,6 +501,12 @@
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
 			create_building={
 				building="building_tea_plantation"
 				level=5
@@ -628,6 +664,12 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
+			create_building={
 				building="building_silk_plantation"
 				level=10
 				reserves=1
@@ -667,6 +709,12 @@
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
 			create_building={
 				building="building_finance_sector"
 				level=1
@@ -1233,6 +1281,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
 			}
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
 		}
 	}
 	s:STATE_URGA={

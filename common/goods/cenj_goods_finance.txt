@@ -22,3 +22,20 @@ gold = {
 	prestige_factor = 5
     convoy_cost_multiplier = 1.25
 }
+
+copper = {
+	texture = "gfx/interface/icons/goods_icons/copper.dds"
+	cost = 35
+	category = industrial
+	
+	prestige_factor = 2
+}
+
+silver = {
+	texture = "gfx/interface/icons/goods_icons/silver.dds"
+	cost = 50
+	category = luxury
+	
+	prestige_factor = 5
+	
+}

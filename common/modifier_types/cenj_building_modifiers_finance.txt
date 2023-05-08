@@ -1,29 +1,29 @@
 ﻿building_output_currency_add = {
-	good = yes
-	percent = no
+    good = yes
+    percent = no
 }
 
 building_input_currency_add = {
-	good = yes
-	percent = no
+    good = no
+    percent = no
 }
 
 building_output_securities_add = {
-	good = yes
-	percent = no
+    good = yes
+    percent = no
 }
 
 building_input_securities_add = {
-	good = yes
-	percent = no
+    good = no
+    percent = no
 }
 
 building_input_gold_add = {
-	good = yes
-	percent = no
+    good = no
+    percent = no
 }
 
 building_input_services_add = {
-	good = yes
-	percent = no
+    good = no
+    percent = no
 }

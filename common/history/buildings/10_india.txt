@@ -324,6 +324,12 @@
 				activate_production_methods={ "default_building_opium_plantation" "pm_road_carts" "pm_privately_owned" }
 			}
 			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
+			create_building={
 				building="building_barracks"
 				level=10
 				reserves=1

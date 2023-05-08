@@ -1,0 +1,19 @@
+﻿building_output_silver_add = {
+    good = yes
+    percent = no
+}
+
+building_input_silver_add = {
+    good = no
+    percent = no
+}
+
+building_output_copper_add = {
+    good = yes
+    percent = no
+}
+
+building_input_copper_add = {
+    good = no
+    percent = no
+}

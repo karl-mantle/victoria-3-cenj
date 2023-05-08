@@ -110,6 +110,12 @@
 				activate_production_methods={ "pm_irregular_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
 			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
 				building="building_port"
 				level=1
 				reserves=1
@@ -125,6 +131,12 @@
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned" }
 			}
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
 			create_building={
 				building="building_port"
 				level=1
@@ -233,6 +245,12 @@
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
 			create_building={
 				building="building_finance_sector"
 				level=1
@@ -574,6 +592,12 @@
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}	
+			create_building={
 				building="building_fishing_wharf"
 				level=1
 				reserves=1
@@ -827,6 +851,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}		
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
 			create_building={
 				building="building_rice_farm"
 				level=10

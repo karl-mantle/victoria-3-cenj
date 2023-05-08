@@ -2,7 +2,7 @@
 	building_group = bg_construction
 	texture = "gfx/interface/icons/building_icons/construction_base.dds"
 	city_type = city
-	levels_per_mesh = 5#
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		urbanization

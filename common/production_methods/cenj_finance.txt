@@ -1,6 +1,4 @@
-﻿# Finance Sector
-
-pm_finance_sector_silver_standard = {
+﻿pm_finance_sector_silver_standard = {
 	texture = "gfx/interface/icons/production_method_icons/unused/simple_mining.dds"
 	is_default = yes
 	unlocking_laws = {
@@ -8,7 +6,7 @@ pm_finance_sector_silver_standard = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_gold_add = 5
+			building_input_silver_add = 10
 			building_input_paper_add = 10
 			building_input_services_add = 25
 			building_output_currency_add = 100
@@ -28,7 +26,8 @@ pm_finance_sector_bimetallic_standard = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_gold_add = 8
+			building_input_gold_add = 4
+			building_input_silver_add = 8
 			building_input_paper_add = 10
 			building_input_services_add = 40
 			building_output_currency_add = 160
@@ -143,8 +142,6 @@ pm_worker_cooperative_finance_sector = {
 		}
 	}
 }
-
-# Urban Centre
 
 pm_decentralised_currency = {
 	texture = "gfx/interface/icons/production_method_icons/simple_organization.dds"
@@ -342,7 +339,7 @@ pm_worker_cooperative_central_bank = {
 }
 
 
-## Gold Overwrites below
+# Gold Overwrites below
 
 pm_picks_and_shovels_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"

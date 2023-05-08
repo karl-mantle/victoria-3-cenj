@@ -1,6 +1,18 @@
 # Changelog
-### 0.0.13
-## New
+## 0.0.14
+### New
+- silver and copper as trade goods
+- silver as a by-product of lead and copper mines as well as silver fields for silver panning
+- copper mines distributed around the map
+- automobiles, radios, telephones, etc. now use copper
+- vanilla matched icons
+### Changes
+- silver standard now uses silver to create currency
+- bimetallic standard now uses gold and silver to create currency
+- various bug-fixes
+- unsure why localization error occurs when i seperate copper and silver from other goods, needs further investigation
+## 0.0.13
+### New
 - private construction sector (work in progress)
 - construction materials goods and accompanying factory
 - finance industry (work in progress)
@@ -13,7 +25,7 @@
 - fixed incorrect encoding on files
 - fixed mistake in flag_definitions for XXM's algerian flag
 - changed math in defines relating to POP growth as per /u/supermap on reddit
-### 0.0.12
+## 0.0.12
 ### New
 - added a migration malus to malaria traits
 - different icons for severe and regular malaria

@@ -23,9 +23,9 @@
 		}
 	}
 	
-	ai_value = 800 ## effectively 5 production value less. AI should never use unless its starved for materials.
+	ai_value = 800
 }
-#stone here
+
 pm_iron_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
 	
@@ -56,7 +56,7 @@ pm_iron_frame_buildings = {
 	
 	ai_value = 1100
 }
-#brick here
+
 pm_steel_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
 	

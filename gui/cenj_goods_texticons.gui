@@ -1,0 +1,52 @@
+texticon = {
+	icon = currency
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/currency.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = securities
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/securities.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = silver
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/silver.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = construction
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/construction.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = copper
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/copper.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+
+
