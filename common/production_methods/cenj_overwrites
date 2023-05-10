@@ -121,3 +121,27 @@ pm_radios = {
 		}
 	}
 }
+
+pm_copper_tools = {
+	texture = "gfx/interface/icons/production_method_icons/pig_iron_tools.dds"
+	
+	unlocking_technologies = {
+		mechanical_tools
+	}	
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_wood_add = 30
+			building_input_copper_add = 20
+			
+			# output goods
+			building_output_tools_add = 45
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4250
+			building_employment_machinists_add = 250
+		}
+	}
+}

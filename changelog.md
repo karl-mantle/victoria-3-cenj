@@ -1,4 +1,9 @@
 # Changelog
+## 0.0.15
+###
+- added copper tools
+- new state traits for various states around the world
+- urban centres produce currency using rare metals (locally accepted) or securities (government issued currency)
 ## 0.0.14
 ### New
 - silver and copper as trade goods

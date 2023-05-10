@@ -1,11 +1,11 @@
 ﻿l_english:
-#goods
+# goods
  copper:0 "Copper"
  construction:0 "Building Materials"
  currency:0 "Currency"
  securities:0 "Securities"
  silver:0 "Silver"
-#modifiers
+# modifiers
  modifier_building_input_construction_add:0 "@construction! Building materials input per level"
  modifier_building_input_construction_add_desc:0 "The amount of @construction! Building materials consumed by buildings"
  modifier_building_input_services_add:0 "@services! Services input per level"
@@ -30,15 +30,30 @@
  modifier_building_output_copper_add_desc:0 "The amount of @copper! Copper produced by buildings"
  modifier_building_output_silver_add:0 "@silver! Silver output per level"
  modifier_building_output_silver_add_desc:0 "The amount of @silver! Silver produced by buildings"
-#buildings 
+
+ modifier_building_coffee_plantation_throughput_mult:0 "$building_coffee_plantation$ building [concept_throughput]"
+ modifier_building_coffee_plantation_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_coffee_plantation$"
+ modifier_building_group_bg_finance_throughput_mult:0 "$bg_finance$ [concept_throughput]"
+ modifier_building_group_bg_finance_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_finance$"
+ modifier_building_rice_farm_output_mult:0 "$building_rice_farm$ [concept_output]"
+ modifier_building_rice_farm_output_mult_desc:0 "A bonus to the output of $building_rice_farm$."
+# buildings 
  building_construction_industry:0 "Builder's Merchants"
  building_finance_sector:0 "Finance Sector"
  building_central_bank:0 "Central Bank"
  building_copper_mine:0 "Copper Mine"
  building_silver_fields:0 "Silver Fields"
-#production_methods
+# building groups
+ bg_finance:0 "Financial Buildings"
+ bg_central_bank:0 "Central Banking"
+ bg_copper_mining:0 "Copper Mining"
+ bg_silver_fields:0 "Silver Fields"
+ bg_silver_mining:0 "Silver Mining"
+# production_methods
  pmg_base_building_silver_fields:0 "Silver Fields"
  default_building_silver_fields:0 "Silver Fields"
+
+ pm_copper_tools:0 "Copper Tools"
 
  pmg_base_building_construction_industry:0 "Construction Method"
  pm_construction_industry_wooden_buildings:0 "Carpentry"
