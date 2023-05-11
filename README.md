@@ -15,6 +15,7 @@ The main idea for this came from a mod I started and never finished over a decad
 
 ## Culture and Religion
 
+- Dozens of new cultures
 - Several new religions added
 - Large pan-national cultures have been further broken down and will automatically assimilate into their parent culture
 - New cultures for diasporas in the New World disconnected from their homeland
@@ -83,10 +84,13 @@ Other languages will be added in the future, if you would like to add a translat
 
 Credits to these mods for providing ideas, graphics or code.
 
-Title, Author, Workshop ID
 
-- "Unify the Maghreb" *strong bird* (2880314605)
-- "Independent Newfoundland" *Dungeon Master* (2880478571)
+- Tobbzn (whoever you may be...) for the .gui files that I acquired via discord
+
+And to these mods on the Steam Workshop (Workshop ID)
+
+- "Unify the Maghreb" by *strong bird* (2880314605)
+- "Independent Newfoundland" by *Dungeon Master* (2880478571)
 
 ## Licence
 

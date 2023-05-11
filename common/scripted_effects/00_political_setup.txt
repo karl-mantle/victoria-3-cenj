@@ -13,7 +13,7 @@ effect_starting_politics_liberal = {
 	activate_law = law_type:law_racial_segregation
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_no_migration_controls
-	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_right_of_assembly
 	activate_law = law_type:law_silver_standard
 }
 
@@ -30,7 +30,6 @@ effect_starting_politics_conservative = {
 	activate_law = law_type:law_mercantilism
 	activate_law = law_type:law_serfdom_banned
 	activate_law = law_type:law_censorship
-	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_migration_controls
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_silver_standard

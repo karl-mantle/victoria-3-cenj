@@ -1,4 +1,9 @@
 # Changelog
+### 0.0.17
+- condensed mod files due to game skipping several important lines for unknown reasons
+- overwriting vanilla states localisation file because otherwise state localisation just doesn't work!
+- added two .gui files from Tobbzn via discord to stop vanilla error spam
+- removed professional army duplicates from political setup and added right of assembly to liberal
 ### 0.0.16
 - split gelre into gelderland and brabant
 - adjusted netherlands starting laws and POPs

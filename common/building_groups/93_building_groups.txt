@@ -1,0 +1,51 @@
+﻿bg_copper_mining = {
+	parent_group = bg_mining
+	
+	default_building = building_copper_mine
+	
+	can_use_slaves = yes
+}
+
+bg_silver_fields = {
+	parent_group = bg_mining
+
+	auto_place_buildings = yes
+
+	discoverable_resource = yes
+	
+	depletable_resource = yes
+	
+	pays_taxes = no
+
+	default_building = building_silver_fields
+	
+	fired_pops_become_radical = no
+}
+
+bg_silver_mining = {
+	parent_group = bg_mining
+	
+	default_building = building_silver_fields
+
+	can_use_slaves = yes
+}
+
+bg_central_bank = { #work in progress
+	parent_group = bg_government
+	category = development
+	is_government_funded = yes
+	cash_reserves_max = 500000
+	urbanization = 100
+	infrastructure_usage_per_level = 5
+	lens = government
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+	}
+}
+
+bg_finance = {
+	parent_group = bg_urban_facilities
+	category = urban
+	is_government_funded = no
+	cash_reserves_max = 100000
+}

@@ -1,0 +1,74 @@
+﻿building_output_construction_add = {
+    good = yes
+    percent = no
+}
+
+building_input_construction_add = {
+    good = no
+    percent = no
+}
+
+building_output_currency_add = {
+    good = yes
+    percent = no
+}
+
+building_input_currency_add = {
+    good = no
+    percent = no
+}
+
+building_output_securities_add = {
+    good = yes
+    percent = no
+}
+
+building_input_securities_add = {
+    good = no
+    percent = no
+}
+
+building_input_gold_add = {
+    good = no
+    percent = no
+}
+
+building_input_services_add = {
+    good = no
+    percent = no
+}
+
+building_group_bg_finance_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_coffee_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_rice_farm_output_mult = {
+    good = yes
+    percent = yes
+}
+
+building_output_silver_add = {
+    good = yes
+    percent = no
+}
+
+building_input_silver_add = {
+    good = no
+    percent = no
+}
+
+building_output_copper_add = {
+    good = yes
+    percent = no
+}
+
+building_input_copper_add = {
+    good = no
+    percent = no
+}
