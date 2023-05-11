@@ -4,32 +4,49 @@ Cultures, Events, Nations, Journals aka CENJ is an experimental mod for Victoria
 
 ** Please note this mod is currently unbalanced and may be unstable **
 
-I have created this mod for two reasons; one is that I wanted to see if the migration wave mechanic would work better with more granular POPs. The second is that I just wanted to create a more varied experience for myself whilst playing - even if it does slow the game down!
-
 The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.
 
-# Features
+# Current Features
 
-## Current
+## Countries
 
-- 140 new countries in North America and Europe
-- New cultures in the New World, Europe and the Middle East
-- Migration waves larger and more frequent
-- New World diaspora cultures with automatic assimilation and homelands e.g. Irish POPs in the USA will assimilate to Irish-American
-- Closed Borders works as Migration Controls because there's no way to close only external borders
-- Migration Controls works as Open Borders
-- Open Borders now will result in POPs who have a lower SOL in neighbouring countries border states moving to the Open Border's countries border states e.g. some POPs in Spanish-owned Catalonia may move to Languedoc if the average SOL is greater in French-owned Languedoc.
-- Cultural Exclusion now discriminates against anyone not holding a cultural trait
-- Increased the effect of discrimination on where POPs choose to move to (hopefully should counter-act the above change somewhat)
-- Increased assimilation rate and chunk size of POPs that assimilate so that it doesn't run at a total snail's pace with all the separated POPs.
+- 140+ new countries that can be formed or released throughout Europe and the New World
+- Several new states
 
-## Planned
-- More cultures for the geographical definition of Europe
-- Unique namelists for new cultures (currently using the closest cultures namelist)
-- More nations
-- Generic events based on inevitable historic events e.g. the 1906 San Francisco Earthquake
-- Journals for added nations
-- Create a decision tree that applies the mod's changes to minimise compatibility issues.
+## Culture and Religion
+
+- Several new religions added
+- Large pan-national cultures have been further broken down and will automatically assimilate into their parent culture
+- New cultures for diasporas in the New World disconnected from their homeland
+- Migration waves should now be larger and more frequent with discrimination having a larger effect
+- Increased assimilation and conversion rates as well as chunk size
+
+## Politics and Laws
+
+- Added 1 new law with more planned
+- Changed border laws so that Open Borders results in market-external migration via hidden events, Border Controls works like old Open Borders and Closed Borders works like Border Controls
+- Changed cultural exclusion law so that it now discriminates anyone who doesn't also hold an accepted cultural trait
+- Changes to several countries starting laws and political landscapes
+- New characters
+
+## Trade and Buildings
+
+- Added several new trade goods
+- Construction sector can now be entirely privatized (ports soon to follow...)
+- Construction sector now relies on building materials rather than raw inputs and outputs mortgages and deeds (securities)
+- Copper and Copper Mines added to world, some production methods of late game buildings now require copper
+- Silver now a discoverable resource a la Gold Fields and a byproduct of Lead and Copper mines
+- Copper, Silver and Gold are all tradeable resources that are used by the Finance Sector to create currency
+- Currency can also be created through bonds and gilts (securities) with the adoption of fiat money
+- Decentralised nations will use bartering and have no standards of currency
+
+## Future Plans
+
+- Balance the new trade goods and POP needs
+- Unique namelists for new cultures
+- More cultures and religions in other regions of the world
+- Generic and nation-specific events
+- Journals for new nations
 
 # Installation
 
@@ -43,17 +60,18 @@ Please note: this mod will inherently cause the game to run slower than vanilla,
 
 Most of the files within this mod will work as seperate overwrites so it should be compatible with other mods, the exception is the directories listed below where I have overwritten the vanilla file(s). Any other mod you have installed won't be compatible with CENJ if it also overwrites these vanilla files without making a compatibility patch.
 
-## Overwrite files
+### Overwritten vanilla files and directories
 
-There are overwrites to migration and culture laws, a number of vanilla cultures and ____. They are in seperate files, with the exception of the following:
-
-### Overwritten vanilla files
-
-- /common/history/pops/00_west_europe.txt
-- /common/history/pops/01_south_europe.txt
-- /common/history/pops/02_east_europe.txt
-- /common/history/pops/09_central_asia.txt
-- /common/history/pops/14_siberia.txt
+- /common/buy_packages/00_buy_packages.txt
+- /common/history/buildings/ < all files >
+- /common/history/countries/ < all files >
+- /common/history/pops/ < all files >
+- /common/history/states/00_states.txt
+- /common/scripted_effects/00_political_setup.txt
+- /common/scripted_effects/00_starting_inventions.txt
+- /common/strategic_regions/eurioe_strategic_regions.txt
+- /gfx/map/city_data/city_types/ < all files ending with city or mine >
+- /map_data/state_regions/ < all files >
 
 # Translation
 
@@ -63,10 +81,13 @@ Other languages will be added in the future, if you would like to add a translat
 
 # Credits
 
+Credits to these mods for providing ideas, graphics or code.
+
 Title, Author, Workshop ID
 
 - "Unify the Maghreb" *strong bird* (2880314605)
 - "Independent Newfoundland" *Dungeon Master* (2880478571)
+
 ## Licence
 
 You can (re-)use any part of this mod that I personally created in whatever way you want.

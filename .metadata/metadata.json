@@ -1,9 +1,9 @@
 {
-  "name" : "CENJ",
+  "name" : "CENJ (early build)",
   "id" : "",
-  "version" : "0.0.4",
+  "version" : "0.0.16",
   "supported_game_version" : "1.2.7",
-  "short_description" : "",
+  "short_description" : "Cultures, Events, Nations, Journals aka CENJ is an experimental mod for Victoria 3.",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
