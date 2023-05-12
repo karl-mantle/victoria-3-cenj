@@ -6,14 +6,14 @@ Cultures, Events, Nations, Journals aka CENJ is an experimental mod for Victoria
 
 The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.
 
-# Current Features
+## Current Features
 
-## Countries
+### Countries
 
 - 140+ new countries that can be formed or released throughout Europe and the New World
 - Several new states
 
-## Culture and Religion
+### Culture and Religion
 
 - Dozens of new cultures
 - Several new religions added
@@ -22,7 +22,7 @@ The main idea for this came from a mod I started and never finished over a decad
 - Migration waves should now be larger and more frequent with discrimination having a larger effect
 - Increased assimilation and conversion rates as well as chunk size
 
-## Politics and Laws
+### Politics and Laws
 
 - Added 1 new law with more planned
 - Changed border laws so that Open Borders results in market-external migration via hidden events, Border Controls works like old Open Borders and Closed Borders works like Border Controls
@@ -30,7 +30,7 @@ The main idea for this came from a mod I started and never finished over a decad
 - Changes to several countries starting laws and political landscapes
 - New characters
 
-## Trade and Buildings
+### Trade and Buildings
 
 - Added several new trade goods
 - Construction sector can now be entirely privatized (ports soon to follow...)
@@ -41,7 +41,7 @@ The main idea for this came from a mod I started and never finished over a decad
 - Currency can also be created through bonds and gilts (securities) with the adoption of fiat money
 - Decentralised nations will use bartering and have no standards of currency
 
-## Future Plans
+### Future Plans
 
 - Balance the new trade goods and POP needs
 - Unique namelists for new cultures
@@ -49,11 +49,11 @@ The main idea for this came from a mod I started and never finished over a decad
 - Generic and nation-specific events
 - Journals for new nations
 
-# Installation
+## Installation
 
 Download the contents of this project and place it in your Victoria 3 mods folder. On Windows this can be found in your documents folder "~/documents/paradox interactive/victoria 3/mods/".
 
-# Compatibility
+## Compatibility
 
 This mod is written for the latest* version of Victoria 3 - patch 1.2.7
 
@@ -74,13 +74,13 @@ Most of the files within this mod will work as seperate overwrites so it should 
 - /gfx/map/city_data/city_types/ < all files ending with city or mine >
 - /map_data/state_regions/ < all files >
 
-# Translation
+## Translation
 
 This mod is availible in English.
 
 Other languages will be added in the future, if you would like to add a translation or request one feel free to contact me. 
 
-# Credits
+## Credits
 
 Credits to these mods for providing ideas, graphics or code.
 
@@ -92,10 +92,10 @@ And to these mods on the Steam Workshop (Workshop ID)
 - "Unify the Maghreb" by *strong bird* (2880314605)
 - "Independent Newfoundland" by *Dungeon Master* (2880478571)
 
-## Licence
+### Licence
 
 You can (re-)use any part of this mod that I personally created in whatever way you want.
 
-## Notes
+### Notes
 
 *At the time of writing

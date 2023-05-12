@@ -90,9 +90,9 @@
  pm_worker_cooperative_finance_sector:0 "$pm_worker_cooperative$"
 
  pmg_base_building_central_bank:0 "Central Bank Policy"
- pm_central_bank_base:0 "Central Bank Base Policies"
- pm_central_bank_quantative_easing:0 "Quantative Easing"
- pm_central_bank_raised_interest_rates:0 "Raised Interest Rates"
+ pm_central_bank_base:0 "Standard Policies"
+ pm_central_bank_counter_recession:0 "Counter-Recession Policies"
+ pm_central_bank_counter_inflation:0 "Counter-Inflation Policies"
 
  pmg_ownership_central_bank:0 "Central Bank Management"
  pm_privately_owned_central_bank:0 "Independent Central Bank"

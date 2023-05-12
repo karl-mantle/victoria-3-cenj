@@ -5,25 +5,22 @@ NPops = {
 	CONVERSION_RATE = 0.02
 	MIN_CONVERSION = 100
 	
-	DISCRIMINATION_BASE = 50
+	DISCRIMINATION_BASE = 40
 	
-	MIGRATION_PULL_MULT_FROM_NO_DISCRIMINATION = 3.0		# Migration pull multiplier increased by this if pop is moving from discrimination to no discrimination (not applied to mass migration targets)
+	MIGRATION_PULL_MULT_FROM_NO_DISCRIMINATION = 2.0		# Migration pull multiplier increased by this if pop is moving from discrimination to no discrimination (not applied to mass migration targets)
 	MIGRATION_PULL_MULT_FROM_HOMELANDS = 1.0				# Migration pull multiplier increased by this if pop is moving to cultural homelands (not applied to mass migration targets)
 	
 	# General factors for how many pops will migrate
-	MIGRATION_PULL_HIGH_THRESHOLD = 1.1						#	State must have a migration pull of at least market average * this to get economic immigration
-	MIGRATION_PULL_LOW_THRESHOLD = 0.9							# State must have a migration pull of less or equal than market average * this to get full amount of emigration
-	CULTURAL_MIGRATION_BASE = 0.15								# Base amount of a pop that wants to move due to mass migration
-	CULTURAL_MIGRATION_FROM_RADICALS = 0.10						# At 100% radicals, this fraction of the pop wants to mass migrate
-	MIGRATION_UNEMPLOYMENT_MULT = 10.0							# Amount of migration from SoL is increased by this when a pop is unemployed
-	MIGRATION_MIN_STATE_POPS = 50000							# A state with less pops than this will not get emigration
+	MIGRATION_PULL_HIGH_THRESHOLD = 1.05						#	State must have a migration pull of at least market average * this to get economic immigration
+	MIGRATION_PULL_LOW_THRESHOLD = 0.95							# State must have a migration pull of less or equal than market average * this to get full amount of emigration
+	CULTURAL_MIGRATION_BASE = 0.1								# Base amount of a pop that wants to move due to mass migration
+	CULTURAL_MIGRATION_FROM_RADICALS = 0.1						# At 100% radicals, this fraction of the pop wants to mass migrate
 	MIGRATION_MAX_PER_STATE_INFRASTRUCTURE = 3					# No more than this amount of people can move from or to a state in a single week (scales with infrastructure)
 	MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION = 0.005	# Max emigration per week is clamped to this fraction of a state's population
 	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_ORIGIN_FRACTION = 0.05	# The amount of unemployed workers in a state * this value is added to how many people can move from it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
 	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_TARGET_FRACTION = 0.05	# The amount of unemployed workers in a state * this value is removed from how many people can move to it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
 	MIGRATION_MAX_PER_STATE_CULTURAL_EMIGRATION_MULT = 5.0		# Weekly emigration caps are multiplied by this amount by this for cultural-type migration (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
 	MIGRATION_MAX_PER_STATE_CULTURAL_IMMIGRATION_MULT = 10.0		# Weekly immigration caps are multiplied by this amount by this for cultural-type migration (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
-	MIGRATION_AVERAGE_ATTRACTION_EMIGRATION_MULT = 0.1			# States with an average migration attraction gets this multiplier to emigrants
 	
 	# Factors for creating mass migration targets
 	MASS_MIGRATION_ORIGIN_MIN_TURMOIL = 0.15			# Must have at least this much turmoil in cultural homelands to create a migration target
@@ -33,7 +30,7 @@ NPops = {
 	MASS_MIGRATION_STATE_MIN_MARKET_ACCESS = 0.25		# A state must have at least this much market access to their market to be a mass migration target or origin state
 	MASS_MIGRATION_SPAWN_CHANCE = 0.75 					# Per week for each potential mass migration, scales with turmoil (1 = 1%)
 	MASS_MIGRATION_SPAWN_CHANCE_STRUGGLING_FACTOR = 0.2 # Chance increases by this for each point of SoL below 10 for a culture in a country
-	MASS_MIGRATION_SPAWN_CHANCE_STARVING_FACTOR = 0.7 	# Chance increases by this for each point of SoL below 5 for a culture in a country (added on top of struggling factor)
+	MASS_MIGRATION_SPAWN_CHANCE_STARVING_FACTOR = 0.6 	# Chance increases by this for each point of SoL below 5 for a culture in a country (added on top of struggling factor)
 	MASS_MIGRATION_TARGET_COUNTRY_RANDOM_FACTOR = 0.3	# The higher this is, the more random the selection of mass migration country targets will be
 	MASS_MIGRATION_TARGET_STATE_RANDOM_FACTOR = 0.3		# The higher this is, the more random the selection of mass migration state targets in the target country will be
 	MASS_MIGRATION_DURATION_MONTHS = 24					# How long does a mass migration last in months

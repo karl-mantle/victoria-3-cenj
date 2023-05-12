@@ -36,6 +36,7 @@ AMG = { #Armagnac
 }
 ANS = { #Ansbach
     # not sure
+    ai_will_do = { always = no }
 }
 AQU = { #Aquileia
     states = {
@@ -81,9 +82,11 @@ AVI = { #Avignon
 }
 BAR = { #Bar
 	# not sure
+    ai_will_do = { always = no }
 }
 BRY = { #Berry
     # not sure
+    ai_will_do = { always = no }
 }
 BLN = { #Bologna
     provinces = {

@@ -20,9 +20,9 @@ securities = {
 
 currency = {
 	texture = "gfx/interface/icons/goods_icons/currency.dds"
-	cost = 20
+	cost = 15
 	category = staple
-	tradeable = no
+	convoy_cost_multiplier = 0.1
 }
 
 gold = {

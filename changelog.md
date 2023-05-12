@@ -1,4 +1,15 @@
 # Changelog
+### 0.0.18
+- reduced POP needs for finance and fine art (hopefully should reduce art spam)
+- changed balancing of financial trade goods and production methods
+- some production methods now use unused vanilla icons
+- graphics for cities in mediterranean changed to "latin" from "european"
+- "european" city gfx textures changed so it produces less copper-roofed eyesores
+- removed russian primary culture from kazan, now tatar only
+- subject taxes use values from vickypedia
+- vassals and puppets can now start diplo plays
+- added negative and positive effects to tax level
+- changed migration defines some more
 ### 0.0.17
 - condensed mod files due to game skipping several important lines for unknown reasons
 - overwriting vanilla states localisation file because otherwise state localisation just doesn't work!

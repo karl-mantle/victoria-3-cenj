@@ -90,11 +90,17 @@ DON = {
 
 CHC = {
 	color = { 35 52 48 }
-	
 	country_type = unrecognized
-
 	tier = principality
 	
 	cultures = { chechen }
 	capital = STATE_DAGESTAN
+}
+
+IUS = {
+	color = { 11 115 39 }
+	country_type = recognized
+	tier = principality
+	cultures = { tatar }
+	capital = STATE_KAZAN
 }
