@@ -321,6 +321,13 @@ GUY = { #Gascony
 	cultures = { occitan }
 	capital = STATE_AQUITAINE
 }
+GYA = { #Guyana
+	color = { 250 120 20 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { afro_caribbean afro_antillean }
+	capital = STATE_GUAYANA
+}
 HLL = { #Holland
 	color = { 156 96 100 }
 	country_type = recognized
@@ -516,6 +523,13 @@ MFA = { #Montferrat
 	tier = city_state
 	cultures = { north_italian }
 	capital = STATE_PIEDMONT
+}
+MLD = { #Maldives
+	color = { 180 0 20 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { sinhala }
+	capital = STATE_CEYLON
 }
 MLO = { #Milan
 	color = { 166 108 146 }
@@ -741,6 +755,14 @@ RYA = { #Ryazan
 	cultures = { russian }
 	capital = STATE_MOSCOW
 }
+RYU = { #Ryukyu Islands
+	color = { 90 138 133 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { japanese }
+	capital = STATE_RYUKYU_ISLANDS
+	is_named_from_capital = yes
+}
 SAD = { #Sardinia
 	color = { 117 146 167 }
 	country_type = recognized
@@ -754,6 +776,13 @@ SAV = { #Savoy
 	tier = principality
 	cultures = { north_italian }
 	capital = STATE_SAVOY
+}
+SGP = { #Singapore
+	color = { 237 41 57 }
+	country_type = recognized
+	tier = city_state
+	cultures = { malay }
+	capital = STATE_MALAYA
 }
 SKL = { #Sicily
 	color = { 73 152 76 }
@@ -880,6 +909,7 @@ TBZ = { #Trebizond
 	tier = principality
 	cultures = { pontic_greek }
 	capital = STATE_TRABZON
+	is_named_from_capital = yes
 }
 TRR = { #Trier
 	color = { 208 104 44 }

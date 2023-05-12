@@ -1302,6 +1302,14 @@ FKN = { #Franconia
         priority = 1
     }
     flag_definition = {
+        coa = FKN_monarchy
+        subject_canton = FKN_monarchy
+        priority = 20
+        trigger = {
+            coa_def_absolute_monarchy_flag_trigger = yes
+        }
+    }
+    flag_definition = {
         coa = FKN_communist
         subject_canton = FKN_communist
         priority = 1500
@@ -1519,6 +1527,12 @@ GUY = { #Gascony
             coa_def_absolute_monarchy_flag_trigger = yes
         }
     }
+}
+GYA = { #Guyana - TODO: add more flags
+	flag_definition = {
+		coa = GYA
+		priority = 1
+	}
 }
 HLL = { #Holland
     flag_definition = {
@@ -2459,6 +2473,12 @@ MFA = { #Montferrat
             coa_def_republic_flag_trigger = yes
         }
     }
+}
+MLD = { #Maldives - TODO: add more flags
+	flag_definition = {
+		coa = MLD
+		priority = 1
+	}
 }
 MLO = { #Milan
     flag_definition = {
@@ -3516,6 +3536,19 @@ RYA = { #Ryazan
         }
     }
 }
+RYU = { #Ryukyu Islands
+	flag_definition = {
+		coa = RYU
+		priority = 1
+	}
+	flag_definition = {
+		coa = RYU_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
 SAD = { #Sardinia
     flag_definition = {
         coa = SAD
@@ -3545,6 +3578,26 @@ SAV = { #Savoy
             coa_def_fascist_flag_trigger = yes
         }
     }
+}
+SGP = { #Singapore
+	flag_definition = {
+		coa = SGP
+		priority = 1
+	}
+	flag_definition = {
+		coa = SGP_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SGP_anarchy
+		priority = 1500
+		trigger = {
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
 }
 SKL = { #Sicily
     flag_definition = {

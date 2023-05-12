@@ -45,6 +45,7 @@
  building_central_bank:0 "Central Bank"
  building_copper_mine:0 "Copper Mine"
  building_silver_fields:0 "Silver Fields"
+ building_silver_fields_discovered_resource:0 "Silver Fields"
 # building groups
  bg_finance:0 "Financial Buildings"
  bg_central_bank:0 "Central Banking"

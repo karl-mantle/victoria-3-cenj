@@ -1872,7 +1872,29 @@ FEA_republic = {
 	}
 }
 FKN = { 
-    textured_emblem = { texture = "EU4toVic2/d_franconia.tga" } 
+	pattern = "pattern_solid.tga"
+	color1  ="red_light"
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+}
+FKN_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+	textured_emblem = {
+		texture = "te_coa_franconia.dds"
+		instance = {
+			scale = { 1.0 1.0 }
+			position = { 0.5 0.5 }
+		}
+	}
 }
 FKN_communist = {
 	pattern = "pattern_horizontal_split_01.tga"
@@ -1901,6 +1923,11 @@ FKN_republic = {
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "white"
 	color2 = "red"
+}
+FRN_anarchy = { # TODO implement this new flag
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "red"
+	color2 = "white"
 }
 FOI = {
 	pattern = "pattern_solid.tga"
@@ -2166,6 +2193,40 @@ GUY_monarchy = {
 		color1 = "yellow"
 		instance = { scale = { 0.5 0.5 } position = { 0.25 0.75 } }
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.25 } }
+	}
+}
+GYA = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_tricolor_fimbriated_thin.dds"
+		color1 = "green"
+		color2 = "red_light"
+		color3 = "green"
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = {
+			scale = { 0.35 0.35 }
+			position = { 0.25 0.5 }
+		}
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = {
+			scale = { 0.35 0.35 }
+			position = { 0.5 0.5 }
+		}
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = {
+			scale = { 0.35 0.35 }
+			position = { 0.75 0.5 }
+		}
 	}
 }
 HLL = {
@@ -3198,6 +3259,10 @@ MFA_republic = {
 		color1 = "white"
 		color2 = "white"
 	}
+}
+MLD = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
 }
 MLO = {
 	pattern = "pattern_solid.tga"
@@ -4927,6 +4992,63 @@ RYA_monarchy = {
 RYA_republic = { 
     textured_emblem = { texture = "EU4toVic2/RYA_republic.tga" } 
 }
+RYU = { 
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_ryukyu.dds"
+		color1 = "black"
+		color2 = "blue_light"
+		instance = {
+			scale = { 1.0 1.0 }
+			position = { 0.5 0.35 }
+		}
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "black"
+		instance = {
+			scale = { 1 0.66 }
+			position = { 0.5 0.67 }
+		}
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red_light"
+		instance = {
+			scale = { 1 0.22 }
+			position = { 0.5 0.78 }
+		}
+	}
+}
+RYU_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_hammer_sickle_wreath.dds"
+		color1 = "black"
+		instance = {
+			scale = { 0.7 0.7 }
+			position = { 0.5 0.35 }
+		}
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "black"
+		instance = {
+			scale = { 1 0.66 }
+			position = { 0.5 0.67 }
+		}
+	}
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red_light"
+		instance = {
+			scale = { 1 0.22 }
+			position = { 0.5 0.78 }
+		}
+	}
+}
 SAD = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -4977,6 +5099,43 @@ SAV_fascist = {
 		color1 = "white"
 		color2 = "white"
 	}
+}
+SGP = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_singapore_crescent.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+}
+SGP_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_hammer_sickle_india.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = {
+			scale = { 0.6 0.6 }
+			position = { 0.2 0.26 }
+		}
+	}
+}
+SGP_anarchy = {
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "white"
+	color2 = "red"
 }
 SKL = {
 	pattern = "pattern_solid.tga"
@@ -5070,8 +5229,14 @@ SLA = {
 	color2 = "red_dark"
 	color1 = "yellow"
 }
-SLA_communist = { 
-    textured_emblem = { texture = "EU4toVic2/SIL_communist.tga" } 
+SLS_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_dark"
+	colored_emblem = {
+		texture = "ce_hammer_and_sickle.dds"
+		color1 = "black"
+		color2 = "black"
+	}
 }
 SLA_fascist = {
 	pattern = "pattern_horizontal_split_01.tga"

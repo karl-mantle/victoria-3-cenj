@@ -264,6 +264,7 @@ change_primary_culture_north_german_minor = {
     if = {
         limit = {
             OR = { exists = c:NGF exists = c:GER }
+            ROOT = { has_technology_researched = pan-nationalism }
         }
         if = {
             limit = { 
@@ -412,6 +413,7 @@ change_primary_culture_south_german_minor = {
     if = {
         limit = {
             OR = { exists = c:SGF exists = c:GER }
+            ROOT = { has_technology_researched = pan-nationalism }
         }
         if = {
             limit = { 
@@ -510,6 +512,7 @@ change_primary_culture_north_italian_minor = {
     if = {
         limit = {
             exists = c:ITA
+            ROOT = { has_technology_researched = pan-nationalism }
         }
         if = {
             limit = { 
@@ -599,6 +602,7 @@ change_primary_culture_south_italian_minor = {
     if = {
         limit = {
             exists = c:ITA
+            ROOT = { has_technology_researched = pan-nationalism }
         }
         if = {
             limit = { 

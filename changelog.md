@@ -1,4 +1,10 @@
 # Changelog
+### 0.0.19
+- pan-nationalism technology check to unification minors culture flipping when left out of major formation
+- flavour to chile & argentina
+- new releasable countries (singapore, maldives, ryukyu islands)
+- new flags for some european countries
+- removed gold framing around overlord's canton on subject flags
 ### 0.0.18
 - reduced POP needs for finance and fine art (hopefully should reduce art spam)
 - changed balancing of financial trade goods and production methods

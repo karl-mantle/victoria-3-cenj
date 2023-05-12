@@ -1,0 +1,78 @@
+﻿CHARACTERS = {
+	c:CHL = {
+		create_character = {
+			# Jose Joaquin Prieto
+			first_name = "Jose_Joaquin"
+			last_name = "Prieto"
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1786.8.20
+			dna = dna_president_joaquin_prieto
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer
+			traits = {
+				persistent
+			}
+		}
+
+		create_character = {
+			# Santiago Larraín
+			first_name = "Santiago"
+			last_name = "Larrain"
+			ig_leader = yes
+			birth_date = 1786.8.20
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+			}
+		}
+
+		create_character = {
+			# Manuel Vicuna Larraín
+			first_name = "Manuel"
+			last_name = "Vicuna_Larrain"
+			ig_leader = yes
+			birth_date = 1778.4.20
+			interest_group = ig_devout
+			ideology = ideology_moderate
+			traits = {
+			}
+		}
+
+		create_character = {
+			# José Victorino Lastarria
+			first_name = "Jose"
+			last_name = "Victorino_Lastarria"
+			ig_leader = yes
+			birth_date = 1817.3.23
+			interest_group = ig_intelligentsia
+			ideology = ideology_radical
+			traits = {
+			}
+		}
+
+		create_character = {
+			# Agustín Edwards Ossandón
+			first_name = "Agustin"
+			last_name = "Edwards_Ossandon"
+			ig_leader = yes
+			birth_date = 1815.5.20
+			interest_group = ig_industrialists
+			ideology = ideology_market_liberal
+			traits = {
+			}
+		}
+
+		create_character = {
+			# Juan Godoy
+			first_name = "Juan"
+			last_name = "Godoy"
+			ig_leader = yes
+			birth_date = 1800.3.23
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+			}
+		}
+	}
+}
