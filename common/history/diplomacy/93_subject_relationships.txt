@@ -5,4 +5,52 @@
 			type = puppet
 		}
     }
+    c:RUS = {
+		create_diplomatic_pact = {
+			country = c:POL
+			type = personal_union
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:COU
+			type = puppet
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:ABK
+			type = puppet
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:SVA
+			type = puppet
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:MIN
+			type = puppet
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:TCA
+			type = puppet
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:EST
+			type = puppet
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:LVN
+			type = puppet
+		}
+	}
 }

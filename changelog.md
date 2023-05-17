@@ -1,4 +1,26 @@
 # Changelog
+### 0.0.20
+- new countries canary islands, kenya, namibia, nigeria, thrace, vardar (north macedonia), macedonia, courland, minor caucasian states
+- poland, estonia, livonia and courland as subjects of russia
+- fixed Ryukyu Islands localisation
+- added new secondary PM for millet farms (palm oil)
+- removed redundant .tga flag files
+- changed german minors culture flipping to if only germany proper exists NGF and SGF no longer count
+- added silver fields to brunswick at game start b/c i can't figure out how to make it discover seperately yet
+- removed badajoz from andalusia
+- andalusia now called granada if any islam is the state religion
+- oman religion changed to ibadi
+- changed colour of ibadi
+- partial integration of "Historical Russian Substates"
+- mod's new estonia and livonia merged with my own
+- new historical flags for added nations
+- dynamic country and government types(WIP) for added nations
+- latvia can now be formed by either courland or livonia
+- fixed starting wars with caucasian minors
+- added new caucasian cultures e.g. chechen, ossetian (alan), nogai, etc.
+- changed north caucasian POPs in astrakhan to tatar
+- undone changes to the underlying map
+- regenerated map object locator data - need to change locators in map editor 
 ### 0.0.19
 - pan-nationalism technology check to unification minors culture flipping when left out of major formation
 - flavour to chile & argentina

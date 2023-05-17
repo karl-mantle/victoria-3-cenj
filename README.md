@@ -91,6 +91,7 @@ And to these mods on the Steam Workshop (Workshop ID)
 
 - "Unify the Maghreb" by *strong bird* (2880314605)
 - "Independent Newfoundland" by *Dungeon Master* (2880478571)
+- "Historical Russian Substates" by *mushriks* (2883212186)
 
 ### Licence
 

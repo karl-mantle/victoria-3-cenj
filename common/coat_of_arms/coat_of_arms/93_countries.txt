@@ -60,6 +60,15 @@ AAC_republic = {
 		color2 = "yellow"
 	}
 }
+ABK = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_green"
+
+	textured_emblem = {
+		texture = "abk_emblem.dds"
+		instance = { scale = { 1.3 1.3 } position = { 0.5 0.5 } }
+	}
+}
 ACA = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -1383,6 +1392,16 @@ CNN_republic = {
 		instance = { scale = { 0.2 0.2 } position = { 0.5 0.15 } }
 	}
 }
+CNR = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "blue"
+		color2 = "yellow"
+	}
+}
 COB = {
 	pattern = "pattern_solid.tga"
 	color1 = "green"
@@ -1443,6 +1462,26 @@ COB_republic = {
 	colored_emblem = {
 		texture = "ce_stripes_04.dds"
 		color1 = "white"
+	}
+}
+COU = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+}
+COU_subject_RUS = {
+	pattern = "pattern_solid.tga"
+	color1 = "green_vibrant"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "blue_vibrant"
+		color2 = "white"
 	}
 }
 CRN = {
@@ -1924,6 +1963,20 @@ FKN_republic = {
 	color1 = "white"
 	color2 = "red"
 }
+FLO = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 1 1 }}
+	}
+	textured_emblem = {
+		texture = "te_coa_florida.dds"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }
+	}
+}
 FRN_anarchy = { # TODO implement this new flag
 	pattern = "pattern_per_bend_senester.dds"
 	color1 = "red"
@@ -2365,6 +2418,29 @@ ING_fascist = {
 		instance = { scale = { 0.5 0.2 } position = { 0.25 0.125 } }
 		instance = { scale = { 0.5 0.2 } position = { 0.75 0.375 } }
 	}
+}
+KEN = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "red"
+		color2 = "green"
+	}
+}
+KEN_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_lion_statant_guardant.dds"
+		color1 = "red"
+		color2 = "red"
+		color3 = "black"
+		instance = { scale = { 0.75 0.75 } position = { 0.75 0.5 } }	
+	}	
 }
 KID = {
 	pattern = "pattern_solid.tga"
@@ -2914,6 +2990,16 @@ LVN_fascist = {
 LVN_republic = { 
     textured_emblem = { texture = "EU4toVic2/LVN_republic.tga" } 
 }
+LVN_subject_RUS = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "green_vibrant"
+	}
+}
 MAG = { 
     textured_emblem = { texture = "EU4toVic2/MAG.tga" } 
 }
@@ -3100,6 +3186,16 @@ MBZ_republic = {
 	color2 = "red"
 	color1 = "white"
 }
+MCD = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+}
 MCM = { 
     textured_emblem = { texture = "EU4toVic2/MCM.tga" } 
 }
@@ -3258,6 +3354,17 @@ MFA_republic = {
 		texture = "ce_tricolor_horizontal.dds"
 		color1 = "white"
 		color2 = "white"
+	}
+}
+MIN = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_vibrant"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
 	}
 }
 MLD = {
@@ -3816,6 +3923,36 @@ NEV_republic = {
 		color1 = "red"
 		color2 = "red"
 	}
+}
+NIG = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "green"
+	}
+}
+NIG_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+}
+NMB = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "red"
+		color2 = "green"
+	}		
+}
+NMB_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
 }
 NOL = {
 	pattern = "pattern_solid.tga"
@@ -5049,6 +5186,16 @@ RYU_communist = {
 		}
 	}
 }
+SAA = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "black"
+	}
+}
 SAD = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -5557,6 +5704,15 @@ STY_monarchy = {
 STY_republic = { 
     textured_emblem = { texture = "EU4toVic2/STY_republic.tga" } 
 }
+SVA = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_neon"
+
+	textured_emblem = {
+		texture = "sva_emblem.dds"
+		instance = { scale = { 1.5 1.5 } position = { 0.5 0.5 } }
+	}
+}
 SWA = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
@@ -5640,6 +5796,23 @@ SZO_fascist = {
 SZO_republic = { 
     textured_emblem = { texture = "EU4toVic2/c_saluzzo_republic.tga" } 
 }
+TCA = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "red"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+		color3 = color3
+	}
+	textured_emblem = {
+		texture = "eagle_tca.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}	
+}
 TEU = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -5685,6 +5858,15 @@ TEU_fascist = {
 TEU_republic = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "black"
+	}
+}
+THR = {
+	pattern = "pattern_solid.tga"
+	color1 = { 0 20 137 }
 
 	colored_emblem = {
 		texture = "ce_cross_england.dds"
@@ -6476,6 +6658,16 @@ VER_fascist = {
 }
 VER_republic = { 
     textured_emblem = { texture = "EU4toVic2/VER_republic.tga" }
+}
+VRD = { #TODO
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
 }
 VRM = {
 	pattern = "pattern_solid.tga"

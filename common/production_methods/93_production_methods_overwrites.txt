@@ -196,6 +196,19 @@ pm_breech_loaders = { #changed PM icon
 	}
 }
 
+# 02_agri
+
+pm_palm_oil = {
+	texture = "gfx/interface/icons/production_method_icons/millet_palm_oil.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -15
+			building_output_oil_add = 10
+		}
+	}
+}
+
 # 03_mines
 
 default_building_gold_fields = {

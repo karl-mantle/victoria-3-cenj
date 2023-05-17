@@ -37,6 +37,13 @@
         }
     }
 }
+ABK = { #Abkhazia #TODO
+    flag_definition = {
+        coa = ABK    
+        subject_canton = ABK
+        priority = 1
+    }
+}
 ACA = { #Achaea
     flag_definition = {
         coa = ACA
@@ -946,6 +953,28 @@ CNN = { #Clanricarde
         }
     }
 }
+CNR = { #Canary Islands #TODO
+    flag_definition = {
+        coa = CNR
+        subject_canton = CNR
+        priority = 1
+    }
+}
+COU = { #Courland #TODO
+    flag_definition = {
+        coa = COU    
+        subject_canton = COU
+        priority = 1
+    }
+    flag_definition = {
+        coa = COU_subject_RUS
+        subject_canton = COU_subject_RUS
+        priority = 2
+        trigger = { 
+            coa_def_russian_ensign_trigger = yes
+        }
+    }
+}
 CRN = { #Cornwall
     flag_definition = {
         coa = CRN
@@ -1334,6 +1363,13 @@ FKN = { #Franconia
         }
     }
 }
+FLO = { #Florida #TODO
+    flag_definition = {
+        coa = FLO
+        subject_canton = FLO
+        priority = 1
+    }
+}
 FOI = { #Foix
     flag_definition = {
         coa = FOI
@@ -1529,10 +1565,10 @@ GUY = { #Gascony
     }
 }
 GYA = { #Guyana - TODO: add more flags
-	flag_definition = {
-		coa = GYA
-		priority = 1
-	}
+    flag_definition = {
+        coa = GYA
+        priority = 1
+    }
 }
 HLL = { #Holland
     flag_definition = {
@@ -1680,6 +1716,15 @@ ING = { #Ingolstadt
         trigger = {
             coa_def_republic_flag_trigger = yes
         }
+    }
+}
+KEN = { #Kenya #TODO
+    flag_definition = {
+        coa = KEN
+        subject_canton = KEN
+        allow_overlord_canton = yes
+        coa_with_overlord_canton = KEN_subject
+        priority = 1
     }
 }
 KID = { #Kildare
@@ -2194,6 +2239,15 @@ LVN = { #Livonia
         priority = 1
     }
     flag_definition = {
+        coa = LVN_subject_RUS
+        #allow_overlord_canton = yes
+        subject_canton = LVN_subject_RUS
+        priority = 21
+        trigger = { 
+            coa_def_russian_ensign_trigger = yes
+        }
+    }
+    flag_definition = {
         coa = LVN_communist
         subject_canton = LVN_communist
         priority = 1500
@@ -2381,6 +2435,13 @@ MBZ = { #Bregenz
         }
     }
 }
+MCD = { #Macedonia #TODO
+    flag_definition = {
+        coa = MCD
+        subject_canton = MCD
+        priority = 1
+    }
+}
 MCM = { #Munster
     flag_definition = {
         coa = MCM
@@ -2474,11 +2535,18 @@ MFA = { #Montferrat
         }
     }
 }
+MIN = { #Mingrelia
+    flag_definition = {
+        coa = MIN    
+        subject_canton = MIN
+        priority = 1
+    }
+}
 MLD = { #Maldives - TODO: add more flags
-	flag_definition = {
-		coa = MLD
-		priority = 1
-	}
+    flag_definition = {
+        coa = MLD
+        priority = 1
+    }
 }
 MLO = { #Milan
     flag_definition = {
@@ -2875,6 +2943,24 @@ NOV = { #Novgorod
         trigger = {
             coa_def_republic_flag_trigger = yes
         }
+    }
+}
+NIG = { #Nigeria TODO
+    flag_definition = {
+        coa = NIG
+        subject_canton = NIG
+        allow_overlord_canton = yes
+        coa_with_overlord_canton = NIG_subject
+        priority = 1
+    }
+}
+NMB = { #Namibia TODO
+    flag_definition = {
+        coa = NMB
+        subject_canton = NMB
+        allow_overlord_canton = yes
+        coa_with_overlord_canton = NMB_subject
+        priority = 1
     }
 }
 NRM = { #Normandy
@@ -3537,17 +3623,24 @@ RYA = { #Ryazan
     }
 }
 RYU = { #Ryukyu Islands
-	flag_definition = {
-		coa = RYU
-		priority = 1
-	}
-	flag_definition = {
-		coa = RYU_communist
-		priority = 1500
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-		}
-	}
+    flag_definition = {
+        coa = RYU
+        priority = 1
+    }
+    flag_definition = {
+        coa = RYU_communist
+        priority = 1500
+        trigger = {
+            coa_def_communist_flag_trigger = yes
+        }
+    }
+}
+SAA = { #Saarland TODO
+    flag_definition = {
+        coa = SAA
+        subject_canton = SAA
+        priority = 1
+    }
 }
 SAD = { #Sardinia
     flag_definition = {
@@ -3580,24 +3673,24 @@ SAV = { #Savoy
     }
 }
 SGP = { #Singapore
-	flag_definition = {
-		coa = SGP
-		priority = 1
-	}
-	flag_definition = {
-		coa = SGP_communist
-		priority = 1500
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = SGP_anarchy
-		priority = 1500
-		trigger = {
-			coa_def_anarchy_flag_trigger = yes
-		}
-	}
+    flag_definition = {
+        coa = SGP
+        priority = 1
+    }
+    flag_definition = {
+        coa = SGP_communist
+        priority = 1500
+        trigger = {
+            coa_def_communist_flag_trigger = yes
+        }
+    }
+    flag_definition = {
+        coa = SGP_anarchy
+        priority = 1500
+        trigger = {
+            coa_def_anarchy_flag_trigger = yes
+        }
+    }
 }
 SKL = { #Sicily
     flag_definition = {
@@ -3886,6 +3979,13 @@ STY = { #Styria
         }
     }
 }
+SVA = { #Svaneti
+    flag_definition = {
+        coa = SVA    
+        subject_canton = SVA
+        priority = 1
+    }
+}
 SWA = { #Swabia
     flag_definition = {
         coa = SWA
@@ -3948,6 +4048,13 @@ SZO = { #Saluzzo
         }
     }
 }
+TCA = { #Transcaucasus
+    flag_definition = {
+        coa = TCA    
+        subject_canton = TCA
+        priority = 1
+    }
+}
 TEU = { #Teutonic Knights
     flag_definition = {
         coa = TEU
@@ -3985,6 +4092,13 @@ TEU = { #Teutonic Knights
         trigger = {
             coa_def_republic_flag_trigger = yes
         }
+    }
+}
+THR = { #Thrace TODO
+    flag_definition = {
+        coa = THR
+        subject_canton = THR
+        priority = 1
     }
 }
 THU = { #Thuringia
@@ -4554,6 +4668,13 @@ VER = { #Verden
         }
     }
 }
+VRD = { #Vardaria TODO
+    flag_definition = {
+        coa = VRD
+        subject_canton = VRD
+        priority = 1
+    }
+}
 VRM = { #Vermont
     flag_definition = {
         coa = VRM
@@ -4609,202 +4730,202 @@ VRN = { #Verona
     }
 }
 XXM = { #Maghreb Union
-	flag_definition = {
-		coa = XXM
-		subject_canton = XXM
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 1000
-	}
-	flag_definition = {
-		coa = XXM
-		subject_canton = XXM
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 1000
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-		}
-	}
-	flag_definition = { 
-		coa = XXM_monarchy
-		subject_canton = XXM_monarchy
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20000
-		trigger = { 
-			coa_def_monarchy_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = XXM_theocracy
-		subject_canton = XXM_theocracy
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20000
-		trigger = { 
-			coa_def_theocracy_flag_trigger = yes
-		}
-	}	
-	flag_definition = {
-		coa = XXM_communist
-		subject_canton = XXM_communist
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20000
-		trigger = { 
-			coa_def_communist_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = XXM_fascist
-		subject_canton= XXM_fascist
-		priority = 10000
-		trigger = { 
-			coa_def_fascist_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = XXM_anarchy
-		subject_canton= XXM_anarchy
-		priority = 10000
-		trigger = { 
-			coa_def_anarchy_flag_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = XXM_subject	
-		allow_overlord_canton = yes	
-		overlord_canton_offset = { 0.01 0.015 }
-		overlord_canton_scale = { 0.48 0.47 }			
-		priority = 50
-		trigger = { 
-			coa_def_french_ensign_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = XXM_subject_gold
-		subject_canton = XXM
-		allow_overlord_canton = yes	
-		overlord_canton_offset = { 0.01 0.015 }
-		overlord_canton_scale = { 0.48 0.47 }			
-		priority = 50
-		trigger = { 
-			coa_def_spanish_ensign_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = XXM_algeria
-		subject_canton = XXM_algeria
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 1005
-		trigger = {
+    flag_definition = {
+        coa = XXM
+        subject_canton = XXM
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 1000
+    }
+    flag_definition = {
+        coa = XXM
+        subject_canton = XXM
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 1000
+        trigger = {
             coa_def_republic_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = { state_region = s:STATE_ALGIERS }
-			}
-		}
-	}
-	flag_definition = { 
-		coa = XXM_monarchy_algeria
-		subject_canton = XXM_monarchy_algeria
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20005
-		trigger = {
-			coa_def_monarchy_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = { state_region = s:STATE_ALGIERS }
-			}
-		}
-	}	
-	flag_definition = {
-		coa = XXM_theocracy_algeria
-		subject_canton = XXM_theocracy_algeria
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20005
-		trigger = {
-			coa_def_theocracy_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = { state_region = s:STATE_ALGIERS }
-			}
-		}
-	}	
-	flag_definition = {
-		coa = XXM_communist_algeria
-		subject_canton = XXM_communist_algeria
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20005
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = { state_region = s:STATE_ALGIERS }
-			}
-		}
-	}
-	flag_definition = {
-		coa = XXM_tunisia
-		subject_canton = XXM_tunisia
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 1005
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = { state_region = s:STATE_TUNISIA }
-			}
-		}
-	}
-	flag_definition = { 
-		coa = XXM_monarchy_tunisia
-		subject_canton = XXM_monarchy_tunisia
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20005
-		trigger = {
-			coa_def_monarchy_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = {state_region = s:STATE_TUNISIA}
-			}
-		}
-	}	
-	flag_definition = {
-		coa = XXM_theocracy_tunisia
-		subject_canton = XXM_theocracytunisia
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20005
-		trigger = {
-			coa_def_theocracy_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = {state_region = s:STATE_TUNISIA}
-			}
-		}
-	}	
-	flag_definition = {
-		coa = XXM_communist_tunisia
-		subject_canton = XXM_communist_tunisia
-		allow_overlord_canton = yes		
-		coa_with_overlord_canton = XXM_subject			
-		priority = 20005
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-			exists = scope:actor
-			scope:actor = {
-				capital = {state_region = s:STATE_TUNISIA}
-			}
-		}
-	}
+        }
+    }
+    flag_definition = { 
+        coa = XXM_monarchy
+        subject_canton = XXM_monarchy
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20000
+        trigger = { 
+            coa_def_monarchy_flag_trigger = yes
+        }
+    }    
+    flag_definition = {
+        coa = XXM_theocracy
+        subject_canton = XXM_theocracy
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20000
+        trigger = { 
+            coa_def_theocracy_flag_trigger = yes
+        }
+    }    
+    flag_definition = {
+        coa = XXM_communist
+        subject_canton = XXM_communist
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20000
+        trigger = { 
+            coa_def_communist_flag_trigger = yes
+        }
+    }
+    flag_definition = {
+        coa = XXM_fascist
+        subject_canton= XXM_fascist
+        priority = 10000
+        trigger = { 
+            coa_def_fascist_flag_trigger = yes
+        }
+    }
+    flag_definition = {
+        coa = XXM_anarchy
+        subject_canton= XXM_anarchy
+        priority = 10000
+        trigger = { 
+            coa_def_anarchy_flag_trigger = yes
+        }
+    }
+    flag_definition = {
+        coa = XXM_subject    
+        allow_overlord_canton = yes    
+        overlord_canton_offset = { 0.01 0.015 }
+        overlord_canton_scale = { 0.48 0.47 }            
+        priority = 50
+        trigger = { 
+            coa_def_french_ensign_trigger = yes
+        }
+    }
+    flag_definition = {
+        coa = XXM_subject_gold
+        subject_canton = XXM
+        allow_overlord_canton = yes    
+        overlord_canton_offset = { 0.01 0.015 }
+        overlord_canton_scale = { 0.48 0.47 }            
+        priority = 50
+        trigger = { 
+            coa_def_spanish_ensign_trigger = yes
+        }
+    }
+    flag_definition = {
+        coa = XXM_algeria
+        subject_canton = XXM_algeria
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 1005
+        trigger = {
+            coa_def_republic_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = { state_region = s:STATE_ALGIERS }
+            }
+        }
+    }
+    flag_definition = { 
+        coa = XXM_monarchy_algeria
+        subject_canton = XXM_monarchy_algeria
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20005
+        trigger = {
+            coa_def_monarchy_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = { state_region = s:STATE_ALGIERS }
+            }
+        }
+    }    
+    flag_definition = {
+        coa = XXM_theocracy_algeria
+        subject_canton = XXM_theocracy_algeria
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20005
+        trigger = {
+            coa_def_theocracy_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = { state_region = s:STATE_ALGIERS }
+            }
+        }
+    }    
+    flag_definition = {
+        coa = XXM_communist_algeria
+        subject_canton = XXM_communist_algeria
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20005
+        trigger = {
+            coa_def_communist_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = { state_region = s:STATE_ALGIERS }
+            }
+        }
+    }
+    flag_definition = {
+        coa = XXM_tunisia
+        subject_canton = XXM_tunisia
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 1005
+        trigger = {
+            coa_def_republic_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = { state_region = s:STATE_TUNISIA }
+            }
+        }
+    }
+    flag_definition = { 
+        coa = XXM_monarchy_tunisia
+        subject_canton = XXM_monarchy_tunisia
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20005
+        trigger = {
+            coa_def_monarchy_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = {state_region = s:STATE_TUNISIA}
+            }
+        }
+    }    
+    flag_definition = {
+        coa = XXM_theocracy_tunisia
+        subject_canton = XXM_theocracytunisia
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20005
+        trigger = {
+            coa_def_theocracy_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = {state_region = s:STATE_TUNISIA}
+            }
+        }
+    }    
+    flag_definition = {
+        coa = XXM_communist_tunisia
+        subject_canton = XXM_communist_tunisia
+        allow_overlord_canton = yes        
+        coa_with_overlord_canton = XXM_subject            
+        priority = 20005
+        trigger = {
+            coa_def_communist_flag_trigger = yes
+            exists = scope:actor
+            scope:actor = {
+                capital = {state_region = s:STATE_TUNISIA}
+            }
+        }
+    }
 }
 YAR = { #Yaroslavl
     flag_definition = {

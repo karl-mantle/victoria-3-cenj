@@ -2,15 +2,27 @@
 	s:STATE_DAGESTAN = {
 		region_state:RUS = {
 			create_pop = {
-				culture = north_caucasian
-				size = 271100
+				culture = dargin
+				size = 78200
+			}
+			create_pop = {
+				culture = kumyk
+				size = 56400
+			}
+			create_pop = {
+				culture = avar
+				size = 97040
+			}
+			create_pop = {
+				culture = nogai
+				size = 36100
 			}
 			create_pop = {
 				culture = sephardic
 				size = 5200
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = ossetian
 				religion = orthodox
 				size = 72200
 			}
@@ -26,7 +38,7 @@
 		}
 		region_state:CHC = {
 			create_pop = {
-				culture = north_caucasian
+				culture = chechen
 				size = 92200
 			}
 		}
@@ -35,11 +47,19 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = circassian
-				size = 328804
+				size = 128804
 			}
 			create_pop = {
-				culture = north_caucasian
-				size = 218804
+				culture = chechen
+				size = 65000
+			}
+			create_pop = {
+				culture = dargin
+				size = 95500
+			}
+			create_pop = {
+				culture = nogai
+				size = 41530
 			}
 			create_pop = {
 				culture = pontic_greek
@@ -47,7 +67,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 58808
+				size = 108808
 			}
 			create_pop = {
 				culture = ukrainian
@@ -68,13 +88,23 @@
 				size = 531000
 			}
 			create_pop = {
-				culture = north_caucasian
-				size = 32140
+				culture = russian
+				size = 30000
+			}
+		}
+		region_state:ABK = {
+			create_pop = {
+				culture = circassian
+				size = 120000
+			}
+			create_pop = {
+				culture = russian
+				size = 30000
 			}
 		}
 	}
 	s:STATE_ARMENIA = {
-		region_state:RUS = {
+		region_state:TCA = {
 			create_pop = {
 				culture = armenian
 				size = 180996
@@ -103,7 +133,7 @@
 		}
 	}
 	s:STATE_AZERBAIJAN = {
-		region_state:RUS = {
+		region_state:TCA = {
 			create_pop = {
 				culture = azerbaijani
 				size = 172100
@@ -122,10 +152,6 @@
 				size = 55000
 			}
 			create_pop = {
-				culture = north_caucasian
-				size = 27600
-			}
-			create_pop = {
 				culture = georgian
 				size = 4000
 			}
@@ -134,9 +160,15 @@
 				size = 396
 			}
 		}
+		region_state:CHC = {
+			create_pop = {
+				culture = chechen
+				size = 27600
+			}
+		}
 	}
 	s:STATE_GREATER_CAUCASUS = {
-		region_state:RUS = {
+		region_state:TCA = {
 			create_pop = {
 				culture = georgian
 				size = 491996
@@ -146,7 +178,7 @@
 				size = 2996
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = ossetian
 				religion = orthodox
 				size = 72000
 			}
@@ -155,7 +187,7 @@
 				size = 44004
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = dargin
 				size = 19996
 			}
 			create_pop = {
@@ -166,6 +198,28 @@
 			create_pop = {
 				culture = russian
 				size = 1604
+			}
+		}
+		region_state:ABK = {
+			create_pop = {
+					culture = circassian
+					size = 14500
+				}
+				create_pop = {
+					culture = georgian
+					size = 11000
+				}
+			}
+		region_state:SVA = {
+			create_pop = {
+				culture = georgian
+				size = 36000
+			}
+		}
+		region_state:MIN = {
+			create_pop = {
+				culture = georgian
+				size = 190000
 			}
 		}
 	}
@@ -262,7 +316,7 @@
 				size = 316000
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = tatar
 				size = 72000
 			}
 		}

@@ -45,7 +45,7 @@
  building_central_bank:0 "Central Bank"
  building_copper_mine:0 "Copper Mine"
  building_silver_fields:0 "Silver Fields"
- building_silver_fields_discovered_resource:0 "Silver Fields"
+ building_silver_fields_discovered_resource:0 "Silver"
 # building groups
  bg_finance:0 "Financial Buildings"
  bg_central_bank:0 "Central Banking"
@@ -57,6 +57,7 @@
  default_building_silver_fields:0 "Silver Fields"
 
  pm_copper_tools:0 "Copper Tools"
+ pm_palm_oil:0 "Palm Groves"
 
  pmg_base_building_construction_industry:0 "Construction Method"
  pm_construction_industry_wooden_buildings:0 "Carpentry"

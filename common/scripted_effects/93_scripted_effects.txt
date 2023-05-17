@@ -263,7 +263,7 @@ change_primary_culture = {
 change_primary_culture_north_german_minor = {
     if = {
         limit = {
-            OR = { exists = c:NGF exists = c:GER }
+            exists = c:GER
             ROOT = { has_technology_researched = pan-nationalism }
         }
         if = {
@@ -412,7 +412,7 @@ change_primary_culture_north_german_minor = {
 change_primary_culture_south_german_minor = {
     if = {
         limit = {
-            OR = { exists = c:SGF exists = c:GER }
+            exists = c:GER
             ROOT = { has_technology_researched = pan-nationalism }
         }
         if = {

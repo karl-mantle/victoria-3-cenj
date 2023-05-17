@@ -32,5 +32,5 @@ ibadi = {
 	traits = {
 		muslim
 	}
-	color = { 0.6 0.3 0.2 }
+	color = { 0.6 0.3 0.1 }
 }

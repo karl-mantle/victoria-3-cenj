@@ -1,13 +1,11 @@
-﻿NET_republic = {
+﻿EST_subject_RUS = {
 	pattern = "pattern_solid.tga"
-	color1 = "red"
-	color2 = "white"
-	color3 = "blue_light"
-	
+	color1 = "green_vibrant"
+
 	colored_emblem = {
 		texture = "ce_tricolor_horizontal.dds"
-		color1 = color2
-		color2 = color3
+		color1 = "pink_vibrant"
+		color2 = "white"
 	}
 }
 
@@ -19,5 +17,32 @@ LUX = {
 		texture = "ce_tricolor_horizontal.dds"
 		color1 = "white"
 		color2 = "blue_light"
+	}
+}
+
+NET_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "blue_light"
+	}
+}
+
+POL_subject_RUS = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "blue_vibrant"
+
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color2
+		color2 = color2
+	}
+	textured_emblem = {
+		texture = "te_eagle_poland.dds"
+		instance = { scale = { 0.8 0.8 } position = { 0.22 0.22 } }
 	}
 }

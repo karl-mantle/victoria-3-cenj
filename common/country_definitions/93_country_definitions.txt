@@ -6,6 +6,13 @@ AAC = { #Aachen
 	cultures = { north_german }
 	capital = STATE_NORTH_RHINE
 }
+ABK = { #Abkhazia
+	color = { 117  224  94 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { north_caucasian}
+	capital = STATE_GREATER_CAUCASUS
+}
 ACA = { #Achaea
  	color = { 255 213 51 }
 	country_type = recognized
@@ -195,6 +202,20 @@ CNN = { #Clanricarde
 	cultures = { irish }
 	capital = STATE_CONNAUGHT
 }
+CNR = { #Canary Islands
+	color = { 255 191 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { spanish }
+	capital = STATE_CANARY_ISLANDS
+}
+COU = { #Courland
+	color = { 234 224 94 }
+	country_type = recognized
+	tier = principality
+	cultures = { baltic_german russian }
+	capital = STATE_LATVIA
+}
 CRN = { #Cornwall
 	color = { 155 56 0 }
 	country_type = recognized
@@ -279,6 +300,13 @@ FKN = { #Franconia
 	cultures = { south_german }
 	capital = STATE_FRANCONIA
 }
+FLO = { #Florida
+	color = { 255 128 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { dixie }
+	capital = STATE_FLORIDA
+}
 FOI = { #Foix
 	color = { 105 106 182 }
 	country_type = recognized
@@ -355,6 +383,13 @@ ING = { #Ingolstadt
 	tier = city_state
 	cultures = { south_german }
 	capital = STATE_BAVARIA
+}
+KEN = { #Kenya
+	color = { 50 50 50 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { nilotic lacustrine_bantu }
+	capital = STATE_KENYA
 }
 KID = { #Kildare
 	color = { 104 130 172 }
@@ -503,6 +538,13 @@ MBZ = { #Bregenz
 	cultures = { south_german }
 	capital = STATE_TYROL
 }
+MCD = { #Macedonia
+	color = { 230 0 38 }
+	tier = principality
+	country_type = recognized
+	cultures = { greek }
+	capital = STATE_MACEDONIA
+}
 MCM = { #Munster
 	color = { 104 137 140 }
 	country_type = recognized
@@ -523,6 +565,13 @@ MFA = { #Montferrat
 	tier = city_state
 	cultures = { north_italian }
 	capital = STATE_PIEDMONT
+}
+MIN = { #Mingrelia
+	color = { 118 224 94 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { georgian }
+	capital = STATE_GREATER_CAUCASUS
 }
 MLD = { #Maldives
 	color = { 180 0 20 }
@@ -593,6 +642,20 @@ NEV = { #Nevers
 	tier = principality
 	cultures = { french }
 	capital = STATE_BURGUNDY
+}
+NIG = { #Nigeria
+	color = { 0 102 51 }
+	tier = kingdom
+	country_type = unrecognized
+	cultures = { hausa yoruba ibo }
+	capital = STATE_EAST_HAUSALAND
+}
+NMB = { #Namibia
+	color = { 255 234 128 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { herero khoisan }
+	capital = STATE_HEREROLAND
 }
 NOL = { #Northumberland
 	color = { 83 149 105 }
@@ -763,6 +826,13 @@ RYU = { #Ryukyu Islands
 	capital = STATE_RYUKYU_ISLANDS
 	is_named_from_capital = yes
 }
+SAA = { #Saarland
+	color = { 0 0 150 }
+	tier = principality
+	country_type = recognized
+	cultures = { rhine_german }
+	capital = STATE_RHINELAND
+}
 SAD = { #Sardinia
 	color = { 117 146 167 }
 	country_type = recognized
@@ -847,6 +917,13 @@ STY = { #Styria
 	cultures = { south_german }
 	capital = STATE_STYRIA
 }
+SVA = { #Svaneti
+	color = { 116 224 94 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { georgian }
+	capital = STATE_GREATER_CAUCASUS
+}
 SWA = { #Swabia
 	color = { 225 98 87 }
 	country_type = recognized
@@ -861,12 +938,27 @@ SZO = { #Saluzzo
 	cultures = { north_italian }
 	capital = STATE_PIEDMONT
 }
+TCA = { #Transcaucasus
+	color = { 119 224 94 }
+	country_type = recognized
+	tier = principality
+	cultures = { georgian armenian russian }
+	capital = STATE_GREATER_CAUCASUS
+	is_named_from_capital = yes
+}
 TEU = { #Teutonic Knights
 	color = { 102 105 104 }
 	country_type = recognized
 	tier = principality
 	cultures = { north_german }
 	capital = STATE_EAST_PRUSSIA
+}
+THR = { #Thrace
+	color = { 0 128 255 }
+	tier = principality
+	country_type = recognized
+	cultures = { greek }
+	capital = STATE_EASTERN_THRACE
 }
 THU = { #Thuringia
 	color = { 66 126 157}
@@ -987,6 +1079,13 @@ VER = { #Verden
 	tier = city_state
 	cultures = { north_german }
 	capital = STATE_ELBE
+}
+VRD = { #Vardaria
+	color = { 230 191 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { bulgarian }
+	capital = STATE_SKOPIA
 }
 VRM = { #Vermont
 	color = { 50 120 10 }

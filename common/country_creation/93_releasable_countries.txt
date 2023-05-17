@@ -160,6 +160,12 @@ CNN = { #Clanricarde
     }
     ai_will_do = { always = no }
 }
+CNR = { #Canary Islands
+	states = {
+        STATE_CANARY_ISLANDS
+    }
+	ai_will_do = { always = no }
+}
 CRN = { #Cornwall
     provinces = {
         x1E38F8 x63EF7E
@@ -232,6 +238,12 @@ FKN = { #Franconia
     }
     ai_will_do = { always = no }
 }
+FLO = { #Florida
+	states = {
+	    STATE_FLORIDA
+	}
+	ai_will_do = { always = no }
+}
 FOI = { #Foix
     provinces = {
         xCD8E77 xF02080 x5615DD x7C1D57
@@ -297,6 +309,13 @@ ING = { #Ingolstadt
         x010AD7 x6EA29B xE75868
     }
     ai_will_do = { always = no }
+}
+KEN = { #Kenya
+	states = {
+        STATE_KENYA
+        STATE_RIFT_VALLEY
+    }
+	ai_will_do = { always = no }
 }
 KID = { #Kildare
     provinces = {
@@ -426,6 +445,13 @@ MBZ = { #Bregenz
         xD0C0E0
     }
     ai_will_do = { always = no }
+}
+MCD = { #Macedonia
+	states = {
+        STATE_MACEDONIA
+        STATE_SKOPIA
+    }
+	ai_will_do = { always = no }
 }
 MCM = { #Munster
     states = {
@@ -559,6 +585,25 @@ NOV = { #Novgorod
         STATE_GALICH
     }
     ai_will_do = { always = no }
+}
+NIG = { #Nigeria
+	states = {
+        STATE_BENIN
+        STATE_NIGER_DELTA
+        STATE_YORUBA_STATES
+        STATE_HAUSALAND
+        STATE_EAST_HAUSALAND
+        STATE_NIGERIA
+        STATE_BORNU
+    }
+	ai_will_do = { always = no }
+}
+NMB = { #Namibia
+	states = {
+        STATE_HEREROLAND
+        STATE_NAMAQUALAND 
+    }
+	ai_will_do = { always = no }
 }
 NRM = { #Normandy
     states = {
@@ -697,6 +742,12 @@ RYU = { #Ryukyu Islands
     }
 	ai_will_do = { always = no }
 }
+SAA = { #Saarland
+	provinces = {
+        x904020
+    }
+	ai_will_do = { always = no }
+}
 SAD = { #Sardinia
     states = {
         STATE_SARDINIA
@@ -790,6 +841,14 @@ TEU = { #Teutonic Knights
         STATE_WEST_PRUSSIA
     }
     ai_will_do = { always = no }
+}
+THR = { #Thrace
+	states = {
+        STATE_EASTERN_THRACE
+        STATE_WESTERN_THRACE
+        STATE_NORTHERN_THRACE
+    }
+	ai_will_do = { always = no }
 }
 THU = { #Thuringia
     provinces = {
@@ -892,6 +951,12 @@ VER = { #Verden
         x418061 xC08061 xF54C13
     }
     ai_will_do = { always = no }
+}
+VRD = { #Vardaria / North Macedonia
+	states = {
+        STATE_SKOPIA
+    }
+	ai_will_do = { always = no }
 }
 VRM = { #Vermont
     states = {

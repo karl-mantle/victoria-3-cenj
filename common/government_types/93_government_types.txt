@@ -1,0 +1,29 @@
+﻿gov_governorate = {
+	transfer_of_power = hereditary
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_GOVERNOR"
+	female_ruler = "RULER_TITLE_GOVERNOR"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		exists = c:RUS
+		is_subject_of = c:RUS
+		is_subject_type = subject_type_puppet
+	}
+}
+
+gov_viceroyalty = {
+	transfer_of_power = hereditary
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_VICEROY"
+	female_ruler = "RULER_TITLE_VICEROY"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		exists = c:RUS
+		is_subject_of = c:RUS
+		is_subject_type = subject_type_puppet
+	}
+}

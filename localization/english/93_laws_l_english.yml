@@ -1,4 +1,8 @@
 ﻿l_english:
+#government_types
+ gov_governorate:0 "Governorate"
+ gov_viceroyalty:0 "Viceroyalty"
+ RULER_TITLE_VICEROY:0 "Viceroy"
 #law groups
  lawgroup_currency_policy:0 "Currency Policy"
 #laws
