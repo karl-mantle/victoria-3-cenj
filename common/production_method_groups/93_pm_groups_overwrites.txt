@@ -37,3 +37,14 @@ pmg_ownership_construction_sector = {
 		pm_worker_cooperative_construction_sector
 	}
 }
+
+pmg_ownership_capital_building_port = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_merchant_guilds_building_port
+		pm_privately_owned_building_port
+		pm_publicly_traded_building_port
+		pm_government_run_building_port
+		pm_worker_cooperative_building_port
+	}
+}

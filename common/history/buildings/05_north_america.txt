@@ -39,7 +39,7 @@
 				building="building_port"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 			create_building={
 				building="building_sugar_plantation"
@@ -163,7 +163,7 @@
 				building="building_port"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -258,7 +258,7 @@
 				building="building_port"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}			
 		}
 	}
@@ -700,7 +700,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}				
 		}
 	}
@@ -756,7 +756,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}			
 		}
 	}
@@ -818,7 +818,7 @@
 				building="building_port"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -1022,7 +1022,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}				
 		}
 	}
@@ -1110,7 +1110,7 @@
 				building="building_port"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1200,7 +1200,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}			
 		}
 	}
@@ -1252,7 +1252,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}			
 		}
 	}
@@ -1298,9 +1298,9 @@
 			}
 			create_building={
 				building="building_port"
-				level=1
+				level=5
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}				
 		}
 	}
@@ -1431,7 +1431,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 		region_state:NVS = {
@@ -1451,7 +1451,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -1503,7 +1503,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 		region_state:HBC={
@@ -1854,7 +1854,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}	
 			create_building={
 				building="building_barracks"

@@ -50,3 +50,10 @@ silver = {
 	prestige_factor = 5
 	
 }
+
+charterparties = {
+	texture = "gfx/interface/icons/goods_icons/charterparty.dds"
+	cost = 75
+	category = staple
+	convoy_cost_multiplier = 0.5
+}

@@ -219,7 +219,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -451,7 +451,7 @@
 				building="building_port"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}

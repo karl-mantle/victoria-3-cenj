@@ -5,6 +5,7 @@
  currency:0 "Currency"
  securities:0 "Securities"
  silver:0 "Silver"
+ charterparties:0 "Charterparties"
 # pop needs
  popneed_finance:0 "Financial Services"
 # modifiers
@@ -22,6 +23,8 @@
  modifier_building_input_copper_add_desc:0 "The amount of @copper! Copper consumed by buildings"
  modifier_building_input_silver_add:0 "@silver! Silver input per level"
  modifier_building_input_silver_add_desc:0 "The amount of @silver! Silver consumed by buildings"
+ modifier_building_input_charterparties_add:0 "@charterparties! Charterparty input per level"
+ modifier_building_input_charterparties_add_desc:0 "The amount of @charterparties! Charterparties consumed by buildings"
  modifier_building_output_construction_add:0 "@construction! Building materials output per level"
  modifier_building_output_construction_add_desc:0 "The amount of @construction! Building materials produced by buildings"
  modifier_building_output_currency_add:0 "@currency! Currency output per level"
@@ -32,6 +35,9 @@
  modifier_building_output_copper_add_desc:0 "The amount of @copper! Copper produced by buildings"
  modifier_building_output_silver_add:0 "@silver! Silver output per level"
  modifier_building_output_silver_add_desc:0 "The amount of @silver! Silver produced by buildings"
+ modifier_building_output_charterparties_add:0 "@charterparties! Charterparty output per level"
+ modifier_building_output_charterparties_add_desc:0 "The amount of @charterparties! Charterparties produced by buildings"
+ 
 
  modifier_building_coffee_plantation_throughput_mult:0 "$building_coffee_plantation$ building [concept_throughput]"
  modifier_building_coffee_plantation_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_coffee_plantation$"
@@ -39,6 +45,14 @@
  modifier_building_group_bg_finance_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_finance$"
  modifier_building_rice_farm_output_mult:0 "$building_rice_farm$ [concept_output]"
  modifier_building_rice_farm_output_mult_desc:0 "A bonus to the output of $building_rice_farm$."
+ modifier_state_unincorporated_building_group_bg_manufacturing_throughput_mult:0 "$bg_manufacturing$ [concept_throughput] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
+ modifier_state_unincorporated_building_group_bg_manufacturing_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_manufacturing$ in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
+ modifier_state_unincorported_pop_qualifications_mult:0 "[concept_pop_qualifications] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
+ modifier_state_unincorported_pop_qualifications_mult_desc:0 "A bonus or penalty to [concept_pop_qualifications] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
+ modifier_building_category_rural_unincorporated_rural_throughput_mult:0 "Rural Industries [concept_throughput] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
+ modifier_building_category_rural_unincorporated_rural_throughput_mult_desc:0 "A bonus or penalty to both input and output of Resource and Agriculture Buildings in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
+ modifier_building_group_bg_rubber_throughput_mult:0 "$bg_rubber$ [concept_throughput]"
+ modifier_building_group_bg_rubber_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rubber$"
 # buildings 
  building_construction_industry:0 "Builder's Merchants"
  building_finance_sector:0 "Finance Sector"
@@ -126,3 +140,10 @@
  pm_publicly_traded_building_copper_mine:1 "$pm_publicly_traded$"
  pm_government_run_building_copper_mine:1 "$pm_government_run$"
  pm_worker_cooperative_building_copper_mine:1 "$pm_worker_cooperative$"
+
+ pmg_ownership_capital_building_port:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_port:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_port:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_port:1 "$pm_publicly_traded$"
+ pm_government_run_building_port:1 "$pm_government_run$"
+ pm_worker_cooperative_building_port:1 "$pm_worker_cooperative$"

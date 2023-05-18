@@ -1,0 +1,80 @@
+﻿namespace = dead_man
+
+# Dead Man
+
+dead_man.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	title = dead_man.1.t
+	desc = dead_man.1.d
+	flavor = dead_man.1.f
+
+	trigger = {
+	}
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = {
+		name = dead_man.1.a						
+        default_option = yes
+		add_loyalists = {
+			value = very_large_radicals
+		}
+	}
+}
+
+dead_man.3 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	title = dead_man.3.t
+	desc = dead_man.3.d
+	flavor = dead_man.3.f
+
+	trigger = {
+	}
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = {
+		name = dead_man.3.a						
+        default_option = yes
+		add_radicals = {
+			value = 0.45
+			culture = cu:bulgarian
+		}
+		add_radicals = {
+			value = 0.45
+			culture = cu:albanian
+		}
+		add_radicals = {
+			value = 0.45
+			culture = cu:greek
+		}
+		add_radicals = {
+			value = 0.45
+			culture = cu:serb
+		}
+	}
+}

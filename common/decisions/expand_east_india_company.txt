@@ -1,0 +1,92 @@
+﻿gbr_expand_east_india_company = {
+	is_shown = {
+		country_is_in_europe = yes
+		exists = c:BIC
+		c:BIC = {
+			is_direct_subject_of = ROOT
+			OR = {
+				is_subject_type = subject_type_dominion
+				is_subject_type = subject_type_puppet
+			}
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			text = expand_bic_cooldown_tt
+			NOT = { has_variable = expand_bic_cooldown }
+		}
+		any_state = {
+			owner = ROOT
+			OR = {
+				state_region = s:STATE_BURMA
+				state_region = s:STATE_KACHIN
+				state_region = s:STATE_SHAN_STATES
+				state_region = s:STATE_SINDH
+				state_region = s:STATE_PUNJAB
+				state_region = s:STATE_KASHMIR
+				state_region = s:STATE_PASHTUNISTAN
+				state_region = s:STATE_BALUCHISTAN
+				state_region = s:STATE_HIMALAYAS
+				state_region = s:STATE_PEGU
+				region = sr:region_north_india
+				region = sr:region_south_india
+			}
+		}
+	}
+	when_taken = {
+		custom_tooltip = expand_east_india_company_tt
+		set_variable = {
+			name = expand_bic_cooldown
+			years = 2
+		}
+		if = {
+			limit= {
+				any_state = {
+					owner = ROOT
+					OR = {
+						state_region = s:STATE_BURMA
+						state_region = s:STATE_KACHIN
+						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_SINDH
+						state_region = s:STATE_PUNJAB
+						state_region = s:STATE_KASHMIR
+						state_region = s:STATE_PASHTUNISTAN
+						state_region = s:STATE_BALUCHISTAN
+						state_region = s:STATE_HIMALAYAS	
+						state_region = s:STATE_PEGU		
+						region = sr:region_north_india
+						region = sr:region_south_india	
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = ROOT
+					OR = {
+						state_region = s:STATE_BURMA
+						state_region = s:STATE_KACHIN
+						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_SINDH
+						state_region = s:STATE_PUNJAB
+						state_region = s:STATE_KASHMIR
+						state_region = s:STATE_PASHTUNISTAN
+						state_region = s:STATE_BALUCHISTAN
+						state_region = s:STATE_HIMALAYAS	
+						state_region = s:STATE_PEGU			
+						region = sr:region_north_india
+						region = sr:region_south_india
+					}
+				}
+				set_state_owner = c:BIC
+				set_state_type = unincorporated
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+
+
+

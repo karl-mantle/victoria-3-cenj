@@ -40,6 +40,7 @@ The main idea for this came from a mod I started and never finished over a decad
 - Copper, Silver and Gold are all tradeable resources that are used by the Finance Sector to create currency
 - Currency can also be created through bonds and gilts (securities) with the adoption of fiat money
 - Decentralised nations will use bartering and have no standards of currency
+- Ports can be privately owned and produce shipping contracts (charterparties) which are used by trade centers to run their convoys
 
 ### Future Plans
 

@@ -1,0 +1,793 @@
+﻿namespace = bic_breakup
+
+# Independent British East India Company decides how to proceed
+bic_breakup.1 = {
+	type = country_event
+	placement = root
+	
+	title = bic_breakup.1.t
+	desc = bic_breakup.1.d
+	flavor = bic_breakup.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/sepoy_mutiny"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+	trigger = {
+		exists = c:BIC
+		this = c:BIC
+		is_subject = no
+		is_at_war = no
+		NOT = {
+			has_global_variable = bic_collapse_var
+		}
+	}
+
+	immediate = {
+		cu:british = {
+			save_scope_as = british_culture
+		}
+		set_global_variable = bic_collapse_var
+	}
+
+	option = {
+		name = bic_breakup.1.a
+		ai_chance = {
+			base = 8 # this is the default pick for the AI
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = is_british_raj_var
+					exists = c:GBR
+				}
+				every_country = {
+					limit = {
+						is_subject_of = c:GBR
+						can_form_nation = BHT
+					}
+					make_independent = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:BLH }
+					exists = s:STATE_BALUCHISTAN.region_state:BIC
+				}
+				create_country = { # SUNNI
+					tag = BLH
+					origin = c:BIC
+					state = s:STATE_BALUCHISTAN.region_state:BIC
+					on_created = {
+						ig:ig_devout = { 
+							set_interest_group_name = ig_sunni_madrasahs
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:PAN }
+					exists = s:STATE_PUNJAB.region_state:BIC
+				}
+				create_country = { # SIKH
+					tag = PAN
+					origin = c:BIC
+					state = s:STATE_PUNJAB.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_sikh_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_sikh_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:KAS }
+					exists = s:STATE_KASHMIR.region_state:BIC
+				}
+				create_country = { # SUNNI
+					tag = KAS
+					origin = c:BIC
+					state = s:STATE_KASHMIR.region_state:BIC
+					on_created = {
+						ig:ig_devout = { 
+							set_interest_group_name = ig_sunni_madrasahs
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:SIN }
+					exists = s:STATE_SINDH.region_state:BIC
+				}
+				create_country = { # SUNNI
+					tag = SIN
+					origin = c:BIC
+					state = s:STATE_SINDH.region_state:BIC
+					on_created = {
+						ig:ig_devout = { 
+							set_interest_group_name = ig_sunni_madrasahs
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:JAI }
+					exists = s:STATE_RAJPUTANA.region_state:BIC
+				}
+				create_country = { # HINDU
+					tag = JAI
+					origin = c:BIC
+					state = s:STATE_RAJPUTANA.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_hindu_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_hindu_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:BER }
+					exists = s:STATE_GUJARAT.region_state:BIC
+				}
+				create_country = { # HINDU
+					tag = BER
+					origin = c:BIC
+					state = s:STATE_GUJARAT.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_hindu_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_hindu_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:IND }
+					exists = s:STATE_CENTRAL_INDIA.region_state:BIC
+				}
+				create_country = { # HINDU
+					tag = IND
+					origin = c:BIC
+					state = s:STATE_CENTRAL_INDIA.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_hindu_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_hindu_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:AWA }
+					exists = s:STATE_AWADH.region_state:BIC
+				}
+				create_country = { # SUNNI
+					tag = AWA
+					origin = c:BIC
+					state = s:STATE_AWADH.region_state:BIC
+					on_created = {
+						ig:ig_devout = { 
+							set_interest_group_name = ig_sunni_madrasahs
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:NAG }
+					exists = s:STATE_NAGPUR.region_state:BIC
+				}
+				create_country = { # HINDU
+					tag = NAG
+					origin = c:BIC
+					state = s:STATE_NAGPUR.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_hindu_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_hindu_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:NEP }
+					exists = s:STATE_HIMALAYAS.region_state:BIC
+				}
+				create_country = { # HINDU?
+					tag = NEP
+					origin = c:BIC
+					state = s:STATE_HIMALAYAS.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_hindu_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_hindu_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:BUR }
+					exists = s:STATE_BURMA.region_state:BIC
+				}
+				create_country = { # THERAVADA
+					tag = BUR
+					origin = c:BIC
+					state = s:STATE_BURMA.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_theravada_monks
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_buddhist_moralist
+						}
+						if = {
+							limit = {
+								exists = s:STATE_SHAN_STATES.region_state:BIC
+							}
+							s:STATE_SHAN_STATES.region_state:BIC = {
+								set_state_owner = c:BUR
+							}
+						}
+						if = {
+							limit = {
+								exists = s:STATE_KACHIN.region_state:BIC
+							}
+							s:STATE_KACHIN.region_state:BIC = {
+								set_state_owner = c:BUR
+							}
+						}
+						if = {
+							limit = {
+								exists = s:STATE_PEGU.region_state:BIC
+							}
+							s:STATE_PEGU.region_state:BIC = {
+								set_state_owner = c:BUR
+							}
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:ORI }
+					exists = s:STATE_ORISSA.region_state:BIC
+				}
+				create_country = { # HINDU
+					tag = ORI
+					origin = c:BIC
+					state = s:STATE_ORISSA.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_hindu_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_hindu_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:HYD }
+					exists = s:STATE_HYDERABAD.region_state:BIC
+				}
+				create_country = { # SUNNI
+					tag = HYD
+					origin = c:BIC
+					state = s:STATE_HYDERABAD.region_state:BIC
+					on_created = {
+						ig:ig_devout = { 
+							set_interest_group_name = ig_sunni_madrasahs
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:MYS }
+					exists = s:STATE_MYSORE.region_state:BIC
+					}
+					create_country = { # SUNNI
+					tag = MYS
+					origin = c:BIC
+					state = s:STATE_MYSORE.region_state:BIC
+					on_created = {
+						ig:ig_devout = { 
+							set_interest_group_name = ig_sunni_madrasahs
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:TRA }
+					exists = s:STATE_TRAVANCORE.region_state:BIC
+				}
+				create_country = { # HINDU
+					tag = TRA
+					origin = c:BIC
+					state = s:STATE_TRAVANCORE.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_hindu_priesthood
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_hindu_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:CEY }
+					exists = s:STATE_CEYLON.region_state:BIC
+				}
+				create_country = { # THERAVADA
+					tag = CEY
+					origin = c:BIC
+					state = s:STATE_CEYLON.region_state:BIC
+					on_created = {
+						ig:ig_devout = {
+							set_interest_group_name = ig_theravada_monks
+							remove_ideology = ideology_moralist
+							add_ideology = ideology_buddhist_moralist
+						}
+						random_list = {
+							50 = {
+								activate_law = law_type:law_monarchy
+								activate_law = law_type:law_autocracy
+							}
+							50 = {
+								activate_law = law_type:law_presidential_republic
+								activate_law = law_type:law_autocracy
+							}
+						}
+					}
+				}
+			}			
+		}
+		while = {
+			limit = {
+				any_scope_state = { 
+					is_capital = no
+					NOT = {
+						state_region = {
+							is_homeland = cu:bengali
+						}
+					}
+					any_neighbouring_state = {
+						owner = {
+							OR = {
+								capital.region = sr:region_north_india
+								capital.region = sr:region_south_india
+								capital.region = sr:region_indochina
+							}
+						}
+					}
+				}
+			}
+
+			##### This is where India gets divided #####
+			### Release a couple tags to avoid super Bengal ###
+			random_country = {
+				limit = {
+					OR = {
+						capital.region = sr:region_north_india
+						capital.region = sr:region_south_india
+						capital.region = sr:region_indochina
+					}
+					any_scope_state = {
+						any_neighbouring_state = {
+							is_capital = no
+							NOT = {
+								state_region = {
+									is_homeland = cu:bengali
+								}
+							}
+							owner = ROOT
+						}
+					}
+				}
+				save_scope_as = test_scope
+			}
+			random_scope_state = {
+				limit = {
+					is_capital = no
+					NOT = {
+						state_region = {
+							is_homeland = cu:bengali
+						}
+					}
+					any_neighbouring_state = {
+						owner = scope:test_scope
+					}
+				}
+				set_state_owner = scope:test_scope
+			}
+			clear_saved_scope = test_scope
+		}
+		custom_tooltip = {
+			text = india_princes_independent_tt
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				make_independent = yes
+			}
+		}
+		change_tag = BGL
+		set_country_type = unrecognized
+		hidden_effect = {
+			remove_primary_culture = cu:british
+			add_primary_culture = cu:bengali
+			set_state_religion = rel:sunni
+			activate_law = law_type:law_monarchy
+			ig:ig_devout = { 
+				set_interest_group_name = ig_sunni_madrasahs
+			}
+			every_scope_character = {
+				limit = {
+					OR = {
+						culture = cu:british
+						culture = cu:scottish
+					}
+				}
+				kill_character = yes
+			}
+			trigger_event = {
+				id = bic_breakup.2
+				days = 1
+			}						
+		}
+	}
+
+	option = {
+		name = bic_breakup.1.b
+		highlighted_option = yes
+		trigger = {
+			has_technology_researched = pan-nationalism
+		}
+		ai_chance = {
+			base = 0 # VANILLA = 2 # Feel free to turn this back up if you like but I personally prefer this off without further narrative support.
+		}
+		change_tag = BHT
+		hidden_effect = {
+			remove_primary_culture = cu:british
+			add_primary_culture = cu:bengali
+			add_primary_culture = cu:assamese
+			add_primary_culture = cu:avadhi
+			add_primary_culture = cu:bihari
+			add_primary_culture = cu:gujarati
+			add_primary_culture = cu:kanauji
+			add_primary_culture = cu:kannada
+			add_primary_culture = cu:malayalam
+			add_primary_culture = cu:marathi
+			add_primary_culture = cu:oriya
+			add_primary_culture = cu:panjabi
+			add_primary_culture = cu:rajput
+			add_primary_culture = cu:sindi
+			add_primary_culture = cu:tamil
+			add_primary_culture = cu:telegu
+			add_primary_culture = cu:nepali
+			set_state_religion = rel:hindu # Follow up event(s) should probably decide the nature of the new Indian state, State Religion vs. Total Separation. Hindu-Nationalists and Muslims should react accordingly.
+			ig:ig_devout = { 
+				set_interest_group_name = ig_hindu_priesthood
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_hindu_moralist
+			}
+			every_scope_character = {
+				limit = {
+					OR = {
+						culture = cu:british
+						culture = cu:scottish
+					}
+				}
+				kill_character = yes
+			}
+		}
+	}
+	option = {
+		name = bic_breakup.1.c
+		ai_chance = {
+			base = 0 # AI will never do this
+		}
+		default_option = yes
+		add_radicals = {
+			value = very_large_radicals
+		}
+	}
+}
+
+
+### Ruler setup for Bengal
+bic_breakup.2 = {
+	type = country_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				year < 1838
+			}
+			create_character = {
+				# Humayun Jah
+				first_name = vtm_mubarak_ali_khan
+				last_name = vtm_najafi
+				ruler = yes
+				birth_date = 1810.1.1 # exact date is unknown
+				religion = rel:shiite # The Najafis were a Shia house
+				interest_group = ig_landowners 
+				ideology = ideology_moderate
+				traits = {
+					romantic
+				}
+			}
+			create_character = {
+				# Feradun Jah
+				first_name = vtm_mansur_ali_khan
+				last_name = vtm_najafi
+				heir = yes
+				birth_date = 1830.10.29 
+				religion = rel:shiite 
+				interest_group = ig_landowners 
+				ideology = ideology_moderate
+				traits = {
+					reserved basic_diplomat expensive_tastes
+				}
+			}
+		}	
+		else_if = {
+			limit = {
+				year >= 1838
+				year < 1880
+			}
+			create_character = {
+				# Feradun Jah
+				first_name = vtm_mansur_ali_khan
+				last_name = vtm_najafi
+				ruler = yes
+				birth_date = 1830.10.29 
+				religion = rel:shiite 
+				interest_group = ig_landowners 
+				ideology = ideology_moderate
+				traits = {
+					reserved basic_diplomat expensive_tastes
+				}
+			}
+			create_character = {
+				# Ali Kadir
+				first_name = vtm_hassan_ali_mirza
+				last_name = vtm_najafi
+				heir = yes
+				birth_date = 1846.8.25 
+				religion = rel:shiite 
+				#interest_group = ig_landowners 
+				#ideology = ideology_moderate
+				traits = {
+					innovative
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				year >= 1880
+				year < 1906
+			}
+			create_character = {
+				# Ali Kadir
+				first_name = vtm_hassan_ali_mirza
+				last_name = vtm_najafi
+				ruler = yes
+				birth_date = 1846.8.25 
+				religion = rel:shiite 
+				#interest_group = ig:ig_landowners
+				#ideology = ideology_moderate
+				traits = {
+					innovative
+				}
+			}
+			create_character = {
+				# Wasif Ali Mirza
+				first_name = vtm_wasif_ali_mirza
+				last_name = vtm_najafi
+				heir = yes
+				birth_date = 1875.1.7 
+				religion = rel:shiite 
+				interest_group = ig:ig_intelligentsia
+				ideology = ideology_moderate
+				traits = {
+					romantic expensive_tastes
+				}
+			}				
+		}
+		else_if = {
+			limit = {
+				year >= 1906
+			}
+			create_character = {
+				# Wasif Ali Mirza
+				first_name = vtm_wasif_ali_mirza
+				last_name = vtm_najafi
+				ruler = yes
+				birth_date = 1875.1.7 
+				religion = rel:shiite 
+				interest_group = ig:ig_intelligentsia
+				ideology = ideology_moderate
+				traits = {
+					romantic expensive_tastes
+				}
+			}
+		}	
+	}
+}

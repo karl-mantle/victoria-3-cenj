@@ -7,6 +7,7 @@
 on_monthly_pulse_country = {
     on_actions = {
         change_primary_culture_on_action
+        bic_breakup_check_on_action
     }
 }
 migration_event_on_action = {
@@ -287,4 +288,40 @@ change_primary_culture_on_action = {
         change_primary_culture_south_italian_minor = {}
         # Targetted cultures
     }
+}
+
+on_secession_end = {
+	effect = {
+		if = {
+			limit = {
+				exists = c:ITA
+				scope:target = {
+					OR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+			}
+			c:ITA = { annex = scope:target }
+		}
+#		if = {
+#			limit = {
+#				exists = c:GER
+#				scope:target = {
+#					can_form_nation = GER
+#				}
+#			}
+#			scope:target_country = {
+#				THIS = c:GER
+#				annex = scope:target
+#			}
+#		}
+	}
+}
+
+bic_breakup_check_on_action = {
+	events = {
+		bic_breakup.1
+		vtm_dei_breakup.1
+	}
 }

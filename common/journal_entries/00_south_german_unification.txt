@@ -1,0 +1,41 @@
+﻿je_sgf_aus = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		exists = c:AUS
+		root = c:AUS
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	complete = {
+		any_subject_or_below = {
+			calc_true_if = {
+				amount >= 4
+				owns_entire_state_region = STATE_FRANCONIA
+				owns_entire_state_region = STATE_BAVARIA
+				owns_entire_state_region = STATE_WURTTEMBERG
+				owns_entire_state_region = STATE_BADEN
+				owns_entire_state_region = STATE_ALSACE_LORRAINE
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = sgf_aus.6 }
+	}
+
+	fail = {
+		OR = {
+			country_has_primary_culture = cu:hungarian
+			exists = c:GER
+		}
+
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

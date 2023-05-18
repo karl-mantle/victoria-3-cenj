@@ -1,4 +1,10 @@
 # Changelog
+### 0.0.21
+- integrated numerous changes and fixes from OPB's tweaks mod
+- new AI strategies for various nations
+- ports can now be merchant guilds, privately owned or co-operatives and produce charterparties (maritime shipping contracts)
+- trade centers now require charterparties to run trade routes (1 charterparty per level) as well as convoys (which I am treating as an abstraction for freight rate)
+- fixed ORG (columbia) not being a puppet of GBR bug
 ### 0.0.20
 - new countries canary islands, kenya, namibia, nigeria, thrace, vardar (north macedonia), macedonia, courland, minor caucasian states
 - poland, estonia, livonia and courland as subjects of russia
