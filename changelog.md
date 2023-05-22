@@ -1,4 +1,9 @@
 # Changelog
+### 0.0.23
+- removed central bank building
+- condensed german and italian minors into a smaller amount of cultures for performance reasons
+- french region will be modified with upcoming 1.3 patch to vanilla
+- small changes to other POPs and cultures
 ### 0.0.22
 - added new building - mint - and implemented central banks
 - reworked finance buildings, goods, POP needs and product chains

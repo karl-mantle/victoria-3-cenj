@@ -213,7 +213,7 @@ COU = { #Courland
 	color = { 234 224 94 }
 	country_type = recognized
 	tier = principality
-	cultures = { baltic_german russian }
+	cultures = { baltic_german }
 	capital = STATE_LATVIA
 }
 CRN = { #Cornwall

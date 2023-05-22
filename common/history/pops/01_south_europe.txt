@@ -104,7 +104,7 @@
 	s:STATE_APULIA = {
 		region_state:SIC = {
 			create_pop = {
-				culture = apulian
+				culture = neapolitan
 				size = 1284392
 			}
 		}
@@ -112,7 +112,7 @@
 	s:STATE_ABRUZZO = {
 		region_state:SIC = {
 			create_pop = {
-				culture = abruzzese
+				culture = neapolitan
 				size = 660448
 			}
 		}
@@ -120,7 +120,7 @@
 	s:STATE_SAVOY = {
 		region_state:SAR = {
 			create_pop = {
-				culture = savoyard
+				culture = francoprovencal
 				size = 287600
 			}
 			create_pop = {
@@ -132,19 +132,19 @@
 	s:STATE_EMILIA = {
 		region_state:PAR = {
 			create_pop = {
-				culture = emilian
+				culture = emilian_romagnol
 				size = 472004
 			}
 		}
 		region_state:LUC = {
 			create_pop = {
-				culture = emilian
+				culture = emilian_romagnol
 				size = 108408
 			}
 		}
 		region_state:MOD = {
 			create_pop = {
-				culture = emilian
+				culture = emilian_romagnol
 				size = 648400
 			}
 		}
@@ -165,7 +165,7 @@
 	s:STATE_ROMAGNA = {
 		region_state:PAP = {
 			create_pop = {
-				culture = romagnol
+				culture = emilian_romagnol
 				size = 803600
 			}
 		}
@@ -519,6 +519,10 @@
 				culture = roma
 				size = 7700
 			}
+			create_pop = {
+				culture = east_german
+				size = 2300
+			}
 		}
 		region_state:RUS = {
 			create_pop = {
@@ -653,7 +657,7 @@
 				size = 464400
 			}
 			create_pop = {
-				culture = austrian
+				culture = austro_bavarian
 				size = 21388
 			}
 		}
@@ -690,7 +694,7 @@
 				size = 28000
 			}
 			create_pop = {
-				culture = austrian
+				culture = austro_bavarian
 				size = 40396
 			}
 			create_pop = {
@@ -714,7 +718,7 @@
 				size = 16000
 			}
 			create_pop = {
-				culture = austrian
+				culture = austro_bavarian
 				size = 20140
 			}
 			create_pop = {
@@ -738,7 +742,7 @@
 				size = 344504
 			}
 			create_pop = {
-				culture = south_german
+				culture = austro_bavarian
 				size = 9792
 			}
 			create_pop = {

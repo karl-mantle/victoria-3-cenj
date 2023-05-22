@@ -177,26 +177,6 @@ pmg_ownership_capital_finance_sector = {
 	}
 }
 
-pmg_base_building_central_bank = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-
-	production_methods = {
-		pm_central_bank_counter_inflation
-		pm_central_bank_base
-		pm_central_bank_counter_recession
-	}
-}
-
-pmg_ownership_capital_central_bank = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
-	production_methods = {
-		pm_privately_owned_central_bank
-		pm_publicly_traded_central_bank
-		pm_government_run_central_bank
-		pm_worker_cooperative_central_bank
-	}
-}
-
 pmg_mint_currency_standard = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {

@@ -1106,8 +1106,7 @@ STATES = {
 		
 		add_homeland = hungarian
 		add_homeland = romanian
-		add_homeland = trans_landler
-        add_homeland = trans_saxon
+        add_homeland = low_saxon
 	}
 	s:STATE_HAWAIIAN_ISLANDS = {
 		create_state = {
@@ -1125,8 +1124,7 @@ STATES = {
 		
 		add_homeland = hungarian
 		add_homeland = romanian
-		add_homeland = trans_landler
-        add_homeland = trans_saxon
+        add_homeland = low_saxon
 	}
 	s:STATE_MOLDAVIA = {
 		create_state = {
@@ -1139,7 +1137,7 @@ STATES = {
 		}
 		
 		add_homeland = romanian
-		add_homeland = buchenlander
+		add_homeland = east_german
 	}
 	s:STATE_WALLACHIA = {
 		create_state = {
@@ -1148,7 +1146,7 @@ STATES = {
 		}
 		
 		add_homeland = romanian
-		add_homeland = regat_german
+		add_homeland = east_german
 	}
 	s:STATE_GALICIA = {
 		create_state = {
@@ -1620,7 +1618,6 @@ STATES = {
 		
 		add_homeland = north_italian
 		add_homeland = french
-		add_homeland = savoyard
         add_homeland = francoprovencal
 	}
 	s:STATE_LIBERIA = {
@@ -1650,7 +1647,7 @@ STATES = {
 		}
 		
 		add_homeland = north_italian
-		add_homeland = emilian
+		add_homeland = emilian_romagnol
 	}
 	s:STATE_TUSCANY = {
 		create_state = {
@@ -1668,7 +1665,7 @@ STATES = {
 		}
 		
 		add_homeland = north_italian
-		add_homeland = romagnol
+		add_homeland = emilian_romagnol
 	}
 	s:STATE_LAZIO = {
 		create_state = {
@@ -2959,7 +2956,7 @@ STATES = {
 		}
 		
 		add_homeland = scottish
-		add_homeland = highland_scottish
+		add_homeland = gaelic_scots
 	}
 	s:STATE_MIDLANDS = {
 		create_state = {
@@ -3305,7 +3302,7 @@ STATES = {
 		}
 
 		add_homeland = wallonian
-		add_homeland = rhine_german
+		add_homeland = franconian
 		add_claim = c:NET
 	}
 	s:STATE_FLANDERS = {
@@ -3341,7 +3338,7 @@ STATES = {
 		}
 
 		add_homeland = dutch
-		add_homeland = rhine_german
+		add_homeland = franconian
 	}
 	s:STATE_JUTLAND = {
 		create_state = {
@@ -6596,7 +6593,7 @@ STATES = {
 		add_homeland = russian
 		add_homeland = tatar
 		add_homeland = ukrainian
-		add_homeland = crimean_german
+		add_homeland = east_german
 	}
 	s:STATE_LUHANSK = {
 		create_state = {
@@ -6607,7 +6604,7 @@ STATES = {
 		add_homeland = ukrainian
 		add_homeland = russian
 		add_homeland = cossack
-		add_homeland = black_sea_german
+		add_homeland = east_german
 	}
 	s:STATE_KURSK = {
 		create_state = {
@@ -6633,7 +6630,7 @@ STATES = {
 		}
 		
 		add_homeland = ukrainian
-		add_homeland = black_sea_german
+		add_homeland = east_german
 	}
 	s:STATE_BESSARABIA = {
 		create_state = {
@@ -6686,7 +6683,7 @@ STATES = {
 		}
 		
 		add_homeland = south_italian
-		add_homeland = abruzzese
+		add_homeland = neapolitan
 	}	
 	s:STATE_CALABRIA = {
 		create_state = {
@@ -6704,7 +6701,7 @@ STATES = {
 		}
 		
 		add_homeland = south_italian
-		add_homeland = apulian
+		add_homeland = neapolitan
 	}
 	s:STATE_WEST_GALICIA = {
 		create_state = {
@@ -6717,7 +6714,7 @@ STATES = {
 		}
 		
 		add_homeland = polish
-		add_homeland = galician_german
+		add_homeland = east_german
 	}
 	s:STATE_EAST_GALICIA = {
 		create_state = {
@@ -6727,7 +6724,7 @@ STATES = {
 		
 		add_homeland = polish
 		add_homeland = ukrainian
-		add_homeland = galician_german
+		add_homeland = east_german
 		add_homeland = rusyn
 	}
 	s:STATE_WEST_SLOVAKIA = {
@@ -6786,7 +6783,7 @@ STATES = {
 		
 		add_homeland = hungarian
 		add_homeland = romanian
-		add_homeland = danube_swabian
+		add_homeland = swabian
 	}
 	s:STATE_TRANSDANUBIA = {
 		create_state = {
@@ -6796,7 +6793,7 @@ STATES = {
 		
 		add_homeland = hungarian
 		add_homeland = south_german
-		add_homeland = danube_swabian
+		add_homeland = swabian
 	}
 	s:STATE_ISTRIA = {
 		create_state = {
@@ -6844,7 +6841,7 @@ STATES = {
 		}
 		
 		add_homeland = hungarian
-		add_homeland = danube_swabian
+		add_homeland = swabian
 	}
 	s:STATE_STYRIA = {
 		create_state = {
@@ -6853,7 +6850,7 @@ STATES = {
 		}
 		
 		add_homeland = south_german
-		add_homeland = austrian
+		add_homeland = austro_bavarian
 	}
 	s:STATE_TYROL = {
 		create_state = {
@@ -6862,7 +6859,7 @@ STATES = {
 		}
 		
 		add_homeland = south_german
-		add_homeland = tyrolean
+		add_homeland = austro_bavarian
 	}
 	s:STATE_AUSTRIA = {
 		create_state = {
@@ -6871,7 +6868,7 @@ STATES = {
 		}
 		
 		add_homeland = south_german
-		add_homeland = austrian
+		add_homeland = austro_bavarian
 	}
 	s:STATE_SOUTH_TYROL = {
 		create_state = {
@@ -6881,7 +6878,7 @@ STATES = {
 		
 		add_homeland = south_german
 		add_homeland = north_italian
-		add_homeland = tyrolean
+		add_homeland = austro_bavarian
 	}
 	s:STATE_SLOVENIA = {
 		create_state = {
@@ -6900,7 +6897,7 @@ STATES = {
 		
 		add_homeland = hungarian
 		add_homeland = serb
-		add_homeland = danube_swabian
+		add_homeland = swabian
 		add_homeland = rusyn
 		add_claim = c:SER
 	}
@@ -6975,7 +6972,7 @@ STATES = {
 		}		
 		
 		add_homeland = north_german
-		add_homeland = rhine_german
+		add_homeland = franconian
 	}
 	s:STATE_NORTH_RHINE = {
 		create_state = {
@@ -6984,7 +6981,7 @@ STATES = {
 		}
 		
 		add_homeland = north_german
-		add_homeland = rhine_german
+		add_homeland = franconian
 	}
 	s:STATE_SILESIA = {
 		create_state = {
@@ -7069,7 +7066,7 @@ STATES = {
 		}
 		
 		add_homeland = south_german
-		add_homeland = bavarian
+		add_homeland = austro_bavarian
 	}
 	s:STATE_FRANCONIA = {
 		create_state = {
@@ -7105,7 +7102,6 @@ STATES = {
 		add_homeland = north_german
 		add_homeland = sorb
 		add_homeland = upper_saxon
-		add_homeland = thuringian
 	}
 	s:STATE_BRUNSWICK = {	
 		create_state = {
@@ -7147,7 +7143,7 @@ STATES = {
 		}			
 		
 		add_homeland = north_german
-		add_homeland = hessian
+		add_homeland = franconian
 	}
 	s:STATE_PIEDMONT = {
 		create_state = {
@@ -7221,7 +7217,7 @@ STATES = {
 		}
 		
 		add_homeland = polish
-		add_homeland = vistula_german
+		add_homeland = east_german
 	}
 	s:STATE_VOLHYNIA = {
 		create_state = {
@@ -7230,7 +7226,7 @@ STATES = {
 		}
 		
 		add_homeland = ukrainian
-		add_homeland = volhynian_german
+		add_homeland = east_german
 	}
 	s:STATE_KIEV = {
 		create_state = {
@@ -7280,8 +7276,7 @@ STATES = {
 		add_homeland = hungarian
 		add_homeland = romanian
 		add_homeland = serb
-		add_homeland = danube_swabian
-        add_homeland = banat_swabian
+		add_homeland = swabian
         add_homeland = rusyn
 	}
 	s:STATE_CORSICA = {

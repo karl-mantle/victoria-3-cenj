@@ -30,19 +30,6 @@ bg_silver_mining = {
 	can_use_slaves = yes
 }
 
-bg_central_bank = { #work in progress
-	parent_group = bg_government
-	category = development
-	is_government_funded = yes
-	cash_reserves_max = 500000
-	urbanization = 100
-	infrastructure_usage_per_level = 5
-	lens = government
-	should_auto_expand = { 
-		default_auto_expand_rule = yes
-	}
-}
-
 bg_finance = {
 	parent_group = bg_urban_facilities
 	category = urban

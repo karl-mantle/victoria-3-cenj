@@ -142,17 +142,6 @@
  pm_government_run_construction_sector:0 "$pm_government_run$"
  pm_worker_cooperative_construction_sector:0 "$pm_worker_cooperative$"
 
- pmg_base_building_central_bank:0 "Central Bank Policy"
- pm_central_bank_base:0 "Standard Policies"
- pm_central_bank_counter_recession:0 "Counter-Recession Policies"
- pm_central_bank_counter_inflation:0 "Counter-Inflation Policies"
-
- pmg_ownership_capital_central_bank:0 "Central Bank Management"
- pm_privately_owned_central_bank:0 "Independent Central Bank"
- pm_publicly_traded_central_bank:0 "Commercial Central Bank"
- pm_government_run_central_bank:0 "Government Central Bank"
- pm_worker_cooperative_central_bank:0 "People's Central Bank"
-
  pmg_base_building_finance_sector:0 "Finance Sector"
  pm_finance_sector_base:0 "Finance Sector"
 

@@ -38,41 +38,26 @@
  luso_canadian:0 "Luso-Canadian"
  polish_canadian:0 "Polish-Canadian"
  scots_canadian:0 "Scots-Canadian"
-#north_german_minor
+#german_majors
  baltic_german:0 "Baltic German"
+ east_german:0 "East German"
+#north_german_minor
  eastphalian:0 "Eastphalian"
- hessian:0 "Hessian"
  low_saxon:0 "Low Saxon"
  pomeranian:0 "Pomeranian"
  prussian:0 "Prussian"
- rhine_german:0 "Rhinelander"
- silesian_german:0 "Silesian German"
- trans_saxon:0 "Transylvanian Saxon"
- thuringian:0 "Thuringian"
- vistula_german:0 "Vistula German"
+ silesian_german:0 "Lower Silesian"
  volga_german:0 "Volga German"
- volhynian_german:0 "Volhynian German"
  westphalian:0 "Westphalian"
 #south_german_minor
  alemannic:0 "Alemannic"
- #austrian:0 "Austrian"
- banat_swabian:0 "Banat Swabian"
- bavarian:0 "Bavarian"
- black_sea_german:0 "Black Sea German"
- buchenlander:0 "Buchenlander"
- crimean_german:0 "Crimean German"
- danube_swabian:0 "Danube Swabian"
+ austro_bavarian:0 "Austro-Bavarian"
  franconian:0 "Franconian"
- galician_german:0 "Galician German"
- regat_german:0 "Regat German"
- sathmar_swabian:0 "Sathmar Swabian"
  sudeten_german:0 "Sudeten German"
  swabian:0 "Swabian"
- trans_landler:0 "Transylvanian Landler"
- tyrolean:0 "Tyrolean"
  upper_saxon:0 "Upper Saxon"
  zipser:0 "Zipser"
-#french_minor
+#french_minor - these will need re-doing in patch 1.3
  angevin:0 "Angevin"
  burgundian:0 "Burgundian"
  champenois:0 "Champenois"
@@ -89,17 +74,15 @@
  provencal:0 "Provençal"
 #north_italian_minor
  dalmatian:0 "Dalmatian"
- emilian:0 "Emilian"
+ emilian_romagnol:0 "Emilian-Romagnol"
  ligurian:0 "Ligurian"
  lombard:0 "Lombard"
  piedmontese:0 "Piedmontese"
- romagnol:0 "Romagnol"
- savoyard:0 "Savoyard"
  tuscan:0 "Tuscan"
  venetian:0 "Venetian"
 #south_italian_minor
- abruzzese:0 "Abruzzese"
- apulian:0 "Apulian"
+ abruzzese:0 "Abruzzese" #neapolitan
+ apulian:0 "Apulian" #neapolitan
  calabrian:0 "Calabrian"
  neapolitan:0 "Neapolitan"
  roman:0 "Roman"
@@ -113,14 +96,14 @@
  scanian:0 "Scanian"
 #celtic_general
  cornish:0 "Cornish"
- cumbric:0 "Cumbric"
- highland_scottish:0 "Highland Scots"
+
+ gaelic_scots:0 "Gaelic Scots"
  ulster_scots:0 "Ulster Scots"
 #slavic_general
  cossack:0 "Cossack"
  lipovan:0 "Lipovan"
  rusyn:0 "Rusyn"
- silesian:0 "Silesian"
+ silesian:0 "Upper Silesian"
 #hellenic_general
  pontic_greek:0 "Pontic Greek"
 #romani_groups
