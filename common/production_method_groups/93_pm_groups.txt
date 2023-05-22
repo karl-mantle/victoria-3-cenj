@@ -1,4 +1,52 @@
-﻿pmg_base_building_silver_fields = {
+﻿# 01_industry
+
+pmg_base_building_tooling_workshops = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_crude_tools
+		pm_copper_tools
+		pm_pig_iron
+		pm_steel
+	}
+}
+
+pmg_base_building_construction_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_construction_industry_wooden_buildings
+		pm_construction_industry_iron_frame_buildings
+		pm_construction_industry_steel_frame_buildings
+		pm_construction_industry_arc_welded_buildings
+	}
+}
+
+pmg_ownership_capital_construction_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_merchant_guilds_construction_industry
+		pm_privately_owned_construction_industry
+		pm_publicly_traded_construction_industry
+		pm_government_run_construction_industry
+		pm_worker_cooperative_construction_industry
+	}
+}
+
+# 02_agro
+
+pmg_secondary_building_millet_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_fig_orchards
+		pm_palm_oil
+	}
+}
+
+# 03_mines
+
+pmg_base_building_silver_fields = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		default_building_silver_fields
@@ -50,43 +98,76 @@ pmg_ownership_capital_building_copper_mine = {
 		pm_worker_cooperative_building_copper_mine
 	}
 }
+# 07_government
 
-pmg_base_building_construction_industry = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
-
-	production_methods = {
-		pm_construction_industry_wooden_buildings
-		pm_construction_industry_iron_frame_buildings
-		pm_construction_industry_steel_frame_buildings
-		pm_construction_industry_arc_welded_buildings
-	}
-}
-
-pmg_ownership_construction_industry = {
+pmg_ownership_capital_building_port = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
-		pm_merchant_guilds_construction_industry
-		pm_privately_owned_construction_industry
-		pm_publicly_traded_construction_industry
-		pm_government_run_construction_industry
-		pm_worker_cooperative_construction_industry
+		pm_merchant_guilds_building_port
+		pm_privately_owned_building_port
+		pm_publicly_traded_building_port
+		pm_government_run_building_port
+		pm_worker_cooperative_building_port
 	}
 }
+
+# 11_private_infrastructure
+
+pmg_road_network_base = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_gravel_roads
+		pm_corduroy_roads
+		pm_macadam_roads
+		pm_tarmac_roads
+		pm_asphalt_roads
+	}
+}
+
+pmg_road_network_travel = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_coaches
+		pm_stagecoaches
+		pm_intercity_motorbuses
+	}
+}
+
+pmg_ownership_capital_road_network = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_building_road_network
+		pm_publicly_traded_building_road_network
+		pm_government_run_building_road_network
+		pm_worker_cooperative_building_road_network
+	}
+}
+
+# 13_construction
+
+pmg_ownership_construction_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_merchant_guilds_construction_sector
+		pm_privately_owned_construction_sector
+		pm_publicly_traded_construction_sector
+		pm_government_run_construction_sector
+		pm_worker_cooperative_construction_sector
+	}
+}
+
+# 14_finance
 
 pmg_base_building_finance_sector = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_finance_sector_silver_standard
-		pm_finance_sector_bimetallic_standard
-		pm_finance_sector_gold_standard
-		pm_finance_sector_fiat_money
+		pm_finance_sector_base
 	}
 }
 
-pmg_ownership_finance_sector = {
+pmg_ownership_capital_finance_sector = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
 		pm_privately_owned_finance_sector
@@ -106,12 +187,32 @@ pmg_base_building_central_bank = {
 	}
 }
 
-pmg_ownership_central_bank = {
+pmg_ownership_capital_central_bank = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
 		pm_privately_owned_central_bank
 		pm_publicly_traded_central_bank
 		pm_government_run_central_bank
 		pm_worker_cooperative_central_bank
+	}
+}
+
+pmg_mint_currency_standard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_mint_silver_standard
+		pm_mint_bimetallic_standard
+		pm_mint_gold_standard
+		pm_mint_fiat_money
+	}
+}
+
+pmg_ownership_capital_building_mint = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_mint
+		pm_publicly_traded_mint
+		pm_government_run_mint
+		pm_worker_cooperative_mint
 	}
 }

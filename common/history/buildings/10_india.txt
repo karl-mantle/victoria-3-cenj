@@ -560,6 +560,12 @@
 				activate_production_methods={ "pm_handsewn_clothes" "pm_merchant_guilds_building_textile_mills" "pm_traditional_looms" "pm_craftsman_sewing" }
 			}
 			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
 				building="building_dye_plantation"
 				level=3
 				reserves=1
@@ -614,10 +620,16 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_silver_standard" "pm_privately_owned_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -1113,6 +1125,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}		
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
 			create_building={
 				building="building_glassworks"
 				level=3

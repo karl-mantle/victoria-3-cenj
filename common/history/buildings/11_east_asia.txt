@@ -433,7 +433,7 @@
 				building="building_finance_sector"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_silver_standard" "pm_privately_owned_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -719,7 +719,7 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_silver_standard" "pm_privately_owned_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1239,7 +1239,7 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_silver_standard" "pm_privately_owned_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_paper_mills"

@@ -1,0 +1,268 @@
+﻿pm_trade_center = {
+	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
+	
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.25
+		}
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_input_charterparties_add = 1
+            building_input_transport_add = 1
+		}
+	}
+}
+
+pm_gravel_roads = {
+	texture = "gfx/interface/icons/production_method_icons/gravel_road.dds"
+	
+	unlocking_production_methods = {
+		pm_gravel_roads
+		pm_corduroy_roads
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_construction_add = 2.5
+			building_output_transportation_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = 2500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 5
+		}
+	}
+}
+
+pm_corduroy_roads = {
+	texture = "gfx/interface/icons/production_method_icons/corduroy_road.dds"
+
+	unlocking_production_methods = {
+		pm_gravel_roads
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_wood_add = 10
+			building_output_transportation_add = 7.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = 2500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 5
+		}
+	}
+}
+
+pm_macadam_roads = {
+	texture = "gfx/interface/icons/production_method_icons/paved_road.dds"
+
+	unlocking_production_methods = {
+		pm_corduroy_roads
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_construction_add = 5
+			building_output_transportation_add = 10
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1750
+			building_employment_engineers_add = 250
+			building_employment_clerks_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 10
+		}
+	}
+}
+
+pm_tarmac_roads = {
+	texture = "gfx/interface/icons/production_method_icons/paved_road.dds"
+	pollution_generation = 5
+
+	unlocking_production_methods = {
+		pm_macadam_roads
+	}
+
+	#unlocking_technologies = {
+	#	paved_roads
+	#}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_construction_add = 5
+			building_input_oil_add = 5
+			building_output_transportation_add = 15
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_engineers_add = 500
+			building_employment_clerks_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 15
+		}
+	}
+}
+
+pm_asphalt_roads = {
+	texture = "gfx/interface/icons/production_method_icons/asphalt_road.dds"
+	pollution_generation = 10
+
+	unlocking_production_methods = {
+		pm_tarmac_roads
+	}
+
+	unlocking_technologies = {
+		paved_roads
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_construction_add = 10
+			building_input_oil_add = 10
+			building_output_transportation_add = 15
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1250
+			building_employment_engineers_add = 750
+			building_employment_clerks_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 25
+		}
+	}
+}
+
+pm_no_coaches = {
+	texture = "gfx/interface/icons/production_method_icons/no_public_transport.dds"
+}
+
+pm_stagecoaches = {
+	texture = "gfx/interface/icons/production_method_icons/public_trams.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_transportation_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+		}
+	}
+}
+
+pm_intercity_motorbuses = {
+	texture = "gfx/interface/icons/production_method_icons/public_motor_carriages.dds"
+	pollution_generation = 10
+	
+	unlocking_technologies = {
+		combustion_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_automobiles_add = 5
+			building_output_transportation_add = 15
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 250	
+		}
+	}
+}
+
+pm_privately_owned_building_road_network = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+	
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+	
+	building_modifiers = { 
+		level_scaled = {
+			building_employment_capitalists_add = 50
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_publicly_traded_building_road_network = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+	
+	building_modifiers = { 
+		level_scaled = {
+			building_employment_capitalists_add = 75
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_government_run_building_road_network = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+		law_interventionism
+		law_agrarianism
+	}
+	
+	building_modifiers = { 
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_road_network = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 125
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}

@@ -1,4 +1,10 @@
 # Changelog
+### 0.0.22
+- added new building - mint - and implemented central banks
+- reworked finance buildings, goods, POP needs and product chains
+- given these buildings to historical places (as much as I could find)
+- finance sector requires banking tech
+- added road network - produces transport and uses construction material / wood. alternative to railways!
 ### 0.0.21
 - integrated numerous changes and fixes from OPB's tweaks mod
 - new AI strategies for various nations
