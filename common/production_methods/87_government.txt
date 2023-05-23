@@ -46,7 +46,7 @@ pm_basic_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 200
+			country_convoys_capacity_add = 150
 		}
 	}
 	state_modifiers = {
@@ -79,7 +79,7 @@ pm_industrial_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 400
+			country_convoys_capacity_add = 250
 		}
 	}
 	state_modifiers = {
@@ -111,7 +111,7 @@ pm_modern_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 800
+			country_convoys_capacity_add = 500
 		}
 	}
 	state_modifiers = {

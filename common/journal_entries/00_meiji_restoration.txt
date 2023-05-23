@@ -79,7 +79,7 @@
 		value = 120
 	}
 
-	inheritable = yes
+	transferable = yes
 
 	progressbar = yes
 
@@ -159,7 +159,7 @@ je_meiji_economy = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 }
@@ -204,7 +204,7 @@ je_meiji_army = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 }

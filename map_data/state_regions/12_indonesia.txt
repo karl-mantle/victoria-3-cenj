@@ -295,6 +295,7 @@ STATE_WESTERN_NEW_GUINEA = {
         bg_iron_mining = 18
         bg_logging = 20
         bg_fishing = 9
+        bg_whaling = 2
         bg_copper_mining = 18
     }
     resource = {
@@ -373,6 +374,7 @@ STATE_EASTERN_NEW_GUINEA = {
         bg_sulfur_mining = 32
         bg_logging = 16
         bg_fishing = 10
+        bg_whaling = 2
         bg_copper_mining = 16
     }
     resource = {

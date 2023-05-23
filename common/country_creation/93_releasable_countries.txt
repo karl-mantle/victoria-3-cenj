@@ -102,7 +102,7 @@ BOU = { #Bourbonnais
 }
 BRB = { #Brabant
     provinces = {
-        x018061 x800060 x93FB2E x4C4894 xC0C0A0
+        x018061 x800060 x93FB2E x4C4894 xC0C0A0 x4C4894 xC0C0A0 x0000DF
     }
     ai_will_do = { always = no }
 }
@@ -751,12 +751,6 @@ SAA = { #Saarland
 SAD = { #Sardinia
     states = {
         STATE_SARDINIA
-    }
-    ai_will_do = { always = no }
-}
-SAV = { #Savoy
-    states = {
-        STATE_SAVOY
     }
     ai_will_do = { always = no }
 }

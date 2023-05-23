@@ -50,19 +50,19 @@
  volga_german:0 "Volga German"
  westphalian:0 "Westphalian"
 #south_german_minor
- alemannic:0 "Alemannic"
  austro_bavarian:0 "Austro-Bavarian"
  franconian:0 "Franconian"
  sudeten_german:0 "Sudeten German"
  swabian:0 "Swabian"
  upper_saxon:0 "Upper Saxon"
  zipser:0 "Zipser"
-#french_minor - these will need re-doing in patch 1.3
+#french_minor
  angevin:0 "Angevin"
  burgundian:0 "Burgundian"
  champenois:0 "Champenois"
  comtois:0 "Comtois"
  gallo:0 "Gallo"
+ lorrainian:0 "Lorrainian"
  norman:0 "Norman"
  orleanais:0 "Orleanais"
  picard:0 "Picard"
@@ -70,7 +70,6 @@
 #occitan_minor
  auvergnat:0 "Auvergnat"
  gascon:0 "Gascon"
- limousin:0 "Limousin"
  provencal:0 "Provençal"
 #north_italian_minor
  dalmatian:0 "Dalmatian"
@@ -89,14 +88,11 @@
  sardinian:0 "Sardinian"
  sicilian:0 "Sicilian"
  umbrian:0 "Umbrian"
-#romance_general
- francoprovencal:0 "Francoprovençal"
 #germanic_general
  frisian:0 "Frisian"
  scanian:0 "Scanian"
 #celtic_general
  cornish:0 "Cornish"
-
  gaelic_scots:0 "Gaelic Scots"
  ulster_scots:0 "Ulster Scots"
 #slavic_general

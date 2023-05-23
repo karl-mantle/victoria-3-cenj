@@ -72,14 +72,14 @@
 				exists = ruler
 				ruler = {
 					OR = {
-						has_ideology = ideology_royalist
-						has_ideology = ideology_traditionalist
+						has_ideology = ideology:ideology_traditionalist
+						has_monarchist_ideology = yes
 					}
 				}
 			}
 			
 			add = 10
-		}				
+		}	
 	}
 }
 
@@ -159,9 +159,9 @@ ai_strategy_reactionary_agenda = {
 				}
 			}
 			OR = {
-				has_ideology = ideology_traditionalist
-				has_ideology = ideology_slaver
-				has_ideology = ideology_theocrat
+				has_ideology = ideology:ideology_traditionalist
+				has_ideology = ideology:ideology_slaver
+				has_ideology = ideology:ideology_theocrat
 			}
 		}
 		OR = {
@@ -177,7 +177,7 @@ ai_strategy_reactionary_agenda = {
 	}
 	
 	weight = {
-		value = 10
+		value = 10	
 		
 		if = {
 			limit = {
@@ -195,7 +195,19 @@ ai_strategy_reactionary_agenda = {
 			}
 			
 			add = 10
-		}		
+		}
+
+		if = {
+			limit = {
+				has_modifier = forced_regime_change
+				OR = {
+					ig:ig_devout ?= { is_in_government = yes }
+					ig:ig_landowners ?= { is_in_government = yes }
+				}				
+			}
+			
+			add = 1000
+		}					
 	}
 }
 
@@ -291,11 +303,11 @@ ai_strategy_progressive_agenda = {
 				exists = ruler
 				ruler = {
 					OR = {
-						has_ideology = ideology_radical
-						has_ideology = ideology_atheist
-						has_ideology = ideology_feminist
-						has_ideology = ideology_abolitionist
-						has_ideology = ideology_market_liberal
+						has_ideology = ideology:ideology_radical
+						has_ideology = ideology:ideology_atheist
+						has_ideology = ideology:ideology_feminist
+						has_ideology = ideology:ideology_abolitionist
+						has_ideology = ideology:ideology_market_liberal
 					}
 				}
 			}
@@ -307,7 +319,7 @@ ai_strategy_progressive_agenda = {
 			limit = {
 				exists = ruler
 				ruler = {
-					has_ideology = ideology_republican_leader
+					has_ideology = ideology:ideology_republican_leader
 				}
 			}
 			
@@ -330,6 +342,13 @@ ai_strategy_progressive_agenda = {
 			}
 			
 			add = 10
+		}	
+
+		if = {
+			limit = {
+				has_variable = japan_forced_to_open_market
+			}
+			add = 100
 		}
 		
 		if = {
@@ -338,6 +357,18 @@ ai_strategy_progressive_agenda = {
 			}
 			add = 100
 		}
+		
+		if = {
+			limit = {
+				has_modifier = forced_regime_change
+				OR = {
+					ig:ig_industrialists ?= { is_in_government = yes }
+					ig:ig_intelligentsia ?= { is_in_government = yes }
+				}				
+			}
+			
+			add = 1000
+		}			
 	}
 }
 
@@ -431,11 +462,11 @@ ai_strategy_egalitarian_agenda = {
 				exists = ruler
 				ruler = {
 					OR = {
-						has_ideology = ideology_radical
-						has_ideology = ideology_reformer
-						has_ideology = ideology_feminist
-						has_ideology = ideology_abolitionist
-						has_ideology = ideology_social_democrat
+						has_ideology = ideology:ideology_radical
+						has_ideology = ideology:ideology_reformer
+						has_ideology = ideology:ideology_feminist
+						has_ideology = ideology:ideology_abolitionist
+						has_ideology = ideology:ideology_social_democrat
 						
 					}
 				}
@@ -449,8 +480,8 @@ ai_strategy_egalitarian_agenda = {
 				exists = ruler
 				ruler = {
 					OR = {
-						has_ideology = ideology_vanguardist
-						has_ideology = ideology_anarchist
+						has_ideology = ideology:ideology_vanguardist
+						has_ideology = ideology:ideology_anarchist
 					}					
 				}
 			}
@@ -465,6 +496,15 @@ ai_strategy_egalitarian_agenda = {
 			}
 			
 			add = 10
+		}	
+
+		if = {
+			limit = {
+				has_modifier = forced_regime_change
+				ig:ig_trade_unions ?= { is_in_government = yes }			
+			}
+			
+			add = 1000
 		}			
 	}
 }
@@ -567,9 +607,9 @@ ai_strategy_nationalist_agenda = {
 				exists = ruler
 				ruler = {
 					OR = {
-						has_ideology = ideology_jingoist_leader
-						has_ideology = ideology_fascist
-						has_ideology = ideology_ethno_nationalist
+						has_ideology = ideology:ideology_jingoist_leader
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_ethno_nationalist
 					}
 				}
 			}
@@ -593,6 +633,18 @@ ai_strategy_nationalist_agenda = {
 			}
 			
 			add = 10
+		}	
+
+		if = {
+			limit = {
+				has_modifier = forced_regime_change
+				OR = {
+					ig:ig_petty_bourgeoisie ?= { is_in_government = yes }
+					ig:ig_armed_forces ?= { is_in_government = yes }
+				}				
+			}
+			
+			add = 1000
 		}		
 	}
 }

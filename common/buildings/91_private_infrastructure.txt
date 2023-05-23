@@ -1,6 +1,4 @@
-﻿
-
-building_road_network = {
+﻿building_road_network = {
 	building_group = bg_private_infrastructure	
 	texture = "gfx/interface/icons/building_icons/road_network.dds"
 

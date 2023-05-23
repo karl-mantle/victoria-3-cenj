@@ -10,23 +10,21 @@ bic_breakup.1 = {
 	flavor = bic_breakup.1.f
 	
 	event_image = {
-		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+		video = "asia_sepoy_mutiny"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/asia/sepoy_mutiny"
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	
 	duration = 3
 	
 	trigger = {
-		exists = c:BIC
 		this = c:BIC
 		is_subject = no
 		is_at_war = no
-		NOT = {
-			has_global_variable = bic_collapse_var
+		NOT = {	
+			has_variable = bic_collapse_var
 		}
 	}
 
@@ -34,7 +32,10 @@ bic_breakup.1 = {
 		cu:british = {
 			save_scope_as = british_culture
 		}
-		set_global_variable = bic_collapse_var
+		cu:scottish = { # Making sure to cover for that one Scottish guy
+			save_scope_as = scottish_culture
+		}
+		set_variable = bic_collapse_var
 	}
 
 	option = {

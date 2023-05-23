@@ -1,5 +1,7 @@
 ﻿l_english:
 # goods
+ bricks:0 "Bricks"
+ clay:0 "Clay"
  copper:0 "Copper"
  construction:0 "Building Materials"
  currency:0 "Currency"
@@ -39,8 +41,8 @@
  modifier_building_output_charterparties_add:0 "@charterparties! Charterparty output per level"
  modifier_building_output_charterparties_add_desc:0 "The amount of @charterparties! Charterparties produced by buildings"
  
- modifier_building_coffee_plantation_throughput_mult:0 "$building_coffee_plantation$ building [concept_throughput]"
- modifier_building_coffee_plantation_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_coffee_plantation$"
+ #modifier_building_coffee_plantation_throughput_mult:0 "$building_coffee_plantation$ building [concept_throughput]"
+ #modifier_building_coffee_plantation_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_coffee_plantation$"
  modifier_building_group_bg_finance_throughput_mult:0 "$bg_finance$ [concept_throughput]"
  modifier_building_group_bg_finance_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_finance$"
  modifier_building_rice_farm_output_mult:0 "$building_rice_farm$ [concept_output]"
@@ -51,8 +53,8 @@
  modifier_state_unincorported_pop_qualifications_mult_desc:0 "A bonus or penalty to [concept_pop_qualifications] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
  modifier_building_category_rural_unincorporated_rural_throughput_mult:0 "Rural Industries [concept_throughput] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
  modifier_building_category_rural_unincorporated_rural_throughput_mult_desc:0 "A bonus or penalty to both input and output of Resource and Agriculture Buildings in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"
- modifier_building_group_bg_rubber_throughput_mult:0 "$bg_rubber$ [concept_throughput]"
- modifier_building_group_bg_rubber_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rubber$"
+ #modifier_building_group_bg_rubber_throughput_mult:0 "$bg_rubber$ [concept_throughput]"
+ #modifier_building_group_bg_rubber_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rubber$"
 # buildings 
  building_copper_mine:0 "Copper Mine"
  building_silver_fields:0 "Silver Fields"

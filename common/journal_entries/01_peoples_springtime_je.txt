@@ -1,5 +1,5 @@
 ﻿je_springtime_of_the_peoples = {
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	is_shown_when_inactive = {
 		has_technology_researched = egalitarianism
@@ -32,12 +32,12 @@
 					is_powerful = yes
 					is_insurrectionary = yes
 				}
-				leader = { has_ideology = ideology_radical }
+				leader = { has_ideology = ideology:ideology_radical }
 			}
 			any_interest_group = {
 				is_marginal = no
 				ig_approval <= -5
-				leader = { has_ideology = ideology_radical }
+				leader = { has_ideology = ideology:ideology_radical }
 			}
 		}
 		is_revolutionary = no
@@ -85,6 +85,8 @@
 
 	complete = {
 		is_at_war = no
+		has_revolution = no
+		is_revolutionary = no
 		has_insurrectionary_interest_groups = no
 		OR = {
 			custom_tooltip = {
@@ -94,7 +96,7 @@
 			AND = {
 				any_interest_group = {
 					is_in_government = yes
-					leader = { has_ideology = ideology_radical }
+					leader = { has_ideology = ideology:ideology_radical }
 				}
 				NOT = { has_law = law_type:law_monarchy }
 				OR = {
@@ -108,7 +110,7 @@
 			}
 			NOT = {
 				any_interest_group = {
-					leader = { has_ideology = ideology_radical }
+					leader = { has_ideology = ideology:ideology_radical }
 					is_marginal = no
 				}
 			}
@@ -129,7 +131,7 @@
 				limit = {
 					any_interest_group = {
 						is_in_government = yes
-						leader = { has_ideology = ideology_radical }
+						leader = { has_ideology = ideology:ideology_radical }
 					}
 					NOT = { has_law = law_type:law_monarchy }
 					OR = {
@@ -147,7 +149,7 @@
 				limit = {
 					NOT = {
 						any_interest_group = {
-							leader = { has_ideology = ideology_radical }
+							leader = { has_ideology = ideology:ideology_radical }
 							is_marginal = no
 						}
 					}
@@ -162,11 +164,11 @@
 			1848.5
 		}
 		random_events = {
-			100 = 0
+			150 = 0
 			8 = peoples_springtime.3
 			10 = peoples_springtime.4
 			10 = peoples_springtime.5
-			100 = peoples_springtime.100
+			15 = peoples_springtime.100
 			10 = peoples_springtime.110
 			10 = peoples_springtime.120
 		}
@@ -179,7 +181,7 @@
 	weight = 10000
 	should_be_pinned_by_default = yes
 
-	inheritable = no
+	transferable = no
 
 	timeout = 3650
 

@@ -1,0 +1,20 @@
+﻿land_redistribution_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	#Agricultural throughput reduced
+	building_group_bg_agriculture_throughput_mult = -0.05
+	building_group_bg_ranching_throughput_mult = -0.05
+	#increase bureaucracy
+	country_bureaucracy_mult = -0.1
+	#increase government costs
+	country_expenses_add = 1
+	#increase radicalism
+	#state_radicals_from_sol_change_mult = 0.2
+	#political_movement_support_add = 0.2
+}
+
+missouri_compromise = { #edited to increase landowner strength in USA
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_landowners_pol_str_mult = 0.3
+	country_aristocrats_voting_power_add = 50
+	country_farmers_voting_power_add = 25
+}

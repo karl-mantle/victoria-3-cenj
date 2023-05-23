@@ -3,7 +3,7 @@ building_finance_sector = {
 	texture = "gfx/interface/icons/building_icons/finance_sector.dds"
 	
 	unlocking_technologies = {
-		banking
+		currency_standards
 	}
 	
 	production_method_groups = {

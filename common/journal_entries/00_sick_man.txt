@@ -111,8 +111,7 @@ je_sick_man_syria = {
 			egyptian_crisis_events.1
 		}
 	}
-
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 }
@@ -152,7 +151,7 @@ je_sick_man_egypt = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 }
@@ -185,7 +184,7 @@ je_sick_man_economy = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 }
@@ -230,7 +229,7 @@ je_sick_man_education = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 
@@ -294,7 +293,7 @@ je_sick_man_separatism = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 
@@ -343,7 +342,7 @@ je_sick_man_army = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 }
@@ -387,7 +386,7 @@ je_sick_man_bureaucracy = {
 		}
 	}
 
-	inheritable = no
+	transferable = no
 
 	weight = 5000
 }
@@ -422,7 +421,7 @@ je_dead_man_walking = {
 		}
 	}
 
-	inheritable = yes
+	transferable = yes
 
 	weight = 10000
 	should_be_pinned_by_default = yes

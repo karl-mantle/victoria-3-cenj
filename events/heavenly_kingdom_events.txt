@@ -339,7 +339,7 @@ heavenly.4 = {
 					}
 					ig:ig_devout = {
 						leader = {
-							set_ideology = ideology_theocrat
+							set_ideology = ideology:ideology_theocrat
 						}
 						add_ruling_interest_group = yes
 					}
@@ -398,10 +398,10 @@ heavenly.4 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_serfdom_banned
+							has_law = law_type:law_no_workers_rights
 						}
 					}
-					activate_law = law_type:law_serfdom_banned
+					activate_law = law_type:law_no_workers_rights
 				}
 				add_modifier = {
 					name = taiping_army_modifier
@@ -709,8 +709,8 @@ heavenly.6 = {
 				ig:ig_intelligentsia = {
 					leader = {
 						OR = {
-							has_ideology = ideology_reformer
-							has_ideology = ideology_market_liberal
+							has_ideology = Ideology:ideology_reformer
+							has_ideology = Ideology:ideology_market_liberal
 						}
 					}
 				}
@@ -741,8 +741,8 @@ heavenly.6 = {
 				ig:ig_intelligentsia = {
 					leader = {
 						OR = {
-							has_ideology = ideology_reformer
-							has_ideology = ideology_market_liberal
+							has_ideology = ideology:ideology_reformer
+							has_ideology = ideology:ideology_market_liberal
 						}
 					}
 				}
@@ -765,8 +765,8 @@ heavenly.6 = {
 			ig:ig_intelligentsia = {
 				leader = {
 					OR = {
-						has_ideology = ideology_reformer
-						has_ideology = ideology_market_liberal
+						has_ideology = ideology:ideology_reformer
+						has_ideology = ideology:ideology_market_liberal
 					}
 				}
 			}
@@ -789,7 +789,7 @@ heavenly.6 = {
 		}
 		ig:ig_armed_forces = {
 			leader = {
-				set_ideology = ideology_jingoist
+				set_ideology = ideology:ideology_jingoist
 			}
 			add_modifier = {
 				name = hawkish_neighbor_relations

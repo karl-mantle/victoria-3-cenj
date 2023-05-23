@@ -46,7 +46,7 @@ AMG = { #Armagnac
 	country_type = recognized
 	tier = principality
 	cultures = { occitan }
-	capital = STATE_ARMAGNAC
+	capital = STATE_GUYENNE
 }
 ANS = { #Ansbach
  	color = { 130 77 119 }
@@ -95,7 +95,7 @@ AUV = { #Auvergne
 	country_type = recognized
 	tier = principality
 	cultures = { occitan }
-	capital = STATE_AUVERGNE
+	capital = STATE_AUVERGNE_LIMOUSIN
 }
 AVI = { #Avignon
  	color = { 205 178 107 }
@@ -116,7 +116,7 @@ BRY = { #Berry
 	country_type = recognized
 	tier = principality
 	cultures = { french }
-	capital = STATE_LIMOUSIN
+	capital = STATE_ORLEANS
 }
 BLN = { #Bologna
 	color = { 236 95 0 }
@@ -332,7 +332,7 @@ GNV = { #Geneva
 	color = { 255 250 138 }
 	country_type = recognized
 	tier = city_state
-	cultures = { swiss }
+	cultures = { francoprovencal }
 	capital = STATE_WEST_SWITZERLAND
 }
 GOT = { #Gotland
@@ -374,7 +374,7 @@ HSC = { #Gaeldom
 	color = { 37 113 207 }
 	country_type = recognized
 	tier = principality
-	cultures = { highland_scottish }
+	cultures = { gaelic_scots }
 	capital = STATE_HIGHLANDS
 }
 ING = { #Ingolstadt
@@ -430,7 +430,7 @@ KOI = { #Isle of Man
 	color = { 133 43 27 }
 	country_type = recognized
 	tier = city_state
-	cultures = { highland_scottish }
+	cultures = { gaelic_scots }
 	capital = STATE_LANCASHIRE
 }
 KOL = { #Cologne
@@ -486,7 +486,7 @@ LOI = { #The Isles (Scotland)
 	color = { 0 105 104 }
 	country_type = recognized
 	tier = principality
-	cultures = { highland_scottish }
+	cultures = { gaelic_scots }
 	capital = STATE_HIGHLANDS
 }
 LUN = { #Lüneburg
@@ -830,7 +830,7 @@ SAA = { #Saarland
 	color = { 0 0 150 }
 	tier = principality
 	country_type = recognized
-	cultures = { rhine_german }
+	cultures = { south_german }
 	capital = STATE_RHINELAND
 }
 SAD = { #Sardinia
@@ -839,13 +839,6 @@ SAD = { #Sardinia
 	tier = principality
 	cultures = { south_italian }
 	capital = STATE_SARDINIA
-}
-SAV = { #Savoy
-	color = { 235 196 231 }
-	country_type = recognized
-	tier = principality
-	cultures = { north_italian }
-	capital = STATE_SAVOY
 }
 SGP = { #Singapore
 	color = { 237 41 57 }
@@ -964,7 +957,7 @@ THU = { #Thuringia
 	color = { 66 126 157}
 	country_type = recognized
 	tier = principality
-	cultures = { north_german }
+	cultures = { south_german }
 	capital = STATE_SAXONY
 }
 TIL = { #Tirol
@@ -993,7 +986,7 @@ TOU = { #Toulouse
 	country_type = recognized
 	tier = principality
 	cultures = { occitan }
-	capital = STATE_ARMAGNAC
+	capital = STATE_GUYENNE
 }
 TBZ = { #Trebizond
 	color = { 40 164 157 } 
@@ -1021,7 +1014,7 @@ TTL = { #Three Leagues
 	color = { 153 240 182 }
 	country_type = recognized
 	tier = principality
-	cultures = { swiss }
+	cultures = { alemannic }
 	capital = STATE_EAST_SWITZERLAND
 }
 TVE = { #Tver

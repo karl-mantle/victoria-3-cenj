@@ -355,6 +355,7 @@ STATE_GUINEA = {
     capped_resources = {
         bg_logging = 13
         bg_fishing = 7
+        bg_whaling = 2
     }
     resource = {
         type = "bg_rubber"
@@ -390,7 +391,7 @@ STATE_TOGO = {
     id = 221
     subsistence_building = "building_subsistence_farms"
     provinces = { "x162D0C" "x406D9B" "x40E9E9" "x51AD34" "x778011" "x802111" "x87D283" "x8D0A5A" "x938637" "xAF65D3" "xD10A98" "xD4B5FF" "xD6D784" "xE35197" "xE8CC9C" "xEDF00C" }
-    prime_land = { "x802111" "x406D9B"  }
+    prime_land = { "x802111" "x406D9B" }
     traits = { "state_trait_malaria" }
     city = "x87D283"
     port = "x802111"
@@ -979,6 +980,7 @@ STATE_NORTH_ANGOLA = {
     capped_resources = {
         bg_logging = 13
         bg_fishing = 8
+        bg_whaling = 4
     }
     resource = {
         type = "bg_rubber"
@@ -1002,6 +1004,7 @@ STATE_SOUTH_ANGOLA = {
     capped_resources = {
         bg_logging = 5
         bg_fishing = 7
+        bg_whaling = 4
     }
     resource = {
         type = "bg_rubber"
@@ -1285,6 +1288,7 @@ STATE_CAPE_COLONY = {
     capped_resources = {
         bg_logging = 8
         bg_fishing = 10
+        bg_whaling = 4
     }
     naval_exit_id = 3105
 }

@@ -1,4 +1,11 @@
 # Changelog
+### 0.0.24
+- a whole myriad of 1.3.0 patch compatibility changes and integration of OPB's VTM changes for 1.3.0
+- removed limousin culture
+- added lorrainian culture
+- north brabant is now part of releasable brabant
+- finance sector now requires currency standards tech instead of banking tech
+- added localisation that paradox forgot and reduced redundancies within my own
 ### 0.0.23
 - removed central bank building
 - condensed german and italian minors into a smaller amount of cultures for performance reasons

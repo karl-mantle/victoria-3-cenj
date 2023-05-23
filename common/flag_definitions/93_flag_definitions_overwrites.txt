@@ -110,3 +110,26 @@ POL = { #Poland
         }
     }
 }
+SAV = { #Savoy
+    flag_definition = {
+        coa = SAV
+        subject_canton = SAV
+        priority = 1
+    }
+    flag_definition = {
+        coa = SAV_communist
+        subject_canton = SAV_communist
+        priority = 1500
+        trigger = {
+            coa_def_communist_flag_trigger = yes
+        }
+    }
+    flag_definition = {
+        coa = SAV_fascist
+        subject_canton = SAV_fascist
+        priority = 1500
+        trigger = {
+            coa_def_fascist_flag_trigger = yes
+        }
+    }
+}

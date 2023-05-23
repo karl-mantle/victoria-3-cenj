@@ -42,7 +42,8 @@ STATE_OMAN = {
     naval_exit_id = 3048
 }
 
-STATE_ABU_DHABI = { #Trucial Coast
+STATE_ABU_DHABI = {
+    #Trucial Coast
     id = 400
     subsistence_building = "building_subsistence_pastures"
     provinces = { "x0DC972" "x1830A7" "x2768F8" "x28D126" "x4D3B30" "x505AE0" "x631F32" "x65A581" "x69B568" "x70D020" "x723F1D" "x8C6854" "xA9240B" "xC9472E" "xD12977" "xE8E0A4" "xEF5020" "xF0D021" "xFF7473" }
@@ -508,7 +509,7 @@ STATE_HUDAVENDIGAR = {
     mine = "xB8FEBB"
     wood = "xB4D60B"
     arable_land = 40
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_opium_plantations" }
     capped_resources = {
         bg_logging = 9
         bg_fishing = 8
@@ -545,7 +546,7 @@ STATE_KONYA = {
     mine = "xFA1AEF"
     wood = "x1D4A61"
     arable_land = 40
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_opium_plantations" }
     capped_resources = {
         bg_logging = 4
         bg_fishing = 6
@@ -563,7 +564,7 @@ STATE_KASTAMONU = {
     mine = "xC01000"
     wood = "xBEBB3F"
     arable_land = 35
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_opium_plantations" }
     capped_resources = {
         bg_coal_mining = 72
         bg_logging = 11
