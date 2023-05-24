@@ -1275,7 +1275,7 @@
 	s:STATE_TEXAS = {
 		region_state:TEX = {
 			create_pop = {
-				culture = dixie
+				culture = texan
 				size = 42224
 			}
 			create_pop = {

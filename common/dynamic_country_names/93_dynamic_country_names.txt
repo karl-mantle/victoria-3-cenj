@@ -1,26 +1,19 @@
 ﻿ANL = { #Andalusia
 	dynamic_country_name = {
-		name = dyn_c_andalusia_granada
+		name = dyn_c_anl_muslim
 		
 		is_main_tag_only = yes
 		priority = 0
 		
 		trigger = {
-			exists = c:ANL
-			c:ANL = { 
-				OR = {
-					has_accepted_religion = sunni
-					has_accepted_religion = shiite
-					has_accepted_religion = ibadi
-				}
-			}
+			coa_def_crescent_trigger = yes
 		}
 	}
 }
 
 COU = { #Courland
 	dynamic_country_name = {
-		name = dyn_c_courland_governorate
+		name = dyn_c_cou_subject_rus
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -38,9 +31,25 @@ COU = { #Courland
 	}
 }
 
+EPR = { #East Prussia
+	dynamic_country_name = {
+		name = dyn_c_epr_subject_pol
+		adjective = dyn_c_epr_subject_pol_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {			
+				is_subject_of = c:POL
+			}
+		}
+	}
+}
+
 EST = { #Estonia
 	dynamic_country_name = {
-		name = dyn_c_estonian_governorate
+		name = dyn_c_est_subject_rus
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -60,7 +69,7 @@ EST = { #Estonia
 
 LVN = { #Livonia
 	dynamic_country_name = {
-		name = dyn_c_livonian_governorate
+		name = dyn_c_lvn_subject_rus
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -78,9 +87,38 @@ LVN = { #Livonia
 	}
 }
 
+PML = { #Pomerelia
+	dynamic_country_name = {
+		name = dyn_c_pml_subject_pru
+		adjective = dyn_c_pml_subject_pru_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {			
+				is_subject_of = c:PRU
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_pml_subject_pol
+		adjective = dyn_c_pml_subject_pol_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {			
+				is_subject_of = c:POL
+			}
+		}
+	}
+}
+
 POL = { #Poland
 	dynamic_country_name = {
-		name = dyn_c_congress_poland
+		name = dyn_c_pol_congress
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -100,7 +138,7 @@ POL = { #Poland
 
 TCA = { #Transcaucasus
 	dynamic_country_name = {
-		name = dyn_c_transcaucasus_viceroyalty
+		name = dyn_c_tca_subject_rus
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -120,7 +158,7 @@ TCA = { #Transcaucasus
 
 XXM = { #Maghreb Union
 	dynamic_country_name = {
-		name = dyn_c_maghreb_republic
+		name = dyn_c_xxm_republic
 
 		is_main_tag_only = yes
 		priority = 0
@@ -131,7 +169,7 @@ XXM = { #Maghreb Union
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_maghreb_empire
+		name = dyn_c_xxm_empire
 		
 		is_main_tag_only = yes
 		priority = 5
@@ -141,7 +179,7 @@ XXM = { #Maghreb Union
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_maghreb_communist
+		name = dyn_c_xxm_communist
 		
 		is_main_tag_only = yes
 		priority = 5
@@ -151,7 +189,7 @@ XXM = { #Maghreb Union
 		}
 	}	
 	dynamic_country_name = {
-		name = dyn_c_maghreb_theocracy
+		name = dyn_c_xxm_theocracy
 		
 		is_main_tag_only = yes
 		priority = 5
@@ -161,7 +199,7 @@ XXM = { #Maghreb Union
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_maghreb_fascist
+		name = dyn_c_xxm_fascist
 		
 		is_main_tag_only = yes
 		priority = 5
@@ -171,7 +209,7 @@ XXM = { #Maghreb Union
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_maghreb_anarchy
+		name = dyn_c_xxm_anarchy
 		
 		is_main_tag_only = yes
 		priority = 5

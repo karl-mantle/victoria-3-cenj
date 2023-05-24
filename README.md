@@ -1,10 +1,12 @@
-# Cultures, Events, Nations, Journals aka CENJ
+# Working Title: CENJ
 
-Cultures, Events, Nations, Journals aka CENJ is an experimental mod for Victoria 3.
+Working Title: CENJ is an experimental mod for Victoria 3.
 
 ** Please note this mod is currently unbalanced and may be unstable **
 
-The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.
+This is the first mod that I've created for a Paradox game in over a decade, and that was only a small Victoria II mod that added a couple of new tags. All feedback is welcome!
+
+This mod was originally titled Cultures, Events, Nations, Journals.
 
 ## Current and Upcoming Features
 
@@ -95,8 +97,9 @@ Credits to these mods for providing ideas, graphics or code.
 
 - Tobbzn (whoever you may be...) for the .gui files that I acquired via discord
 
-And to these mods on the Steam Workshop (Workshop ID)
+And to these mods on the Steam Workshop (Workshop ID); some of which seem to be abandoned now.
 
+- "Texas Flavor Mod" by *John M* (2881332604)
 - "Victoria Tweaks Mod" by *OPB*
 - "Unify the Maghreb" by *strong bird* (2880314605)
 - "Independent Newfoundland" by *Dungeon Master* (2880478571)

@@ -114,3 +114,12 @@ OMA = {
 	capital = STATE_OMAN
 	is_named_from_capital = yes
 }
+
+TEX = {
+	color = { 4  144  178 }
+	country_type = colonial
+	tier = principality
+	cultures = { texan }
+	capital = STATE_TEXAS
+	is_named_from_capital = yes
+}

@@ -1,7 +1,10 @@
 # Changelog
+### 0.0.26
+- new countries east prussia, gibraltar, hong kong, macao, polabia, pomerelia, poznan, zaporizhia
+- new city state government types
+- added the texan-comanche wars (WIP), extra Santa Anna capture flavour and texan culture
 ### 0.0.25
 - bug fixes: mostly incorrect PMs being referenced or missing brackets from merging old and new branches
-- fixed mestizos being naked
 - changed mantua, thomond and berg tags as they were overlapping with vanilla in some manner
 - removed more redundant localisation
 - removed mestizo for now

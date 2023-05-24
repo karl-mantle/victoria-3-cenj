@@ -214,6 +214,12 @@ EPI = { #Epirus
     }
     ai_will_do = { always = no }
 }
+EPR = { #East Prussia
+	states = {
+		STATE_EAST_PRUSSIA
+	}
+	ai_will_do = { always = no }
+}
 ETR = { #Etruria
     states = {
         STATE_TUSCANY
@@ -262,6 +268,12 @@ GEN = { #Genoa
     }
     ai_will_do = { always = no }
 }
+GIB = { #Gibraltar
+	provinces = {
+		xBC6ED3
+	}
+	ai_will_do = { always = no }
+}
 GNV = { #Geneva
     provinces = {
         x56B04B xDDDD3B
@@ -284,6 +296,12 @@ GYA = { #Guyana
 	states = {
         STATE_GUAYANA
     }
+	ai_will_do = { always = no }
+}
+HKG = { #Hong Kong
+	provinces = {
+		xB03161
+	}
 	ai_will_do = { always = no }
 }
 HLL = { #Holland
@@ -458,6 +476,12 @@ MCM = { #Munster
         STATE_MUNSTER
     }
     ai_will_do = { always = no }
+}
+MCC = { #Macao
+	provinces = {
+		xB031E0
+	}
+	ai_will_do = { always = no }
 }
 MEM = { #Memmingen
     provinces = {
@@ -665,11 +689,33 @@ PIS = { #Pisa
     }
     ai_will_do = { always = no }
 }
+PLB = { #Polabia
+	states = {
+		STATE_MECKLENBURG
+		STATE_POMERANIA
+		STATE_BRANDENBURG
+		STATE_SAXONY
+		STATE_ANHALT
+	}	
+	ai_will_do = { always = no }
+}
 PLT = { #Polotsk
     provinces = {
         
     }
     ai_will_do = { always = no }
+}
+PML = { #Pomerelia
+	states = {
+		STATE_WEST_PRUSSIA
+	}	
+	ai_will_do = { always = no }
+}
+POZ = { #Poznań
+	states = {
+		STATE_POSEN
+	}
+	ai_will_do = { always = no }
 }
 PRO = { #Provence
     states = {
@@ -969,4 +1015,10 @@ YAR = { #Yaroslavl
         x1053DD x130A3E x20B928 x40FEDE x6D9FEE x6DD07A x74EDD1 xB9892E
     }
     ai_will_do = { always = no }
+}
+ZAZ = { #Zaporizhia
+	states = { 
+        STATE_CHERSON STATE_LUHANSK
+    }
+	ai_will_do = { always = no }
 }

@@ -1463,6 +1463,13 @@ GEN = { #Genoa
         }
     }
 }
+GIB = { #Gibraltar
+	flag_definition = {
+		coa = GIB
+		subject_canton = GIB
+		priority = 1
+	}		
+}
 GNV = { #Geneva
     flag_definition = {
         coa = GNV
@@ -1569,6 +1576,21 @@ GYA = { #Guyana - TODO: add more flags
         coa = GYA
         priority = 1
     }
+}
+HKG = { #Hong Kong
+	flag_definition = {
+		coa = HKG
+		subject_canton = HKG
+        priority = 1
+	}
+	flag_definition = {
+		coa = HKG_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}		
 }
 HLL = { #Holland
     flag_definition = {
@@ -2465,6 +2487,13 @@ MCM = { #Munster
         }
     }
 }
+MCC = { #Macao
+	flag_definition = {
+		coa = MCC
+		subject_canton = MCC
+		priority = 1
+	}		
+}
 MEM = { #Memmingen
     flag_definition = {
         coa = MEM
@@ -3273,6 +3302,19 @@ PIS = { #Pisa
         }
     }
 }
+PLB = { #Polabia
+	flag_definition = {	
+		coa = PLB
+		priority = 1
+	}
+	flag_definition = {
+		coa = PLB_republic		
+		priority = 50
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+}
 PLT = { #Polotsk
     flag_definition = {
         coa = PLT
@@ -3311,6 +3353,43 @@ PLT = { #Polotsk
             coa_def_republic_flag_trigger = yes
         }
     }
+}
+PML = { #Pomerelia
+	flag_definition = {
+		coa = PML 	
+		priority = 1
+	}
+	flag_definition = {
+		coa = PML_subject_PRU		
+		priority = 50
+		trigger = {
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = PML_subject_POL		
+		priority = 50
+		trigger = {
+			exists = c:POL
+			c:POL = { save_temporary_scope_as = custom_overlord }
+			coa_def_ensign_trigger = yes
+		}
+	}
+}
+POZ = { #Poznań
+	flag_definition = {
+		coa = POZ 
+		priority = 1
+	}
+	flag_definition = {
+		coa = POZ_subject_POL		
+		priority = 50
+		trigger = {
+			exists = c:POL
+			c:POL = { save_temporary_scope_as = custom_overlord }
+			coa_def_ensign_trigger = yes
+		}
+	}
 }
 PRO = { #Provence
     flag_definition = {
@@ -4942,4 +5021,13 @@ YAR = { #Yaroslavl
             coa_def_republic_flag_trigger = yes
         }
     }
+}
+ZAZ = { #Zaporizhia	
+	flag_definition = {
+		coa = ZAZ
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+		}
+	}
 }

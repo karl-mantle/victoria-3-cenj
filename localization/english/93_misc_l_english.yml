@@ -14,6 +14,8 @@
  ai_strategy_manifest_destiny_desc:0 "The [COUNTRY.GetName] want to claim their destiny and ascend to rule North America."
  ai_strategy_anti_shogunate_agenda:0 "Against The Shogun's Order!"
  ai_strategy_anti_shogunate_agenda_desc:0 "The [COUNTRY.GetName] want to destabilise the shogunate as we speak."
+# modifiers
+ seminole_resistance_modifier:0 "Seminole Resistance"
 #defines
  IG_HAS_RIVAL:0 "Number of Rivals"
  IG_EMPLOYED_MIC:0 "Arms Industry Employment"

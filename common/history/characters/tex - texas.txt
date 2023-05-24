@@ -1,0 +1,85 @@
+﻿CHARACTERS = {
+	c:TEX = {
+		create_character = {
+			first_name = "David"
+			last_name = "Burnet"
+			historical = yes
+			ruler = yes
+			culture = cu:texan
+			age = 48
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				imperious
+			}
+			on_created = {
+				set_variable = {
+					name = is_david_burnet
+				}
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = "Samuel"
+			last_name = "Houston"
+			historical = yes
+			culture = cu:texan
+			age = 43
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology= ideology_moderate
+			traits = {
+			}
+			on_created = {
+				set_variable = {
+					name = is_sam_houston
+				}
+			}
+		}
+
+		create_character = {
+			first_name = "Mirabeau"
+			last_name = "Lamar"
+			historical = yes
+			culture = cu:texan
+			age = 38
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_jingoist_leader
+			traits = {
+			}
+			on_created = {
+				set_variable = {
+					name = is_mirabeau_lamar
+				}
+			}
+		}
+
+		create_character = {
+			first_name = "Thomas_Jefferson"
+			last_name = "Rusk"
+			historical = yes
+			culture = cu:texan
+			age = 33
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+			}
+		}
+
+		# Removed for BUR reasons, move to character pool later
+		#create_character = {
+		#	is_general = yes
+		#	first_name = "William"
+		#	last_name = "Travis"
+		#	age = 26
+		#	interest_group = ig_armed_forces
+		#	traits = {
+		#		persistent
+		#	}
+		#}
+	}
+}

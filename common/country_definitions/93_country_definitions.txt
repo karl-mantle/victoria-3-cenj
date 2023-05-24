@@ -272,6 +272,13 @@ EPI = { #Epirus
 	cultures = { greek }
 	capital = STATE_THESSALIA
 }
+EPR = { #East Prussia
+	color = { 110 120 140 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_german }
+	capital = STATE_EAST_PRUSSIA
+}
 ETR = { #Etruria
 	color = { 114 154 143 } 
 	country_type = recognized
@@ -328,6 +335,13 @@ GEN = { #Genoa
 	cultures = { north_italian }
 	capital = STATE_PIEDMONT
 }
+GIB = { #Gibraltar
+	color = { 218 0 12 }
+	country_type = recognized
+	tier = city_state
+	cultures = { british spanish }
+	capital = STATE_GRANADA
+}
 GNV = { #Geneva
 	color = { 255 250 138 }
 	country_type = recognized
@@ -355,6 +369,13 @@ GYA = { #Guyana
 	tier = principality
 	cultures = { afro_caribbean afro_antillean }
 	capital = STATE_GUAYANA
+}
+HKG = { #Hong Kong
+	color = { 222 41 16 }
+	country_type = recognized
+	tier = city_state
+	cultures = { yue }
+	capital = STATE_SHAOZHOU
 }
 HLL = { #Holland
 	color = { 156 96 100 }
@@ -552,6 +573,13 @@ MCM = { #Munster
 	cultures = { irish }
 	capital = STATE_MUNSTER
 }
+MCC = { #Macao
+	color = { 7 118 98 }
+	country_type = recognized
+	tier = city_state
+	cultures = { yue }
+	capital = STATE_GUANGDONG
+}
 MEM = { #Memmingen
 	color = { 210 37 57 }
 	country_type = recognized
@@ -741,12 +769,33 @@ PIS = { #Pisa
 	cultures = { north_italian }
 	capital = STATE_TUSCANY
 }
+PLB = { # Polabia
+	color = { 0 140 195 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polish sorb }
+	capital = STATE_SAXONY
+}
 PLT = { #Polotsk
 	color = { 16 113 155 }
 	country_type = recognized
 	tier = principality
 	cultures = { byelorussian }
 	capital = STATE_ORSHA
+}
+PML = { #Pomerelia
+	color = { 250 250 95 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_WEST_PRUSSIA
+}
+POZ = { #Poznań
+	color = { 150 90 110 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_POSEN
 }
 PRO = { #Provence
 	color = { 93 160 163 }
@@ -1114,4 +1163,11 @@ YAR = { #Yaroslavl
 	tier = principality
 	cultures = { russian }
 	capital = STATE_TVER
+}
+ZAZ = {
+	color = { 146 146 146 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_CHERSON
 }

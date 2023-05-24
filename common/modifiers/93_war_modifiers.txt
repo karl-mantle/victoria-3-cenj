@@ -1,4 +1,14 @@
-﻿seminole_resistance_modifier = {
+﻿minor_indian_raids_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+    state_mortality_mult = 0.025
+}
+
+major_indian_raids_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+    state_mortality_mult = 0.1
+}
+
+seminole_resistance_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	unit_recovery_rate_add = 1.0
 	unit_morale_damage_mult = 1.0

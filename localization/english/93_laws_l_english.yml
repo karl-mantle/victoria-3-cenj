@@ -1,11 +1,22 @@
 ﻿l_english:
-#government_types
- gov_governorate:0 "Governorate"
- gov_viceroyalty:0 "Viceroyalty"
+# Ruler Titles
+ RULER_TITLE_MAGISTRATE:0 "Magistrate"
  RULER_TITLE_VICEROY:0 "Viceroy"
-#law groups
+# Government Types
+ gov_governorate:0 "Governorate"
+ gov_governorate_desc:1 "This is a [concept_government] form where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_GOVERNOR$')]."
+ gov_viceroyalty:0 "Viceroyalty"
+ gov_viceroyalty_desc:1 "This is a [concept_government] form where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_VICEROY$')]."
+ gov_district:0 "District"
+ gov_district_desc:1 "This is a [concept_government] form where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_MAGISTRATE$')]."
+ gov_constitutional_district:0 "Constitutional District"
+ gov_constitutional_district_desc:1 "This is a [concept_government] form where the [Concept('concept_ruler','$RULER_TITLE_MAGISTRATE$')] is the [concept_head_of_state], but [Concept('concept_votes','$concept_voting$')] and a constitution dictates the [Concept('concept_law','$concept_laws$')]."
+ gov_absolute_district:0 "Autocratic District"
+ gov_absolute_district_desc:1 "This is a [concept_government] form where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_MAGISTRATE$')]."
+
+# Law Groups
  lawgroup_currency_policy:0 "Currency Policy"
-#laws
+# Laws
  law_bartering:0 "Bartering"
  law_bartering_desc:0 "An economy that isn't reliant on a fungible intermediate unit of exchange."
  law_silver_standard:0 "Silver Standard"
@@ -16,7 +27,9 @@
  law_gold_standard_desc:0 "The national currency is convertible to a fixed amount of gold."
  law_fiat_money:0 "Fiat Money"
  law_fiat_money_desc:0 "The national currency is no longer convertible to any fungible resource good."
-#political parties
+
+# Political Parties
+# Agitators DLC
  from_traditional_bonapartist_party:0 "Traditional Bonapartist Party"
  from_traditional_orleanist_party:0 "Traditional Orleanist Party"
  from_traditional_legitimist_party:0 "Traditional Legitimist Party"

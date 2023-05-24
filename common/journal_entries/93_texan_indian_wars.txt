@@ -1,0 +1,161 @@
+﻿je_texan_indian_wars = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	immediate = {
+		c:TEX = {
+			random_scope_character = {
+				limit = {
+					has_variable = is_mirabeau_lamar
+				}
+				save_scope_as = mirabeau_lamar_scope
+			}
+			random_scope_character = {
+				limit = {
+					has_variable = is_sam_houston
+				}
+				save_scope_as = sam_houston_scope
+			}
+			trigger_event = texan_indian_wars.1
+		}
+	}
+
+	is_shown_when_inactive = {
+		c:TEX = root
+		is_at_war = no
+	}
+
+	possible = {
+		c:TEX = root
+		is_at_war = no
+		in_election_campaign = yes
+	}
+
+	complete = {
+		is_at_war = no
+		OR = {
+			AND = {
+				custom_tooltip = {
+					text = sam_houston_is_ruler
+					ruler = { 
+						has_variable = is_sam_houston
+					}
+				}
+				custom_tooltip = {
+					text = todo_sam
+				}
+			}
+			AND = {
+				custom_tooltip = {
+					text = mirabeau_lamar_is_ruler
+					ruler = { 
+						has_variable = is_mirabeau_lamar
+					}
+				}
+				has_law = law_type:law_professional_army
+				army_size >= 5
+				custom_tooltip = {
+					text = je_texan_indian_wars_com_defeat
+					NOT = { exists = c:COM }
+				}
+				
+			}
+		}
+	}
+
+	on_complete = {
+		c:TEX = {
+			every_scope_state = {
+				remove_modifier = major_indian_raids_modifier
+				remove_modifier = minor_indian_raids_modifier
+			}
+			trigger_event = texan_indian_wars.2
+		}
+	}
+
+	current_value = {
+		if = {
+			limit = {
+				exists = c:COM
+			}
+			value = c:COM.tension:root
+		}
+		else = {
+			value = 100
+		}
+	}
+
+	goal_add_value = {
+		value = 100	
+	}
+
+	progressbar = yes
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						is_at_war = yes
+						is_diplomatic_play_committed_participant = yes
+						NOT = { exists = c:COM }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ruler = {
+						has_variable = is_mirabeau_lamar
+					}
+					OR = {
+						c:COM.tension:root >= 90
+						army_size >= 5
+					}
+				}
+				create_diplomatic_play = {
+					name = je_texan_indian_wars
+					type = dp_comanche_war
+					target_country = c:COM 
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						c:COM.tension:root >= 50
+						army_size >= 3
+					}
+				}
+				random_list = {
+					50 = { }
+					30 = { trigger_event = texan_indian_wars.3 }
+					20 = { trigger_event = texan_indian_wars.4 }
+				}
+			}
+			else_if = {
+				limit = {
+					c:COM.tension:root >= 10
+				}
+				random_list = {
+					80 = { }
+					5 = { trigger_event = texan_indian_wars.3 }
+					15 = { trigger_event = texan_indian_wars.4 }
+				}
+			}
+			else = {
+				random_list = {
+					95 = { }
+					5 = { trigger_event = texan_indian_wars.4 }
+				}
+			}
+		}
+	}
+	
+	weight = 1000
+	
+	inheritable = no
+
+	should_be_pinned_by_default = yes
+
+	invalid = {
+		NOT = { exists = c:TEX }
+	}
+} 

@@ -1,0 +1,688 @@
+﻿change_pop_culture_trait = {
+    if  = {
+        limit = { $LIMIT$ }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { culture = { $FROMCULTURE$  } }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = 0.1
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_trait_state = {
+    if  = {
+        every_scope_state = {
+            limit = { $LIMIT$ }
+            every_scope_pop = {
+                limit = { culture = { $FROMCULTURE$  } }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = 0.1
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_culture = {
+    if  = {
+        limit = { $LIMIT$ }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { has_pop_culture = $FROMCULTURE$ }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = 0.1
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_technology = {
+    if  = {
+        limit = {
+            ROOT = { has_technology_researched = $TECHNOLOGY$ }
+            $OWNERCULTURES$
+        }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { culture = { $FROMCULTURE$ } }
+                if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 1
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.02
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 2
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.04
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 3
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.06
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 4
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.08
+                    }
+                }
+                else_if = {
+                    limit = {
+                        PREV.owner = {
+                            institution_investment_level = {
+                                institution = institution_schools
+                                value = 5
+                            }
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:$TOCULTURE$
+                        value = 0.1
+                    }
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_technology_backup = {
+    if  = {
+        limit = {
+            has_technology_researched = $TECHNOLOGY$
+            $OWNERCULTURES$
+        }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { culture = { $FROMCULTURE$ } }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = 0.02
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_pan_nationalism = {
+    if  = {
+        limit = { has_technology_researched = pan-nationalism }
+        every_scope_state = {
+            every_scope_pop = {
+                limit = { culture = { AND = { $FROMCULTURE$ } } }
+                change_pop_culture = {
+                    target = cu:$TOCULTURE$
+                    value = $AMOUNT$
+                }
+            }
+        }
+    }
+}
+
+change_pop_culture_to_immigrant_culture = {
+    if = {
+        limit = {
+            $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 5
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:immigrant_culture
+            value = 0.005
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 4
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:immigrant_culture
+            value = 0.01
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 3
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:immigrant_culture
+            value = 0.015
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 2
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:immigrant_culture
+            value = 0.025
+        }
+    }
+    else_if = {
+        limit = {
+            $ROOT$ = {
+                has_law = law_type:law_no_migration_controls
+                institution_investment_level = {
+                    institution = institution_police
+                    value = 1
+                }
+            }
+        }
+        
+        change_pop_culture = {
+            target = cu:immigrant_culture
+            value = 0.03
+        }
+    }
+}
+
+change_primary_culture = {
+    if = {
+        limit = {
+            ROOT = { has_technology_researched = pan-nationalism }
+            exists = c:$MAJOR_TAG$
+        }
+        if = {
+            limit = {
+                    ROOT = c:$TARGET_COUNTRY$
+                    country_has_primary_culture = cu:$OLD_PRIMARY$
+            }
+            remove_primary_culture = cu:$OLD_PRIMARY$
+            add_primary_culture = cu:$NEW_PRIMARY$
+        }
+    }
+}
+
+change_primary_culture_north_german_minor = {
+    if = {
+        limit = {
+            exists = c:GER
+            ROOT = { has_technology_researched = pan-nationalism }
+        }
+        if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_POMERANIA
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:pomeranian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ELBE
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_WESTPHALIA
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ANHALT
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:eastphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_WEST_PRUSSIA
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:prussian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_EAST_PRUSSIA
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:prussian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_RHINELAND
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:franconian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_NORTH_RHINE
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:franconian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SCHLESWIG_HOLSTEIN
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:low_saxon
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_HANNOVER
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:westphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SAXONY
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:upper_saxon
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_BRUNSWICK
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:eastphalian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_HESSE
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:franconian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_MECKLENBURG
+                }
+            }
+            remove_primary_culture = cu:north_german
+            add_primary_culture = cu:pomeranian
+        }
+    }
+}
+
+change_primary_culture_south_german_minor = {
+    if = {
+        limit = {
+            exists = c:GER
+            ROOT = { has_technology_researched = pan-nationalism }
+        }
+        if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ALSACE_LORRAINE
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:alemannic
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_AUSTRIA
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austro_bavarian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_STYRIA
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austro_bavarian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_TYROL
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austro_bavarian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SOUTH_TYROL
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austro_bavarian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_WURTTEMBERG
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:swabian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_BADEN
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:alemannic
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_BAVARIA
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:austro_bavarian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_FRANCONIA
+                }
+            }
+            remove_primary_culture = cu:south_german
+            add_primary_culture = cu:franconian
+        }
+    }
+}
+
+change_primary_culture_north_italian_minor = {
+    if = {
+        limit = {
+            exists = c:ITA
+            ROOT = { has_technology_researched = pan-nationalism }
+        }
+        if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_VENETIA
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:venetian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SAVOY
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:francoprovencal
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_EMILIA
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:emilian_romagnol
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_TUSCANY
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:tuscan
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ROMAGNA
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:emilian_romagnol
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ISTRIA
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:venetian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_LOMBARDY
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:lombard
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_PIEDMONT
+                }
+            }
+            remove_primary_culture = cu:north_italian
+            add_primary_culture = cu:piedmontese
+            add_primary_culture = cu:ligurian
+        }
+    }
+}
+
+change_primary_culture_south_italian_minor = {
+    if = {
+        limit = {
+            exists = c:ITA
+            ROOT = { has_technology_researched = pan-nationalism }
+        }
+        if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SICILY
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:sicilian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_LAZIO
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:roman
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_CAMPANIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:neapolitan
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_ABRUZZO
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:neapolitan
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_CALABRIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:calabrian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_APULIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:neapolitan
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_SARDINIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:sardinian
+        }
+        else_if = {
+            limit = { 
+                any_scope_state = {
+                    is_capital = yes
+                    state_region = s:STATE_UMBRIA
+                }
+            }
+            remove_primary_culture = cu:south_italian
+            add_primary_culture = cu:umbrian
+        }
+    }
+}
