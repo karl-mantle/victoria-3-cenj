@@ -139,7 +139,7 @@ BRB = { #Brabant
 	cultures = { flemish }
 	capital = STATE_FLANDERS
 }
-BRG = { #Berg
+BEG = { #Berg
 	color = { 240 205 140 }
 	country_type = recognized
 	tier = city_state
@@ -517,7 +517,7 @@ MAI = { #Mainz
 	cultures = { north_german }
 	capital = STATE_HESSE
 }
-MAN = { #Mantua
+MAT = { #Mantua
 	color = { 191 83 101 }
 	country_type = recognized
 	tier = city_state
@@ -587,7 +587,7 @@ MLO = { #Milan
 	cultures = { north_italian }
 	capital = STATE_LOMBARDY
 }
-MNS = { #Thomond
+MNT = { #Thomond
 	color = { 242 249 255 }
 	country_type = recognized
 	tier = principality
@@ -615,7 +615,7 @@ MUN = { #Münster
 	cultures = { north_german }
 	capital = STATE_WESTPHALIA
 }
-MRV = { #Moravia
+MOV = { #Moravia
 	color = { 232 149 18 }
 	country_type = recognized
 	tier = principality
@@ -839,6 +839,13 @@ SAD = { #Sardinia
 	tier = principality
 	cultures = { south_italian }
 	capital = STATE_SARDINIA
+}
+SEM = { #Seminole
+	color = { 108 139 208 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	capital = STATE_FLORIDA
 }
 SGP = { #Singapore
 	color = { 237 41 57 }

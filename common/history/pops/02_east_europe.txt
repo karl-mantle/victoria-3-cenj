@@ -944,7 +944,7 @@
 				size = 189602
 			}
 			create_pop = {
-				culture = austrian
+				culture = austro_bavarian
 				size = 189602
 			}
 			create_pop = {

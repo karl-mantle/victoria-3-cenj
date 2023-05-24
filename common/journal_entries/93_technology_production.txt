@@ -1,0 +1,117 @@
+﻿je_atmospheric_engine = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = atmospheric_engine_je_done }
+		has_technology_researched = shaft_mining
+		NOT = { has_technology_researched = watertube_boiler }
+	}
+
+	possible = {
+		has_technology_researched = atmospheric_engine
+		any_scope_building = {
+			OR = {
+				is_building_type = building_coal_mine
+				is_building_type = building_iron_mine
+				is_building_type = building_sulfur_mine
+				is_building_type = building_lead_mine
+			}
+			level >= 3
+		}
+	}
+
+	complete = {
+		game_date > 1836.1.14
+		any_scope_building = {
+			filter = {
+				OR = {
+					is_building_type = building_coal_mine
+					is_building_type = building_iron_mine
+					is_building_type = building_sulfur_mine
+					is_building_type = building_lead_mine
+				}
+			}
+			percent > 0.75
+			OR = {
+			    has_active_production_method = pm_atmospheric_engine_pump_building_coal_mine
+			    has_active_production_method = pm_atmospheric_engine_pump_building_iron_mine
+			    has_active_production_method = pm_atmospheric_engine_pump_building_lead_mine
+			    has_active_production_method = pm_atmospheric_engine_pump_building_sulfur_mine
+            }
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy > 0.75
+		}
+		OR = {
+			can_research = railways
+			can_research = watertube_boiler
+		}
+	}
+
+	on_complete = {
+		set_variable = atmospheric_engine_je_done
+		trigger_event = { id = production_tech_events.601 }
+	}
+
+	fail = {
+		has_technology_researched = watertube_boiler
+	}
+
+	timeout = 3650
+}
+
+je_steam_engines = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	is_shown_when_inactive = {
+		is_player = yes
+		has_technology_researched = railways
+		NOT = { has_technology_researched = electric_railway }
+		any_scope_state = {
+			any_neighbouring_state = {
+				owner = ROOT
+			}
+		}
+	}
+
+	possible = {
+		any_scope_building = {
+			is_building_type = building_motor_industry
+		}
+	}
+
+	complete = {
+		game_date > 1836.1.14
+		any_scope_building = {
+			is_building_type = building_motor_industry
+			occupancy > 0.75
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			level >= 3
+		}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_railway
+				occupancy > 0.75
+			}
+			custom_tooltip = {
+				text = has_adjacent_railway_tt
+				any_neighbouring_state = {
+					owner = ROOT
+					any_scope_building = {
+						is_building_type = building_railway
+						occupancy > 0.75
+					}
+				}
+			}
+		}
+		
+	}
+
+	on_complete = {
+		trigger_event = { id = production_tech_events.700 }
+	}
+
+	timeout = 3650
+}

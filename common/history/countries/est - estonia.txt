@@ -1,7 +1,8 @@
 ﻿COUNTRIES = {
 	c:EST = {		
 		effect_starting_technology_tier_2_tech = yes
-		
+		effect_starting_politics_conservative = yes
+
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_per_capita_based_taxation

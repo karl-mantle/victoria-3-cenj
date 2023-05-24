@@ -46,8 +46,6 @@
  peoples_springtime.101.tt1:0 "Your actions may cause the situation to escalate."
  peoples_springtime.101.tt2:0 "Your actions are likely to keep the situation from escalating."
  peoples_springtime.101.tt3:0 "Your lack of action is likely to escalate the situation."
- mobilizing_the_militia:1 "Mobilizing the Militia"
- deploying_the_army:0 "Deploying the Army"
 
  peoples_springtime.102.t:0 "The Five Days of [SCOPE.sState('massacre_state_scope').GetCityHubName]"
  peoples_springtime.102.d:1 "Horror! In a fit of merciless fury, a large crowd of [SCOPE.sCulture('massacre_victims').GetName] rioters have attacked the local [SCOPE.sCulture('ROOT_culture').GetName] authorities. The streets of [SCOPE.sState('massacre_state_scope').GetCityHubName] run red with blood, and large parts of the city are ablaze."

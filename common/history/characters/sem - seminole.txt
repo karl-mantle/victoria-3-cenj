@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:SEM = {
+		create_character = {
+			first_name = "Osceola"
+			last_name = "Osceola_last"
+			birth_date = 1804.1.30 #Birth date is unknown, chosen date is the day of his death in 1838
+			is_general = yes
+			ruler = yes
+			#age = 31
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			hq = region_dixie
+			commander_rank = commander_rank_2
+			traits = {
+				persistent
+			}
+		}
+	}
+}

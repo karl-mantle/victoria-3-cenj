@@ -123,9 +123,11 @@ tanzimat_events.2 = {
 			name = reformed_land_code
 			months = very_long_modifier_time
 		}
-		add_radicals = {
-			pop_type = peasants
-			value = medium_radicals
+		every_scope_state = {
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = medium_radicals
+			}
 		}
 		custom_tooltip = tanzimat.2.tt1
 		set_variable = reformed_landcode
@@ -151,9 +153,11 @@ tanzimat_events.2 = {
 			name = modern_land_code
 			months = very_long_modifier_time
 		}
-		add_radicals = {
-			pop_type = peasants
-			value = large_radicals
+		every_scope_state = {
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = large_radicals
+			}
 		}
 		custom_tooltip = tanzimat.2.tt1
 		set_variable = reformed_landcode
@@ -529,7 +533,7 @@ tanzimat_events.5 = {
 		name = tanzimat_events.5.a						
         default_option = yes
         scope:paranoia_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = scope:discriminated_religion_scope
 			}
@@ -555,7 +559,7 @@ tanzimat_events.5 = {
 		}
 		change_infamy = 5
 		scope:paranoia_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = scope:discriminated_religion_scope
 			}
@@ -666,11 +670,11 @@ tanzimat_events.6 = {
 			months = short_modifier_time
 		}
 		scope:mob_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				culture = scope:mob_victim_culture
 			}
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = scope:mob_religion
 			}
@@ -699,11 +703,11 @@ tanzimat_events.6 = {
 			months = short_modifier_time
 		}
 		scope:mob_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				culture = scope:mob_victim_culture
 			}
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = scope:mob_religion
 			}
@@ -727,11 +731,11 @@ tanzimat_events.6 = {
 	option = {
 		name = tanzimat_events.6.c
 		scope:mob_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				culture = scope:mob_victim_culture
 			}
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = scope:mob_religion
 			}
@@ -836,11 +840,11 @@ tanzimat_events.7 = {
 			value = 20
 		}
 		scope:massacre_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = rel:sunni
 			}
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = scope:massacre_victims
 			}
@@ -849,11 +853,11 @@ tanzimat_events.7 = {
 	option = { # let it peter out
 		name = tanzimat_events.7.b
 		scope:massacre_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = rel:sunni
 			}
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				religion = scope:massacre_victims
 			}
@@ -1024,7 +1028,7 @@ tanzimat_events.9 = {
 				months = normal_modifier_time
 				multiplier = 0.5
 			}
-			add_radicals = {
+			add_radicals_in_state = {
 				pop_type = peasants
 				value = medium_radicals
 			}
@@ -1044,7 +1048,7 @@ tanzimat_events.9 = {
 				months = normal_modifier_time
 				multiplier = 0.25
 			}
-			add_radicals = {
+			add_radicals_in_state = {
 				pop_type = peasants
 				value = large_radicals
 			}

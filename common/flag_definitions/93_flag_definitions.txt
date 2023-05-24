@@ -674,23 +674,23 @@ BRB = { #Brabant
         }
     }
 }
-BRG = { #Berg
+BEG = { #Berg
     flag_definition = {
-        coa = BRG
-        subject_canton = BRG
+        coa = BEG
+        subject_canton = BEG
         priority = 1
     }
     flag_definition = {
-        coa = BRG_communist
-        subject_canton = BRG_communist
+        coa = BEG_communist
+        subject_canton = BEG_communist
         priority = 1500
         trigger = {
             coa_def_communist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = BRG_fascist
-        subject_canton = BRG_fascist
+        coa = BEG_fascist
+        subject_canton = BEG_fascist
         priority = 1500
         trigger = {
             coa_def_fascist_flag_trigger = yes
@@ -2334,31 +2334,31 @@ MAI = { #Mainz
         }
     }
 }
-MAN = { #Mantua
+MAT = { #Mantua
     flag_definition = {
-        coa = MAN
-        subject_canton = MAN
+        coa = MAT
+        subject_canton = MAT
         priority = 1
     }
     flag_definition = {
-        coa = MAN_communist
-        subject_canton = MAN_communist
+        coa = MAT_communist
+        subject_canton = MAT_communist
         priority = 1500
         trigger = {
             coa_def_communist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MAN_fascist
-        subject_canton = MAN_fascist
+        coa = MAT_fascist
+        subject_canton = MAT_fascist
         priority = 1500
         trigger = {
             coa_def_fascist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MAN_monarchy
-        subject_canton = MAN_monarchy
+        coa = MAT_monarchy
+        subject_canton = MAT_monarchy
         priority = 20
         trigger = {
             coa_def_absolute_monarchy_flag_trigger = yes
@@ -2587,39 +2587,39 @@ MLO = { #Milan
         }
     }
 }
-MNS = { #Thomond
+MNT = { #Thomond
     flag_definition = {
-        coa = MNS
-        subject_canton = MNS
+        coa = MNT
+        subject_canton = MNT
         priority = 1
     }
     flag_definition = {
-        coa = MNS_communist
-        subject_canton = MNS_communist
+        coa = MNT_communist
+        subject_canton = MNT_communist
         priority = 1500
         trigger = {
             coa_def_communist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MNS_fascist
-        subject_canton = MNS_fascist
+        coa = MNT_fascist
+        subject_canton = MNT_fascist
         priority = 1500
         trigger = {
             coa_def_fascist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MNS_monarchy
-        subject_canton = MNS_monarchy
+        coa = MNT_monarchy
+        subject_canton = MNT_monarchy
         priority = 20
         trigger = {
             coa_def_absolute_monarchy_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MNS_republic
-        subject_canton = MNS_republic
+        coa = MNT_republic
+        subject_canton = MNT_republic
         priority = 20
         trigger = {
             coa_def_republic_flag_trigger = yes
@@ -2735,39 +2735,39 @@ MUN = { #Münster
         }
     }
 }
-MRV = { #Moravia
+MOV = { #Moravia
     flag_definition = {
-        coa = MRV
-        subject_canton = MRV
+        coa = MOV
+        subject_canton = MOV
         priority = 1
     }
     flag_definition = {
-        coa = MRV_communist
-        subject_canton = MRV_communist
+        coa = MOV_communist
+        subject_canton = MOV_communist
         priority = 1500
         trigger = {
             coa_def_communist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MRV_fascist
-        subject_canton = MRV_fascist
+        coa = MOV_fascist
+        subject_canton = MOV_fascist
         priority = 1500
         trigger = {
             coa_def_fascist_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MRV_monarchy
-        subject_canton = MRV_monarchy
+        coa = MOV_monarchy
+        subject_canton = MOV_monarchy
         priority = 20
         trigger = {
             coa_def_absolute_monarchy_flag_trigger = yes
         }
     }
     flag_definition = {
-        coa = MRV_republic
-        subject_canton = MRV_republic
+        coa = MOV_republic
+        subject_canton = MOV_republic
         priority = 20
         trigger = {
             coa_def_republic_flag_trigger = yes

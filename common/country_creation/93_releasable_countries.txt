@@ -29,8 +29,8 @@ ALS = { #Alsace
     ai_will_do = { always = no }
 }
 AMG = { #Armagnac
-    states = {
-        STATE_ARMAGNAC
+    provinces = {
+        x106040 x306080 x5615DD x7C1D57 xA2BBE9 xB0E000 xD957E6 xECF077
     }
     ai_will_do = { always = no }
 }
@@ -69,8 +69,8 @@ AUG = { #Augsburg
     ai_will_do = { always = no }
 }
 AUV = { #Auvergne
-    states = {
-        STATE_AUVERGNE
+    provinces = {
+        x061121 x30E000 x70C060 xA27EFD xABE045 xAF89BC xBED0F4 xF0C060 xF3D359
     }
     ai_will_do = { always = no }
 }
@@ -106,7 +106,7 @@ BRB = { #Brabant
     }
     ai_will_do = { always = no }
 }
-BRG = { #Berg
+BEG = { #Berg
     provinces = {
         x4101E0 x4D62A0 x2101E0 xA08061
     }
@@ -428,7 +428,7 @@ MAI = { #Mainz
     }
     ai_will_do = { always = no }
 }
-MAN = { #Mantua
+MAT = { #Mantua
     provinces = {
         x50C060 x70B8A9
     }
@@ -483,7 +483,7 @@ MLO = { #Milan
     }
     ai_will_do = { always = no }
 }
-MNS = { #Thomond
+MNT = { #Thomond
     provinces = {
         x20E0C0
     }
@@ -546,7 +546,7 @@ MUN = { #Münster
     }
     ai_will_do = { always = no }
 }
-MRV = { #Moravia
+MOV = { #Moravia
     states = {
         STATE_MORAVIA
     }

@@ -7,12 +7,11 @@
 		
 		trigger = {
 			exists = c:ANL
-			any_scope_country = { 
-				THIS = c:ANL
+			c:ANL = { 
 				OR = {
-					country_has_accepted_religion = sunni
-					country_has_accepted_religion = shiite
-					country_has_accepted_religion = ibadi
+					has_accepted_religion = sunni
+					has_accepted_religion = shiite
+					has_accepted_religion = ibadi
 				}
 			}
 		}

@@ -183,7 +183,7 @@ raj.2 = {
 		}
 		scope:doctrine_of_lapse_target_state_3 = {
 			set_state_owner = ROOT
-			add_radicals = {
+			add_radicals_in_state = { #CENJ
 				value = very_large_radicals
 			}
 		}
@@ -439,15 +439,15 @@ raj.5 = {
 		name = raj.5.b
 		default_option = yes
 		scope:missionaries_suspicion_state = {
-			add_radicals = {
+			add_radicals_in_state = {
 				religion = rel:hindu
 				value = large_radicals
 			}
-			add_radicals = {
+			add_radicals_in_state = { #CENJ
 				religion = rel:sunni
 				value = large_radicals
 			}
-			add_radicals = {
+			add_radicals_in_state = { #CENJ 
 				religion = rel:shiite
 				value = large_radicals
 			}

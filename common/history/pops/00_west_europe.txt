@@ -1232,7 +1232,7 @@
 	s:STATE_STYRIA = {
 		region_state:AUS = {
 			create_pop = {
-				culture = south_german
+				culture = austro_bavarian
 				size = 332398
 			}
 			create_pop = {
@@ -1274,7 +1274,7 @@
 				size = 174100
 			}
 			create_pop = {
-				culture = north_italian
+				culture = lombard
 				size = 5900
 			}
 			create_pop = {

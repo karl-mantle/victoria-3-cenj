@@ -707,6 +707,14 @@
 	s:STATE_FLORIDA={
 		region_state:USA={
 		}
+		region_state:SEM={
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_wound_dressing" "pm_irregular_infantry" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
+			}
+		}
 	}
 	s:STATE_GEORGIA={
 		region_state:USA={

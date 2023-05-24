@@ -1038,7 +1038,7 @@ BRB_republic = {
 		instance = { scale = { 0.4 0.4 } position = { 0.25 0.5 } }
 	}
 }
-BRG = {
+BEG = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
 
@@ -1047,7 +1047,7 @@ BRG = {
 		color1 = "red"
 	}
 }
-BRG_communist = {
+BEG_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -1057,7 +1057,7 @@ BRG_communist = {
 		color2 = "red"
 	}
 }
-BRG_fascist = {
+BEG_fascist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -3123,16 +3123,16 @@ MAI_fascist = {
 MAI_republic = { 
     textured_emblem = { texture = "EU4toVic2/MAI_republic.tga" } 
 }
-MAN = { 
+MAT = { 
     textured_emblem = { texture = "EU4toVic2/MAN_republic.tga" } 
 }
-MAN_communist = { 
+MAT_communist = { 
     textured_emblem = { texture = "EU4toVic2/MAN_communist.tga" }
 }
-MAN_fascist = { 
+MAT_fascist = { 
     textured_emblem = { texture = "EU4toVic2/MAN_fascist.tga" } 
 }
-MAN_monarchy = { 
+MAT_monarchy = { 
     textured_emblem = { texture = "EU4toVic2/MAN_monarchy.tga" } 
 }
 MAZ = {
@@ -3399,7 +3399,7 @@ MLO_fascist = {
     textured_emblem = { texture = "EU4toVic2/MLO_fascist.tga" } }
 MLO_monarchy = { 
     textured_emblem = { texture = "EU4toVic2/MLO_monarchy.tga" } }
-MNS = {
+MNT = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
 
@@ -3648,10 +3648,10 @@ MUN_republic = {
 		color2 = "white"
 	}
 }
-MRV = { 
+MOV = { 
     textured_emblem = { texture = "EU4toVic2/MRV.tga" } 
 }
-MRV_communist = {
+MOV_communist = {
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "red"
 	color2 = "yellow"
@@ -3661,7 +3661,7 @@ MRV_communist = {
 		color1 = "blue"
 	}
 }
-MRV_fascist = {
+MOV_fascist = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
 
@@ -3671,10 +3671,10 @@ MRV_fascist = {
 		color2 = "blue"
 	}
 }
-MRV_monarchy = { 
+MOV_monarchy = { 
     textured_emblem = { texture = "EU4toVic2/MRV_monarchy.tga" } 
 }
-MRV_republic = {
+MOV_republic = {
 	pattern = "pattern_horizontal_split_01.tga"
 	color2 = "yellow_dark"
 	color1 = "red"

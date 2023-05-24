@@ -6,18 +6,21 @@ Cultures, Events, Nations, Journals aka CENJ is an experimental mod for Victoria
 
 The main idea for this came from a mod I started and never finished over a decade ago for Victoria II and the New Nations Mod for Victoria II.
 
-## Current Features
+## Current and Upcoming Features
+
+"*" is applied to upcoming features.
 
 ### Countries
 
-- 140+ new countries that can be formed or released throughout Europe and the New World
-- Several new states
+- 150+ new countries that can be released, formed or exist at game-start.
+- Several new states including Brabant, Liguria*, Verona*, Greater London*, East Midlands*, etc.
 
 ### Culture and Religion
 
-- Dozens of new cultures
-- Several new religions added
-- Large pan-national cultures have been further broken down and will automatically assimilate into their parent culture
+- 40+ new cultures including German, Italian, French minors and various other minor cultures.
+- Examples include: Franconian, Baltic German, Sicilian, Irish-American, Pontic Greek, etc.
+- New religions such as Anglican* and Reformed (Calvinist)*
+- Italian, French and German cultures have been balkanised somewhat and will merge into their national and pan-national cultures, e.g. Low Saxons > North German > German provided they exist.
 - New cultures for diasporas in the New World disconnected from their homeland
 - Migration waves should now be larger and more frequent with discrimination having a larger effect
 - Increased assimilation and conversion rates as well as chunk size
@@ -33,14 +36,17 @@ The main idea for this came from a mod I started and never finished over a decad
 ### Trade and Buildings
 
 - Added several new trade goods
-- Construction sector can now be entirely privatized (ports soon to follow...)
+- Construction sector and ports can now be entirely privatized
 - Construction sector now relies on building materials rather than raw inputs and outputs mortgages and deeds (securities)
+- Ports now create charterparties (maritime contracts) that are require by trade centers
+- Trade centers now also require transportation for land-based trade
+- Road Network building added to create transportation and model road surfaces and teamsters, stagecoaches, inter-city motorcoaches, etc. creates transport, works like Railways
 - Copper and Copper Mines added to world, some production methods of late game buildings now require copper
-- Silver now a discoverable resource a la Gold Fields and a byproduct of Lead and Copper mines
-- Copper, Silver and Gold are all tradeable resources that are used by the Finance Sector to create currency
-- Currency can also be created through bonds and gilts (securities) with the adoption of fiat money
+- Silver now a discoverable resource á la Gold Fields and a byproduct of Lead and Copper mines
+- Copper, Silver and Gold are all tradeable resources that are used by countries Mints to create currency
+- Currency is used by the Finance Sector to create securities which satiate POPs financial product needs
+- Currency can also be created through securities with the adoption of fiat money
 - Decentralised nations will use bartering and have no standards of currency
-- Ports can be privately owned and produce shipping contracts (charterparties) which are used by trade centers to run their convoys
 
 ### Future Plans
 
@@ -56,13 +62,15 @@ Download the contents of this project and place it in your Victoria 3 mods folde
 
 ## Compatibility
 
-This mod is written for the latest* version of Victoria 3 - patch 1.2.7
+This mod is written for the latest* version of Victoria 3 - patch 1.3.1
 
 Please note: this mod will inherently cause the game to run slower than vanilla, especially from the midgame onwards.
 
 Most of the files within this mod will work as seperate overwrites so it should be compatible with other mods, the exception is the directories listed below where I have overwritten the vanilla file(s). Any other mod you have installed won't be compatible with CENJ if it also overwrites these vanilla files without making a compatibility patch.
 
 ### Overwritten vanilla files and directories
+
+- This will need to be updated further. It is not correct at present.
 
 - /common/buy_packages/00_buy_packages.txt
 - /common/history/buildings/ < all files >
@@ -85,11 +93,11 @@ Other languages will be added in the future, if you would like to add a translat
 
 Credits to these mods for providing ideas, graphics or code.
 
-
 - Tobbzn (whoever you may be...) for the .gui files that I acquired via discord
 
 And to these mods on the Steam Workshop (Workshop ID)
 
+- "Victoria Tweaks Mod" by *OPB*
 - "Unify the Maghreb" by *strong bird* (2880314605)
 - "Independent Newfoundland" by *Dungeon Master* (2880478571)
 - "Historical Russian Substates" by *mushriks* (2883212186)

@@ -1,4 +1,4 @@
-building_finance_sector = {
+﻿building_finance_sector = {
 	building_group = bg_finance
 	texture = "gfx/interface/icons/building_icons/finance_sector.dds"
 	

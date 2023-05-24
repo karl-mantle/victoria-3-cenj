@@ -1,4 +1,14 @@
 # Changelog
+### 0.0.25
+- bug fixes: mostly incorrect PMs being referenced or missing brackets from merging old and new branches
+- fixed mestizos being naked
+- changed mantua, thomond and berg tags as they were overlapping with vanilla in some manner
+- removed more redundant localisation
+- removed mestizo for now
+- fixed triggers in events add_radicals_in_state mainly using old add_radicals
+- fixed triggers in various agitators events
+- fixed je's for countries that already met requirements on game start
+- added seminole decentralised nation to florida at war with the USA
 ### 0.0.24
 - a whole myriad of 1.3.0 patch compatibility changes and integration of OPB's VTM changes for 1.3.0
 - removed limousin culture

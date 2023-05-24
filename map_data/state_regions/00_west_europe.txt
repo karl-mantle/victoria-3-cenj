@@ -992,7 +992,7 @@ STATE_GELRE = {
 }
 
 STATE_BRABANT = {
-    id = 600
+    id = 701
     subsistence_building = "building_subsistence_farms"
     provinces = { "x4C4894" "xC0C0A0" "x0000DF" }
     city = "xC0C0A0"

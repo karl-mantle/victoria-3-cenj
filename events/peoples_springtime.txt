@@ -904,10 +904,13 @@ peoples_springtime.102 = {
 			value = very_large_radicals
 			culture = scope:massacre_victims
 		}
-		capital = {
-			add_radicals = {
+		any_scope_state = {
+			limit = { 
+				owner = ROOT
+				is_capital = yes
+			}
+			add_radicals_in_state = {
 				value = very_large_radicals
-				culture = ROOT_culture
 			}
 		}
 	}

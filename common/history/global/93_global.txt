@@ -1,5 +1,13 @@
 ﻿GLOBAL = {
-    # adds homelands for new migrant cultures
+    c:USA = {
+		s:STATE_FLORIDA.region_state:USA = {
+			add_modifier = {
+				name = seminole_war_mod
+				months = 84
+				is_decaying = yes
+			}
+		}
+	}
     c:ORG = {
         remove_primary_culture = cu:yankee
     }   
