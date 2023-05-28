@@ -1,4 +1,6 @@
-﻿GER = {
+﻿# Changes
+
+GER = {
 	color = { 147 130 110 }
 	
 	country_type = recognized

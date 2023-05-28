@@ -11,13 +11,7 @@
 				building="building_construction_sector"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
-			}			
-			create_building={
-				building="building_construction_industry"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_merchant_guilds_construction_sector" }
 			}
 			create_building={
 				building="building_paper_mills"
@@ -101,10 +95,17 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 			create_building={
 				building= "building_giza_necropolis"
+			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_hand_work" "pm_privately_owned_building_publishing_house" }
 			}
 		}
 	}
@@ -200,7 +201,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 		}
 		region_state:AWS={
@@ -330,7 +331,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -370,7 +371,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -406,7 +407,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 			create_building={
 				building="building_barracks"
@@ -680,7 +681,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}

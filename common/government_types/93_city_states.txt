@@ -1,4 +1,4 @@
-gov_absolute_district = {
+﻿gov_absolute_district = {
 	transfer_of_power = hereditary
 	
 	male_ruler = "RULER_TITLE_MAGISTRATE"

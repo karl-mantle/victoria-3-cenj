@@ -1,10 +1,43 @@
-﻿building_road_network = {
+﻿# Changes
+
+building_railway = {
+	building_group = bg_private_infrastructure	
+	texture = "gfx/interface/icons/building_icons/building_railway.dds"
+	
+	unlocking_technologies = {
+		railways
+	}
+
+	production_method_groups = {
+		pmg_base_building_railway
+		pmg_passenger_trains
+		pmg_ownership_capital_building_railway
+	}
+
+	required_construction = construction_cost_high
+	
+	ai_value = 2000 # Railways are important
+	
+	should_auto_expand = { 
+		default_auto_expand_rule = yes
+		#OR = {
+		#	cash_reserves_ratio > 0.5
+		#	is_subsidized = yes
+		#}
+		#state.market_access < 1
+		#NOT = { is_under_construction = yes }
+	}
+}
+
+# Additions
+
+building_road_network = {
 	building_group = bg_private_infrastructure	
 	texture = "gfx/interface/icons/building_icons/road_network.dds"
 
 	production_method_groups = {
-		pmg_road_network_base
-		pmg_road_network_travel
+		pmg_base_building_road_network
+		pmg_interstate_road_network
 		pmg_ownership_capital_road_network
 	}
 
@@ -13,11 +46,12 @@
 	ai_value = 2000
 	
 	should_auto_expand = { 
-		OR = {
-			cash_reserves_ratio > 0.5
-			is_subsidized = yes
-		}
-		state.market_access < 1
-		owner.construction_queue_duration < max_autoexpand_queue_weeks
+		default_auto_expand_rule = yes
+		#OR = {
+		#	cash_reserves_ratio > 0.5
+		#	is_subsidized = yes
+		#}
+		#state.market_access < 1
+		#NOT = { is_under_construction = yes }
 	}
 }

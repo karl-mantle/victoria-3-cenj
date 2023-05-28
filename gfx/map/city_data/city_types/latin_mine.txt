@@ -63,10 +63,20 @@
 	building_sulfur_mine = {
 		"latin_colonial_manufactory_01_mesh"
 	}
-	building_silver_fields = {
+	# Added
+	building_copper_fields = {
 		"latin_mining_processing_01_mesh"
 	}
 	building_copper_mine = {
 		"latin_mining_coaldepo_01_mesh"
+	}
+	building_silver_fields = {
+		"latin_mining_processing_01_mesh"
+	}
+	building_silver_mine = {
+		"latin_mining_coaldepo_01_mesh"
+	}
+	building_quarry = {
+		"latin_mining_processing_01_mesh"
 	}
 }

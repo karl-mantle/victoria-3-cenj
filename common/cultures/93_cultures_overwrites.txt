@@ -1414,6 +1414,58 @@ metis={
 	graphics = generic
 }
 
+muskogean={ # Creek and Seminole
+	color= hsv{ 0.27 0.2 0.67 }
+	religion = animist
+	traits = { indigenous_american_heritage north_american_group }
+	male_common_first_names={
+		Alexander
+		Billy
+		Gideon
+		John Joseph Jack
+		Kose
+		Micanopy
+		Peter
+		Roley
+		Sam Solomon
+	}
+	female_common_first_names = {
+		Ann
+		Cindoche
+		Delilah
+		Kecharte
+		Lucy
+		Martha
+		Polly Polikissut
+		Yulaka
+	}	
+	noble_last_names = {
+		Ahhajumba
+		Bowlegs Brim
+		Checote
+		McIntosh
+		Stedham
+	}
+	common_last_names={
+		Anderson Arthur
+		Beaver Barnett Berryhill
+		Coppinger Callahan Carr
+		Dreadfulwater Davis
+		Fixico
+		Hicks Hardage Harjo
+		Isaac
+		Jones
+		McQueen
+		Powell Perryman Prince Potter
+		Sixkiller
+		Yoholo
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
 franco_canadian={
 	color= rgb{ 87 120 181 }
 	religion = catholic
@@ -1736,6 +1788,7 @@ corsican = {
 		1 = caucasian
 	}
 }
+
 
 #additional_cultures
 

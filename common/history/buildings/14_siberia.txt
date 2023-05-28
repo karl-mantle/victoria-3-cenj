@@ -17,6 +17,13 @@
 	}
 	s:STATE_TOMSK={
 		region_state:RUS={
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 		region_state:CHI={
 		}

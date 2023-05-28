@@ -1,6 +1,30 @@
-﻿
-# Transfer Texan territory east of 100th meridian to USA
-# Transfer USA territory south of arkansas river and west of 100th meridian to TEX
+﻿# Trade Center Landlocked or No Ports PM Script
+trade_center_landlocked_check = {
+    
+    any_scope_state = {
+        limit = { 
+            any_scope_building = {
+                limit = { is_building_type = building_port }
+            }
+        }
+        every_scope_building = {
+            limit = { is_building_type = building_trade_center }
+            activate_production_method = pm_trade_center
+        }
+    }
+    any_scope_state = {
+        limit = { 
+            any_scope_building = {
+                limit = { NOT = { is_building_type = building_port } }
+            }
+        }
+        every_scope_building = {
+            limit = { is_building_type = building_trade_center }
+            activate_production_method = pm_trade_center_landlocked
+        }
+    }
+}
+# Transfers American land south of the Arkansas River and to the west of the 100th Meridian to Texas, Texan land to the east of the 100th Meridian to the United States
 effect_texan_indian_wars_transfer_2_a = {
     s:STATE_KANSAS = {
         if = {

@@ -1,4 +1,6 @@
 ﻿l_english:
+# Miscellaneous
+ seminole_resistance_modifier:0 "Seminole Resistance"
 #remove vtm
  ## Bengal ##
  vtm_najafi:0 "Najafi"
@@ -130,7 +132,7 @@
  sgf_aus.2.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]  has signed into law the confederation between [SCOPE.sCountry('sgf_scope_1').GetName] and [SCOPE.sCountry('sgf_scope_2').GetName]. This marks a great victory in our goal of unifying all of Southern Germany."
  sgf_aus.1.f:0 "The righteousness of our cause can be recognized by the fury of those wicked enough to suggest the Saupreiß lead them. Order will prevail!"
  sgf_aus.2.a:0 "God save the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]!"
-# Texas Events
+# Texan-Indian War and Santa Anna Events
  texan_war_of_independence.3.title:0 "Battle of San Jacinto"
  texan_war_of_independence.3.desc:0 "In a stunning reversal of military fortunes, the Texan Army, led by General [SCOPE.sCharacter('sam_houston_scope').GetFullName], ambushed and decisively defeated the Mexican Army under General [SCOPE.sCharacter('santa_anna_scope').GetFullName], in a battle that lasted only 18 minutes.\n\nSanta Anna, also the President of Mexico, was captured the next day in a swamp wearing a dragoon's uniform by our forces. Our troops call for his immediate execution, in response for the massacres at the Alamo and Goliad, but General Houston, wounded in the leg during the battle, believes that in exchange for his release, we can press him to sign a treaty recognizing Texan independance immediately."
  texan_war_of_independence.3.flavor:0 ""Santa Anna, alive, can be of incalculable benefit to Texas; Santa Anna, dead, would just be another casualty.""
@@ -160,22 +162,42 @@
  texan_indian_wars.4.b:0 "Cooler heads must prevail."
  major_indian_raids_modifier:0 "Major Indian Raids"
  minor_indian_raids_modifier:0 "Minor Indian Raids"
-# Journal Entries
-# Texas JE
- je_texan_indian_wars:0 "Texan-Indian Wars"
- je_texan_indian_wars_reason:0 "Tensions with the Comanche are rising. We must find a way to either peacefully co-exist with them, or protect ourselves and strike back. Building up our army will inflame tensions, leading to more frequent raids, and possibly result in outright war once built to a certain level. The progress bar indicates current tension levels."
- je_texan_indian_wars_com_defeat:0 "The Comanche have been defeated."
-# VTM Journal Entries
- vtm_reject_natural_borders_tt:0 "Rejected French Expansionism"
- vtm_je_french_natural_borders_reject_natural_borders:0 "Reject Expansionism"
- vtm_je_french_natural_borders_reject_natural_borders_desc:0 "This is an absurd notion."
- vtm_je_french_natural_borders_embrace_natural_borders:0 "Embrace our Natural Borders!"
- vtm_je_french_natural_borders_embrace_natural_borders_desc:0 "Our borders must reach the Rhine."
- vtm_je_treaty_of_turin:0 "The Treaty of Turin"
- vtm_je_treaty_of_turin_reason:0 "For a while now our administration has been eying the predominantly French-speaking territories and possessions in Savoy.\nWith the spread of nationalistic sentiments there has been an ever increasing rhetoric in government circles to annex the region outright, some people point to the local tensions as proof for the desire of the Savoyard people to join France."
- savoy_ceded_to_fra:0 "Savoy has been ceded to France"
- savoy_not_ceded_to_fra:0 "Savoy has #italic NOT#! been ceded to France"
- vtm_je_treaty_of_turin_france_button:0 "Make them an offer"
- vtm_je_treaty_of_turin_france_button_desc:0 "...they cant refuse"
+# Silver Rush
+ state_silver_rush:0 "Silver Rush"
+ state_limited_silver_rush:0 "Limited silver Rush"
+ state_silver_depleted:0 "silver Mines Depleted"
 
-
+ silverrush.1.t:0 "Silver Rush!"
+ silverrush.1.d:1 "Silver has been discovered in [SCOPE.sState('silverrush_state').GetName]. People from all corners of the earth are converging there, confident that they will discover the next great lode and become incredibly rich."
+ silverrush.1.f:0 ""There's silver in them hills!""
+ silverrush.1.a:1 "Spread the word!"
+ silverrush.1.b:0 "Mine! It's all mine!"
+ state_silver_rush_less_migration:0 "Silver Rush"
+ state_silver_rush_explotation:0 "Silver Rush Exploitation"
+ 
+ silverrush.2.t:0 "Silver Fields Depleted"
+ silverrush.2.d:1 "The rich mineral deposits in [SCOPE.sState('silverrush_no_more_state').GetName] have been drained. Mines are being shuttered, and all the prospectors who moved in are beginning to drift away, in search of the next big strike."
+ silverrush.2.f:0 ""There's no more silver in them hills.""
+ silverrush.2.a:0 "Unfortunate."
+ silverrush.2.b:0 "We cannot just let them leave!"
+ state_silver_depleted_palliative:0 "Silver Mines Depleted"
+ 
+ silverrush.3.t:0 "Foreign Influx Provokes Outcry"
+ silverrush.3.d:1 "The [SCOPE.gsInterestGroup('petty_ig').GetName] have spoken out against the migrants moving into [SCOPE.sState('pb_silver_state').GetName], pleading with the government to support "native" miners by discouraging migration into the state."
+ silverrush.3.f:1 ""Do you really think that they're moving just because they want to work? Just take a look around! What do you see here? That's it! silver! They have greed in their eyes, I tell you, they're coming to take it all from us and they won't leave a penny behind. What's even wrong with trying to protect the future of our people?""
+ silverrush.3.a:1 "We need every spare hand we can get in [SCOPE.sState('pb_silver_state').GetNameNoFormatting]."
+ silverrush.3.b:1 "Limit migration into [SCOPE.sState('pb_silver_state').GetNameNoFormatting]."
+ 
+ silverrush.4.t:0 "The Mines Get Organized"
+ silverrush.4.d:1 "Miners and mine owners are both scrambling to protect their interests in [SCOPE.sState('gr4_silver_state').GetName] by formally organizing themselves and their work. However, the approaches of the [SCOPE.gsInterestGroup('trade_unions_ig').GetName] and the [SCOPE.gsInterestGroup('industrialists_ig').GetName] cannot work together."
+ silverrush.4.f:1 ""One of the [SCOPE.gsInterestGroup('industrialists_ig').GetNameNoFormatting] lightly taps the crystal of the window; the sound is amplified by the emptiness of the storage room. "Do you also want me to hand them the silver? Part of my house?" he asks generously, his back still facing the door. "What's mine is mine and what's yours is yours. The mines are what's mine."""
+ silverrush.4.a:1 "Support the [SCOPE.gsInterestGroup('trade_unions_ig').GetName]."
+ silverrush.4.b:1 "Support the [SCOPE.gsInterestGroup('industrialists_ig').GetName]."
+ 
+ silverrush.5.t:4 "The [SCOPE.sCountry('owner_country_scope').GetAdjective] Dream"
+ silverrush.5.d:1 "A story has been making the rounds about a miner who struck it rich and became the wealthiest man in his town. People in [SCOPE.sState('silver_rush_state').GetName] are beginning to live beyond their means, convinced they'll all become rich soon enough."
+ silverrush.5.f:1 """Did you see his new house? The dining room is all paneled and framed in pine, and finished enamel white, with furniture of teak. An imported chandelier, made by some obscure artisan whose name no one can pronounce again. And all of it comes from the mines! All of it!""
+ silverrush.5.a:1 "It can't be that harming."
+ silverrush.5.b:0 "Some folks are born, silver spoon in hand."
+ expecting_riches_less:0 "Unrealistic Expectations"
+ expecting_riches_angry:0 "Unrealistic Expectations Dismissed"

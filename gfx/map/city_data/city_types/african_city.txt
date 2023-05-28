@@ -69,4 +69,11 @@
 	building_arts_academy = {"african_urban_city_academy_01_mesh"}
 	building_skyscraper = {"african_urban_city_townsquare_skyscraper_01_mesh"}
 	building_barracks = {"african_urban_city_barracks_01_mesh"}
+
+	# Added
+	building_brickworks = {"african_colonial_manufactory_01_mesh"}
+	building_cement_factory = {"african_manufactory_01_mesh"}
+	building_explosives_industry = {"african_colonial_manufactory_03_mesh"}
+	building_fertilizer_factory = {"african_colonial_manufactory_01_mesh"}
+	building_publishing_house = {"african_manufactory_02_mesh"}
 }

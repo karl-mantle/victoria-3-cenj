@@ -63,10 +63,20 @@
 	building_sulfur_mine = {
 		"arabic_colonial_manufactory_01_mesh"
 	}
+	# Added
 	building_copper_mine = {
 		"generic_rural_mining_coaldepo_02_mesh"
 	}
+	building_copper_fields = {
+		"generic_rural_mining_processing_sandstone_01_mesh"
+	}
+	building_silver_mine = {
+		"generic_rural_mining_coaldepo_02_mesh"
+	}
 	building_silver_fields = {
+		"generic_rural_mining_processing_sandstone_01_mesh"
+	}
+	building_quarry = {
 		"generic_rural_mining_processing_sandstone_01_mesh"
 	}
 }

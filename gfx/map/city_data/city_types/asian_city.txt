@@ -69,4 +69,11 @@
 	building_arts_academy = {"asian_urban_city_academy_01_mesh"}
 	building_skyscraper = {"asian_urban_city_townsquare_skyscraper_01_mesh"}
 	building_barracks = {"asian_urban_city_barracks_01_mesh"}
+
+	# Added
+	building_brickworks = {"asian_colonial_manufactory_01_mesh"}
+	building_cement_factory = {"african_masian_manufactory_01_meshanufactory_01_mesh"}
+	building_explosives_industry = {"asian_colonial_manufactory_03_mesh"}
+	building_fertilizer_factory = {"asian_colonial_manufactory_01_mesh"}
+	building_publishing_house = {"asian_manufactory_02_mesh"}
 }

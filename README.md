@@ -37,26 +37,24 @@ This mod was originally titled Cultures, Events, Nations, Journals.
 
 ### Trade and Buildings
 
-- Added several new trade goods
+- Added several new goods
 - Construction sector and ports can now be entirely privatized
-- Construction sector now relies on building materials rather than raw inputs and outputs mortgages and deeds (securities)
-- Ports now create charterparties (maritime contracts) that are require by trade centers
+- Construction sector PMs overhauled and now requite goods such as cement and / or bricks, new masonry production method
+- Ports now create charterparties (maritime contracts) that are required by maritime trade centers
 - Trade centers now also require transportation for land-based trade
 - Road Network building added to create transportation and model road surfaces and teamsters, stagecoaches, inter-city motorcoaches, etc. creates transport, works like Railways
 - Copper and Copper Mines added to world, some production methods of late game buildings now require copper
 - Silver now a discoverable resource á la Gold Fields and a byproduct of Lead and Copper mines
 - Copper, Silver and Gold are all tradeable resources that are used by countries Mints to create currency
-- Currency is used by the Finance Sector to create securities which satiate POPs financial product needs
-- Currency can also be created through securities with the adoption of fiat money
-- Decentralised nations will use bartering and have no standards of currency
+- Currency is used by the Finance Sector to create securities which fulfill POPs financial product needs
 
 ### Future Plans
 
-- Balance the new trade goods and POP needs
-- Unique namelists for new cultures
-- More cultures and religions in other regions of the world
-- Generic and nation-specific events
-- Journals for new nations
+- Scramble for Africa and Berlin Conference
+- More state traits, states, cultures and nations
+- More formable nations and event chains/journals
+- New laws and characters
+- New buildings
 
 ## Installation
 
@@ -99,6 +97,8 @@ Credits to these mods for providing ideas, graphics or code.
 
 And to these mods on the Steam Workshop (Workshop ID); some of which seem to be abandoned now.
 
+- "Newspapers & Magazines" by *Paramonov* (2889750915)
+- "Explosives Industry" by *Imperialist* (2881606688)
 - "Texas Flavor Mod" by *John M* (2881332604)
 - "Victoria Tweaks Mod" by *OPB*
 - "Unify the Maghreb" by *strong bird* (2880314605)

@@ -1,4 +1,5 @@
-﻿# new countries
+﻿# Added
+
 AAC = { #Aachen
   	color = { 157 51 167 }
 	country_type = recognized

@@ -156,7 +156,15 @@ popneed_household_items = {
 		weight = 0.5
 		max_weight = 2.0 # Maxes out at 40% of supply share
 		min_weight = 0.0
-	}	
+	}
+
+	entry = { # Represent household items such as dyes, borax, soap, etc.
+		goods = chemicals
+		
+		weight = 1
+		max_weight = 4.0 # Maxes out at 80% of supply share
+		min_weight = 0.0
+	}
 }
 
 popneed_standard_clothing = {
@@ -355,6 +363,14 @@ popneed_luxury_items = {
 		
 		weight = 1
 		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}
+
+	entry = {
+		goods = magazines
+		
+		weight = 0.5
+		max_weight = 4.0 # Maxes out at 80% of supply share
 		min_weight = 0.0
 	}
 }

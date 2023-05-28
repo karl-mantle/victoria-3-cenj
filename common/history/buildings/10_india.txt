@@ -132,13 +132,7 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
-			}		
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
-			}		
+			}
 			create_building={
 				building="building_textile_mills"
 				level=5
@@ -186,6 +180,13 @@
 				level=20
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
 			}
 		}
 	}
@@ -458,12 +459,6 @@
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
-			}				
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -531,6 +526,13 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_hand_work" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 		region_state:BIC={
 		}
@@ -560,12 +562,6 @@
 				activate_production_methods={ "pm_handsewn_clothes" "pm_merchant_guilds_building_textile_mills" "pm_traditional_looms" "pm_craftsman_sewing" }
 			}
 			create_building={
-				building="building_mint"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
 				building="building_dye_plantation"
 				level=3
 				reserves=1
@@ -582,6 +578,13 @@
 				level=20
 				reserves=1
 				activate_production_methods={ "pm_irregular_infantry" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
+			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
 			}
 		}
 		region_state:BAS={
@@ -620,28 +623,10 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
-			}			
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -702,6 +687,25 @@
 				level=3
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
+			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
 			}
 		}
 	}
@@ -855,7 +859,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 		}
 		region_state:GBR={
@@ -869,7 +873,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -1048,12 +1052,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
-			}			
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1115,6 +1113,13 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 	}
 	s:STATE_HYDERABAD={
@@ -1124,12 +1129,6 @@
 				level=5
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
-			}		
-			create_building={
-				building="building_mint"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -1161,6 +1160,13 @@
 				reserves=1
 				activate_production_methods={ "pm_irregular_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added		
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
 		}
 	}
 	s:STATE_BOMBAY={
@@ -1175,7 +1181,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 		}
 		region_state:BIC={
@@ -1190,12 +1196,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
-			}			
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1239,8 +1239,13 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
-			# Re-add monument here
-
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 	}
 }

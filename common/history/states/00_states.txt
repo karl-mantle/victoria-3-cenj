@@ -614,7 +614,7 @@ STATES = {
 			country = c:SEM
 			owned_provinces = { x7FA347 xF41CC0 xED77FB x3CDD1A x5CD014 xE740E5 x9088D5 xFE627B x552AD8 }
 		}
-		
+		add_claim = c:USA
 		add_homeland = dixie
 		add_homeland = afro_american	
 		add_homeland = caddoan

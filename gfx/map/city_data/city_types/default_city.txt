@@ -71,4 +71,11 @@ default_city = {
 	building_arts_academy = {"european_city_art_academy_01_mesh"}
 	building_skyscraper = {"european_city_urban_center_skyscraper_01_mesh"}
 	building_barracks = {"european_city_barracks_01_mesh"}
+
+	# Added
+	building_brickworks = {"colonial_manufactory_01_mesh"}
+	building_cement_factory = {"generic_manufactory_01_mesh"}
+	building_explosives_industry = {"colonial_manufactory_03_mesh"}
+	building_fertilizer_factory = {"colonial_manufactory_01_mesh"}
+	building_publishing_house = {"generic_manufactory_02_mesh"}
 }

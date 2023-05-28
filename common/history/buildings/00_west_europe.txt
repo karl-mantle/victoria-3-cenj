@@ -8,23 +8,11 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}			
 			create_building={
 				building="building_university"
 				level=1
@@ -84,6 +72,25 @@
 				level=8
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
 			}
 		}
 	}
@@ -206,7 +213,14 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
-			}			
+			}		
+			# Added
+			create_building={
+				building="building_quarry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}	
 		}
 	}
 	s:STATE_NORRLAND={
@@ -218,16 +232,17 @@
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
-				building="building_copper_mine"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
-			}
-			create_building={
 				building="building_fishing_wharf"
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
+			}
+			# Added
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 		}
 	}
@@ -285,6 +300,13 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_quarry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
 		}
 	}
 	s:STATE_ZEALAND={
@@ -294,25 +316,7 @@
 				level=3
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}		
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
-			create_building={
-				building="building_construction_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
-			}
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
-			}				
 			create_building={
 				building="building_shipyards"
 				level=2
@@ -360,6 +364,19 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
+			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_construction_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_masonry_buildings" "pm_merchant_guilds_construction_sector" }
 			}
 		}
 	}
@@ -434,12 +451,6 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_shipyards"
 				level=1
 				reserves=1
@@ -487,6 +498,19 @@
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
 			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 	}
 	s:STATE_ICELAND={
@@ -501,7 +525,7 @@
 				building="building_port"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 		}
 	}
@@ -516,12 +540,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_furniture_manufacturies"
@@ -558,6 +576,19 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
+			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
 			}
 		}
 	}
@@ -608,16 +639,17 @@
 				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
-				building="building_copper_mine"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
-			}
-			create_building={
 				building="building_rye_farm"
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_potatoes" }
+			}
+			# Added
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 		}
 	}
@@ -628,18 +660,6 @@
 				level=10
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
-			}	
-			create_building={
-				building="building_mint"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_mint_gold_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=4
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_arts_academy"
@@ -651,14 +671,8 @@
 				building="building_construction_sector"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}				
 			create_building={
 				building="building_university"
 				level=5
@@ -731,6 +745,37 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_mint_gold_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=5
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}			
 		}
 	}
 	s:STATE_LANCASHIRE={
@@ -740,13 +785,7 @@
 				level=5
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
-			}		
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
+			}	
 			create_building={
 				building="building_textile_mills"
 				level=25
@@ -757,14 +796,8 @@
 				building="building_construction_sector"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}				
 			create_building={
 				building="building_arms_industry"
 				level=5
@@ -831,6 +864,31 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}	
 		}
 	}
 	s:STATE_WALES={
@@ -897,14 +955,8 @@
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}	
 			create_building={
 				building="building_textile_mills"
 				level=10
@@ -971,6 +1023,31 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}	
+			create_building={
+				building="building_cement_factory"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_static_kilns" "pm_merchant_guilds_building_cement_factory" }
+			}	
 		}
 	}
 	s:STATE_HIGHLANDS={
@@ -1031,7 +1108,7 @@
 				building="building_chemical_plants"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_artificial_fertilizers" "pm_privately_owned_industry" "pm_leblanc_process" }
+				activate_production_methods={ "pm_basic_chemical_process" "pm_privately_owned_industry" }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -1075,6 +1152,37 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building = {
+				building = "building_fertilizer_factory"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers" "pm_privately_owned_industry" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_magazines" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_explosives_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process" "pm_privately_owned_building_explosives_industry" }
+			}
+			create_building={
+				building="building_quarry"
+				level=7
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}	
 		}
 	}
 	s:STATE_EAST_ANGLIA={
@@ -1163,6 +1271,18 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			create_building={
+				building="building_quarry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}	
 		}
 	}
 	s:STATE_WEST_COUNTRY={
@@ -1239,6 +1359,12 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			create_building={
+				building="building_quarry"
+				level=6
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
 		}
 	}
 	s:STATE_LOWLANDS={
@@ -1250,23 +1376,11 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_finance_sector"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}				
 			create_building={
 				building="building_food_industry"
 				level=4
@@ -1333,6 +1447,31 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}	
 		}
 	}
 	s:STATE_ULSTER={
@@ -1342,12 +1481,6 @@
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_intensive_grazing_ranch" "pm_slaughterhouses" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -1372,7 +1505,20 @@
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
-			}			
+			}		
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}	
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 	}
 	s:STATE_MUNSTER={
@@ -1412,12 +1558,6 @@
 				activate_production_methods={ "pm_scholastic_education" }
 			}
 			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_lead_mine"
 				level=3
 				reserves=1
@@ -1453,6 +1593,13 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
 		}
 	}
 	s:STATE_CONNAUGHT={
@@ -1486,29 +1633,11 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_mint_bimetallic_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}				
 			create_building={
 				building="building_university"
 				level=5
@@ -1557,6 +1686,31 @@
 				reserves=1
 				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_skirmish_infantry" }
 			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_mint_bimetallic_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}	
 		}
 	}
 	s:STATE_PROVENCE={
@@ -1732,23 +1886,11 @@
 	s:STATE_RHONE={
 		region_state:FRA={
 			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}			
 			create_building={
 				building="building_government_administration"
 				level=6
@@ -1808,6 +1950,13 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
+			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
 			}
 		}
 	}
@@ -1895,6 +2044,18 @@
 				reserves=1
 				activate_production_methods={ "pm_intensive_grazing_ranch" "pm_slaughterhouses" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
 			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}	
 		}
 	}
 	s:STATE_ALSACE_LORRAINE={
@@ -1904,12 +2065,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled" "pm_privately_owned_industry" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_arms_industry"
@@ -1940,6 +2095,13 @@
 				level=15
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
 			}
 		}
 	}
@@ -2018,6 +2180,13 @@
 				level=15
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+			}
+			# Added
+			create_building={
+				building="building_quarry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
 			}
 		}
 	}
@@ -2163,6 +2332,13 @@
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 	}
 	s:STATE_CHAMPAGNE={
@@ -2259,6 +2435,12 @@
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			create_building={
+				building="building_quarry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
 		}
 	}
 	s:STATE_AQUITAINE={
@@ -2305,6 +2487,25 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_ORLEANS={
@@ -2350,29 +2551,11 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_merchant_guilds_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
-			}				
 			create_building={
 				building="building_university"
 				level=2
@@ -2439,6 +2622,37 @@
 				reserves=1
 				activate_production_methods={ "pm_man_o_wars" "pm_frigates" "pm_commerce_raider" "pm_no_naval_theory" }
 			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_FRIESLAND={
@@ -2478,6 +2692,13 @@
 				level=3
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
+			}
+			# Added
+			create_building={
+				building="building_quarry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
 			}
 		}
 	}
@@ -2525,6 +2746,19 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_BRABANT={
@@ -2559,6 +2793,13 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_quarry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
 		}
 	}
 	s:STATE_WALLONIA={
@@ -2588,12 +2829,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
-			}		
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_steel_mills"
@@ -2605,19 +2840,13 @@
 				building="building_construction_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}			
 			create_building={
 				building="building_chemical_plants"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_artificial_fertilizers" "pm_leblanc_process" "pm_privately_owned_industry" }
+				activate_production_methods={ "pm_basic_chemical_process" "pm_privately_owned_industry" }
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -2661,6 +2890,25 @@
 				reserves=1
 				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
 			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building = {
+				building = "building_fertilizer_factory"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers" "pm_privately_owned_industry" }
+			}
+			create_building={
+				building="building_explosives_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process" "pm_privately_owned_building_explosives_industry" }
+			}
 		}
 	}
 	s:STATE_FLANDERS={
@@ -2672,29 +2920,11 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mint_bimetallic_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}			
 			create_building={
 				building="building_paper_mills"
 				level=1
@@ -2773,6 +3003,31 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_bimetallic_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_quarry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_AUSTRIA={
@@ -2784,18 +3039,6 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_arts_academy"
 				level=1
 				reserves=1
@@ -2805,14 +3048,8 @@
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_merchant_guilds_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
-			}				
 			create_building={
 				building="building_university"
 				level=2
@@ -2855,6 +3092,37 @@
 				reserves=1
 				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
 			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_BOHEMIA={
@@ -2866,18 +3134,6 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_arms_industry"
 				level=5
 				reserves=1
@@ -2887,14 +3143,8 @@
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_merchant_guilds_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
-			}				
 			create_building={
 				building="building_university"
 				level=2
@@ -2942,6 +3192,31 @@
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_coal_mine" }
+			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_quarry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
 			}
 		}
 	}
@@ -2994,12 +3269,6 @@
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
 			}
 			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_lead_mine"
 				level=2
 				reserves=1
@@ -3023,6 +3292,13 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
 		}
 	}
 	s:STATE_TYROL={
@@ -3034,10 +3310,10 @@
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
 			}
 			create_building={
-				building="building_gold_mine"
+				building="building_silver_mine"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_gold_mine" }
+				activate_production_methods={ "pm_picks_and_shovels_building_silver_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_silver_mine" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3101,6 +3377,7 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
+			# 
 		}
 	}
 	s:STATE_ELBE={
@@ -3132,18 +3409,6 @@
 				activate_production_methods={ "pm_handcrafted_furniture" "pm_merchant_guilds_building_furniture_manufacturies" "pm_automation_disabled" "pm_no_luxuries" }
 			}			
 			create_building={
-				building="building_mint"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_port"
 				level=1
 				reserves=1
@@ -3154,7 +3419,20 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_wound_dressing" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_irregular_infantry" }
-			}			
+			}		
+			# Added
+			create_building={
+				building="building_mint"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}	
 		}
 		region_state:HAN={
 			create_building={
@@ -3192,12 +3470,6 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}		
 			create_building={
-				building="building_finance_sector"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_university"
 				level=1
 				reserves=1
@@ -3233,6 +3505,13 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}			
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
 		}
 	}
 	s:STATE_WEST_SWITZERLAND={
@@ -3242,12 +3521,6 @@
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=4
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_paper_mills"
@@ -3273,6 +3546,13 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
 		}
 	}
 	s:STATE_WESTPHALIA={
@@ -3282,18 +3562,12 @@
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}		
-			create_building={
-				building="building_copper_mine"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_chemical_plants"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_artificial_fertilizers" "pm_privately_owned_industry" "pm_leblanc_process" }
+				activate_production_methods={ "pm_basic_chemical_process" "pm_privately_owned_industry" }
 			}			
 			create_building={
 				building="building_steel_mills"
@@ -3324,6 +3598,37 @@
 				level=15
 				reserves=1
 				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_skirmish_infantry" }
+			}
+			# Added
+			create_building={
+				building="building_copper_mine"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building = {
+				building = "building_fertilizer_factory"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers" "pm_privately_owned_industry" }
+			}
+			create_building={
+				building="building_explosives_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process" "pm_privately_owned_building_explosives_industry" }
+			}
+			create_building={
+				building="building_quarry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
 			}
 		}
 		region_state:LIP = {
@@ -3398,23 +3703,11 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}				
 			create_building={
 				building="building_tooling_workshops"
 				level=8
@@ -3432,6 +3725,25 @@
 				level=10
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
 			}
 		}
 		region_state:BAV={
@@ -3533,6 +3845,25 @@
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_BRANDENBURG={
@@ -3544,29 +3875,11 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_iron_frame_buildings" "pm_privately_owned_construction_industry" }
-			}				
 			create_building={
 				building="building_university"
 				level=4
@@ -3603,6 +3916,37 @@
 				reserves=1
 				activate_production_methods={ "pm_skirmish_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
+			create_building={
+				building="building_quarry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_SCHLESWIG_HOLSTEIN={
@@ -3636,6 +3980,12 @@
 				level=5
 				reserves=1
 				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
+			}
+			create_building={
+				building="building_quarry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
 			}
 		}
 		region_state:LUB={
@@ -3783,6 +4133,19 @@
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
+			# Added
+			create_building={
+				building="building_quarry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_quarry" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_quarry" }
+			}
+			create_building={
+				building="building_brickworks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scove_kilns" "pm_disabled_pottery" "pm_merchant_guilds_building_brickworks" }
+			}
 		}
 	}
 	s:STATE_HANNOVER={
@@ -3798,6 +4161,13 @@
 				level=3
 				reserves=1
 				activate_production_methods={ "pm_wound_dressing" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_irregular_infantry" }
+			}
+			# Added
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
 			}
 		}
 		region_state:HAN={
@@ -3904,29 +4274,11 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_mint"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_construction_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" "pm_merchant_guilds_construction_sector" }
 			}
-			create_building={
-				building="building_construction_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_construction_industry_wooden_buildings" "pm_merchant_guilds_construction_industry" }
-			}				
 			create_building={
 				building="building_glassworks"
 				level=2
@@ -3975,6 +4327,25 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			# Added
+			create_building={
+				building="building_mint"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
+			}
+			create_building={
+				building="building_finance_sector"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}
+			create_building={
+				building="building_publishing_house"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_cylindrical_printing_press" "pm_privately_owned_building_publishing_house" }
+			}
 		}
 	}
 	s:STATE_FRANCONIA={
@@ -3984,12 +4355,6 @@
 				level=3
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
-			create_building={
-				building="building_finance_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
 			}
 			create_building={
 				building="building_arts_academy"
@@ -4032,6 +4397,13 @@
 				level=10
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+			}
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
 			}
 		}
 	}
@@ -4176,17 +4548,18 @@
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" "pm_merchant_guilds_building_textile_mills" }
 			}
 			create_building={
-				building="building_finance_sector"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_finance_sector_base" "pm_privately_owned_finance_sector" }
-			}
-			create_building={
 				building="building_barracks"
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_wound_dressing" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_irregular_infantry" }
-			}			
+			}	
+			# Added
+			create_building={
+				building="building_finance_sector"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
+			}		
 		}
 		region_state:HEK={
 			create_building={

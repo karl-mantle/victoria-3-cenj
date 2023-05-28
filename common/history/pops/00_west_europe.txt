@@ -584,7 +584,7 @@
 	s:STATE_PROVENCE = {
 		region_state:SAR = {
 			create_pop = {
-				culture = north_italian
+				culture = ligurian
 				size = 131100
 			}
 			create_pop = {

@@ -1,17 +1,159 @@
 ﻿# 14_finance
 
-pm_finance_sector_base = {
-	texture = "gfx/interface/icons/production_method_icons/unused/financial_district.dds"
+pm_finance_sector_merchant_bank = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 	is_default = yes
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_currency_add = 75
+			building_input_currency_add = 50
+			building_output_securities_add = 15
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 2500
+		}
+	}
+
+	country_modifiers = {
+		level_scaled = {
+			country_gold_reserve_limit_mult = -0.001
+		}
+	}
+}
+
+pm_finance_sector_private_bank = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+	is_default = yes
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_currency_add = 65
 			building_output_securities_add = 25
 		}
 
 		level_scaled = {
 			building_employment_clerks_add = 2500
+		}
+	}
+
+	country_modifiers = {
+		level_scaled = {
+			country_gold_reserve_limit_mult = -0.001
+		}
+	}
+}
+
+pm_finance_sector_modern_bank = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+	is_default = yes
+	
+	unlocking_technologies = {
+		modern_financial_instruments
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_currency_add = 50
+			building_output_securities_add = 35
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 2500
+		}
+	}
+
+	country_modifiers = {
+		level_scaled = {
+			country_gold_reserve_limit_mult = -0.001
+		}
+	}
+}
+
+pm_finance_sector_national_bank = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	is_default = yes
+
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_currency_add = 50
+			building_output_securities_add = 20
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 2500
+		}
+	}
+}
+
+pm_finance_sector_credit_union = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+	is_default = yes
+
+	unlocking_laws = {
+		law_council_republic
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_currency_add = 45
+			building_output_securities_add = 25
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 2500
+		}
+	}
+}
+
+pm_finance_sector_no_central_bank = {
+	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
+
+	ai_value = 0
+}
+
+pm_finance_sector_central_bank = {
+	texture = "gfx/interface/icons/production_method_icons/power_of_the_purse.dds"
+
+	unlocking_technologies = {
+		central_banking
+	}
+
+	country_modifiers = {
+		level_scaled = {
+			country_loan_interest_rate_add = -0.001
+		}
+	}
+
+	ai_value = 500
+}
+
+pm_merchant_guilds_finance_sector = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_production_methods = {
+		pm_finance_sector_merchant_bank
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
 		}
 	}
 }
@@ -80,12 +222,37 @@ pm_worker_cooperative_finance_sector = {
 	}
 }
 
-pm_mint_silver_standard = {
-	texture = "gfx/interface/icons/production_method_icons/unused/simple_mining.dds"
+pm_mint_cupronickel_currency = {
+	texture = "gfx/interface/icons/production_method_icons/gold_mining.dds"
 	is_default = yes
+
 	unlocking_laws = {
 		law_silver_standard
 	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_lead_add = 15
+			building_input_copper_add = 30
+			building_output_currency_add = 100
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 250
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 250
+		}
+	}
+}
+
+pm_mint_silver_standard = {
+	texture = "gfx/interface/icons/production_method_icons/gold_mining.dds"
+	is_default = yes
+
+	unlocking_laws = {
+		law_silver_standard
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_silver_add = 15
@@ -102,10 +269,12 @@ pm_mint_silver_standard = {
 }
 
 pm_mint_bimetallic_standard = {
-	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
+	texture = "gfx/interface/icons/production_method_icons/gold_mining.dds"
+	
 	unlocking_laws = {
 		law_bimetallic_standard
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_gold_add = 15
@@ -123,10 +292,12 @@ pm_mint_bimetallic_standard = {
 }
 
 pm_mint_gold_standard = {
-	texture = "gfx/interface/icons/production_method_icons/unused/stock_exchange.dds"
+	texture = "gfx/interface/icons/production_method_icons/gold_mining.dds"
+
 	unlocking_laws = {
 		law_gold_standard
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_gold_add = 30
@@ -144,9 +315,11 @@ pm_mint_gold_standard = {
 
 pm_mint_fiat_money = {
 	texture = "gfx/interface/icons/production_method_icons/unused/financial_district.dds"
+
 	unlocking_laws = {
 		law_fiat_money
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_securities_add = 50 

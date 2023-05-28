@@ -77,7 +77,7 @@ dp_unify_maghreb = { #Maghreb Union
 }
 
 dp_comanche_war {
-	war_goal = annex_native
+	war_goal = annex_country
 	
 	requires_interest_marker = no
 	

@@ -106,6 +106,7 @@ expedition_events.201 = { #Choose commander
 			name = expedition_peril
 			value = 1
 		}
+		set_variable = west_america_expedition_location
 		west_america_expedition_location = yes
 	}
 

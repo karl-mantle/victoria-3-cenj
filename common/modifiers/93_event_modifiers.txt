@@ -1,0 +1,29 @@
+﻿state_silver_rush = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_migration_pull_mult = 1.25
+}
+
+state_silver_rush_less_migration = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_migration_pull_mult = 0.75
+}
+
+state_silver_rush_explotation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	building_silver_fields_throughput_mult = 0.2
+}	
+
+state_limited_silver_rush = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_migration_pull_mult = 0.5
+}
+
+state_silver_depleted = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	state_migration_pull_mult = -0.5
+}
+
+state_silver_depleted_palliative = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	state_migration_pull_mult = -0.2
+}

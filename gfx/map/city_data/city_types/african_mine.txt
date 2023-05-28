@@ -63,10 +63,20 @@
 	building_sulfur_mine = {
 		"african_colonial_manufactory_01_mesh"
 	}
+	# Added
+	building_copper_fields = {
+		"african_mining_processing_01_mesh"
+	}
 	building_copper_mine = {
 		"african_mining_coaldepo_01_mesh"
 	}
 	building_silver_fields = {
+		"african_mining_processing_01_mesh"
+	}
+	building_silver_mine = {
+		"african_mining_coaldepo_01_mesh"
+	}
+	building_quarry = {
 		"african_mining_processing_01_mesh"
 	}
 }

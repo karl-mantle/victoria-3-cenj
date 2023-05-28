@@ -1,9 +1,69 @@
-﻿bg_copper_mining = {
+﻿# Changes
+
+# 13_construction
+
+bg_construction = {
+	parent_group = bg_public_infrastructure
+
+    infrastructure_usage_per_level = 0.2
+
+	lens = government
+
+	can_use_slaves = yes
+
+	urbanization = 5
+
+    economy_of_scale_ai_factor = 2.0
+
+	fired_pops_become_radical = no
+
+	cash_reserves_max = 25000
+
+}
+
+# Additions
+
+# 83_mines
+
+bg_copper_fields = {
+	parent_group = bg_mining
+
+	auto_place_buildings = yes
+
+	discoverable_resource = yes
+	
+	depletable_resource = yes
+	
+	pays_taxes = no
+
+	default_building = building_copper_fields
+	
+	fired_pops_become_radical = no
+}
+
+bg_copper_mining = {
 	parent_group = bg_mining
 	
 	default_building = building_copper_mine
 	
 	can_use_slaves = yes
+}
+
+bg_quarries = {
+	parent_group = bg_mining
+	
+	default_building = building_quarry
+
+	can_use_slaves = yes
+
+	capped_by_resources = no
+
+	land_usage = rural
+
+	urbanization = 5
+
+	infrastructure_usage_per_level = 1
+
 }
 
 bg_silver_fields = {
@@ -25,14 +85,31 @@ bg_silver_fields = {
 bg_silver_mining = {
 	parent_group = bg_mining
 	
-	default_building = building_silver_fields
+	default_building = building_silver_mine
 
 	can_use_slaves = yes
 }
 
+# 94_finance
+
 bg_finance = {
 	parent_group = bg_urban_facilities
+
 	category = urban
+
 	is_government_funded = no
+
 	cash_reserves_max = 100000
+}
+
+# 95_additional
+
+bg_publishing_house = {
+	parent_group = bg_manufacturing
+
+	lens = light_industry
+	
+	urbanization = 15
+	
+	infrastructure_usage_per_level = 1
 }

@@ -1,4 +1,6 @@
-﻿EST_subject_RUS = {
+﻿# Changes
+
+EST_subject_RUS = {
 	pattern = "pattern_solid.tga"
 	color1 = "green_vibrant"
 

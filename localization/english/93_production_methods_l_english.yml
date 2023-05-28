@@ -1,0 +1,226 @@
+﻿l_english:
+# 81_industry
+
+ pmg_base_building_brickworks:0 "Brickfiring Kiln Design"
+ pm_scove_kilns:0 "Scove Kilns"
+ pm_beehive_kilns:0 "Beehive Kilns"
+ pm_hoffman_kilns:0 "Hoffman Kilns"
+
+ pmg_luxury_building_brickworks:0 "Pottery Workshops"
+ pm_disabled_pottery:0 "No Pottery"
+ pm_bottle_ovens:0 "Bottle Ovens"
+
+ pmg_ownership_capital_building_brickworks:0 "$pmg_ownership$"
+ pm_merchant_guilds_building_brickworks:0 "$pm_merchant_guilds$"
+ pm_privately_owned_building_brickworks:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_brickworks:0 "$pm_publicly_traded$"
+ pm_government_run_building_brickworks:0 "$pm_government_run$"
+ pm_worker_cooperative_building_brickworks:0 "$pm_worker_cooperative$"
+
+ pmg_base_building_cement_factory:0 "Lime Kiln"
+ pm_static_kilns:0 "Static Kilns"
+ pm_shaft_kilns:0 "Shaft Kilns"
+ pm_rotary_kilns:0 "Rotary Kilns"
+
+ pmg_ownership_capital_building_cement_factory:0 "$pmg_ownership$"
+ pm_merchant_guilds_building_cement_factory:0 "$pm_merchant_guilds$"
+ pm_privately_owned_building_cement_factory:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_cement_factory:0 "$pm_publicly_traded$"
+ pm_government_run_building_cement_factory:0 "$pm_government_run$"
+ pm_worker_cooperative_building_cement_factory:0 "$pm_worker_cooperative$"
+
+ pmg_base_building_chemical_plants:0 "Chemical Process"
+ pm_basic_chemical_process:0 "Basic Chemical Processes"
+ pm_batch_operation:0 "Batch Operation"
+ pm_continuous_operation:0 "Continuous Operation"
+
+ pmg_ownership_capital_building_chemical_plant:0 "$pmg_ownership$"
+ pm_publicly_traded_building_chemical_plant:0 "$pm_publicly_traded$"
+
+ pmg_base_building_explosives_industry:0 "Explosives Process"
+
+ pmg_ownership_capital_building_explosives_industry:0 "$pmg_ownership$"
+ pm_merchant_guilds_building_explosives_industry:0 "$pm_merchant_guilds$"
+ pm_privately_owned_building_explosives_industry:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_explosives_industry:0 "$pm_publicly_traded$"
+ pm_government_run_building_explosives_industry:0 "$pm_government_run$"
+ pm_worker_cooperative_building_explosives_industry:0 "$pm_worker_cooperative$"
+
+ pmg_base_building_fertilizer_factory:0 "Fertilizer Process"
+
+ pmg_ownership_capital_building_fertilizer_factory:0 "$pmg_ownership$"
+ pm_publicly_traded_building_fertilizer_factory:0 "$pm_publicly_traded$"
+
+# 82_agro
+
+ pm_palm_oil:0 "Palm Groves"
+
+# 83_mines
+
+ pmg_base_building_copper_fields:0 "Copper Fields"
+ default_building_copper_fields:0 "Copper Fields"
+
+ pmg_base_building_silver_fields:0 "Silver Fields"
+ default_building_silver_fields:0 "Silver Fields"
+
+ pmg_mining_equipment_building_copper_mine:0 "Mining Equipment"
+ pm_picks_and_shovels_building_copper_mine:0 "Picks and Shovels"
+ pm_atmospheric_engine_pump_building_copper_mine:0 "Atmospheric Engine Pump"
+ pm_condensing_engine_pump_building_copper_mine:0 "Condensing Engine Pump"
+ pm_diesel_pump_building_copper_mine:0 "Diesel Pump"
+
+ pmg_explosives_building_copper_mine:0 "Explosives"
+ pm_nitroglycerin_building_copper_mine:0 "Nitroglycerin"
+ pm_dynamite_building_copper_mine:0 "Dynamite"
+
+ pmg_steam_automation_building_copper_mine:1 "$pmg_steam_automation$"
+ pmg_train_automation_building_copper_mine:1 "$pmg_train_automation$"
+
+ pmg_ownership_capital_building_copper_mine:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_copper_mine:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_copper_mine:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_copper_mine:1 "$pm_publicly_traded$"
+ pm_government_run_building_copper_mine:1 "$pm_government_run$"
+ pm_worker_cooperative_building_copper_mine:1 "$pm_worker_cooperative$"
+
+ pmg_mining_equipment_building_quarry:0 "Mining Equipment"
+ pm_picks_and_shovels_building_quarry:0 "Picks and Shovels"
+ pm_atmospheric_engine_pump_building_quarry:0 "Atmospheric Engine Pump"
+ pm_condensing_engine_pump_building_quarry:0 "Condensing Engine Pump"
+ pm_diesel_pump_building_quarry:0 "Diesel Pump"
+
+ pmg_explosives_building_quarry:0 "Explosives"
+ pm_nitroglycerin_building_quarry:0 "Nitroglycerin"
+ pm_dynamite_building_quarry:0 "Dynamite"
+
+ pmg_steam_automation_building_quarry:1 "$pmg_steam_automation$"
+ pmg_train_automation_building_quarry:1 "$pmg_train_automation$"
+
+ pmg_ownership_capital_building_quarry:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_quarry:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_quarry:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_quarry:1 "$pm_publicly_traded$"
+ pm_government_run_building_quarry:1 "$pm_government_run$"
+ pm_worker_cooperative_building_quarry:1 "$pm_worker_cooperative$"
+
+
+ pmg_mining_equipment_building_silver_mine:0 "Mining Equipment"
+ pm_picks_and_shovels_building_silver_mine:0 "Picks and Shovels"
+ pm_atmospheric_engine_pump_building_silver_mine:0 "Atmospheric Engine Pump"
+ pm_condensing_engine_pump_building_silver_mine:0 "Condensing Engine Pump"
+ pm_diesel_pump_building_silver_mine:0 "Diesel Pump"
+
+ pmg_explosives_building_silver_mine:0 "Explosives"
+ pm_nitroglycerin_building_silver_mine:0 "Nitroglycerin"
+ pm_dynamite_building_silver_mine:0 "Dynamite"
+
+ pmg_steam_automation_building_silver_mine:1 "$pmg_steam_automation$"
+ pmg_train_automation_building_silver_mine:1 "$pmg_train_automation$"
+
+ pmg_ownership_capital_building_silver_mine:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_silver_mine:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_silver_mine:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_silver_mine:1 "$pm_publicly_traded$"
+ pm_government_run_building_silver_mine:1 "$pm_government_run$"
+ pm_worker_cooperative_building_silver_mine:1 "$pm_worker_cooperative$"
+
+# 87_government
+
+ pmg_ownership_capital_building_port:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_port:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_port:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_port:1 "$pm_publicly_traded$"
+ pm_government_run_building_port:1 "$pm_government_run$"
+ pm_worker_cooperative_building_port:1 "$pm_worker_cooperative$"
+
+# 91_private_infrastructure
+
+ pm_trade_center:0 "Caravan Trading Post"
+ pm_trade_center_maritime:0 "Maritime Trade Center"
+ pm_trade_center_freight_rail:0 "Freight Rail Station"
+ pm_trade_center_steam_wagons:0 "Steam Wagon Trade Center"
+ pm_trade_center_diesel_trucks:0 "Diesel Truck Trade Center"
+
+ pmg_base_building_road_network:0 "Network Surface"
+ pm_gravel_roads:0 "Gravel Roads"
+ pm_corduroy_roads:0 "Corduroy Roads"
+ pm_macadam_roads:0 "Macadam Roads"
+ pm_tarmac_roads:0 "Tarmac Roads"
+ pm_asphalt_roads:0 "Asphalt Concrete Roads"
+
+ pmg_interstate_road_network:0 "Interstate Transit"
+ pm_no_coaches:0 "No Coaches"
+ pm_stagecoaches:0 "Stagecoaches"
+ pm_intercity_motorbuses:0 "Intercity Motor Carriages"
+
+ pmg_ownership_capital_road_network:0 "$pmg_ownership$"
+ pm_privately_owned_building_road_network:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_road_network:0 "$pm_publicly_traded$"
+ pm_government_run_building_road_network:0 "$pm_government_run$"
+ pm_worker_cooperative_building_road_network:0 "$pm_worker_cooperative$"
+
+# 93_construction
+
+ pm_masonry_buildings:0 "Masonry Buildings"
+
+ pmg_ownership_construction_sector:0 "$pmg_ownership$"
+ pm_merchant_guilds_construction_sector:0 "$pm_merchant_guilds$"
+ pm_privately_owned_construction_sector:0 "$pm_privately_owned$"
+ pm_publicly_traded_construction_sector:0 "$pm_publicly_traded$"
+ pm_government_run_construction_sector:0 "$pm_government_run$"
+ pm_worker_cooperative_construction_sector:0 "$pm_worker_cooperative$"
+
+# 94_finance
+
+ pmg_base_building_finance_sector:0 "$building_finance_sector$"
+ pm_finance_sector_merchant_bank:0 "Merchant Bank"
+ pm_finance_sector_private_bank:0 "Private Bank"
+ pm_finance_sector_modern_bank:0 "Modern Bank"
+ pm_finance_sector_national_bank:0 "National Bank"
+ pm_finance_sector_credit_union:0 "Credit Union"
+
+ pmg_central_bank_policy:0 "Central Bank Policy"
+ pm_finance_sector_no_central_bank:0 "No Central Bank"
+ pm_finance_sector_central_bank:0 "Central Bank"
+
+ pmg_ownership_capital_finance_sector:0 "$pmg_ownership$"
+ pm_merchant_guilds_finance_sector:0 "$pm_merchant_guilds$"
+ pm_privately_owned_finance_sector:0 "$pm_privately_owned$"
+ pm_publicly_traded_finance_sector:0 "$pm_publicly_traded$"
+ pm_government_run_finance_sector:0 "$pm_government_run$"
+ pm_worker_cooperative_finance_sector:0 "$pm_worker_cooperative$"
+ 
+ pmg_mint_currency_standard:0 "Currency Standard"
+ pm_mint_cupronickel_currency:0 "Cupronickel Currency"
+ pm_mint_silver_standard:0 "Silver Standard"
+ pm_mint_bimetallic_standard:0 "Bimetallic Standard"
+ pm_mint_gold_standard:0 "Gold Standard"
+ pm_mint_fiat_money:0 "Fiat Money"
+
+ pmg_ownership_capital_building_mint:0 "$pmg_ownership$"
+ pm_privately_owned_mint:0 "$pm_privately_owned$"
+ pm_publicly_traded_mint:0 "$pm_publicly_traded$"
+ pm_government_run_mint:0 "$pm_government_run$"
+ pm_worker_cooperative_mint:0 "$pm_worker_cooperative$"
+
+# 95_additional
+
+ pmg_base_building_publishing_house:0 "Base Material"
+ pm_rag_paper:0 "Rag Paper"
+ pm_newsprint:0 "$newsprint$"
+
+ pmg_production_building_publishing_house:0 "Product"
+ pm_prod_newspapers:0 "Produce @newspapers! Newspapers"
+ pm_prod_magazines:0 "Produce @magazines! Magazines"
+
+ pmg_automation_building_publishing_house:0 "$pmg_automation$"
+ pm_hand_work:0 "Handwork"
+ pm_cylindrical_printing_press:0 "Cylinder Printing Press"
+ pm_rotary_printing_press:0 "$rotary_printing_press$"
+ pm_electric_rotary_printing_press:0 "Electric Rotary Printing Press"
+
+ pmg_ownership_capital_building_publishing_house:0 "$pmg_ownership$"
+ pm_privately_owned_building_publishing_house:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_publishing_house:0 "$pm_publicly_traded$"
+ pm_government_run_building_publishing_house:0 "$pm_government_run$"
+ pm_worker_cooperative_building_publishing_house:0 "$pm_worker_cooperative$"

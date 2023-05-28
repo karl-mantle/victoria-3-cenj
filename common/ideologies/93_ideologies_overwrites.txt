@@ -1,4 +1,6 @@
-﻿ideology_paternalistic = {
+﻿# Changes
+
+ideology_paternalistic = {
 	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
 	
 	lawgroup_governance_principles = {
@@ -53,6 +55,7 @@
 
     lawgroup_currency_policy = {
         law_bartering = disapprove
+		law_cupronickel_currency = neutral
         law_silver_standard = approve
         law_bimetallic_standard = approve
         law_gold_standard = approve
@@ -91,6 +94,7 @@ ideology_agrarian = {
 
     lawgroup_currency_policy = {
         law_bartering = approve
+		law_cupronickel_currency = neutral
         law_silver_standard = neutral
         law_bimetallic_standard = neutral
         law_gold_standard = neutral
@@ -122,6 +126,7 @@ ideology_isolationist = {
 
     lawgroup_currency_policy = {
         law_bartering = approve
+		law_cupronickel_currency = neutral
         law_silver_standard = neutral
         law_bimetallic_standard = neutral
         law_gold_standard = neutral
@@ -156,6 +161,7 @@ ideology_reactionary = {
 
     lawgroup_currency_policy = {
         law_bartering = neutral
+		law_cupronickel_currency = approve
         law_silver_standard = strongly_approve
         law_bimetallic_standard = neutral
         law_gold_standard = disapprove
@@ -202,6 +208,7 @@ ideology_plutocratic = {
 
     lawgroup_currency_policy = {
         law_bartering = strongly_disapprove
+		law_cupronickel_currency = disapprove
         law_silver_standard = disapprove
         law_bimetallic_standard = neutral
         law_gold_standard = approve
@@ -247,6 +254,7 @@ ideology_junker_paternalistic = {
 
     lawgroup_currency_policy = {
         law_bartering = disapprove
+		law_cupronickel_currency = disapprove
         law_silver_standard = approve
         law_bimetallic_standard = neutral
         law_gold_standard = disapprove
@@ -313,6 +321,7 @@ ideology_laissez_faire = {
 
 	lawgroup_currency_policy = {
         law_bartering = strongly_disapprove
+		law_cupronickel_currency = disapprove
         law_silver_standard = disapprove
         law_bimetallic_standard = disapprove
         law_gold_standard = disapprove
@@ -327,6 +336,7 @@ ideology_market_liberal = {
 
 	lawgroup_currency_policy = {
         law_bartering = strongly_disapprove
+		law_cupronickel_currency = disapprove
         law_silver_standard = disapprove
         law_bimetallic_standard = disapprove
         law_gold_standard = disapprove

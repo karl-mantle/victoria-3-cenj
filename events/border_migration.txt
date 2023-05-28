@@ -1,6 +1,6 @@
-﻿namespace = cenj_migration
+﻿namespace = border_migration
 
-cenj_migration.1 = {
+border_migration.1 = {
 	type = country_event
 	hidden = yes
 	trigger = {
@@ -77,7 +77,7 @@ cenj_migration.1 = {
 				limit = {
 					is_ai = no
 				}
-				post_notification = cenj_migration_notification
+				post_notification = border_migration_notification
 			}
 		}
 	}

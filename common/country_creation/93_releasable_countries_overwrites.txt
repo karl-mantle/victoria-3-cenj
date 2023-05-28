@@ -1,4 +1,6 @@
-﻿ANL = {
+﻿# Changes
+
+ANL = {
 	states = { 
 		STATE_ANDALUSIA
 		STATE_GRANADA

@@ -1,26 +1,44 @@
 ﻿l_english:
+# Generic
  state_trait_arctic_terrain:0 "Arctic Terrain"
  state_trait_taiga_forest:0 "Taiga Forest"
-
+# Scandinavia
+# British Isles
  state_trait_thames_river:0 "Thames River"
  state_trait_cottonopolis:0 "Cottonopolis"
  state_trait_london_city:0 "London City Guilds"
- state_trait_minette_ore:0 "Minette Iron Ore"
-
- state_trait_most_basin:0 "Most Basin"
-
+#North America
  state_trait_st_johns_harbor:0 "St. John's Harbor"
  state_trait_big_thicket:0 "Big Thicket"
  state_trait_mission_grapes:0 "Mission Grapes"
  state_trait_lead_belt:0 "Lead Belt"
-
+ state_trait_rosendale_cement:0 "Rosendale Cement"
+#South America
  state_trait_iron_quadrangle:0 "Iron Quadrangle"
-
+#Western Europe
+ state_trait_minette_ore:0 "Minette Iron Ore"
+#Eastern Europe
+ state_trait_most_basin:0 "Most Basin"
+ state_trait_joachimsthal:0 "Joachimsthal"
+#Africa
+#Near East
  state_trait_mocha:0 "Mocha"
-
+#India
+#South East Asia
+#Far East Asia
  state_trait_dojima_rice_exchange:0 "Dōjima Rice Exchange"
  state_trait_satsuma_ware:0 "Satsuma Ware"
  state_trait_miike_coalfield:0 "Miike Coalfield"
  state_trait_ishikari_coalfield:0 "Ishikari Coalfield"
  state_trait_manchurian_coalfield:0 "Manchurian Coalfields"
  state_trait_shanxi_coalfield:0 "Shansi Shensi Coalfield"
+ state_trait_paktong:0 "Paktong (White Copper)"
+#Oceania
+
+
+
+
+
+
+ 
+

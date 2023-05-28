@@ -20,12 +20,14 @@
 	}
 
 	is_shown_when_inactive = {
-		c:TEX = root
+		exists = c:TEX
+		ROOT = c:TEX
 		is_at_war = no
 	}
 
 	possible = {
-		c:TEX = root
+		exists = c:TEX
+		ROOT = c:TEX
 		is_at_war = no
 		in_election_campaign = yes
 	}
@@ -110,12 +112,14 @@
 						c:COM.tension:root >= 90
 						army_size >= 5
 					}
+					texan_indian_wars_dp_fired = yes
 				}
 				create_diplomatic_play = {
 					name = je_texan_indian_wars
 					type = dp_comanche_war
 					target_country = c:COM 
 				}
+				set_variable = texan_indian_wars_dp_fired
 			}
 			else_if = {
 				limit = {
@@ -151,7 +155,7 @@
 	
 	weight = 1000
 	
-	inheritable = no
+	transferable = no
 
 	should_be_pinned_by_default = yes
 

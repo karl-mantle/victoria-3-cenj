@@ -8,6 +8,7 @@
 	
 	production_method_groups = {
 		pmg_base_building_finance_sector
+		pmg_central_bank_policy
 		pmg_ownership_capital_finance_sector
 	}
 	

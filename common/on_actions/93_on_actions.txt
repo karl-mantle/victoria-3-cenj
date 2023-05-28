@@ -1,20 +1,66 @@
-﻿on_half_yearly_pulse_country = {
+﻿# Default on_actions
+on_monthly_pulse_country = {
+    on_actions = {
+        bic_breakup_check_on_action
+        change_primary_culture_on_action
+    }
+}
+
+on_half_yearly_pulse_country = {
     on_actions = {
         change_pop_culture_on_action
         migration_event_on_action
     }
 }
-on_monthly_pulse_country = {
-    on_actions = {
-        change_primary_culture_on_action
-        bic_breakup_check_on_action
+
+on_secession_end = {
+	effect = {
+		if = {
+			limit = {
+				exists = c:ITA
+				scope:target = {
+					OR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+			}
+			c:ITA = { annex = scope:target }
+		}
+#		if = {
+#			limit = {
+#				exists = c:GER
+#				scope:target = {
+#					can_form_nation = GER
+#				}
+#			}
+#			scope:target_country = {
+#				THIS = c:GER
+#				annex = scope:target
+#			}
+#		}
+	}
+}
+
+# Called on_actions
+
+bic_breakup_check_on_action = { #Also checks Dutch East Indies
+	events = {
+		bic_breakup.1
+		vtm_dei_breakup.1
+	}
+}
+
+change_primary_culture_on_action = {
+    effect = {
+        # Minor cultures en masse
+        change_primary_culture_north_german_minor = {}
+        change_primary_culture_south_german_minor = {}
+        change_primary_culture_north_italian_minor = {}
+        change_primary_culture_south_italian_minor = {}
     }
 }
-migration_event_on_action = {
-    events = {
-        cenj_migration.1
-    }
-}
+
 change_pop_culture_on_action = {
    effect = {
         # American minors
@@ -279,49 +325,8 @@ change_pop_culture_on_action = {
     }
 }
 
-change_primary_culture_on_action = {
-    effect = {
-        # Minor cultures en masse
-        change_primary_culture_north_german_minor = {}
-        change_primary_culture_south_german_minor = {}
-        change_primary_culture_north_italian_minor = {}
-        change_primary_culture_south_italian_minor = {}
-        # Targetted cultures
+migration_event_on_action = {
+    events = {
+        border_migration.1
     }
-}
-
-on_secession_end = {
-	effect = {
-		if = {
-			limit = {
-				exists = c:ITA
-				scope:target = {
-					OR = {
-						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:south_italian
-					}
-				}
-			}
-			c:ITA = { annex = scope:target }
-		}
-#		if = {
-#			limit = {
-#				exists = c:GER
-#				scope:target = {
-#					can_form_nation = GER
-#				}
-#			}
-#			scope:target_country = {
-#				THIS = c:GER
-#				annex = scope:target
-#			}
-#		}
-	}
-}
-
-bic_breakup_check_on_action = {
-	events = {
-		bic_breakup.1
-		vtm_dei_breakup.1
-	}
 }

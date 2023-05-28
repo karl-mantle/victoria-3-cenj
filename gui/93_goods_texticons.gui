@@ -1,7 +1,97 @@
 texticon = {
+	icon = bricks
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/bricks.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = cement
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/cement.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = charterparties
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/charterparties.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = chemicals
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/chemicals.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = clay
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/clay.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = copper
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/copper.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
 	icon = currency
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/currency.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = limestone
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/limestone.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = magazines
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/magazines.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = newspapers
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/newspapers.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18
@@ -27,26 +117,5 @@ texticon = {
 		fontsize = 18
 	}
 }
-
-texticon = {
-	icon = construction
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/construction.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
-	icon = copper
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/copper.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
 
 

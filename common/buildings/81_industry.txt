@@ -1,16 +1,119 @@
-﻿building_construction_industry = {
+﻿# Changes
+
+building_chemical_plants = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/construction_camp.dds"
-
+	texture = "gfx/interface/icons/building_icons/chemicals_industry.dds"
+	
 	unlocking_technologies = {
-		urbanization
+		intensive_agriculture
 	}
+	
+	city_type = city
+	levels_per_mesh = 5
+
 	production_method_groups = {
-		pmg_base_building_construction_industry
-		pmg_ownership_capital_construction_industry
+		pmg_base_building_chemical_plants
+		pmg_ownership_capital_building_chemical_plants
 	}
 
-    required_construction = construction_cost_low
+	required_construction = construction_cost_high
+}
 
-    ai_value = 200
+# Additions
+
+building_brickworks = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/brickworks.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		manufacturies
+	}
+
+	production_method_groups = {
+		pmg_base_building_brickworks
+		pmg_luxury_building_brickworks
+		pmg_ownership_capital_building_brickworks
+	}
+	
+	required_construction = construction_cost_medium
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_industry_banned } 
+				}
+			}
+		}
+	}
+}
+
+building_cement_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/cement_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		manufacturies
+	}
+
+	production_method_groups = {
+		pmg_base_building_cement_factory
+		pmg_ownership_capital_building_cement_factory
+	}
+	
+	required_construction = construction_cost_high
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_industry_banned } 
+				}
+			}
+		}
+	}
+}
+
+building_explosives_industry = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/explosives_industry.dds"
+	
+	unlocking_technologies = {
+		percussion_cap
+	}
+	
+	city_type = city
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_explosives_industry
+		pmg_ownership_capital_building_explosives_industry
+	}
+
+	required_construction = construction_cost_high
+}
+
+building_fertilizer_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/fertilizer_factory.dds"
+	
+	unlocking_technologies = {
+		intensive_agriculture
+	}
+	
+	city_type = city
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_fertilizer_factory
+		pmg_ownership_capital_building_fertilizer_factory
+	}
+
+	required_construction = construction_cost_high
 }

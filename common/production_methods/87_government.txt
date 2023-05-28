@@ -1,4 +1,4 @@
-﻿# 07_government
+﻿# Changes
 
 pm_anchorage = {
 	texture = "gfx/interface/icons/production_method_icons/anchorage.dds"
@@ -121,6 +121,8 @@ pm_modern_port = {
 	}
 }	
 
+# Additions
+
 pm_merchant_guilds_building_port = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 
@@ -142,13 +144,13 @@ pm_merchant_guilds_building_port = {
 pm_privately_owned_building_port = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 
-	unlocking_production_methods = {
-		pm_basic_port
+	unlocking_technologies = {
+		gantry_cranes
 	}
 
 	disallowing_laws = {
 		law_command_economy
-		law_council_republic
+		law_cooperative_ownership
 	}
 
 	building_modifiers = {
@@ -164,13 +166,13 @@ pm_privately_owned_building_port = {
 pm_publicly_traded_building_port = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_production_methods = {
-		pm_industrial_port
+	unlocking_technologies = {
+		concrete_dockyards
 	}
 	
 	disallowing_laws = {
 		law_command_economy
-		law_council_republic
+		law_cooperative_ownership
 	}
 
 	unlocking_technologies = {
@@ -209,7 +211,7 @@ pm_worker_cooperative_building_port = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_laws = {
-		law_council_republic
+		law_cooperative_ownership
 	}
 
 	building_modifiers = {

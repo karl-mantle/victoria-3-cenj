@@ -1,0 +1,340 @@
+﻿namespace = silverrush
+
+silverrush.1 = { #silver discovered in a state
+	type = state_event
+	placement = ROOT
+	title = silverrush.1.t
+	desc = silverrush.1.d
+	flavor = silverrush.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+		has_building = building_silver_fields
+		NOT = { has_modifier = state_silver_rush }
+	}
+
+	immediate = {
+		save_scope_as = silverrush_state
+	}
+
+	option = { #move everyone there
+		name = silverrush.1.a
+		default_option = yes
+		add_modifier = {
+			name = state_silver_rush
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #explote it
+		name = silverrush.1.b
+		add_modifier = {
+			name = state_silver_rush_less_migration
+			months = short_modifier_time
+		}
+		add_modifier = {
+			name = state_silver_rush_explotation
+			months = short_modifier_time
+		}
+	}
+}
+
+
+silverrush.2 = { #silver fields depleted
+	type = state_event
+	placement = ROOT
+	title = silverrush.2.t
+	desc = silverrush.2.d
+	flavor = silverrush.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+		has_building = building_silver_fields
+		NOT = { has_modifier = state_silver_rush }
+	}
+
+	immediate = {
+		save_scope_as = silverrush_no_more_state
+	}
+
+	option = { #sad
+		name = silverrush.2.a
+		default_option = yes
+		if = {
+			limit = {
+				has_modifier = state_silver_rush
+			}
+			remove_modifier = state_silver_rush
+		}
+		add_modifier = {
+			name = state_silver_depleted
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #try to retain them
+		name = silverrush.2.b
+		if = {
+			limit = {
+				has_modifier = state_silver_rush
+			}
+			remove_modifier = state_silver_rush
+		}
+		add_modifier = {
+			name = state_silver_depleted_palliative
+			months = short_modifier_time
+		}
+		add_radicals_in_state = {
+			pop_type = laborers
+			value = medium_radicals
+		}
+	}
+}
+
+silverrush.3 = { #foreign influx provokes outcry
+	type = country_event
+	placement = ROOT
+	title = silverrush.3.t
+	desc = silverrush.3.d
+	flavor = silverrush.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+		any_scope_state = {
+			has_modifier = state_silver_rush
+		}
+		OR = {
+			ig:ig_landowners = {
+				is_powerful = yes
+			}
+			ig:ig_armed_forces = {
+				is_powerful = yes
+			}
+			ig:ig_devout = {
+				is_powerful = yes 
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_modifier = state_silver_rush
+			}
+			save_scope_as = pb_silver_state
+		}
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					is_powerful = yes
+				}
+			}
+			ig:ig_landowners = {
+				save_scope_as = petty_ig
+			}
+		}
+		else_if = {
+			limit = {
+				ig:ig_devout = {
+					is_powerful = yes 
+				}
+			}
+			ig:ig_devout = {
+				save_scope_as = petty_ig
+			}
+		}
+		else = {
+			ig:ig_armed_forces = {
+				save_scope_as = petty_ig
+			}
+		}
+	}
+
+	option = { #we need them
+		name = silverrush.3.a
+		default_option = yes
+		ig:ig_petty_bourgeoisie = {
+			add_modifier = {
+				name = pb_angry_at_foreign_miners
+				months = normal_modifier_time
+			}
+		}
+	}
+
+	option = { #limit migration
+		name = silverrush.3.b
+		scope:pb_silver_state = {
+			remove_modifier = state_silver_rush
+			add_modifier = {
+				name = state_limited_silver_rush
+				months = short_modifier_time
+			}
+		}
+	}
+}
+
+silverrush.4 = { #miners get organized
+	type = country_event
+	placement = ROOT
+	title = silverrush.4.t
+	desc = silverrush.4.d
+	flavor = silverrush.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+		any_scope_state = {
+			OR = {
+				has_modifier = state_silver_rush
+				has_modifier = state_limited_silver_rush
+			}
+		}
+		NOR = {
+			ig:ig_trade_unions = {
+				has_modifier = tu_mining_syndicates_formed
+			}
+			ig:ig_industrialists = {
+				has_modifier = in_mining_conglomerates_formed
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				OR = {
+					has_modifier = state_silver_rush
+					has_modifier = state_limited_silver_rush
+				}
+			}
+			save_scope_as = gr4_silver_state
+		}
+		ig:ig_trade_unions = {
+			save_scope_as = trade_unions_ig
+		}
+		ig:ig_industrialists = {
+			save_scope_as = industrialists_ig
+		}
+	}
+
+	option = { #trade unions
+		name = silverrush.4.a
+		default_option = yes
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = tu_mining_syndicates_formed
+				months = normal_modifier_time
+			}
+		}
+		ig:ig_industrialists = {
+			add_modifier = {
+				name = in_disrupted_paradigms
+				months = normal_modifier_time
+			}
+		}
+	}
+
+	option = { #industralists
+		name = silverrush.4.b
+		ig:ig_industrialists = {
+			add_modifier = {
+				name = in_mining_conglomerates_formed
+				months = normal_modifier_time
+			}
+		}
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = tu_miners_exploited
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+
+# The COUNTRY_ADJ Dream
+silverrush.5 = {
+	type = state_event
+	placement = ROOT
+	title = silverrush.5.t
+	desc = silverrush.5.d
+	flavor = silverrush.5.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	cooldown = { months = normal_modifier_time }
+
+	trigger = {
+		OR = {
+			has_modifier = state_silver_rush
+			has_modifier = state_limited_silver_rush
+		}
+		NOT = { has_modifier = expecting_riches }
+	}
+
+	immediate = {
+		save_scope_as = silver_rush_state
+		owner = {
+			save_scope_as = owner_country_scope
+		}
+	}
+
+	option = { #worrying
+		name = silverrush.5.a
+		default_option = yes
+		add_modifier = {
+			name = expecting_riches
+			months = normal_modifier_time
+		}
+	}
+	
+	option = { #tell them to tone it down
+		name = silverrush.5.b 
+		add_modifier = {
+			name = expecting_riches_angry
+			months = normal_modifier_time
+		}	
+	}
+}

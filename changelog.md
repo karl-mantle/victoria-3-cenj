@@ -1,4 +1,24 @@
 # Changelog
+### 0.0.27
+- overhauled construction production methods to use new goods
+- new construction production method: masonry buildings
+- new goods: bricks, chemicals, cement, clay, limestone
+- new buildings: brickworks, cement factory, fertilizer factory, explosives industry, quarries
+- POPs now require some chemicals
+- chemical plants produce chemicals, fertilizer and explosives are their own seperate buildings now
+- added clay potential to map
+- changed silver and copper potentials
+- added buildings to history files
+- new state traits
+- reworked localisation files to be easier to read
+- added cupronickel currency law
+- fixed some event bugs e.g. texas and comache being in perpetual war
+- integrated newspapers & magazines mod
+- rewrote above mods production methods to be more in line with vanilla
+- removed added technology from newspapers and moved it to vanilla
+- changed private infrastructure auto_expand rule because otherwise random (not all) one state minors were spamming railways and road networks instead of building anything else
+- fixed UTF-8 BOM encoding errors
+- added some dynamic country names
 ### 0.0.26
 - new countries east prussia, gibraltar, hong kong, macao, polabia, pomerelia, poznan, zaporizhia
 - new city state government types

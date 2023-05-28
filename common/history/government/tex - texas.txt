@@ -1,0 +1,10 @@
+﻿GOVERNMENT = {
+	c:TEX = {
+		if = {
+			limit = { exists = py:agrarian_party }
+			py:agrarian_party = {
+				add_momentum = momentum_medium # to ensure Sam Houston wins 1838 election otherwise it's impossible
+			}				
+		}	
+	}
+}

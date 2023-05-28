@@ -1,15 +1,113 @@
-﻿pm_trade_center = {
-	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
-	
+﻿# Changes
+
+pm_trade_center = {
+	texture = "gfx/interface/icons/production_method_icons/simple_organization.dds"
+
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.20
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+            building_input_transportation_add = 4 # 120
+		}
+		level_scaled = {
+            building_employment_laborers_add = 100
+		}
+	}
+}
+
+# Additions
+
+pm_trade_center_maritime = {
+	texture = "gfx/interface/icons/production_method_icons/wooden_ships.dds"
+
 	state_modifiers = {
 		unscaled = {
 			state_migration_pull_mult = 0.25
 		}
 	}
 	building_modifiers = {
-		level_scaled = {
+		workforce_scaled = {
 			building_input_charterparties_add = 1
-            building_input_transport_add = 1
+            building_input_transportation_add = 1 # 105
+		}
+		level_scaled = {
+            building_employment_laborers_add = 100
+		}
+	}
+}
+
+pm_trade_center_freight_rail = {
+	texture = "gfx/interface/icons/production_method_icons/trains_steam.dds"
+
+	unlocking_technologies = {
+		steel_railway_cars
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.15
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+            building_input_transportation_add = 3 # 90
+		}
+		level_scaled = {
+            building_employment_laborers_add = 50
+			building_employment_machinists_add = 25
+			building_employment_engineers_add = 25
+		}
+	}
+}
+
+pm_trade_center_steam_wagons = {
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+
+	unlocking_technologies = {
+		rotary_valve_engine
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.05
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_coal_add = 2
+            building_input_engines_add = 0.2 # 66
+		}
+		level_scaled = {
+            building_employment_laborers_add = 50
+			building_employment_machinists_add = 25
+			building_employment_engineers_add = 25
+		}
+	}
+}
+
+pm_trade_center_diesel_trucks = {
+	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"
+
+	unlocking_technologies = {
+		compression_ignition
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.05
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_oil_add = 1
+            building_input_automobiles_add = 0.2 # 60
+		}
+		level_scaled = {
+            building_employment_laborers_add = 75
+			building_employment_engineers_add = 25
 		}
 	}
 }
@@ -24,7 +122,7 @@ pm_gravel_roads = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_construction_add = 2.5
+			building_input_limestone_add = 5
 			building_output_transportation_add = 5
 		}
 		level_scaled = {
@@ -48,7 +146,7 @@ pm_corduroy_roads = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_wood_add = 10
+			building_input_wood_add = 15
 			building_output_transportation_add = 7.5
 		}
 		level_scaled = {
@@ -72,13 +170,12 @@ pm_macadam_roads = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_construction_add = 5
+			building_input_cement_add = 5
 			building_output_transportation_add = 10
 		}
 		level_scaled = {
-			building_employment_laborers_add = 1750
+			building_employment_laborers_add = 2250
 			building_employment_engineers_add = 250
-			building_employment_clerks_add = 500
 		}
 	}
 
@@ -97,20 +194,15 @@ pm_tarmac_roads = {
 		pm_macadam_roads
 	}
 
-	#unlocking_technologies = {
-	#	paved_roads
-	#}
-
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_construction_add = 5
+			building_input_cement_add = 10
 			building_input_oil_add = 5
 			building_output_transportation_add = 15
 		}
 		level_scaled = {
-			building_employment_laborers_add = 1500
+			building_employment_laborers_add = 2000
 			building_employment_engineers_add = 500
-			building_employment_clerks_add = 500
 		}
 	}
 
@@ -135,14 +227,13 @@ pm_asphalt_roads = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_construction_add = 10
+			building_input_cement_add = 25
 			building_input_oil_add = 10
 			building_output_transportation_add = 15
 		}
 		level_scaled = {
-			building_employment_laborers_add = 1250
-			building_employment_engineers_add = 750
-			building_employment_clerks_add = 500
+			building_employment_laborers_add = 1000
+			building_employment_engineers_add = 500
 		}
 	}
 
@@ -162,7 +253,7 @@ pm_stagecoaches = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_transportation_add = 10
+			building_output_transportation_add = 5
 		}
 
 		level_scaled = {
@@ -186,7 +277,7 @@ pm_intercity_motorbuses = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 250	
+			building_employment_laborers_add = 250
 		}
 	}
 }
