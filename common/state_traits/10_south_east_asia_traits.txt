@@ -26,7 +26,7 @@ state_trait_mekong_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -35,7 +35,7 @@ state_trait_burmese_teak = {
 	
 	modifier = {
 		building_output_hardwood_mult = 0.25
-		#state_construction_mult = -0.1
+		# state_construction_mult = -0.1
 		state_infrastructure_mult = -0.10
 	}
 }
@@ -45,7 +45,7 @@ state_trait_indochinese_forest = {
 
 	modifier = {
 		building_group_bg_logging_throughput_mult = 0.1
-		#state_construction_mult = -0.1
+		# state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 	}
 }
@@ -55,7 +55,7 @@ state_trait_manila_bay = {
 	
 	modifier = {
 		building_shipyards_throughput_mult = 0.1
-		state_building_port_max_level_add = 2
+		state_building_port_max_level_add = 5 # 2
 		state_building_naval_base_max_level_add = 10
 	}
 }
@@ -64,7 +64,7 @@ state_trait_kapuas_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 30 # 15
 	}
 }
 
@@ -72,7 +72,7 @@ state_trait_sarawak_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 30 # 15
 	}
 }
 
@@ -81,7 +81,7 @@ state_trait_borneo_rainforest = {
 	
 	modifier = {
 		building_output_hardwood_mult = 0.25
-		#state_construction_mult = -0.1
+		# state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 	}
 }

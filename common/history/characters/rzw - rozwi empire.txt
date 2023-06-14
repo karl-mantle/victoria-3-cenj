@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:RZW = {
+		create_character = {
+			first_name = Tohwechipi
+			last_name = Changamire
+			historical = yes
+			ruler = yes
+			noble = yes
+			culture = cu:shona
+			age = 5
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				persistent
+			}
+		}
+	}
+}

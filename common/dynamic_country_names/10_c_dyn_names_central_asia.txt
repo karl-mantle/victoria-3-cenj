@@ -1,0 +1,22 @@
+﻿# Added
+
+CAU = { # Transcaucasia
+	dynamic_country_name = {
+		name = dyn_c_cau_subject_rus
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_law = law_type:law_monarchy
+				has_diplomatic_pact = {
+					who = c:CAU
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}

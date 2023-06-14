@@ -1,0 +1,33 @@
+﻿# Changes
+
+CAU = { # Transcaucasia
+	flag_definition = {
+		coa = CAU_subject_RUS	
+		subject_canton = CAU_subject_RUS
+		priority = 20
+	}
+}
+
+# Added
+
+ABK = { # Abkhazia
+	flag_definition = {
+		coa = ABK	
+		subject_canton = ABK
+		priority = 1
+	}
+}
+MIN = { # Mingrelia
+	flag_definition = {
+		coa = MIN	
+		subject_canton = MIN
+		priority = 1
+	}
+}
+SVA = { # Svaneti
+	flag_definition = {
+		coa = SVA	
+		subject_canton = SVA
+		priority = 1
+	}
+}

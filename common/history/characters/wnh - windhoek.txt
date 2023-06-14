@@ -1,0 +1,28 @@
+﻿CHARACTERS = {
+	c:WNH = {
+		create_character = {
+			first_name = Jonker
+			last_name = Afrikaner
+			historical = yes
+			ruler = yes
+			age = 51
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {
+				direct persistent
+			}
+		}
+		create_character = {
+			first_name = Christian
+			last_name = Afrikaner
+			historical = yes
+			heir = yes
+			age = 17
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {
+				persistent
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+﻿# Added
+
+NSS = { # New Providence
+	flag_definition = {
+		coa = NSS
+		subject_canton = NSS
+		priority = 1
+	}
+}
+PRY = { # Port Royal
+	flag_definition = {
+		coa = PRO
+		subject_canton = PRO
+		priority = 1
+	}
+}
+TOR = { # Tortuga
+	flag_definition = {
+		coa = TOR
+		subject_canton = TOR
+		priority = 1
+	}
+}

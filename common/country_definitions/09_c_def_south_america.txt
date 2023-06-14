@@ -1,0 +1,9 @@
+﻿# Added
+
+GYA = { # Guyana
+	color = { 250 120 20 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { afro_caribbean afro_antillean }
+	capital = STATE_GUAYANA
+}

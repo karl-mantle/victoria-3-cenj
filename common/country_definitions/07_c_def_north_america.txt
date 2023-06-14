@@ -1,0 +1,53 @@
+﻿# Changes
+
+NEW = { # Newfoundland
+	color = { 255  211  56 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { newfoundlander }
+	capital = STATE_NEWFOUNDLAND
+	is_named_from_capital = yes
+}
+
+TEX = { # Texas
+	color = { 4  144  178 }
+	country_type = colonial
+	tier = principality
+	cultures = { texan }
+	capital = STATE_TEXAS
+	is_named_from_capital = yes
+}
+
+# Added
+
+ALA = { # Alaska
+ 	color = { 185 215 255 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian } # Change Alaska Purchase event
+	capital = STATE_ALASKA
+}
+FLO = { # Florida
+	color = { 255 128 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { dixie }
+	capital = STATE_FLORIDA
+}
+SEM = { # Seminole
+	color = { 108 139 208 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	capital = STATE_FLORIDA
+}
+VRM = { # Vermont
+	color = { 50 120 10 }
+	country_type = recognized
+	tier = principality
+	cultures = { yankee }
+	capital = STATE_VERMONT
+}

@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:EST = {
+		create_character = {
+			first_name = Paul
+			last_name = von_Benckendorff
+			historical = yes
+			ruler = yes
+			culture = cu:baltic_german
+			age = 45
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				reserved
+			}
+		}
+	}
+}

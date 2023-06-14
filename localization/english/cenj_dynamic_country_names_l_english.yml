@@ -1,0 +1,30 @@
+﻿l_english:
+# West Europe
+ dyn_c_anl_muslim:0 "Granada"
+# East Europe
+ dyn_c_cou_subject_rus:0 "Courland Governorate"
+ dyn_c_epr_subject_pol:0 "Ducal Prussia"
+ dyn_c_epr_subject_pol_adj:0 "Ducal Prussian"
+ dyn_c_est_subject_rus:0 "Estonian Governorate"
+ dyn_c_lvn_subject_rus:0 "Livonian Governorate"
+ dyn_c_pml_subject_pru:0 "West Prussia"
+ dyn_c_pml_subject_pru_adj:0 "West Prussian"
+ dyn_c_pml_subject_pol:0 "Royal Prussia"
+ dyn_c_pml_subject_pol_adj:0 "Royal Prussian"
+ dyn_c_pol_congress:0 "Congress Poland"
+# Subsaharan Africa
+ dyn_c_ora_winburg_ptf:0 "Winburg-Potchefstroom"
+ dyn_c_ora_winburg_ptf_adj:0 "Voortrekker"
+ dyn_c_ora_subject_gbr:0 "Orange River Sovereignty"
+ dyn_c_ora_subject_gbr_adj:0 "Orange River"
+ dyn_c_saf_union:0 "Union of South Africa"
+ dyn_c_saf_union_adj:0 "Union of South Africa"
+ dyn_c_trn_zoutpansberg:0 "Zoutpansberg"
+ dyn_c_trn_zoutpansberg_adj:0 "Zoutpansberger"
+ dyn_c_wnl_griqualand_west:0 "Griqualand West"
+ dyn_c_wnl_griqualand_west_adj:0 "West Griqualander"
+# North America
+ dyn_c_hbc_subject_gbr:0 "Hudson's Bay Company"
+ dyn_c_hbc_subject_gbr_adj:0 "Hudson's Bay"
+# Central Asia
+ dyn_c_cau_subject_rus:0 "Caucasian Viceroyalty"

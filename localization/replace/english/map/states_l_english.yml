@@ -732,4 +732,8 @@
  STATE_JETISY:0 "Ili"
  STATE_RUHR:0 "Ruhr"
  STATE_MAINE_ANJOU:0 "Maine-Anjou"
+# Added
  STATE_BRABANT:0 "Brabant"
+ STATE_SWAZILAND:0 "Swaziland"
+ STATE_BASUTOLAND:0 "Basutoland"
+ STATE_NATAL:0 "Natal"

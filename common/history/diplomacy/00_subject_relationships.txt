@@ -42,6 +42,39 @@
 			country = c:OZH
 			type = puppet
 		}
+		# Added
+		create_diplomatic_pact = {
+			country = c:POL
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:CAU
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:COU
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:EST
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:LVN
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ABK
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:MIN
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:SVA
+			type = protectorate
+		}
 	}
 	c:PRU = {
 		create_diplomatic_pact = {
@@ -177,6 +210,11 @@
 		create_diplomatic_pact = {
 			country = c:MKT
 			type = protectorate
+		}
+		# Added
+		create_diplomatic_pact = {
+			country = c:NEW
+			type = puppet
 		}
 	}
 	c:DAI = {
@@ -342,5 +380,12 @@
 			country = c:PLY
 			type = protectorate
 		}
+	}
+	# Added
+	c:MAD = {
+		create_diplomatic_pact = {
+			country = c:BAA
+			type = vassal
+		}	
 	}
 }

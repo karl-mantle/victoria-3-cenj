@@ -74,15 +74,15 @@ peoples_springtime.1 = {
 		}
 	}
 
-    option = {
+	option = {
 		name = peoples_springtime.1.b
-        default_option = yes
-        scope:radical_ig_leader = {
-        	add_modifier = {
-        		name = treasonous_traitor
-        		months = normal_modifier_time
-        	}
-        }
+		default_option = yes
+		scope:radical_ig_leader = {
+			add_modifier = {
+				name = treasonous_traitor
+				months = normal_modifier_time
+			}
+		}
 	}
 }
 
@@ -145,18 +145,18 @@ peoples_springtime.2 = {
 		}
 	}
 
-    option = {
+	option = {
 		name = peoples_springtime.2.b
-        default_option = yes
-        scope:radical_ig = {
-        	leader = { 
+		default_option = yes
+		scope:radical_ig = {
+			leader = { 
 				set_ideology = ideology:ideology_radical
 				add_modifier = {
 					name = treasonous_traitor
 					months = normal_modifier_time
 				}
 		 	}
-        }
+		}
 	}
 }
 
@@ -634,7 +634,7 @@ peoples_springtime.100 = {
 
 	option = {
 		name = peoples_springtime.100.a						
-        default_option = yes
+		default_option = yes
 		scope:nationalist_state_scope = {
 			add_radicals = {
 				value = large_radicals
@@ -747,7 +747,7 @@ peoples_springtime.101 = {
 	
 	option = {
 		name = peoples_springtime.101.a						
-        default_option = yes
+		default_option = yes
 		add_modifier = { 
 			name = mobilizing_the_militia
 			multiplier = money_amount_multiplier_very_small
@@ -888,7 +888,7 @@ peoples_springtime.102 = {
 	}
 	option = { # breaks up crowds by gunning down rioters
 		name = peoples_springtime.102.a			
-        default_option = yes
+		default_option = yes
 		create_incident = {
 			country = root
 			value = 20
@@ -972,7 +972,7 @@ peoples_springtime.103 = {
 	}
 	option = { # situation is calming down
 		name = peoples_springtime.103.a
-        default_option = yes
+		default_option = yes
 		add_loyalists = {
 			value = 0.10
 			culture = scope:orderrestored_victim_pop_scope
@@ -1052,7 +1052,7 @@ peoples_springtime.110 = {
 
 	option = {
 		name = peoples_springtime.110.a						
-        default_option = yes
+		default_option = yes
 		add_radicals = {
 			value = large_radicals
 			culture = scope:discriminated_culture_scope
@@ -1162,7 +1162,7 @@ peoples_springtime.111 = {
 	
 	option = {
 		name = peoples_springtime.111.a						
-        default_option = yes
+		default_option = yes
 		add_modifier = { 
 			name = mobilizing_the_militia
 			multiplier = money_amount_multiplier_very_small
@@ -1300,7 +1300,7 @@ peoples_springtime.112 = {
 	}
 	option = { # breaks up crowds by gunning down rioters
 		name = peoples_springtime.112.a			
-        default_option = yes
+		default_option = yes
 		create_incident = {
 			country = root
 			value = 20
@@ -1383,7 +1383,7 @@ peoples_springtime.113 = {
 	}
 	option = { # situation is calming down
 		name = peoples_springtime.113.a
-        default_option = yes
+		default_option = yes
 		add_loyalists = {
 			value = 0.10
 			culture = scope:orderrestored_victim_pop_scope
@@ -1483,9 +1483,9 @@ peoples_springtime.120 = {
 
 	option = {
 		name = peoples_springtime.120.a						
-        default_option = yes
+		default_option = yes
 		scope:generic_nationalist_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1507,7 +1507,7 @@ peoples_springtime.120 = {
 		name = peoples_springtime.120.b
 		change_infamy = 5
 		scope:generic_nationalist_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1594,14 +1594,14 @@ peoples_springtime.121 = {
 	
 	option = {
 		name = peoples_springtime.121.a						
-        default_option = yes
+		default_option = yes
 		add_modifier = { 
 			name = mobilizing_the_militia
 			multiplier = money_amount_multiplier_very_small
 			months = short_modifier_time
 		}
 		scope:generic_nationalist_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1630,7 +1630,7 @@ peoples_springtime.121 = {
 			months = short_modifier_time
 		}
 		scope:generic_nationalist_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1733,13 +1733,13 @@ peoples_springtime.122 = {
 	}
 	option = { # breaks up crowds by gunning down rioters
 		name = peoples_springtime.122.a			
-        default_option = yes
+		default_option = yes
 		create_incident = {
 			country = root
 			value = 20
 		}
 		scope:generic_nationalist_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1748,7 +1748,7 @@ peoples_springtime.122 = {
 	option = { # let it peter out
 		name = peoples_springtime.122.b
 		scope:generic_nationalist_state_scope = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = very_large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1817,7 +1817,7 @@ peoples_springtime.123 = {
 	}
 	option = { # situation is calming down
 		name = peoples_springtime.123.a
-        default_option = yes
+		default_option = yes
 		add_loyalists = {
 			value = 0.10
 			culture = scope:orderrestored_victim_pop_scope

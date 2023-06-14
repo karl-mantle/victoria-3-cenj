@@ -27,7 +27,7 @@ dead_man.1 = {
 
 	option = {
 		name = dead_man.1.a						
-        default_option = yes
+		default_option = yes
 		add_loyalists = {
 			value = very_large_radicals
 		}
@@ -59,7 +59,7 @@ dead_man.3 = {
 
 	option = {
 		name = dead_man.3.a						
-        default_option = yes
+		default_option = yes
 		add_radicals = {
 			value = 0.45
 			culture = cu:bulgarian

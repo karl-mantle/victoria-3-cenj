@@ -11,7 +11,7 @@ state_trait_indus_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 50 # 20
 	}
 }
 
@@ -20,7 +20,8 @@ state_trait_ganges_river = {
 
 	modifier = {
 		building_group_bg_agriculture_throughput_mult = 0.15
-		state_infrastructure_add = 20
+		building_output_grain_mult = 0.1
+		state_infrastructure_add = 50 # 20
 	}
 }
 
@@ -29,6 +30,7 @@ state_trait_bengal_delta = {
 	
 	modifier = {
 		building_group_bg_agriculture_throughput_mult = 0.25
+		building_output_grain_mult = 0.1
 	}
 }
 
@@ -37,6 +39,7 @@ state_trait_cauvery_delta = {
 	
 	modifier = {
 		building_group_bg_agriculture_throughput_mult = 0.2
+		building_output_grain_mult = 0.1
 	}
 }
 
@@ -44,7 +47,7 @@ state_trait_brahmaputra_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -52,7 +55,7 @@ state_trait_himalayas_mountains = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 	
 	modifier = {
-		#state_construction_mult = -0.25
+		# state_construction_mult = -0.25
 		state_infrastructure_mult = -0.25
 	}
 }

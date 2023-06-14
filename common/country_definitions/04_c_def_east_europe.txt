@@ -1,0 +1,236 @@
+﻿# Changes
+
+UBD = { # United Baltic
+	color = { 142  140  84 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { latvian estonian lithuanian baltic_german }
+	capital = STATE_LATVIA
+}
+
+# Added
+
+CHR = { # Chernigov
+	color = { 190 190 190 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_KIEV
+}
+CLI = { # Cilli
+	color = { 159 174 96 }
+	country_type = recognized
+	tier = city_state
+	cultures = { slovene }
+	capital = STATE_SLOVENIA
+}
+COU = { # Courland
+	color = { 234 224 94 }
+	country_type = recognized
+	tier = principality
+	cultures = { baltic_german }
+	capital = STATE_LATVIA
+}
+DAL = { # Dalmatia
+	color = { 46 128 188 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_DALMATIA
+}
+EPR = { # East Prussia
+	color = { 110 120 140 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_german }
+	capital = STATE_EAST_PRUSSIA
+}
+FEO = { # Theodoro
+	color = { 61 8 81 } 
+	country_type = recognized
+	tier = city_state
+	cultures = { pontic_greek }
+	capital = STATE_CRIMEA
+}
+HRZ = { # Herzegovina
+	color = { 72 113 160 }
+	country_type = recognized
+	tier = principality
+	cultures = { bosniak }
+	capital = STATE_BOSNIA
+}
+KIE = { # Kiev
+	color = { 81 123 210 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_KIEV
+}
+KRL = { # Karelia
+	color = { 244 38 38 }
+	country_type = recognized
+	tier = principality
+	cultures = { karelian }
+	capital = STATE_EAST_KARELIA
+}
+LIV = { # Livonian Order
+	color = { 125 30 100 }
+	country_type = recognized
+	tier = principality
+	cultures = { baltic_german }
+	capital = STATE_LATVIA
+}
+LVN = { # Livonia
+	color = { 20 14 150 }
+	country_type = recognized
+	tier = principality
+	cultures = { latvian } # change to Livonian
+	capital = STATE_LATVIA
+}
+MAZ = { # Mazovia
+	color = { 195 149 155 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_MAZOVIA
+}
+MSV = { # Muscovy
+	color = { 206 181 97 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_MOSCOW
+}
+MOV = { # Moravia
+	color = { 232 149 18 }
+	country_type = recognized
+	tier = principality
+	cultures = { czech }
+	capital = STATE_MORAVIA
+}
+NOV = { # Novgorod
+	color = { 97 126 37 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_NOVGOROD
+}
+NZH = { # Nizhny Novgorod
+	color = { 176 72 77 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_KAZAN
+}
+PLB = { # Polabia
+	color = { 0 140 195 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polish sorb }
+	capital = STATE_SAXONY
+}
+PLT = { # Polotsk
+	color = { 16 113 155 }
+	country_type = recognized
+	tier = principality
+	cultures = { byelorussian }
+	capital = STATE_ORSHA
+}
+PML = { # Pomerelia
+	color = { 250 250 95 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_WEST_PRUSSIA
+}
+POZ = { # Poznań
+	color = { 150 90 110 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_POSEN
+}
+PSK = { # Pskov
+	color = { 82 123 95 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_INGRIA
+}
+RAG = { # Ragusa
+	color = { 160 82 128 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_DALMATIA
+}
+RIG = { # Riga
+	color = { 183 176 194 }
+	country_type = recognized
+	tier = city_state
+	cultures = { baltic_german }
+	capital = STATE_LATVIA
+}
+RSO = { # Rostov
+	color = { 227 221 77 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_ROSTOV
+}
+RYA = { # Ryazan
+	color = { 146 134 77 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_MOSCOW
+}
+SIE = { # Siebenburgen
+	color = { 211 207 173 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_BANAT
+}
+SLA = { # Silesia
+	color = { 84 166 93 }
+	country_type = recognized
+	tier = principality
+	cultures = { silesian }
+	capital = STATE_SILESIA
+}
+SMO = { # Smolensk
+	color = { 106 160 43 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_SMOLENSK
+}
+TEU = { # Teutonic Knights
+	color = { 102 105 104 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_german }
+	capital = STATE_EAST_PRUSSIA
+}
+TVE = { # Tver
+	color = { 136 158 183 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_TVER
+}
+YAR = { # Yaroslavl
+	color = { 131 141 142 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_TVER
+}
+ZAZ = { # Zaporizhia
+	color = { 146 146 146 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_CHERSON
+}

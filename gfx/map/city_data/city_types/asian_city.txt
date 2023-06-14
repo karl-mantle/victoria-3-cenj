@@ -72,7 +72,7 @@
 
 	# Added
 	building_brickworks = {"asian_colonial_manufactory_01_mesh"}
-	building_cement_factory = {"african_masian_manufactory_01_meshanufactory_01_mesh"}
+	building_cement_factory = {"asian_manufactory_01_mesh"}
 	building_explosives_industry = {"asian_colonial_manufactory_03_mesh"}
 	building_fertilizer_factory = {"asian_colonial_manufactory_01_mesh"}
 	building_publishing_house = {"asian_manufactory_02_mesh"}

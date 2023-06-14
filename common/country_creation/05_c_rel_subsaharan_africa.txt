@@ -1,0 +1,28 @@
+﻿# Added
+
+KEN = { # Kenya
+	states = {
+		STATE_KENYA
+		STATE_RIFT_VALLEY
+	}
+	ai_will_do = { always = no }
+}
+NIG = { # Nigeria
+	states = {
+		STATE_BENIN
+		STATE_NIGER_DELTA
+		STATE_YORUBA_STATES
+		STATE_HAUSALAND
+		STATE_EAST_HAUSALAND
+		STATE_NIGERIA
+		STATE_BORNU
+	}
+	ai_will_do = { always = no }
+}
+NMB = { # Namibia
+	states = {
+		STATE_HEREROLAND
+		STATE_NAMAQUALAND 
+	}
+	ai_will_do = { always = no }
+}

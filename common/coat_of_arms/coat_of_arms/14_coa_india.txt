@@ -1,0 +1,6 @@
+﻿# Maldives
+
+MLD = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_light"
+}

@@ -1,0 +1,25 @@
+﻿# Added
+
+TBZ = { # Trebizond
+	flag_definition = {
+		coa = TBZ
+		subject_canton = TBZ
+		priority = 1
+	}
+	flag_definition = {
+		coa = TBZ_communist
+		subject_canton = TBZ_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = TBZ_fascist
+		subject_canton = TBZ_fascist
+		priority = 1500
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+}

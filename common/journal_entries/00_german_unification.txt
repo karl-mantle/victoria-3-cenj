@@ -20,34 +20,51 @@
 	complete = {
 		trigger_if = {
 			limit = {
-				c:HOL ?= this
+				OR = {
+					c:HOL ?= this
+					c:SCH ?= this
+				}
 			}
 			is_subject = no
 		}
 		trigger_if = {
 			limit = {
 				NOT = { c:HOL ?= this }
+				NOT = { c:SCH ?= this }
+				exists = c:DEN
 			}		
 			OR = { 
 				c:HOL ?= { is_subject_of = root }	
 				custom_tooltip = {
 					text = je_schleswig_holstein_question_state_ownership_desc
-					AND = {
-						any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
-						NOT = {
-							any_state = {
-								state_region = s:STATE_SCHLESWIG_HOLSTEIN
-								owner = {
-									NOR = {
-										country_has_primary_culture = cu:north_german
-										country_has_primary_culture = cu:south_german						
-									}						
-								}
-							}				
-						}					
-					}				
 				}
-			}		
+				any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
+				s:STATE_SCHLESWIG_HOLSTEIN = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										OR = {
+											country_has_primary_culture = cu:north_german
+											country_has_primary_culture = cu:south_german						
+										}						
+									}
+								}				
+								owner = {
+									is_subject_of = c:DEN
+								}					
+							}				
+						}
+					}		
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				c:LUB ?= this
+			}
+			country_or_subject_owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
 		}
 	}
 	
@@ -262,6 +279,10 @@ je_north_german_unification = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	
 	complete = {
+		custom_tooltip = {
+			has_global_variable = schleswig_holstein_question_solved
+			text = je_schleswig_holstein_question_solved_trigger_desc
+		}
 		hidden_trigger = {
 			has_variable = je_unification_progress
 		}	
@@ -312,6 +333,10 @@ je_south_german_unification = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	complete = {
+		custom_tooltip = {
+			has_global_variable = schleswig_holstein_question_solved
+			text = je_schleswig_holstein_question_solved_trigger_desc
+		}	
 		hidden_trigger = {
 			has_variable = je_unification_progress
 		}	
@@ -394,7 +419,7 @@ je_german_unification = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_ELBE = { 
+		s:STATE_ELBE = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -406,7 +431,7 @@ s:STATE_ELBE = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_WESTPHALIA = { 
+		s:STATE_WESTPHALIA = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -418,7 +443,7 @@ s:STATE_WESTPHALIA = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_ANHALT = { 
+		s:STATE_ANHALT = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -430,7 +455,7 @@ s:STATE_ANHALT = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_RHINELAND = { 
+		s:STATE_RHINELAND = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -442,7 +467,7 @@ s:STATE_RHINELAND = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_NORTH_RHINE = { 
+		s:STATE_NORTH_RHINE = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -454,7 +479,7 @@ s:STATE_NORTH_RHINE = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_SCHLESWIG_HOLSTEIN = { 
+		s:STATE_SCHLESWIG_HOLSTEIN = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -466,7 +491,7 @@ s:STATE_SCHLESWIG_HOLSTEIN = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_HANNOVER = { 
+		s:STATE_HANNOVER = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -478,7 +503,7 @@ s:STATE_HANNOVER = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_BRUNSWICK = { 
+		s:STATE_BRUNSWICK = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -490,7 +515,7 @@ s:STATE_BRUNSWICK = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_SAXONY = { 
+		s:STATE_SAXONY = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -502,7 +527,7 @@ s:STATE_SAXONY = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_HESSE = { 
+		s:STATE_HESSE = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -514,7 +539,7 @@ s:STATE_HESSE = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_MECKLENBURG = { 
+		s:STATE_MECKLENBURG = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -526,7 +551,7 @@ s:STATE_MECKLENBURG = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_SILESIA = { 
+		s:STATE_SILESIA = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -538,7 +563,7 @@ s:STATE_SILESIA = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_WEST_PRUSSIA = { 
+		s:STATE_WEST_PRUSSIA = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -550,7 +575,7 @@ s:STATE_WEST_PRUSSIA = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_EAST_PRUSSIA = { 
+		s:STATE_EAST_PRUSSIA = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -562,7 +587,7 @@ s:STATE_EAST_PRUSSIA = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_POSEN = { 
+		s:STATE_POSEN = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -574,7 +599,7 @@ s:STATE_POSEN = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_ALSACE_LORRAINE = { 
+		s:STATE_ALSACE_LORRAINE = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -586,7 +611,7 @@ s:STATE_ALSACE_LORRAINE = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_WURTTEMBERG = { 
+		s:STATE_WURTTEMBERG = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -598,7 +623,7 @@ s:STATE_WURTTEMBERG = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_BADEN = { 
+		s:STATE_BADEN = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -610,7 +635,7 @@ s:STATE_BADEN = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_BAVARIA = { 
+		s:STATE_BAVARIA = { 
 			if = {
 				limit = {
 					any_scope_state = {
@@ -622,7 +647,7 @@ s:STATE_BAVARIA = {
 				add_claim = ROOT 
 			}
 		}
-s:STATE_FRANCONIA = { 
+		s:STATE_FRANCONIA = { 
 			if = {
 				limit = {
 					any_scope_state = {

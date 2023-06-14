@@ -13,7 +13,6 @@
 	
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.5
-		state_aristocrats_investment_pool_efficiency_mult = -0.5
 		state_infrastructure_from_population_max_mult = -0.2
 	}
 
@@ -41,6 +40,19 @@
 	ai_will_do = {
 		always = no
 	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+				scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
 }
 
 law_tenant_farmers = {
@@ -50,10 +62,6 @@ law_tenant_farmers = {
 	
 	progressiveness = 0
 
-	disallowing_laws = {
-		law_command_economy
-	}	
-	
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.25
 	}
@@ -94,6 +102,19 @@ law_tenant_farmers = {
 			}			
 		}
 	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+				scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
 }
 
 law_commercialized_agriculture = {
@@ -110,9 +131,6 @@ law_commercialized_agriculture = {
 	modifier = {
 		state_farmers_investment_pool_efficiency_mult = 0.1
 	}
-	modifier = {
-		state_farmers_investment_pool_efficiency_mult = 0.1
-	}
 
 	possible_political_movements = {
 		law_homesteading
@@ -122,14 +140,6 @@ law_commercialized_agriculture = {
 
 	unlocking_technologies = {
 		mutual_funds
-	}
-
-	on_activate = {
-		add_modifier = {
-			name = land_redistribution_modifier
-			months = long_modifier_time
-			is_decaying = yes
-		}
 	}
 
 	pop_support = {
@@ -161,6 +171,19 @@ law_commercialized_agriculture = {
 			}			
 		}
 	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+				scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
 }
 
 law_homesteading = {
@@ -177,21 +200,9 @@ law_homesteading = {
 	}
 
 	modifier = {
-		interest_group_ig_rural_folk_pol_str_mult = 0.25
-		state_farmers_investment_pool_efficiency_mult = 0.40
-		state_bureaucracy_population_base_cost_factor_mult = -0.25
-	}
-
-	on_activate = {
-		add_modifier = {
-			name = land_redistribution_modifier
-			months = long_modifier_time
-			is_decaying = yes
-		}
-		ig:ig_rural_folk = {
-			remove_ideology = ideology_isolationist
-			add_ideology = ideology_isolationist_expansionism
-		}
+		interest_group_ig_rural_folk_pol_str_mult = 0.1
+		state_farmers_investment_pool_efficiency_mult = 0.25
+		state_bureaucracy_population_base_cost_factor_mult = -0.1
 	}
 
 	pop_support = {
@@ -225,6 +236,19 @@ law_homesteading = {
 			}			
 		}
 	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+				scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
 }
 
 law_collectivized_agriculture = {
@@ -249,14 +273,6 @@ law_collectivized_agriculture = {
 		law_commercialized_agriculture
 	}
 
-	on_activate = {
-		add_modifier = {
-			name = land_redistribution_modifier
-			months = long_modifier_time
-			is_decaying = yes
-		}
-	}
-
 	unlocking_technologies = { socialism }
 
 	pop_support = {
@@ -275,6 +291,19 @@ law_collectivized_agriculture = {
 					value = literacy_rate
 				}
 			}			
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+				scope:law = var:desired_law_var
+			}
+			add = 750
 		}
 	}
 }

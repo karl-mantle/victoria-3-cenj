@@ -1,0 +1,175 @@
+﻿### VTM ###
+
+je_french_natural_borders_button_a = {
+	name = "je_french_natural_borders_reject_natural_borders"
+	desc = "je_french_natural_borders_reject_natural_borders_desc"
+
+	visible = {
+		NOT = { has_variable = natural_borders_var }
+	}
+
+	effect = {
+		set_variable = natural_borders_var
+		custom_tooltip = {
+			text = dismiss_natural_borders_tt
+			set_variable = reject_natural_borders
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					leader = {
+						OR = {
+							has_ideology = ideology:ideology_jingoist_leader
+							has_ideology = ideology:ideology_ethno_nationalist
+							has_ideology = ideology:ideology_fascist
+							has_ideology = ideology:ideology_authoritarian
+							has_ideology = ideology:ideology_bonapartist
+						}
+					}
+				}
+			}
+			add_modifier = {
+				name = no_natural_borders
+				months = long_modifier_time
+				is_decaying = yes
+			}
+		}
+	}
+
+	# TODO
+	ai_chance = {
+		base = 0
+	}
+}
+
+je_french_natural_borders_button_b = {
+	name = "je_french_natural_borders_embrace_natural_borders"
+	desc = "je_french_natural_borders_embrace_natural_borders_desc"
+
+	visible = {
+		NOT = { has_variable = natural_borders_var }
+	}
+
+	effect = {
+		set_variable = natural_borders_var
+		trigger_event = { id = natural_borders.1 popup = yes }
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_WALLONIA }
+			}
+			s:STATE_WALLONIA = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_FLANDERS }
+			}
+			s:STATE_FLANDERS = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_RHINELAND }
+			}
+			s:STATE_RHINELAND = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_NORTH_RHINE }
+			}
+			s:STATE_NORTH_RHINE = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_SAVOY }
+			}
+			s:STATE_SAVOY = {
+				add_claim = ROOT
+			}
+		}
+		change_infamy = 30
+		add_modifier = {
+			name = france_natural_borders_pursuit
+			months = long_modifier_time # very_long_modifier_time
+			# country_infamy_decay_mult
+		}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				any_interest_group = {
+					is_powerful = yes
+					is_in_government = yes
+					leader = {
+						OR = {
+							has_ideology = ideology:ideology_jingoist_leader
+							has_ideology = ideology:ideology_ethno_nationalist
+							has_ideology = ideology:ideology_fascist
+							has_ideology = ideology:ideology_authoritarian
+							has_ideology = ideology:ideology_bonapartist
+						}
+					}
+				}
+			}
+			add = 5
+		}
+	}
+}
+
+je_treaty_of_turin_france_button = {
+	name = "je_treaty_of_turin_france_button"
+	desc = "je_treaty_of_turin_france_button_desc"
+	
+	visible = {
+		NOT = { has_global_variable = fra_annexed_savoy }
+	}
+
+	possible = {
+		any_country = {
+			custom_tooltip = {
+				text = at_peace_nocontext_tt
+				is_at_war = no
+			}
+			any_scope_state = {
+				state_region = s:STATE_SAVOY
+				is_split_state = no
+				is_capital = no
+			}
+			custom_tooltip = {
+				text = relations_amicable_nocontext_tt
+				relations:root >= relations_threshold:amicable
+			}
+			is_revolutionary = no
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+			trigger_if = {
+				limit = {
+					is_subject = no
+				}
+				owes_obligation_to = ROOT
+			}
+		}
+	}
+
+	effect = {
+		set_global_variable = fra_annexed_savoy
+		custom_tooltip = obligation_for_savoy_tt
+		trigger_event = { id = natural_borders.3 popup = yes }
+	}
+
+	# TODO?
+	ai_chance = {
+		base = 1
+	}
+}

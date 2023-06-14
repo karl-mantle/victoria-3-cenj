@@ -1,9 +1,6 @@
 ﻿je_french_natural_borders = {
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 
-	scripted_button = vtm_je_french_natural_borders_button_a
-	scripted_button = vtm_je_french_natural_borders_button_b
-
 	is_shown_when_inactive = {
 		exists = c:FRA
 		this = c:FRA
@@ -30,7 +27,9 @@
 		}
 	}
 
-	immediate = {}
+	immediate = {
+		trigger_event = { id = natural_borders.1 popup = yes }
+	}
 
 	complete = {
 		is_at_war = no
@@ -73,10 +72,7 @@
 	}
 
 	invalid = {
-		custom_tooltip = {
-			text = vtm_reject_natural_borders_tt
 			has_variable = reject_natural_borders
-		}
 	}
 
 	should_be_pinned_by_default = yes

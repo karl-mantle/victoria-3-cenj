@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:MIN = {
+		create_character = {
+			first_name = Levan_V
+			last_name = Dadiani
+			historical = yes
+			ruler = yes
+			age = 43
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				persistent
+			}
+		}
+	}
+}

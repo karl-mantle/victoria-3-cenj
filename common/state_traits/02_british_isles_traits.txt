@@ -3,32 +3,35 @@
 	
 	modifier = {
 		building_shipyards_throughput_mult = 0.15
-		state_building_port_max_level_add = 3
+		state_building_port_max_level_add = 10 # 3
 		state_building_naval_base_max_level_add = 15	
 	}
 }
 
 state_trait_lancashire_coalfield = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
 	}
 }
 
 state_trait_south_yorkshire_coalfield = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.1
 	}
 }
 
 state_trait_south_wales_valleys = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.1
 	}
 }
 
@@ -36,16 +39,17 @@ state_trait_scottish_highlands = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 	
 	modifier = {
-		state_infrastructure_mult = -0.1
-		#state_construction_mult = -0.1
+		state_infrastructure_mult = -0.15 # -0.1
+		# state_construction_mult = -0.1
 	}
 }
 
 state_trait_central_belt_coalfield = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
 	}
 }
 
@@ -63,23 +67,16 @@ state_trait_thames_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 25
+		state_infrastructure_add = 50
 	}
 }
 
 state_trait_cottonopolis = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_fabric.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_fabric.dds"
 	
 	modifier = {
-		building_textile_mills_throughput_mult = 0.1
-	}
-}
-
-state_trait_london_city = {
-    icon = "gfx/interface/icons/decree/decree_encourage_manufacturing_industry.dds"
-	
-	modifier = {
-		building_group_bg_service_throughput_mult = 0.05
-		building_group_bg_finance_throughput_mult = 0.05
+		building_textile_mills_throughput_mult = 0.2
+		building_output_clothes_mult = 0.1
+		building_output_luxury_clothes_mult = 0.05
 	}
 }

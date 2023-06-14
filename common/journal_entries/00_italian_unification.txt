@@ -7,188 +7,189 @@
 			country_has_primary_culture = cu:south_italian
 		}
 	}
-immediate = {
-	s:STATE_LOMBARDY = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_PIEDMONT = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_UMBRIA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_CAMPANIA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_CALABRIA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_APULIA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_ABRUZZO = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_EMILIA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_TUSCANY = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_ROMAGNA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_LAZIO = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_VENETIA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_SICILY = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_SOUTH_TYROL = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
-					}
-				}
-			}
-			add_claim = ROOT 
-		}
-	}
-	s:STATE_ISTRIA = { 
-		if = {
-			limit = {
-				any_scope_state = {
-					 NOT = {
-						owner = ROOT
+	immediate = {
+		s:STATE_LOMBARDY = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
 						}
 					}
 				}
-			add_claim = ROOT 
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_PIEDMONT = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_UMBRIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_CAMPANIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_CALABRIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_APULIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_ABRUZZO = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_EMILIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_TUSCANY = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_ROMAGNA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_LAZIO = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_VENETIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SICILY = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SOUTH_TYROL = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_ISTRIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+							}
+						}
+					}
+				add_claim = ROOT 
 			}
 		}
 	}
+
 	possible = {
 		country_rank >= rank_value:minor_power
 		has_technology_researched = nationalism

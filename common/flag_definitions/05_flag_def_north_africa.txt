@@ -1,0 +1,9 @@
+﻿# Added
+
+CNR = { # Canary Islands
+	flag_definition = {
+		coa = CNR
+		subject_canton = CNR
+		priority = 1
+	}
+}

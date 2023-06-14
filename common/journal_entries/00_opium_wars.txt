@@ -102,14 +102,18 @@ je_opium_wars = {
 		remove_variable = opium_wars_aggressor
 		trigger_event = {
 			id = opium_wars.5
+			days = 5
 		}
 	}
 
 	fail = {
+		custom_tooltip = {
+			text = opium_wars_fail_tt
 		scope:target = {
 			NOT = {
 				any_primary_culture = {
 					has_cultural_obsession = opium
+					}
 				}
 			}
 		}

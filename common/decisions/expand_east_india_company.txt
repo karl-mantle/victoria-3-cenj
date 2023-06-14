@@ -12,8 +12,8 @@
 	}
 	possible = {
 		custom_tooltip = {
-			text = expand_bic_cooldown_tt
-			NOT = { has_variable = expand_bic_cooldown }
+			text = gbr_expand_east_india_company_cooldown_tt
+			NOT = { has_variable = gbr_expand_east_india_company_cooldown }
 		}
 		any_state = {
 			owner = ROOT
@@ -34,9 +34,9 @@
 		}
 	}
 	when_taken = {
-		custom_tooltip = expand_east_india_company_tt
+		custom_tooltip = gbr_expand_east_india_company_tt
 		set_variable = {
-			name = expand_bic_cooldown
+			name = gbr_expand_east_india_company_cooldown
 			years = 2
 		}
 		if = {

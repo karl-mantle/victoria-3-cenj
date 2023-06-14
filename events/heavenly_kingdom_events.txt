@@ -163,6 +163,55 @@ heavenly.2 = {
 				target = rel:protestant value = 0.1
 			}
 		}
+		if = {
+			limit = {
+				empty_agitator_slots >= 1
+			}
+			if = {
+				limit = {
+					has_dlc_feature = voice_of_the_people_content
+					game_date < 1880.1.1
+				}
+				create_character = {
+					first_name = Hong
+					last_name = Xiuquan
+					historical = yes
+					birth_date = 1814.1.1
+					culture = cu:hakka
+					religion = rel:protestant
+					interest_group = ig_devout
+					ideology = ideology_theocrat
+					is_agitator = yes
+					traits = {
+						inspirational_orator
+						persistent
+						psychological_affliction
+					}
+					on_created = {
+						set_variable = hong_var
+						add_modifier = {
+							name = modifier_brother_of_christ
+							months = long_modifier_time
+						}
+					}
+				}
+			}
+			else = {
+				create_character = {
+					culture = cu:han
+					religion = rel:protestant
+					interest_group = ig_devout
+					ideology = ideology_theocrat
+					is_agitator = yes
+					on_created = {
+						add_modifier = {
+							name = modifier_brother_of_christ
+							months = long_modifier_time
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -291,6 +340,20 @@ heavenly.4 = {
 
 	}
 	immediate = {
+		hidden_effect = {
+			random_scope_character = {
+				limit = {
+					has_variable = hong_var
+				}
+				kill_character = yes
+			}
+			random_character_in_exile_pool = {
+				limit = {
+					has_variable = hong_var
+				}
+				kill_character = yes
+			}
+		}
 		every_state = {
 			limit = {
 				has_modifier = god_worshippers
@@ -590,6 +653,7 @@ heavenly.5 = {
 			}
 			set_state_owner = c:CHI #Just in case.
 			set_state_type = incorporated
+			remove_variable = saved_incorporated_state
 		}
 		root.religion = {
 			save_scope_as = state_religion_scope
@@ -709,8 +773,8 @@ heavenly.6 = {
 				ig:ig_intelligentsia = {
 					leader = {
 						OR = {
-							has_ideology = Ideology:ideology_reformer
-							has_ideology = Ideology:ideology_market_liberal
+							has_ideology = ideology:ideology_reformer
+							has_ideology = ideology:ideology_market_liberal
 						}
 					}
 				}

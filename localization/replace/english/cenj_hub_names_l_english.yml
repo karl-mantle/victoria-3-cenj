@@ -1,0 +1,33 @@
+﻿l_english:
+ # Changes
+ HUB_NAME_STATE_GELRE_city:0 "Arnhem"
+ HUB_NAME_STATE_GELRE_mine:0 "Enschede"
+ HUB_NAME_STATE_GELRE_farm:0 "Apeldoorn"
+ HUB_NAME_STATE_GELRE_wood:0 "Doetinchem"
+ HUB_NAME_STATE_GELRE_port:0 "Harderwijk"
+
+ HUB_NAME_STATE_FRIESLAND_port:0 "Leeuwarden"
+ HUB_NAME_STATE_FRIESLAND_mine:0 "Assen"
+ HUB_NAME_STATE_FRIESLAND_farm:0 "Drachten"
+ HUB_NAME_STATE_FRIESLAND_wood:0 "Emmen"
+
+ HUB_NAME_STATE_TRANSVAAL_mine:0 "Klerksdorp"
+ HUB_NAME_STATE_TRANSVAAL_farm:0 "Lydenburg"
+
+ HUB_NAME_STATE_VRYSTAAT_farm:0 "Winburg"
+
+ # Added
+ HUB_NAME_STATE_BRABANT_city:0 "Eindhoven"
+ HUB_NAME_STATE_BRABANT_mine:0 "Maastricht"
+ HUB_NAME_STATE_BRABANT_farm:0 "Tilburg"
+ HUB_NAME_STATE_BRABANT_wood:0 "Venlo"
+
+ HUB_NAME_STATE_SWAZILAND_farm:0 "Nsoko" 
+ HUB_NAME_STATE_SWAZILAND_city:0 "Mbabane"
+ HUB_NAME_STATE_SWAZILAND_mine:0 "Kaphunga"
+ HUB_NAME_STATE_SWAZILAND_wood:0 "Mpaka"
+
+ HUB_NAME_STATE_BASUTOLAND_farm:0 "Quthing" 
+ HUB_NAME_STATE_BASUTOLAND_city:0 "Maseru"
+ HUB_NAME_STATE_BASUTOLAND_mine:0 "Malealea"
+ HUB_NAME_STATE_BASUTOLAND_wood:0 "Mutlanyane"

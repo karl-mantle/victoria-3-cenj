@@ -1,0 +1,707 @@
+﻿namespace = boer_republics
+
+# Displacement of the Matabele
+
+boer_republics.1 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = boer_republics.1.t
+	desc = boer_republics.1.d
+	flavor = boer_republics.1.f
+
+	duration = 3
+
+	trigger = {
+		# Great Trek JE
+	}
+
+	immediate = {
+
+		hidden_effect = {
+			s:STATE_ZAMBEZI.region_state:RZW = { set_state_owner = c:MTB }
+		}
+
+	}
+}
+
+# Natalia Republic
+
+boer_republics.2 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = boer_republics.2.t
+	desc = boer_republics.2.d
+	flavor = boer_republics.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/africa_construction_colony.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	duration = 1
+
+	trigger = {
+		# Journal Entry
+	}
+
+	immediate = {
+
+		create_country = {
+			tag = NAL
+			origin = this
+			state = s:STATE_NATAL.region_state:ZUL
+			on_created = {
+				s:STATE_NATAL.region_state:ZUL = {
+					set_state_owner = c:NAL
+					add_modifier = {
+						name = zulu_conflict
+					}
+				}
+
+				# Technology
+				effect_starting_technology_tier_3_tech = yes
+
+				# Government
+				set_ruling_interest_groups = { ig_rural_folk }
+				set_next_election_date = 1839.10.12
+
+				# Interest Groups
+				ig:ig_rural_folk = {
+					set_interest_group_name = ig_voortrekkers
+					# remove / add ideology here
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_evangelical_church
+				}
+				ig:ig_armed_forces = {
+					set_interest_group_name = ig_kommandos
+				}
+
+				# Volksraad
+				add_modifier = {
+					name = volksraad_government
+				}
+
+				# Laws
+				if = {
+					limit = { NOT = { has_law = law_type:law_presidential_republic } }
+					activate_law = law_type:law_presidential_republic
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_landed_voting } }
+					activate_law = law_type:law_landed_voting
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_national_supremacy } }
+					activate_law = law_type:law_national_supremacy
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_mercantilism } }
+					activate_law = law_type:law_mercantilism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_interventionism } }
+					activate_law = law_type:law_interventionism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_slave_trade } }
+					activate_law = law_type:law_slave_trade
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_censorship } }
+					activate_law = law_type:law_censorship
+				}
+			}
+		}
+
+		c:NAL = {
+			save_scope_as = boer_country_nal
+
+			create_character = {
+				# Andries Pretorius
+				first_name = "Andries"
+				last_name = "Pretorius"
+				historical = yes
+				ruler = yes
+				birth_date = 1798.11.27
+				interest_group = ig_rural_folk
+				ideology = ideology_moderate
+				ig_leader = yes
+				traits = {
+					explorer
+				}		
+		}
+
+		}
+
+		c:SAF = {
+			set_variable = great_trek_nal
+
+			random_interest_group = {
+				limit = {
+					is_interest_group_type = ig_armed_forces
+					#leader = {
+					#	is_busy = no
+					#}
+				}
+				leader = {
+					save_scope_as = ig_boer_commandos_leader
+				}
+			}
+
+			scope:ig_boer_commandos_leader = {
+				transfer_character = scope:boer_country_nal
+			}
+		}
+
+		c:ZUL = {
+			trigger_event = { id = boer_republics.3 }
+		}
+	}
+
+	option = {
+		name = boer_republics.2.a
+		default_option = yes
+		ai_chance = { base = 1 }
+
+		every_scope_state = {
+			every_scope_pop = {
+				limit = { culture = cu:boer }
+				change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+			}
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				move_pop = s:STATE_NATAL.region_state:NAL
+			}
+		}
+
+		s:STATE_NATAL.region_state:NAL = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = boer_republics.2.b
+		ai_chance = { base = 0 }
+
+		every_scope_state = {
+			every_scope_pop = {
+				limit = { culture = cu:boer }
+				change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+			}
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				move_pop = s:STATE_NATAL.region_state:NAL
+			}
+		}
+
+		s:STATE_NATAL.region_state:NAL = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+
+		play_as = scope:boer_country_nal
+	}
+}
+
+# Zulu Response to Natalia
+
+boer_republics.3 = {
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = boer_republics.3.t
+	desc = boer_republics.3.d
+	flavor = boer_republics.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/Africa_diplomats_negotiating.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/diplomats_negotiating"
+
+	minor_left_icon = c:NAL
+	minor_right_icon = c:ZUL
+
+	duration = 3
+
+	trigger = {
+		# Natalia Republic
+	}
+
+	option = {
+		name = boer_republics.3.a
+		default_option = yes
+
+		s:STATE_NATAL = {
+			add_claim = ROOT
+		}
+		
+		change_relations = {
+			country = c:NAL
+			value = -50
+		}
+	}
+}
+
+# Natal Colony
+
+boer_republics.4 = {
+	type = country_event
+	placement = root
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = boer_republics.4.t
+	desc = boer_republics.4.d
+	flavor = boer_republics.4.f
+
+	duration = 3
+
+	trigger = {
+		# Natal Colony JE
+	}
+
+	immediate = {
+		
+	}
+
+	option = { # Accept British Subjugation
+		name = boer_republics.4.a
+		default_option = yes
+		ai_chance = { base = 1 }
+
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:NAL
+				type = puppet
+			}
+		}
+
+		set_global_variable = natalia_colony_nal
+	}
+
+	option = { # Reject the British
+		name = boer_republics.4.b
+		ai_chance = { base = 0 }
+
+		c:GBR = {
+			create_diplomatic_play = {
+				name = anglo_natal_war
+				target_state = s:STATE_NATAL.region_state:NAL
+				war = yes
+				type = dp_make_puppet
+			}
+		}
+
+		set_global_variable = natalia_colony_nal
+	}
+}
+
+# Potchefstroom Formed
+
+boer_republics.5 = {
+	type = country_event
+	placement = root
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = boer_republics.5.t
+	desc = boer_republics.5.d
+	flavor = boer_republics.5.f
+
+	duration = 3
+
+	trigger = {
+		# Journal Entry
+	}
+
+	immediate = {
+
+		create_country = {
+			tag = PTF
+			origin = this
+			province = p:x8BDC4D
+			on_created = {
+				s:STATE_TRANSVAAL = {
+					set_owner_of_provinces = {
+						country = c:PTF
+						provinces = { x8BDC4D xBE553D xD0A010 }
+					}
+					add_claim = c:PTF
+				}
+
+				c:PTF = {
+					add_modifier = {
+						name = zulu_conflict
+					}
+				}
+				
+				# Technology
+				effect_starting_technology_tier_3_tech = yes
+
+				# Government
+				set_ruling_interest_groups = { ig_rural_folk }
+
+				# Interest Groups
+				ig:ig_rural_folk = {
+					set_interest_group_name = ig_voortrekkers
+					# remove / add ideology here
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_evangelical_church
+				}
+				ig:ig_armed_forces = {
+					set_interest_group_name = ig_kommandos
+				}
+
+				# Volksraad
+				add_modifier = {
+					name = volksraad_government
+				}
+
+				# Laws
+				if = {
+					limit = { NOT = { has_law = law_type:law_presidential_republic } }
+					activate_law = law_type:law_presidential_republic
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_oligarchy } }
+					activate_law = law_type:law_oligarchy
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_national_supremacy } }
+					activate_law = law_type:law_national_supremacy
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_protectionism } }
+					activate_law = law_type:law_protectionism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_agrarianism } }
+					activate_law = law_type:law_agrarianism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_legacy_slavery } }
+					activate_law = law_type:law_legacy_slavery
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_national_militia } }
+					activate_law = law_type:law_national_militia
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_cultural_exclusion } }
+					activate_law = law_type:law_cultural_exclusion
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_bartering } }
+					activate_law = law_type:law_bartering
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_no_migration_controls } }
+					activate_law = law_type:law_no_migration_controls
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_homesteading } }
+					activate_law = law_type:law_homesteading
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_colonial_resettlement } }
+					activate_law = law_type:law_colonial_resettlement
+				}
+				
+			}
+		}
+
+		s:STATE_TRANSVAAL = {
+			add_claim = c:PTF
+			add_homeland = boer
+		}
+
+		c:SAF = {
+			set_variable = great_trek_ptf
+		}
+
+		c:PTF = {
+			save_scope_as = boer_country_ptf
+		}
+
+		c:WIB = {
+			random_interest_group = {
+				limit = {
+					is_interest_group_type = ig_rural_folk
+					#leader = {
+					#	is_busy = no
+					#}
+				}
+				leader = {
+					save_scope_as = ig_rural_folk_leader_wib
+				}
+			}
+
+			scope:ig_rural_folk_leader_wib = {
+				transfer_character = scope:boer_country_ptf
+			}
+		}
+
+		
+	}
+
+	option = {
+		name = boer_republics.5.a
+		default_option = yes
+		ai_chance = { base = 1 }
+
+		every_scope_state = {
+			every_scope_pop = {
+				limit = { culture = cu:boer }
+				change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+			}
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				move_pop = s:STATE_TRANSVAAL.region_state:PTF
+			}
+		}
+
+		s:STATE_TRANSVAAL.region_state:PTF = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = boer_republics.5.b
+		ai_chance = { base = 0 }
+
+		every_scope_state = {
+			limit = { owner = c:SAF }
+			every_scope_pop = {
+				limit = { culture = cu:boer }
+				change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+			}
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				move_pop = s:STATE_TRANSVAAL.region_state:PTF
+			}
+		}
+
+		s:STATE_TRANSVAAL.region_state:PTF = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+
+		play_as = scope:boer_country_ptf
+	}
+}
+
+# Orange River Sovereignty
+
+boer_republics.6 = {
+	type = country_event
+	placement = root
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = boer_republics.6.t
+	desc = boer_republics.6.d
+	flavor = boer_republics.6.f
+
+	duration = 3
+
+	trigger = {
+		# Journal Entry
+	}
+
+	immediate = {
+		create_country = {
+			tag = TRN
+			origin = this
+			state = s:STATE_TRANSVAAL.region_state:ORA
+			on_created = {
+				# Technology
+				effect_starting_technology_tier_3_tech = yes
+
+				# Government
+				set_ruling_interest_groups = { ig_rural_folk }
+				set_next_election_date = 1839.10.12
+
+				# IG Names
+				ig:ig_rural_folk = {
+					set_interest_group_name = ig_voortrekkers
+					# remove / add ideology here
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_evangelical_church
+				}
+
+				# Volksraad
+				add_modifier = {
+					name = volksraad_government
+				}
+
+				# Laws
+				if = {
+					limit = { NOT = { has_law = law_type:law_presidential_republic } }
+					activate_law = law_type:law_presidential_republic
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_landed_voting } }
+					activate_law = law_type:law_landed_voting
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_national_supremacy } }
+					activate_law = law_type:law_national_supremacy
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_mercantilism } }
+					activate_law = law_type:law_mercantilism
+				}	
+
+				if = {
+				limit = { NOT = { has_law = law_type:law_interventionism } }
+				activate_law = law_type:law_interventionism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_slave_trade } }
+					activate_law = law_type:law_slave_trade
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_censorship } }
+					activate_law = law_type:law_censorship
+				}
+			}
+		}
+
+		s:STATE_TRANSVAAL.region_state:ORA = { 
+			set_state_owner = c:TRN
+			add_modifier = {
+				name = zulu_conflict
+			} 
+		}
+
+		s:STATE_TRANSVAAL.region_state:MTB = { 
+			set_state_owner = c:TRN
+			add_modifier = {
+				name = zulu_conflict
+			}
+		}
+
+		s:STATE_VRYSTAAT.region_state:BST = { 
+			set_state_owner = c:ORA
+			add_modifier = {
+				name = zulu_conflict
+			}
+		}
+
+		option = {
+			name = boer_republics.6.a
+			default_option = yes
+			ai_chance = { base = 1 }
+
+			c:GBR = {
+				create_diplomatic_pact = {
+					country = c:ORA
+					type = puppet
+				}
+			}
+		}
+
+	}   
+}
+
+# Winburg-Potchefstroom
+
+boer_republics.7 = {
+	type = country_event
+	placement = root
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = boer_republics.7.t
+	desc = boer_republics.7.d
+	flavor = boer_republics.7.f
+
+	duration = 3
+
+	trigger = {
+		# Journal Entry
+	}
+
+	immediate = {
+		create_country = {
+			tag = ORA
+			origin = this
+			state = s:STATE_VRYSTAAT.region_state:WIB
+			on_created = {
+				s:STATE_VRYSTAAT = {
+					add_claim = c:ORA
+				}
+				# Technology
+				effect_starting_technology_tier_3_tech = yes
+
+				# Government
+				set_ruling_interest_groups = { ig_rural_folk }
+				set_next_election_date = 1839.10.12
+
+				# IG Names
+				ig:ig_rural_folk = {
+					set_interest_group_name = ig_voortrekkers
+					# remove / add ideology here
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_evangelical_church
+				}
+
+				# Volksraad
+				add_modifier = {
+					name = volksraad_government
+				}
+
+				# Laws
+			}
+		}
+
+		s:STATE_VRYSTAAT.region_state:WIB = { set_state_owner = c:ORA }
+
+		s:STATE_TRANSVAAL.region_state:PTF = { set_state_owner = c:ORA }
+
+	}
+
+	option = {
+		name = boer_republics.5.b
+		ai_chance = { base = 0 }
+
+		play_as = c:ORA
+	}
+
+}
+
+
+
+# Lydenburg Formed provinces = x50A011 x0591EA x452304
+
+# Klein Vrysaat Formed provinces = xD72273 xD02011 x6E419C
+
+# Utrecht Formed provinces xE1E455 xBBCA32 xE882CE
+
+# New Republic Formed provinces = xBE6FEE x904EBE x9E9742 x1A084B

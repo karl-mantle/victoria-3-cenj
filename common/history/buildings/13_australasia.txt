@@ -3,13 +3,13 @@
 		region_state:NSW={
 			create_building={
 				building="building_wheat_farm"
-				level=1
+				level=2 # 1
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_citrus_orchards" }
 			}
 			create_building={
 				building="building_livestock_ranch"
-				level=2
+				level=4 # 2
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_privately_owned" "pm_standard_fences" "pm_unrefrigerated" "pm_butchering_tools" }
 			}
@@ -21,14 +21,14 @@
 			}
 			create_building={
 				building="building_port"
-				level=1
+				level=2 # 1
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
 			# Added
 			create_building={
 				building="building_copper_mine"
-				level=1
+				level=2 # 1
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}	
@@ -38,13 +38,19 @@
 				reserves=1
 				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_finance_sector_no_central_bank" "pm_merchant_guilds_finance_sector" }
 			}
+			create_building={
+				building="building_road_network"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
+			}
 		}
 	}
 	s:STATE_VICTORIA={
 		region_state:NSW={
 			create_building={
 				building="building_livestock_ranch"
-				level=1
+				level=2 # 1
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
 			}
@@ -77,7 +83,7 @@
 		region_state:NSW={
 			create_building={
 				building="building_livestock_ranch"
-				level=1
+				level=2 # 1
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
 			}
@@ -87,7 +93,7 @@
 		region_state:SAS={
 			create_building={
 				building="building_wheat_farm"
-				level=1
+				level=2 # 1
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_citrus_orchards" }
 			}

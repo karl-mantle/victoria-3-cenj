@@ -1,0 +1,26 @@
+﻿# Added
+
+HKG = { # Hong Kong
+	provinces = {
+		xB03161
+	}
+	ai_will_do = { always = no }
+}
+MCC = { # Macao
+	provinces = {
+		xB031E0
+	}
+	ai_will_do = { always = no }
+}
+RYU = { # Ryukyu Islands
+	states = {
+		STATE_RYUKYU_ISLANDS
+	}
+	ai_will_do = { always = no }
+}
+SGP = { # Singapore
+	provinces = {
+		xC00130
+	}
+	ai_will_do = { always = no }
+}

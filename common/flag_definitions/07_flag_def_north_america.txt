@@ -1,0 +1,107 @@
+﻿# Changes
+
+NEW = { # Newfoundland
+	flag_definition = {
+		priority = 15
+		coa = NEW
+		coa_with_overlord_canton = NEW_subject
+		allow_overlord_canton = yes
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_coa
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEW_theocracy
+		subject_canton = NEW_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+}
+
+# Added
+
+ALA = { # Alaska
+	flag_definition = {
+		coa = ALA
+		subject_canton = ALA
+		priority = 1
+	}
+	flag_definition = {
+		coa = ALA_communist
+		subject_canton = ALA_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ALA_fascist
+		subject_canton = ALA_fascist
+		priority = 1500
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ALA_fascist
+		subject_canton = ALA_fascist
+		priority = 20
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+}
+FLO = { # Florida
+	flag_definition = {
+		coa = FLO
+		subject_canton = FLO
+		priority = 1
+	}
+}
+VRM = { # Vermont
+	flag_definition = {
+		coa = VRM
+		subject_canton = VRM
+		priority = 1
+	}
+	flag_definition = {
+		coa = VRM_communist
+		subject_canton = VRM_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = VRM_monarchy
+		subject_canton = VRM_monarchy
+		priority = 20
+		trigger = {
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = VRM_republic
+		subject_canton = VRM_republic
+		priority = 20
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+}

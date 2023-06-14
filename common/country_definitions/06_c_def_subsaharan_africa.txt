@@ -1,0 +1,145 @@
+﻿# Changes
+
+BST = { # Basutoland
+	color = { 137 106 217 }
+	country_type = decentralized
+	tier = principality
+	cultures = { sotho }
+	capital = STATE_BASUTOLAND
+}
+NAL = { # Natalia
+	color = { 106  178  46 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	capital = STATE_NATAL
+}
+SAF = { # South Africa
+	color = { 180  158  127 }
+	country_type = colonial
+	tier = kingdom
+	cultures = { british }
+	capital = STATE_CAPE_COLONY
+}
+WBL = { # Waterboersland
+	color = { 176 206 177 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { griqua }
+	capital = STATE_NORTHERN_CAPE
+}
+
+# Added
+
+BAA = { # Boina
+	color = { 0 0 255 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { malagasy }
+	capital = STATE_NORTH_MADAGASCAR
+}
+GZA = { # Gaza Empire
+	color = { 0 128 21 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { tonga shona nguni }
+	capital = STATE_LOURENCO_MARQUES
+}
+KEN = { # Kenya
+	color = { 50 50 50 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { nilotic lacustrine_bantu }
+	capital = STATE_KENYA
+}
+LYD = { # Lydenburg
+	color = { 255 255 153 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+}
+MRV = { # Maravi
+	color = { 179 0 0 }
+	country_type = decentralized
+	tier = principality
+	cultures = { makua yao chewa }
+	capital = STATE_MOCAMBIQUE
+}
+NIG = { # Nigeria
+	color = { 0 102 51 }
+	tier = kingdom
+	country_type = unrecognized
+	cultures = { hausa yoruba ibo }
+	capital = STATE_EAST_HAUSALAND
+}
+NMB = { # Namibia
+	color = { 255 234 128 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { herero khoisan }
+	capital = STATE_HEREROLAND
+}
+ONI = { # Onilahy
+	color = { 166 255 77 }
+	country_type = decentralized
+	tier = principality
+	cultures = { malagasy }
+	capital = STATE_SOUTH_MADAGASCAR
+}
+PTF = { # Potchefstroom
+	color = { 255 204 153 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+}
+RZW = { # Rozwi Empire
+	color = { 153 25 0 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { shona nguni }
+	capital = STATE_ZAMBEZI
+}
+SWZ = { # Swaziland
+	color = { 255 191 0 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { nguni }
+	capital = STATE_TRANSVAAL
+}
+WIB = { # Winburg
+	color = { 255 204 102 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { boer }
+	capital = STATE_VRYSTAAT
+}
+WNH = { # Windhoek
+	color = { 66 78 69}
+	country_type = unrecognized
+	tier = principality
+	cultures = { griqua }
+	capital = STATE_HEREROLAND
+}
+XHO = { # Xhosa
+	color = { 113 106 156 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { xhosa }
+	capital = STATE_EASTERN_CAPE
+}
+ZAF = { # Zafimanely
+	color = { 255 179 25 }
+	country_type = decentralized
+	tier = principality
+	cultures = { malagasy }
+	capital = STATE_SOUTH_MADAGASCAR
+}
+ZOU = { # Zoutpansberg
+	color = { 0 0 77 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+}

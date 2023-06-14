@@ -1,0 +1,36 @@
+﻿syncretic = {
+	texture = "gfx/interface/icons/religion_icons/unused/mormonism.dds"
+	traits = {
+		christian
+		animist
+	}
+	color = { 0.6 0.3 0.1 }
+}
+old_believer = {
+	texture = "gfx/interface/icons/religion_icons/orthodox.dds" #needs new icon
+	traits = {
+		christian
+	}
+	color = { 0.6 0.3 0.2 }
+}
+anglican = {
+	texture = "gfx/interface/icons/religion_icons/anglican.dds"
+	traits = {
+		christian
+	}
+	color = { 0.6 0.3 0.2 }
+}
+reformed = {
+	texture = "gfx/interface/icons/religion_icons/reformed.dds"
+	traits = {
+		christian
+	}
+	color = { 0.6 0.3 0.2 }
+}
+ibadi = {
+	texture = "gfx/interface/icons/religion_icons/ibadi.dds"
+	traits = {
+		muslim
+	}
+	color = { 0.6 0.3 0.1 }
+}

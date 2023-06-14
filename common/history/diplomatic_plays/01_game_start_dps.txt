@@ -1,0 +1,70 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:RUS = {
+		create_diplomatic_play = {
+			name = russia_circassia_war
+		
+			target_state = s:STATE_KUBAN.region_state:CIR
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:CIR
+				type = return_state
+				target_state = s:STATE_KUBAN.region_state:RUS
+			}
+		}			
+	}
+	c:RUS = {
+		create_diplomatic_play = {
+			name = russia_dagestan_war
+		
+			target_state = s:STATE_DAGESTAN.region_state:CHC
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:CHC
+				type = return_state
+				target_state = s:STATE_DAGESTAN.region_state:RUS
+			}
+		}			
+	}
+#	c:USA = {
+#		create_diplomatic_play = {
+#			name = seminole_war
+#		
+#			target_state = s:STATE_FLORIDA.region_state:SEM
+#			
+#			war = yes
+#			
+#			type = dp_annex_war
+#			
+#			add_war_goal = {
+#				holder = c:SEM
+#				type = conquer_state
+#				target_state = s:STATE_FLORIDA.region_state:USA
+#			}			
+#		}	
+#	}
+	c:SAF = {
+		create_diplomatic_play = {
+			name = 6th_xhosa_war
+		
+			target_state = s:STATE_EASTERN_CAPE.region_state:XHO
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:SAF
+				type = conquer_state
+				target_state = s:STATE_EASTERN_CAPE.region_state:SAF
+			}
+		}			
+	}
+}

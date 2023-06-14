@@ -1,0 +1,8 @@
+﻿# Added
+
+MLD = { # Maldives
+	flag_definition = {
+		coa = MLD
+		priority = 1
+	}
+}

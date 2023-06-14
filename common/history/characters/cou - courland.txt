@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:COU = {
+		create_character = {
+			first_name = Christoph
+			last_name = von_Brevern
+			historical = yes
+			ruler = yes
+			culture = cu:baltic_german
+			age = 34
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				brave
+			}
+		}
+	}
+}

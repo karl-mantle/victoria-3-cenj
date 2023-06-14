@@ -19,6 +19,7 @@ state_trait_russian_forest = {
 	
 	modifier = {
 		building_group_bg_logging_throughput_mult = 0.2
+		building_output_wood_mult = 0.1
 	}
 }
 
@@ -27,7 +28,8 @@ state_trait_ural_mountains = {
 	
 	modifier = {
 		building_iron_mine_throughput_mult = 0.2
-		#state_construction_mult = -0.15
+		building_output_iron_mult = 0.1
+		# state_construction_mult = -0.15
 		state_infrastructure_mult = -0.15
 	}
 }
@@ -36,7 +38,7 @@ state_trait_caucasus_mountains = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 	
 	modifier = {
-		#state_construction_mult = -0.2
+		# state_construction_mult = -0.2
 		state_infrastructure_mult = -0.2
 	}
 }
@@ -45,7 +47,7 @@ state_trait_drava_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 30 # 15
 	}
 }
 
@@ -53,7 +55,7 @@ state_trait_danube_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 50 # 20
 	}
 }
 
@@ -61,7 +63,7 @@ state_trait_volga_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 50 # 20
 	}
 }
 
@@ -69,24 +71,26 @@ state_trait_dnieper_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 40 # 15
 	}
 }
 
 # Added
 
 state_trait_most_basin = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.05
+		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
 	}
 }
 
 state_trait_joachimsthal = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_silver.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_silver.dds"
 	
 	modifier = {
 		building_silver_mine_throughput_mult = 0.1
+		building_output_silver_mult = 0.05
 	}
 }

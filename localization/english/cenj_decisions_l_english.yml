@@ -1,0 +1,11 @@
+﻿l_english:
+# expand_cape_colony.txt
+ gbr_expand_cape_colony:0 "Expand the Cape Colony"
+ gbr_expand_cape_colony_desc:0 "We currently hold lands in South Africa that would be better administered by our colonial subject."
+ gbr_expand_cape_colony_tt:1 "Transfer control of all holdings or vassals in South Africa to our colony."
+ #gbr_expand_cape_colony_cooldown_tt:0 "Has not expanded the Cape Colony for 2 years"
+# expand_east_india_company.txt
+ gbr_expand_east_india_company:0 "Expand the East India Company"
+ gbr_expand_east_india_company_desc:0 "We currently hold lands in India that would be better administered by our colonial subject."
+ gbr_expand_east_india_company_tt:1 "Transfer control of all holdings or vassals in India to our colony."
+ gbr_expand_east_india_company_cooldown_tt:0 "Has not expanded the East India Company for 2 years"

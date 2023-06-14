@@ -1,0 +1,8 @@
+﻿# Added
+
+GYA = { # Guyana
+	states = {
+		STATE_GUAYANA
+	}
+	ai_will_do = { always = no }
+}

@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:CAU = {
+		create_character = {
+			is_general = yes
+			first_name = Georg
+			last_name = von_Rosen
+			historical = yes
+			ruler = yes
+			culture = cu:baltic_german
+			age = 54
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {
+				persistent
+			}
+		}
+	}
+}

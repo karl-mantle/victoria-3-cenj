@@ -683,8 +683,8 @@ bic_breakup.2 = {
 			}
 			create_character = {
 				# Humayun Jah
-				first_name = vtm_mubarak_ali_khan
-				last_name = vtm_najafi
+				first_name = mubarak_ali_khan
+				last_name = najafi
 				ruler = yes
 				birth_date = 1810.1.1 # exact date is unknown
 				religion = rel:shiite # The Najafis were a Shia house
@@ -696,8 +696,8 @@ bic_breakup.2 = {
 			}
 			create_character = {
 				# Feradun Jah
-				first_name = vtm_mansur_ali_khan
-				last_name = vtm_najafi
+				first_name = mansur_ali_khan
+				last_name = najafi
 				heir = yes
 				birth_date = 1830.10.29 
 				religion = rel:shiite 
@@ -715,8 +715,8 @@ bic_breakup.2 = {
 			}
 			create_character = {
 				# Feradun Jah
-				first_name = vtm_mansur_ali_khan
-				last_name = vtm_najafi
+				first_name = mansur_ali_khan
+				last_name = najafi
 				ruler = yes
 				birth_date = 1830.10.29 
 				religion = rel:shiite 
@@ -728,8 +728,8 @@ bic_breakup.2 = {
 			}
 			create_character = {
 				# Ali Kadir
-				first_name = vtm_hassan_ali_mirza
-				last_name = vtm_najafi
+				first_name = hassan_ali_mirza
+				last_name = najafi
 				heir = yes
 				birth_date = 1846.8.25 
 				religion = rel:shiite 
@@ -747,8 +747,8 @@ bic_breakup.2 = {
 			}
 			create_character = {
 				# Ali Kadir
-				first_name = vtm_hassan_ali_mirza
-				last_name = vtm_najafi
+				first_name = hassan_ali_mirza
+				last_name = najafi
 				ruler = yes
 				birth_date = 1846.8.25 
 				religion = rel:shiite 
@@ -760,8 +760,8 @@ bic_breakup.2 = {
 			}
 			create_character = {
 				# Wasif Ali Mirza
-				first_name = vtm_wasif_ali_mirza
-				last_name = vtm_najafi
+				first_name = wasif_ali_mirza
+				last_name = najafi
 				heir = yes
 				birth_date = 1875.1.7 
 				religion = rel:shiite 
@@ -778,8 +778,8 @@ bic_breakup.2 = {
 			}
 			create_character = {
 				# Wasif Ali Mirza
-				first_name = vtm_wasif_ali_mirza
-				last_name = vtm_najafi
+				first_name = wasif_ali_mirza
+				last_name = najafi
 				ruler = yes
 				birth_date = 1875.1.7 
 				religion = rel:shiite 

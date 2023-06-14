@@ -19,7 +19,7 @@ state_trait_seto_inland_sea = {
 	
 	modifier = {
 		building_shipyards_throughput_mult = 0.1
-		state_building_port_max_level_add = 2
+		state_building_port_max_level_add = 5 # 2
 		state_building_naval_base_max_level_add = 10
 	}
 }
@@ -28,7 +28,7 @@ state_trait_pearl_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 40 # 15
 	}
 }
 
@@ -36,7 +36,7 @@ state_trait_yangtze_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 50 # 20
 	}
 }
 
@@ -44,7 +44,7 @@ state_trait_yellow_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 30 # 15
 	}
 }
 
@@ -52,10 +52,10 @@ state_trait_gobi_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
 	  
 	modifier = {
-        building_group_bg_agriculture_throughput_mult = -0.2
-		#state_construction_mult = -0.25
+		building_group_bg_agriculture_throughput_mult = -0.25 # -0.2
+		# state_construction_mult = -0.25
 		state_infrastructure_mult = -0.25
-    }
+	}
 }
 
 
@@ -63,18 +63,18 @@ state_trait_taklamakan_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
 	
 	modifier = {
-        building_group_bg_agriculture_throughput_mult = -0.2
-		#state_construction_mult = -0.25
+		building_group_bg_agriculture_throughput_mult = -0.25 # -0.2
+		# state_construction_mult = -0.25
 		state_infrastructure_mult = -0.25
-    }
+	}
 }
 
 state_trait_siberian_terrain = {
-    icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
+	icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_mult = -0.2
-		#state_construction_mult = -0.2
+		building_group_bg_agriculture_throughput_mult = -0.25 # -0.2
+		# state_construction_mult = -0.2
 		state_infrastructure_mult = -0.2
 	}
 }
@@ -85,7 +85,8 @@ state_trait_dojima_rice_exchange = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
 	
 	modifier = {
-		building_rice_farm_output_mult = 0.025
+		building_group_bg_agriculture_throughput_mult = 0.2
+		building_output_grain_mult = 0.1
 	}
 }
 
@@ -93,7 +94,8 @@ state_trait_satsuma_ware = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_porcelain.dds"
 	
 	modifier = {
-		building_glassworks_throughput_mult = 0.025
+		building_glassworks_throughput_mult = 0.1
+		building_output_porcelain_mult = 0.25
 	}
 }
 
@@ -101,7 +103,8 @@ state_trait_miike_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.15
+		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
 	}
 }
 
@@ -109,7 +112,8 @@ state_trait_ishikari_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.05
+		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
 	}
 }
 
@@ -126,6 +130,7 @@ state_trait_shanxi_coalfield = {
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
 	}
 }
 
@@ -133,6 +138,7 @@ state_trait_paktong = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_copper.dds" # Change to resources_currency.dds
 
 	modifier = {
-		modifier_building_group_bg_finance_throughput_mult = 0.2
+		# modifier_building_group_bg_finance_throughput_mult = 0.2
+		building_output_currency_mult = 0.1
 	}
 }

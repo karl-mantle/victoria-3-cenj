@@ -2,7 +2,7 @@
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 
 	modifier = {
-		#state_construction_mult = -0.2
+		# state_construction_mult = -0.2
 		state_infrastructure_mult = -0.2
 	}
 }
@@ -12,6 +12,7 @@ state_trait_turqoise_deposits = {
 
 	modifier = {
 		building_dye_plantation_throughput_mult = 0.2
+		building_output_dye_mult = 0.1
 	}
 }
 
@@ -19,7 +20,7 @@ state_trait_tigris_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -27,7 +28,7 @@ state_trait_euphrates_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -35,7 +36,7 @@ state_trait_ob_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 30 # 15
 	}
 }
 
@@ -43,10 +44,10 @@ state_trait_arabian_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
 		   
 	modifier = {
-        building_group_bg_agriculture_throughput_mult = -0.2
-		#state_construction_mult = -0.25
+		building_group_bg_agriculture_throughput_mult = -0.2
+		# state_construction_mult = -0.25
 		state_infrastructure_mult = -0.25
-    }
+	}
 }
 
 state_trait_mesopotamian_floodplain = {
@@ -54,6 +55,7 @@ state_trait_mesopotamian_floodplain = {
 
 	modifier = {
 		building_group_bg_agriculture_throughput_mult = 0.2
+		building_output_grain_mult = 0.1
 	}
 }
 
@@ -63,6 +65,7 @@ state_trait_mocha = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coffee.dds"
 	
 	modifier = {
-		building_coffee_plantation_throughput_mult = 0.05
+		building_coffee_plantation_throughput_mult = 0.2
+		building_output_coffee_mult = 0.1
 	}
 }

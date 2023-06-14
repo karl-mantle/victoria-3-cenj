@@ -1,0 +1,66 @@
+﻿gov_boer_state = {
+	transfer_of_power = parliamentary_elective
+	new_leader_on_reform_government = yes
+
+	male_ruler = "RULER_TITLE_COMMANDANT_GENERAL"
+	female_ruler = "RULER_TITLE_COMMANDANT_GENERAL"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		country_has_primary_culture = cu:boer
+		has_law = law_type:law_presidential_republic
+		has_modifier = volksraad_government
+	}
+}
+
+gov_griqua_state = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_KAPTEIN"
+	female_ruler = "RULER_TITLE_KAPTEIN"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		country_has_primary_culture = cu:griqua
+	}
+}
+
+gov_governorate = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_GOVERNOR"
+	female_ruler = "RULER_TITLE_GOVERNOR"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		exists = c:RUS
+		c:RUS = { has_law = law_type:law_monarchy }
+		is_subject_of = c:RUS
+		has_law = law_type:law_presidential_republic
+		is_subject_type = subject_type_puppet
+	}
+}
+
+gov_viceroyalty = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_VICEROY"
+	female_ruler = "RULER_TITLE_VICEROY"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		exists = c:RUS
+		c:RUS = { has_law = law_type:law_monarchy }
+		is_subject_of = c:RUS
+		has_law = law_type:law_presidential_republic
+		is_subject_type = subject_type_dominion
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+# 01_building_groups.txt
+ bg_finance:0 "Financial Buildings"
+ bg_copper_fields:0 "Copper Fields"
+ bg_copper_mining:0 "Copper Mining"
+ bg_quarries:0 "Quarries"
+ bg_road_network:0 "Road Network"
+ bg_silver_fields:0 "Silver Fields"
+ bg_silver_mining:0 "Silver Mining"

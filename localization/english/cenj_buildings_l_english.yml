@@ -1,0 +1,32 @@
+﻿l_english:
+# 01_industry.txt
+ building_brickworks:0 "Brickworks"
+ building_brickworks_lens_option:0 "Expand $building_brickworks$"
+ building_cement_factory:0 "Cement Factory"
+ building_cement_factory_lens_option:0 "Expand $building_cement_factory$"
+ building_explosives_industry:0 "Explosives Industry"
+ building_explosives_industry_lens_option:0 "Expand $building_explosives_industry$"
+ building_fertilizer_factory:0 "Fertilizer Factory"
+ building_fertilizer_factory_lens_option:0 "Expand $building_fertilizer_factory$"
+# 03_mines.txt
+ building_copper_fields:0 "Copper Fields"
+ building_copper_fields_discovered_resource:0 "Copper"
+ building_copper_mine:0 "Copper Mine"
+ building_copper_mine_lens_option:0 "Expand $building_copper_mine$"
+ building_quarry:0 "Quarry"
+ building_quarry_lens_option:0 "Expand $building_quarry$"
+ building_silver_fields:0 "Silver Fields"
+ building_silver_fields_discovered_resource:0 "Silver"
+ building_silver_mine:0 "Silver Mine"
+ building_silver_mine_lens_option:0 "Expand $building_silver_mine$"
+# 11_private_infrastructure.txt
+ building_road_network:0 "Road Network"
+ building_road_network_lens_option:0 "Expand $building_road_network$"
+# 14_finance.txt
+ building_finance_sector:0 "Finance Sector"
+ building_finance_sector_lens_option:0 "Expand $building_finance_sector$"
+ building_mint:0 "Mint"
+ building_mint_lens_option:0 "Expand $building_mint$"
+# 16_extras.txt
+ building_publishing_house:0 "Publishing Houses"
+ building_publishing_house_lens_option:0 "Expand $building_publishing_house$"

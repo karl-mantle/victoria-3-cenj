@@ -22,6 +22,11 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_anglican_church
 		}
+
+		ig:ig_armed_forces = {
+			set_interest_group_name = ig_boer_commandos
+		}
+
 		add_taxed_goods = g:grain
 	}
 }

@@ -1,0 +1,126 @@
+﻿# Added
+
+COU = { # Courland
+	dynamic_country_name = {
+		name = dyn_c_cou_subject_rus
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:COU
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+EPR = { # East Prussia
+	dynamic_country_name = {
+		name = dyn_c_epr_subject_pol
+		adjective = dyn_c_epr_subject_pol_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {			
+				is_subject_of = c:POL
+			}
+		}
+	}
+}
+
+EST = { # Estonia
+	dynamic_country_name = {
+		name = dyn_c_est_subject_rus
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:EST
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+LVN = { # Livonia
+	dynamic_country_name = {
+		name = dyn_c_lvn_subject_rus
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:LVN
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+PML = { # Pomerelia
+	dynamic_country_name = {
+		name = dyn_c_pml_subject_pru
+		adjective = dyn_c_pml_subject_pru_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {			
+				is_subject_of = c:PRU
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_pml_subject_pol
+		adjective = dyn_c_pml_subject_pol_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {			
+				is_subject_of = c:POL
+			}
+		}
+	}
+}
+
+POL = { # Poland
+	dynamic_country_name = {
+		name = dyn_c_pol_congress
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:POL
+					type = personal_union
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}

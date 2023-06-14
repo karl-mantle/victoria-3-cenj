@@ -1,25 +1,28 @@
 ﻿state_trait_serra_dos_carajas = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
 		building_iron_mine_throughput_mult = 0.2
+		building_output_iron_mult = 0.1
 	}
 }
 
 state_trait_chincha_islands = {
-    icon = "gfx/interface/icons/state_trait_icons/bat.dds"
+	icon = "gfx/interface/icons/state_trait_icons/bat.dds"
 	
 	modifier = {
 		building_sulfur_mine_throughput_mult = 0.2
+		building_output_sulfur_mult = 0.1
 	}
 }
 
 state_trait_lake_maracaibo = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
 	
 	modifier = {
 		building_group_bg_fishing_throughput_mult = 0.2
-		state_infrastructure_add = 15
+		building_output_fish_mult = 0.1
+		state_infrastructure_add = 30 # 15
 	}
 }
 
@@ -36,6 +39,7 @@ state_trait_el_mutun = {
 	
 	modifier = {
 		building_iron_mine_throughput_mult = 0.2
+		building_output_iron_mult = 0.1
 	}
 }
 
@@ -52,8 +56,9 @@ state_trait_atacama_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
 
 	modifier = {
-		building_sulfur_mine_throughput_mult = 0.15
-		#state_construction_mult = -0.1
+		building_sulfur_mine_throughput_mult = 0.2
+		building_output_sulfur_mult = 0.1
+		# state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 	}
 }
@@ -62,7 +67,7 @@ state_trait_andes = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 	
 	modifier = {
-		#state_construction_mult = -0.2
+		# state_construction_mult = -0.2
 		state_infrastructure_mult = -0.2
 	}
 }
@@ -80,7 +85,7 @@ state_trait_amazon_rainforest = {
 	
 	modifier = {
 		building_output_hardwood_mult = 0.25
-		#state_construction_mult = -0.33
+		# state_construction_mult = -0.33
 		state_infrastructure_mult = -0.33
 	}
 }
@@ -89,7 +94,7 @@ state_trait_orinoco_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -97,7 +102,7 @@ state_trait_uruguay_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -105,7 +110,7 @@ state_trait_parana_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -113,7 +118,7 @@ state_trait_paraguay_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 20
+		state_infrastructure_add = 40 # 20
 	}
 }
 
@@ -121,16 +126,17 @@ state_trait_amazon_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_add = 15
+		state_infrastructure_add = 30 # 15
 	}
 }
 
 # Added
 
 state_trait_iron_quadrangle = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = 0.1
+		building_iron_mine_throughput_mult = 0.2
+		building_output_iron_mult = 0.1
 	}
 }

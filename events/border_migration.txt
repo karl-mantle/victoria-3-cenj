@@ -5,7 +5,7 @@ border_migration.1 = {
 	hidden = yes
 	trigger = {
 		#is_ai = no # Type an '#' before to make it a comment
-        has_law = law_type:law_no_migration_controls
+		has_law = law_type:law_no_migration_controls
 		any_scope_state = {
 			average_sol > 15
 			any_neighbouring_state = {

@@ -1,0 +1,21 @@
+﻿# Added
+
+HBC = { # Rupert's Land > Hudson's Bay Company
+	dynamic_country_name = {
+		name = dyn_c_hbc_subject_gbr
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:HBC
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}

@@ -111,6 +111,7 @@ je_sick_man_syria = {
 			egyptian_crisis_events.1
 		}
 	}
+
 	transferable = no
 
 	weight = 5000
@@ -390,6 +391,7 @@ je_sick_man_bureaucracy = {
 
 	weight = 5000
 }
+
 je_dead_man_walking = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 

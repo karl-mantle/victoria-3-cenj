@@ -1,0 +1,17 @@
+﻿# New Providence
+
+NSS = { 
+	textured_emblem = { texture = "EU4toVic2/NSS.tga" } 
+}
+
+# Port Royale
+
+PRY = { 
+	textured_emblem = { texture = "EU4toVic2/PRY.tga" } 
+}
+
+# Tortuga
+
+TOR = { 
+	textured_emblem = { texture = "EU4toVic2/TOR.tga" }
+}

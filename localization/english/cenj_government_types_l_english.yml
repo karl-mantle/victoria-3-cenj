@@ -1,0 +1,16 @@
+﻿l_english:
+
+ gov_boer_state:0 "Boer Republic"
+ RULER_TITLE_COMMANDANT_GENERAL:0 "Commandant-General"
+ gov_boer_state_desc:0 "This is a [concept_government] form where the power rests with the [Concept('concept_ruler','$RULER_TITLE_COMMANDANT_GENERAL$')]."
+
+ gov_griqua_state:0 "Griqua State"
+ gov_griqua_state_desc:0 "This is a [concept_government] form where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_KAPTEIN$')] of the state."
+ RULER_TITLE_KAPTEIN:0 "Kaptein"
+
+ gov_governorate:0 "Governorate"
+ gov_governorate_desc:1 "This is a [concept_government] form where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_GOVERNOR$')]."
+
+ gov_viceroyalty:0 "Viceroyalty"
+ gov_viceroyalty_desc:1 "This is a [concept_government] form where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_VICEROY$')]."
+ RULER_TITLE_VICEROY:0 "Viceroy"

@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:ABK = {
+		create_character = {
+			first_name = Mikhail
+			last_name = Sharvashidze
+			historical = yes
+			ruler = yes
+			culture = cu:circassian
+			religion = rel:orthodox
+			age = 31
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				persistent
+			}
+		}
+	}
+}
