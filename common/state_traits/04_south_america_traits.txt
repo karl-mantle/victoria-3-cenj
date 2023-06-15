@@ -132,11 +132,47 @@ state_trait_amazon_river = {
 
 # Added
 
+state_trait_bay_of_candelaria = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_gulf_of_paria = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_rio_de_janeiro_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
 state_trait_iron_quadrangle = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
 		building_iron_mine_throughput_mult = 0.2
 		building_output_iron_mult = 0.1
+	}
+}
+
+state_trait_valparaiso_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
 	}
 }

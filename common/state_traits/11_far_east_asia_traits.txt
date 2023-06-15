@@ -81,30 +81,20 @@ state_trait_siberian_terrain = {
 
 # Added
 
+state_trait_central_plains = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.1
+	}
+}
+
 state_trait_dojima_rice_exchange = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
 	
 	modifier = {
 		building_group_bg_agriculture_throughput_mult = 0.2
 		building_output_grain_mult = 0.1
-	}
-}
-
-state_trait_satsuma_ware = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_porcelain.dds"
-	
-	modifier = {
-		building_glassworks_throughput_mult = 0.1
-		building_output_porcelain_mult = 0.25
-	}
-}
-
-state_trait_miike_coalfield = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
-	
-	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
 	}
 }
 
@@ -117,11 +107,72 @@ state_trait_ishikari_coalfield = {
 	}
 }
 
+state_trait_japanese_alps = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_kanto_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.2
+		building_output_grain_mult = 0.1
+	}
+}
+
+state_trait_kyushu_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/hills.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.05
+	}
+}
+
 state_trait_manchurian_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = -0.1
+	}
+}
+
+state_trait_miike_coalfield = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
+	}
+}
+
+state_trait_osaka_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 10
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+state_trait_paktong = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_copper.dds" # Change to resources_currency.dds
+
+	modifier = {
+		# modifier_building_group_bg_finance_throughput_mult = 0.2
+		building_output_currency_mult = 0.1
+	}
+}
+
+state_trait_satsuma_ware = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_porcelain.dds"
+	
+	modifier = {
+		building_glassworks_throughput_mult = 0.1
+		building_output_porcelain_mult = 0.25
 	}
 }
 
@@ -134,11 +185,44 @@ state_trait_shanxi_coalfield = {
 	}
 }
 
-state_trait_paktong = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_copper.dds" # Change to resources_currency.dds
-
+state_trait_shikoku_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
 	modifier = {
-		# modifier_building_group_bg_finance_throughput_mult = 0.2
-		building_output_currency_mult = 0.1
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_songliao_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.1
+	}
+}
+
+state_trait_sredinny_range = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_tokyo_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 10
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+state_trait_yangtze_river_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.2
+		building_group_bg_plantation_throughput_mult = 0.2
 	}
 }

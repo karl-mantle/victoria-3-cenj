@@ -300,7 +300,6 @@ pmg_base_building_trade_center = {
 
 pmg_base_building_road_network = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
 
 	production_methods = {
 		pm_natural_routes
@@ -313,7 +312,6 @@ pmg_base_building_road_network = {
 
 pmg_interstate_road_network = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
 	
 	production_methods = {
 		pm_no_coaches

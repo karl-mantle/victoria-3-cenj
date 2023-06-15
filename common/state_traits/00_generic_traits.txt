@@ -29,7 +29,7 @@ state_trait_natural_harbors = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
-		building_shipyards_throughput_mult = 0.1
+		# building_shipyards_throughput_mult = 0.1
 		state_building_port_max_level_add = 5 # 2
 		state_building_naval_base_max_level_add = 10
 	}
@@ -39,8 +39,8 @@ state_trait_good_soils = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_mult = 0.15 # 0.1
-		building_group_bg_plantations_throughput_mult = 0.15 # 0.1
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
 	}
 }
 
@@ -57,7 +57,7 @@ state_trait_arctic_whaling = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_whales.dds"
 	
 	modifier = {
-		building_group_bg_whaling_throughput_mult = 0.25 # 0.2
+		building_group_bg_whaling_throughput_mult = 0.2
 	}
 }
 
@@ -65,7 +65,7 @@ state_trait_antarctic_whaling = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_whales.dds"
 	
 	modifier = {
-		building_group_bg_whaling_throughput_mult = 0.25 # 0.2
+		building_group_bg_whaling_throughput_mult = 0.2
 	}
 }
 
@@ -73,7 +73,7 @@ state_trait_terra_rossa = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_mult = 0.15 # 0.25
+		building_group_bg_agriculture_throughput_mult = 0.2 # 0.25
 	}
 }
 

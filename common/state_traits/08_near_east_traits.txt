@@ -61,6 +61,14 @@ state_trait_mesopotamian_floodplain = {
 
 # Added
 
+state_trait_anatolian_plateau = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.1
+	}
+}
+
 state_trait_mocha = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coffee.dds"
 	

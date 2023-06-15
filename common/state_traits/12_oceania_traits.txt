@@ -41,3 +41,22 @@ state_trait_australian_desert = {
 		state_infrastructure_mult = -0.25
 	}
 }
+
+# Added
+
+state_trait_sydney_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 10
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+state_trait_ta_shan = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}

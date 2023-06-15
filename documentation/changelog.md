@@ -1,4 +1,8 @@
 # Changelog
+### 0.0.30
+- dozens of state traits added to the map mainly geographical features e.g. rivers, mountains, harbours and plains
+- changed construction speed
+- fixed localisation errors
 ### 0.0.29
 - all buildings except military are now half their vanilla size i.e. produce half goods, employ half people
 - changed levels per mesh from 5 to 10 on all buildings

@@ -8,7 +8,7 @@ This is the first mod that I've created for a Paradox game in over a decade, and
 
 This mod was originally titled Cultures, Events, Nations, Journals.
 
-For a list of features please see feature_list.md in the documentation folder.
+For a list of features and an update changelog, please see the documentation folder within this mod.
 
 ## Installation
 
@@ -18,24 +18,11 @@ Download the contents of this project and place it in your Victoria 3 mods folde
 
 This mod is written for the latest* version of Victoria 3 - patch 1.3.3
 
-Please note: this mod will inherently cause the game to run slower than vanilla, especially from the midgame onwards.
+Please note: this mod will inherently cause the game to run slower than vanilla, especially from the midgame onwards (around the 1860s...).
 
-Most of the files within this mod will work as seperate overwrites so it should be compatible with other mods, the exception is the directories listed below where I have overwritten the vanilla file(s). Any other mod you have installed won't be compatible with CENJ if it also overwrites these vanilla files without making a compatibility patch.
+This mod should be fully compatible with any cosmetic / GUI mods as long as they're loaded after this one.
 
-### Overwritten vanilla files and directories
-
-- This will need to be updated further. It is not correct at present.
-
-- /common/buy_packages/00_buy_packages.txt
-- /common/history/buildings/ < all files >
-- /common/history/countries/ < all files >
-- /common/history/pops/ < all files >
-- /common/history/states/00_states.txt
-- /common/scripted_effects/00_political_setup.txt
-- /common/scripted_effects/00_starting_inventions.txt
-- /common/strategic_regions/eurioe_strategic_regions.txt
-- /gfx/map/city_data/city_types/ < all files ending with city or mine >
-- /map_data/state_regions/ < all files >
+Any other kind of mod would have to be looked at on a case-by-case basis.
 
 ## Translation
 
@@ -46,8 +33,6 @@ Other languages will be added in the future, if you would like to add a translat
 ## Credits
 
 A full list of credits can be found in ~/documentation/credits.md.
-
-A big thank you to everyone that has helped me!
 
 ### Licence
 

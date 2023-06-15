@@ -133,7 +133,7 @@ state_trait_alps_mountains = {
 		
 	modifier = {
 		# state_construction_mult = -0.15
-		state_infrastructure_mult = -0.15
+		state_infrastructure_mult = -0.2
 	}
 }
 
@@ -142,7 +142,7 @@ state_trait_pyrenees_mountains = {
 	
 	modifier = {
 		# state_construction_mult = -0.15
-		state_infrastructure_mult = -0.15
+		state_infrastructure_mult = -0.2
 	}
 }
 
@@ -156,10 +156,36 @@ state_trait_po_river = {
 
 # Added
 
+state_trait_alpine_terrain = {
+	icon = "gfx/interface/icons/state_trait_icons/hills.dds"
+		
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
 state_trait_minette_ore = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
 		building_iron_mine_throughput_mult = -0.2
+	}
+}
+
+state_trait_port_hercules = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_roadstead_of_brest = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
 	}
 }
