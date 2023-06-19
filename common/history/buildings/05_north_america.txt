@@ -191,6 +191,12 @@
 				reserves=1
 				activate_production_methods={ "pm_maintained_roads" "pm_no_coaches" "pm_privately_owned_building_road_network" }
 			}
+			create_building={
+				building="building_health_facilities"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_early_modern_medicine" "pm_apothecaries" "pm_privately_owned_hospital" }
+			}		
 		}
 	}
 	if = {
@@ -825,6 +831,13 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}			
+			# Added
+			create_building={
+				building="building_health_facilities"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_modern_medicine" "pm_apothecaries" "pm_privately_owned_hospital" }
+			}		
 		}
 	}
 	s:STATE_WEST_VIRGINIA={
@@ -888,6 +901,12 @@
 				reserves=1
 				activate_production_methods={ "pm_historic_roads" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
+			create_building={
+				building="building_health_facilities"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_modern_medicine" "pm_apothecaries" "pm_privately_owned_hospital" }
+			}		
 		}
 	}
 	s:STATE_DELAWARE={
@@ -1024,6 +1043,12 @@
 				reserves=1
 				activate_production_methods={ "pm_historic_roads" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
+			create_building={
+				building="building_health_facilities"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_modern_medicine" "pm_apothecaries" "pm_privately_owned_hospital" }
+			}		
 		}
 	}
 	s:STATE_NEW_JERSEY={
@@ -1264,6 +1289,12 @@
 				reserves=1
 				activate_production_methods={ "pm_maintained_roads" "pm_no_coaches" "pm_privately_owned_building_road_network" }
 			}
+			create_building={
+				building="building_health_facilities"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_modern_medicine" "pm_apothecaries" "pm_privately_owned_hospital" }
+			}		
 		}
 	}
 	s:STATE_NEW_HAMPSHIRE={
@@ -1585,6 +1616,12 @@
 				reserves=1
 				activate_production_methods={ "pm_maintained_roads" "pm_no_coaches" "pm_privately_owned_building_road_network" }
 			}
+			create_building={
+				building="building_health_facilities"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_modern_medicine" "pm_apothecaries" "pm_privately_owned_hospital" }
+			}		
 		}
 	}
 	s:STATE_NEW_BRUNSWICK={
@@ -1698,6 +1735,12 @@
 				reserves=1
 				activate_production_methods={ "pm_maintained_roads" "pm_no_coaches" "pm_privately_owned_building_road_network" }
 			}
+			create_building={
+				building="building_health_facilities"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_modern_medicine" "pm_apothecaries" "pm_privately_owned_hospital" }
+			}		
 		}
 		region_state:HBC={
 			create_building={

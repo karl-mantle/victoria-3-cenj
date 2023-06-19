@@ -28,8 +28,8 @@ state_trait_kazakh_steppe = {
 	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_mult = 0.1
-		building_group_bg_logging_throughput_mult = -0.2
+		building_group_bg_agriculture_throughput_mult = -0.2
+		building_group_bg_ranching_throughput_mult = 0.1
 	}
 }
 
@@ -37,8 +37,8 @@ state_trait_mongol_steppe = {
 	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_mult = 0.1
-		building_group_bg_logging_throughput_mult = -0.2
+		building_group_bg_agriculture_throughput_mult = -0.2
+		building_group_bg_ranching_throughput_mult = 0.1
 	}
 }
 
@@ -55,7 +55,6 @@ state_trait_pontic_steppe = {
 	
 	modifier = {
 		building_group_bg_agriculture_throughput_mult = 0.1
-		building_group_bg_logging_throughput_mult = -0.1
 	}
 }
 

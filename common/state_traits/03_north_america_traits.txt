@@ -382,7 +382,7 @@ state_trait_rio_grande = {
 	
 	modifier = {
 		state_infrastructure_add = 20
-		building_group_bg_agriculture_throughput_mult = 0.05
+		building_group_bg_ranching_throughput_mult = 0.2
 	}	
 }
 
@@ -408,7 +408,7 @@ state_trait_san_juan_basin = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_mult = 0.05
+		building_group_bg_agriculture_throughput_mult = 0.1
 	}
 }
 

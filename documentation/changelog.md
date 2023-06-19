@@ -1,4 +1,17 @@
 # Changelog
+*This list is not exhaustive.*
+### 0.0.31
+- changed government offices PM method modifiers
+- changed magazines to literature (books)
+- changed pop needs and buy packages (new needs added entertainment and medical), changes to existing needs
+- new medicine good
+- new health facilities building for urban medicine, subsistence farms now produce medicine in home workshops as an analogue of folk / traditional medicine and home remedies
+- seemingly works ok as china produces enough medicine decentralised as was the case in 1800s, and the western countries are more dependent on purpose built medical infrastructure
+- changed some state traits (mainly agriculture bonuses)
+- subsistence farms now make a small amount of tools
+- ports now now make a small amount of transport
+- added some health facilities to game start
+- changed some buildings history in europe
 ### 0.0.30
 - dozens of state traits added to the map mainly geographical features e.g. rivers, mountains, harbours and plains
 - changed construction speed

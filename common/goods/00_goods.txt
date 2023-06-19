@@ -230,14 +230,40 @@ currency = {
 	cost = 25
 	category = staple
 
-	prestige_factor = 4
+	prestige_factor = 5
 	traded_quantity = 10
 	convoy_cost_multiplier = 1.25
+
+	consumption_tax_cost = 200
+}
+
+literature = {
+	texture = "gfx/interface/icons/goods_icons/literature.dds"
+	cost = 35
+	category = staple
+
+	prestige_factor = 5
+	traded_quantity = 10
+	convoy_cost_multiplier = 0.25
+	
+	consumption_tax_cost = 300
+}
+
+medicine = {
+	texture = "gfx/interface/icons/goods_icons/medicine.dds"
+	cost = 30
+	category = staple
+
+	prestige_factor = 5
+	traded_quantity = 7.5
+	convoy_cost_multiplier = 0.25
+
+	consumption_tax_cost = 300
 }
 
 newspapers = {
 	texture = "gfx/interface/icons/goods_icons/newspapers.dds"
-	cost = 11
+	cost = 15
 	category = staple
 
 	prestige_factor = 5
@@ -413,7 +439,7 @@ bricks = {
 	cost = 35
 	category = industrial
 
-	prestige_factor = 4
+	prestige_factor = 5
 	traded_quantity = 10
 	convoy_cost_multiplier = 1.5
 }
@@ -423,7 +449,7 @@ cement = {
 	cost = 40
 	category = industrial
 
-	prestige_factor = 4
+	prestige_factor = 5
 	traded_quantity = 5
 	convoy_cost_multiplier = 1
 }
@@ -433,9 +459,11 @@ chemicals = {
 	cost = 40
 	category = industrial
 
-	prestige_factor = 3
+	prestige_factor = 5
 	traded_quantity = 10
 	convoy_cost_multiplier = 1
+
+	consumption_tax_cost = 200
 }
 
 clay = {
@@ -443,7 +471,7 @@ clay = {
 	cost = 20
 	category = industrial
 	
-	prestige_factor = 2
+	prestige_factor = 4
 	traded_quantity = 10
 	convoy_cost_multiplier = 1.5
 }
@@ -453,7 +481,7 @@ copper = {
 	cost = 50
 	category = industrial
 
-	prestige_factor = 5
+	prestige_factor = 4
 	traded_quantity = 5
 	convoy_cost_multiplier = 1.25
 }
@@ -463,7 +491,7 @@ limestone = {
 	cost = 20
 	category = industrial
 	
-	prestige_factor = 2
+	prestige_factor = 4
 	traded_quantity = 10
 	convoy_cost_multiplier = 1
 }
@@ -638,7 +666,7 @@ gold = {
 	category = luxury
 
 	obsession_chance = 1.0
-	prestige_factor = 10
+	prestige_factor = 5
 	convoy_cost_multiplier = 1.5
 }
 
@@ -655,26 +683,16 @@ fine_art = {
 
 # Added
 
-magazines = {
-	texture = "gfx/interface/icons/goods_icons/magazines.dds"
-	cost = 50
-	category = luxury
-
-	prestige_factor = 7
-	traded_quantity = 5
-	convoy_cost_multiplier = 0.2
-	
-	consumption_tax_cost = 100
-}
-
 securities = {
 	texture = "gfx/interface/icons/goods_icons/securities.dds"
 	cost = 100
 	category = luxury
 	
-	prestige_factor = 5
+	prestige_factor = 10
 	traded_quantity = 5
 	convoy_cost_multiplier = 0.5
+
+	consumption_tax_cost = 100
 }
 
 silver = {
@@ -683,6 +701,6 @@ silver = {
 	category = luxury
 	
 	obsession_chance = 1.0
-	prestige_factor = 7
+	prestige_factor = 5
 	convoy_cost_multiplier = 1.5
 }

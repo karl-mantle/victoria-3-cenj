@@ -33,6 +33,7 @@ pm_basic_port = {
 		workforce_scaled = {	
 			building_input_clippers_add = 5
 			building_output_charterparties_add = 5
+			building_output_transport_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 1500 # 3000
@@ -65,6 +66,7 @@ pm_industrial_port = {
 			building_input_steamers_add = 5
 			building_input_coal_add = 5
 			building_output_charterparties_add = 10
+			building_output_transport_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 1000 # 2000
@@ -97,6 +99,7 @@ pm_modern_port = {
 			building_input_steamers_add = 5	
 			building_input_oil_add = 10
 			building_output_charterparties_add = 20
+			building_output_transport_add = 10
 		}
 		level_scaled = {
 			building_employment_laborers_add = 375 # 750
@@ -123,14 +126,14 @@ pm_simple_organization = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 35
+			country_bureaucracy_add = 15 # 35
 
 		}
 	}	
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_tax_capacity_add = 5
+			state_tax_capacity_add = 3 # 5
 		}		
 	}
 
@@ -150,19 +153,19 @@ pm_horizontal_drawer_cabinets = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 50
+			country_bureaucracy_add = 25 # 50
 		}
 	}
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_tax_capacity_add = 10
+			state_tax_capacity_add = 5 # 10
 		}		
 	}	
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 10
+			building_input_paper_add = 5 # 10
 		}			
 	
 		level_scaled = {
@@ -179,19 +182,19 @@ pm_vertical_filing_cabinets = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 65
+			country_bureaucracy_add = 35 # 65
 		}
 	}	
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_tax_capacity_add = 15
+			state_tax_capacity_add = 10 # 15
 		}		
 	}	
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 20
+			building_input_paper_add = 10 # 20
 		}	
 	
 		level_scaled = {
@@ -208,20 +211,20 @@ pm_switch_boards = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 100
+			country_bureaucracy_add = 50 # 100
 		}
 	}
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_tax_capacity_add = 30
+			state_tax_capacity_add = 15 # 30
 		}		
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 20
-			building_input_telephones_add = 5
+			building_input_paper_add = 10 # 20
+			building_input_telephones_add = 2.5 # 5
 		}
 
 		level_scaled = {
@@ -295,13 +298,13 @@ pm_scholastic_education = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_weekly_innovation_add = 2
+			country_weekly_innovation_add = 1 # 2
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 5
+			building_input_paper_add = 2.5 # 5
 		}	
 	
 		level_scaled = {
@@ -326,13 +329,13 @@ pm_philosophy_department = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_weekly_innovation_add = 3
+			country_weekly_innovation_add = 2 # 3
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 10
+			building_input_paper_add = 5 # 10
 		}
 		
 		level_scaled = {
@@ -357,13 +360,13 @@ pm_analytical_philosophy_department = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_weekly_innovation_add = 4
+			country_weekly_innovation_add = 3 # 4
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = { 
-			building_input_paper_add = 15
+			building_input_paper_add = 7.5 # 15
 		}
 		
 		level_scaled = {
@@ -420,7 +423,7 @@ pm_skyscraper_bureaucratic_nexus = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 25
+			building_input_paper_add = 12.5 # 25
 		}
 
 		level_scaled = {
@@ -436,13 +439,13 @@ pm_skyscraper_trade_nexus = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_trade_route_quantity_mult = 0.25
+			country_trade_route_quantity_mult = 0.125 # 0.25
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 25
+			building_input_paper_add = 12.5 # 25
 		}
 
 		level_scaled = {

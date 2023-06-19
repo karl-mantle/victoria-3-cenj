@@ -27,6 +27,9 @@
  building_finance_sector_lens_option:0 "Expand $building_finance_sector$"
  building_mint:0 "Mint"
  building_mint_lens_option:0 "Expand $building_mint$"
+# 15_healthcare.txt
+ building_health_facilities:0 "Health Facilities"
+ building_health_facilities_lens_option:0 "Expand $building_health_facilities$"
 # 16_extras.txt
  building_publishing_house:0 "Publishing Houses"
  building_publishing_house_lens_option:0 "Expand $building_publishing_house$"

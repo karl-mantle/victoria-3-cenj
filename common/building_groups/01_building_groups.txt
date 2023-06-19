@@ -98,6 +98,18 @@ bg_finance = {
 	cash_reserves_max = 100000
 }
 
+# 15_healthcare.txt
+
+bg_healthcare = {
+	parent_group = bg_urban_facilities
+
+	lens = infrastructure
+
+	category = development
+
+	cash_reserves_max = 25000
+}
+
 # 16_extras.txt
 
 bg_publishing_house = {

@@ -79,9 +79,19 @@ texticon = {
 }
 
 texticon = {
-	icon = magazines
+	icon = literature
 	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/magazines.dds"
+		texture = "gfx/interface/icons/goods_icons/literature.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = medicine
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/medicine.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18

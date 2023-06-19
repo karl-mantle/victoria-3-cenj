@@ -107,7 +107,6 @@ state_trait_great_hungarian_plain = {
 	
 	modifier = {
 		building_group_bg_agriculture_throughput_mult = 0.1
-		building_group_bg_logging_throughput_mult = -0.1
 	}
 }
 

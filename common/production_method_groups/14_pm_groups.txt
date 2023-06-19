@@ -413,6 +413,37 @@ pmg_ownership_capital_building_mint = {
 	}
 }
 
+# 15_healthcare
+
+pmg_base_building_health_facilities = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_traditional_medicine
+		pm_early_modern_medicine
+		pm_modern_medicine
+	}
+}
+
+pmg_production_building_health_facilities = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_pharmaceuticals
+		pm_apothecaries
+		pm_pharmacies
+	}
+}
+
+pmg_ownership_building_health_facilities = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_charity_run_hospital
+		pm_privately_owned_hospital
+		pm_publicly_traded_hospital
+		pm_government_run_hospital
+		pm_university_run_hospital
+	}
+}
+
 # 16_extras
 
 pmg_base_building_publishing_house = {
@@ -427,7 +458,7 @@ pmg_production_building_publishing_house = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_prod_newspapers
-		pm_prod_magazines
+		pm_prod_literature
 	}
 }
 

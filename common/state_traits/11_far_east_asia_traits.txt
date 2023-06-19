@@ -85,7 +85,7 @@ state_trait_central_plains = {
 	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_agriculture_throughput_mult = 0.2
 	}
 }
 

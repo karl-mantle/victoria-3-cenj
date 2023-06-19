@@ -41,6 +41,8 @@ pm_home_workshops_building_subsistence_farms = {
 			building_output_clothes_add = 0.25 # 0.5 # 15
 			building_output_furniture_add = 0.25 # 0.5 # 15
 			building_output_liquor_add = 0.35 # 0.7 # 21 
+			building_output_medicine_add = 0.15
+			building_output_tools_add = 0.025
 		}
 	}
 }
@@ -131,6 +133,8 @@ pm_home_workshops_building_subsistence_orchards = {
 			building_output_clothes_add = 0.25 # 0.5 # 15
 			building_output_furniture_add = 0.25 # 0.5 # 15
 			building_output_liquor_add = 0.35 # 0.7 # 21
+			building_output_medicine_add = 0.15
+			building_output_tools_add = 0.025
 		}
 	}
 }
@@ -202,6 +206,8 @@ pm_home_workshops_building_subsistence_pastures = {
 			building_output_clothes_add = 0.25 # 0.5 # 15
 			building_output_furniture_add = 0.25 # 0.5 # 15
 			building_output_liquor_add = 0.35 # 0.7 # 21
+			building_output_medicine_add = 0.15
+			building_output_tools_add = 0.025
 		}
 	}
 }
@@ -273,6 +279,8 @@ pm_home_workshops_building_subsistence_fishing_villages = {
 			building_output_clothes_add = 0.25 # 0.5 # 15
 			building_output_furniture_add = 0.25 # 0.5 # 15
 			building_output_liquor_add = 0.35 # 0.7 # 21
+			building_output_medicine_add = 0.15
+			building_output_tools_add = 0.025
 		}
 	}
 }
@@ -342,6 +350,8 @@ pm_home_workshops_building_subsistence_rice_paddies = {
 			building_output_clothes_add = 0.5 # 1 # 30
 			building_output_furniture_add = 0.5 # 1 # 30
 			building_output_liquor_add = 0.75 # 1.5 # # 45
+			building_output_medicine_add = 0.15
+			building_output_tools_add = 0.025
 		}
 	}
 }

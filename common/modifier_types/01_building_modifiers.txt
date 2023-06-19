@@ -85,6 +85,16 @@ building_output_limestone_add = {
 	percent = no
 }
 
+building_input_literature_add = {
+	good = no
+	percent = no
+}
+
+building_output_literature_add = {
+	good = yes
+	percent = no
+}
+
 building_input_newspapers_add = {
 	good = no
 	percent = no
@@ -95,12 +105,12 @@ building_output_newspapers_add = {
 	percent = no
 }
 
-building_input_magazines_add = {
+building_input_medicine_add = {
 	good = no
 	percent = no
 }
 
-building_output_magazines_add = {
+building_output_medicine_add = {
 	good = yes
 	percent = no
 }
@@ -182,12 +192,12 @@ building_output_lead_mult = {
 	percent = yes
 }
 
-building_output_luxury_clothes_mult = {
+building_output_literature_mult = {
 	good = yes
 	percent = yes
 }
 
-building_output_magazines_mult = {
+building_output_luxury_clothes_mult = {
 	good = yes
 	percent = yes
 }
