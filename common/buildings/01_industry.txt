@@ -390,8 +390,8 @@ building_brickworks = {
 		manufacturies
 	}
 
-	# city_type = city
-	# levels_per_mesh = 10
+	city_type = city
+	levels_per_mesh = 10
 
 	production_method_groups = {
 		pmg_base_building_brickworks
@@ -422,8 +422,8 @@ building_cement_factory = {
 		manufacturies
 	}
 
-	# city_type = city
-	# levels_per_mesh = 10
+	city_type = city
+	levels_per_mesh = 10
 
 	production_method_groups = {
 		pmg_base_building_cement_factory
@@ -452,8 +452,8 @@ building_explosives_industry = {
 		percussion_cap
 	}
 	
-	# city_type = city
-	# levels_per_mesh = 10
+	city_type = city
+	levels_per_mesh = 10
 
 	production_method_groups = {
 		pmg_base_building_explosives_industry
@@ -482,8 +482,8 @@ building_fertilizer_factory = {
 		intensive_agriculture
 	}
 	
-	# city_type = city
-	# levels_per_mesh = 10
+	city_type = city
+	levels_per_mesh = 10
 
 	production_method_groups = {
 		pmg_base_building_fertilizer_factory

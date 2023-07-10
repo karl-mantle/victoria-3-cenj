@@ -3,7 +3,7 @@
 		limit = { $LIMIT$ }
 		every_scope_state = {
 			every_scope_pop = {
-				limit = { culture = { $FROMCULTURE$  } }
+				limit = { culture = { $FROMCULTURE$ } }
 				change_pop_culture = {
 					target = cu:$TOCULTURE$
 					value = 0.1
@@ -18,7 +18,7 @@ change_pop_culture_trait_state = {
 		every_scope_state = {
 			limit = { $LIMIT$ }
 			every_scope_pop = {
-				limit = { culture = { $FROMCULTURE$  } }
+				limit = { culture = { $FROMCULTURE$ } }
 				change_pop_culture = {
 					target = cu:$TOCULTURE$
 					value = 0.1

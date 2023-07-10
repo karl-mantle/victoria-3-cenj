@@ -119,4 +119,11 @@
 	building_university = {"french_city_university_01_mesh"}
 	building_arts_academy = {"french_city_academy_01_mesh"}
 	building_barracks = {"french_city_barracks_01_mesh"}
+
+	# Added
+	building_brickworks = {"french_city_factory_steel_01_mesh"}
+	building_cement_factory = {"french_city_factory_chemical_01_mesh"}
+	building_explosives_industry = {"french_city_factory_munition_01_mesh"}
+	building_fertilizer_factory = {"french_city_factory_chemical_01_mesh"}
+	building_publishing_house = {"french_city_factory_papermill_01_mesh"}
 }
