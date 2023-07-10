@@ -1,8 +1,5 @@
 # Changelog
 *This list is not exhaustive.*
-### 0.0.33
-- re-enabled mesh for custom buildings
-- test pull request
 ### 0.0.32
 - added around 50 new states
 - new possible kanal (kra kanal) in thailand
