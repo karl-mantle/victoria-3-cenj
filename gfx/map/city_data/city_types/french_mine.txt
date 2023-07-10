@@ -91,7 +91,6 @@
 	building_gold_fields = {
 		"generic_rural_mining_processing_01_mesh"
 	}
-
 	# Added
 	building_copper_mine = {
 		"french_mining_processing_iron_01_mesh"

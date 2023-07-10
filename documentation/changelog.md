@@ -1,5 +1,7 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.34
+- test
 ### 0.0.33
 - re-enabled mesh for custom buildings
 - test pull request
