@@ -136,3 +136,197 @@ state_trait_sevastopol_harbor = {
 		state_building_naval_base_max_level_add = 15
 	}
 }
+
+# NEED LOCALISATION
+
+state_trait_yenisei_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_lena_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_amur_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_irtysh_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_kama_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_oka_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_don_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_dniester_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_vistula_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_kerch_strait = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_vyatka_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_belaya_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_lake_ladoga = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_lake_onega = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_caspian_sea = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_kuznetsk_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_mult = 0.1
+	}
+}
+
+state_trait_donets_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_mult = 0.1
+	}
+}
+
+state_trait_kma = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_mult = 0.2
+	}
+}
+
+state_trait_kryvbas = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_mult = 0.15
+	}
+}
+
+state_trait_ishim_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_tobol_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_daugava_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_north_dvina_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_pechora_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}

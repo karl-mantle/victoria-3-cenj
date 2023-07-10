@@ -1,0 +1,84 @@
+﻿# Strategic Regions in North America
+
+region_eastern_canada = {
+	capital_province = xB9DD91
+	map_color = { 0.21 0.81 0.82 }
+	states = { STATE_ONTARIO STATE_QUEBEC STATE_NEWFOUNDLAND STATE_NEW_BRUNSWICK }
+}
+
+region_nunavut = {
+	capital_province = x8C4FC7
+	map_color = { 205 178 107 }
+	states = { STATE_NORTHWEST_TERRITORIES STATE_NUNAVUT STATE_YUKON_TERRITORY }
+}
+
+region_new_england = {
+	capital_province = x8F9450
+	map_color = { 0 0.63 0.94 }
+	states = { STATE_MASSACHUSETTS STATE_MAINE STATE_CONNECTICUT STATE_RHODE_ISLAND STATE_VERMONT STATE_NEW_HAMPSHIRE STATE_BERMUDA }
+}
+
+region_pacific_northwest = {
+	capital_province = x2142B1
+	map_color = { 0.471 0.824 0.196 }
+	states = { STATE_WASHINGTON STATE_OREGON STATE_IDAHO STATE_ALASKA STATE_BRITISH_COLUMBIA }
+}
+
+region_great_plains = {
+	capital_province = x8BF1A0
+	map_color = { 0.5 1 0.5 }
+	states = { STATE_MONTANA STATE_OKLAHOMA STATE_WYOMING STATE_COLORADO STATE_NORTH_DAKOTA STATE_SOUTH_DAKOTA STATE_NEBRASKA STATE_KANSAS STATE_ALBERTA STATE_SASKATCHEWAN STATE_MANITOBA }
+}
+
+region_the_midwest = {
+	capital_province = x6B3BE8
+	map_color = { 0 0.8 0.4 }
+	states = { STATE_MINNESOTA STATE_WISCONSIN STATE_IOWA STATE_MISSOURI STATE_MICHIGAN STATE_INDIANA STATE_ILLINOIS STATE_OHIO STATE_KENTUCKY }
+}
+
+region_mid_atlantic = {
+	capital_province = x700080
+	map_color = { 0.25 1 1 }
+	states = { STATE_PENNSYLVANIA STATE_NEW_YORK STATE_NEW_JERSEY STATE_DISTRICT_OF_COLUMBIA STATE_VIRGINIA STATE_MARYLAND STATE_DELAWARE STATE_WEST_VIRGINIA }
+}
+
+region_dixie = {
+	capital_province = xC1273E
+	map_color = { 0.61 0.21 0.42 }
+	states = { STATE_SOUTH_CAROLINA STATE_NORTH_CAROLINA STATE_LOUISIANA STATE_ARKANSAS STATE_MISSISSIPPI STATE_ALABAMA STATE_FLORIDA STATE_GEORGIA STATE_TENNESSEE }
+}
+
+region_southwest = {
+	graphical_culture = "latin"
+	capital_province = x80BCA8
+	map_color = { 19 102 152 }
+	states = { STATE_TEXAS STATE_CALIFORNIA STATE_NEVADA STATE_UTAH STATE_ARIZONA STATE_NEW_MEXICO STATE_SONORA STATE_BAJA_CALIFORNIA STATE_CHIHUAHUA }
+}
+
+region_mexico = {
+	graphical_culture = "latin"
+	capital_province = x0EBDEC
+	map_color = { 0.137 0.627 0.725 }
+	states = { STATE_MEXICO STATE_GUERRERO STATE_VERACRUZ STATE_OAXACA STATE_YUCATAN STATE_CHIAPAS }
+}
+
+region_north_mexico = {
+	graphical_culture = "latin"
+	capital_province = xE34EE3
+	map_color = { 0.837 0.127 0.325 }
+	states = { STATE_JALISCO STATE_DURANGO STATE_SINALOA STATE_ZACATECAS STATE_RIO_GRANDE STATE_BAJIO }
+}
+
+region_central_america = {
+	graphical_culture = "latin"
+	capital_province = x10EFC0
+	map_color = { 1 0.25 0.25 }
+	states = { STATE_HONDURAS STATE_NICARAGUA STATE_COSTA_RICA STATE_PANAMA STATE_SAN_SALVADOR STATE_GUATEMALA }
+}
+
+region_caribbean = {
+	graphical_culture = "latin"
+	capital_province = x877F90
+	map_color = { 0.784 0.843 0 }
+	states = { STATE_CUBA STATE_JAMAICA STATE_HAITI STATE_SANTO_DOMINGO STATE_WEST_INDIES STATE_BAHAMAS STATE_PUERTO_RICO }
+}

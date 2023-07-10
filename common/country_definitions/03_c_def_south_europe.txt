@@ -64,7 +64,7 @@ EPI = { # Epirus
 	country_type = recognized
 	tier = principality
 	cultures = { greek }
-	capital = STATE_THESSALIA
+	capital = STATE_EPIRUS
 }
 ETR = { # Etruria
 	color = { 114 154 143 } 
@@ -85,7 +85,7 @@ GEN = { # Genoa
 	country_type = recognized
 	tier = city_state
 	cultures = { north_italian }
-	capital = STATE_PIEDMONT
+	capital = STATE_LIGURIA
 }
 GIB = { # Gibraltar
 	color = { 218 0 12 }
@@ -98,8 +98,8 @@ KNI = { # Knights of Rhodes
 	color = { 106 127 183 }
 	country_type = recognized
 	tier = city_state
-	cultures = { maltese }
-	capital = STATE_EAST_AEGEAN_ISLANDS
+	cultures = { maltese greek }
+	capital = STATE_AEGEAN_ISLANDS
 }
 MAT = { # Mantua
 	color = { 191 83 101 }
@@ -148,7 +148,7 @@ NAX = { # Naxos
 	country_type = recognized
 	tier = principality
 	cultures = { greek }
-	capital = STATE_WEST_AEGEAN_ISLANDS
+	capital = STATE_CYCLADES
 }
 PDV = { # Padua
 	color = { 186 106 58 }

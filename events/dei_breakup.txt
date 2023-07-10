@@ -298,7 +298,7 @@ dei_breakup.1 = {
 					}
 					any_neighbouring_state = {
 						owner = {
-							capital.region = sr:region_indonesia
+							capital.region = sr:region_west_sunda_islands
 						}
 					}
 				}
@@ -307,7 +307,7 @@ dei_breakup.1 = {
 
 			random_country = {
 				limit = {
-					capital.region = sr:region_indonesia
+					capital.region = sr:region_west_sunda_islands
 					any_scope_state = {
 						any_neighbouring_state = {
 							is_capital = no

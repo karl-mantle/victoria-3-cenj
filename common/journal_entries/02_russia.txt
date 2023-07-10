@@ -5,14 +5,16 @@
         THIS = c:RUS
         is_subject = no
     }
-      possible = {
+    possible = {
         has_technology_researched = nationalism
         NOT = {
             AND = {
                 owns_entire_state_region = STATE_OUTER_MANCHURIA 
-                owns_entire_state_region = STATE_JETISY 
+                owns_entire_state_region = STATE_AMUR
+                owns_entire_state_region = STATE_VLADIVOSTOK
+                owns_entire_state_region = STATE_SEMIRECHE 
                 owns_entire_state_region = STATE_TOMSK
-                owns_entire_state_region = STATE_KIRGHIZIA  
+                owns_entire_state_region = STATE_FERGANA  
             } 
         }
     }
@@ -23,25 +25,33 @@
         s:STATE_OUTER_MANCHURIA = {
             add_claim = c:RUS
         }
-        s:STATE_JETISY = {
+        s:STATE_AMUR = {
+            add_claim = c:RUS
+        }
+        s:STATE_VLADIVOSTOK = {
+            add_claim = c:RUS
+        }
+        s:STATE_SEMIRECHE = {
             add_claim = c:RUS
         }
         s:STATE_TOMSK = {
             add_claim = c:RUS
         }
-        s:STATE_KIRGHIZIA = {
+        s:STATE_FERGANA = {
             add_claim = c:RUS
         }
     }
     complete = {
         owns_entire_state_region = STATE_OUTER_MANCHURIA 
-        owns_entire_state_region = STATE_JETISY 
+        owns_entire_state_region = STATE_AMUR
+        owns_entire_state_region = STATE_VLADIVOSTOK
+        owns_entire_state_region = STATE_SEMIRECHE 
         owns_entire_state_region = STATE_TOMSK
         OR = {
-            owns_entire_state_region = STATE_KIRGHIZIA
+            owns_entire_state_region = STATE_FERGANA
             any_country = {
                 is_subject_of = c:RUS
-                owns_entire_state_region = STATE_KIRGHIZIA
+                owns_entire_state_region = STATE_FERGANA
             }
         }
     }

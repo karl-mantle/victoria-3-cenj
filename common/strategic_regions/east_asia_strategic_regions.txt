@@ -1,0 +1,139 @@
+﻿# Strategic Regions in Eastern Asia
+
+# South East
+
+region_siam = {
+	graphical_culture = "asian"
+	capital_province = x10AFE0
+	map_color = { 0.9 0.1 0.1 }
+	states = { STATE_BANGKOK STATE_CHIANG_MAI STATE_MALAYA STATE_TENASSERIM STATE_KRA }
+}
+
+region_indochina = {
+	graphical_culture = "asian"
+	capital_province = xF0E531
+	map_color = { 0.3 0.5 0.5 }
+	states = { STATE_TONKIN STATE_MEKONG STATE_LAOS STATE_CAMBODIA STATE_NAKHON_RATCHASIMA STATE_ANNAM }
+}
+
+region_east_sunda_islands = {
+	graphical_culture = "asian"
+	capital_province = xCF8A98
+	map_color = { 0.204 0.651 0.308 }
+	states = { STATE_CELEBES STATE_MOLUCCAS STATE_SUNDA_ISLANDS }
+}
+
+region_west_sunda_islands = {
+	graphical_culture = "asian"
+	capital_province = x5CC6B6
+	map_color = { 0.204 0.651 0.308 }
+	states = { STATE_WEST_JAVA STATE_NORTH_SUMATRA STATE_SOUTH_SUMATRA STATE_ACEH STATE_EAST_JAVA STATE_CENTRAL_JAVA }
+}
+
+region_borneo = {
+	graphical_culture = "asian"
+	capital_province = x800170
+	map_color = { 0.804 0.151 0.508 }
+	states = { STATE_WEST_BORNEO STATE_EAST_BORNEO STATE_NORTH_BORNEO }
+}
+
+region_philipines = {
+	graphical_culture = "asian"
+	capital_province = x0D8236
+	map_color = { 0.804 0.151 0.508 }
+	states = { STATE_LUZON STATE_MINDANAO STATE_VISAYAS }
+}
+
+# China
+
+region_south_china = {
+	graphical_culture = "asian"
+	capital_province = x096C00
+	map_color = { 0.8 0.8 0.9 }
+	states = { STATE_GUIZHOU STATE_CHONGQING STATE_SICHUAN STATE_GUANGDONG STATE_GUANGXI STATE_HUNAN STATE_YUNNAN STATE_EASTERN_HUBEI STATE_WESTERN_HUBEI } 
+}
+
+region_east_china = {
+	graphical_culture = "asian"
+	capital_province = xB01101
+	map_color = { 0.9 0.3 0.55 }
+	states = { STATE_SUZHOU STATE_NANJING STATE_SOUTHERN_ANHUI STATE_ZHEJIANG STATE_JIANGXI STATE_FUJIAN STATE_FORMOSA STATE_SHAOZHOU } 
+}
+
+region_north_china = {
+	graphical_culture = "asian"
+	capital_province = x9BB46B
+	map_color = { 1 1 0 }
+	states = { STATE_BEIJING STATE_GANSU STATE_NINGXIA STATE_SHANDONG STATE_ZHILI STATE_HENAN STATE_NORTHERN_ANHUI STATE_SHANXI STATE_JIANGSU STATE_XIAN STATE_SHENGJING }
+}
+
+region_mongolia = {
+	graphical_culture = "asian"
+	capital_province = x7B100B
+	map_color = { 0.55 0.2 0.9 }
+	states = { STATE_DZUNGARIA STATE_ULIASTAI STATE_URGA STATE_ALXA STATE_HINGGAN }
+}
+
+region_manchuria = {
+	graphical_culture = "asian"
+	capital_province = x21D001
+	map_color = { 0.7 0.7 0.3 }
+	states = { STATE_SOUTHERN_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_OUTER_MANCHURIA STATE_AMUR STATE_VLADIVOSTOK }
+}
+
+# East
+
+region_korea = {
+	graphical_culture = "asian"
+	capital_province = xA0E2EE
+	map_color = { 0.77 0.33 0.66 }
+	states = { STATE_SEOUL STATE_BUSAN STATE_SARIWON STATE_PYONGYANG STATE_YANGHO }
+}
+
+region_japan = {
+	graphical_culture = "asian"
+	capital_province = xB050C0
+	map_color = { 0.1 0.7 0.7 }
+	states = { STATE_HOKKAIDO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_KYUSHU STATE_CHUGOKU STATE_SHIKOKU STATE_SAKHALIN STATE_RYUKYU_ISLANDS }
+}
+
+# Siberia
+
+region_ural = {
+	capital_province = x79430B
+	map_color = { 0.11 1 0.55 }
+	states = { STATE_PERM STATE_YEKATERINBURG STATE_YUGRA STATE_TOBOLSK STATE_ORENBURG STATE_UFA STATE_CHELYABINSK }
+}
+
+region_west_siberia = {
+	capital_province = x875B76
+	map_color = { 0.68 1 0.32 }
+	states = { STATE_OMSK STATE_TOMSK STATE_NOVOSIBIRSK STATE_ALTAI STATE_TUVA STATE_KRASNOYARSK STATE_UPPER_YENISEYSK }
+}
+
+region_east_siberia = {
+	capital_province = xE77F10
+	map_color = { 0.204 0.251 0.808 }
+	states = { STATE_YAKUTSK STATE_CHUKOTKA STATE_KAMCHATKA STATE_OKHOTSK STATE_IRKUTSK STATE_BURYATIA STATE_CHITA }
+}
+
+# Oceania
+
+region_oceania = {
+	capital_province = xFDFB3F
+	map_color = { 0.2 0.4 0.7 }
+	states = { STATE_NEW_SOUTH_WALES STATE_VICTORIA STATE_QUEENSLAND STATE_SOUTH_AUSTRALIA STATE_WESTERN_AUSTRALIA STATE_NORTHERN_TERRITORY STATE_NORTH_ISLAND STATE_SOUTH_ISLAND STATE_TASMANIA }
+}
+
+region_polynesia = {
+	capital_province = x54BB3D
+	map_color = { 0.8 0.2 0.1 }
+	states = { STATE_TAHITI STATE_HAWAIIAN_ISLANDS STATE_EAST_MICRONESIA STATE_WEST_MICRONESIA STATE_FIJI STATE_VANUATU STATE_KANAK STATE_BOUGAINVILLE STATE_NAURU STATE_TONGA }
+}
+
+region_papua = {
+	graphical_culture = "asian"
+	capital_province = xA95FFF
+	map_color = { 0.404 0.951 0.108 }
+	states = { STATE_EASTERN_NEW_GUINEA STATE_WESTERN_NEW_GUINEA STATE_SOLOMON_ISLANDS }
+}

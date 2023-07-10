@@ -1,9 +1,9 @@
 ﻿POPS = {
-	s:STATE_URAL = {
+	s:STATE_YEKATERINBURG = {
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 677296
+				size = 617296
 			}
 			create_pop = {
 				culture = tatar
@@ -15,11 +15,27 @@
 			}
 		}
 	}
+	s:STATE_CHELYABINSK = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 401296
+			}
+			create_pop = {
+				culture = tatar
+				size = 5996
+			}
+			create_pop = {
+				culture = ugrian
+				size = 4504
+			}
+		}
+	}
 	s:STATE_TOMSK = {
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 1170008
+				size = 310008
 			}
 			create_pop = {
 				culture = siberian
@@ -40,10 +56,12 @@
 				size = 16000
 			}
 		}
-		region_state:CHI = {
+	}
+	s:STATE_KRASNOYARSK = {
+		region_state:RUS = {
 			create_pop = {
-				culture = tatar
-				size = 36000
+				culture = russian
+				size = 260008
 			}
 			create_pop = {
 				culture = tatar
@@ -56,7 +74,7 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 252000
+				size = 382000
 			}
 			create_pop = {
 				culture = tatar
@@ -72,11 +90,70 @@
 			}
 		}
 	}
+	s:STATE_OMSK = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 577000
+			}
+			create_pop = {
+				culture = ugrian
+				size = 7380
+			}
+			create_pop = {
+				culture = siberian
+				size = 3980
+			}
+		}
+	}
+	s:STATE_NOVOSIBIRSK = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 437000
+			}
+			create_pop = {
+				culture = ugrian
+				size = 7380
+			}
+			create_pop = {
+				culture = siberian
+				size = 3980
+			}
+		}
+	}
+	s:STATE_ALTAI = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 301000
+			}
+			create_pop = {
+				culture = tuvan
+				size = 33980
+			}
+		}
+		region_state:CHI = {
+			create_pop = {
+				culture = tatar
+				size = 36000
+			}
+			create_pop = {
+				culture = tuvan
+				size = 133980
+			}
+			create_pop = {
+				culture = tatar
+				religion = gelugpa
+				size = 16000
+			}
+		}
+	}
 	s:STATE_TUVA = {
 		region_state:CHI = {
 			create_pop = {
 				culture = tuvan
-				size = 30000
+				size = 40000
 			}
 		}
 	}
@@ -88,7 +165,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 852
+				size = 5852
 			}
 			create_pop = {
 				culture = ugrian
@@ -101,7 +178,7 @@
 		}
 	}
 
-	s:STATE_OB = {
+	s:STATE_YUGRA = {
 		region_state:RUS = {
 			create_pop = {
 				culture = samoyed
@@ -109,10 +186,11 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 596
+				size = 30596
 			}
 		}
 	}
+	
 	s:STATE_NENETSIA = {
 		region_state:RUS = {
 			create_pop = {
@@ -142,6 +220,7 @@
 			}
 		}
 	}
+	
 	s:STATE_KAMCHATKA = {
 		region_state:RUS = {
 			create_pop = {
@@ -150,7 +229,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 3400
+				size = 7400
 			}
 		}
 	}
@@ -159,12 +238,12 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = yakut
-				size = 43008
+				size = 23008
 			}
 			create_pop = {
 				culture = yakut
 				religion = orthodox
-				size = 20196
+				size = 10196
 			}
 			create_pop = {
 				culture = siberian
@@ -181,12 +260,12 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = yakut
-				size = 41100
+				size = 91100
 			}
 			create_pop = {
 				culture = yakut
 				religion = orthodox
-				size = 9000
+				size = 29000
 			}
 			create_pop = {
 				culture = russian
@@ -199,8 +278,26 @@
 		}
 	}
 
-
-	s:STATE_TRANS_BAIKAL = {
+	s:STATE_AMUR = {
+		region_state:CHI = {
+			create_pop = {
+				culture = manchu
+				size = 503996
+			}
+			create_pop = {
+				culture = siberian
+				size = 12800
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 30996
+			}
+		}
+	}
+	
+	s:STATE_CHITA = {
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
@@ -224,15 +321,33 @@
 			}
 		}
 	}
+	
 	s:STATE_IRKUTSK = {
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 388408
+				size = 248408
 			}
 			create_pop = {
 				culture = mongol
-				size = 116004
+				size = 66004
+			}
+			create_pop = {
+				culture = siberian
+				size = 4996
+			}
+		}
+	}
+	
+	s:STATE_BURYATIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 140408
+			}
+			create_pop = {
+				culture = mongol
+				size = 50004
 			}
 			create_pop = {
 				culture = siberian

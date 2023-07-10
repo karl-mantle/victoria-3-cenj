@@ -1,0 +1,50 @@
+﻿# Strategic Regions in South America
+
+region_brazil = {
+	graphical_culture = "latin"
+	capital_province = x544559
+	map_color = { 0.222 1 0.362 }
+	states = { STATE_SAO_PAULO STATE_PARANA STATE_RIO_DE_JANEIRO STATE_RIO_GRANDE_DO_SUL STATE_MINAS_GERAIS STATE_BAHIA STATE_PERNAMBUCO STATE_RIO_GRANDE_DO_NORTE STATE_PARAIBA STATE_SANTA_CATARINA }
+}
+
+region_amazonia = {
+	graphical_culture = "latin"
+	capital_province = xC2B97E
+	map_color = { 0.822 0.111 0.862 }
+	states = { STATE_GOIAS STATE_PARA STATE_AMAZONAS STATE_MATO_GROSSO STATE_PIAUI STATE_MARANHAO STATE_CEARA STATE_ACRE }
+}
+
+region_andes = {
+	graphical_culture = "latin"
+	capital_province = x40E12A
+	map_color = { 0 1 0 }
+	states = { STATE_LIMA STATE_ICA STATE_CAJAMARCA STATE_AREQUIPA STATE_SANTA_CRUZ STATE_LA_PAZ STATE_ECUADOR STATE_PASTAZA STATE_POTOSI }
+}
+
+region_la_plata = {
+	graphical_culture = "latin"
+	capital_province = x365A5B
+	map_color = { 0 0.8 0.4 }
+	states = { STATE_BUENOS_AIRES STATE_RIO_NEGRO STATE_LA_PAMPA STATE_SANTA_FE STATE_CORRIENTES STATE_TUCUMAN STATE_CHACO STATE_ALTO_PARAGUAY STATE_BAJO_PARAGUAY STATE_JUJUY STATE_URUGUAY }
+}
+
+region_chile = {
+	graphical_culture = "latin"
+	capital_province = x73C0F8
+	map_color = { 0.8 0.2 0.7 }
+	states = { STATE_SANTIAGO STATE_ANTOFAGASTA STATE_TARAPACA }
+}
+
+region_gran_colombia = {
+	graphical_culture = "latin"
+	capital_province = xA00111
+	map_color = { 0.4 0.3 0.2 }
+	states = { STATE_BOLIVAR STATE_GUAYANA STATE_MIRANDA STATE_ANTIOQUIA STATE_ZULIA STATE_GUAVIARE STATE_CAUCA STATE_CUNDINAMARCA }
+}
+
+region_patagonia = {
+	graphical_culture = "latin"
+	capital_province = x8E85EB
+	map_color = { 0.3 0.2 0.5 }
+	states = { STATE_ARAUCANIA STATE_PATAGONIA STATE_SOUTH_ATLANTIC_ISLANDS STATE_LOS_RIOS }
+}

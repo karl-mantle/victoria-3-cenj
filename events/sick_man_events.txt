@@ -120,13 +120,20 @@ sick_man.2 = {
 				has_variable = completed_separatism_sick_man_je
 			}
 			NAND = {
+				owns_entire_state_region = STATE_EPIRUS
 				owns_entire_state_region = STATE_ATTICA
 				owns_entire_state_region = STATE_PELOPONNESE
 				owns_entire_state_region = STATE_CRETE
 				owns_entire_state_region = STATE_NORTHERN_SERBIA
 				owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
 				owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+				owns_entire_state_region = STATE_CYCLADES
+				owns_entire_state_region = STATE_AEGEAN_ISLANDS
+				owns_entire_state_region = STATE_DODECANESE
 			}
+		}
+		s:STATE_EPIRUS= {
+			add_claim = ROOT
 		}
 		s:STATE_ATTICA = {
 			add_claim = ROOT
@@ -144,6 +151,15 @@ sick_man.2 = {
 			add_claim = ROOT
 		}
 		s:STATE_NORTHERN_TRANSYLVANIA = {
+			add_claim = ROOT
+		}
+		s:STATE_CYCLADES = {
+			add_claim = ROOT
+		}
+		s:STATE_AEGEAN_ISLANDS = {
+			add_claim = ROOT
+		}
+		s:STATE_DODECANESE = {
 			add_claim = ROOT
 		}
 	}

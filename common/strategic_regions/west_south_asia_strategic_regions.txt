@@ -1,55 +1,145 @@
 ﻿# Strategic Regions in West and South Asia
 
 region_anatolia = {
-	graphical_culture = "latin"
-	capital_province = x66B13B
+	graphical_culture = "arabic"
+	capital_province = xCAF12B
 	map_color = { 0.25 0.75 0.25 }
-	states = { STATE_EASTERN_THRACE STATE_HUDAVENDIGAR STATE_AYDIN STATE_KONYA STATE_ANKARA STATE_ADANA STATE_KASTAMONU STATE_CYPRUS STATE_DIYARBAKIR STATE_TRABZON STATE_EAST_AEGEAN_ISLANDS STATE_ERZURUM }
+	states = { STATE_BURSA STATE_AYDIN STATE_ESKISEHIR STATE_KARASI STATE_KAYSERI STATE_ANKARA }
+}
+
+region_pontus = {
+	graphical_culture = "arabic"
+	capital_province = x9655BD
+	map_color = { 0.95 0.15 0.15 }
+	states = { STATE_TRABZON STATE_KASTAMONU STATE_SIVAS STATE_ERZURUM }
+}
+
+region_karamania = {
+	graphical_culture = "arabic"
+	capital_province = x2111E0
+	map_color = { 0.45 0.35 0.35 }
+	states = { STATE_ADANA STATE_ANTALYA STATE_KONYA STATE_CYPRUS }
 }
 
 region_arabic = {
 	graphical_culture = "arabic"
+	capital_province = xCEC06C
 	map_color = { 0.1 0.7 0.1 }
-	states = { STATE_OMAN STATE_ABU_DHABI STATE_YEMEN STATE_HEDJAZ STATE_HAIL STATE_NEJD STATE_TRANSJORDAN STATE_PALESTINE STATE_LEBANON STATE_SYRIA STATE_ALEPPO STATE_DEIR_EZ_ZOR STATE_BAGHDAD STATE_BASRA STATE_MOSUL }
+	states = { STATE_OMAN STATE_ABU_DHABI STATE_YEMEN STATE_HEDJAZ STATE_HAIL STATE_NEJD STATE_JAWF STATE_RIYADH STATE_MEDINA }
+}
+
+region_levant = {
+	graphical_culture = "arabic"
+	capital_province = xC9CBC0
+	map_color = { 117 224 94 }
+	states = { STATE_TRANSJORDAN STATE_PALESTINE STATE_LEBANON }
+}
+
+region_syria = {
+	graphical_culture = "arabic"
+	capital_province = x7A47D7
+	map_color = { 0.8 0.3 0.8 }
+	states = { STATE_ALEPPO STATE_DAMASCUS STATE_HAMA STATE_AINTAB STATE_DEIR_EZ_ZOR }
+}
+
+region_iraq = {
+	graphical_culture = "arabic"
+	capital_province = x205060
+	map_color = { 0.2 0.1 0.6 }
+	states = { STATE_BAGHDAD STATE_BASRA STATE_KARBALA STATE_NASIRIYA }
+}
+
+region_kurdistan = {
+	graphical_culture = "arabic"
+	capital_province = x6F55BA
+	map_color = { 0.95 0.15 0.15 }
+	states = { STATE_DIYARBAKIR STATE_VAN STATE_HARPUT STATE_LURISTAN STATE_ARDALAN STATE_SHAHRIZOR STATE_MOSUL STATE_URMIA }
 }
 
 region_persia = {
 	graphical_culture = "arabic"
+	capital_province = xC0F0A0
 	map_color = { 119 105 225 }
-	states = { STATE_KHORASAN STATE_ISFAHAN STATE_MAZANDARAN STATE_IRAKAJEMI STATE_LARISTAN STATE_FARS STATE_SISTAN STATE_KHUZESTAN STATE_TABRIZ STATE_LURISTAN STATE_BALUCHISTAN STATE_WESTERN_AFGHANISTAN STATE_EASTERN_AFGHANISTAN STATE_PASHTUNISTAN }
+	states = { STATE_TEHRAN STATE_ISFAHAN STATE_MAZANDARAN STATE_FARS STATE_KERMAN STATE_HORMOZGAN STATE_YAZD STATE_TABRIZ STATE_GILAN STATE_ZANJAN STATE_HAMADAN STATE_KHUZESTAN }
 }
+
+region_greater_khorasan = {
+	graphical_culture = "arabic"
+	capital_province = xEF9ECA
+	map_color = { 19 205 125 }
+	states = { STATE_KANDAHAR STATE_BALKH STATE_HERAT STATE_KABUL STATE_KHORASAN STATE_QUHISTAN STATE_TRANSCASPIA }
+}
+
+# Central Asia
 
 region_central_asia = {
 	graphical_culture = "arabic"
 	capital_province = x8ABC27
 	map_color = { 0.24 0.65 0.34 }
-	states = { STATE_UZBEKIA STATE_KHIVA STATE_TAJIKISTAN STATE_KIRGHIZIA STATE_TURKMENIA STATE_SEMIRECHE STATE_AKMOLINSK STATE_DZUNGARIA STATE_TIANSHAN STATE_URALSK STATE_SAMARA STATE_JETISY }
+	states = { STATE_BUKHARA STATE_KHIVA STATE_TAJIKISTAN STATE_FERGANA STATE_SYRDARYA STATE_SAMARKAND STATE_SEMIRECHE STATE_AKMOLINSK STATE_TURGAI STATE_SEMIPALATINSK STATE_YAIK }
 }
 
 region_caucasus = {
-	graphical_culture = "arabic"
-	capital_province = xFB38B0
+	graphical_culture = "latin"
+	capital_province = x3537D5
 	map_color = { 1 0.1 0.2 }
-	states = { STATE_ARMENIA STATE_AZERBAIJAN STATE_DAGESTAN STATE_KUBAN STATE_GREATER_CAUCASUS STATE_ROSTOV STATE_ASTRAKHAN STATE_KARS }
+	states = { STATE_ERIVAN STATE_BAKU STATE_ELISAVETPOL STATE_KUTAIS STATE_TIFLIS STATE_KARS }
 }
 
-region_south_india = {
-	graphical_culture = "arabic"
-	capital_province = x9A2EF3
-	map_color = { 0.607 0.843 0.337 }
-	states = { STATE_CEYLON STATE_ORISSA STATE_CIRCARS STATE_MYSORE STATE_TRAVANCORE STATE_MADRAS STATE_HYDERABAD STATE_NAGPUR STATE_BOMBAY }
-}
-
-region_north_india = {
-	graphical_culture = "arabic"
-	capital_province = xB39D42
-	map_color = { 0.392 0.863 1 }
-	states = { STATE_DELHI STATE_AWADH STATE_SINDH STATE_PUNJAB STATE_RAJPUTANA STATE_GUJARAT STATE_CENTRAL_INDIA STATE_BIHAR STATE_SOUTH_BENGAL STATE_NORTH_BENGAL STATE_ASSAM  }
+region_north_caucasus = {
+	graphical_culture = "european"
+	capital_province = x80D080
+	map_color = { 0.4 0.7 0.5 }
+	states = { STATE_TEREK STATE_KUBAN STATE_BLACK_SEA_COAST STATE_STAVROPOL STATE_DERBENT STATE_ROSTOV STATE_ASTRAKHAN }
 }
 
 region_himalayas = {
 	graphical_culture = "asian"
 	capital_province = x06698A
 	map_color = { 177 207 205 }
-	states = { STATE_HIMALAYAS STATE_LHASA STATE_NGARI STATE_KASHMIR STATE_QINGHAI }
+	states = { STATE_HIMALAYAS STATE_LHASA STATE_NGARI STATE_KASHMIR STATE_QINGHAI STATE_TIANSHAN }
+}
+
+# India
+
+region_south_india = {
+	graphical_culture = "arabic"
+	capital_province = x07104C
+	map_color = { 0.607 0.843 0.337 }
+	states = { STATE_MADRAS STATE_CEYLON STATE_CIRCARS STATE_MYSORE STATE_TRAVANCORE STATE_HYDERABAD }
+}
+
+region_north_india = {
+	graphical_culture = "arabic"
+	capital_province = xE0EFA0
+	map_color = { 0.392 0.863 1 }
+	states = { STATE_DELHI STATE_AWADH STATE_CENTRAL_INDIA STATE_NAGPUR STATE_ORISSA STATE_BIHAR }
+}
+
+region_east_india = {
+	graphical_culture = "asian"
+	capital_province = x0A2277
+	map_color = { 0.992 0.263 0.55 }
+	states = { STATE_SOUTH_BENGAL STATE_ASSAM STATE_NORTH_BENGAL STATE_KACHIN STATE_SHAN_STATES STATE_BURMA STATE_PEGU }
+}
+
+region_west_india = {
+	graphical_culture = "arabic"
+	capital_province = x3151E0
+	map_color = { 0.192 0.963 0.4 }
+	states = { STATE_SINDH STATE_GUJARAT STATE_BOMBAY STATE_RAJPUTANA }
+}
+
+region_balochistan = {
+	graphical_culture = "arabic"
+	capital_province = x675BCE
+	map_color = { 62 122 189 }
+	states = { STATE_SISTAN STATE_BALUCHISTAN STATE_KALAT }
+}
+
+region_punjab = {
+	graphical_culture = "arabic"
+	capital_province = xF58253
+	map_color = { 255 204 102 }
+	states = { STATE_LUDHIANA STATE_PASHTUNISTAN STATE_PUNJAB STATE_MULTAN }
 }

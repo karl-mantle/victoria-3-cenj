@@ -189,3 +189,53 @@ state_trait_roadstead_of_brest = {
 		state_building_naval_base_max_level_add = 10
 	}
 }
+
+# NEED LOCALISATION
+
+state_trait_garonne_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_ebro_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_douro_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_guadalquivir_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_meuse_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_maine_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}

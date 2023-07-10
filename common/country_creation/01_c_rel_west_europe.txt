@@ -183,6 +183,7 @@ HLL = { # Holland
 HSC = { # Gaeldom
 	states = {
 		STATE_HIGHLANDS
+		STATE_STRATHCLYDE
 	}
 	ai_will_do = { always = no }
 }
@@ -422,9 +423,9 @@ TIL = { # Tirol
 	}
 	ai_will_do = { always = no }
 }
-TOU = { # Toulouse
-	provinces = {
-		
+TOU = { # Toulouse - needs doing properly.
+	states = {
+		STATE_LANGUEDOC
 	}
 	ai_will_do = { always = no }
 }

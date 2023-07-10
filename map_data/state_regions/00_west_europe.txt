@@ -8,13 +8,13 @@
     farm = "xF48646"
     mine = "x6F40EC"
     wood = "x4C9918"
-    arable_land = 101 # 30
+    arable_land = 135
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 72 # 36
-        bg_lead_mining = 36 # 18
-        bg_logging = 46 # 23
-        bg_fishing = 22 # 11
+        bg_iron_mining = 72
+        bg_lead_mining = 36
+        bg_logging = 46
+        bg_fishing = 22
     }
     resource = {
         type = "bg_copper_fields"
@@ -34,17 +34,17 @@ STATE_GOTALAND = {
     farm = "x0212F4"
     mine = "xA67CC8"
     wood = "xEA7E80"
-    arable_land = 101 # 35
+    arable_land = 110
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 30 # 15
-        bg_logging = 34 # 17
-        bg_fishing = 30 # 15
+        bg_iron_mining = 30
+        bg_logging = 34
+        bg_fishing = 30
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 8 # 4
+        undiscovered_amount = 8
     }
     naval_exit_id = 3019
 }
@@ -59,39 +59,38 @@ STATE_SCANIA = {
     farm = "xD4DC3C"
     mine = "xFBA406"
     wood = "xD19738"
-    arable_land = 81 # 20
+    arable_land = 100
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 16 # 8
-        bg_logging = 10 # 5
-        bg_fishing = 20 # 10
+        bg_coal_mining = 16
+        bg_logging = 10
+        bg_fishing = 20
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 12 # 6
+        undiscovered_amount = 12
     }
     naval_exit_id = 3019
 }
 
 STATE_NORRLAND = {
     id = 4
-    subsistence_building = "building_subsistence_farms"
+    subsistence_building = "building_subsistence_pastures"
     provinces = { "x008BB6" "x034858" "x03B36A" "x088E56" "x08D197" "x099666" "x09D644" "x09FFED" "x0AF217" "x0B3385" "x0B4908" "x0B5DDB" "x0B904B" "x0C8979" "x0D190C" "x1038C8" "x10D8D8" "x114DC0" "x12A0A6" "x137BA3" "x14CAC8" "x151F54" "x17C5B9" "x17F5A8" "x19490C" "x1A295F" "x1B4D60" "x1B880D" "x1B9E26" "x1DEDA9" "x1F7647" "x201348" "x23BDCB" "x2400E6" "x254371" "x280ADD" "x2D0B55" "x2D39E7" "x2D90A0" "x2FB6A7" "x3536B3" "x36C15B" "x36E9BA" "x3755D9" "x3971BD" "x3A414C" "x3B3CE9" "x3C0AB2" "x3C380F" "x3DF5D6" "x3DFA21" "x41C0C0" "x420C00" "x4265D2" "x43613F" "x45F53A" "x47F238" "x480DD3" "x49AFFE" "x4B2FC0" "x4C05DB" "x4D99D0" "x4DDB2C" "x527230" "x542385" "x57503D" "x578A4F" "x5A1735" "x5C738D" "x5D8E92" "x5ECC55" "x5F4052" "x5F6273" "x60D50A" "x610180" "x611A6B" "x61741A" "x61C061" "x628C3C" "x62CF2F" "x62F809" "x65B92F" "x66BF36" "x67082A" "x69CDA6" "x6A76CF" "x6CBB46" "x71B772" "x7238AF" "x724142" "x761B27" "x7A8123" "x7B5240" "x7C4A83" "x7D4196" "x7D7947" "x7EB12E" "x8009C9" "x8039FC" "x83A641" "x84DE76" "x86050C" "x8806E2" "x8BB571" "x8D2552" "x8EADE6" "x9001B6" "x918BA2" "x9250AD" "x9371B0" "x96C8D6" "x96F571" "x988205" "x9DC69F" "x9DE993" "xA0D2B0" "xA23443" "xA23906" "xA27DDB" "xA33BA5" "xA37B45" "xA5646C" "xA56D10" "xA61D8D" "xA7B5CE" "xAAC957" "xAEC76F" "xB044F6" "xB08854" "xB0CD27" "xB2359B" "xB2E726" "xB372EF" "xB44696" "xBA8A9D" "xBAA18C" "xC08CD2" "xC13E1E" "xC202DF" "xC2087C" "xC24915" "xC29B05" "xC416A1" "xC4C901" "xC59B64" "xC7CA0F" "xC901E8" "xCC3115" "xCD1FD5" "xD11F7D" "xD2391D" "xD2B7E0" "xD30875" "xD42DD0" "xD46B93" "xD523E3" "xD56426" "xD56867" "xD582BB" "xD5FBFC" "xD65AA2" "xD85905" "xD884CA" "xD94B80" "xDAF45E" "xDD78C9" "xDF0080" "xE04BF5" "xE08001" "xE0D494" "xE1AF5C" "xE5591E" "xE56FE5" "xE612BF" "xE99CC9" "xEAFB06" "xED6A40" "xEE68C2" "xF1329A" "xF3C7F6" "xF4B64B" "xF561EA" "xFAE2CD" "xFE7B03" "xFECE8F" "xFF6F4B" }
-    traits = { "state_trait_scandinavian_forests" "state_trait_scandes_mountains" "state_trait_malmberget" }
+    traits = { "state_trait_malmberget" "state_trait_scandinavian_forests" "state_trait_scandes_mountains" }
     city = "xE08001"
     port = "xD2B7E0"
     farm = "x3755D9"
     mine = "xD5FBFC"
     wood = "x420C00"
-    arable_land = 65 # 22
+    arable_land = 65
     arable_resources = { "bg_quarries" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 80 # 40
-        bg_logging = 40 # 20
-        bg_fishing = 24 # 12
-        # Added
-        bg_copper_mining = 62 # 31
+        bg_iron_mining = 120
+        bg_copper_mining = 62
+        bg_logging = 40
+        bg_fishing = 24
     }
     naval_exit_id = 3000
 }
@@ -104,11 +103,11 @@ STATE_GOTLAND = {
     city = "xF93B61"
     port = "x21C0E0"
     farm = "xF93B61"
-    arable_land = 9 # 3
+    arable_land = 10
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 4 # 2
-        bg_fishing = 6 # 3
+        bg_logging = 4
+        bg_fishing = 6
     }
     naval_exit_id = 3000
 }
@@ -123,11 +122,11 @@ STATE_JUTLAND = {
     farm = "xB0B469"
     mine = "x770871"
     wood = "xEBF079"
-    arable_land = 112 # 30
+    arable_land = 135
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 12 # 6
-        bg_fishing = 20 # 10
+        bg_logging = 12
+        bg_fishing = 20
     }
     naval_exit_id = 3019
 }
@@ -137,17 +136,17 @@ STATE_ZEALAND = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0CAEA7" "x7F0BF0" "x9000E0" "xC16C09" "xED2792" }
     impassable = { "x9000E0" }
-    traits = { "state_trait_oresund" "state_trait_odensefjorden" }
+    traits = { "state_trait_odensefjorden" "state_trait_oresund" }
     city = "x7F0BF0"
     port = "xED2792"
     farm = "x0CAEA7"
     mine = "x9000E0"
     wood = "xC16C09"
-    arable_land = 88 # 20
+    arable_land = 90
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 8 # 4
-        bg_fishing = 24 # 12
+        bg_logging = 8
+        bg_fishing = 24
     }
     naval_exit_id = 3019
 }
@@ -156,18 +155,18 @@ STATE_WESTERN_NORWAY = {
     id = 8
     subsistence_building = "building_subsistence_farms"
     provinces = { "x054DDE" "x07973A" "x087559" "x0E3D86" "x12FF9E" "x130906" "x14B28C" "x1AE434" "x25D82F" "x261C75" "x279380" "x2803F8" "x281240" "x3B7813" "x3FCBD3" "x43D0DD" "x4427D4" "x4E1EF2" "x4F31B0" "x600120" "x608020" "x639BE2" "x68D218" "x68D9BA" "x698566" "x6C9016" "x713F62" "x71D161" "x79D41F" "x7F0C6C" "x7F0E9A" "x818B5C" "x902BE5" "x95773A" "xA68FB9" "xBD2765" "xBDB05B" "xC32D3B" "xCD61E8" "xCF56A8" "xD26499" "xD32538" "xD5D1BC" "xDBDCD5" "xE08020" "xE37D01" "xE5E38E" "xE75551" "xF0F6EC" "xF68E1F" "xFB677C" }
-    traits = { "state_trait_north_sea_fishing" "state_trait_hardangerfjorden" }
+    traits = { "state_trait_hardangerfjorden" "state_trait_north_sea_fishing" }
     city = "x130906"
     port = "x68D9BA"
     farm = "x0E3D86"
     mine = "x608020"
     wood = "x608020"
-    arable_land = 55 # 20
+    arable_land = 80
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_sulfur_mining = 40 # 20
-        bg_logging = 28 # 14
-        bg_fishing = 30 # 15
+        bg_sulfur_mining = 40
+        bg_logging = 28
+        bg_fishing = 30
     }
     naval_exit_id = 3027
 }
@@ -177,20 +176,20 @@ STATE_NORTHERN_NORWAY = {
     subsistence_building = "building_subsistence_pastures"
     provinces = { "x019127" "x041759" "x042C26" "x09C02E" "x09E374" "x0A9659" "x0DAA5F" "x0DE95F" "x14814F" "x1694B1" "x1AF7FA" "x1D68E4" "x1D6E8B" "x1E1123" "x1F2ABE" "x207DC7" "x23D076" "x2495FE" "x25FF71" "x2714DA" "x2A5968" "x31968A" "x33E4D8" "x3411CB" "x34DA8D" "x37729A" "x38427D" "x3A108F" "x3A4A5B" "x3B2323" "x3C706D" "x3D2F34" "x4040C0" "x4121CE" "x420A56" "x45E6AA" "x46033F" "x46AD99" "x474F84" "x47561E" "x485E7C" "x4899E9" "x4A17E4" "x4A4712" "x4E2F0A" "x4EA73C" "x4FB481" "x4FB8C3" "x54FB07" "x592B51" "x5AE106" "x5BE09E" "x5F553A" "x614319" "x618080" "x61E786" "x6278B4" "x6480A4" "x6D989B" "x6EEF13" "x6F0070" "x7005BB" "x70DE38" "x72E8FA" "x73F0BB" "x74BF34" "x7AE985" "x7F2EF1" "x80A2FD" "x81E110" "x830022" "x86E184" "x86F266" "x882403" "x89ED8E" "x8B1F54" "x9648D4" "x98003F" "x9BB6A2" "x9BF025" "x9CCA2C" "xA0F892" "xA49115" "xA7D897" "xACD6A1" "xAFCD48" "xB1B071" "xB359B3" "xB50EB0" "xB5F85B" "xBDE8E5" "xBEE0E7" "xBEEB35" "xC040C0" "xC0C0C0" "xC1B67D" "xC30E30" "xC3E351" "xC4495B" "xC456A3" "xC6AC2B" "xC82160" "xC86A6C" "xC9D240" "xCAC65D" "xCB1829" "xCD2ECC" "xCEC4EF" "xD09F0A" "xD1393B" "xD2422B" "xD27CE2" "xD31959" "xD642D6" "xD7313C" "xDAD4E4" "xE1D87A" "xE1F410" "xE22563" "xE4D32D" "xE5B868" "xE6030F" "xEB97D0" "xECB406" "xEE26D3" "xEFBAB6" "xF2B264" "xF317ED" "xF90CF0" "xFAC5E3" "xFAFC5B" "xFEA2FF" "xFEC50D" }
     impassable = { "x14814F" "x1D68E4" "xECB406" "x7005BB" "x33E4D8" "xF2B264" "x4FB481" "xA49115" "xD1393B" "xFEC50D" "x61E786" "x9BB6A2" "x6480A4" "x2495FE" "x592B51" "x81E110" "x3A108F" "xCAC65D" "x1E1123" "x46033F" "x5AE106" "x70DE38" "x830022" "x4A4712" "xD2422B" "x8B1F54" "x019127" "xFAFC5B" "x25FF71" "x47561E" "x4E2F0A" "x420A56" "xC9D240" "xC82160" "x46AD99" "xAFCD48" "x6278B4" }
-    traits = { "state_trait_north_sea_fishing" "state_trait_arctic_whaling" "state_trait_trondhjemsfjorden" "state_trait_arctic_terrain" }
+    traits = { "state_trait_trondhjemsfjorden" "state_trait_north_sea_fishing" "state_trait_arctic_whaling" "state_trait_arctic_terrain" }
     city = "xD31959"
     port = "xE5B868"
     farm = "x38427D"
     mine = "xB50EB0"
     wood = "x042C26"
-    arable_land = 52 # 20
+    arable_land = 50
     arable_resources = { "bg_quarries" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 36 # 18
-        bg_sulfur_mining = 40 # 20
-        bg_logging = 12 # 6
-        bg_whaling = 20 # 10
-        bg_fishing = 20 # 10
+        bg_iron_mining = 36
+        bg_sulfur_mining = 40
+        bg_logging = 12
+        bg_whaling = 20
+        bg_fishing = 20
     }
     naval_exit_id = 3020
 }
@@ -199,20 +198,19 @@ STATE_EASTERN_NORWAY = {
     id = 10
     subsistence_building = "building_subsistence_farms"
     provinces = { "x01EB0A" "x0844FB" "x12548F" "x1255CC" "x2080A0" "x2AAFE1" "x2F2504" "x35369F" "x3AE094" "x43B12C" "x49B529" "x4D0D24" "x549C3A" "x5710E5" "x6000A0" "x60BE85" "x673DA2" "x6AC2AF" "x777860" "x8277CF" "x85F71F" "x8F7F39" "x8FC6B4" "x907B35" "x95A154" "x9DB9F4" "xA32B85" "xA57AFC" "xAEEE54" "xB182B1" "xB88734" "xB9763B" "xBA99BA" "xC041E0" "xC9D63F" "xDE9061" "xE12212" "xE3582F" "xE8E297" "xFE44C9" }
-    traits = { "state_trait_christianiafjorden" "state_trait_kongsberg_silver_mine" }
+    traits = { "state_trait_kongsberg_silver_mine" "state_trait_christianiafjorden" }
     city = "xC041E0"
     port = "xC041E0"
     farm = "x95A154"
     mine = "x49B529"
     wood = "x1255CC"
-    arable_land = 63 # 20
+    arable_land = 65
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 36 # 18
-        bg_logging = 22 # 11
-        bg_fishing = 10 # 5
-        # Added
-        bg_silver_mining = 6 # 3
+        bg_iron_mining = 36
+        bg_silver_mining = 6
+        bg_logging = 22
+        bg_fishing = 10
     }
     naval_exit_id = 3019
 }
@@ -228,12 +226,12 @@ STATE_ICELAND = {
     farm = "x27F04F"
     mine = "x45F99B"
     wood = "x09AC69"
-    arable_land = 19 # 5
+    arable_land = 20
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_sulfur_mining = 40 # 20
-        bg_whaling = 10 # 5
-        bg_fishing = 6 # 3
+        bg_sulfur_mining = 40
+        bg_whaling = 10
+        bg_fishing = 6
     }
     naval_exit_id = 3022
 }
@@ -249,11 +247,11 @@ STATE_GREENLAND = {
     farm = "xB460E8"
     mine = "xE3E358"
     wood = "xC13204"
-    arable_land = 6 # 3
+    arable_land = 5
     arable_resources = { "bg_quarries" "bg_livestock_ranches" }
     capped_resources = {
-        bg_whaling = 10 # 5
-        bg_fishing = 6 # 3
+        bg_whaling = 10
+        bg_fishing = 6
     }
     naval_exit_id = 3023
 }
@@ -261,19 +259,19 @@ STATE_GREENLAND = {
 STATE_SOUTHERN_FINLAND = {
     id = 13
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x07C636" "x0BA694" "x0D3DF3" "x154428" "x214180" "x22CBD6" "x238A38" "x2401AE" "x278F84" "x33CFEC" "x34A9F8" "x37CE53" "x3C48A2" "x3D47C3" "x3DBB6E" "x40C040" "x4753CB" "x4A6463" "x5033CF" "x51CC44" "x523560" "x5D1467" "x61C0E0" "x76CE44" "x7753B6" "x79D379" "x7B45A5" "x85F5A0" "x86C729" "x8C31CF" "x8DCF76" "x9106DB" "x932418" "x969608" "x9C363D" "xA789AE" "xAFE141" "xB45BFF" "xB462A9" "xBC487D" "xBD3A16" "xC168B6" "xC67B36" "xCBE76E" "xCC8E28" "xCC9AA7" "xD2FDBF" "xD38306" "xD516FA" "xD9DA78" "xE041E0" "xE0C0E0" "xE761B2" "xE7FDE4" "xE98BC6" "xED84C3" "xED8DC6" "xEF788A" "xF09EDC" "xF3D220" "xF6F046" "xFEA699" "xFF4B4C" }
+    provinces = { "x07C636" "x0BA694" "x22CBD6" "x278F84" "x33CFEC" "x34A9F8" "x3D47C3" "x3DBB6E" "x4A6463" "x5033CF" "x61C0E0" "x76CE44" "x79D379" "x85F5A0" "x86C729" "x9106DB" "xAFE141" "xB45BFF" "xB462A9" "xBD3A16" "xC168B6" "xC67B36" "xCBE76E" "xCC9AA7" "xD2FDBF" "xD38306" "xD9DA78" "xE041E0" "xE0C0E0" "xE7FDE4" "xE98BC6" "xEF788A" "xF09EDC" "xF3D220" "xF6F046" "xFEA699" }
     traits = { "state_trait_scandinavian_forests" }
     city = "xCC9AA7"
     port = "xD2FDBF"
     farm = "x22CBD6"
-    mine = "x8DCF76"
+    mine = "xE0C0E0"
     wood = "xAFE141"
-    arable_land = 84 # 30
+    arable_land = 90
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 24 # 12
-        bg_logging = 22 # 11
-        bg_fishing = 16 # 8
+        bg_iron_mining = 20
+        bg_logging = 26
+        bg_fishing = 16
     }
     naval_exit_id = 3000
 }
@@ -281,19 +279,19 @@ STATE_SOUTHERN_FINLAND = {
 STATE_WEST_KARELIA = {
     id = 917
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0A00AC" "x1E964A" "x208001" "x315CDB" "x3CFB81" "x3EFDA0" "x43E91D" "x467F2F" "x63EE78" "x65EF3B" "x664F54" "x74C1F3" "x78FDD6" "x825979" "x85EBD4" "x934610" "xA04180" "xAB4A30" "xAD3FF9" "xB81268" "xBB0055" "xBC376C" "xC5A424" "xD093D4" "xD105A8" "xD26819" "xF571CB" "xFC48AF" "xFFBD54" }
-    traits = { "state_trait_scandinavian_forests" }
+    provinces = { "x0A00AC" "x1E964A" "x208001" "x315CDB" "x3CFB81" "x3EFDA0" "x43E91D" "x63EE78" "x65EF3B" "x664F54" "x74C1F3" "x78FDD6" "x85EBD4" "xA04180" "xAB4A30" "xAD3FF9" "xBB0055" "xBC376C" "xC5A424" "xD093D4" "xFC48AF" "xFFBD54" }
+    traits = { "state_trait_lake_ladoga" "state_trait_scandinavian_forests" }
     city = "xAB4A30"
     port = "x3EFDA0"
     farm = "xD093D4"
     mine = "x3CFB81"
-    wood = "x825979"
-    arable_land = 40 # 10
+    wood = "x3EFDA0"
+    arable_land = 75
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 36 # 18
-        bg_logging = 22 # 11
-        bg_fishing = 4 # 2
+        bg_iron_mining = 36
+        bg_logging = 22
+        bg_fishing = 4
     }
     naval_exit_id = 3000
 }
@@ -305,7 +303,7 @@ STATE_ALAND = {
     city = "xE04161"
     port = "x459052"
     farm = "x459052"
-    arable_land = 4 # 2
+    arable_land = 5 # 2
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 4 # 2
@@ -325,14 +323,13 @@ STATE_OSTROBOTHNIA = {
     farm = "xF2C73E"
     mine = "x31BE08"
     wood = "x9AB681"
-    arable_land = 78 # 20
+    arable_land = 85
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 90 # 45
-        bg_logging = 34 # 17
-        bg_fishing = 20 # 10
-        # Added
-        bg_copper_mining = 46 # 23
+        bg_iron_mining = 90
+        bg_copper_mining = 46
+        bg_logging = 42
+        bg_fishing = 24
     }
     naval_exit_id = 3000
 }
@@ -340,19 +337,19 @@ STATE_OSTROBOTHNIA = {
 STATE_HOME_COUNTIES = {
     id = 15
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x19CECD" "x39F45B" "x58D3AE" "x60E0C0" "x625993" "x7543C8" "x800020" "xE060C0" "xE0E0C0" }
-    traits = { "state_trait_good_soils" "state_trait_london_docklands" "state_trait_thames_river" "state_trait_the_solent" }
+    provinces = { "x19CECD" "x39F45B" "x60E0C0" "x625993" "x7543C8" "x800020" "xE060C0" "xE0E0C0" "xE0A040" }
+        traits = { "state_trait_good_soils" "state_trait_london_docklands" "state_trait_the_solent" "state_trait_thames_river" }
     city = "x7543C8"
     port = "xE060C0"
-    farm = "x625993"
+    farm = "x39F45B"
     mine = "x60E0C0"
-    wood = "x58D3AE"
-    arable_land = 158 # 30
+    wood = "x60E0C0"
+    arable_land = 230
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 80 # 40
-        bg_logging = 12 # 6
-        bg_fishing = 20 # 10
+        bg_coal_mining = 64
+        bg_logging = 14
+        bg_fishing = 22
         bg_monuments = 1
     }
     naval_exit_id = 3028
@@ -365,21 +362,21 @@ STATE_LANCASHIRE = {
     traits = { "state_trait_lancashire_coalfield" "state_trait_cottonopolis" "state_trait_merseyside" "state_trait_lake_district" }
     city = "xE0E000"
     port = "x60E000"
-    farm = "xA242B2"
-    mine = "xE0E000"
+    farm = "xE74158"
+    mine = "x60E000"
     wood = "x410CE6"
-    arable_land = 157 # 35
+    arable_land = 195
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 200 # 100
-        bg_iron_mining = 120 # 60
-        bg_lead_mining = 90 # 45
-        bg_logging = 18 # 9
-        bg_fishing = 30 # 15
+        bg_coal_mining = 140
+        bg_iron_mining = 124
+        bg_lead_mining = 36
+        bg_logging = 18
+        bg_fishing = 18
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10 # 5
+        undiscovered_amount = 10
     }
     naval_exit_id = 3030
 }
@@ -391,20 +388,21 @@ STATE_WALES = {
     traits = { "state_trait_south_wales_valleys" "state_trait_snowdonia" }
     city = "x2020C0"
     port = "xA2308A"
-    farm = "xB7FC74"
-    mine = "x20A040"
-    wood = "xA02040"
-    arable_land = 129 # 40
+    farm = "x775D55"
+    mine = "xA2308A"
+    wood = "x633EF5"
+    arable_land = 130
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 160 # 80
-        bg_logging = 28 # 14
-        bg_fishing = 8 # 4
+        bg_coal_mining = 139
+        bg_lead_mining = 32
+        bg_logging = 24
+        bg_fishing = 8
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 10 # 5
+        undiscovered_amount = 10
     }
     naval_exit_id = 3030
 }
@@ -412,21 +410,20 @@ STATE_WALES = {
 STATE_YORKSHIRE = {
     id = 18
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x527116" "x5544D0" "x606000" "x606080" "x824DB7" "x86B021" "xB5BF4E" "xE06080" "xEDC0BA" }
-    traits = { "state_trait_south_yorkshire_coalfield" }
+    provinces = { "x2482B4" "x5544D0" "x606080" "x86B021" "xB5BF4E" "xE06080" }
+    traits = { "state_trait_south_yorkshire_coalfield" "state_trait_north_sea_fishing" }
     city = "xB5BF4E"
-    port = "x606000"
-    farm = "x527116"
+    port = "xE06080"
+    farm = "x5544D0"
     mine = "x606080"
-    wood = "xE06080"
-    arable_land = 154 # 40
+    wood = "x2482B4"
+    arable_land = 155
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 200 # 100
-        bg_iron_mining = 150 # 75
-        bg_lead_mining = 54 # 27
-        bg_logging = 12 # 6
-        bg_fishing = 14 # 7
+        bg_coal_mining = 113
+        bg_iron_mining = 72
+        bg_logging = 16
+        bg_fishing = 14
     }
     naval_exit_id = 3027
 }
@@ -435,44 +432,44 @@ STATE_HIGHLANDS = {
     id = 19
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0C1520" "x0E7C03" "x20E000" "x314E1F" "x37518E" "x3CFF08" "x47C5CD" "x5B0884" "x637BE8" "x662BE7" "x80DB90" "x84625B" "x8E7728" "xB7B8EA" "xCCBBD1" "xF00652" "xF78F29" "xFACCE3" "xFBDD5D" }
-    traits = { "state_trait_scottish_highlands" "state_trait_north_sea_fishing" "state_trait_scapa_flow" }
-    city = "xCCBBD1"
+    traits = { "state_trait_scapa_flow" "state_trait_scottish_highlands" "state_trait_north_sea_fishing" }
+    city = "x3CFF08"
     port = "x37518E"
     farm = "xB7B8EA"
-    mine = "xFACCE3"
+    mine = "x5B0884"
     wood = "xCCBBD1"
-    arable_land = 72 # 30
+    arable_land = 70
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 28 # 14
-        bg_whaling = 12 # 6
-        bg_fishing = 28 # 14
+        bg_logging = 28
+        bg_whaling = 12
+        bg_fishing = 28
     }
     naval_exit_id = 3027
 }
 
-STATE_MIDLANDS = {
+STATE_EAST_MIDLANDS = {
     id = 20
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x11C2BB" "x20A0C0" "x2482B4" "x528DEE" "x6020C0" "x60E080" "x99305F" "xA021B0" "xA0A0C0" "xA220D6" "xE0E080" }
-    city = "x6020C0"
-    port = "x2482B4"
-    farm = "xA0A0C0"
-    mine = "xE0E080"
-    wood = "x528DEE"
-    arable_land = 240 # 60
+    provinces = { "x528DEE" "x60E080" "x8C667B" "x99305F" "xA0A0C0" "xE0E080" }
+    city = "xE0E080"
+    port = "x60E080"
+    farm = "x99305F"
+    mine = "x528DEE"
+    wood = "x8C667B"
+    arable_land = 175
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 160 # 80
-        bg_iron_mining = 120 # 60
-        bg_sulfur_mining = 80 # 40
-        bg_logging = 12 # 6
-        bg_fishing = 4 # 2
+        bg_coal_mining = 125
+        bg_iron_mining = 52
+        bg_sulfur_mining = 80
+        bg_logging = 12
+        bg_fishing = 10
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 12 # 6
+        undiscovered_amount = 12
     }
     naval_exit_id = 3027
 }
@@ -480,24 +477,23 @@ STATE_MIDLANDS = {
 STATE_EAST_ANGLIA = {
     id = 21
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x5024FD" "x516676" "x60A040" "x618949" "x6D87D7" "x73EF57" "x8C667B" "xE02040" "xE0A040" }
+    provinces = { "x5024FD" "x516676" "x60A040" "x618949" "x6D87D7" "x73EF57" "xE02040" }
     traits = { "state_trait_good_soils" "state_trait_natural_harbors" }
     city = "x8C667B"
     port = "xE02040"
     farm = "x60A040"
     mine = "x8C667B"
     wood = "x516676"
-    arable_land = 126 # 30
+    arable_land = 125
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 80 # 40
-        bg_iron_mining = 60 # 30
-        bg_logging = 8 # 4
-        bg_fishing = 24 # 12
+        bg_iron_mining = 48
+        bg_logging = 10
+        bg_fishing = 20
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 10 # 5
+        undiscovered_amount = 30
     }
     naval_exit_id = 3028
 }
@@ -505,19 +501,20 @@ STATE_EAST_ANGLIA = {
 STATE_WEST_COUNTRY = {
     id = 22
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x1E38F8" "x225544" "x6060C0" "x63EF7E" "x65B395" "xA2DD9E" "xB78E54" "xC900EF" "xE020C0" "xE0E040" "xEB9862" }
+    provinces = { "x1E38F8" "x225544" "x6060C0" "x63EF7E" "x65B395" "xA2DD9E" "xB78E54" "xC900EF" "xE0E040" "xEB9862" }
     traits = { "state_trait_poole_harbor" }
     city = "xE0E040"
     port = "x63EF7E"
-    farm = "xE0E040"
-    mine = "xE020C0"
-    wood = "xA2DD9E"
-    arable_land = 190 # 60
+    farm = "xEB9862"
+    mine = "x65B395"
+    wood = "xC900EF"
+    arable_land = 190
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_sulfur_mining = 120 # 60
-        bg_logging = 12 # 6
-        bg_fishing = 18 # 9
+        bg_sulfur_mining = 120
+        bg_lead_mining = 72
+        bg_logging = 16
+        bg_fishing = 24
     }
     naval_exit_id = 3028
 }
@@ -525,25 +522,25 @@ STATE_WEST_COUNTRY = {
 STATE_LOWLANDS = {
     id = 23
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x002C82" "x0B53FA" "x193EFC" "x206080" "x20E080" "x363883" "x676072" "x80F634" "x832656" "x9B6ACC" "xA06080" "xA0E000" "xA0E080" "xB2A15E" "xD01BE2" "xDCD566" }
+    provinces = { "x002C82" "x0B53FA" "x193EFC" "x206080" "x80F634" "x9B6ACC" "xA0E000" "xA0E080" "xD01BE2" }
     traits = { "state_trait_central_belt_coalfield" "state_trait_north_sea_fishing" }
     city = "xA0E080"
     port = "xA0E000"
-    farm = "xA06080"
-    mine = "xDCD566"
+    farm = "x206080"
+    mine = "xA0E080"
     wood = "x9B6ACC"
-    arable_land = 165 # 50
+    arable_land = 165
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 120 # 60
-        bg_iron_mining = 30 # 15
-        bg_logging = 28 # 14
-        bg_fishing = 24 # 12
+        bg_coal_mining = 75
+        bg_iron_mining = 30
+        bg_logging = 22
+        bg_fishing = 24
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 6 # 3
+        undiscovered_amount = 6
     }
     naval_exit_id = 3027
 }
@@ -557,12 +554,12 @@ STATE_ULSTER = {
     port = "x2BE1C8"
     farm = "x20E040"
     mine = "xA06040"
-    wood = "xCFCD2B"
-    arable_land = 244 # 110
+    wood = "x688E79"
+    arable_land = 170
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 12 # 6
-        bg_fishing = 22 # 11
+        bg_logging = 12
+        bg_fishing = 20
     }
     naval_exit_id = 3030
 }
@@ -572,17 +569,17 @@ STATE_MUNSTER = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x02061B" "x849939" "x969279" "xA0E0C0" "xBDAB32" "xD9BB34" "xE06040" "xECB3A5" "xEF3F71" "xF53F9B" }
     traits = { "state_trait_the_golden_vale" "state_trait_cork_harbor" }
-    city = "xF53F9B"
-    port = "x02061B"
-    farm = "xEF3F71"
-    mine = "xA0E0C0"
-    wood = "x02061B"
-    arable_land = 244 # 110
+    city = "xEF3F71"
+    port = "xA0E0C0"
+    farm = "x02061B"
+    mine = "x849939"
+    wood = "xD9BB34"
+    arable_land = 180
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_lead_mining = 48 # 24
-        bg_logging = 8 # 4
-        bg_fishing = 24 # 12
+        bg_lead_mining = 44
+        bg_logging = 10
+        bg_fishing = 22
     }
     naval_exit_id = 3030
 }
@@ -591,18 +588,19 @@ STATE_LEINSTER = {
     id = 26
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1E9CB2" "x2060C0" "x5086D4" "x5B3F6F" "x60E040" "xA0E040" "xA2A933" "xAEAF93" "xCC3E24" }
+    traits = { "state_trait_natural_harbors" }
     city = "xA0E040"
     port = "x60E040"
     farm = "x2060C0"
     mine = "x5086D4"
     wood = "xAEAF93"
-    arable_land = 188 # 80
+    arable_land = 190
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 66 # 33
-        bg_lead_mining = 54 # 27
-        bg_logging = 12 # 6
-        bg_fishing = 12 # 6
+        bg_iron_mining = 66
+        bg_lead_mining = 54
+        bg_logging = 12
+        bg_fishing = 14
     }
     naval_exit_id = 3030
 }
@@ -615,18 +613,18 @@ STATE_CONNAUGHT = {
     port = "x5DEF58"
     farm = "xA060C0"
     mine = "x641238"
-    wood = "x20E0C0"
-    arable_land = 158 # 70
+    wood = "x641238"
+    arable_land = 160
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_sulfur_mining = 96 # 48
-        bg_logging = 14 # 7
-        bg_fishing = 8 # 4
+        bg_sulfur_mining = 96
+        bg_logging = 14
+        bg_fishing = 14
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 10 # 5
+        undiscovered_amount = 10
     }
     naval_exit_id = 3030
 }
@@ -635,15 +633,15 @@ STATE_ILE_DE_FRANCE = {
     id = 28
     subsistence_building = "building_subsistence_farms"
     provinces = { "x12462D" "x7080DF" "x71DA2E" "x906000" }
-    traits = { "state_trait_seine_river" "state_trait_good_soils" }
+    traits = { "state_trait_good_soils" "state_trait_seine_river" }
     city = "x906000"
     farm = "x71DA2E"
     mine = "xF522D9"
     wood = "x90A0C0"
-    arable_land = 74 # 30
+    arable_land = 75
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 8 # 4
+        bg_logging = 8
         bg_monuments = 1
     }
 }
@@ -652,22 +650,22 @@ STATE_PROVENCE = {
     id = 29
     subsistence_building = "building_subsistence_farms"
     provinces = { "x3040E0" "x31C0DF" "x5080E0" "x6D5E3F" "xB040E0" "xB0C060" "xB0C0E0" "xC03918" "xCB9C34" }
-    traits = { "state_trait_rhone_river" "state_trait_port_hercules" "state_trait_alpine_terrain" }
+    traits = { "state_trait_port_hercules" "state_trait_rhone_river" "state_trait_alpine_terrain" }
     city = "x31C0DF"
     port = "x3040E0"
     farm = "xB0C0E0"
     mine = "xB040E0"
     wood = "x3040E0"
-    arable_land = 150 # 60
+    arable_land = 150
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" }
     capped_resources = {
-        bg_logging = 14 # 7
-        bg_fishing = 24 # 12
+        bg_logging = 14
+        bg_fishing = 24
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 8 # 4
+        undiscovered_amount = 8
     }
     naval_exit_id = 3032
 }
@@ -682,13 +680,13 @@ STATE_NORMANDY = {
     farm = "x79C0E6"
     mine = "x0B7098"
     wood = "x90A040"
-    arable_land = 240 # 90
+    arable_land = 240
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 60 # 30
-        bg_logging = 16 # 8
-        bg_whaling = 10 # 5
-        bg_fishing = 26 # 13
+        bg_iron_mining = 60
+        bg_logging = 16
+        bg_whaling = 10
+        bg_fishing = 26
     }
     naval_exit_id = 3028
 }
@@ -702,16 +700,16 @@ STATE_LANGUEDOC = {
     farm = "xCF9FBF"
     mine = "x7BCDC4"
     wood = "xCF9FBF"
-    arable_land = 212 # 90
+    arable_land = 210
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" }
     capped_resources = {
-        bg_logging = 12 # 6
-        bg_fishing = 16 # 8
+        bg_logging = 12
+        bg_fishing = 16
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 10 # 5
+        undiscovered_amount = 10
     }
     naval_exit_id = 3032
 }
@@ -720,18 +718,18 @@ STATE_RHONE = {
     id = 32
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1B4B66" "x30C060" "x3369C6" "x704060" "x71A804" "x73F176" "x7516B6" "x8E88DA" "xB04060" "xB8E48D" "xEF4060" }
-    traits = { "state_trait_rhone_river" "state_trait_loire_coalfield" "state_trait_alpine_terrain" }
+    traits = { "state_trait_loire_coalfield" "state_trait_rhone_river" "state_trait_alpine_terrain" }
     city = "xB04060"
     farm = "x704060"
     mine = "x30C060"
     wood = "xEF4060"
-    arable_land = 206 # 90
+    arable_land = 190
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" }
     capped_resources = {
-        bg_coal_mining = 200 # 100
-        bg_iron_mining = 72 # 36
-        bg_lead_mining = 72 # 36
-        bg_logging = 28 # 14
+        bg_coal_mining = 200
+        bg_iron_mining = 72
+        bg_lead_mining = 72
+        bg_logging = 28
     }
 }
 
@@ -739,18 +737,18 @@ STATE_FRENCH_LOW_COUNTRIES = {
     id = 33
     subsistence_building = "building_subsistence_farms"
     provinces = { "x106000" "x5362AC" "x70C020" "xA0A080" "xD0854D" "xE0A0C0" }
-    traits = { "state_trait_good_soils" "state_trait_nord_pas_de_calais_coalfield" }
+    traits = { "state_trait_nord_pas_de_calais_coalfield" "state_trait_good_soils" }
     city = "x7CAE05"
     port = "xDD4DD0"
     farm = "x093DF5"
     mine = "x192CA5"
     wood = "x50A040"
-    arable_land = 272 # 100
+    arable_land = 220
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 200 # 100
-        bg_logging = 6 # 3
-        bg_fishing = 12 # 6
+        bg_coal_mining = 200
+        bg_logging = 6
+        bg_fishing = 12
     }
     naval_exit_id = 3028
 }
@@ -765,11 +763,11 @@ STATE_PICARDY = {
     farm = "x106000"
     mine = "x10A0C0"
     wood = "xC4C61A"
-    arable_land = 190 # 60
+    arable_land = 190
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 8 # 4
-        bg_fishing = 0.5 # 1
+        bg_logging = 8
+        bg_fishing = 2
     }
     naval_exit_id = 3028
 }
@@ -778,17 +776,17 @@ STATE_ALSACE_LORRAINE = {
     id = 35
     subsistence_building = "building_subsistence_farms"
     provinces = { "x4899A2" "x6E4891" "xCC3250" "xF0C0A0" }
-    traits = { "state_trait_saar_coalfield" "state_trait_rhine_river" "state_trait_minette_ore" }
+    traits = { "state_trait_saar_coalfield" "state_trait_minette_ore" "state_trait_rhine_river" }
     city = "x6E4891"
     farm = "x4899A2"
     mine = "xB000E0"
     wood = "x6E4891"
-    arable_land = 160 # 60
+    arable_land = 160
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 120 # 60
-        bg_iron_mining = 120 # 60
-        bg_logging = 34 # 17
+        bg_coal_mining = 120
+        bg_iron_mining = 120
+        bg_logging = 34
     }
 }
 
@@ -801,11 +799,11 @@ STATE_POITOU = {
     farm = "x5020C0"
     mine = "x9401C7"
     wood = "xD0A040"
-    arable_land = 148 # 60
+    arable_land = 150
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 10 # 5
-        bg_fishing = 12 # 6
+        bg_logging = 10
+        bg_fishing = 12
     }
     naval_exit_id = 3029
 }
@@ -818,10 +816,10 @@ STATE_GUYENNE = {
     farm = "xA2BBE9"
     mine = "x7C1D57"
     wood = "xB0E000"
-    arable_land = 202 # 80
+    arable_land = 200
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 18 # 9
+        bg_logging = 18
     }
 }
 
@@ -833,12 +831,12 @@ STATE_AUVERGNE_LIMOUSIN = {
     farm = "xDF5770"
     mine = "xDF5770"
     wood = "x61609A"
-    arable_land = 168 # 70
+    arable_land = 170
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 112 #  # 56
-        bg_iron_mining = 30 # 15
-        bg_logging = 16 # 8
+        bg_coal_mining = 112
+        bg_iron_mining = 30
+        bg_logging = 16
     }
 }
 
@@ -846,17 +844,17 @@ STATE_BRITTANY = {
     id = 39
     subsistence_building = "building_subsistence_farms"
     provinces = { "x10A040" "x2368E7" "x2BD902" "x32C2E2" "x50F4A7" "x55607E" "x706000" "x85E5AC" "xA0B0D1" "xABF468" "xC4D7A2" "xD0E080" "xD584A0" "xF91DD2" }
-    traits = { "state_trait_loire_river" "state_trait_roadstead_of_brest" }
+    traits = { "state_trait_roadstead_of_brest" "state_trait_loire_river" }
     city = "x706000"
     port = "x32C2E2"
     farm = "x2368E7"
     mine = "x2BD902"
     wood = "x10A040"
-    arable_land = 216 # 100
+    arable_land = 215
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 22 # 11
-        bg_fishing = 30 # 15
+        bg_logging = 22
+        bg_fishing = 30
     }
     naval_exit_id = 3029
 }
@@ -870,11 +868,11 @@ STATE_BURGUNDY = {
     farm = "x8329EC"
     mine = "x708060"
     wood = "xF08060"
-    arable_land = 225 # 90
+    arable_land = 225
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 66 # 33
-        bg_logging = 18 # 9
+        bg_iron_mining = 66
+        bg_logging = 18
     }
 }
 
@@ -887,11 +885,11 @@ STATE_CHAMPAGNE = {
     farm = "x075199"
     mine = "x999D4B"
     wood = "xEF00DF"
-    arable_land = 228 # 80
+    arable_land = 230
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 42 # 21
-        bg_logging = 22 # 11
+        bg_iron_mining = 42
+        bg_logging = 22
     }
 }
 
@@ -899,15 +897,16 @@ STATE_FRANCHE_COMTE = {
     id = 42
     subsistence_building = "building_subsistence_farms"
     provinces = { "x3D8EF9" "x700060" "xA9D961" "xB000E0" "xCF46D1" "xF00060" }
+    traits = { "state_trait_meuse_river" }
     city = "xB080E0"
     farm = "x600883"
     mine = "x3D8EF9"
     wood = "x3080E0"
-    arable_land = 202 # 90
+    arable_land = 200
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 40 # 20
-        bg_logging = 18 # 9
+        bg_iron_mining = 40
+        bg_logging = 18
     }
 }
 
@@ -915,18 +914,18 @@ STATE_LORRAINE = {
     id = 43
     subsistence_building = "building_subsistence_farms"
     provinces = { "x282DCC" "x3080E0" "x70BFA0" "x7FC1E6" "xB080E0" "xC5F13A" }
-    traits = { "state_trait_minette_ore" }
+    traits = { "state_trait_minette_ore" "state_trait_meuse_river" }
     city = "xA27EFD"
     farm = "x30E000"
     mine = "xA27EFD"
     wood = "xAF89BC"
-    arable_land = 152 # 55
+    arable_land = 150
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_lead_mining = 90 # 45
-        bg_sulfur_mining = 80 # 40
-        bg_iron_mining = 120 # 60
-        bg_logging = 34 # 17
+        bg_lead_mining = 90
+        bg_sulfur_mining = 80
+        bg_iron_mining = 120
+        bg_logging = 34
     }
 }
 
@@ -939,12 +938,12 @@ STATE_AQUITAINE = {
     farm = "x70A080"
     mine = "x3784B2"
     wood = "xCD8E77"
-    arable_land = 220 # 80
+    arable_land = 220
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 120 # 60
-        bg_logging = 28 # 14
-        bg_fishing = 22 # 11
+        bg_coal_mining = 120
+        bg_logging = 28
+        bg_fishing = 22
     }
     naval_exit_id = 3029
 }
@@ -953,15 +952,15 @@ STATE_ORLEANS = {
     id = 45
     subsistence_building = "building_subsistence_farms"
     provinces = { "x14F855" "x47B641" "x50CE72" "x6E4717" "x886277" "x90A0C0" "x90E000" "xD8BA95" "xE13BC2" "xE3E249" "xE7B296" "xF0E39E" "xF522D9" }
-    traits = { "state_trait_loire_river" "state_trait_good_soils" }
+    traits = { "state_trait_good_soils" "state_trait_loire_river" }
     city = "x47B641"
     farm = "x50CE72"
     mine = "xD02040"
     wood = "x90E000"
-    arable_land = 176 # 70
+    arable_land = 175
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 18 # 7
+        bg_logging = 18
     }
 }
 
@@ -969,17 +968,17 @@ STATE_HOLLAND = {
     id = 46
     subsistence_building = "building_subsistence_farms"
     provinces = { "x01C0A0" "x777732" "x80C0A0" "xC04021" }
-    traits = { "state_trait_rhine_river" "state_trait_natural_harbors" }
+    traits = { "state_trait_natural_harbors" "state_trait_meuse_river" "state_trait_rhine_river"  }
     city = "x777732"
     port = "x80C0A0"
     farm = "xC04021"
     mine = "x777732"
     wood = "x01C0A0"
-    arable_land = 136 # 30
+    arable_land = 165
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 8 # 4
-        bg_fishing = 24 # 12
+        bg_logging = 8
+        bg_fishing = 24
     }
     naval_exit_id = 3028
 }
@@ -993,21 +992,21 @@ STATE_FRIESLAND = {
     farm = "x5A48A2"
     mine = "x4141A0"
     wood = "xC0C021"
-    arable_land = 119 # 30
+    arable_land = 120
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 4 # 2
-        bg_whaling = 10 # 5
-        bg_fishing = 30 # 15
+        bg_logging = 4
+        bg_whaling = 10
+        bg_fishing = 30
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 60 # 30
+        undiscovered_amount = 60
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 10 # 5
+        undiscovered_amount = 10
     }
     naval_exit_id = 3027
 }
@@ -1022,48 +1021,31 @@ STATE_GELRE = {
     mine = "x41C0A0"
     wood = "xC041A0"
 	port = "xC041A0"
-    arable_land = 123 # 34
+    arable_land = 125
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 14 # 7
+        bg_logging = 14
     }
 	naval_exit_id = 3027
-}
-
-STATE_BRABANT = {
-    id = 1100
-    subsistence_building = "building_subsistence_farms"
-    provinces = { "x4C4894" "xC0C0A0" "x0000DF" }
-    city = "xC0C0A0"
-    farm = "x4C4894"
-    mine = "x0000DF"
-    wood = "x0000DF"
-    arable_land = 128 # 32
-    arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
-    capped_resources = {
-        bg_coal_mining = 80 # 40
-        bg_logging = 4 # 2
-    }
 }
 
 STATE_WALLONIA = {
     id = 49
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x2D32D7" "x3A5FB9" "x5180A0" "x8080A0" "x916574" "xB0A0C0" "xD001A0" "xEF2040" }
-    traits = { "state_trait_borinage_coalfield" "state_trait_minette_ore" }
-    city = "x5180A0"
+    provinces = { "x2D32D7" "x8080A0" "x916574" "xB0A0C0" "xEF2040" }
+    traits = { "state_trait_borinage_coalfield" "state_trait_minette_ore" "state_trait_meuse_river" }
+    city = "x2D32D7"
     farm = "x916574"
     mine = "xEF2040"
     wood = "x2D32D7"
-    arable_land = 180 # 60
+    arable_land = 180
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 160 # 80
-        bg_iron_mining = 120 # 60
-        bg_lead_mining = 60 # 30
-        bg_logging = 34 # 17
-        # Added
-        bg_copper_mining = 50 # 25
+        bg_coal_mining = 160
+        bg_iron_mining = 120
+        bg_lead_mining = 60
+        bg_copper_mining = 50
+        bg_logging = 34
     }
 }
 
@@ -1076,13 +1058,12 @@ STATE_FLANDERS = {
     farm = "x800060"
     mine = "x808061"
     wood = "x8041A0"
-    arable_land = 230 # 80
+    arable_land = 230
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 46 # 23
-        bg_fishing = 10 # 5
-        # Added
-        bg_copper_mining = 20 # 10
+        bg_copper_mining = 20
+        bg_logging = 46
+        bg_fishing = 10
     }
     naval_exit_id = 3028
 }
@@ -1096,11 +1077,15 @@ STATE_AUSTRIA = {
     farm = "x9001A0"
     mine = "x9001A0"
     wood = "x0CBB8F"
-    arable_land = 198 # 80
+    arable_land = 200
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 88 # 44
-        bg_logging = 14 # 7
+        bg_coal_mining = 88
+        bg_logging = 14
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
     }
 }
 
@@ -1108,24 +1093,23 @@ STATE_BOHEMIA = {
     id = 52
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0B9B4F" "x1D6B94" "x2ED2B3" "x400226" "x465A13" "x61902F" "x67FE18" "x716141" "x71E041" "x74C71F" "x81C142" "x9080A0" "x9C175D" "xA40163" "xAFD2D1" "xCDE96E" "xD286DB" "xEE1941" "xF06141" "xF0E041" "xFA371D" }
-    traits = { "state_trait_elbe_river" "state_trait_most_basin" "state_trait_joachimsthal" "state_trait_bohemian_forests" }
+    traits = { "state_trait_most_basin" "state_trait_joachimsthal" "state_trait_bohemian_forests" "state_trait_elbe_river" }
     city = "x81C142"
     farm = "x9C175D"
     mine = "x74C71F"
     wood = "xAFD2D1"
-    arable_land = 405 # 180
+    arable_land = 400
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 96 # 48
-        bg_iron_mining = 90 # 45
-        bg_logging = 34 # 17
-        # Added
-        bg_silver_mining = 18 # 9
+        bg_coal_mining = 166
+        bg_iron_mining = 90
+        bg_silver_mining = 18
+        bg_logging = 34
     }
     resource = {
-        type = "bg_copper_fields"
-        depleted_type = "bg_copper_fields"
-        undiscovered_amount = 10 # 5
+        type = "bg_silver_fields"
+        depleted_type = "bg_silver_fields"
+        undiscovered_amount = 10
     }
 }
 
@@ -1137,11 +1121,15 @@ STATE_MORAVIA = {
     farm = "xEF6080"
     mine = "x1D088E"
     wood = "x12778D"
-    arable_land = 220 # 80
+    arable_land = 220
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 112 # 56
-        bg_logging = 28 # 14
+        bg_coal_mining = 112
+        bg_logging = 28
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
     }
 }
 
@@ -1154,13 +1142,13 @@ STATE_STYRIA = {
     farm = "x8F8020"
     mine = "x59D927"
     wood = "x86FD73"
-    arable_land = 114 # 40
+    arable_land = 120
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 80 # 40
-        bg_iron_mining = 48 # 24
-        bg_lead_mining = 48 # 24
-        bg_logging = 16 # 8
+        bg_coal_mining = 104
+        bg_iron_mining = 98
+        bg_lead_mining = 24
+        bg_logging = 16
     }
 }
 
@@ -1173,12 +1161,12 @@ STATE_TYROL = {
     farm = "x5D4166"
     mine = "xF0E0C0"
     wood = "xD0C0E0"
-    arable_land = 102 # 30
+    arable_land = 100
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_silver_mining = 4 # 2
-        bg_iron_mining = 72 # 36
-        bg_logging = 18 # 9
+        bg_iron_mining = 72
+        bg_silver_mining = 8
+        bg_logging = 18
     }
 }
 
@@ -1191,16 +1179,16 @@ STATE_SOUTH_TYROL = {
     farm = "xD0BF60"
     mine = "x039D0F"
     wood = "xD040E0"
-    arable_land = 45 # 15
+    arable_land = 85
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 12 # 6
-        bg_silver_mining = 4 # 2
+        bg_logging = 12
+        bg_silver_mining = 4
     }
     resource = {
-        type = "bg_copper_fields"
-        depleted_type = "bg_copper_fields"
-        undiscovered_amount = 6 # 3
+        type = "bg_silver_fields"
+        depleted_type = "bg_silver_fields"
+        undiscovered_amount = 6
     }
 }
 
@@ -1214,11 +1202,11 @@ STATE_POMERANIA = {
     farm = "xA0C020"
     mine = "x19AE19"
     wood = "xA0C020"
-    arable_land = 160 # 50
+    arable_land = 180
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 22 # 11
-        bg_fishing = 20 # 10
+        bg_logging = 22
+        bg_fishing = 20
     }
     naval_exit_id = 3019
 }
@@ -1228,21 +1216,21 @@ STATE_ELBE = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x392FDA" "x418061" "x587297" "x68BE66" "x7C8FD3" "xA5E2E8" "xC08061" "xC080E0" "xF54C13" }
     prime_land = { "xC080E0" }
-    traits = { "state_trait_elbe_river" "state_trait_bremerhaven" }
+    traits = { "state_trait_bremerhaven" "state_trait_elbe_river" }
     city = "x587297"
     port = "x68BE66"
     farm = "xC08061"
     mine = "x587297"
     wood = "xA5E2E8"
-    arable_land = 93 # 30
+    arable_land = 140
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 18 # 9
-        bg_fishing = 10 # 5
+        bg_logging = 18
+        bg_fishing = 10
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 60 # 30
+        undiscovered_amount = 60
     }
     naval_exit_id = 3027
 }
@@ -1251,22 +1239,22 @@ STATE_EAST_SWITZERLAND = {
     id = 59
     subsistence_building = "building_subsistence_farms"
     provinces = { "x11C0E0" "x5FB41E" "x7E4B86" "x90C0E0" "xD00161" }
-    traits = { "state_trait_alps_mountains" "state_trait_rhine_river" }
+    traits = { "state_trait_rhine_river" "state_trait_alps_mountains" }
     city = "x5FB41E"
     farm = "x7E4B86"
     mine = "x90C0E0"
     wood = "xD00161"
-    arable_land = 92 # 40
+    arable_land = 90
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 60 # 30
-        bg_lead_mining = 60 # 30
-        bg_logging = 34 # 17
+        bg_iron_mining = 60
+        bg_lead_mining = 60
+        bg_logging = 34
     }
     resource = {
-        type = "bg_copper_fields"
-        depleted_type = "bg_copper_fields"
-        undiscovered_amount = 16 # 8
+        type = "bg_silver_fields"
+        depleted_type = "bg_silver_fields"
+        undiscovered_amount = 6
     }
 }
 
@@ -1274,23 +1262,23 @@ STATE_WEST_SWITZERLAND = {
     id = 60
     subsistence_building = "building_subsistence_farms"
     provinces = { "x117FE0" "x508060" "x7ACC0B" "x9041E0" "x9080E0" "xA042B5" "xD08060" "xE51E78" "xEBF5B1" "xED07F7" }
-    traits = { "state_trait_alps_mountains" "state_trait_rhine_river" }
+    traits = { "state_trait_rhine_river" "state_trait_alps_mountains" }
     city = "xED07F7"
     farm = "xD08060"
     mine = "x9080E0"
     wood = "xA042B5"
-    arable_land = 94 # 40
+    arable_land = 100
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 96 # 48
-        bg_iron_mining = 48 # 24
-        bg_lead_mining = 48 # 24
-        bg_logging = 12 # 6
+        bg_coal_mining = 96
+        bg_iron_mining = 48
+        bg_lead_mining = 48
+        bg_logging = 12
     }
     resource = {
-        type = "bg_copper_fields"
-        depleted_type = "bg_copper_fields"
-        undiscovered_amount = 24 # 12
+        type = "bg_silver_fields"
+        depleted_type = "bg_silver_fields"
+        undiscovered_amount = 12
     }
 }
 
@@ -1304,20 +1292,19 @@ STATE_WESTPHALIA = {
     farm = "x1DD141"
     mine = "x218061"
     wood = "x0180E0"
-    arable_land = 168 # 60
+    arable_land = 170
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 160 # 80
-        bg_iron_mining = 72 # 36
-        bg_sulfur_mining = 64 # 32
-        bg_logging = 48 # 24
-        # Added
-        bg_copper_mining = 12 # 6
+        bg_coal_mining = 160 
+        bg_iron_mining = 72
+        bg_sulfur_mining = 64
+        bg_copper_mining = 12
+        bg_logging = 48
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 8 # 4
+        undiscovered_amount = 8
     }
 }
 
@@ -1330,16 +1317,16 @@ STATE_ANHALT = {
     farm = "x8A448C"
     mine = "xCF5D8E"
     wood = "xA51232"
-    arable_land = 174 # 70
+    arable_land = 175
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 88 # 44
-        bg_logging = 40 # 20
+        bg_coal_mining = 88
+        bg_logging = 40
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 10 # 5
+        undiscovered_amount = 10
     }
 }
 
@@ -1352,17 +1339,17 @@ STATE_RHINELAND = {
     farm = "x707505"
     mine = "x11C021"
     wood = "xD080A0"
-    arable_land = 161 # 55
+    arable_land = 160
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 120 # 60
-        bg_lead_mining = 60 # 30
-        bg_logging = 22 # 11
+        bg_coal_mining = 120
+        bg_lead_mining = 60
+        bg_logging = 22
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 3
+        undiscovered_amount = 6
     }
 }
 
@@ -1375,12 +1362,12 @@ STATE_NORTH_RHINE = {
     farm = "x5101A0"
     mine = "x2101E0"
     wood = "x834B66"
-    arable_land = 189 # 77
+    arable_land = 190
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 50 # 25
-        bg_iron_mining = 40 # 20
-        bg_logging = 14 # 7
+        bg_coal_mining = 50
+        bg_iron_mining = 40
+        bg_logging = 14
     }
     resource = {
         type = "bg_copper_fields"
@@ -1398,11 +1385,11 @@ STATE_BRANDENBURG = {
     farm = "x83B1A8"
     mine = "xDF4020"
     wood = "x514C51"
-    arable_land = 161 # 45
+    arable_land = 160
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 88 # 44
-        bg_logging = 12 # 6
+        bg_coal_mining = 88
+        bg_logging = 12
     }
 }
 
@@ -1415,11 +1402,11 @@ STATE_SCHLESWIG_HOLSTEIN = {
     farm = "x00C060"
     mine = "x00C060"
     wood = "x804160"
-    arable_land = 111 # 40
+    arable_land = 110
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 12 # 6
-        bg_fishing = 12 # 6
+        bg_logging = 12
+        bg_fishing = 12
     }
     naval_exit_id = 3019
 }
@@ -1434,10 +1421,10 @@ STATE_WURTTEMBERG = {
     farm = "xDBB84C"
     mine = "xDBB84C"
     wood = "xC541D2"
-    arable_land = 160 # 65
+    arable_land = 220
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 18 # 9
+        bg_logging = 18
     }
 }
 
@@ -1450,12 +1437,12 @@ STATE_BADEN = {
     farm = "xB08061"
     mine = "xAEBA2A"
     wood = "x318061"
-    arable_land = 134 # 45
+    arable_land = 240
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 40 # 20
-        bg_iron_mining = 30 # 15
-        bg_logging = 22 # 11
+        bg_coal_mining = 40
+        bg_iron_mining = 30
+        bg_logging = 22
     }
 }
 
@@ -1468,16 +1455,16 @@ STATE_HANNOVER = {
     farm = "x4D62A0"
     mine = "x165E05"
     wood = "xBBA504"
-    arable_land = 172 # 60
+    arable_land = 170
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 48 # 24
-        bg_logging = 18 # 9
-        bg_fishing = 8 # 4
+        bg_iron_mining = 48
+        bg_logging = 18
+        bg_fishing = 8
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 60 # 30
+        undiscovered_amount = 60
     }
     naval_exit_id = 3027
 }
@@ -1490,15 +1477,14 @@ STATE_BRUNSWICK = {
     farm = "x4C16EA"
     mine = "xA61E6E"
     wood = "xA61E6E"
-    arable_land = 85 # 25
+    arable_land = 105
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 80 # 40
-        bg_iron_mining = 90 # 45
-        bg_lead_mining = 90 # 45
-        bg_logging = 12 # 6
-        # Added
-        bg_silver_mining = 12 # 6
+        bg_coal_mining = 80
+        bg_iron_mining = 90
+        bg_lead_mining = 90
+        bg_silver_mining = 12
+        bg_logging = 12
     }
 }
 
@@ -1511,13 +1497,13 @@ STATE_BAVARIA = {
     farm = "xFE59E7"
     mine = "xE75868"
     wood = "xC347B1"
-    arable_land = 161 # 65
+    arable_land = 220
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 120 # 60
-        bg_iron_mining = 60 # 30
-        bg_lead_mining = 60 # 30
-        bg_logging = 46 # 23
+        bg_coal_mining = 120
+        bg_iron_mining = 60
+        bg_lead_mining = 60
+        bg_logging = 46
     }
 }
 
@@ -1529,16 +1515,16 @@ STATE_FRANCONIA = {
     farm = "x648AD1"
     mine = "xF91154"
     wood = "x51C0A0"
-    arable_land = 190 # 80
+    arable_land = 210
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 60 # 30
-        bg_logging = 34 # 17
+        bg_iron_mining = 60
+        bg_logging = 34
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 8 # 4
+        undiscovered_amount = 8
     }
 }
 
@@ -1552,18 +1538,18 @@ STATE_SAXONY = {
     farm = "xD0C021"
     mine = "x917939"
     wood = "x31E0C0"
-    arable_land = 226 # 100
+    arable_land = 220
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 160 # 80
-        bg_iron_mining = 60 # 30
-        bg_sulfur_mining = 160 # 80
-        bg_logging = 12 # 6
+        bg_coal_mining = 160
+        bg_iron_mining = 60
+        bg_sulfur_mining = 160
+        bg_logging = 12
     }
     resource = {
         type = "bg_copper_fields"
         depleted_type = "bg_copper_fields"
-        undiscovered_amount = 14 # 7
+        undiscovered_amount = 14
     }
 }
 
@@ -1576,13 +1562,13 @@ STATE_HESSE = {
     farm = "x1141A0"
     mine = "x8B7C67"
     wood = "xD04121"
-    arable_land = 188 # 80
+    arable_land = 190
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 120 # 60
-        bg_iron_mining = 60 # 30
-        bg_sulfur_mining = 80 # 40
-        bg_logging = 16 # 8
+        bg_coal_mining = 120
+        bg_iron_mining = 60
+        bg_sulfur_mining = 80
+        bg_logging = 16
     }
 }
 
@@ -1596,11 +1582,11 @@ STATE_MECKLENBURG = {
     farm = "xD9A469"
     mine = "xE041A0"
     wood = "x12E54F"
-    arable_land = 91 # 25
+    arable_land = 110
     arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 16 # 8
-        bg_fishing = 20 # 10
+        bg_logging = 16
+        bg_fishing = 20
     }
     naval_exit_id = 3019
 }
@@ -1609,19 +1595,18 @@ STATE_RUHR = {
     id = 584
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0180E0" "x2101E0" "x5101A0" xD08021 }
-    traits = { "state_trait_rhine_river" "state_trait_ruhr_coalfield" }
+    traits = { "state_trait_ruhr_coalfield" "state_trait_rhine_river" }
     city = "x2101E0"
     farm = "x5101A0"
     mine = "xD08021"
     wood = "x0180E0"
-    arable_land = 137 # 39
+    arable_land = 140
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 110 # 55
-        bg_iron_mining = 20 # 10
-        bg_logging = 8 # 4
-        # Added
-        bg_copper_mining = 24 # 12
+        bg_coal_mining = 110
+        bg_iron_mining = 20
+        bg_copper_mining = 24
+        bg_logging = 8
     }
 
 }
@@ -1635,10 +1620,122 @@ STATE_MAINE_ANJOU = {
     farm = "x192CA5"
     mine = "x30E080"
     wood = "x6B5474"
-    arable_land = 251  # 112
+    arable_land = 250
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 60 # 30
-        bg_logging = 22 # 11
+        bg_iron_mining = 60
+        bg_logging = 22
+    }
+}
+
+# Added
+
+STATE_SAVOLAX = {
+    id = 1168
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x0D3DF3" "x154428" "x214180" "x238A38" "x2401AE" "x37CE53" "x3C48A2" "x40C040" "x467F2F" "x4753CB" "x51CC44" "x523560" "x5D1467" "x7753B6" "x7B45A5" "x825979" "x8C31CF" "x8DCF76" "x932418" "x934610" "x969608" "x9C363D" "xA789AE" "xB81268" "xBC487D" "xCC8E28" "xD105A8" "xD26819" "xD516FA" "xE761B2" "xED84C3" "xED8DC6" "xF571CB" "xFF4B4C" }
+    traits = { "state_trait_scandinavian_forests" }
+    city = "x51CC44"
+    farm = "x8DCF76"
+    mine = "x214180"
+    wood = "x825979"
+    arable_land = 80
+    arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 44
+        bg_logging = 30
+    }
+}
+
+STATE_NORTHUMBRIA = {
+    id = 1225
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x527116" "x606000" "x824DB7" "xEDC0BA" }
+    traits = { "state_trait_great_northern_coalfield" "state_trait_natural_harbors" "state_trait_north_sea_fishing" }
+    city = "x606000"
+    port = "x527116"
+    farm = "x527116"
+    mine = "xEDC0BA"
+    wood = "x824DB7"
+    arable_land = 120
+    arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_coal_mining = 130
+        bg_logging = 12
+        bg_fishing = 12
+    }
+    naval_exit_id = 3027
+}
+
+STATE_WEST_MIDLANDS = {
+    id = 1224
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x11C2BB" "x20A0C0" "x58D3AE" "x6020C0" "xA021B0" "xA220D6" "xE020C0" }
+    traits = { "state_trait_the_potteries" }
+    city = "x20A0C0"
+    port = "xE020C0"
+    farm = "x6020C0"
+    mine = "x20A0C0"
+    wood = "x6020C0"
+    arable_land = 170
+    arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_coal_mining = 98
+        bg_logging = 14
+    }
+    naval_exit_id = 3028
+}
+
+STATE_STRATHCLYDE = {
+    id = 1226
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x20E080" "x363883" "x676072" "x832656" "xA06080" "xB2A15E" "xDCD566" }
+    traits = { "state_trait_central_belt_coalfield" "state_trait_natural_harbors" }
+    city = "xA06080"
+    port = "xB2A15E"
+    farm = "xDCD566"
+    mine = "x832656"
+    wood = "x20E080"
+    arable_land = 130
+    arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_coal_mining = 98
+        bg_logging = 16
+        bg_fishing = 14
+    }
+    naval_exit_id = 3030
+}
+
+STATE_BRABANT = {
+    id = 2005
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x4C4894" "xC0C0A0" "x0000DF" }
+    traits = { "state_trait_meuse_river" }
+    city = "xC0C0A0"
+    farm = "x4C4894"
+    mine = "x0000DF"
+    wood = "x0000DF"
+    arable_land = 130
+    arable_resources = { "bg_quarries" "bg_rye_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_coal_mining = 80
+        bg_logging = 4
+    }
+}
+
+STATE_LUXEMBOURG = {
+    id = 2006
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x5180A0" "xD001A0" "x3A5FB9"}
+    traits = { "state_trait_borinage_coalfield" }
+    city = "x5180A0"
+    farm = "xD001A0"
+    arable_land = 90
+    arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_coal_mining = 60
+        bg_iron_mining = 45
+        bg_lead_mining = 22
+        bg_logging = 10
     }
 }

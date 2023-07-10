@@ -42,8 +42,8 @@ egyptian_crisis_events.1 = {
 			name = egyptian_crisis
 		}
 		if = {
-			limit = { exists = s:STATE_SYRIA.region_state:EGY }
-			s:STATE_SYRIA.region_state:EGY = { save_scope_as = egyptian_crisis_state }
+			limit = { exists = s:STATE_DAMASCUS.region_state:EGY }
+			s:STATE_DAMASCUS.region_state:EGY = { save_scope_as = egyptian_crisis_state }
 		}
 		else = {
 			c:EGY.capital = { save_scope_as = egyptian_crisis_state }
@@ -83,7 +83,7 @@ egyptian_crisis_events.1 = {
 				country_rank = rank_value:great_power
 				country_is_in_europe = yes
 				NOR = {
-					has_interest_marker_in_region = region_arabic
+					has_interest_marker_in_region = region_syria
 					c:EGY = this
 					c:TUR = this
 					has_war_with = c:TUR
@@ -110,7 +110,7 @@ egyptian_crisis_events.1 = {
 				country_rank = rank_value:great_power
 				country_is_in_europe = yes
 				NOR = {
-					has_interest_marker_in_region = region_arabic
+					has_interest_marker_in_region = region_syria
 					c:EGY = this
 					c:TUR = this
 					has_war_with = c:TUR
@@ -151,8 +151,8 @@ egyptian_crisis_events.2 = {
 
 	immediate = {
 		if = {
-			limit = { exists = s:STATE_SYRIA.region_state:EGY }
-			s:STATE_SYRIA.region_state:EGY = { save_scope_as = egyptian_crisis_state }
+			limit = { exists = s:STATE_DAMASCUS.region_state:EGY }
+			s:STATE_DAMASCUS.region_state:EGY = { save_scope_as = egyptian_crisis_state }
 		}
 		else = {
 			c:EGY.capital = { save_scope_as = egyptian_crisis_state }
@@ -187,8 +187,8 @@ egyptian_crisis_events.4 = {
 
 	immediate = {
 		if = {
-			limit = { exists = s:STATE_SYRIA.region_state:EGY }
-			s:STATE_SYRIA.region_state:EGY = { save_scope_as = egyptian_crisis_state }
+			limit = { exists = s:STATE_DAMASCUS.region_state:EGY }
+			s:STATE_DAMASCUS.region_state:EGY = { save_scope_as = egyptian_crisis_state }
 		}
 		else = {
 			c:EGY.capital = { save_scope_as = egyptian_crisis_state }
@@ -200,6 +200,8 @@ egyptian_crisis_events.4 = {
 		default_option = yes
 
 		add_declared_interest = region_arabic
+		add_declared_interest = region_syria
+		add_declared_interest = region_karamania
 		add_declared_interest = region_anatolia
 
 		hidden_effect = {

@@ -18,18 +18,14 @@
 		any_state = {
 			owner = ROOT
 			OR = {
-				state_region = s:STATE_BURMA
-				state_region = s:STATE_KACHIN
-				state_region = s:STATE_SHAN_STATES
-				state_region = s:STATE_SINDH
-				state_region = s:STATE_PUNJAB
 				state_region = s:STATE_KASHMIR
-				state_region = s:STATE_PASHTUNISTAN
-				state_region = s:STATE_BALUCHISTAN
 				state_region = s:STATE_HIMALAYAS
-				state_region = s:STATE_PEGU
 				region = sr:region_north_india
 				region = sr:region_south_india
+				region = sr:region_west_india
+				region = sr:region_east_india
+				region = sr:region_balochistan
+				region = sr:region_punjab
 			}
 		}
 	}
@@ -44,18 +40,14 @@
 				any_state = {
 					owner = ROOT
 					OR = {
-						state_region = s:STATE_BURMA
-						state_region = s:STATE_KACHIN
-						state_region = s:STATE_SHAN_STATES
-						state_region = s:STATE_SINDH
-						state_region = s:STATE_PUNJAB
-						state_region = s:STATE_KASHMIR
-						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_BALUCHISTAN
-						state_region = s:STATE_HIMALAYAS	
-						state_region = s:STATE_PEGU		
-						region = sr:region_north_india
-						region = sr:region_south_india	
+					state_region = s:STATE_KASHMIR
+					state_region = s:STATE_HIMALAYAS
+					region = sr:region_north_india
+					region = sr:region_south_india
+					region = sr:region_west_india
+					region = sr:region_east_india
+					region = sr:region_balochistan
+					region = sr:region_punjab
 					}
 				}
 			}
@@ -63,18 +55,14 @@
 				limit = {
 					owner = ROOT
 					OR = {
-						state_region = s:STATE_BURMA
-						state_region = s:STATE_KACHIN
-						state_region = s:STATE_SHAN_STATES
-						state_region = s:STATE_SINDH
-						state_region = s:STATE_PUNJAB
 						state_region = s:STATE_KASHMIR
-						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_BALUCHISTAN
-						state_region = s:STATE_HIMALAYAS	
-						state_region = s:STATE_PEGU			
+						state_region = s:STATE_HIMALAYAS
 						region = sr:region_north_india
 						region = sr:region_south_india
+						region = sr:region_west_india
+						region = sr:region_east_india
+						region = sr:region_balochistan
+						region = sr:region_punjab
 					}
 				}
 				set_state_owner = c:BIC

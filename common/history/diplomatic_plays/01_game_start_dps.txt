@@ -20,7 +20,7 @@
 		create_diplomatic_play = {
 			name = russia_dagestan_war
 		
-			target_state = s:STATE_DAGESTAN.region_state:CHC
+			target_state = s:STATE_TEREK.region_state:CHC
 			
 			war = yes
 			
@@ -29,7 +29,7 @@
 			add_war_goal = {
 				holder = c:CHC
 				type = return_state
-				target_state = s:STATE_DAGESTAN.region_state:RUS
+				target_state = s:STATE_TEREK.region_state:RUS
 			}
 		}			
 	}

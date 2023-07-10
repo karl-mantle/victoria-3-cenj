@@ -15,11 +15,23 @@
 		OR = { 
 			any_state = {
 				owner = ROOT
-				region = sr:region_indonesia
+				OR = {
+					region = sr:region_east_sunda_islands
+					region = sr:region_west_sunda_islands
+					region = sr:region_borneo
+					region = sr:region_papua
+				}
 				is_under_colonization = no
 			}
 			any_subject_or_below = {
-				capital.region = sr:region_indonesia
+				capital = {
+					OR = {
+						region = sr:region_east_sunda_islands
+						region = sr:region_west_sunda_islands
+						region = sr:region_borneo
+						region = sr:region_papua
+					}
+				}
 				NOT = { 
 					THIS = c:DEI
 					is_subject_of = c:DEI
@@ -37,13 +49,23 @@
 			limit= {
 				any_state = {
 					owner = ROOT
-					region = sr:region_indonesia
+					OR = {
+						region = sr:region_east_sunda_islands
+						region = sr:region_west_sunda_islands
+						region = sr:region_borneo
+						region = sr:region_papua
+					}
 				}
 			}
 			every_scope_state = {
 				limit = {
 					owner = ROOT
-					region = sr:region_indonesia
+					OR = {
+						region = sr:region_east_sunda_islands
+						region = sr:region_west_sunda_islands
+						region = sr:region_borneo
+						region = sr:region_papua
+					}
 				}
 				set_state_owner = c:DEI
 				set_state_type = unincorporated
@@ -52,7 +74,14 @@
 		if = {
 			limit= {
 				any_subject_or_below = {
-					capital.region = sr:region_indonesia
+					capital.region = {
+						OR = {
+							region = sr:region_east_sunda_islands
+							region = sr:region_west_sunda_islands
+							region = sr:region_borneo
+							region = sr:region_papua
+						}
+					}
 					NOT = { 
 						THIS = c:DEI 
 						is_subject_of = c:DEI 
@@ -63,7 +92,14 @@
 				if = {
 					limit = { 
 						is_subject_type = subject_type_protectorate
-						capital.region = sr:region_indonesia
+						capital.region = {
+							OR = {
+								region = sr:region_east_sunda_islands
+								region = sr:region_west_sunda_islands
+								region = sr:region_borneo
+								region = sr:region_papua
+							}
+						}
 						NOT = { 
 							THIS = c:DEI 
 							is_subject_of = c:DEI 
@@ -81,7 +117,14 @@
 				if = {
 					limit = { 
 						is_subject_type = subject_type_vassal
-						capital.region = sr:region_indonesia
+						capital.region = {
+							OR = {
+								region = sr:region_east_sunda_islands
+								region = sr:region_west_sunda_islands
+								region = sr:region_borneo
+								region = sr:region_papua
+							}
+						}
 						NOT = { 
 							THIS = c:DEI 
 							is_subject_of = c:DEI 
@@ -99,7 +142,14 @@
 				if = {
 					limit = { 
 						is_subject_type = subject_type_puppet
-						capital.region = sr:region_indonesia
+						capital.region = {
+							OR = {
+								region = sr:region_east_sunda_islands
+								region = sr:region_west_sunda_islands
+								region = sr:region_borneo
+								region = sr:region_papua
+							}
+						}
 						NOT = { 
 							THIS = c:DEI 
 							is_subject_of = c:DEI 

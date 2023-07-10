@@ -485,7 +485,7 @@ STATE_TANGANYIKA = {
     id = 225
     subsistence_building = "building_subsistence_farms"
     provinces = { "x02207F" "x04F5F9" "x0E2596" "x16915A" "x1D96A3" "x206030" "x25315B" "x2691C1" "x2729FD" "x31DDA2" "x337D6C" "x33EBC0" "x34EFF0" "x385BCF" "x38E17B" "x3F4074" "x405CA8" "x425AA5" "x4511CE" "x46E610" "x494A2E" "x4C93A2" "x4F3573" "x5073C4" "x5093DF" "x51AA49" "x536B97" "x56F303" "x585D0C" "x5954AA" "x5F51AC" "x5FB098" "x61218F" "x642C7C" "x662B31" "x6936D4" "x6CFAFE" "x6E958D" "x735985" "x78575F" "x7CA754" "x7CE03A" "x80DF50" "x839660" "x83BED8" "x858E45" "x89572B" "x8C4477" "x8C8524" "x8D4D80" "x8EAA8A" "x8F39A2" "x940FCF" "x958123" "x97523A" "xA9BAF1" "xA9F940" "xAD3AA2" "xAEEF76" "xBCE7C6" "xC40CD1" "xC8EA56" "xCA829D" "xCAC52D" "xCBDC0C" "xD0FF5C" "xD54938" "xD8B2ED" "xDD184B" "xDF9923" "xDFA030" "xDFB528" "xE15FF5" "xE257AF" "xE5BCC5" "xEBBE80" "xECBF22" "xF25F2A" "xF3365F" "xF56448" "xFCA852" "xFDF261" }
-    prime_land = { "x5093DF" "x16915A" "xD8B2ED" "x80DF50" "x5954AA" "x34EFF0" "x662B31" }
+    prime_land = { "x5093DF" "x16915A" "xD8B2ED" "xDF9923" "x585D0C" "x80DF50" "x5954AA" "x34EFF0" "x51AA49" "x662B31" "xDFB528" "x4C93A2" "x0E2596" }
     traits = { "state_trait_malaria" "state_trait_lake_victoria" "state_trait_albertine_rift" }
     city = "x34EFF0"
     farm = "xD0FF5C"
@@ -549,16 +549,16 @@ STATE_RIFT_VALLEY = {
     }
 }
 
-STATE_OROMIA = {
+STATE_SCIOA = {
     id = 228
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x02BFCD" "x055C75" "x077343" "x0BB3A0" "x0D5E96" "x0E0BF3" "x0FA741" "x0FBF6B" "x107FA1" "x14A492" "x1527DC" "x156474" "x19A599" "x1A441F" "x1E8D53" "x206111" "x20EBC8" "x28B782" "x318256" "x3286BD" "x35477F" "x35C9A6" "x396D03" "x3D8E7B" "x4160D0" "x41E0D0" "x435967" "x489C2A" "x4AD726" "x4CE17E" "x513574" "x516EB2" "x560028" "x582778" "x5C59E3" "x5FDD08" "x6075E2" "x6AEDF6" "x6E7998" "x6E8CCA" "x721216" "x74C88E" "x75E6F0" "x7A2004" "x7FCE33" "x82F3F6" "x84C294" "x869C8E" "x8CA5FB" "x8F6EB2" "x91C70C" "x939EDA" "x98DC27" "x98F62E" "x9B2CD2" "x9D4A30" "x9D5DFC" "xA51575" "xA8A20B" "xAA8CB0" "xAF0800" "xB41950" "xB480F1" "xB56BDC" "xB9A342" "xBEDF90" "xC74C78" "xC77DDF" "xC7AA4B" "xCCBD1F" "xCE40EE" "xD033B3" "xD1CB36" "xD20B42" "xD25F58" "xD26E35" "xD61F68" "xD68922" "xD6B588" "xDBA052" "xDFB76F" "xE04093" "xE156F9" "xE1D0E7" "xE7D29C" "xFC0BCC" "xFD0A16" }
-    prime_land = { "xE04093" "x1A441F" "x0FBF6B" "x5FDD08" "x41E0D0" "x91C70C" "x435967" "x4CE17E" "x9D5DFC" "xC77DDF" "xE7D29C" "xD6B588" "xD033B3" "xA8A20B" "x98F62E" "x35C9A6" "xC7AA4B" }
+    provinces = { "x0FA741" "x0FB7D1" "x0FBF6B" "x1A441F" "x35C9A6" "x41E0D0" "x435967" "x4CE17E" "x573362" "x5FDD08" "x62BE5B" "x69B4E9" "x7152F3" "x7A6C4F" "x98DC27" "x98F62E" "x9D5DFC" "xA8A20B" "xBB012E" "xC040E0" "xC4CB68" "xC74C78" "xC77DDF" "xC7AA4B" "xCF36EB" "xD033B3" "xD61F68" "xD6B588" "xD7E040" "xE04093" "xE7D29C" }
+    prime_land = { "x435967" }
     traits = { "state_trait_malaria" "state_trait_ethiopian_highlands" }
-    city = "xD6B588"
-    farm = "x41E0D0"
-    mine = "x869C8E"
-    wood = "xCE40EE"
+    city = "x435967"
+    farm = "x5FDD08"
+    mine = "xCF36EB"
+    wood = "x35C9A6"
     arable_land = 231 # 130
     arable_resources = { "bg_quarries" "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
@@ -574,16 +574,16 @@ STATE_OROMIA = {
     }
 }
 
-STATE_AMHARA = {
+STATE_GALLA_SIDAMO = {
     id = 229
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0739DC" "x0FB7D1" "x10D446" "x19FA60" "x1D098B" "x1EA108" "x1F0F14" "x29C3A2" "x2AC215" "x2D40BF" "x2D8473" "x345DC3" "x3503EC" "x366C12" "x36A83C" "x378A0D" "x40BCE0" "x44DF06" "x45C93A" "x462918" "x4681AC" "x47D35E" "x507381" "x573362" "x5A8BBB" "x5D4889" "x5F19EC" "x62BE5B" "x67C506" "x69B4E9" "x6AEA5C" "x71415B" "x7A6C4F" "x7F617B" "x7F7614" "x7F9732" "x831523" "x848437" "x85562A" "x870056" "x8D694F" "x910805" "x92412C" "x963349" "x98BB15" "x9EFEE0" "xA6F2C6" "xAA7799" "xB0D911" "xB332F3" "xB789A5" "xB88334" "xBFDFCF" "xC060D0" "xC4CB68" "xCF36EB" "xD031CA" "xD27454" "xD769E6" "xD7A4AF" "xDFF064" "xE071B6" "xE57DDA" "xE77D4B" "xE8D092" "xEE8BD1" "xF53F6D" "xFE53F8" }
-    prime_land = { "xC4CB68" }
-    traits = { "state_trait_malaria" "state_trait_ethiopian_highlands" }
+    provinces = { "x0739DC" "x10D446" "x19FA60" "x1D098B" "x1EA108" "x1F0F14" "x29C3A2" "x2AC215" "x2D40BF" "x2D8473" "x345DC3" "x3503EC" "x36A83C" "x378A0D" "x40BCE0" "x44DF06" "x45C93A" "x462918" "x4681AC" "x47D35E" "x507381" "x5A8BBB" "x5D4889" "x5F19EC" "x6AEA5C" "x71415B" "x7F617B" "x7F7614" "x7F9732" "x831523" "x848437" "x85562A" "x870056" "x8D694F" "x910805" "x92412C" "x963349" "x98BB15" "x9EFEE0" "xA6F2C6" "xAA7799" "xB332F3" "xB88334" "xBFDFCF" "xC060D0" "xD031CA" "xD27454" "xD769E6" "xDFF064" "xE071B6" "xE57DDA" "xE77D4B" "xE8D092" "xEE8BD1" "xF53F6D" "xFE53F8" }
+    prime_land = { "xB332F3" }
+    traits = { "state_trait_malaria" "state_trait_ethiopian_highlands" "state_trait_blue_nile_river" }
     city = "xB332F3"
     farm = "x10D446"
     mine = "x5D4889"
-    wood = "xFE53F8"
+    wood = "x1EA108"
     arable_land = 240 # 140
     arable_resources = { "bg_quarries" "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
@@ -595,15 +595,15 @@ STATE_AMHARA = {
     }
 }
 
-STATE_GONDER = {
+STATE_AMHARA = {
     id = 230
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x079D31" "x0DED25" "x1539E2" "x1A5869" "x251691" "x28FE62" "x2F3AE3" "x3BE1BE" "x3E9959" "x489309" "x4A8BE1" "x536ACF" "x57AA00" "x5A5824" "x5B5305" "x5CAB2B" "x5EF353" "x61A090" "x61A2A3" "x652B36" "x68239C" "x6BA88A" "x6F31A5" "x7152F3" "x793499" "x7A0E0D" "x7E83AE" "x81DDA7" "x82A9D3" "x931306" "x962CFC" "x9FA061" "xA2BCF9" "xA3CD68" "xA50EE3" "xAFF2F2" "xB1B90E" "xB87731" "xB93109" "xB969A7" "xBB012E" "xC00F88" "xC040E0" "xC19466" "xCA393F" "xD7E040" "xDA7922" "xDF15B2" "xDF2090" "xDF37BE" "xE06640" "xED4FE1" "xEFA8BC" "xF090A0" }
+    provinces = { "x079D31" "x0DED25" "x1539E2" "x1A5869" "x251691" "x28FE62" "x2F3AE3" "x3BE1BE" "x3E9959" "x489309" "x4A8BE1" "x536ACF" "x57AA00" "x5A5824" "x5B5305" "x5CAB2B" "x5EF353" "x61A090" "x61A2A3" "x652B36" "x68239C" "x6BA88A" "x6F31A5" "x793499" "x7A0E0D" "x7E83AE" "x81DDA7" "x82A9D3" "x931306" "x962CFC" "x9FA061" "xA2BCF9" "xA3CD68" "xA50EE3" "xAFF2F2" "xB1B90E" "xB87731" "xB93109" "xB969A7" "xC00F88" "xC19466" "xCA393F" "xDA7922" "xDF15B2" "xDF2090" "xDF37BE" "xE06640" "xED4FE1" "xEFA8BC" "xF090A0" }
     traits = { "state_trait_malaria" "state_trait_ethiopian_highlands" }
     city = "xDF2090"
-    farm = "x68239C"
-    mine = "xC040E0"
-    wood = "x489309"
+    farm = "x962CFC"
+    mine = "x68239C"
+    wood = "xB87731"
     arable_land = 303 # 160
     arable_resources = { "bg_quarries" "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
@@ -636,16 +636,16 @@ STATE_KAZEMBE = {
     }
 }
 
-STATE_SOMALILAND = {
+STATE_SOMALIA = {
     id = 232
     subsistence_building = "building_subsistence_orchards"
-    provinces = { "x0085FA" "x049442" "x089FE7" "x0C544E" "x0CE1C7" "x0F9944" "x1017C5" "x10CF18" "x12FDBA" "x132465" "x184064" "x1CE5E9" "x1D4152" "x1D4F93" "x20E090" "x212090" "x281ECB" "x284319" "x2C4BFE" "x2CA298" "x2D75F4" "x2F6BB1" "x2FB806" "x30521C" "x324717" "x326FD1" "x337D01" "x354629" "x3587B8" "x395C77" "x3BB51B" "x3D5BE3" "x3DE547" "x407408" "x42DA4F" "x45FEEC" "x46250C" "x469B34" "x48FFF1" "x4A6DFD" "x4BED76" "x508D8F" "x524E91" "x529552" "x560238" "x58307A" "x5B7C30" "x5BF703" "x5C2622" "x5DAE68" "x606011" "x60EAC8" "x625125" "x655F7E" "x678D0D" "x6BA02C" "x6D0680" "x6D66A6" "x6EFA28" "x72DC5E" "x73FE30" "x76595D" "x7D4764" "x7FBAFA" "x815D01" "x83A1A3" "x854A91" "x85FD85" "x894078" "x8AA210" "x992BFC" "x995FB2" "x9ACA9E" "x9DA796" "xA05C39" "xA0E090" "xA1A21B" "xA2A857" "xA6E128" "xAABDBD" "xAE76D1" "xAFF79D" "xB19FD2" "xB64D3E" "xB72AFB" "xB9F779" "xBC0D72" "xBF3A7A" "xBFE050" "xC6A5CB" "xCA0AFC" "xCB3B07" "xCCC39F" "xCEE8F8" "xD0BA96" "xD0FF66" "xD191E8" "xD3EE2E" "xD6084C" "xD85A85" "xD97AC4" "xDDAC33" "xDDF9DB" "xDEFB4F" "xDF6111" "xDF951C" "xE19C5A" "xE44897" "xE4636A" "xE585C3" "xE65D19" "xED2D92" "xEDC612" "xEF3903" "xF0C31D" "xF26F4C" "xF2A924" "xF30A4D" "xF4A328" "xF5E822" "xF70163" "xF9565C" "xFE3534" }
+    provinces = { "x0085FA" "x049442" "x0C544E" "x0F9944" "x1017C5" "x10CF18" "x132465" "x1CE5E9" "x1D4152" "x1D4F93" "x212090" "x281ECB" "x2CA298" "x2D75F4" "x2F6BB1" "x30521C" "x324717" "x326FD1" "x337D01" "x354629" "x3587B8" "x3D5BE3" "x3DE547" "x407408" "x42DA4F" "x45FEEC" "x46250C" "x469B34" "x4BED76" "x508D8F" "x529552" "x560238" "x58307A" "x5B7C30" "x5BF703" "x5DAE68" "x606011" "x60EAC8" "x625125" "x655F7E" "x6BA02C" "x6D0680" "x6D66A6" "x6EFA28" "x72DC5E" "x73FE30" "x76595D" "x815D01" "x83A1A3" "x854A91" "x894078" "x992BFC" "x995FB2" "xA05C39" "xA0E090" "xA1A21B" "xA2A857" "xA6E128" "xAABDBD" "xAFF79D" "xB19FD2" "xB64D3E" "xB72AFB" "xB9F779" "xBC0D72" "xBF3A7A" "xBFE050" "xCB3B07" "xCEE8F8" "xD0BA96" "xD0FF66" "xD191E8" "xD97AC4" "xDDF9DB" "xDF6111" "xE44897" "xE4636A" "xE585C3" "xE65D19" "xED2D92" "xEDC612" "xEF3903" "xF0C31D" "xF26F4C" "xF30A4D" "xF4A328" "xF5E822" "xF70163" "xFE3534" }
     traits = { "state_trait_malaria" }
     city = "x894078"
-    port = "x524E91"
-    farm = "x326FD1"
+    port = "x0C544E"
+    farm = "xBC0D72"
     mine = "x58307A"
-    wood = "xDEFB4F"
+    wood = "xE44897"
     arable_land = 121 # 80
     arable_resources = { "bg_quarries" "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tea_plantations" }
     capped_resources = {
@@ -710,7 +710,7 @@ STATE_UGANDA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00B0A9" "x05C5F1" "x0DF37F" "x17F11F" "x19F762" "x1D33CE" "x1D4C32" "x1DDAD8" "x206060" "x228B9A" "x357FAC" "x40D607" "x42EDCA" "x51AC81" "x542630" "x55FC3E" "x5C340A" "x6530A0" "x7183C4" "x7183F2" "x721418" "x7796E6" "x7ACC72" "x7CE297" "x9130A0" "xA09C30" "xA4C4FC" "xA9859E" "xC2D6DE" "xCD8D63" "xCE3CD0" "xD13A93" "xD13D78" "xE0A010" "xE1A791" "xE3B2A2" "xEA2372" "xEE81EC" "xF9C916" "xFB4215" }
 	prime_land = { x6530A0 x7183F2 x7183C4 xD13A93 xEA2372 xA9859E x42EDCA xFB4215 x55FC3E x17F11F xA09C30 x5C340A }
-    traits = { "state_trait_malaria" "state_trait_lake_victoria" "state_trait_albertine_rift" }
+    traits = { "state_trait_malaria" "state_trait_lake_victoria" "state_trait_albertine_rift" "state_trait_white_nile_river" }
     city = "xA9859E"
     farm = "x7183C4"
     mine = "x7CE297"
@@ -734,13 +734,12 @@ STATE_UGANDA = {
 STATE_EQUATORIA = {
     id = 236
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x01C6DC" "x01E0D0" "x025267" "x052C31" "x06F011" "x07EC0A" "x0B3FB6" "x117111" "x13B0BB" "x169409" "x178C0B" "x19094A" "x191199" "x1D57FB" "x1DA390" "x1EDEEF" "x26B47D" "x281B17" "x287FA3" "x2B99DD" "x2F3E88" "x3173A5" "x3864B4" "x387C9A" "x3A7DC2" "x3EBCE9" "x405DD1" "x409D75" "x40A050" "x42AAF1" "x458A9A" "x49DC0E" "x4B02C7" "x4D69FC" "x4FFD57" "x512903" "x5556B9" "x5852E5" "x597CAA" "x5C007E" "x6512D9" "x65AAF8" "x6808DA" "x6875E7" "x68CEAC" "x6BC8A3" "x70B4C9" "x749BFD" "x76BED4" "x77E0D1" "x7E841A" "x806050" "x81EF4E" "x836E96" "x87F523" "x87F764" "x8D0D42" "x90C4B5" "x93FD41" "x95DC14" "x97BCA5" "x992042" "x997E00" "xA02111" "xA2D4A1" "xA3790C" "xA414BD" "xA479C2" "xAC2570" "xB0F9B2" "xB1C8B3" "xB39074" "xB5B4CA" "xBADB79" "xBE1B0B" "xBFB2D2" "xC10150" "xC3E885" "xC6CE6C" "xC890D8" "xC8E467" "xCAF1C3" "xCC55B4" "xD13168" "xD4BDA3" "xD57816" "xDC6D9E" "xE14193" "xE310D0" "xE39A37" "xE4BC4E" "xE53199" "xE63DDF" "xE8D379" "xE9B9DA" "xEA9F9F" "xEB0C25" "xECC166" "xF2A9C3" "xF39844" "xF73FA3" "xF9F832" "xFCECBC" "xFD9BB6" "xFF0E29" }
-    traits = { "state_trait_malaria" }
-    prime_land = { "xF9F832" }
+    provinces = { "x01C6DC" "x01E0D0" "x025267" "x07EC0A" "x13B0BB" "x19094A" "x191199" "x1DA390" "x1EDEEF" "x287FA3" "x2F3E88" "x3173A5" "x3864B4" "x40A050" "x42AAF1" "x458A9A" "x4B02C7" "x4D69FC" "x4FFD57" "x5852E5" "x5C007E" "x65AAF8" "x6808DA" "x6875E7" "x6BC8A3" "x749BFD" "x7E841A" "x806050" "x81EF4E" "x8D0D42" "x95DC14" "x97BCA5" "x997E00" "xA02111" "xA2D4A1" "xA3790C" "xB1C8B3" "xB5B4CA" "xBE1B0B" "xBFB2D2" "xC10150" "xC6CE6C" "xC890D8" "xC8E467" "xCC55B4" "xE310D0" "xE63DDF" "xE9B9DA" "xEB0C25" "xECC166" }
+    traits = { "state_trait_malaria" "state_trait_white_nile_river" }
     city = "x19094A"
-    farm = "xAC2570"
-    mine = "x6808DA"
-    wood = "x512903"
+    farm = "x806050"
+    mine = "xC6CE6C"
+    wood = "xA02111"
     arable_land = 112 # 60
     arable_resources = { "bg_quarries" "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
@@ -1406,7 +1405,7 @@ STATE_LOURENCO_MARQUES = {
 }
 
 STATE_SWAZILAND = {
-    id = 1101
+    id = 2010
     subsistence_building = "building_subsistence_farms"
     provinces = { "x90A090" "xA30505" "x884936" "x73CDE8" "x25A652" }
     traits = { "state_trait_malaria" "state_trait_waterberg_coalfield" }
@@ -1429,7 +1428,7 @@ STATE_SWAZILAND = {
 }
 
 STATE_BASUTOLAND = {
-    id = 1102
+    id = 2011
     subsistence_building = "building_subsistence_farms"
     provinces = { "x3B4B19" "x6DB7E8" "x8C39B6" "xB6892A" "xD121F1" "xE1EAA4" "xF06050" }
     traits = { "state_trait_malaria" "state_trait_waterberg_coalfield" }
@@ -1452,7 +1451,7 @@ STATE_BASUTOLAND = {
 }
 
 STATE_NATAL = {
-    id = 1103
+    id = 2012
     subsistence_building = "building_subsistence_farms"
     provinces = { "x11A090" "x279045" "x3CED3D" "x552449" "x5B124F" "x7ACC38" "x85695F" "xB1F868" "xBBCA32" "xDE0EDE" "xE0EB02" "xFF0EF1" }
     traits = { "state_trait_malaria" }
@@ -1469,4 +1468,73 @@ STATE_NATAL = {
         bg_fishing = 4 # 2
     }
     naval_exit_id = 3106
+}
+
+STATE_WHITE_NILE = {
+    id = 1193
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x052C31" "x06F011" "x0B3FB6" "x117111" "x169409" "x16A922" "x178C0B" "x1D57FB" "x225C9E" "x26B47D" "x281B17" "x2B99DD" "x387C9A" "x3A7DC2" "x3EBCE9" "x405DD1" "x409D75" "x49DC0E" "x4AB4A0" "x512903" "x51CD3D" "x5556B9" "x597CAA" "x6512D9" "x68CEAC" "x6A5420" "x70B4C9" "x76BED4" "x77E0D1" "x836E96" "x87F523" "x87F764" "x8CA984" "x90C4B5" "x93FD41" "x992042" "xA414BD" "xA479C2" "xAC2570" "xB0F9B2" "xB39074" "xBADB79" "xC0D1A9" "xC356F5" "xC3E885" "xCAF1C3" "xD07ADF" "xD13168" "xD42E9B" "xD4BDA3" "xD57816" "xDC6D9E" "xE0A090" "xE14193" "xE39A37" "xE4BC4E" "xE53199" "xE8D379" "xEA9F9F" "xEE4B02" "xEF7C3C" "xF2A9C3" "xF39844" "xF73FA3" "xF9F832" "xFAD09B" "xFCECBC" "xFD9BB6" "xFF0E29" }
+    traits = { "state_trait_malaria" "state_trait_white_nile_river" }
+    city = "xC0D1A9"
+    farm = "x992042"
+    mine = "x281B17"
+    wood = "x387C9A"
+    arable_land = 72
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    capped_resources = {
+        bg_logging = 9
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 40
+    }
+    resource = {
+        type = "bg_rubber"
+        undiscovered_amount = 25
+    }
+}
+
+STATE_HARAR = {
+    id = 1219
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x02BFCD" "x055C75" "x077343" "x0BB3A0" "x0D5E96" "x0E0BF3" "x107FA1" "x14A492" "x1527DC" "x156474" "x19A599" "x1E8D53" "x206111" "x20EBC8" "x28B782" "x318256" "x3286BD" "x35477F" "x366C12" "x396D03" "x3D8E7B" "x4160D0" "x489C2A" "x4AD726" "x513574" "x516EB2" "x560028" "x582778" "x5C59E3" "x6075E2" "x67C506" "x6AEDF6" "x6E7998" "x6E8CCA" "x721216" "x74C88E" "x75E6F0" "x7A2004" "x7FCE33" "x82F3F6" "x84C294" "x869C8E" "x8CA5FB" "x8F6EB2" "x91C70C" "x939EDA" "x9B2CD2" "x9D4A30" "xA51575" "xAA8CB0" "xAF0800" "xB0D911" "xB41950" "xB480F1" "xB56BDC" "xB789A5" "xB9A342" "xBEDF90" "xCCBD1F" "xCE40EE" "xD1CB36" "xD20B42" "xD25F58" "xD26E35" "xD68922" "xD7A4AF" "xDBA052" "xDFB76F" "xE156F9" "xE1D0E7" "xFC0BCC" "xFD0A16" }
+    prime_land = { "x20EBC8" }
+    traits = { "state_trait_malaria" }
+    city = "x20EBC8"
+    farm = "x3D8E7B"
+    mine = "x8F6EB2"
+    wood = "x318256"
+    arable_land = 72
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_banana_plantations" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_lead_mining = 14
+        bg_logging = 3
+    }
+    resource = {
+        type = "bg_rubber"
+        undiscovered_amount = 22
+    }
+    resource = {
+        type = "bg_gold_fields"
+        depleted_type = "bg_gold_mining"
+        undiscovered_amount = 4
+    }
+}
+
+STATE_SOMALILAND = {
+    id = 1218
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { "x089FE7" "x0CE1C7" "x12FDBA" "x184064" "x20E090" "x284319" "x2C4BFE" "x2FB806" "x395C77" "x3BB51B" "x48FFF1" "x4A6DFD" "x524E91" "x5C2622" "x678D0D" "x7D4764" "x7FBAFA" "x85FD85" "x8AA210" "x9ACA9E" "x9DA796" "xAE76D1" "xC6A5CB" "xCA0AFC" "xCCC39F" "xD3EE2E" "xD6084C" "xD85A85" "xDDAC33" "xDEFB4F" "xDF951C" "xE19C5A" "xF2A924" "xF9565C" }
+    traits = { "state_trait_malaria" }
+    city = "xF9565C"
+    port = "x524E91"
+    farm = "xE19C5A"
+    mine = "xDDAC33"
+    wood = "xC6A5CB"
+    arable_land = 42
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tea_plantations" "bg_dye_plantations" }
+    capped_resources = {
+        bg_fishing = 7
+    }
+    naval_exit_id = 3018
 }

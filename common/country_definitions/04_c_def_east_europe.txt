@@ -5,7 +5,7 @@ UBD = { # United Baltic
 	country_type = recognized
 	tier = kingdom
 	cultures = { latvian estonian lithuanian baltic_german }
-	capital = STATE_LATVIA
+	capital = STATE_LIVONIA
 }
 
 # Added
@@ -15,7 +15,7 @@ CHR = { # Chernigov
 	country_type = recognized
 	tier = principality
 	cultures = { ukrainian }
-	capital = STATE_KIEV
+	capital = STATE_CHERNIGOV
 }
 CLI = { # Cilli
 	color = { 159 174 96 }
@@ -29,7 +29,7 @@ COU = { # Courland
 	country_type = recognized
 	tier = principality
 	cultures = { baltic_german }
-	capital = STATE_LATVIA
+	capital = STATE_COURLAND
 }
 DAL = { # Dalmatia
 	color = { 46 128 188 }
@@ -78,14 +78,14 @@ LIV = { # Livonian Order
 	country_type = recognized
 	tier = principality
 	cultures = { baltic_german }
-	capital = STATE_LATVIA
+	capital = STATE_LIVONIA
 }
 LVN = { # Livonia
 	color = { 20 14 150 }
 	country_type = recognized
 	tier = principality
 	cultures = { latvian } # change to Livonian
-	capital = STATE_LATVIA
+	capital = STATE_LIVONIA
 }
 MAZ = { # Mazovia
 	color = { 195 149 155 }
@@ -134,7 +134,7 @@ PLT = { # Polotsk
 	country_type = recognized
 	tier = principality
 	cultures = { byelorussian }
-	capital = STATE_ORSHA
+	capital = STATE_VITEBSK
 }
 PML = { # Pomerelia
 	color = { 250 250 95 }
@@ -169,7 +169,7 @@ RIG = { # Riga
 	country_type = recognized
 	tier = city_state
 	cultures = { baltic_german }
-	capital = STATE_LATVIA
+	capital = STATE_LIVONIA
 }
 RSO = { # Rostov
 	color = { 227 221 77 }
@@ -225,7 +225,7 @@ YAR = { # Yaroslavl
 	country_type = recognized
 	tier = principality
 	cultures = { russian }
-	capital = STATE_TVER
+	capital = STATE_YAROSLAVL
 }
 ZAZ = { # Zaporizhia
 	color = { 146 146 146 }

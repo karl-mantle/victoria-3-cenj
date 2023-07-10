@@ -1133,7 +1133,7 @@ algeria_events.9 = {
 	immediate = {
 		random_scope_state = {
 			limit = {
-				region = sr:region_north_africa
+				region = sr:region_algeria
 				any_scope_building = {
 				 	is_building_type = building_barracks
 					level >= 20
@@ -1177,7 +1177,7 @@ algeria_events.9 = {
 		}
 		every_scope_state = {
 			limit = {
-				region = sr:region_north_africa
+				region = sr:region_algeria
 				any_scope_building = {
 				 	is_building_type = building_barracks
 					level >= 20

@@ -465,3 +465,21 @@ state_trait_zihuatanejo_bay = {
 		state_building_naval_base_max_level_add = 10
 	}
 }
+
+# NeED LOCALISATION
+
+state_trait_mackenzie_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_yukon_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}

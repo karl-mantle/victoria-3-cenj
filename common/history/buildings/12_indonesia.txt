@@ -3,13 +3,13 @@
 		region_state:JOH={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 			create_building={
 				building="building_fishing_wharf"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
@@ -29,7 +29,7 @@
 			}
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
@@ -43,7 +43,7 @@
 			}
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
@@ -51,7 +51,7 @@
 		region_state:SIA={
 			create_building={
 				building="building_banana_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -59,13 +59,13 @@
 		region_state:GBR={
 			create_building={
 				building="building_tea_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
@@ -75,7 +75,7 @@
 		region_state:BRU={
 			create_building={
 				building="building_fishing_wharf"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
@@ -89,13 +89,13 @@
 		region_state:SUL={
 			create_building={
 				building="building_tobacco_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
@@ -111,14 +111,13 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}			
-			# Added
 			create_building={
 				building="building_copper_mine"
-				level=2 # 1
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
@@ -128,19 +127,19 @@
 		region_state:PON={
 			create_building={
 				building="building_dye_plantation"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
@@ -150,7 +149,6 @@
 				reserves=1
 				activate_production_methods={ "pm_irregular_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}		
-			# Added
 			create_building={
 				building="building_copper_mine"
 				level=1
@@ -175,7 +173,7 @@
 			}
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
@@ -185,13 +183,13 @@
 		region_state:DEI={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}			
@@ -215,19 +213,19 @@
 		region_state:BNJ={
 			create_building={
 				building="building_tea_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_dye_plantation"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_banana_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -243,55 +241,55 @@
 		region_state:DEI={
 			create_building={
 				building="building_government_administration"
-				level=8 # 4
+				level=8
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
 				building="building_construction_sector"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
 			}
 			create_building={
 				building="building_logging_camp"
-				level=6 # 3
+				level=6
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
 			}
 			create_building={
 				building="building_rice_farm"
-				level=30 # 15
+				level=30
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
 			}			
 			create_building={
 				building="building_tobacco_plantation"
-				level=20 # 10
+				level=20
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_coffee_plantation"
-				level=6 # 3
+				level=6
 				reserves=1
 				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_dye_plantation"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_sugar_plantation"
-				level=14 # 7
+				level=14
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_cotton_plantation"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -303,14 +301,13 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
-			# Added
 			create_building={
 				building="building_copper_mine"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}	
@@ -322,13 +319,13 @@
 			}
 			create_building={
 				building="building_publishing_house"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_rag_paper" "pm_prod_newspapers" "pm_hand_work" "pm_privately_owned_building_publishing_house" }
 			}
 			create_building={
 				building="building_road_network"
-				level=5 # 3
+				level=5
 				reserves=1
 				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
@@ -338,49 +335,49 @@
 		region_state:DEI={
 			create_building={
 				building="building_government_administration"
-				level=6 # 3
+				level=6
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
 				building="building_rice_farm"
-				level=16 # 8
+				level=16
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
 			}			
 			create_building={
 				building="building_logging_camp"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
-				level=10 # 5
+				level=10
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}			
 			create_building={
 				building="building_coffee_plantation"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_tea_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_dye_plantation"
-				level=8 # 4
+				level=8
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_sugar_plantation"
-				level=10 # 5
+				level=10
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -390,10 +387,9 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
-			# Added
 			create_building={
 				building="building_road_network"
-				level=2 # 1
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
@@ -403,49 +399,49 @@
 		region_state:DEI={
 			create_building={
 				building="building_government_administration"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}	
 			create_building={
 				building="building_rice_farm"
-				level=10 # 5
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
 			}				
 			create_building={
 				building="building_logging_camp"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
 			}	
 			create_building={
 				building="building_tobacco_plantation"
-				level=6 # 3
+				level=6
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}			
 			create_building={
 				building="building_coffee_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_tea_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_dye_plantation"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_sugar_plantation"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -455,10 +451,9 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
-			# Added
 			create_building={
 				building="building_road_network"
-				level=2 # 1
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
@@ -466,13 +461,13 @@
 		region_state:YOG={			
 			create_building={
 				building="building_coffee_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_rice_farm"
-				level=3 # 1
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
@@ -486,7 +481,7 @@
 		region_state:SRK={			
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
@@ -502,19 +497,19 @@
 		region_state:DEI={
 			create_building={
 				building="building_government_administration"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
 				building="building_logging_camp"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_merchant_guilds_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_sugar_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -526,11 +521,10 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
-			# Added
 			create_building={
 				building="building_road_network"
 				level=1
@@ -541,13 +535,13 @@
 		region_state:SAK={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -561,13 +555,13 @@
 		region_state:JMB={
 			create_building={
 				building="building_logging_camp"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_merchant_guilds_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
 			}
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
@@ -589,19 +583,19 @@
 			}
 			create_building={
 				building="building_logging_camp"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_merchant_guilds_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_sugar_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -611,10 +605,9 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_mobile_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
-			# Added
 			create_building={
 				building="building_road_network"
-				level=2 # 1
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
@@ -624,13 +617,13 @@
 		region_state:ACE={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_fishing_wharf"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
@@ -642,34 +635,27 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
-			# Added
 			create_building={
 				building="building_copper_mine"
-				level=2 # 1
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
-			}	
-			create_building={
-				building="building_road_network"
-				level=2 # 1
-				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
 		}
 		region_state:SAK={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -683,7 +669,7 @@
 		region_state:DEI={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards" }
 			}
@@ -693,13 +679,13 @@
 		region_state:TID={
 			create_building={
 				building="building_banana_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
@@ -709,7 +695,7 @@
 		region_state:DEI={
 			create_building={
 				building="building_tea_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -721,7 +707,7 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}			
@@ -729,7 +715,7 @@
 		region_state:TID={
 			create_building={
 				building="building_tea_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -741,7 +727,7 @@
 			}			
 			create_building={
 				building="building_dye_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -753,16 +739,9 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
-			}
-			# Added
-			create_building={
-				building="building_road_network"
-				level=2 # 1
-				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
 		}
 	}
@@ -770,13 +749,13 @@
 		region_state:DEI={
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
 			create_building={
 				building="building_tea_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -798,19 +777,19 @@
 		region_state:BAL={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_fishing_wharf"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -819,13 +798,6 @@
 				level=10
 				reserves=1
 				activate_production_methods={ "pm_irregular_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
-			}
-			# Added
-			create_building={
-				building="building_road_network"
-				level=2 # 1
-				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
 		}
 		region_state:POR={
@@ -837,7 +809,7 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
@@ -851,7 +823,7 @@
 			}			
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_anchorage" "pm_merchant_guilds_building_port" }
 			}
@@ -861,7 +833,7 @@
 		region_state:PHI={
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
@@ -875,13 +847,13 @@
 			}
 			create_building={
 				building="building_tobacco_plantation"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}			
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
@@ -895,7 +867,7 @@
 			}
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
@@ -911,7 +883,7 @@
 			}		
 			create_building={
 				building="building_copper_mine"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
@@ -947,14 +919,13 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
-			# Added
 			create_building={
 				building="building_road_network"
-				level=2 # 1
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_commonly_owned_building_road_network" }
 			}
@@ -978,7 +949,7 @@
 			}
 			create_building={
 				building="building_fishing_wharf"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
@@ -1029,13 +1000,13 @@
 			}
 			create_building={
 				building="building_rice_farm"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 			create_building={
 				building="building_fishing_wharf"
-				level=2 # 1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}

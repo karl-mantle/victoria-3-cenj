@@ -33,7 +33,7 @@ pm_basic_port = {
 		workforce_scaled = {	
 			building_input_clippers_add = 5
 			building_output_charterparties_add = 5
-			building_output_transport_add = 5
+			building_output_transportation_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 1500 # 3000
@@ -66,7 +66,7 @@ pm_industrial_port = {
 			building_input_steamers_add = 5
 			building_input_coal_add = 5
 			building_output_charterparties_add = 10
-			building_output_transport_add = 5
+			building_output_transportation_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 1000 # 2000
@@ -99,7 +99,7 @@ pm_modern_port = {
 			building_input_steamers_add = 5	
 			building_input_oil_add = 10
 			building_output_charterparties_add = 20
-			building_output_transport_add = 10
+			building_output_transportation_add = 10
 		}
 		level_scaled = {
 			building_employment_laborers_add = 375 # 750

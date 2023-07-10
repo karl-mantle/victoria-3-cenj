@@ -1,0 +1,8 @@
+.archive/
+.resources/
+.vscode/
+
+# Executables
+*.exe
+*.out
+*.app

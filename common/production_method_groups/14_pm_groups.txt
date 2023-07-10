@@ -427,20 +427,19 @@ pmg_base_building_health_facilities = {
 pmg_production_building_health_facilities = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
-		pm_no_pharmaceuticals
-		pm_apothecaries
-		pm_pharmacies
+		pm_health_facilities_apothecaries
+		pm_health_facilities_pharmacies
 	}
 }
 
 pmg_ownership_building_health_facilities = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
-		pm_charity_run_hospital
-		pm_privately_owned_hospital
-		pm_publicly_traded_hospital
-		pm_government_run_hospital
-		pm_university_run_hospital
+		pm_charity_run_health_facilities
+		pm_privately_owned_health_facilities
+		pm_publicly_traded_health_facilities
+		pm_government_run_health_facilities
+		pm_university_run_health_facilities
 	}
 }
 

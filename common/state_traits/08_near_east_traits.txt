@@ -77,3 +77,77 @@ state_trait_mocha = {
 		building_output_coffee_mult = 0.1
 	}
 }
+
+# NEED LOCALISATION
+
+state_trait_oxus_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_bosporus = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_dardanelles = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_hormuz_strait = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_babel_mandeb = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}
+
+state_trait_karun_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_tabas_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_mult = 0.1
+	}
+}
+
+state_trait_alborz_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_mult = 0.1
+	}
+}
+
+state_trait_zonguldak_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_mult = 0.1
+	}
+}

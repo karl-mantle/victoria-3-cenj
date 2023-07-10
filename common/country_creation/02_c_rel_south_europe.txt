@@ -127,7 +127,7 @@ NAP = { # Naples
 }
 NAX = { # Naxos
 	states = {
-		STATE_WEST_AEGEAN_ISLANDS
+		STATE_CYCLADES
 	}
 	ai_will_do = { always = no }
 }

@@ -1,8 +1,8 @@
 ﻿# Added
 
 CHR = { # Chernigov
-	provinces = {
-		
+	states = {
+		STATE_CHERNIGOV
 	}
 	ai_will_do = { always = no }
 }
@@ -51,14 +51,13 @@ KRL = { # Karelia
 }
 LIV = { # Livonian Order
 	states = {
-		STATE_LATVIA
-		STATE_ESTONIA
+		STATE_LIVONIA
 	}
 	ai_will_do = { always = no }
 }
 LVN = { # Livonia
 	states = {
-		STATE_LATVIA
+		STATE_LIVONIA
 	}
 	ai_will_do = { always = no }
 }
@@ -130,8 +129,8 @@ NOV = { # Novgorod
 	ai_will_do = { always = no }
 }
 NZH = { # Nizhny Novgorod
-	provinces = {
-		
+	states = {
+		STATE_NIZHNY_NOVGOROD
 	}
 	ai_will_do = { always = no }
 }
@@ -239,7 +238,7 @@ YAR = { # Yaroslavl
 }
 ZAZ = { # Zaporizhia
 	states = { 
-		STATE_CHERSON STATE_LUHANSK
+		STATE_CHERSON STATE_YEKATERINOSLAV
 	}
 	ai_will_do = { always = no }
 }

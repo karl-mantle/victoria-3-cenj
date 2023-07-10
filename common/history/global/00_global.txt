@@ -349,7 +349,10 @@ GLOBAL = {
 			limit = {
 				OR = {
 					state_region = s:STATE_KUBAN
-					state_region = s:STATE_DAGESTAN 
+					state_region = s:STATE_TEREK
+					state_region = s:STATE_DERBENT
+					state_region = s:STATE_STAVROPOL
+					state_region = s:STATE_BLACK_SEA_COAST
 				}
 			}
 			add_radicals_in_state = {

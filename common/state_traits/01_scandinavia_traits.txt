@@ -1,66 +1,13 @@
-﻿state_trait_scandinavian_forests = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
-	
-	modifier = {
-		building_group_bg_logging_throughput_mult = 0.2
-		building_output_wood_mult = 0.1
-	}
-}
+﻿# Fjords
 
-state_trait_bergslagen = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
-	
-	modifier = {
-		building_iron_mine_throughput_mult = 0.2 # 0.15
-		building_lead_mine_throughput_mult = 0.1
-		building_output_iron_mult = 0.2 # 0.15
-		building_output_lead_mult = 0.1
-	}
-}
-
-state_trait_malmberget = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
-	
-	modifier = {
-		building_iron_mine_throughput_mult = 0.2
-		building_output_iron_mult = 0.1
-	}
-}
-
-state_trait_scanian_soils = {
-	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
-	
-	modifier = {
-		building_group_bg_agriculture_throughput_mult = 0.2 # 0.15
-	}
-}
-
-state_trait_odensefjorden = {
+state_trait_christianiafjorden = {
 	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
 	
 	modifier = {
 		# building_shipyards_throughput_mult = 0.15
-		state_building_port_max_level_add = 10 # 3
-		state_building_naval_base_max_level_add = 15		
-	}
-}
-
-state_trait_oresund = {
-	icon = "gfx/interface/icons/state_trait_icons/river.dds"
-	
-	modifier = {
-		state_infrastructure_add = 40 # 20
-	}
-}
-
-state_trait_trondhjemsfjorden = {
-	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
-	
-	modifier = {
-		# building_shipyards_throughput_mult = 0.15
-		state_building_port_max_level_add = 5 # 3
-		state_building_naval_base_max_level_add = 15		
-		building_output_electricity_mult = 0.1
+		state_building_port_max_level_add = 5 # 2
+		state_building_naval_base_max_level_add = 10
+		building_output_electricity_mult = 0.1		
 	}
 }
 
@@ -75,16 +22,84 @@ state_trait_hardangerfjorden = {
 	}
 }
 
-state_trait_christianiafjorden = {
+state_trait_odensefjorden = {
 	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
 	
 	modifier = {
 		# building_shipyards_throughput_mult = 0.15
-		state_building_port_max_level_add = 5 # 2
-		state_building_naval_base_max_level_add = 10
-		building_output_electricity_mult = 0.1		
+		state_building_port_max_level_add = 10 # 3
+		state_building_naval_base_max_level_add = 15		
 	}
 }
+
+state_trait_trondhjemsfjorden = {
+	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
+	
+	modifier = {
+		# building_shipyards_throughput_mult = 0.15
+		state_building_port_max_level_add = 5 # 3
+		state_building_naval_base_max_level_add = 15		
+		building_output_electricity_mult = 0.1
+	}
+}
+
+# Good Soils
+
+state_trait_scanian_soils = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.2 # 0.15
+	}
+}
+
+# Mountains
+
+state_trait_scandes_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+		# state_construction_mult = -0.1
+	}
+}
+
+# Resources Iron
+
+state_trait_malmberget = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_mult = 0.2
+		building_output_iron_mult = 0.1
+	}
+}
+
+# Resources Lumber
+
+state_trait_scandinavian_forests = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.2
+		building_output_wood_mult = 0.1
+	}
+}
+
+# Resources Ore
+
+state_trait_bergslagen = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_mult = 0.2 # 0.15
+		building_lead_mine_throughput_mult = 0.1
+		building_output_iron_mult = 0.2 # 0.15
+		building_output_lead_mult = 0.1
+	}
+}
+
+# Resources Silver
 
 state_trait_kongsberg_silver_mine = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_silver.dds"
@@ -95,13 +110,12 @@ state_trait_kongsberg_silver_mine = {
 	}
 }
 
-# Added
+# River
 
-state_trait_scandes_mountains = {
-	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+state_trait_oresund = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
-		state_infrastructure_mult = -0.1
-		# state_construction_mult = -0.1
+		state_infrastructure_add = 40 # 20
 	}
 }

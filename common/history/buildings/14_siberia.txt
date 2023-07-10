@@ -1,15 +1,15 @@
 ﻿BUILDINGS={
-	s:STATE_URAL={
+	s:STATE_YEKATERINBURG={
 		region_state:RUS={
 			create_building={
 				building="building_iron_mine"
-				level=12 # 6
+				level=12
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
 			}
 			create_building={
 				building="building_logging_camp"
-				level=4 # 2
+				level=4
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
@@ -17,7 +17,6 @@
 	}
 	s:STATE_TOMSK={
 		region_state:RUS={
-			# Added
 			create_building={
 				building="building_publishing_house"
 				level=1
@@ -40,7 +39,7 @@
 		region_state:RUS={
 		}
 	}
-	s:STATE_OB={
+	s:STATE_YUGRA={
 		region_state:RUS={
 		}
 	}
@@ -66,7 +65,7 @@
 			}
 			create_building={
 				building="building_port"
-				level=2 # 1
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_basic_port" "pm_merchant_guilds_building_port" }
 			}
@@ -76,11 +75,48 @@
 		region_state:RUS={
 		}
 	}
-	s:STATE_TRANS_BAIKAL={
+	s:STATE_AMUR={
 		region_state:RUS={
 		}
 	}
 	s:STATE_IRKUTSK={
+		region_state:RUS={
+		}
+	}
+	# Added
+	s:STATE_CHELYABINSK={
+		region_state:RUS={
+			create_building={
+				building="building_iron_mine"
+				level=6
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
+			}
+		}
+	}
+	s:STATE_OMSK={
+		region_state:RUS={
+		}
+	}
+	s:STATE_NOVOSIBIRSK={
+		region_state:RUS={
+		}
+	}
+	s:STATE_ALTAI={
+		region_state:RUS={
+		}
+		region_state:CHI={
+		}
+	}
+	s:STATE_KRASNOYARSK={
+		region_state:RUS={
+		}		
+	}
+	s:STATE_BURYATIA={
+		region_state:RUS={
+		}
+	}
+	s:STATE_CHITA={
 		region_state:RUS={
 		}
 	}

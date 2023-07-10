@@ -530,9 +530,12 @@ bic_breakup.1 = {
 					any_neighbouring_state = {
 						owner = {
 							OR = {
-								capital.region = sr:region_north_india
 								capital.region = sr:region_south_india
-								capital.region = sr:region_indochina
+								capital.region = sr:region_north_india
+								capital.region = sr:region_east_india
+								capital.region = sr:region_west_india
+								capital.region = sr:region_balochistan
+								capital.region = sr:region_punjab
 							}
 						}
 					}
@@ -544,9 +547,12 @@ bic_breakup.1 = {
 			random_country = {
 				limit = {
 					OR = {
-						capital.region = sr:region_north_india
 						capital.region = sr:region_south_india
-						capital.region = sr:region_indochina
+						capital.region = sr:region_north_india
+						capital.region = sr:region_east_india
+						capital.region = sr:region_west_india
+						capital.region = sr:region_balochistan
+						capital.region = sr:region_punjab
 					}
 					any_scope_state = {
 						any_neighbouring_state = {

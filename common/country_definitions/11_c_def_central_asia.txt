@@ -6,14 +6,14 @@ CAU = {
 	tier = empire
 	religion = orthodox
 	cultures = { azerbaijani armenian georgian }
-	capital = STATE_GREATER_CAUCASUS
+	capital = STATE_KUTAIS
 }
 CHC = { # Chechnya
 	color = { 35 52 48 }
 	country_type = unrecognized
 	tier = principality
 	cultures = { chechen }
-	capital = STATE_DAGESTAN
+	capital = STATE_TEREK
 }
 DON = { # Don Host
 	color = { 245 221 42 }
@@ -34,24 +34,24 @@ IUS = {
 # Added
 
 ABK = { # Abkhazia
-	color = { 117  224  94 }
+	color = { 117 224 94 }
 	country_type = unrecognized
 	tier = principality
 	cultures = { circassian }
 	religion = orthodox
-	capital = STATE_GREATER_CAUCASUS
+	capital = STATE_KUTAIS
 }
 MIN = { # Mingrelia
 	color = { 118 224 94 }
 	country_type = unrecognized
 	tier = principality
 	cultures = { georgian }
-	capital = STATE_GREATER_CAUCASUS
+	capital = STATE_KUTAIS
 }
 SVA = { # Svaneti
 	color = { 116 224 94 }
 	country_type = unrecognized
 	tier = principality
 	cultures = { georgian }
-	capital = STATE_GREATER_CAUCASUS
+	capital = STATE_KUTAIS
 }

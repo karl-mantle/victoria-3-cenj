@@ -1,6 +1,6 @@
-# Working Title: CENJ
+# cenj (Working Title)
 
-Working Title: CENJ is an experimental mod for Victoria 3.
+cenj (Working Title) is an experimental mod for Victoria 3.
 
 ** Please note this mod is currently unbalanced and may be unstable **
 
@@ -16,17 +16,17 @@ Download the contents of this project and place it in your Victoria 3 mods folde
 
 ## Compatibility
 
-This mod is written for the latest* version of Victoria 3 - patch 1.3.3
+This mod is written for the latest* version of Victoria 3 - patch 1.3.6
 
 Please note: this mod will inherently cause the game to run slower than vanilla, especially from the midgame onwards (around the 1860s...).
 
-This mod should be fully compatible with any cosmetic / GUI mods as long as they're loaded after this one.
+This mod should be fully compatible with any cosmetic / GUI mods.
 
 Any other kind of mod would have to be looked at on a case-by-case basis.
 
 ## Translation
 
-This mod is availible in English.
+This mod is available in English.
 
 Other languages will be added in the future, if you would like to add a translation or request one feel free to contact me. 
 

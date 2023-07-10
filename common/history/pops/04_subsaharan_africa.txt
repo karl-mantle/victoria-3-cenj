@@ -1158,7 +1158,42 @@
 			}
 		}
 	}
-	s:STATE_OROMIA = {
+	s:STATE_SCIOA = {
+		region_state:SHW = {
+			create_pop = {
+				culture = amhara
+				size = 252360
+			}
+			create_pop = {
+				culture = oromo
+				religion = sunni
+				size = 177200
+			}
+			create_pop = {
+				culture = oromo
+				size = 476304
+			}
+			create_pop = {
+				culture = kikuyu
+				size = 36234
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = amhara
+				size = 164000
+			}
+			create_pop = {
+				culture = oromo
+				size = 192404
+			}
+			create_pop = {
+				culture = oromo
+				religion = animist
+				size = 132396
+			}
+		}
+	}
+	s:STATE_HARAR = {
 		region_state:HAR = {
 			create_pop = {
 				culture = amhara
@@ -1179,32 +1214,12 @@
 				pop_type = slaves
 			}
 		}
-		region_state:SHW = {
-			create_pop = {
-				culture = amhara
-				size = 252360
-			}
-			create_pop = {
-				culture = oromo
-				religion = sunni
-				size = 177200
-			}
-			create_pop = {
-				culture = oromo
-				size = 476304
-			}
-			create_pop = {
-				culture = kikuyu
-				size = 36234
-				pop_type = slaves
-			}
-		}
 	}
-	s:STATE_AMHARA = {
+	s:STATE_GALLA_SIDAMO = {
 		region_state:WLG = {
 			create_pop = {
 				culture = amhara
-				size = 90000
+				size = 190000
 			}
 			create_pop = {
 				culture = oromo
@@ -1219,21 +1234,6 @@
 				pop_type = slaves
 				culture = amhara
 				size = 48000
-			}
-		}
-		region_state:SHW = {
-			create_pop = {
-				culture = amhara
-				size = 164000
-			}
-			create_pop = {
-				culture = oromo
-				size = 192404
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 132396
 			}
 		}
 		region_state:BRN = {
@@ -1263,7 +1263,7 @@
 			}
 			create_pop = {
 				culture = amhara
-				size = 160400
+				size = 60400
 			}
 			create_pop = {
 				culture = sidama
@@ -1287,7 +1287,7 @@
 			}
 		}
 	}
-	s:STATE_GONDER = {
+	s:STATE_AMHARA = {
 		region_state:BGM = {
 			create_pop = {
 				culture = amhara
@@ -1455,40 +1455,7 @@
 			}
 		}
 	}
-	s:STATE_SOMALILAND = {
-		region_state:ISQ = {
-			create_pop = {
-				culture = somali
-				size = 109000
-			}
-			create_pop = {
-				culture = oromo
-				religion = animist
-				size = 3000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = somali
-				size = 15000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = oromo
-				religion = animist
-				size = 1000
-			}
-		}
-		region_state:WSG = {
-			create_pop = {
-				culture = somali
-				size = 83676
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = somali
-				size = 7000
-			}
-		}
+	s:STATE_SOMALIA = {
 		region_state:GLD = {
 			create_pop = {
 				culture = somali
@@ -1549,6 +1516,41 @@
 				pop_type = slaves
 				culture = swahili
 				size = 4000
+			}
+		}
+	}
+	s:STATE_SOMALILAND = {
+		region_state:ISQ = {
+			create_pop = {
+				culture = somali
+				size = 109000
+			}
+			create_pop = {
+				culture = oromo
+				religion = animist
+				size = 3000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = somali
+				size = 15000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = oromo
+				religion = animist
+				size = 1000
+			}
+		}
+		region_state:WSG = {
+			create_pop = {
+				culture = somali
+				size = 83676
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = somali
+				size = 7000
 			}
 		}
 	}
@@ -1741,7 +1743,7 @@
 		region_state:DNK = {
 			create_pop = {
 				culture = nilotic
-				size = 80360
+				size = 40360
 			}
 			create_pop = {
 				culture = sudanese
@@ -1749,11 +1751,11 @@
 			}
 			create_pop = {
 				culture = luo
-				size = 50000
+				size = 25000
 			}
 			create_pop = {
 				culture = dinka
-				size = 140000
+				size = 70000
 			}
 			create_pop = {
 				culture = fur
@@ -1797,34 +1799,26 @@
 		region_state:NUE = {
 			create_pop = {
 				culture = nuer
-				size = 188000
-			}
-			create_pop = {
-				culture = sudanese
-				size = 4000
-			}
-			create_pop = {
-				culture = nuba
-				size = 37004
+				size = 81000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = nuba
-				size = 15000
+				size = 5000
 			}
 		}
 		region_state:DFT = {
 			create_pop = {
 				culture = nilotic
-				size = 48036
+				size = 28036
 			}
 			create_pop = {
 				culture = azande
-				size = 218804
+				size = 118804
 			}
 			create_pop = {
 				culture = luo
-				size = 50000
+				size = 20000
 			}
 			create_pop = {
 				culture = fur
@@ -1833,7 +1827,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = luo
-				size = 10000
+				size = 5000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1850,6 +1844,126 @@
 				pop_type = slaves
 				culture = nilotic
 				size = 4000
+			}
+		}
+	}
+	s:STATE_WHITE_NILE = {
+		region_state:DNK = {
+			create_pop = {
+				culture = nilotic
+				size = 40360
+			}
+			create_pop = {
+				culture = sudanese
+				size = 6000
+			}
+			create_pop = {
+				culture = luo
+				size = 25000
+			}
+			create_pop = {
+				culture = dinka
+				size = 70000
+			}
+			create_pop = {
+				culture = fur
+				size = 13000
+			}
+			create_pop = {
+				culture = nuba
+				size = 9000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = nilotic
+				size = 4000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = sudanese
+				size = 2000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = luo
+				size = 2000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = dinka
+				size = 8000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = fur
+				size = 2000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = nuba
+				size = 1000
+			}
+		}
+		region_state:NUE = {
+			create_pop = {
+				culture = nuer
+				size = 108000
+			}
+			create_pop = {
+				culture = sudanese
+				size = 4000
+			}
+			create_pop = {
+				culture = nuba
+				size = 37004
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = nuba
+				size = 10000
+			}
+		}
+		region_state:DFT = {
+			create_pop = {
+				culture = nilotic
+				size = 20036
+			}
+			create_pop = {
+				culture = azande
+				size = 100804
+			}
+			create_pop = {
+				culture = luo
+				size = 30000
+			}
+			create_pop = {
+				culture = fur
+				size = 11000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = luo
+				size = 5000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = fur
+				size = 5000
+			}
+		}
+		region_state:EGY = {
+			create_pop = {
+				culture = nuba
+				size = 33000
+			}
+			create_pop = {
+				culture = dinka
+				size = 41896
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = nilotic
+				size = 2000
 			}
 		}
 	}

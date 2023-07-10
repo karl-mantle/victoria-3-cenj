@@ -42,7 +42,7 @@ je_sick_man_syria = {
 
 	complete = {
 		owns_entire_state_region = STATE_ALEPPO
-		owns_entire_state_region = STATE_SYRIA
+		owns_entire_state_region = STATE_DAMASCUS
 		owns_entire_state_region = STATE_LEBANON
 		owns_entire_state_region = STATE_PALESTINE
 		owns_entire_state_region = STATE_TRANSJORDAN
@@ -56,16 +56,34 @@ je_sick_man_syria = {
 			add = 1
 		}
 		set_variable = completed_syria_je
+		s:STATE_ALEXANDRIA = {
+			add_claim = ROOT
+		}
+		s:STATE_SUEZ = {
+			add_claim = ROOT
+		}
+		s:STATE_QUSEIR = {
+			add_claim = ROOT
+		}
 		s:STATE_SINAI = {
 			add_claim = ROOT
 		}
-		s:STATE_UPPER_EGYPT = {
-			add_claim = ROOT
-		}
-		s:STATE_MIDDLE_EGYPT = {
-			add_claim = ROOT
-		}
 		s:STATE_LOWER_EGYPT = {
+			add_claim = ROOT
+		}
+		s:STATE_LUXOR = {
+			add_claim = ROOT
+		}
+		s:STATE_KHARGA = {
+			add_claim = ROOT
+		}
+		s:STATE_ASWAN = {
+			add_claim = ROOT
+		}
+		s:STATE_BENI_SUEF = {
+			add_claim = ROOT
+		}
+		s:STATE_MATRUH = {
 			add_claim = ROOT
 		}
 		if = {
@@ -78,10 +96,16 @@ je_sick_man_syria = {
 						}
 					}
 					AND = {
+						owns_entire_state_region = STATE_ALEXANDRIA
+						owns_entire_state_region = STATE_SUEZ
+						owns_entire_state_region = STATE_QUSEIR
 						owns_entire_state_region = STATE_SINAI
-						owns_entire_state_region = STATE_UPPER_EGYPT
-						owns_entire_state_region = STATE_MIDDLE_EGYPT
 						owns_entire_state_region = STATE_LOWER_EGYPT
+						owns_entire_state_region = STATE_LUXOR
+						owns_entire_state_region = STATE_KHARGA
+						owns_entire_state_region = STATE_ASWAN
+						owns_entire_state_region = STATE_BENI_SUEF
+						owns_entire_state_region = STATE_MATRUH
 					}
 				}
 			}
@@ -129,10 +153,16 @@ je_sick_man_egypt = {
 				}
 			}
 			AND = {
+				owns_entire_state_region = STATE_ALEXANDRIA
+				owns_entire_state_region = STATE_SUEZ
+				owns_entire_state_region = STATE_QUSEIR
 				owns_entire_state_region = STATE_SINAI
-				owns_entire_state_region = STATE_UPPER_EGYPT
-				owns_entire_state_region = STATE_MIDDLE_EGYPT
 				owns_entire_state_region = STATE_LOWER_EGYPT
+				owns_entire_state_region = STATE_LUXOR
+				owns_entire_state_region = STATE_KHARGA
+				owns_entire_state_region = STATE_ASWAN
+				owns_entire_state_region = STATE_BENI_SUEF
+				owns_entire_state_region = STATE_MATRUH
 			}
 		}
 	}

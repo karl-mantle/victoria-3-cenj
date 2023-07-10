@@ -90,9 +90,8 @@ STATE_AWADH = {
 STATE_GUJARAT = {
     id = 461
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x03C674" "x075A8E" "x0A4C7A" "x0C6CB1" "x128888" "x164DBB" "x30D060" "x30E365" "x3151E0" "x31D0E0" "x3FFA53" "x4133D4" "x49DDB8" "x4EB354" "x5B6745" "x697511" "x73656F" "x7E0401" "x8F568D" "x90052D" "x90B589" "x9C8D06" "xADD2A3" "xB05060" "xB0D060" "xB11F7B" "xB3D1CD" "xB89EF0" "xB9D851" "xBBB2BD" "xC0310F" "xC7C3FD" "xCC1D23" "xD31590" "xD77765" "xD8CEF7" "xEB1229" "xEB6009" "xECB4F5" "xF01160" "xF64FA2" "xF87E91" "xFC0FC1" }
+    provinces = { "x03C674" "x075A8E" "x0A4C7A" "x0C6CB1" "x128888" "x164DBB" "x30D060" "x30E365" "x3151E0" "x31D0E0" "x3FFA53" "x4133D4" "x49DDB8" "x4EB354" "x697511" "x73656F" "x7E0401" "x8F568D" "x90052D" "x90B589" "x9C8D06" "xADD2A3" "xB05060" "xB0D060" "xB11F7B" "xB3D1CD" "xB89EF0" "xB9D851" "xBBB2BD" "xC0310F" "xC7C3FD" "xCC1D23" "xD31590" "xD77765" "xD8CEF7" "xEB1229" "xEB6009" "xECB4F5" "xF01160" "xF64FA2" "xF87E91" "xFC0FC1" }
     prime_land = { "x31D0E0" "xB0D060" "x9C8D06" "xADD2A3" "xCC1D23" "xF87E91" "xC7C3FD" "x3151E0" "x128888" "xD31590" "x3FFA53" }
-    traits = { "state_trait_natural_harbors" }
     city = "x3151E0"
     port = "xB3D1CD"
     farm = "x31D0E0"
@@ -134,9 +133,9 @@ STATE_KASHMIR = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00161D" "x07D342" "x150D2C" "x15F552" "x18CED8" "x1F1AF7" "x217021" "x21F020" "x24EF26" "x2969A3" "x2B6E7C" "x2D5D46" "x2DDFDB" "x2FF385" "x37C3E4" "x3FDA5A" "x43B99F" "x504561" "x56684E" "x5990A7" "x5A0252" "x6326A6" "x6AA44A" "x72F7C2" "x808216" "x874936" "x963360" "x964219" "x9666D9" "xA09736" "xA875F3" "xAA60FC" "xB0FE2D" "xB4AA65" "xB637A4" "xC49B8C" "xCCD333" "xCDB7DB" "xD107A3" "xD25436" "xD71AAB" "xEDCC3E" "xF28F90" "xF469BC" "xF48515" "xF8D822" "xFD692B" }
     traits = { "state_trait_indus_river" }
-    city = "x6326A6"
-    farm = "xB637A4"
-    mine = "xF28F90"
+    city = "x3FDA5A"
+    farm = "x5A0252"
+    mine = "x5990A7"
     wood = "x9666D9"
     arable_land = 142 # 85
     arable_resources = { "bg_quarries" "bg_millet_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_opium_plantations" "bg_tea_plantations" }
@@ -149,13 +148,13 @@ STATE_KASHMIR = {
 STATE_PUNJAB = {
     id = 464
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0003C6" "x022D2B" "x051899" "x0C25D9" "x0EC528" "x12D43A" "x19E5C0" "x1D3609" "x251424" "x280F05" "x2DBD82" "x30122F" "x3264B7" "x3631C3" "x36E637" "x394B7F" "x402C84" "x45AF2E" "x4E722C" "x50D414" "x572FB9" "x59BBCE" "x5A5F96" "x607020" "x61F7C9" "x66C9D9" "x67DD93" "x6C44CE" "x706940" "x7074E3" "x713583" "x767A66" "x80F0E0" "x8F5440" "x8FF69F" "x918140" "x91DEAB" "x94A5A8" "x96E54B" "x97232F" "x9AB208" "x9B38C0" "x9CEEC1" "xA07020" "xA0B0A0" "xA0F0A0" "xA1CA4A" "xA6DAD0" "xA98EF8" "xAA60D3" "xB4E322" "xB94359" "xCA516D" "xCA5BC1" "xCD3942" "xCD3E9A" "xCEAF5E" "xCF602F" "xD458B6" "xD52082" "xD597DC" "xD921CB" "xDB08EC" "xDB91D3" "xDEFFE6" "xE03121" "xE0C455" "xE0C4D2" "xE2230E" "xE31B4E" "xE3CCA0" "xE60F80" "xEFC3B4" "xF202E0" "xF4C868" "xF58253" "xF8614B" }
-    prime_land = { "xE03121" "xD921CB" "xCD3942" "x918140" "x67DD93" "xAA60D3" "x91DEAB" "xCD3E9A" "x80F0E0" "x713583" "xE3CCA0" "x50D414" "xE2230E" "x3631C3" "x9B38C0" "xF58253" "xA6DAD0" "x9CEEC1" "xB94359" "x4E722C" "xE0C4D2" }
+    provinces = { "x051899" "x0EC528" "x1D3609" "x3631C3" "x36E637" "x402C84" "x4E722C" "x50D414" "x61F7C9" "x6C44CE" "x7074E3" "x713583" "x80F0E0" "x94A5A8" "x97232F" "x9AB208" "x9CEEC1" "xA0B0A0" "xA1CA4A" "xA6DAD0" "xB4E322" "xB94359" "xCA5BC1" "xD458B6" "xDB08EC" "xE0C4D2" "xE3CCA0" "xF58253" "xF8614B" }
+    prime_land = { "x80F0E0" "x713583" "xE3CCA0" "x50D414" "x3631C3" "xF58253" "xA6DAD0" "x9CEEC1" "xB94359" "x4E722C" "xE0C4D2" }
     traits = { "state_trait_indus_river" "state_trait_indus_valley" }
-    city = "xCD3E9A"
-    farm = "x19E5C0"
-    mine = "xA0B0A0"
-    wood = "xA6DAD0"
+    city = "xF58253"
+    farm = "x1D3609"
+    mine = "x4E722C"
+    wood = "x9CEEC1"
     arable_land = 1300 # 650
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_silk_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
@@ -205,13 +204,13 @@ STATE_SOUTH_BENGAL = {
 STATE_SINDH = {
     id = 467
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x02BBA0" "x105356" "x11152D" "x1507B8" "x16F3F6" "x1A04E6" "x23DFA9" "x268E58" "x315160" "x3FFB31" "x56F6E9" "x59EE31" "x5AF594" "x60B021" "x6E9D54" "x705060" "x73A9E3" "x808515" "x882A58" "x8C4F5A" "x8FC69D" "xAE1ED1" "xB2850D" "xC7D26A" "xCC14D7" "xD7517F" "xDB079F" "xDD447A" "xE4B4A2" "xF5592F" "xF90BDE" "xFBDCF5" }
-    traits = { "state_trait_indus_river" "state_trait_indus_valley" }
+    provinces = { "x02BBA0" "x105356" "x11152D" "x1507B8" "x1A04E6" "x23DFA9" "x268E58" "x315160" "x3FFB31" "x56F6E9" "x59EE31" "x5AF594" "x5B6745" "x60B021" "x6E9D54" "x705060" "x73A9E3" "x808515" "x882A58" "x8C4F5A" "x8FC69D" "xAE1ED1" "xB2850D" "xC7D26A" "xCC14D7" "xD7517F" "xDB079F" "xDD447A" "xE4B4A2" "xF5592F" "xF90BDE" "xFBDCF5" }
+    traits = { "state_trait_indus_river" "state_trait_indus_valley" "state_trait_natural_harbors" }
     city = "xC7D26A"
     port = "x6E9D54"
     farm = "xAE1ED1"
-    mine = "x882A58"
-    wood = "x02BBA0"
+    mine = "xDB079F"
+    wood = "x808515"
     arable_land = 250 # 100
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_sugar_plantations" }
     capped_resources = {
@@ -243,7 +242,7 @@ STATE_CEYLON = {
     provinces = { "x1DA090" "x23CE5A" "x47B038" "x5B5C22" "x602050" "x8A707A" "x8D6FA8" "x95AAA3" "x967CCE" "xA0A0D0" "xA0EFCC" "xC18817" "xC23350" "xDAB923" "xDF2050" }
     impassable = { "x5B5C22" "x95AAA3" }
     city = "x23CE5A"
-    port = "x8D6FA8"
+    port = "x95AAA3"
     farm = "xDF2050"
     mine = "xDAB923"
     wood = "xC23350"
@@ -410,5 +409,40 @@ STATE_BOMBAY = {
         bg_fishing = 24 # 12
     }
     naval_exit_id = 3048
+}
+
+# Added
+
+STATE_LUDHIANA = {
+    id = 1182
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x0003C6" "x0C25D9" "x251424" "x280F05" "x3264B7" "x394B7F" "x45AF2E" "x572FB9" "x59BBCE" "x5A5F96" "x607020" "x66C9D9" "x8FF69F" "x96E54B" "xA07020" "xA0F0A0" "xA98EF8" "xCEAF5E" "xD52082" "xDB91D3" "xDEFFE6" "xE0C455" "xE31B4E" "xE60F80" "xF202E0" "xF4C868" }
+    city = "x394B7F"
+    farm = "x280F05"
+    mine = "x96E54B"
+    wood = "x45AF2E"
+    arable_land = 215
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_dye_plantations" "bg_tea_plantations" }
+    capped_resources = {
+        bg_sulfur_mining = 14
+        bg_logging = 12
+    }
+}
+
+STATE_MULTAN = {
+    id = 1181
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x022D2B" "x12D43A" "x16F3F6" "x19E5C0" "x2DBD82" "x30122F" "x67DD93" "x706940" "x767A66" "x8F5440" "x918140" "x91DEAB" "x9B38C0" "xAA60D3" "xCA516D" "xCD3942" "xCD3E9A" "xCF602F" "xD597DC" "xD921CB" "xE03121" "xE2230E" "xEFC3B4" }
+    traits = { "state_trait_indus_river" "state_trait_indus_valley" }
+    city = "xCD3E9A"
+    farm = "xCF602F"
+    mine = "xAA60D3"
+    wood = "x022D2B"
+    arable_land = 245
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_iron_mining = 12
+        bg_logging = 9
+    }
 }
 

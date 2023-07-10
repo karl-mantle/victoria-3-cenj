@@ -1,0 +1,181 @@
+﻿INTERESTS = {
+	# Western Europe
+	c:SWE = {
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_baltic
+	}
+	c:DEN = {
+		add_declared_interest = region_guinea
+	}
+	c:GBR = {
+		add_declared_interest = region_nile_basin
+		add_declared_interest = region_sudan
+		add_declared_interest = region_libya
+		add_declared_interest = region_morocco
+		add_declared_interest = region_nigeria
+		add_declared_interest = region_borneo
+		add_declared_interest = region_south_china
+		add_declared_interest = region_north_china
+		add_declared_interest = region_east_china
+		add_declared_interest = region_manchuria
+		add_declared_interest = region_japan
+		add_declared_interest = region_benelux
+		add_declared_interest = region_france
+		add_declared_interest = region_poland
+		add_declared_interest = region_russia
+		add_declared_interest = region_anatolia
+		add_declared_interest = region_thrace
+		add_declared_interest = region_persia
+	}
+	c:NET = {
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_france
+		add_declared_interest = region_england
+	}
+	c:BEL = {
+		random_list = {
+			75 = {
+				add_declared_interest = region_england
+			}
+			25 = {
+				add_declared_interest = region_france
+			}
+		}
+	}
+	c:FRA = {
+		add_declared_interest = region_england
+		add_declared_interest = region_dixie
+		add_declared_interest = region_mexico
+		add_declared_interest = region_nile_basin
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_south_germany
+		add_declared_interest = region_crown_of_castile
+		add_declared_interest = region_balkans
+		add_declared_interest = region_russia
+		add_declared_interest = region_senegambia
+		add_declared_interest = region_guinea
+	}
+	c:AUS = {	
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_rhineland
+		add_declared_interest = region_thrace
+		add_declared_interest = region_occitania
+		add_declared_interest = region_south_italy
+		add_declared_interest = region_dnieper
+	}
+	c:PRU = {
+		add_declared_interest = region_baltic
+		add_declared_interest = region_france
+	}
+	c:BAV = {
+		add_declared_interest = region_north_germany
+	}
+	c:WUR = {	
+		add_declared_interest = region_rhineland
+	}
+	c:BAD = {
+		add_declared_interest = region_south_germany
+	}
+	c:HAN = {
+		add_declared_interest = region_rhineland
+	}	
+	c:SAX = {
+		add_declared_interest = region_south_germany
+	}
+	# South Europe
+	c:SIC = {
+		add_declared_interest = region_occitania
+		add_declared_interest = region_balkans
+		add_declared_interest = region_north_italy
+		add_declared_interest = region_greece
+	}	
+	c:SPA = {	
+		add_declared_interest = region_algeria
+		add_declared_interest = region_occitania
+		add_declared_interest = region_north_italy
+		add_declared_interest = region_mexico
+		add_declared_interest = region_baltic
+	}	
+	c:POR = {
+		add_declared_interest = region_zanj
+		add_declared_interest = region_senegambia
+	}
+	# Eastern Europe
+	c:RUS = {
+		add_declared_interest = region_france
+		add_declared_interest = region_balkans
+		add_declared_interest = region_north_germany
+		add_declared_interest = region_greater_khorasan
+		add_declared_interest = region_north_italy
+		add_declared_interest = region_anatolia
+		add_declared_interest = region_pontus
+		add_declared_interest = region_persia
+		add_declared_interest = region_japan
+	}
+	# Middle East
+	c:TUR = {
+		add_declared_interest = region_dnieper
+		add_declared_interest = region_north_caucasus
+		add_declared_interest = region_nile_basin
+		add_declared_interest = region_sudan
+		add_declared_interest = region_persia
+		add_declared_interest = region_levant
+	}
+	c:EGY = {
+		add_declared_interest = region_morocco
+		add_declared_interest = region_libya
+		add_declared_interest = region_algeria
+		add_declared_interest = region_zanj
+		add_declared_interest = region_anatolia
+	}		
+	c:PER = {	
+		add_declared_interest = region_central_asia
+	}	
+	# India
+	c:BIC = {
+		add_declared_interest = region_balochistan
+		add_declared_interest = region_greater_khorasan
+		add_declared_interest = region_himalayas
+		add_declared_interest = region_borneo
+
+	}
+	# East Asia
+	c:CHI = {	
+		add_declared_interest = region_japan
+		add_declared_interest = region_indochina
+		add_declared_interest = region_siam
+	}		
+	# South America
+	c:ARG = {	
+		add_declared_interest = region_brazil
+	}
+	c:BRZ = {
+		add_declared_interest = region_andes
+		add_declared_interest = region_gran_colombia
+	}		
+	c:CHL = {	
+		add_declared_interest = region_andes
+	}	
+	c:PEU = {	
+		add_declared_interest = region_chile
+	}	
+	# North America
+	c:USA = {
+		add_declared_interest = region_pacific_northwest
+		add_declared_interest = region_eastern_canada
+		add_declared_interest = region_southwest
+		add_declared_interest = region_central_america
+		add_declared_interest = region_caribbean
+		add_declared_interest = region_north_mexico
+		add_declared_interest = region_mexico
+		add_declared_interest = region_gran_colombia
+		add_declared_interest = region_andes
+	}		
+	c:MEX = {
+		add_declared_interest = region_great_plains
+	}
+}	
+
+
+
+

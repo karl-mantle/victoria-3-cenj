@@ -94,6 +94,14 @@ je_french_natural_borders_button_b = {
 				add_claim = ROOT
 			}
 		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_LUXEMBOURG }
+			}
+			s:STATE_LUXEMBOURG = {
+				add_claim = ROOT
+			}
+		}
 		change_infamy = 30
 		add_modifier = {
 			name = france_natural_borders_pursuit

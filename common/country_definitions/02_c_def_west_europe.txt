@@ -256,7 +256,7 @@ HSC = { # Gaeldom
 	country_type = recognized
 	tier = principality
 	cultures = { gaelic_scots }
-	capital = STATE_HIGHLANDS
+	capital = STATE_STRATHCLYDE
 }
 ING = { # Ingolstadt
 	color = { 67 163 215 }
@@ -403,7 +403,7 @@ NOL = { # Northumberland
 	country_type = recognized
 	tier = principality
 	cultures = { british }
-	capital = STATE_YORKSHIRE
+	capital = STATE_NORTHUMBRIA
 }
 NRM = { # Normandy
 	color = { 131 138 116 }

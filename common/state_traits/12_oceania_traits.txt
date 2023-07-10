@@ -60,3 +60,13 @@ state_trait_ta_shan = {
 		state_infrastructure_mult = -0.1
 	}
 }
+
+# NEED LOCAL
+
+state_trait_murray_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
+}

@@ -1,12 +1,22 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.32
+- added around 50 new states
+- new possible kanal (kra kanal) in thailand
+- changed events, decisions, ai methods, country defs, etc to new states
+- fixed literature PM methods
+- fixed medical facilities PM methods overwriting barracks
+- new state traits for new and existing states
+- changed health facilities PM methods and fixed bug/conflict with barracks?
+- various bug fixes
+- locators and hubs mostly done, western europe and south africa still to do
 ### 0.0.31
 - changed government offices PM method modifiers
 - changed magazines to literature (books)
 - changed pop needs and buy packages (new needs added entertainment and medical), changes to existing needs
 - new medicine good
 - new health facilities building for urban medicine, subsistence farms now produce medicine in home workshops as an analogue of folk / traditional medicine and home remedies
-- seemingly works ok as china produces enough medicine decentralised as was the case in 1800s, and the western countries are more dependent on purpose built medical infrastructure
+- seemingly works ok as china produces enough medicine decentralised as i think was the case in 1800s, and the western countries are more dependent on purpose built medical infrastructure
 - changed some state traits (mainly agriculture bonuses)
 - subsistence farms now make a small amount of tools
 - ports now now make a small amount of transport

@@ -173,3 +173,21 @@ state_trait_walvis_bay = {
 		state_building_naval_base_max_level_add = 10
 	}
 }
+
+# NEED LOCALISATION
+
+state_trait_blue_nile_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_white_nile_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}

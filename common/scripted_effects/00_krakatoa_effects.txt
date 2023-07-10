@@ -1,0 +1,34 @@
+﻿krakatoa_tsunami_effect = {
+	every_state_region = {
+		limit = {
+			OR = {
+				region = sr:region_siam
+				region = sr:region_indochina
+				region = sr:region_east_sunda_islands
+				region = sr:region_west_sunda_islands
+				region = sr:region_borneo
+				region = sr:region_philipines
+				region = sr:region_south_china
+			}
+		}
+		add_devastation = 30
+	}
+		
+	every_state_region = {
+		limit = {
+			OR = {
+				region = sr:region_oceania
+				region = sr:region_papua
+				region = sr:region_ethiopia
+				region = sr:region_southern_africa
+				region = sr:region_zanj
+				region = sr:region_zambezi
+				region = sr:region_east_china
+				region = sr:region_japan
+				region = sr:region_east_india
+				region = sr:region_south_india
+			}
+		}
+		add_devastation = 10
+	}
+}

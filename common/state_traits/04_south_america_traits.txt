@@ -176,3 +176,13 @@ state_trait_valparaiso_bay = {
 		state_building_naval_base_max_level_add = 10
 	}
 }
+
+# NEED LOCALISATION
+
+state_trait_stfrancisco_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
