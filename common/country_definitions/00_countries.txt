@@ -5,7 +5,7 @@
 
 	tier = empire
 	
-	cultures = { north_german south_german }
+	cultures = { german }
 	capital = STATE_BRANDENBURG
 }
 
@@ -27,7 +27,7 @@ SCA = {
 
 	tier = empire
 	
-	cultures = { swedish norwegian danish icelandic }
+	cultures = { swedish norwegian danish icelandic scanian }
 	capital = STATE_SVEALAND
 }
 
@@ -204,7 +204,7 @@ ITA = {
 
 	tier = empire
 	
-	cultures = { north_italian south_italian }
+	cultures = { italian }
 	capital = STATE_LAZIO
 }
 
@@ -270,7 +270,7 @@ SCN = {
 
 	tier = principality
 	
-	cultures = { swedish }
+	cultures = { scanian }
 	capital = STATE_SCANIA
 	is_named_from_capital = yes
 }
@@ -372,7 +372,7 @@ ULS = {
 
 	tier = principality
 	
-	cultures = { scottish irish }
+	cultures = { ulster_scots irish }
 	religion = protestant
 	capital = STATE_ULSTER
 	is_named_from_capital = yes
@@ -1277,7 +1277,7 @@ OMA = {
 	tier = principality
 	
 	cultures = { bedouin }
-	religion = shiite
+	religion = ibadi
 	capital = STATE_OMAN
 	is_named_from_capital = yes
 }
@@ -2138,7 +2138,7 @@ NEW = {
 	
 	tier = principality
 	
-	cultures = { anglo_canadian }
+	cultures = { newfoundlander }
 	capital = STATE_NEWFOUNDLAND
 	is_named_from_capital = yes
 }
@@ -2232,7 +2232,7 @@ TEX = {
 	
 	tier = principality
 	
-	cultures = { dixie }
+	cultures = { texan }
 	capital = STATE_TEXAS
 	is_named_from_capital = yes
 }
@@ -2415,7 +2415,7 @@ UBD = {
 
 	tier = kingdom
 	
-	cultures = { latvian estonian lithuanian }
+	cultures = { baltic_german estonian latvian lithuanian }
 	capital = STATE_LIVONIA
 }
 

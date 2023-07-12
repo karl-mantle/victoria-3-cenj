@@ -1,7 +1,17 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.35
+- AI now takes into account size of investment pool when building construction sectors
+- added new goods to AI strategies and made a couple of other small changes
+- tweaked university building and road network PMs
+- re-added vanilla ideology files and made changes to regions and currency policy law preferences
+- changed POP needs and buy packages to balance financial needs
+- removed shares from construction sector ownership methods
+- changed techs so they increase port and construction sector max level x2 (to account for half building sizes)
+- made bureaucracy cost 5 instead of 20 for trade routes
+- merged country defs into vanilla files to reduce error log overwriting spam
 ### 0.0.34
-- test
+- test upload
 ### 0.0.33
 - re-enabled mesh for custom buildings
 - test pull request

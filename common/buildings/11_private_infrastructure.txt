@@ -61,7 +61,7 @@ building_road_network = {
 
 	required_construction = construction_cost_medium
 	
-	ai_value = 2000 # Roads are also important
+	ai_value = 1500 # Roads are also important
 	
 	should_auto_expand = { 
 		OR = {

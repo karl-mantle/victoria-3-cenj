@@ -1,7 +1,7 @@
 ﻿north_german={
 	color= rgb{ 62 77 100 }
 	religion = protestant
-	traits = { german_speaking european_heritage }
+	traits = { german_speaking european_heritage north_german_minor }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -121,7 +121,7 @@
 south_german={
 	color= hsv{ 0.50 0.43 0.45 }
 	religion = catholic
-	traits = { german_speaking european_heritage }
+	traits = { german_speaking european_heritage south_german_minor }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -856,7 +856,7 @@ flemish={
 wallonian={
 	color= hsv{ 0.74 0.59 0.74 }
 	religion = catholic
-	traits = { beneluxian_culture_group francophone european_heritage }
+	traits = { beneluxian_culture_group french_minor european_heritage }
 	male_common_first_names={
 		Albert
 		Alexandre
@@ -1229,9 +1229,9 @@ boer={
 }
 
 alemannic={
-	color= hsv{ 0.0 0.47 0.70 }
+	color= hsv{ 0.50 0.43 0.30 }
 	religion = protestant
-	traits = { german_speaking swiss european_heritage }
+	traits = { south_german_minor swiss european_heritage }
 	male_common_first_names={
 		Adolf Alexander Anton Augustus Albert Andreas Ambros Alois
 		Benedicht
@@ -2409,7 +2409,7 @@ australian={
 north_italian={
 	color= hsv{ 0.38 0.27 0.86 }
 	religion = catholic
-	traits = { italophone european_heritage }
+	traits = { italophone european_heritage north_italian_minor }
 	
 	obsessions = {
 		wine
@@ -2489,7 +2489,7 @@ north_italian={
 south_italian={
 	color= rgb{ 97 77 117 }
 	religion = catholic
-	traits = { italophone european_heritage }
+	traits = { italophone european_heritage south_italian_minor }
 	
 	obsessions = {
 		wine
@@ -2574,10 +2574,11 @@ south_italian={
 	}
 }
 
+
 maltese={
 	color= hsv{ 0.40 0.03 0.58 }
 	religion = catholic
-	traits = { italophone european_heritage }
+	traits = { european_heritage south_italian_minor }
 	male_common_first_names={
 		Alessandru
 		Beru
@@ -3305,33 +3306,31 @@ portuguese={
 french={
 	color= rgb{ 76 118 155 }
 	religion = catholic
-	traits = { francophone european_heritage }
+	traits = { francophone european_heritage french_minor }
 	
 	obsessions = {
 		wine
 	}
 	
 	male_common_first_names={
-		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud Alexis
+		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
 		Charles Constant Camille Claude CE_lestin Christophe Cyprien
 		Daniel Denis Donat Dominique
 		Elie Eugene Edouard E_tienne Emile Emmanuel E_vrard ElzE_ar
 		Fernand Francois Frederic Felicien Felix Firmin Ferdinand
 		Georges Guillaume Gustave Gaston Guy Germain
-		Henri Hippolyte Hubert Hugo Hercule Hugues Hyacinthe
+		Henri Hippolyte Hubert Hugo Hercule Hugues
 		Jacques Jean Joseph Jules Julien Jeremie JE_rO_me Just
-		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide LE_once
+		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide
 		Matthieu Michel Marcel Maximilien Maxime Maurice MoI_se
 		Napoleon Nicolas
 		Olivier Oscar Octave Odilon
 		Patrice Paul Philippe Pierre Prosper Pascal
-		Quentin
-		Robert Roland Rodolphe Raymond RenE_ RE_my
+		Robert Roland Rodolphe Raymond Rene RE_my
 		Sebastien Simon
 		Thibaut Thierry Thomas Theophile Theodore ThE_obald
-		Ulysse
-		Vincent Victor
+		Vincent
 		Xavier
 		Yves
 	}
@@ -3339,7 +3338,7 @@ french={
 		Adelaide_2 Adele_2 Alexandrine Amelie_2 Angelique Anne Antoinette Athenais Augustine
 		Beatrice Blanche
 		Camille Caroline Catherine Charlotte Claire Clemence Clotilde
-		Delphine Diane DesirE_e
+		Delphine Diane
 		Eleonore_2 Ernestine Eugenie Eulalie
 		Francoise
 		Gabrielle
@@ -3354,43 +3353,43 @@ french={
 	}	
 	noble_last_names = {
 		d_Aumont
-		Baraguey_d_Hilliers Bergeret de_Beauharnais de_Bussiere de_Broglie de_Boisdeffre
-		de_Chastellux de_Chodron_de_Courcel de_CambacE_rE_s de_Croy de_Castelnau de_Cools
+		Baraguey_d_Hilliers Bergeret de_Beauharnais de_Bussiere de_Broglie
+		de_Chastellux de_Chodron_de_Courcel de_CambacE_rE_s de_Croy
 		Decazes de_Durfort
 		d_Essling
 		Fesch
 		Gros de_Gramont de_Guerin de_Gueydon de_Goyon
 		Kellermann
-		Lagrange de_Lamartine de_La_Luzerne de_Leuchtenberg de_Langle_de_Cary
+		Lagrange de_Lamartine de_La_Luzerne de_Leuchtenberg
 		Marbot de_MacMahon de_Montmorency-Laval Maret de_Morny MassE_na
-		de_Noailles Ney_d_Elchingen
+		de_Noailles
 		Oudinot
-		Pasquier de_Pourtales de_Polignac de_Persigny PalE_ologue
+		Pasquier de_Pourtales de_Polignac de_Persigny
 		de_La_Rochefoucauld de_Rochebouet de_Rohan-Chabot
 		Suchet de_Sabran de_Saulx de_SE_rent
 		de_Talleyrand-PE_rigord
 	}
 	common_last_names={
-		Anthoine Archinard Augereau Aucouturier Alavoine Achard Astouin Astaix Avond
-		Baraguey Bazaine Billot Bosquet Boulanger Bourbaki Boue_de_Lapeyrere Bouet-Willaumez Bugeaud Beaugendre Bronchard Baudet Bodinier Bouillet BiE_re Beslay Bac Bavoux Bezanson Bidard Bonnin Bougueret Boussingault Bouzique Buvignier
-		Caillard Canrobert Courbet Cousin-Mountauban de_Castellane Combes ClouE_ Cornet Colas Chauvet Carrere Chartier Combelles Chaude Colin Cruchon Cauvry ChaudE_ Collet Cottrel Charron Caudrelier Courcelles Cibiel Coquerel Coutenceau
-		Davout Depre Dubail Dubois Duchene Dupetit-Thouars Desbordes DelcassE_ Dortignacq Dargassies Desgrange Daumain Decaup Dozol Duboc Darche Deloffre Dutiron Denizot Dufour Devilly Dhers Dartigue Degy Delpech Daime Delaire DE_gousE_e Daix Delespaul Debrotonne Demortreux Denissel Desaincthorent Ducluzeau Dudouyt
-		Exelmans Emmery Esquirou
-		Foch Forey Franchet_d_Esperey Freycinet Faidherbe Fily Fleury Forestier Figuet Farconnet Ferrouillat Foucqueteau Favart Favand Freslon Fresneau
-		Gallieni Gouraud Guillaumat de_Gaulle Gain Georget Gabory Guillarme Garrigou Genin GE_raud Godivier Germain Gardent Goujon Gonnor Guyon 
+		Anthoine Archinard Augereau Aucouturier Alavoine
+		Baraguey Bazaine Billot Bosquet Boulanger Bourbaki Boue_de_Lapeyrere Bouet-Willaumez Bugeaud Beaugendre Bronchard Baudet Bodinier Bouillet BiE_re
+		Caillard Canrobert Courbet Cousin-Mountauban de_Castellane de_Castelnau Combes ClouE_ Cornet Colas Chauvet Carrere Chartier Combelles Chaude Colin Cruchon Cauvry ChaudE_ Collet Cottrel Charron Caudrelier Courcelles Cibiel
+		Davout Depre Dubail Dubois Duchene Dupetit-Thouars Desbordes DelcassE_ Dortignacq Dargassies Desgrange Daumain Decaup Dozol Duboc Darche Deloffre Dutiron Denizot Dufour Devilly Dhers Dartigue Degy Delpech Daime
+		Exelmans
+		Foch Forey Franchet_d_Esperey Freycinet Faidherbe Fily Fleury Forestier Figuet
+		Gallieni Gouraud Guillaumat de_Gaulle Gain Georget Gabory Guillarme Garrigou Genin GE_raud Godivier Germain Gardent Goujon
 		Hamelin Harispe Hoche Humbert d_Hilliers Habierre Herbelin Harquet
 		Jamais Jaures Joffre JaurE_guiberry Jousselin
-		Lebouef Lyautey Leygoute Lignon Lallement Lacroix Lafourcade Le_Bars Lachaise Leman Lorillon Lecointe Langlade Leblanc Lagagner Leroy Lapize Lannelongue Lebon Lebelleguy Lubbert Luminais Luneau Lherbette Lortet
-		Marmontel Murat de_Montaignac Mazel Maitron ME_nager Meili Mathonat Marrast Madesclaire Malbois Mispoulet Milhoux Moutou
-		Niboyet Nivelle Nancy Neboux Nempon Nadaud Nourry Nachet Normant
-		Oudin Ory Osmont
-		Petain Pellissier Pothier Pasquier Pautrat Payan Passerieu Paulmier Ponson PiE_trois Pardon Paullian Perrenet Pigeon Pleignard Plocq
-		Quenon Quinet
-		Ringeval Roux Rabot Riviere Roche Riou Ricaux Roquebert Rottie Royannez Radoing Regembal Reibell Repellin Rouher Royol
-		Saget de_Saint_Arnaud SouliE_ Sobrier StE_venot Soubigou StoecklE_ Simiot Signard Saint-Beuve Saint-Romme
-		Trebutien Trousselier Tuvache Taschereau Tanchard Tassel Teulon Tixier Totain Trinchan
-		Vaillant Ventresque Villette Vivier Vaidis Vilette Voilquin Vilain Vignerte Vinoy Valladier Vavin Vendois Vergnes Vernhette Viox
-		Wattelier Winant Warnet Walferdin
+		Lebouef Lyautey de_Langle_de_Cary Leygoute Lignon Lallement Lacroix Lafourcade Le_Bars Lachaise Leman Lorillon Lecointe Langlade Leblanc Lagagner Leroy Lapize Lannelongue
+		Marmontel Murat de_Montaignac Mazel Maitron ME_nager Meili Mathonat
+		Ney_d_Elchingen Nivelle Nancy Neboux Nempon Nadaud
+		Oudin Ory
+		Petain Pellissier Pothier Pasquier Pautrat Payan Passerieu Paulmier Ponson PiE_trois Pardon
+		Quenon
+		Ringeval Roux Rabot Riviere Roche Riou Ricaux Roquebert Rottie Royannez
+		Saget de_Saint_Arnaud SouliE_
+		Trebutien Trousselier Tuvache
+		Vaillant Ventresque Villette Vivier Vaidis Vilette
+		Wattelier Winant
 	}
 	male_regal_first_names={
 		Antoine
@@ -3419,10 +3418,11 @@ french={
 		1 = caucasian
 	}
 }
+
 occitan={
 	color= rgb{ 164 193 223 }
 	religion = catholic
-	traits = { francophone european_heritage }
+	traits = { occitan_minor european_heritage }
 
 	# the best wine is from Occitania, of course.
 	obsessions = {
@@ -3491,7 +3491,7 @@ occitan={
 breton={
 	color= hsv{ 0.16 0.39 0.95 }
 	religion = catholic
-	traits = { francophone celtic_people european_heritage }
+	traits = { celtic_people european_heritage }
 	male_common_first_names={
 		Aimery
 		Alphonse
@@ -7252,7 +7252,7 @@ persian={
 uzbek={
 	color= hsv{ 0.01 0.46 0.59 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names={
 		Abd_al-Ahad
 		Abd_al-Karim
@@ -7313,7 +7313,7 @@ uzbek={
 kazak={
 	color={ 83 102 46 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names={
 		Ablai
 		Abu_al-Khayr
@@ -7369,7 +7369,7 @@ kazak={
 kirgiz={
 	color={ 62 73 41 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names={
 		Askar
 		Bayymbet
@@ -7475,7 +7475,7 @@ tajik={
 uighur={
 	color=rgb{ 84 92 109 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names={
 		Afaq
 		Ahmed
@@ -7679,7 +7679,7 @@ hazara={
 turkmen={
 	color= hsv{ 0.84 0.21 0.75 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names={
 		Ahmed
 		Borkluce
@@ -10739,7 +10739,7 @@ polynesian={
 	graphics = generic
 }
 
-hawaiian={ # 
+hawaiian={
 	color= hsv{ 0.29 0.26 0.60 }
 	religion = protestant
 	traits = { polynesian_group indigenous_oceanic_heritage }
@@ -12034,7 +12034,7 @@ tupinamba={
 metis={
 	color= rgb{ 200 111 62 }
 	religion = catholic
-	traits = { indigenous_american_heritage francophone north_american_group }
+	traits = { indigenous_american_heritage francophone european_heritage north_american_group }
 	male_common_first_names={
 		Amroise-Dydime
 		Daniel
@@ -12197,7 +12197,7 @@ cherokee={
 
 muskogean={ # Creek and Seminole
 	color= hsv{ 0.27 0.2 0.67 }
-	religion = protestant
+	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
 	male_common_first_names={
 		Alexander
@@ -19356,7 +19356,7 @@ franco_canadian={
 		Pierre
 		Pierre-Aurele
 		Pierre-Stanislas
-		RenE_-E_douard
+		Rene-Edouard
 		Simon-Napoleon
 		Telesphore
 		Theodore
@@ -19606,7 +19606,7 @@ tuvan={
 corsican = {
 	color= hsv{ 0.49 0.51 0.84 }
 	religion = catholic
-	traits = { european_heritage francophone italophone }
+	traits = { european_heritage north_italian_minor }
 	male_common_first_names={
 		Joseph
 		Louis

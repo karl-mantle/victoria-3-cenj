@@ -1060,7 +1060,7 @@
 			}
 			create_building={
 				building="building_mint"
-				level=4
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_mint_bimetallic_standard" "pm_government_run_mint" }
 			}

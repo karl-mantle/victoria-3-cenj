@@ -4,6 +4,7 @@ I may have forgot some here, let me know.
 
 ### Discord & Others
 
+- @wepg on YouTube for the construction sectors AI code (www.youtube.com/@wepg)
 - Tobbzn (whoever you may be...) for the .gui files that I acquired via discord
 - The EU4 to Vic2 conversion project for the flags
 

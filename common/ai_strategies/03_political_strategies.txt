@@ -268,6 +268,12 @@ ai_strategy_progressive_agenda = {
 		ig_industrialists
 	}
 
+	anti_interest_groups = {
+		ig_landowners
+		ig_devout
+		ig_petty_bourgeoisie
+	}
+
 	institution_scores = {
 		institution_colonial_affairs = {	
 			value = 75	
@@ -543,7 +549,7 @@ ai_strategy_nationalist_agenda = {
 	}
 	
 	anti_interest_groups = {
-		ig_rural_folk
+		#ig_rural_folk
 		ig_trade_unions
 	}
 	

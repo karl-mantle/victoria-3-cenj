@@ -4,13 +4,11 @@ NGame = {
 }
 
 NEconomy = {
-	MAX_WEEKLY_CONSTRUCTION_PROGRESS = 50 # 20			# Max construction progress per week on a single project
-	MAX_WEEKLY_CONSTRUCTION_ALLOCATION = 50 # 20		# Max construction points allocated to a project per week
-	MIN_CONSTRUCTION_EFFICIENCY = 0.01					# Construction efficiency cannot go below this amount
+	MIN_CONSTRUCTION_EFFICIENCY = 0.01 # 0.05					# Construction efficiency cannot go below this amount
 	POLLUTION_TARGET_DIVISOR_BASE = 2 # 1				# Base value to divide total pollution generation by for calculating state region pollution target level
 	GOODS_LEADERBOARD_SIZE = 25 # 10					# How many spots there are on each goods leaderboard
 	BUY_SELL_DIFF_AT_MAX_FACTOR = 3	# 2					# the difference between buy/consumption and sell/production at min/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
-	TRADE_ROUTE_BUREAUCRACY_COST = 10 # 20				# The cost in BUR per trade route
+	TRADE_ROUTE_BUREAUCRACY_COST = 5 # 10 # 20				# The cost in BUR per trade route
 	URBANIZATION_PER_BUILDING = 50 # 100
 	GOVERNMENT_DIVIDENDS_EFFICIENCY_MIN = 0.99 # 0.2		# Minimum dividend fraction from buildings with government shares that will reach the treasury - the rest will be wasted
 }

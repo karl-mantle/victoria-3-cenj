@@ -99,7 +99,7 @@ NAL = {
 	tier = principality
 	
 	cultures = { boer }
-	capital = STATE_ZULULAND
+	capital = STATE_NATAL
 }
 
 ORA = {
@@ -121,7 +121,7 @@ SAF = {
 	
 	tier = kingdom
 	
-	cultures = { british boer }
+	cultures = { british }
 	capital = STATE_CAPE_COLONY
 }
 
@@ -299,11 +299,11 @@ TSW = {
 WBL = { 
 	color = { 176 206 177 }
 	
-	country_type = decentralized
+	country_type = unrecognized
 	
 	tier = principality
 	
-	cultures = { khoisan tswana }
+	cultures = { griqua }
 	capital = STATE_NORTHERN_CAPE
 }
 
@@ -515,7 +515,7 @@ BST = {
 	tier = principality
 	
 	cultures = { sotho }
-	capital = STATE_ZULULAND
+	capital = STATE_BASUTOLAND
 }
 
 TKE = {

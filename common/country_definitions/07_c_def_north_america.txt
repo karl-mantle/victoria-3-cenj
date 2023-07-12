@@ -1,33 +1,10 @@
-﻿# Changes
-
-NEW = { # Newfoundland
-	color = { 255  211  56 }
-	
-	country_type = colonial
-	
-	tier = principality
-	
-	cultures = { newfoundlander }
-	capital = STATE_NEWFOUNDLAND
-	is_named_from_capital = yes
-}
-
-TEX = { # Texas
-	color = { 4  144  178 }
-	country_type = colonial
-	tier = principality
-	cultures = { texan }
-	capital = STATE_TEXAS
-	is_named_from_capital = yes
-}
-
-# Added
+﻿# Added
 
 ALA = { # Alaska
  	color = { 185 215 255 }
 	country_type = recognized
 	tier = principality
-	cultures = { russian } # Change Alaska Purchase event
+	cultures = { russian } # Changes on Alaska Purchase event
 	capital = STATE_ALASKA
 }
 FLO = { # Florida

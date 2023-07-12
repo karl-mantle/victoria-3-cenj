@@ -1,14 +1,4 @@
-﻿# Changes
-
-ITA = { # Italy
-	color = { 125  171  84 }
-	country_type = recognized
-	tier = empire
-	cultures = { italian }
-	capital = STATE_LAZIO
-}
-
-# Added
+﻿# Added
 
 ACA = { # Achaea
  	color = { 255 213 51 }

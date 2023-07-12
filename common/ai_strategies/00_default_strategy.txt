@@ -832,7 +832,8 @@ ai_strategy_default = {
 							state_region = s:STATE_OUTER_MANCHURIA
 							state_region = s:STATE_SEMIRECHE
 							state_region = s:STATE_TOMSK
-							state_region = s:STATE_FERGANA
+							state_region = s:STATE_AMUR
+							state_region = s:STATE_VLADIVOSTOK
 						}
 					}
 				}
@@ -1038,8 +1039,13 @@ ai_strategy_default = {
 	# How many levels of construction sector should the AI aim to have
 	# Using this value in other strategies will function additively
 	wanted_construction_sector_levels = {
-		value = 0
+		value = 1 # 0
 		
+		add = {
+			value = investment_pool
+			divide = 1000000 # 1 construction sector per 1 million £ in the investment pool
+		}	
+
 		add = {
 			value = gdp
 			divide = 2000000 # 1 construction sector per 2 million gdp								
@@ -1256,6 +1262,7 @@ ai_strategy_default = {
 	subsidies = {
 		building_power_plant = should_have
 		building_railway = should_have
+		building_road_network = should_have
 		building_trade_center = should_have		
 	}
 	
@@ -1385,6 +1392,24 @@ ai_strategy_default = {
 			trigger = {
 				has_building = building_furniture_manufacturies
 				total_population >= 1000000
+			}
+		}		
+		medicine = { 
+			stance = wants_high_supply
+			trigger = {
+				has_technology_researched = pharmaceuticals
+			}
+		}		
+		currency = { 
+			stance = wants_high_supply
+			trigger = {
+				has_technology_researched = currency_standards
+			}
+		}		
+		securities = { 
+			stance = wants_high_supply
+			trigger = {
+				has_technology_researched = mutual_funds
 			}
 		}		
 	}

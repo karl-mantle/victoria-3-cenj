@@ -93,7 +93,7 @@
 scottish={
 	color={ 72 79 127 }
 	religion = protestant
-	traits = { anglophone european_heritage }
+	traits = { anglophone european_heritage caledonian }
 	
 	male_common_first_names = {
 		Alexander Alasdair Archibald Andrew Angus Asher Auckland Arthur Aeneas Adam Alan
@@ -811,7 +811,7 @@ assyrian={
 circassian = {
 	color= rgb{ 62 86 55 }
 	religion = sunni
-	traits = { caucasus_group european_heritage }
+	traits = { caucasus_group middle_eastern_heritage }
 
 	male_common_first_names = {
 		Aidamir
@@ -923,7 +923,7 @@ circassian = {
 }
 
 francoprovencal = {
-	color= rgb{ 158 41 12 }
+	color= hsv{ 0.55 0.20 0.75 }
 	religion = catholic
 	traits = { francophone swiss european_heritage }
 

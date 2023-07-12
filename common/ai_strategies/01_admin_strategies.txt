@@ -191,26 +191,37 @@ ai_strategy_resource_expansion = {
 	}
 	
 	goods_stances = {
+		chemicals = { 
+			stance = wants_high_supply 
+			trigger = {
+				has_technology_researched = nitroglycerin
+			}			
+		}	
 		explosives = { 
 			stance = wants_high_supply 
 			trigger = {
 				has_technology_researched = nitroglycerin
 			}			
 		}	
-		fertilizer = { # Explosives byproduct
-			stance = wants_export   
-			trigger = {
-				has_technology_researched = nitroglycerin
-			}				
-		}
+		#fertilizer = { # Explosives byproduct
+		#	stance = wants_export   
+		#	trigger = {
+		#		has_technology_researched = nitroglycerin
+		#	}				
+		#}
 		tools = { stance = wants_high_supply }
 		coal = { stance = wants_export }
 		iron = { stance = wants_export }
 		oil = { stance = wants_export }
 		lead = { stance = wants_export }
 		wood = { stance = wants_export }
+		bricks = { stance = wants_export }
+		cement = { stance = wants_export }
 		hardwood = { stance = wants_export }
 		sulfur = { stance = wants_export }			
+		limestone = { stance = wants_high_supply }
+		clay = { stance = wants_high_supply }
+		copper = { stance = wants_export }
 	}
 
 
@@ -284,6 +295,10 @@ ai_strategy_industrial_expansion = {
 		building_lead_mine = wants_to_have
 		building_sulfur_mine = wants_to_have
 		building_chemical_plants = wants_to_have
+		building_brickworks = wants_to_have
+		building_quarry = wants_to_have
+		building_copper_mine = wants_to_have
+
 	}
 	
 	goods_stances = {
@@ -300,6 +315,13 @@ ai_strategy_industrial_expansion = {
 		sulfur = { stance = wants_high_supply }
 		wood = { stance = wants_high_supply }
 		sugar = { stance = wants_high_supply }
+		bricks = { stance = wants_high_supply }
+		cement = { stance = wants_high_supply }
+		chemicals = { stance = wants_high_supply }
+		clay = { stance = wants_high_supply }
+		copper = { stance = wants_high_supply }
+		limestone = { stance = wants_high_supply }
+
 		explosives = { stance = wants_export }	
 		fertilizer = { stance = wants_export }
 	}

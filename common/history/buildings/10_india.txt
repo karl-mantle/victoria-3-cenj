@@ -639,7 +639,7 @@
 			}
 			create_building={
 				building="building_mint"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
 			}
@@ -759,7 +759,7 @@
 			}
 			create_building={
 				building="building_mint"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_mint_silver_standard" "pm_government_run_mint" }
 			}

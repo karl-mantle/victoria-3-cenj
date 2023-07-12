@@ -1,14 +1,4 @@
-﻿# Changes
-
-UBD = { # United Baltic
-	color = { 142  140  84 }
-	country_type = recognized
-	tier = kingdom
-	cultures = { latvian estonian lithuanian baltic_german }
-	capital = STATE_LIVONIA
-}
-
-# Added
+﻿# Added
 
 CHR = { # Chernigov
 	color = { 190 190 190 }

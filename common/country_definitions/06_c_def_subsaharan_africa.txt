@@ -1,35 +1,4 @@
-﻿# Changes
-
-BST = { # Basutoland
-	color = { 137 106 217 }
-	country_type = decentralized
-	tier = principality
-	cultures = { sotho }
-	capital = STATE_BASUTOLAND
-}
-NAL = { # Natalia
-	color = { 106 178 46 }
-	country_type = colonial
-	tier = principality
-	cultures = { boer }
-	capital = STATE_NATAL
-}
-SAF = { # South Africa
-	color = { 180  158  127 }
-	country_type = colonial
-	tier = kingdom
-	cultures = { british }
-	capital = STATE_CAPE_COLONY
-}
-WBL = { # Waterboersland
-	color = { 176 206 177 }
-	country_type = unrecognized
-	tier = principality
-	cultures = { griqua }
-	capital = STATE_NORTHERN_CAPE
-}
-
-# Added
+﻿# Added
 
 BAA = { # Boina
 	color = { 0 0 255 }
