@@ -1,4 +1,4 @@
-﻿state_river_thames = {
+﻿state_trait_river_thames = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -6,7 +6,7 @@
 	}
 }
 
-state_river_seine = {
+state_trait_river_seine = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -14,7 +14,7 @@ state_river_seine = {
 	}
 }
 
-state_river_rhone = {
+state_trait_river_rhone = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -22,7 +22,7 @@ state_river_rhone = {
 	}
 }
 
-state_river_rhine = {
+state_trait_river_rhine = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -30,7 +30,7 @@ state_river_rhine = {
 	}
 }
 
-state_river_loire = {
+state_trait_river_loire = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -38,7 +38,7 @@ state_river_loire = {
 	}
 }
 
-state_river_meuse = {
+state_trait_river_meuse = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -46,7 +46,7 @@ state_river_meuse = {
 	}
 }
 
-state_river_danube = {
+state_trait_river_danube = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -54,7 +54,7 @@ state_river_danube = {
 	}
 }
 
-state_river_elbe = {
+state_trait_river_elbe = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -62,7 +62,7 @@ state_river_elbe = {
 	}
 }
 
-state_river_drava = {
+state_trait_river_drava = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -70,7 +70,7 @@ state_river_drava = {
 	}
 }
 
-state_river_oder = {
+state_trait_river_oder = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -78,7 +78,7 @@ state_river_oder = {
 	}
 }
 
-state_river_main = {
+state_trait_river_main = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -86,7 +86,7 @@ state_river_main = {
 	}
 }
 
-state_river_po = {
+state_trait_river_po = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -94,7 +94,7 @@ state_river_po = {
 	}
 }
 
-state_river_douro = {
+state_trait_river_douro = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -102,7 +102,7 @@ state_river_douro = {
 	}
 }
 
-state_river_ebro = {
+state_trait_river_ebro = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -110,7 +110,7 @@ state_river_ebro = {
 	}
 }
 
-state_river_garonne = {
+state_trait_river_garonne = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -118,7 +118,7 @@ state_river_garonne = {
 	}
 }
 
-state_river_guadalquivir = {
+state_trait_river_guadalquivir = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -126,7 +126,7 @@ state_river_guadalquivir = {
 	}
 }
 
-state_river_bosporus_strait = {
+state_trait_river_bosporus_strait = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -134,7 +134,7 @@ state_river_bosporus_strait = {
 	}
 }
 
-state_river_dardanelles = {
+state_trait_river_dardanelles = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -142,7 +142,7 @@ state_river_dardanelles = {
 	}
 }
 
-state_river_oka = {
+state_trait_river_oka = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -150,7 +150,7 @@ state_river_oka = {
 	}
 }
 
-state_river_volga = {
+state_trait_river_volga = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -158,7 +158,7 @@ state_river_volga = {
 	}
 }
 
-state_river_dnieper = {
+state_trait_river_dnieper = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -166,7 +166,7 @@ state_river_dnieper = {
 	}
 }
 
-state_river_daugava = {
+state_trait_river_daugava = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -174,7 +174,7 @@ state_river_daugava = {
 	}
 }
 
-state_river_north_dvina = {
+state_trait_river_north_dvina = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -182,7 +182,7 @@ state_river_north_dvina = {
 	}
 }
 
-state_river_kerch_strait = {
+state_trait_kerch_strait = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -190,7 +190,7 @@ state_river_kerch_strait = {
 	}
 }
 
-state_river_dniester = {
+state_trait_river_dniester = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -198,7 +198,7 @@ state_river_dniester = {
 	}
 }
 
-state_river_don = {
+state_trait_river_don = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -206,7 +206,7 @@ state_river_don = {
 	}
 }
 
-state_river_kama = {
+state_trait_river_kama = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -214,7 +214,7 @@ state_river_kama = {
 	}
 }
 
-state_river_pechora = {
+state_trait_river_pechora = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -222,7 +222,7 @@ state_river_pechora = {
 	}
 }
 
-state_river_vistula = {
+state_trait_river_vistula = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -238,7 +238,7 @@ state_trait_vyatka_river = {
 	}
 }
 
-state_river_nile = {
+state_trait_river_nile = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 
 	modifier = {
@@ -248,7 +248,7 @@ state_river_nile = {
 	}
 }
 
-state_river_babel_mandeb = {
+state_trait_river_babel_mandeb = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -256,7 +256,7 @@ state_river_babel_mandeb = {
 	}
 }
 
-state_river_blue_nile = {
+state_trait_river_blue_nile = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -264,7 +264,7 @@ state_river_blue_nile = {
 	}
 }
 
-state_river_white_nile = {
+state_trait_river_white_nile = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -272,7 +272,7 @@ state_river_white_nile = {
 	}
 }
 
-state_river_niger = {
+state_trait_river_niger = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -280,7 +280,7 @@ state_river_niger = {
 	}
 }
 
-state_river_congo = {
+state_trait_river_congo = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -288,7 +288,7 @@ state_river_congo = {
 	}
 }
 
-state_river_zambezi = {
+state_trait_river_zambezi = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -296,7 +296,7 @@ state_river_zambezi = {
 	}
 }
 
-state_river_orange = {
+state_trait_river_orange = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -306,7 +306,7 @@ state_river_orange = {
 	}
 }
 
-state_river_vaal = {
+state_trait_river_vaal = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -316,7 +316,7 @@ state_river_vaal = {
 	}
 }
 
-state_river_mackenzie = {
+state_trait_river_mackenzie = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -324,7 +324,7 @@ state_river_mackenzie = {
 	}
 }
 
-state_river_yukon = {
+state_trait_river_yukon = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -332,7 +332,7 @@ state_river_yukon = {
 	}
 }
 
-state_river_mississippi = {
+state_trait_river_mississippi = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -340,7 +340,7 @@ state_river_mississippi = {
 	}
 }
 
-state_river_columbia = {
+state_trait_river_columbia = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -348,7 +348,7 @@ state_river_columbia = {
 	}
 }
 
-state_river_ohio = {
+state_trait_river_ohio = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -356,7 +356,7 @@ state_river_ohio = {
 	}
 }
 
-state_river_colorado = {
+state_trait_river_colorado = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -364,7 +364,7 @@ state_river_colorado = {
 	}	
 }
 
-state_river_st_lawrence = {
+state_trait_river_st_lawrence = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -372,7 +372,7 @@ state_river_st_lawrence = {
 	}
 }
 
-state_river_rio_grande = {
+state_trait_river_rio_grande = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -382,7 +382,7 @@ state_river_rio_grande = {
 	}	
 }
 
-state_river_uruguay = {
+state_trait_river_uruguay = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -390,7 +390,7 @@ state_river_uruguay = {
 	}
 }
 
-state_river_parana = {
+state_trait_river_parana = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -398,7 +398,7 @@ state_river_parana = {
 	}
 }
 
-state_river_paraguay = {
+state_trait_river_paraguay = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -406,7 +406,7 @@ state_river_paraguay = {
 	}
 }
 
-state_river_orinoco = {
+state_trait_river_orinoco = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -414,7 +414,7 @@ state_river_orinoco = {
 	}
 }
 
-state_river_sao_francisco = {
+state_trait_river_sao_francisco = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -422,7 +422,7 @@ state_river_sao_francisco = {
 	}
 }
 
-state_river_amazon = {
+state_trait_river_amazon = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -430,7 +430,7 @@ state_river_amazon = {
 	}
 }
 
-state_river_hormuz_strait = {
+state_trait_hormuz_strait = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -438,7 +438,7 @@ state_river_hormuz_strait = {
 	}
 }
 
-state_river_tigris = {
+state_trait_river_tigris = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -446,7 +446,7 @@ state_river_tigris = {
 	}
 }
 
-state_river_euphrates = {
+state_trait_river_euphrates = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -454,7 +454,7 @@ state_river_euphrates = {
 	}
 }
 
-state_river_karun = {
+state_trait_river_karun = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -462,7 +462,7 @@ state_river_karun = {
 	}
 }
 
-state_river_irtysh = {
+state_trait_river_irtysh = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -470,7 +470,7 @@ state_river_irtysh = {
 	}
 }
 
-state_river_oxus = {
+state_trait_river_oxus = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -478,7 +478,7 @@ state_river_oxus = {
 	}
 }
 
-state_river_ishim = {
+state_trait_river_ishim = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -486,7 +486,7 @@ state_river_ishim = {
 	}
 }
 
-state_river_indus = {
+state_trait_river_indus = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -494,7 +494,7 @@ state_river_indus = {
 	}
 }
 
-state_river_belaya = {
+state_trait_river_belaya = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -502,7 +502,7 @@ state_river_belaya = {
 	}
 }
 
-state_river_ganges = {
+state_trait_river_ganges = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 
 	modifier = {
@@ -514,7 +514,7 @@ state_river_ganges = {
 	}
 }
 
-state_river_brahmaputra = {
+state_trait_river_brahmaputra = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -522,7 +522,7 @@ state_river_brahmaputra = {
 	}
 }
 
-state_river_yangtze = {
+state_trait_river_yangtze = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -530,7 +530,7 @@ state_river_yangtze = {
 	}
 }
 
-state_river_yellow = {
+state_trait_river_yellow = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -538,7 +538,7 @@ state_river_yellow = {
 	}
 }
 
-state_river_irrawaddy = {
+state_trait_river_irrawaddy = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -546,7 +546,7 @@ state_river_irrawaddy = {
 	}
 }
 
-state_river_salween = {
+state_trait_river_salween = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -554,7 +554,7 @@ state_river_salween = {
 	}
 }
 
-state_river_sarawak = {
+state_trait_river_sarawak = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -562,7 +562,7 @@ state_river_sarawak = {
 	}
 }
 
-state_river_kapuas = {
+state_trait_river_kapuas = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -570,7 +570,7 @@ state_river_kapuas = {
 	}
 }
 
-state_river_murray = {
+state_trait_river_murray = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -578,7 +578,7 @@ state_river_murray = {
 	}
 }
 
-state_river_ob = {
+state_trait_river_ob = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -586,7 +586,7 @@ state_river_ob = {
 	}
 }
 
-state_river_yenisei = {
+state_trait_river_yenisei = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -594,7 +594,7 @@ state_river_yenisei = {
 	}
 }
 
-state_river_irtysh = {
+state_trait_river_irtysh = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -602,7 +602,7 @@ state_river_irtysh = {
 	}
 }
 
-state_river_tobol = {
+state_trait_river_tobol = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -610,7 +610,7 @@ state_river_tobol = {
 	}
 }
 
-state_river_lena = {
+state_trait_river_lena = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -618,7 +618,7 @@ state_river_lena = {
 	}
 }
 
-state_river_amur = {
+state_trait_river_amur = {
 	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
@@ -626,7 +626,15 @@ state_river_amur = {
 	}
 }
 
-state_river_mekong = {
+state_trait_river_mekong = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_trait_river_pearl = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
@@ -634,10 +642,10 @@ state_river_mekong = {
 	}
 }
 
-state_river_pearl = {
-	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+state_trait_river_vyatka = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
 	
 	modifier = {
-		state_infrastructure_add = 25
+		state_infrastructure_add = 15
 	}
 }

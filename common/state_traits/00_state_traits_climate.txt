@@ -1,0 +1,78 @@
+﻿# Arctic
+state_trait_climate_arctic = {
+	icon = "gfx/interface/icons/state_trait_icons/climate_arctic.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = -0.50
+		building_group_bg_plantations_throughput_mult = -0.50
+	}
+}
+
+# Cold
+state_trait_climate_cold = {
+	icon = "gfx/interface/icons/state_trait_icons/climate_cold.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = -0.05
+		building_group_bg_plantations_throughput_mult = -0.25
+	}
+}
+
+# Temperate
+state_trait_climate_temperate = {
+	icon = "gfx/interface/icons/state_trait_icons/climate_temperate.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.25
+		building_group_bg_plantations_throughput_mult = 0.05
+	}
+}
+
+# Mediterranean
+state_trait_climate_mediterranean = {
+	icon = "gfx/interface/icons/state_trait_icons/climate_mediterranean.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.15
+		building_group_bg_plantations_throughput_mult = 0.15
+	}
+}
+
+# Tropical
+state_trait_climate_tropical = {
+	icon = "gfx/interface/icons/state_trait_icons/climate_tropical.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.05
+		building_group_bg_plantations_throughput_mult = 0.25
+
+	}
+}
+
+state_trait_climate_tropical_island = {
+	icon = "gfx/interface/icons/state_trait_icons/tropical_island.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.05
+		building_group_bg_plantations_throughput_mult = 0.33
+	}
+}
+
+state_trait_climate_pacific_island = {
+	icon = "gfx/interface/icons/state_trait_icons/pacific_island.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = -0.05
+		building_group_bg_plantations_throughput_mult = 0.25
+	}
+}
+
+# Arid
+state_trait_climate_arid = {
+	icon = "gfx/interface/icons/state_trait_icons/climate_arid.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = -0.25
+		building_group_bg_plantations_throughput_mult = -0.25
+	}
+}

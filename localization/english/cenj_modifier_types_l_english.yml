@@ -122,8 +122,18 @@
 # Building Group Throughput / Mult
  modifier_building_group_bg_finance_throughput_mult:0 "$bg_finance$ [concept_throughput]"
  modifier_building_group_bg_finance_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_finance$"
+ modifier_building_group_bg_maize_farms_throughput_mult:0 "$bg_maize_farms$ [concept_throughput]"
+ modifier_building_group_bg_maize_farms_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_maize_farms$"
+ modifier_building_group_bg_rice_throughput_mult:0 "$bg_rice_farms$ [concept_throughput]"
+ modifier_building_group_bg_rice_farms_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rice_farms$"
  #modifier_building_group_bg_rubber_throughput_mult:0 "$bg_rubber$ [concept_throughput]"
  #modifier_building_group_bg_rubber_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rubber$"
+ modifier_building_group_bg_subsistence_ranching_throughput_mult:0 "$bg_subsistence_ranching$ [concept_throughput]"
+ modifier_building_group_bg_subsistence_ranching_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_subsistence_ranching$"
+ modifier_building_group_bg_sulfur_mining_throughput_mult:0 "$bg_sulfur_mining$ [concept_throughput]"
+ modifier_building_group_bg_sulfur_mining_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_sulfur_mining$"
+ modifier_building_group_bg_wheat_farms_throughput_mult:0 "$bg_wheat_farms$ [concept_throughput]"
+ modifier_building_group_bg_wheat_farms_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_wheat_farms$"
 
 # State
  modifier_state_unincorporated_building_group_bg_manufacturing_throughput_mult:0 "$bg_manufacturing$ [concept_throughput] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')]"

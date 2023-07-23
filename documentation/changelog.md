@@ -1,5 +1,11 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.37
+- 2 new state trait icons
+- rework of the new state traits
+- fixed triggers
+- added new modifier types
+- bug fixes from previous version
 ### 0.0.36
 - 20+ new state trait icons
 - state traits overhauled 50+ new traits

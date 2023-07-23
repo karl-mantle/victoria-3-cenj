@@ -1,0 +1,451 @@
+﻿# Forest
+state_trait_scandinavian_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/taiga.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_wood_mult = 0.05
+	}
+}
+
+state_trait_black_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/forest.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_wood_mult = 0.05
+	}
+}
+
+state_trait_bohemian_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/forest.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_wood_mult = 0.05
+	}
+}
+
+state_trait_russian_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/taiga.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_wood_mult = 0.1
+	}
+}
+
+state_trait_congo_rainforest = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_american_chestnuts = {
+	icon = "gfx/interface/icons/state_trait_icons/forest.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_big_thicket = {
+	icon = "gfx/interface/icons/state_trait_icons/forest.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_wood_mult = 0.05
+	}
+}
+
+state_trait_northern_california_coastal_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/forest.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_wood_mult = 0.05
+	}
+}
+
+state_trait_amazon_rainforest = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_logging_throughput_mult = 0.25
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_indochinese_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"
+
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+		
+	}
+}
+
+state_trait_burmese_teak = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_borneo_rainforest = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"	
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_west_javan_rainforest = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"	
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_sumatran_rainforest = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"	
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_hawaii_sandalwood = {
+	icon = "gfx/interface/icons/state_trait_icons/rainforest.dds"
+
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_hardwood_mult = 0.25
+	}
+}
+
+# Desert (none)
+
+state_trait_sahara_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_sahara.dds"
+	 
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_kalahari_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_coastal.dds"
+	 
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_namib_coastal_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_coastal.dds"
+	 
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_great_basin_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_mesa.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_chihuahuan_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_mesa.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+
+		building_group_bg_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_sonoran_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_mexico.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+		building_group_bg_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_atacama_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_coastal.dds"
+
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_sulfur_mining_throughput_mult = 0.25
+	}
+}
+
+state_trait_arabian_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert_arabian.dds"
+		   
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_taklamakan_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_gobi_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/desert.dds"
+	  
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+# Grasslands
+
+state_trait_savanna = {
+	icon = "gfx/interface/icons/state_trait_icons/savanna.dds"
+
+	modifier = {
+		building_group_bg_ranching_throughput_mult = 0.2
+	}
+}
+
+state_trait_pontic_steppe = {
+	icon = "gfx/interface/icons/state_trait_icons/steppe_european.dds"
+	
+	modifier = {
+		building_group_bg_ranching_throughput_mult = 0.1
+	}
+}
+
+state_trait_great_alfold = {
+	icon = "gfx/interface/icons/state_trait_icons/plains.dds"
+	
+	modifier = {
+		building_group_bg_wheat_farms_throughput_mult = 0.1
+	}
+}
+
+state_trait_the_great_plains = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	
+	modifier = {
+		building_group_bg_wheat_farms_throughput_mult = 0.1
+		building_group_bg_maize_farms_throughput_mult = 0.1
+		building_group_bg_ranching_throughput_mult = 0.1
+	}
+}
+
+state_trait_canadian_prairies = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	
+	modifier = {
+		building_group_bg_wheat_farms_throughput_mult = 0.1
+		building_group_bg_ranching_throughput_mult = 0.1
+	}
+}
+
+state_trait_pampas = {
+	icon = "gfx/interface/icons/state_trait_icons/steppe_european.dds"
+	
+	modifier = {
+		building_group_bg_wheat_farms_throughput_mult = 0.1
+		building_group_bg_maize_farms_throughput_mult = 0.1
+		building_group_bg_ranching_throughput_mult = 0.1
+	}
+}
+
+state_trait_kazakh_steppe = {
+	icon = "gfx/interface/icons/state_trait_icons/steppe_asian.dds"
+	
+	modifier = {
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_mongolian_steppe = {
+	icon = "gfx/interface/icons/state_trait_icons/steppe_asian.dds"
+	
+	modifier = {
+		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_songliao_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/steppe_asian.dds"
+	
+	modifier = {
+		building_group_bg_wheat_farm_throughput_mult = 0.1
+	}
+}
+
+state_trait_central_plains = {
+	icon = "gfx/interface/icons/state_trait_icons/plains.dds"
+	
+	modifier = {
+		building_group_bg_rice_farms_throughput_mult = 0.1
+		building_group_bg_wheat_farms_throughput_mult = 0.1
+	}
+}
+
+state_trait_kanto_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/plains.dds"
+	
+	modifier = {
+		building_group_bg_rice_farms_throughput_mult = 0.1
+		building_group_bg_wheat_farms_throughput_mult = 0.1
+	}
+}
+
+# Wetland / Marsh
+
+state_trait_mississippi_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+
+		building_group_bg_cotton_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_floridian_wetlands = {
+	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+
+		building_group_bg_cotton_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_bengal_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/wetland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_cauvery_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/wetland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_yangtze_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/wetland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_chao_phraya_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/wetland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_irrawaddy_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/wetland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_mekong_delta = {
+	icon = "gfx/interface/icons/state_trait_icons/wetland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+
+		building_group_bg_agriculture_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_mult = 0.1
+	}
+}
+
+state_trait_vasyugan_swamp = {
+	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+
+		building_group_bg_logging_throughput_mult = 0.2
+	}
+}

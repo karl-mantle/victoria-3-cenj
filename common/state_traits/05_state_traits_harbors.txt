@@ -1,4 +1,4 @@
-﻿state_harbor_natural_harbors = {
+﻿state_trait_natural_harbors = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -8,7 +8,7 @@
 	}
 }
 
-state_harbor_oresund = {
+state_trait_oresund = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -19,7 +19,7 @@ state_harbor_oresund = {
 	}
 }
 
-state_harbor_london_docklands = {
+state_trait_london_docklands = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -28,7 +28,7 @@ state_harbor_london_docklands = {
 	}
 }
 
-state_harbor_the_solent = {
+state_trait_the_solent = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -39,7 +39,7 @@ state_harbor_the_solent = {
 	}
 }
 
-state_harbor_merseyside = {
+state_trait_merseyside = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -50,7 +50,7 @@ state_harbor_merseyside = {
 	}
 }
 
-state_harbor_scapa_flow = {
+state_trait_scapa_flow = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -59,7 +59,7 @@ state_harbor_scapa_flow = {
 	}
 }
 
-state_harbor_poole_harbour = {
+state_trait_poole_harbour = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -68,7 +68,7 @@ state_harbor_poole_harbour = {
 	}
 }
 
-state_harbor_killybegs_harbour = {
+state_trait_killybegs_harbour = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -77,7 +77,7 @@ state_harbor_killybegs_harbour = {
 	}
 }
 
-state_harbor_cork_harbour = {
+state_trait_cork_harbour = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -86,7 +86,7 @@ state_harbor_cork_harbour = {
 	}
 }
 
-state_harbor_port_hercules = {
+state_trait_port_hercules = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -95,7 +95,7 @@ state_harbor_port_hercules = {
 	}
 }
 
-state_harbor_roadstead_of_brest = {
+state_trait_roadstead_of_brest = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -104,7 +104,7 @@ state_harbor_roadstead_of_brest = {
 	}
 }
 
-state_harbor_bremerhaven = {
+state_trait_bremerhaven = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -116,7 +116,7 @@ state_harbor_bremerhaven = {
 	}
 }
 
-state_harbor_tyneside_wearside = {
+state_trait_tyneside_wearside = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -127,7 +127,7 @@ state_harbor_tyneside_wearside = {
 	}
 }
 
-state_harbor_sevastopol_harbor = {
+state_trait_sevastopol_harbor = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -136,7 +136,7 @@ state_harbor_sevastopol_harbor = {
 	}
 }
 
-state_harbor_cap_vert_peninsula = {
+state_trait_cap_vert_peninsula = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -145,7 +145,7 @@ state_harbor_cap_vert_peninsula = {
 	}
 }
 
-state_harbor_lagos_lagoon = {
+state_trait_lagos_lagoon = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -154,7 +154,7 @@ state_harbor_lagos_lagoon = {
 	}
 }
 
-state_harbor_kilindini_harbour = {
+state_trait_kilindini_harbour = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -163,7 +163,7 @@ state_harbor_kilindini_harbour = {
 	}
 }
 
-state_harbor_lobito_bay = {
+state_trait_lobito_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -172,7 +172,7 @@ state_harbor_lobito_bay = {
 	}
 }
 
-state_harbor_walvis_bay = {
+state_trait_walvis_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -181,7 +181,7 @@ state_harbor_walvis_bay = {
 	}
 }
 
-state_harbor_new_york_harbor = {
+state_trait_new_york_harbor = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -192,7 +192,7 @@ state_harbor_new_york_harbor = {
 	}
 }
 
-state_harbor_prince_william_sound = {
+state_trait_prince_william_sound = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -201,7 +201,7 @@ state_harbor_prince_william_sound = {
 	}
 }
 
-state_harbor_puget_sound = {
+state_trait_puget_sound = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -210,7 +210,7 @@ state_harbor_puget_sound = {
 	}
 }
 
-state_harbor_tampa_bay = {
+state_trait_tampa_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -219,7 +219,7 @@ state_harbor_tampa_bay = {
 	}
 }
 
-state_newark_newark_harbor = {
+state_trait_newark_harbor = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -230,7 +230,7 @@ state_newark_newark_harbor = {
 	}
 }
 
-state_harbor_pearl_harbor = {
+state_trait_pearl_harbor = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -239,7 +239,7 @@ state_harbor_pearl_harbor = {
 	}
 }
 
-state_harbor_halifax_harbour = {
+state_trait_halifax_harbour = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -250,7 +250,7 @@ state_harbor_halifax_harbour = {
 	}
 }
 
-state_harbor_sept_iles = {
+state_trait_sept_iles = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -259,7 +259,7 @@ state_harbor_sept_iles = {
 	}
 }
 
-state_harbor_st_johns_harbour = {
+state_trait_st_johns_harbour = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -268,7 +268,7 @@ state_harbor_st_johns_harbour = {
 	}
 }
 
-state_harbor_burrard_inlet = {
+state_trait_burrard_inlet = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -277,7 +277,7 @@ state_harbor_burrard_inlet = {
 	}
 }
 
-state_harbor_san_francisco_bay = {
+state_trait_san_francisco_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -286,7 +286,7 @@ state_harbor_san_francisco_bay = {
 	}
 }
 
-state_harbor_zihuatanejo_bay = {
+state_trait_zihuatanejo_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -295,7 +295,7 @@ state_harbor_zihuatanejo_bay = {
 	}
 }
 
-state_harbor_guantanamo_bay = {
+state_trait_guantanamo_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -304,7 +304,7 @@ state_harbor_guantanamo_bay = {
 	}
 }
 
-state_harbor_san_juan_bay = {
+state_trait_san_juan_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -313,7 +313,7 @@ state_harbor_san_juan_bay = {
 	}
 }
 
-state_harbor_gulf_of_paria = {
+state_trait_gulf_of_paria = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -322,7 +322,7 @@ state_harbor_gulf_of_paria = {
 	}
 }
 
-state_harbor_bay_of_candelaria = {
+state_trait_bay_of_candelaria = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -331,7 +331,7 @@ state_harbor_bay_of_candelaria = {
 	}
 }
 
-state_harbor_valparaiso_bay = {
+state_trait_valparaiso_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -340,7 +340,7 @@ state_harbor_valparaiso_bay = {
 	}
 }
 
-state_harbor_rio_de_janeiro = {
+state_trait_rio_de_janeiro = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -349,16 +349,7 @@ state_harbor_rio_de_janeiro = {
 	}
 }
 
-state_harbor_tokyo_bay = {
-	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
-	
-	modifier = {
-		state_building_port_max_level_add = 10
-		state_building_naval_base_max_level_add = 15
-	}
-}
-
-state_harbor_osaka_bay = {
+state_trait_tokyo_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -367,7 +358,16 @@ state_harbor_osaka_bay = {
 	}
 }
 
-state_harbor_seto_inland_sea = {
+state_trait_osaka_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 10
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+state_trait_seto_inland_sea = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -378,7 +378,7 @@ state_harbor_seto_inland_sea = {
 	}
 }
 
-state_harbor_balikpapan_bay = {
+state_trait_balikpapan_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -387,7 +387,7 @@ state_harbor_balikpapan_bay = {
 	}
 }
 
-state_harbor_sunda_kelapa = {
+state_trait_sunda_kelapa = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -396,7 +396,7 @@ state_harbor_sunda_kelapa = {
 	}
 }
 
-state_harbor_manila_bay = {
+state_trait_manila_bay = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -407,7 +407,7 @@ state_harbor_manila_bay = {
 	}
 }
 
-state_harbor_sydney_harbour = {
+state_trait_sydney_harbour = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {

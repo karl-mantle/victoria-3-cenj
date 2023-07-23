@@ -1,0 +1,351 @@
+﻿# Tundra
+state_trait_tundra = {
+	icon = "gfx/interface/icons/state_trait_icons/tundra.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.25
+
+		building_group_bg_agriculture_throughput_mult = -0.25
+		building_group_bg_plantations_throughput_mult = -0.25
+		building_group_bg_ranching_throughput_mult = 0.25
+	}
+}
+
+# Highland
+state_trait_lake_district = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_scottish_highlands = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_snowdonia = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_alpine_hills = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+		
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_dinaric_alps = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_albertine_rift = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_ethiopian_highlands = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_arakan = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_new_guinea_highlands = {
+	icon = "gfx/interface/icons/state_trait_icons/highland.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+# Mountains
+state_trait_scandes = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_alps = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+		
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_pyrenees = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_ural_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_cold.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+
+		building_iron_mine_throughput_mult = 0.1
+		building_output_iron_mult = 0.05
+	}
+}
+
+state_trait_carpathian_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_atlas_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_arid.dds"
+
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_alaska_range = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_cold.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_appalachia = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_tropical.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+
+		building_coal_mine_throughput_mult = 0.1
+		building_output_coal_mult = 0.05
+	}
+}
+
+state_trait_cascades = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+
+		building_group_bg_logging_throughput_mult = 0.1
+		building_output_wood_mult = 0.05
+	}
+}
+
+state_trait_rocky_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_wasatch_range = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_sierra_nevada = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_sierra_madre_occidental = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_sierra_madre_oriental = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_tropical.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_central_american_cordilleras = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_tropical.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_andes = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_cold.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_zagros_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_arid.dds"
+
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_alborz_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_arid.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_caucasus_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_tian_shan = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_cold.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_pamir_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_arid.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_hindu_kush = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_cold.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_ta_shan = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_tropical.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_japanese_alps = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_kyushu_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_shikoku_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_bukit_barisan = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_tropical.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_kalimantan_range = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_tropical.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_great_dividing_range = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_tropical.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_himalayas = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_cold.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_baikal_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_temperate.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_sredinny_range = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain_cold.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.15
+	}
+}
