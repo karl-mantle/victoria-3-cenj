@@ -1,0 +1,158 @@
+﻿state_trait_good_soils = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.05
+	}
+}
+
+state_trait_volcanic_soil = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.1
+		building_output_fruit_mult = 0.1
+	}
+}
+
+state_trait_scanian_soils = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.05
+	}
+}
+
+state_trait_the_golden_vale = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.05
+	}
+}
+
+state_trait_terra_rossa = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.1
+		building_output_fruit_mult = 0.1
+	}
+}
+
+state_trait_black_soil = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.15
+	}
+}
+
+state_trait_mitidja_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.1
+	}
+}
+
+state_trait_columbia_plateau = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.05
+	}
+}
+
+state_trait_central_valley = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.1
+		building_output_fruit_mult = 0.1
+	}
+}
+
+state_trait_san_juan_basin = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.05
+	}
+}
+
+state_trait_la_costa = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.05
+	}
+}
+
+state_trait_pantanal = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.15
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_mesopotamian_floodplain = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_output_grain_mult = 0.1
+		building_output_fruit_mult = 0.1
+	}
+}
+
+state_trait_anatolian_plateau = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.1
+		building_output_fruit_mult = 0.1
+	}
+}
+
+state_trait_indus_valley = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.1
+		building_output_fruit_mult = 0.1
+	}
+}
+
+state_trait_the_red_basin = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.05
+		building_output_fruit_mult = 0.05
+	}
+}
+
+state_trait_the_loess_plateau = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.1
+	}
+}
+
+state_trait_dojima_rice_exchange = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_output_grain_mult = 0.1
+	}
+}

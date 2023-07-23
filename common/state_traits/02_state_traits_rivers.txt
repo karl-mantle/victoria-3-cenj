@@ -1,0 +1,643 @@
+﻿state_river_thames = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_seine = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_rhone = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_rhine = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_loire = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_meuse = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_danube = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_elbe = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_drava = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_oder = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_main = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_po = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_douro = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_ebro = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_garonne = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_guadalquivir = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_bosporus_strait = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_dardanelles = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_oka = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_volga = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_dnieper = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_daugava = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_north_dvina = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_kerch_strait = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_dniester = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_don = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_kama = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_pechora = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_vistula = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_trait_vyatka_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_nile = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+		state_infrastructure_add = 40
+
+		building_group_bg_agriculture_throughput_mult = 0.2
+	}
+}
+
+state_river_babel_mandeb = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_blue_nile = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_white_nile = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_niger = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_congo = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_zambezi = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_orange = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+
+		state_colony_growth_speed_mult = -0.25
+	}
+}
+
+state_river_vaal = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+
+		state_colony_growth_speed_mult = -0.25
+	}
+}
+
+state_river_mackenzie = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_yukon = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_mississippi = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_columbia = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_ohio = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_colorado = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}	
+}
+
+state_river_st_lawrence = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_rio_grande = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+
+		building_group_bg_ranching_throughput_mult = 0.2
+	}	
+}
+
+state_river_uruguay = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_parana = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_paraguay = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_orinoco = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_sao_francisco = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_amazon = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_hormuz_strait = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_tigris = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_euphrates = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_karun = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_irtysh = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_oxus = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_ishim = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_indus = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_belaya = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_ganges = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+		state_infrastructure_add = 40
+
+		building_group_bg_agriculture_throughput_mult = 0.15
+		building_output_grain_mult = 0.1
+		
+	}
+}
+
+state_river_brahmaputra = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_yangtze = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_river_yellow = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_irrawaddy = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_salween = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_sarawak = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_kapuas = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_murray = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_ob = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_yenisei = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_irtysh = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_tobol = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_lena = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_amur = {
+	icon = "gfx/interface/icons/state_trait_icons/river_wilderness.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_river_mekong = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}
+
+state_river_pearl = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}
+}

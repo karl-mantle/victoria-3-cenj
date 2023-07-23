@@ -1,5 +1,10 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.36
+- 20+ new state trait icons
+- state traits overhauled 50+ new traits
+- fixed on_river scripted trigger
+- more changes next version
 ### 0.0.35
 - AI now takes into account size of investment pool when building construction sectors
 - added new goods to AI strategies and made a couple of other small changes

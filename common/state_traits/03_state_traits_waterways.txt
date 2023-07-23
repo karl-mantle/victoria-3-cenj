@@ -1,0 +1,120 @@
+﻿# Canals
+
+# Fjords
+state_fjord_hardangerfjorden = {
+	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 15
+		building_output_electricity_mult = 0.1
+	}
+}
+
+state_fjord_odensefjorden = {
+	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_fjord_trondhjemsfjorden = {
+	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
+		building_output_electricity_mult = 0.1
+	}
+}
+
+state_fjord_christianiafjorden = {
+	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
+	
+	modifier = {
+		state_building_port_max_level_add = 5
+		state_building_naval_base_max_level_add = 10
+		building_output_electricity_mult = 0.1
+	}
+}
+
+# Lakes
+state_lake_ladoga = {
+	icon = "gfx/interface/icons/state_trait_icons/lake.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_lake_onega = {
+	icon = "gfx/interface/icons/state_trait_icons/lake.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_lake_victoria = {
+	icon = "gfx/interface/icons/state_trait_icons/lake.dds"
+	
+	modifier = {
+		state_infrastructure_add = 40
+	}
+}
+
+state_lake_great_lakes = {
+	icon = "gfx/interface/icons/state_trait_icons/lake.dds"
+	
+	modifier = {
+		state_infrastructure_add = 25
+	}	
+}
+
+state_lake_great_salt = {
+	icon = "gfx/interface/icons/state_trait_icons/lake.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}	
+}
+
+state_lake_maracaibo = {
+	icon = "gfx/interface/icons/state_trait_icons/lake.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+
+		building_group_bg_fishing_throughput_mult = 0.2
+		building_output_fish_mult = 0.1
+		
+	}
+}
+
+state_lake_caspian_sea = {
+	icon = "gfx/interface/icons/state_trait_icons/lake.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+
+# Waterfalls
+state_trait_krka_falls = {
+	icon = "gfx/interface/icons/state_trait_icons/waterfall.dds"
+	
+	modifier = {
+		building_output_electricity_mult = 0.15
+	}
+}
+
+state_trait_niagara_falls = {
+	icon = "gfx/interface/icons/state_trait_icons/waterfall.dds"
+	
+	modifier = {
+		building_output_electricity_mult = 0.2
+	}
+}
