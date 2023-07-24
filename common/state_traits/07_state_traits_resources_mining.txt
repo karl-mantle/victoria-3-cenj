@@ -140,7 +140,7 @@ state_trait_waterberg_coalfield = {
 }
 
 state_trait_alborz_coalfield = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+    icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
@@ -149,7 +149,7 @@ state_trait_alborz_coalfield = {
 }
 
 state_trait_zonguldak_coalfield = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+    icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
@@ -158,7 +158,7 @@ state_trait_zonguldak_coalfield = {
 }
 
 state_trait_tabas_coalfield = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+    icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
 		building_coal_mine_throughput_mult = 0.1
@@ -235,7 +235,7 @@ state_trait_minette_ore = {
 }
 
 state_trait_kryvbas = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+    icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
 		building_iron_mine_throughput_mult = 0.1
@@ -282,7 +282,7 @@ state_trait_el_mutun = {
 # Lead
 
 state_trait_lead_belt = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_lead.dds"
 	
 	modifier = {
 		building_lead_mine_throughput_mult = 0.2
@@ -291,16 +291,16 @@ state_trait_lead_belt = {
 }
 
 state_trait_paktong = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_copper.dds" # Change to resources_currency.dds
+	icon = "gfx/interface/icons/state_trait_icons/resources_lead.dds"
 
 	modifier = {
 		building_lead_mine_throughput_mult = 0.2
-		building_output_silver = 0.2
+		building_output_silver_mult = 0.2
 	}
 }
 
 state_trait_new_caledonian_nickel = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_lead.dds"
 	
 	modifier = {
 		building_lead_mine_throughput_mult = 0.1
@@ -331,7 +331,7 @@ state_trait_joachimsthal = {
 # Sulfur
 
 state_trait_sicilian_sulfur_mines = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_sulfur.dds"
 	
 	modifier = {
 		building_sulfur_mine_throughput_mult = 0.2
@@ -340,7 +340,7 @@ state_trait_sicilian_sulfur_mines = {
 }
 
 state_trait_bone_valley = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	icon = "gfx/interface/icons/state_trait_icons/resources_sulfur.dds"
 	
 	modifier = {
 		building_sulfur_mine_throughput_mult = 0.1

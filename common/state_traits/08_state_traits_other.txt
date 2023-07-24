@@ -24,3 +24,32 @@ state_trait_severe_malaria = {
 		state_migration_pull_mult = -0.75
 	}
 }
+
+# Event Triggered Traits
+
+state_trait_wine_region_south_australia = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_wine.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_mendoza = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_wine.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_marlborough = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_wine.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}

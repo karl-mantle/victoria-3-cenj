@@ -1,5 +1,12 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.38
+- fixed invalid trait in state region errors
+- reduced number of overriding entry errors
+- modifier types and localisation fixes
+- new state traits to encourage regions to produce more historical goods
+- several new state trait icons for resources
+- new modifier types
 ### 0.0.37
 - 2 new state trait icons
 - rework of the new state traits

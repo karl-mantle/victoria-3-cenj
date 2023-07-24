@@ -222,6 +222,16 @@ building_output_sulfur_mult = {
 	percent = yes
 }
 
+building_output_tea_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_tobacco_mult = {
+	good = yes
+	percent = yes
+}
+
 building_output_wood_mult = {
 	good = yes
 	percent = yes
@@ -292,6 +302,21 @@ building_publishing_house_throughput_mult = {
 }
 
 building_silver_mine_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_sugar_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_tea_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_tobacco_plantation_throughput_mult = {
 	good = yes
 	percent = yes
 }

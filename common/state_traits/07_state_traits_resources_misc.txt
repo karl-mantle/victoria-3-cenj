@@ -1,7 +1,7 @@
 ﻿# Cement
 
 state_trait_rosendale_cement = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds" # Change to resources_cement.dds
+	icon = "gfx/interface/icons/state_trait_icons/resources_cement.dds"
 	
 	modifier = {
 		building_cement_factory_throughput_mult = 0.2
@@ -94,6 +94,102 @@ state_trait_satsuma_ware = {
 	}
 }
 
+# Sugar
+
+state_trait_demerara_sugar = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_sugar.dds"
+	
+	modifier = {
+		building_sugar_plantation_throughput_mult = 0.2
+		building_output_sugar_mult = 0.1
+	}
+}
+
+# Tea
+
+state_trait_assam_tea = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
+	
+	modifier = {
+		building_tea_plantation_throughput_mult = 0.2
+		building_output_tea_mult = 0.1
+	}
+}
+
+state_trait_darjeeling_tea = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
+	
+	modifier = {
+		building_tea_plantation_throughput_mult = 0.2
+		building_output_tea_mult = 0.1
+	}
+}
+
+state_trait_ceylon_tea = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
+	
+	modifier = {
+		building_tea_plantation_throughput_mult = 0.2
+		building_output_tea_mult = 0.1
+	}
+}
+
+state_trait_rooibos_tea = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
+	
+	modifier = {
+		building_tea_plantation_throughput_mult = 0.2
+		building_output_tea_mult = 0.1
+	}
+}
+
+# Tobacco
+
+state_trait_burley_tobacco = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
+	
+	modifier = {
+		building_tobacco_plantation_throughput_mult = 0.2
+		building_output_tobacco_mult = 0.1
+	}
+}
+
+state_trait_latakia_tobacco = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
+	
+	modifier = {
+		building_tobacco_plantation_throughput_mult = 0.2
+		building_output_tobacco_mult = 0.1
+	}
+}
+
+state_trait_oriental_tobacco = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
+	
+	modifier = {
+		building_tobacco_plantation_throughput_mult = 0.1
+		building_output_tobacco_mult = 0.05
+	}
+}
+
+state_trait_perique_tobacco = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
+	
+	modifier = {
+		building_tobacco_plantation_throughput_mult = 0.2
+		building_output_tobacco_mult = 0.1
+	}
+}
+
+state_trait_virginia_tobacco = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
+	
+	modifier = {
+		building_tobacco_plantation_throughput_mult = 0.2
+		building_output_tobacco_mult = 0.1
+	}
+}
+
 # Whaling
 
 state_trait_arctic_whaling = {
@@ -124,6 +220,87 @@ state_trait_new_england_whaling = {
 
 state_trait_mission_grapes = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_wine.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_bordeaux = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_burgundy = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_champagne = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_tuscany = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_piedmont = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_rhone_valley = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_la_rioja = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_douro_valley = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
+	
+	modifier = {
+		#building_vineyard_throughput_mult = 0.2
+		building_output_wine_mult = 0.1
+	}
+}
+
+state_trait_wine_region_veneto = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
 		#building_vineyard_throughput_mult = 0.2
