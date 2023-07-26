@@ -1,5 +1,12 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.40
+- fixed kra canal splines and adjacencies - it should now work!
+- fixed panama canal adjacencies
+- swapped some locators/hubs around and re-made splines (mainly low countries and france)
+- renamed some hubs e.g. portsmouth > southampton
+- added missing splines
+- renamed some files
 ### 0.0.39
 - fixed most of the hubs/locators/splines from 1.2 > 1.3
 - renamed some cities in hub names
@@ -39,7 +46,6 @@
 - test pull request
 ### 0.0.32
 - added around 50 new states
-- new possible kanal (kra kanal) in thailand
 - changed events, decisions, ai methods, country defs, etc to new states
 - fixed literature PM methods
 - fixed medical facilities PM methods overwriting barracks

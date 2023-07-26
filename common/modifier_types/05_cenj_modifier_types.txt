@@ -1,0 +1,347 @@
+﻿# Goods Input / Output (Add) Modifiers
+
+building_input_bricks_add = {
+	good = no
+	percent = no
+}
+
+building_output_bricks_add = {
+	good = yes
+	percent = no
+}
+
+building_input_cement_add = {
+	good = no
+	percent = no
+}
+
+building_output_cement_add = {
+	good = yes
+	percent = no
+}
+
+building_input_charterparties_add = {
+	good = no
+	percent = no
+}
+
+building_output_charterparties_add = {
+	good = yes
+	percent = no
+}
+
+building_input_chemicals_add = {
+	good = no
+	percent = no
+}
+
+building_output_chemicals_add = {
+	good = yes
+	percent = no
+}
+
+building_input_clay_add = {
+	good = no
+	percent = no
+}
+
+building_output_clay_add = {
+	good = yes
+	percent = no
+}
+
+building_input_copper_add = {
+	good = no
+	percent = no
+}
+
+building_output_copper_add = {
+	good = yes
+	percent = no
+}
+
+building_input_currency_add = {
+	good = no
+	percent = no
+}
+
+building_output_currency_add = {
+	good = yes
+	percent = no
+}
+
+building_input_gold_add = {
+	good = no
+	percent = no
+}
+
+building_input_limestone_add = {
+	good = no
+	percent = no
+}
+
+building_output_limestone_add = {
+	good = yes
+	percent = no
+}
+
+#building_input_literature_add = {
+#	good = no
+#	percent = no
+#}
+
+#building_output_literature_add = {
+#	good = yes
+#	percent = no
+#}
+
+building_input_newspapers_add = {
+	good = no
+	percent = no
+}
+
+building_output_newspapers_add = {
+	good = yes
+	percent = no
+}
+
+building_input_medicine_add = {
+	good = no
+	percent = no
+}
+
+building_output_medicine_add = {
+	good = yes
+	percent = no
+}
+
+building_output_securities_add = {
+	good = yes
+	percent = no
+}
+
+building_input_securities_add = {
+	good = no
+	percent = no
+}
+
+building_input_services_add = {
+	good = no
+	percent = no
+}
+
+building_input_silver_add = {
+	good = no
+	percent = no
+}
+
+building_output_silver_add = {
+	good = yes
+	percent = no
+}
+
+# Goods Input/Output (Mult) Modifiers
+
+building_output_cement_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_clothes_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_coal_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_coffee_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_currency_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_dye_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_fish_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_grain_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_iron_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_lead_mult = {
+	good = yes
+	percent = yes
+}
+
+#building_output_literature_mult = {
+#	good = yes
+#	percent = yes
+#}
+
+building_output_luxury_clothes_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_newspapers_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_porcelain_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_silver_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_sulfur_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_tea_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_tobacco_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_wood_mult = {
+	good = yes
+	percent = yes
+}
+
+# Building Groups Thoroughput (Mult) Modifiers
+
+building_group_bg_finance_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+#building_group_bg_plantations_throughput_mult = {
+#	good = yes
+#	percent = yes
+#}
+
+building_group_bg_maize_farms_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_group_bg_rice_farms_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_group_bg_rubber_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_group_bg_subsistence_ranching_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_group_bg_sulfur_mining_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_group_bg_wheat_farms_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+# Building Thoroughput (Mult) Modifiers
+
+building_brickworks_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_cement_factory_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_coffee_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_publishing_house_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_silver_mine_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_sugar_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_tea_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_tobacco_plantation_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+building_vineyard_throughput_mult = {
+	good = yes
+	percent = yes
+}
+
+# I don't know what these do or where they came from yet.
+
+state_unincorporated_building_group_bg_manufacturing_throughput_mult = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}
+
+state_unincorported_pop_qualifications_mult = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}
+
+building_category_rural_unincorporated_rural_throughput_mult = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}

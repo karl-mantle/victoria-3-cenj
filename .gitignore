@@ -1,6 +1,7 @@
 .archive/
 .resources/
 .vscode/
+gfx/map/terrain/
 
 # Executables
 *.exe
