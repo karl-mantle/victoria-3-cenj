@@ -283,7 +283,6 @@ STATE_IRKUTSK = {
         undiscovered_amount = 20
     }
 }
-
 # Added
 
 STATE_CHELYABINSK = {

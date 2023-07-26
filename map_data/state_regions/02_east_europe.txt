@@ -583,7 +583,7 @@ STATE_WEST_GALICIA = {
         type = "bg_oil_extraction"
         undiscovered_amount = 60
     }
-    
+
 }
 
 STATE_EAST_GALICIA = {
@@ -837,7 +837,6 @@ STATE_BESSARABIA = {
     }
     naval_exit_id = 3036
 }
-
 # Added
 
 STATE_PSKOV = {
@@ -1088,7 +1087,7 @@ STATE_DONETS = {
     id = 1213
     subsistence_building = "building_subsistence_farms"
     provinces = { "x386376" "x3C304D" "x500F88" "x580D2A" "x5AB195" "x5B788C" "x628FBE" "x637D8D" "x7020DF" "x7161E0" "x71E0E0" "x87109C" "x9A1118" "xAD4F1C" "xB06935" "xBC52ED" "xC262E0" "xF0E061" }
-    traits = { "state_trait_donets_coalfield" "state_trait_black_soil" "state_trait_pontic_steppe" "state_trait_climate_temperate"  }
+    traits = { "state_trait_donets_coalfield" "state_trait_black_soil" "state_trait_pontic_steppe" "state_trait_climate_temperate" }
     city = "xC262E0"
     port = "xF0E061"
     farm = "x5AB195"
@@ -1109,7 +1108,7 @@ STATE_KHARKOV = {
     id = 1143
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0319ED" "x04E110" "x0B484F" "x0EBC1D" "x14786A" "x1CB8D8" "x36D880" "x46BD2E" "x4C5706" "x76E2A3" "x9C070F" "xA0A57F" "xAD965B" "xBBC6BF" "xD0DA95" "xF061E0" "xFA0D5E" "xFC92C5" }
-    traits = { "state_trait_black_soil" "state_trait_pontic_steppe" "state_trait_climate_temperate"  }
+    traits = { "state_trait_black_soil" "state_trait_pontic_steppe" "state_trait_climate_temperate" }
     city = "x46BD2E"
     farm = "xAD965B"
     mine = "x1CB8D8"

@@ -4,6 +4,7 @@ I may have forgot some here, let me know.
 
 ### Discord & Others
 
+- Savs for this great guide on the Steam community page (https://steamcommunity.com/sharedfiles/filedetails/?id=2892376601)
 - @wepg on YouTube for the construction sectors AI code (www.youtube.com/@wepg)
 - Tobbzn (whoever you may be...) for the .gui files that I acquired via discord
 - The EU4 to Vic2 conversion project for the flags
@@ -20,6 +21,7 @@ These are mods that I have taken inspiration from, parts of code or incorporated
 
 These are mods that I have taken inspiration from, parts of code or incorporated entirely into my own mod that are abandoned, don't work on the current patch or have been deleted from the workshop.
 
+- [Abandoned?] "More States" by *Arnil* (https://steamcommunity.com/sharedfiles/filedetails/?id=2881527989)
 - [Abandoned] "Better Borders" by *Foxomexra* (https://steamcommunity.com/sharedfiles/filedetails/?id=2881732032)
 - [Abandoned] "Southern Africa Rework" by *Timur* (https://steamcommunity.com/sharedfiles/filedetails/?id=2892080578)
 - [Abandoned?] "Illegal Immigration" by *皮皮山上的咕咕⑨* (https://steamcommunity.com/sharedfiles/filedetails/?id=2893271165)

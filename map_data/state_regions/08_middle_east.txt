@@ -47,7 +47,7 @@ STATE_ABU_DHABI = {
     id = 400
     subsistence_building = "building_subsistence_pastures"
     provinces = { "x0DC972" "x1830A7" "x2768F8" "x28D126" "x4D3B30" "x505AE0" "x631F32" "x65A581" "x69B568" "x70D020" "x723F1D" "x8C6854" "xA9240B" "xC9472E" "xD12977" "xE8E0A4" "xEF5020" "xF0D021" "xFF7473" }
-	prime_land = { x505AE0 x2768F8 xEF5020 }
+    prime_land = { x505AE0 x2768F8 xEF5020 }
     traits = { "state_trait_hormuz_strait" "state_trait_arabian_desert" "state_trait_climate_arid" }
     city = "x505AE0"
     port = "x65A581"
@@ -551,7 +551,7 @@ STATE_AYDIN = {
     capped_resources = {
         bg_coal_mining = 96
         bg_logging = 10
-        bg_fishing = 30 
+        bg_fishing = 30
     }
     naval_exit_id = 3035
 }
@@ -577,7 +577,7 @@ STATE_KASTAMONU = {
     id = 427
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1D8401" "x312F4B" "x415C04" "x449057" "x6089D1" "x747BB5" "x7A7E06" "xB556A0" "xB82B24" "xBEBB3F" "xC01000" "xC1C893" "xE1E090" }
-	traits = { "state_trait_oriental_tobacco" "state_trait_zonguldak_coalfield" "state_trait_climate_mediterranean" }
+    traits = { "state_trait_oriental_tobacco" "state_trait_zonguldak_coalfield" "state_trait_climate_mediterranean" }
     city = "x415C04"
     port = "x7A7E06"
     farm = "x747BB5"
@@ -614,7 +614,7 @@ STATE_ADANA = {
     id = 429
     subsistence_building = "building_subsistence_farms"
     provinces = { "x2111E0" "x63E9DB" "x802F12" "x909463" "xA09060" "xB0E060" "xE8DCC5" "xEB98F3" "xFA9C84" }
-    traits = { "state_trait_oriental_tobacco" "state_trait_good_soils" "state_trait_natural_harbors" "state_trait_climate_mediterranean"  }
+    traits = { "state_trait_oriental_tobacco" "state_trait_good_soils" "state_trait_natural_harbors" "state_trait_climate_mediterranean" }
     city = "x2111E0"
     port = "xFA9C84"
     farm = "xE8DCC5"
@@ -704,7 +704,6 @@ STATE_KARS = {
     }
     naval_exit_id = 3036
 }
-
 # Added
 
 STATE_RIYADH = {
@@ -867,7 +866,7 @@ STATE_KERMAN = {
     capped_resources = {
         bg_coal_mining = 24
         bg_iron_mining = 42
-		bg_lead_mining = 34
+        bg_lead_mining = 34
         bg_gold_mining = 2
         bg_logging = 2
     }
@@ -878,7 +877,7 @@ STATE_QUHISTAN = {
     subsistence_building = "building_subsistence_pastures"
     provinces = { "x07C3C1" "x09EC79" "x1E9374" "x250EA9" "x2CC853" "x2EB9D4" "x2F2582" "x39C083" "x4058BB" "x41B208" "x4CD18D" "x53B53B" "x57893E" "x6208A0" "x62D297" "x6D2203" "x6FE987" "x888432" "x8A3C3C" "x932884" "x9369BF" "x95024E" "x98DCCC" "x9CB55A" "xA26087" "xA6D67E" "xA8549E" "xAC03B8" "xB7CE9D" "xBEA6BB" "xC0E354" "xC0F0E0" "xD3C02D" "xE3E233" "xE91143" "xEADB0F" "xEBB44F" "xF4E0BD" }
     traits = { "state_trait_tabas_coalfield" "state_trait_climate_arid" }
-	city = "x888432"
+    city = "x888432"
     farm = "x98DCCC"
     mine = "xA26087"
     wood = "x4CD18D"
@@ -886,7 +885,7 @@ STATE_QUHISTAN = {
     arable_resources = { "bg_quarries" "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
         bg_coal_mining = 88
-		bg_lead_mining = 24
+        bg_lead_mining = 24
         bg_sulfur_mining = 36
         bg_logging = 4
     }

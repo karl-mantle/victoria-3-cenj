@@ -1,5 +1,9 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.39
+- fixed most of the hubs/locators/splines from 1.2 > 1.3
+- renamed some cities in hub names
+- added missing hub names localisation
 ### 0.0.38
 - fixed invalid trait in state region errors
 - reduced number of overriding entry errors

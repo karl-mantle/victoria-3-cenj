@@ -419,7 +419,6 @@ STATE_BOMBAY = {
     }
     naval_exit_id = 3048
 }
-
 # Added
 
 STATE_LUDHIANA = {
