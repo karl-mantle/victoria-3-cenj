@@ -3402,7 +3402,7 @@ IUS = {
 	color = { 11 115 39 }
 	country_type = recognized
 	tier = principality
-	cultures = { russian tatar }
+	cultures = { tatar }
 	capital = STATE_KAZAN
 }
 
@@ -3418,7 +3418,7 @@ DON = {
 	color = { 245 221 42 }
 	country_type = recognized
 	tier = principality
-	cultures = { russian ukrainian }
+	cultures = { cossack }
 	capital = STATE_ROSTOV
 }
 
@@ -3749,7 +3749,7 @@ CHC = {
 
 	tier = principality
 	
-	cultures = { north_caucasian }
+	cultures = { chechen }
 	capital = STATE_TEREK
 }
 
@@ -3832,6 +3832,8 @@ CAU = {
 	
 	cultures = { azerbaijani armenian georgian }
 	capital = STATE_KUTAIS
+
+	religion = orthodox
 }
 
 SAV = {

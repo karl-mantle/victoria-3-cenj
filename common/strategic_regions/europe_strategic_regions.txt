@@ -14,7 +14,7 @@ region_north_atlantic = {
 
 region_andalusia = {
 	graphical_culture = "latin"
-	capital_province = x2B550F
+	capital_province = x4A1438
 	map_color = { 218 0 12 }
 	states = { STATE_ANDALUSIA STATE_BADAJOZ STATE_GRANADA STATE_MURCIA }
 }

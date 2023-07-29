@@ -1,5 +1,18 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.41
+- new dynamic homelands in north america
+- more north american diaspora cultures will appear
+- rewritten pop_culture primary and culture changing scripted effects and on_actions
+- added memel river state trait
+- changed historical trade routes
+- changed terrain brush weights for determining province terrain
+- south italian cultures now have different colours
+- general bug fixes
+- fixed flag and country definitions
+- fixed starting countries laws being invalid
+- fixed andalusia related errors
+- fixed major railways journal entry and event (siberian states)
 ### 0.0.40
 - fixed kra canal splines and adjacencies - it should now work!
 - fixed panama canal adjacencies

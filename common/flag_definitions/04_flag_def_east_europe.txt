@@ -1,27 +1,4 @@
-﻿# Changes
-
-EST = { # Estonia
-	flag_definition = {
-		coa = EST_subject_RUS
-		subject_canton = EST_subject_RUS
-		priority = 50
-		trigger = { 
-			coa_def_russian_ensign_trigger = yes
-		}
-	}
-}
-POL = { # Poland
-	flag_definition = {
-		coa = POL_subject_RUS
-		subject_canton = POL
-		priority = 50
-		trigger = { 
-			coa_def_russian_ensign_trigger = yes
-		}
-	}
-}
-
-# Added
+﻿# Added
 
 CHR = { # Chernigov
 	flag_definition = {

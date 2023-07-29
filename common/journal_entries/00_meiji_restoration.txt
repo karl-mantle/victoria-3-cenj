@@ -79,7 +79,7 @@
 		value = 120
 	}
 
-	transferable = yes
+	#transferable = yes
 
 	progressbar = yes
 

@@ -22,7 +22,7 @@ major_railways.1 = {
 			limit = {
 				OR = {
 					state_region = s:STATE_OKHOTSK
-					state_region = s:STATE_OUTER_MANCHURIA
+					state_region = s:STATE_VLADIVOSTOK
 				}
 				has_building = building_railway
 			}

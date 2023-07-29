@@ -28,11 +28,19 @@
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_YAROSLAVL
+			state_region = s:STATE_VLADIMIR
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_GALICH
+			state_region = s:STATE_NIZHNY_NOVGOROD
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_KAZAN
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_IZHEVSK
 			has_building = building_railway
 		}
 		any_scope_state = {
@@ -48,7 +56,15 @@
 			has_building = building_railway
 		}
 		any_scope_state = {
+			state_region = s:STATE_OMSK
+			has_building = building_railway
+		}
+		any_scope_state = {
 			state_region = s:STATE_TOMSK
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_KRASNOYARSK
 			has_building = building_railway
 		}
 		any_scope_state = {
@@ -56,16 +72,24 @@
 			has_building = building_railway
 		}
 		any_scope_state = {
+			state_region = s:STATE_BURYATIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_CHITA
+			has_building = building_railway
+		}
+		any_scope_state = {
 			state_region = s:STATE_AMUR
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_OUTER_MANCHURIA
 			has_building = building_railway
 		}
 		OR = {
 			any_scope_state = {
 				state_region = s:STATE_OKHOTSK
-				has_building = building_railway
-			}
-			any_scope_state = {
-				state_region = s:STATE_OUTER_MANCHURIA
 				has_building = building_railway
 			}
 			any_scope_state = {

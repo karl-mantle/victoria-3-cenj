@@ -181,6 +181,7 @@
  state_trait_river_amur:0 "Amur River"
  state_trait_river_pearl:0 "Pearl River"
  state_trait_river_mekong:0 "Mekong River"
+ state_trait_river_memel:0 "the Memel"
 
  # Waterways
  state_trait_hardangerfjorden:0 "Hardangerfjorden"

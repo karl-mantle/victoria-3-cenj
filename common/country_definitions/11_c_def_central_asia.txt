@@ -1,37 +1,4 @@
-﻿# Changes
-
-CAU = {
-	color = { 200 100 55 }
-	country_type = recognized
-	tier = empire
-	religion = orthodox
-	cultures = { azerbaijani armenian georgian }
-	capital = STATE_KUTAIS
-}
-CHC = { # Chechnya
-	color = { 35 52 48 }
-	country_type = unrecognized
-	tier = principality
-	cultures = { chechen }
-	capital = STATE_TEREK
-}
-DON = { # Don Host
-	color = { 245 221 42 }
-	country_type = recognized
-	tier = principality
-	cultures = { cossack }
-	capital = STATE_ROSTOV
-}
-IUS = {
-	color = { 11 115 39 }
-	country_type = recognized
-	tier = principality
-	cultures = { tatar }
-	capital = STATE_KAZAN
-}
-
-
-# Added
+﻿# Added
 
 ABK = { # Abkhazia
 	color = { 117 224 94 }

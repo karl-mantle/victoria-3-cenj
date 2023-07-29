@@ -2607,7 +2607,7 @@ low_saxon={
 	}
 }
 neapolitan={
-	color= rgb{ 97 77 117 }
+	color= rgb{ 115 95 135 }
 	religion = catholic
 	traits = { south_italian_minor european_heritage }
 	
@@ -3537,7 +3537,7 @@ prussian={
 	}
 }
 roman={
-	color= rgb{ 97 77 117 }
+	color= rgb{ 105 85 125 }
 	religion = catholic
 	traits = { south_italian_minor european_heritage }
 	
@@ -3624,7 +3624,7 @@ roman={
 	}
 }
 sardinian={
-	color= rgb{ 97 77 117 }
+	color= rgb{ 92 72 112 }
 	religion = catholic
 	traits = { south_italian_minor european_heritage }
 	
@@ -3857,7 +3857,7 @@ scanian={
 	}
 }
 sicilian={
-	color= rgb{ 97 77 117 }
+	color= rgb{ 85 65 105 }
 	religion = catholic
 	traits = { south_italian_minor european_heritage }
 	
@@ -4661,7 +4661,7 @@ ulster_scots={
 	graphics = european
 }
 umbrian={
-	color= rgb{ 97 77 117 }
+	color= rgb{ 77 57 97 }
 	religion = catholic
 	traits = { south_italian_minor european_heritage }
 	

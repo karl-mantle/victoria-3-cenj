@@ -1899,7 +1899,7 @@ CHL = { # Chile
 		coa_with_overlord_canton = CHL_subject			
 		priority = 10
 		trigger = { 
-			coa_def_republic_flag_trigger = yes
+			coa_def_oligarchy_flag_trigger = yes
 		}
 	}		
 	flag_definition = {
@@ -1917,7 +1917,7 @@ CHL = { # Chile
 		coa_with_overlord_canton = CHL_subject	
 		priority = 25
 		trigger = {
-			coa_def_oligarchy_flag_trigger = yes
+			coa_def_republic_flag_trigger = yes
 		}
 	}	
 	flag_definition = {
@@ -2875,7 +2875,15 @@ EST = { # Estonia
 		trigger = { 
 			coa_def_communist_flag_trigger = yes
 		}
-	}	
+	}
+	flag_definition = {
+		coa = EST_subject_RUS
+		subject_canton = EST_subject_RUS
+		priority = 50
+		trigger = { 
+			coa_def_russian_ensign_trigger = yes
+		}
+	}
 }
 
 ETH = { # Ethiopia
@@ -6483,6 +6491,16 @@ ORA = { # Orange
 			coa_def_british_ensign_trigger = yes
 		}
 	}
+	flag_definition = {
+		coa = ORA_voortrekker
+		allow_overlord_canton = yes
+		priority = 25
+		trigger = { 
+			scope:actor = {
+				has_modifier = volksraad_government
+			}
+		}
+	}
 }
 
 ORG = { # Oregon
@@ -6918,7 +6936,15 @@ POL = { # Poland
 		trigger = { 
 			coa_def_communist_flag_trigger = yes
 		}
-	}		
+	}
+	flag_definition = {
+		coa = POL_subject_RUS
+		subject_canton = POL
+		priority = 50
+		trigger = { 
+			coa_def_russian_ensign_trigger = yes
+		}
+	}
 }
 
 POM = { # Pommerania
@@ -7358,9 +7384,25 @@ SAS = { # South Australia
 
 SAV = { # Savoy
 	flag_definition = {
-		coa = SAV		
+		coa = SAV
 		subject_canton = SAV
 		priority = 1
+	}
+	flag_definition = {
+		coa = SAV_communist
+		subject_canton = SAV_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SAV_fascist
+		subject_canton = SAV_fascist
+		priority = 1500
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
 	}
 }
 

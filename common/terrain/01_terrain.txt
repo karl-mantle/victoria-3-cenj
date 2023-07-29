@@ -42,7 +42,18 @@
 
 plains = {
 	label = label_flat
-	weight = 1
+	#weight = 1
+	weight = {
+		value = 1
+		if = {
+			limit = {
+				state = {
+					has_state_trait_grasslands = yes
+				}
+			}
+			multiply = 2
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -178,7 +189,18 @@ river = {
 
 forest = {
 	label = label_forested
-	weight = 1.5
+	#weight = 1.5
+	weight = {
+		value = 3
+		if = {
+			limit = {
+				state = {
+					has_state_trait_forest = yes
+				}
+			}
+			multiply = 4
+		}
+	}
 	textures = {
 		{
 			weight = 1
@@ -201,7 +223,18 @@ forest = {
 
 hills = {
 	label = label_elevated
-	weight = 2
+	#weight = 2
+	weight = {
+		value = 4
+		if = {
+			limit = {
+				state = {
+					has_state_trait_highland = yes
+				}
+			}
+			multiply = 2
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -269,7 +302,18 @@ hills = {
 mountain = {
 	label = label_elevated
 	label = label_hazardous
-	weight = 1.5
+	#weight = 1.5
+	weight = {
+		value = 2
+		if = {
+			limit = {
+				state = {
+					has_state_trait_mountains = yes
+				}
+			}
+			multiply = 2
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -345,7 +389,18 @@ mountain = {
 jungle = {
 	label = label_forested
 	label = label_hazardous
-	weight = 1
+	#weight = 1
+	weight = {
+		value = 3
+		if = {
+			limit = {
+				state = {
+					has_state_trait_rainforest = yes
+				}
+			}
+			multiply = 5
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -368,7 +423,18 @@ jungle = {
 
 wetland = {
 	label = label_hazardous
-	weight = 2
+	#weight = 2
+	weight = {
+		value = 4
+		if = {
+			limit = {
+				state = {
+					has_state_trait_wetland = yes
+				}
+			}
+			multiply = 4
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -396,7 +462,18 @@ wetland = {
 desert = {
 	label = label_flat
 	label = label_hazardous
-	weight = 2
+	#weight = 2
+	weight = {
+		value = 4
+		if = {
+			limit = {
+				state = {
+					has_state_trait_desert = yes
+				}
+			}
+			multiply = 4
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -448,7 +525,7 @@ desert = {
 tundra = {
 	label = label_flat
 	label = label_hazardous
-	weight = 1.5
+	weight = 3 # 1.5
 	textures = {
 		{
 			weight = {
@@ -473,7 +550,18 @@ tundra = {
 
 savanna = {
 	label = label_flat
-	weight = 1
+	#weight = 1
+	weight = {
+		value = 2
+		if = {
+			limit = {
+				state = {
+					has_state_trait_grasslands = yes
+				}
+			}
+			multiply = 2
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -522,7 +610,7 @@ snow = {
 farmland_rye = { 
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 4 # 2
 	textures = {
 		{
 			weight = {
@@ -602,7 +690,7 @@ farmland_rye = {
 pasture = {
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 4 # 2
 	textures = {
 		{
 			weight = {
@@ -626,7 +714,7 @@ pasture = {
 farmland_rice = {
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 4 # 2
 	textures = {
 		{
 			weight = {
@@ -706,7 +794,7 @@ farmland_rice = {
 farmland_millet = {
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 4 # 2
 	textures = {
 		{
 			weight = {
@@ -786,7 +874,7 @@ farmland_millet = {
 plantation = {
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 4 # 2
 	textures = {
 		{
 			weight = {
@@ -809,7 +897,7 @@ plantation = {
 farmland_wheat = {
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 4 # 2
 	textures = {
 		{
 			weight = {
@@ -889,7 +977,7 @@ farmland_wheat = {
 farmland_maize = {
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 4 # 2
 	textures = {
 		{
 			weight = {
@@ -1027,7 +1115,7 @@ mining = {
 		subtract = 5
 		min = 0.1
 		multiply = state.num_provinces
-		divide = 3
+		divide = 5 # 3
 	}
 	textures = {
 		{
@@ -1062,7 +1150,7 @@ forestry = {
 		subtract = 5
 		min = 0.1
 		multiply = state.num_provinces
-		divide = 2
+		divide = 4 # 2
 	}
 	
 	textures = {
@@ -1095,7 +1183,7 @@ urban = {
 			subtract = 5
 			min = 0.1
 			multiply = state.num_provinces
-			divide = 4
+			divide = 8 # 4
 		}
 	}
 	textures = {
@@ -1235,7 +1323,7 @@ docks = {
 			subtract = 3
 			min = 0.1
 			multiply = state.num_provinces
-			divide = 3
+			divide = 4 # 3
 		}
 	}
 	textures = {

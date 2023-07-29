@@ -19,8 +19,9 @@ These are mods that I have taken inspiration from, parts of code or incorporated
 
 ### Steam Workshop (Abandoned or Outdated)
 
-These are mods that I have taken inspiration from, parts of code or incorporated entirely into my own mod that are abandoned, don't work on the current patch or have been deleted from the workshop.
+These are mods that I have taken inspiration from, parts of code or incorporated entirely into my own mod that are abandoned, may be abandoned (haven't been updated for 1.3, no developer updates) or have been deleted from the workshop.
 
+- [Abandoned?] "More Canals" by *WalkerSystem* (https://steamcommunity.com/sharedfiles/filedetails/?id=2885102508)
 - [Abandoned?] "More States" by *Arnil* (https://steamcommunity.com/sharedfiles/filedetails/?id=2881527989)
 - [Abandoned] "Better Borders" by *Foxomexra* (https://steamcommunity.com/sharedfiles/filedetails/?id=2881732032)
 - [Abandoned] "Southern Africa Rework" by *Timur* (https://steamcommunity.com/sharedfiles/filedetails/?id=2892080578)
@@ -33,5 +34,3 @@ These are mods that I have taken inspiration from, parts of code or incorporated
 - [Abandoned] "Texas Flavor Mod" by *John M* (https://steamcommunity.com/sharedfiles/filedetails/?id=2881332604)
 - [Deleted] "Releasable City-States" by *unknown* (https://steamcommunity.com/sharedfiles/filedetails/?id=2882107207)
 - [Abandoned?] "Newspapers & Magazines" by *Paramonov* (https://steamcommunity.com/sharedfiles/filedetails/?id=2889750915)
-
-

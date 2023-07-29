@@ -8,7 +8,8 @@
  je_texan_indian_wars_com_defeat:0 "The Comanche have been defeated."
 # 04_the_great_trek.txt
  je_the_great_trek:0 "Die Groot Trek"
- je_the_great_trek_reason:0 "Die Groot Trek"
+ je_the_great_trek_reason:0 "Due to rising tensions between the British colonial administration and the Boers, a number of Boers have started to emigrate northwards from the British Cape Colony. These Boers are calling themselves Voortrekkers and have begun establishing their own isolationist republics in the Transvaal and Orange River regions."
+ je_the_great_trek_goal:0 "The Voortrekkers have established several autonomous republics beyond the Orange River."
 
  je_natalia_foundation:0 "The Natalia Republic"
  je_natalia_foundation_reason:0 "The Natalia Republic"

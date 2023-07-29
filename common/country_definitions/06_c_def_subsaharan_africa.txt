@@ -7,13 +7,6 @@ BAA = { # Boina
 	cultures = { malagasy }
 	capital = STATE_NORTH_MADAGASCAR
 }
-GZA = { # Gaza Empire
-	color = { 0 128 21 }
-	country_type = unrecognized
-	tier = kingdom
-	cultures = { tonga shona nguni }
-	capital = STATE_LOURENCO_MARQUES
-}
 KEN = { # Kenya
 	color = { 50 50 50 }
 	tier = principality
@@ -27,13 +20,6 @@ LYD = { # Lydenburg
 	tier = principality
 	cultures = { boer }
 	capital = STATE_TRANSVAAL
-}
-MRV = { # Maravi
-	color = { 179 0 0 }
-	country_type = decentralized
-	tier = principality
-	cultures = { makua yao chewa }
-	capital = STATE_MOCAMBIQUE
 }
 NIG = { # Nigeria
 	color = { 0 102 51 }
@@ -90,13 +76,6 @@ WNH = { # Windhoek
 	tier = principality
 	cultures = { griqua }
 	capital = STATE_HEREROLAND
-}
-XHO = { # Xhosa
-	color = { 113 106 156 }
-	country_type = unrecognized
-	tier = kingdom
-	cultures = { xhosa }
-	capital = STATE_EASTERN_CAPE
 }
 ZAF = { # Zafimanely
 	color = { 255 179 25 }

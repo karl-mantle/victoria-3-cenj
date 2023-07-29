@@ -10,40 +10,5 @@
 	}
 	c:ORG = {
 		remove_primary_culture = cu:yankee
-	}   
-	every_country = {
-		if = {
-			limit = { country_has_primary_culture = cu:yankee }
-			every_scope_state = {
-				THIS.state_region = {
-					add_homeland = american_french
-					add_homeland = american_hispanic
-					add_homeland = american_irish
-					add_homeland = american_italian
-					add_homeland = american_jewish
-					add_homeland = american_german
-					add_homeland = american_portuguese
-					add_homeland = american_scottish
-					add_homeland = american_polish
-					add_homeland = american_russian
-				}
-			}
-		}
-		else_if = {
-			limit = { country_has_primary_culture = cu:anglo_canadian }
-			every_scope_state = {
-				THIS.state_region = {
-					add_homeland = canadian_african
-					add_homeland = canadian_dutch
-					add_homeland = franco_canadian
-					add_homeland = canadian_german
-					add_homeland = canadian_greek
-					add_homeland = canadian_irish
-					add_homeland = canadian_scottish
-					add_homeland = canadian_portuguese
-					add_homeland = canadian_polish
-				}
-			}
-		}
 	}
 }

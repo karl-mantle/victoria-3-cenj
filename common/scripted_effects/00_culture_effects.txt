@@ -1,0 +1,264 @@
+﻿change_pop_culture_to_immigrant_culture = {
+	if = {
+		limit = {
+			$ROOT$ = {
+				has_law = law_type:law_no_migration_controls
+				institution_investment_level = {
+					institution = institution_police
+					value = 5
+				}
+			}
+		}
+		
+		change_pop_culture = {
+			target = cu:immigrant_culture
+			value = 0.005
+		}
+	}
+	else_if = {
+		limit = {
+			$ROOT$ = {
+				has_law = law_type:law_no_migration_controls
+				institution_investment_level = {
+					institution = institution_police
+					value = 4
+				}
+			}
+		}
+		
+		change_pop_culture = {
+			target = cu:immigrant_culture
+			value = 0.01
+		}
+	}
+	else_if = {
+		limit = {
+			$ROOT$ = {
+				has_law = law_type:law_no_migration_controls
+				institution_investment_level = {
+					institution = institution_police
+					value = 3
+				}
+			}
+		}
+		
+		change_pop_culture = {
+			target = cu:immigrant_culture
+			value = 0.015
+		}
+	}
+	else_if = {
+		limit = {
+			$ROOT$ = {
+				has_law = law_type:law_no_migration_controls
+				institution_investment_level = {
+					institution = institution_police
+					value = 2
+				}
+			}
+		}
+		
+		change_pop_culture = {
+			target = cu:immigrant_culture
+			value = 0.025
+		}
+	}
+	else_if = {
+		limit = {
+			$ROOT$ = {
+				has_law = law_type:law_no_migration_controls
+				institution_investment_level = {
+					institution = institution_police
+					value = 1
+				}
+			}
+		}
+		
+		change_pop_culture = {
+			target = cu:immigrant_culture
+			value = 0.03
+		}
+	}
+}
+
+country_change_pop_culture_by_discrimination_trait = {
+	if  = {
+		limit = { $LIMIT$ }
+		every_scope_state = {
+			every_scope_pop = {
+				limit = { culture = { $TRIGGER_CULTURE$ } }
+				change_pop_culture = {
+					target = cu:$TARGET_CULTURE$
+					value = 0.1
+				}
+			}
+		}
+	}
+}
+
+country_change_pop_culture_by_pop_culture = {
+	if  = {
+		limit = { $LIMIT$ }
+		every_scope_state = {
+			every_scope_pop = {
+				limit = { has_pop_culture = $TRIGGER_CULTURE$ }
+				change_pop_culture = {
+					target = cu:$TARGET_CULTURE$
+					value = 0.1
+				}
+			}
+		}
+	}
+}
+
+country_change_pop_culture_by_technology = {
+	if  = {
+		limit = {
+			ROOT = { has_technology_researched = $TECHNOLOGY$ }
+			$LIMIT$
+		}
+		every_scope_state = {
+			every_scope_pop = {
+				limit = { culture = { $TRIGGER_CULTURE$ } }
+				if = {
+					limit = {
+						PREV.owner = {
+							institution_investment_level = {
+								institution = institution_schools
+								value = 1
+							}
+						}
+					}
+					change_pop_culture = {
+						target = cu:$TARGET_CULTURE$
+						value = 0.02
+					}
+				}
+				else_if = {
+					limit = {
+						PREV.owner = {
+							institution_investment_level = {
+								institution = institution_schools
+								value = 2
+							}
+						}
+					}
+					change_pop_culture = {
+						target = cu:$TARGET_CULTURE$
+						value = 0.04
+					}
+				}
+				else_if = {
+					limit = {
+						PREV.owner = {
+							institution_investment_level = {
+								institution = institution_schools
+								value = 3
+							}
+						}
+					}
+					change_pop_culture = {
+						target = cu:$TARGET_CULTURE$
+						value = 0.06
+					}
+				}
+				else_if = {
+					limit = {
+						PREV.owner = {
+							institution_investment_level = {
+								institution = institution_schools
+								value = 4
+							}
+						}
+					}
+					change_pop_culture = {
+						target = cu:$TARGET_CULTURE$
+						value = 0.08
+					}
+				}
+				else_if = {
+					limit = {
+						PREV.owner = {
+							institution_investment_level = {
+								institution = institution_schools
+								value = 5
+							}
+						}
+					}
+					change_pop_culture = {
+						target = cu:$TARGET_CULTURE$
+						value = 0.1
+					}
+				}
+			}
+		}
+	}
+}
+
+country_change_pop_culture_by_technology_static = {
+	if  = {
+		limit = {
+			has_technology_researched = $TECHNOLOGY$
+			$LIMIT$
+		}
+		every_scope_state = {
+			every_scope_pop = {
+				limit = { culture = { $TRIGGER_CULTURE$ } }
+				change_pop_culture = {
+					target = cu:$TARGET_CULTURE$
+					value = 0.02
+				}
+			}
+		}
+	}
+}
+
+country_change_primary_culture_minor_nation = {
+	if = {
+		limit = {
+			exists = c:$MAJOR_NATION$
+			ROOT = { has_technology_researched = $TECHNOLOGY$ }
+		}
+		if = {
+			limit = {
+				country_has_primary_culture = cu:$MAJOR_CULTURE$
+				any_scope_state = {
+					is_capital = yes
+					state_region = s:$STATE_REGION$
+				}
+			}
+			remove_primary_culture = cu:$MAJOR_CULTURE$
+			add_primary_culture = cu:$MINOR_CULTURE$
+		}
+	}
+}
+
+country_create_homeland_by_culture = {
+	if = {
+		limit = { $LIMIT$ }
+		every_scope_state = {
+			limit = {
+				culture_percent_state = {
+					target = cu:$TRIGGER_CULTURE$
+					value >= 0.01
+				}
+			}
+			THIS.state_region = {
+				add_homeland = $TARGET_CULTURE$
+			}
+		}
+	}
+}
+
+state_change_pop_culture_by_discrimination_trait = {
+	every_scope_state = {
+		limit = { state_region = s:$STATE_REGION$ }
+		every_scope_pop = {
+			limit = { culture = { $FROMCULTURE$ } }
+			change_pop_culture = {
+				target = cu:$TOCULTURE$
+				value = 0.1
+			}
+		}
+	}
+}
