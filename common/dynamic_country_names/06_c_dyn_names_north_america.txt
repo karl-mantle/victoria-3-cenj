@@ -1,6 +1,109 @@
-﻿# Added
+﻿CAL = { # California
 
-HBC = { # Rupert's Land > Hudson's Bay Company
+	# Two Californias
+	dynamic_country_name = {
+		name = dyn_c_cal_union
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_CALIFORNIA
+				owns_entire_state_region = STATE_BAJA_CALIFORNIA
+			}
+		}
+	}
+	
+	#dynamic_country_name = {
+	#	name = dyn_c_ussr_californias
+	#	adjective = dyn_c_ussr_californias_adj
+	#	
+	#	is_main_tag_only = yes
+	#	priority = 10000
+	#	
+	#	trigger = {
+	#		coa_def_communist_flag_trigger = yes
+	#	}
+	#}
+}
+
+COM = { # Comanche
+
+	# Comancheria
+	dynamic_country_name = {
+		name = dyn_c_com_centralized
+		adjective = dyn_c_com_centralized_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { is_country_type = decentralized } # if Comanche is recognized, then they get a more formal name
+			}
+		}
+	}
+}
+
+CSA = { # Confederate States of America
+
+	# Confederate State
+	dynamic_country_name = {
+		name = dyn_c_csa_one_state
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				any_scope_state = {
+					count = 1
+				}
+			}
+		}
+	}
+	# Archduchy of America
+	dynamic_country_name = {
+		name = dyn_c_csa_monarchy
+		adjective = dyn_c_csa_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# Communist States of America
+	dynamic_country_name = {
+		name = dyn_c_csa_communist
+		adjective = dyn_c_csa_communist_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	# Confederate Synod of Anerica
+	dynamic_country_name = {
+		name = dyn_c_csa_theocracy
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+
+HBC = { # Rupert's Land
+
+	# Hudson's Bay Company
 	dynamic_country_name = {
 		name = dyn_c_hbc_subject_gbr
 		
@@ -16,6 +119,339 @@ HBC = { # Rupert's Land > Hudson's Bay Company
 					is_initiator = yes
 				}
 			}
+		}
+	}
+}
+
+LKT = { # Lakota
+
+	# Great Sioux Nation
+	dynamic_country_name = {
+		name = dyn_c_lkt_oceti_sakowin
+		adjective = dyn_c_lkt_oceti_sakowin_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			NOT = { exists = c:DKT } # Lakota will be considered the united Seven Council Fires if Dakota are not independent
+		}
+	}
+}
+
+LOU = { # Louisiana
+
+	#dynamic_country_name = {
+	#	name = dyn_c_louisiana
+	#	
+	#	is_main_tag_only = yes
+	#	priority = 0
+	#	
+	#	trigger = {
+	#		coa_def_republic_flag_trigger = yes
+	#		NOT = { coa_def_communist_flag_trigger = yes }
+	#	}
+	#}
+	# New France
+	dynamic_country_name = {
+		name = dyn_c_lou_monarchy
+		adjective = dyn_c_lou_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# Louisiana Commune
+	dynamic_country_name = {
+		name = dyn_c_lou_communist
+		
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	# Archbishopric of St. Louis
+	dynamic_country_name = {
+		name = dyn_c_lou_theocracy
+		
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+
+MEX = { # Mexico
+
+	# Mexican Empire
+	dynamic_country_name = {
+		name = dyn_c_mex_monarchy
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# New Spain
+	dynamic_country_name = {
+		name = dyn_c_mex_subject_spa
+		adjective = dyn_c_mex_subject_spa_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_spanish_ensign_trigger = yes
+		}
+	}
+}
+
+ONT = { # Ontario
+
+	# Upper Canada
+	dynamic_country_name = {
+		name = dyn_c_ont_subject_gbr
+		adjective = dyn_c_ont_subject_gbr_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:ONT
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+ORG = { # Oregon
+
+	# Columbia
+	dynamic_country_name = {
+		name = dyn_c_org_subject_hbc
+		adjective = dyn_c_org_subject_hbc_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			OR = {
+				#AND = {
+				#	exists = c:GBR
+				#	c:GBR = {
+				#		has_diplomatic_pact = {
+				#			who = scope:actor
+				#			type = dominion
+				#			is_initiator = yes
+				#		}
+				#	}
+				#}
+				AND = {
+					exists = c:HBC
+					scope:actor = {
+						is_subject_of = c:HBC
+					}
+				}
+				AND = {
+					exists = c:CAN
+					scope:actor = {
+						is_subject_of = c:CAN
+					}
+				}
+			}
+		}
+	}
+	# Columbia District
+	dynamic_country_name = {
+		name = dyn_c_org_subject_gbr
+		adjective = dyn_c_org_subject_hbc_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:ORG
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+QUE = { # Quebec
+
+	# Lower Canada
+	dynamic_country_name = {
+		name = dyn_c_que_subject_gbr
+		adjective = dyn_c_que_subject_gbr_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:QUE
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+SEQ = { # Indian Territory
+
+	# Sequoyah
+	dynamic_country_name = {
+		name = dyn_c_seq_independent
+		adjective = dyn_c_sequoyah_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_independent_trigger = yes
+		}
+	}
+}
+
+USA = { # United States of America
+
+	# United States of America
+	dynamic_country_name = {
+		name = dyn_c_usa_republic
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			#NOT = { coa_def_communist_flag_trigger = yes }
+			#NOT = {	
+			#	scope:actor = {
+			#		has_law = law_type:law_technocracy
+			#	}
+			#}
+		}
+	}
+	# District of Columbia
+	dynamic_country_name = {
+		name = dyn_c_usa_one_state_dc
+		priority = 1
+		
+		trigger = {
+			exists = c:USA
+			c:USA = {			
+				any_scope_state = {
+					state_region = { has_variable = district_of_columbia }
+					count > 0
+				}
+				any_scope_state = {
+					state_region = { NOT = { has_variable = district_of_columbia } }
+					count < 1
+				}			
+			}			
+		}
+	}	
+	# United State
+	dynamic_country_name = {
+		name = dyn_c_usa_one_state
+		priority = 1
+		
+		trigger = {
+			exists = c:USA
+			c:USA = {		
+				any_scope_state = {
+					state_region = { NOT = { has_variable = district_of_columbia } }
+					count = 1
+				}
+			}
+		}
+	}
+	# Kingdom of America
+	dynamic_country_name = {
+		name = dyn_c_usa_monarchy_kingdom
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# American Empire
+	dynamic_country_name = {
+		name = dyn_c_usa_monarchy_empire
+		
+		is_main_tag_only = yes
+		priority = 2
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				country_rank >= rank_value:major_power
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# United Socialist States of America
+	dynamic_country_name = {
+		name = dyn_c_usa_communist
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	# United Synod of America
+	dynamic_country_name = {
+		name = dyn_c_usa_theocracy
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	# United Colleges of America
+	dynamic_country_name = {
+		name = dyn_c_usa_technocracy
+		adjective = dyn_c_usa_technocracy_adj
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_technocracy
+			}
+			coa_def_republic_flag_trigger = yes
 		}
 	}
 }

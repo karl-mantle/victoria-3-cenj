@@ -1,0 +1,55 @@
+﻿BOL = { # Bolivia
+
+	# Peru-Bolivia
+	dynamic_country_name = {
+		name = dyn_c_bol_union_peu
+		adjective = dyn_c_bol_union_peu_adj
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_LA_PAZ
+				owns_entire_state_region = STATE_LIMA
+			}
+		}
+	}
+}
+
+CLM = { # Colombia
+
+	# New Granada
+	dynamic_country_name = {
+		name = dyn_c_clm_subject_spa
+		adjective = dyn_c_clm_subject_spa_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_spanish_ensign_trigger = yes
+		}
+	}
+}
+
+PEU = { # Peru
+
+	# Peru-Bolivia
+	dynamic_country_name = {
+		name = dyn_c_bol_union_peu
+		adjective = dyn_c_bol_union_peu_adj
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_LA_PAZ
+				owns_entire_state_region = STATE_LIMA
+			}
+		}
+	}
+}

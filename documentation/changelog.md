@@ -1,9 +1,15 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.42
+- re-written dynamic country names
+- changed some triggers for vanilla dynamic country names
+- removed some vanilla dynamic country names
+- changed british colonies from puppets to dominions
+- changed convoy contribution for subjects
 ### 0.0.41
 - new dynamic homelands in north america
 - more north american diaspora cultures will appear
-- rewritten pop_culture primary and culture changing scripted effects and on_actions
+- re-written pop_culture primary and culture changing scripted effects and on_actions
 - added memel river state trait
 - changed historical trade routes
 - changed terrain brush weights for determining province terrain

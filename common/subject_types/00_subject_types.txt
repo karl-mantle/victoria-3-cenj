@@ -12,7 +12,7 @@
 	use_for_release_country = yes
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
-	convoy_contribution = 0.5
+	convoy_contribution = 0.75
 		
 	diplomatic_action = protectorate
 	
@@ -54,7 +54,7 @@ subject_type_puppet = {
 	use_overlord_map_color = yes
 	use_overlord_ruler = no
 	annex_on_country_formation = yes
-	can_start_own_diplomatic_plays = yes
+	can_start_own_diplomatic_plays = no
 	breaks_if_subject_not_protected = yes
 	join_overlord_wars = yes
 	can_have_subjects = no
@@ -63,7 +63,7 @@ subject_type_puppet = {
 	use_for_release_country = yes
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
-	convoy_contribution = 0.75
+	convoy_contribution = 0.5
 	
 	diplomatic_action = puppet
 	
@@ -214,7 +214,7 @@ subject_type_dominion = {
 	use_for_release_country = yes
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
-	convoy_contribution = 0.75
+	convoy_contribution = 0.25
 	
 	diplomatic_action = dominion
 	
@@ -313,7 +313,7 @@ subject_type_customs_union = {
 	use_for_release_country = no
 	gives_prestige_to_overlord = no
 	subservient_to_overlord = no # A customs union is not an actual subject and is excluded from is_subject triggers, etc
-	convoy_contribution = 0.5
+	convoy_contribution = 0.25
 		
 	diplomatic_action = customs_union
 	

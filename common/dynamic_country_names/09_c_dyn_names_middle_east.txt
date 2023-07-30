@@ -1,0 +1,52 @@
+﻿NEJ = { # Nejd
+	dynamic_country_name = {
+		name = dyn_c_nej_monarchy_saudi
+		adjective = dyn_c_nej_monarchy_saudi_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_HEDJAZ
+			}
+		}
+	}
+}
+
+TUR = { # Turkey
+	dynamic_country_name = {
+		name = dyn_c_tur_monarchy
+		adjective = dyn_c_tur_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+
+ZAI = { # Azal (Zaidi State)
+
+	# Qasimid State
+	dynamic_country_name = {
+		name = dyn_c_zai_monarchy
+		adjective = dyn_c_zai_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
+				}
+			}
+		}
+	}
+}

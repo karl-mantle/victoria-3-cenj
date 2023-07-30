@@ -1,6 +1,45 @@
-﻿# Added
+﻿HRO = { # Herero
+
+	# Hereroland
+	dynamic_country_name = {
+		name = dyn_c_hro_centralized
+		adjective = dyn_c_hro_centralized_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { is_country_type = decentralized } # if Herero is recognized, then they get a more formal name
+			}
+		}
+	}
+}
+
+MAD = { # Madagascar
+
+	# Merina Kingdom
+	dynamic_country_name = {
+		name = dyn_c_mad_monarchy
+		adjective = dyn_c_mad_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_country_type = unrecognized
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
 
 ORA = { # Oranje
+
+	# Winburg-Potchefstroom
 	dynamic_country_name = {
 		name = dyn_c_ora_winburg_ptf
 		adjective = dyn_c_ora_winburg_ptf_adj
@@ -15,6 +54,7 @@ ORA = { # Oranje
 			}
 		}
 	}
+	# Orange River Sovereignty
 	dynamic_country_name = {
 		name = dyn_c_ora_subject_gbr
 		adjective = dyn_c_ora_subject_gbr_adj
@@ -23,15 +63,37 @@ ORA = { # Oranje
 		priority = 0
 		
 		trigger = {
-			exists = scope:actor
-			scope:actor = {
-				is_subject_of = c:GBR
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+}
+
+SAF = { # South Africa
+
+	# Cape Colony
+	dynamic_country_name = {
+		name = dyn_c_saf_subject_gbr
+		adjective = dyn_c_saf_subject_gbr_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:SAF
+					type = dominion
+					is_initiator = yes
+				}
 			}
 		}
 	}
 }
 
 TRN = { # Transvaal
+
+	# Zoutpansberg
 	dynamic_country_name = {
 		name = dyn_c_trn_zoutpansberg
 		adjective = dyn_c_trn_zoutpansberg_adj
@@ -46,9 +108,54 @@ TRN = { # Transvaal
 			}
 		}
 	}
+	# Transvaal Colony
+	dynamic_country_name = {
+		name = dyn_c_trn_subject_gbr
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+}
+
+TSW = { # Tswana
+
+	# Botswana
+	dynamic_country_name = {
+		name = dyn_c_tsw_centralized
+		adjective = dyn_c_botswana_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { is_country_type = decentralized } # if Tswana is recognized, then they get a more formal name
+			}
+			coa_def_british_ensign_trigger = no
+		}
+	}
+	# Bechuanaland
+	dynamic_country_name = {
+		name = dyn_c_tsw_subject_gbr
+		adjective = dyn_c_tsw_subject_gbr_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
 }
 
 WBL = { # Waterboersland
+
+	# Griqualand West
 	dynamic_country_name = {
 		name = dyn_c_wbl_griqualand_west
 		adjective = dyn_c_wbl_griqualand_west_adj

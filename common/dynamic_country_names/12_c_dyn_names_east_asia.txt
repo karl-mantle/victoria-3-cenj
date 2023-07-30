@@ -1,0 +1,122 @@
+﻿CAM = { # Cambodia
+
+	# Khmer Empire
+	dynamic_country_name = {
+		name = dyn_c_cam_monarchy
+		adjective = dyn_c_cam_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { is_country_type = unrecognized }
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+
+CHI = { # China
+
+	# Great Qing
+	dynamic_country_name = {
+		name = dyn_c_chi_monarchy_manchu
+		adjective = dyn_c_chi_monarchy_manchu_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				country_has_primary_culture = cu:manchu
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# Empire of China
+	dynamic_country_name = {
+		name = dyn_c_chi_monarchy
+		adjective = dyn_c_chi_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { country_has_primary_culture = cu:manchu }
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# People's Republic of China
+	dynamic_country_name = {
+		name = dyn_c_chi_communist
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
+
+JAP = { # Japan
+
+	# Japanese Shogunate
+	dynamic_country_name = {
+		name = dyn_c_jap_monarchy_shogunate
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { has_variable = meiji_var }
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+
+KOR = { # Korea
+
+	# Joseon
+	dynamic_country_name = {
+		name = dyn_c_kor_monarchy
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+
+PHI = { # Philippines
+
+	# Spanish Philippines
+	dynamic_country_name = {
+		name = dyn_c_phi_subject_spa
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:SPA
+			c:SPA = {
+				has_diplomatic_pact = {
+					who = c:PHI
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}

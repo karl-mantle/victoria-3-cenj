@@ -1,6 +1,6 @@
-﻿# Added
+﻿COU = { # Courland
 
-COU = { # Courland
+	# Courland Governorate
 	dynamic_country_name = {
 		name = dyn_c_cou_subject_rus
 		
@@ -21,6 +21,8 @@ COU = { # Courland
 }
 
 EPR = { # East Prussia
+
+	# Ducal Prussia
 	dynamic_country_name = {
 		name = dyn_c_epr_subject_pol
 		adjective = dyn_c_epr_subject_pol_adj
@@ -28,15 +30,21 @@ EPR = { # East Prussia
 		priority = 0
 		
 		trigger = {
-			exists = scope:actor
-			scope:actor = {			
-				is_subject_of = c:POL
+			exists = c:POL
+			c:POL = {
+				has_diplomatic_pact = {
+					who = c:EPR
+					type = personal_union
+					is_initiator = yes
+				}
 			}
 		}
 	}
 }
 
 EST = { # Estonia
+
+	# Estonian Governorate
 	dynamic_country_name = {
 		name = dyn_c_est_subject_rus
 		
@@ -56,7 +64,26 @@ EST = { # Estonia
 	}
 }
 
+LAT = { # Latvia
+
+	# Courland
+	dynamic_country_name = {
+		name = dyn_c_lat_subject_ger
+		adjective = dyn_c_lat_subject_ger_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			#coa_def_monarchy_flag_trigger = yes
+			coa_def_german_ensign_trigger = yes
+		}
+	}
+}
+
 LVN = { # Livonia
+
+	# Livonian Governorate
 	dynamic_country_name = {
 		name = dyn_c_lvn_subject_rus
 		
@@ -76,7 +103,25 @@ LVN = { # Livonia
 	}
 }
 
+MOL = { # Moldavia
+
+	# Moldova
+	dynamic_country_name = {
+		name = dyn_c_mol_monarchy
+		adjective = dyn_c_mol_monarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = no
+		}
+	}
+}
+
 PML = { # Pomerelia
+
+	# West Prussia
 	dynamic_country_name = {
 		name = dyn_c_pml_subject_pru
 		adjective = dyn_c_pml_subject_pru_adj
@@ -84,12 +129,16 @@ PML = { # Pomerelia
 		priority = 0
 		
 		trigger = {
-			exists = scope:actor
-			scope:actor = {			
-				is_subject_of = c:PRU
+			exists = scope:overlord
+			scope:overlord = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
 			}
 		}
 	}
+	# Royal Prussia
 	dynamic_country_name = {
 		name = dyn_c_pml_subject_pol
 		adjective = dyn_c_pml_subject_pol_adj
@@ -97,17 +146,30 @@ PML = { # Pomerelia
 		priority = 0
 		
 		trigger = {
-			exists = scope:actor
-			scope:actor = {			
-				is_subject_of = c:POL
+			exists = c:POL
+			c:POL = {
+				OR = {
+					has_diplomatic_pact = {
+						who = c:PML
+						type = personal_union
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:PML
+						type = puppet
+						is_initiator = yes
+					}
+				}
 			}
 		}
 	}
 }
 
 POL = { # Poland
+
+	# Congress Poland
 	dynamic_country_name = {
-		name = dyn_c_pol_congress
+		name = dyn_c_pol_subject_rus_monarchy
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -120,6 +182,55 @@ POL = { # Poland
 					type = personal_union
 					is_initiator = yes
 				}
+			}
+		}
+	}
+}
+
+RUS = { # Russia
+
+	# Soviet Union
+	dynamic_country_name = {
+		name = dyn_c_rus_communist
+		adjective = dyn_c_rus_communist_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	# Union of New People
+	#dynamic_country_name = {
+	#	name = dyn_c_union_of_new_people
+	#	adjective = dyn_c_union_of_new_people_adj
+	#	
+	#	is_main_tag_only = yes
+	#	priority = 10
+	#	
+	#	trigger = {
+	#		exists = c:RUS
+	#		coa_def_nihilist_flag_trigger = yes
+	#	}
+	#}	
+}
+
+UKR = { # Ukraine
+
+	# Free Territory
+	dynamic_country_name = {
+		name = dyn_c_ukr_anarchy
+		adjective = dyn_c_ukr_anarchy_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
 			}
 		}
 	}

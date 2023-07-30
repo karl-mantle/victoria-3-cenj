@@ -1,0 +1,26 @@
+﻿MGL = { # Mongolia
+
+	# Great Mongolian State
+	dynamic_country_name = {
+		name = dyn_c_mgl_monarchy
+		adjective = dyn_c_mgl_monarchy_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# Mongolian People's Republic
+	dynamic_country_name = {
+		name = dyn_c_mgl_communist
+		
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
