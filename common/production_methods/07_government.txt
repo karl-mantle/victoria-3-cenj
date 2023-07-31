@@ -165,6 +165,7 @@ pm_horizontal_drawer_cabinets = {
 
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 0.5
 			building_input_paper_add = 5 # 10
 		}			
 	
@@ -194,6 +195,7 @@ pm_vertical_filing_cabinets = {
 
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 1
 			building_input_paper_add = 10 # 20
 		}	
 	
@@ -223,6 +225,7 @@ pm_switch_boards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 1
 			building_input_paper_add = 10 # 20
 			building_input_telephones_add = 2.5 # 5
 		}
@@ -304,6 +307,7 @@ pm_scholastic_education = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 0.5
 			building_input_paper_add = 5
 		}	
 	
@@ -335,6 +339,7 @@ pm_philosophy_department = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 0.25
 			building_input_paper_add = 2.5 # 10
 			building_input_literature_add = 2.5
 			building_output_literature_add = 1
@@ -367,7 +372,8 @@ pm_analytical_philosophy_department = {
 	}
 	
 	building_modifiers = {
-		workforce_scaled = { 
+		workforce_scaled = {
+			building_input_oil_add = 0.5
 			building_input_paper_add = 5 # 15
 			building_input_literature_add = 5
 			building_output_literature_add = 2.5
@@ -427,6 +433,7 @@ pm_skyscraper_bureaucratic_nexus = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 0.125
 			building_input_paper_add = 12.5 # 25
 		}
 
@@ -449,6 +456,7 @@ pm_skyscraper_trade_nexus = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 1.25
 			building_input_paper_add = 12.5 # 25
 		}
 

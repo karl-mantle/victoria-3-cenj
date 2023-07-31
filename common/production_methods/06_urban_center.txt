@@ -97,6 +97,25 @@ pm_no_street_lighting = {
 	texture = "gfx/interface/icons/production_method_icons/no_street_lighting.dds"
 }	
 
+pm_oil_streetlights = {
+	texture = "gfx/interface/icons/production_method_icons/gas_streetlights.dds"
+	
+	unlocking_technologies = {
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_oil_add = 1.5 # 5 #10
+			building_output_services_add = 5 # 15 #30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 300 # 400
+			building_employment_engineers_add = 25 # 100
+		}
+	}
+}		
+
 pm_gas_streetlights = {
 	texture = "gfx/interface/icons/production_method_icons/gas_streetlights.dds"
 	
@@ -239,6 +258,7 @@ pm_traditional_art = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_oil_add = 0.125
 			building_input_paper_add = 1.25 # 2.5 # 75
 			building_output_fine_art_add = 0.5 # 1 # 200 - profit of 125
 		}
@@ -255,6 +275,7 @@ pm_realist_art = {
 	building_modifiers = {		
 	
 		workforce_scaled = {
+			building_input_oil_add = 0.25
 			building_input_paper_add = 2.5 # 5 # 150
 			building_output_fine_art_add = 0.75 # 1.5 # 300 - profit of 150
 		}				
@@ -271,6 +292,7 @@ pm_photographic_art = {
 	building_modifiers = {		
 	
 		workforce_scaled = {
+			building_input_oil_add = 0.25
 			building_input_paper_add = 2.5 # 5 # 150
 			building_input_tools_add = 1 # 2 # 80
 
@@ -290,6 +312,7 @@ pm_film_art = {
 	
 		workforce_scaled = {
 			building_input_tools_add = 2.5 # 5 # 150
+			building_input_oil_add = 0.25
 			building_input_paper_add = 2.5 # 5 # 200
 			building_input_electricity_add = 1 # 2 # 60
 			

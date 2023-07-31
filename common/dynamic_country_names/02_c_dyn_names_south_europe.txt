@@ -11,10 +11,10 @@
 			exists = scope:actor
 			scope:actor = { 
 				has_law = law_type:law_theocracy
-				country_has_state_religion = { 
-					religion = {
-						has_discrimination_trait = muslim
-					}
+				OR = {
+					country_has_state_religion = rel:sunni
+					country_has_state_religion = rel:shia
+					country_has_state_religion = rel:ibadi
 				}
 			}
 		}

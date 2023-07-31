@@ -22,6 +22,8 @@
 # 11_private_infrastructure.txt
  building_road_network:0 "Road Network"
  building_road_network_lens_option:0 "Expand $building_road_network$"
+# 12_subsistence.txt
+ building_subsistence_arctic_fishing:0 "Arctic Fishing Villages"
 # 14_finance.txt
  building_finance_sector:0 "Finance Sector"
  building_finance_sector_lens_option:0 "Expand $building_finance_sector$"
@@ -31,5 +33,5 @@
  building_health_facilities:0 "Health Facilities"
  building_health_facilities_lens_option:0 "Expand $building_health_facilities$"
 # 16_extras.txt
- building_publishing_house:0 "Publishing Houses"
+ building_publishing_house:0 "Publishing House"
  building_publishing_house_lens_option:0 "Expand $building_publishing_house$"

@@ -1,5 +1,16 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.43
+- new subsistence building (arctic fishing) works as subsistence whaling like fishing villages as fisheries
+- re-written subsistence farms production methods to be more like vanilla
+- added oil-lamp streetlights pm for urban centers
+- added various other uses for oil (as ink) to bureaucracy, universities, etc as 1/10th of paper
+- new american and canadian minor cultures e.g. japanese-americans and ukrainian-canadians
+- re-formatted on_actions and cleaned up code
+- renamed vanilla north american cultures
+- renamed some north american diaspora cultures
+- renamed some production method groups
+- added some names to culture namelists
 ### 0.0.42
 - re-written dynamic country names
 - changed some triggers for vanilla dynamic country names
