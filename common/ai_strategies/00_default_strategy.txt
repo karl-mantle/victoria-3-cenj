@@ -1539,14 +1539,6 @@ ai_strategy_default = {
 				add = 100
 			}			
 		}
-		region_chile = {
-			if = {
-				limit = {
-					has_variable = monroe_doctrine	
-				}
-				add = 100
-			}			
-		}
 		region_gran_colombia = {
 			if = {
 				limit = {

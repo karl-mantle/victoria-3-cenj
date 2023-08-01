@@ -1,5 +1,18 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.44
+- added russian american company as a dominion of russia in control of alaska à la hudson's bay company
+- added 2 new state traits
+- updated releasable countries to use new states
+- added new releasable countries
+- removed chile strategic region
+- made oregon a dominion of the united kingdom
+- changed russia's caucasian protectorates country colours
+- changed construction sectors securities output
+- removed non-diaspora cultures creating homelands in north america
+- ottoman empire now likes abkhazia
+- all boer states now unrecognized until future events e.g. sand river convention
+- changes to south africa journal entries and events
 ### 0.0.43
 - new subsistence building (arctic fishing) works as subsistence whaling like fishing villages as fisheries
 - re-written subsistence farms production methods to be more like vanilla

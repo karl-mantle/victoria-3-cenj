@@ -26,7 +26,7 @@ alaska.1 = {
 		c:USA = {
 			save_scope_as = usa_scope
 		}
-		s:STATE_ALASKA.region_state:RUS = {
+		s:STATE_ALASKA.region_state:ALA = {
 			save_scope_as = alaska_scope
 		}
 	}
@@ -43,7 +43,7 @@ alaska.1 = {
 			trigger_event = { id = alaska.2 days = 0 popup = yes }
 		}
 		show_as_tooltip = {
-			s:STATE_ALASKA.region_state:RUS = {
+			s:STATE_ALASKA.region_state:ALA = {
 				set_state_owner = c:USA
 			}
 			change_relations = {
@@ -98,7 +98,7 @@ alaska.2 = {
 		c:RUS = {
 			save_scope_as = russia_scope
 		}
-		s:STATE_ALASKA.region_state:RUS = {
+		s:STATE_ALASKA.region_state:ALA = {
 			save_scope_as = alaska_scope
 		}
 	}
@@ -110,7 +110,7 @@ alaska.2 = {
 			name = alaska_usa_big_money
 			months = 12
 		}
-		s:STATE_ALASKA.region_state:RUS = {
+		s:STATE_ALASKA.region_state:ALA = {
 			set_state_owner = c:USA
 		}
 		change_relations = {
@@ -146,7 +146,7 @@ alaska.3 = {
 		c:RUS = {
 			save_scope_as = russia_scope
 		}
-		s:STATE_ALASKA.region_state:RUS = {
+		s:STATE_ALASKA.region_state:ALA = {
 			save_scope_as = alaska_scope
 		}
 	}
@@ -193,7 +193,7 @@ alaska.4 = {
 		c:RUS = {
 			save_scope_as = russia_scope
 		}
-		s:STATE_ALASKA.region_state:RUS = {
+		s:STATE_ALASKA.region_state:ALA = {
 			save_scope_as = alaska_scope
 		}
 	}

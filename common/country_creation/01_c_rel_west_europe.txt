@@ -25,7 +25,9 @@ AMG = { # Armagnac
 	ai_will_do = { always = no }
 }
 ANS = { # Ansbach
-	# not sure
+	provinces = {
+		x010AD7
+	}
 	ai_will_do = { always = no }
 }
 AUG = { # Augsburg
@@ -47,11 +49,15 @@ AVI = { # Avignon
 	ai_will_do = { always = no }
 }
 BAR = { # Bar
-	# not sure
+	provinces = {
+		x70BFA0 x282DCC x7FC1E6 xA9D961 xC5F13A
+	}
 	ai_will_do = { always = no }
 }
 BRY = { # Berry
-	# not sure
+	provinces = {
+		x6E4717 x14F855 xE3E249 x886277 xE7B296 x90E000
+	}
 	ai_will_do = { always = no }
 }
 BOU = { # Bourbonnais
@@ -92,7 +98,7 @@ CHG = { # Champagne
 }
 CLB = { # Calenberg
 	provinces = {
-		
+		xFF1DBB
 	}
 	ai_will_do = { always = no }
 }
@@ -128,7 +134,7 @@ DTT = { # Dithmarschen
 }
 DWT = { # Donauwörth
 	provinces = {
-		
+		x318021
 	}
 	ai_will_do = { always = no }
 }
@@ -286,7 +292,7 @@ MCM = { # Munster
 }
 MEM = { # Memmingen
 	provinces = {
-		
+		xC347B1
 	}
 	ai_will_do = { always = no }
 }
@@ -334,7 +340,7 @@ ORL = { # Orleans
 }
 PAD = { # Paderborn
 	provinces = {
-		
+		x218061
 	}
 	ai_will_do = { always = no }
 }
@@ -364,7 +370,7 @@ REG = { # Regensburg
 }
 ROT = { # Rothenburg
 	provinces = {
-		
+		x0B0DBA
 	}
 	ai_will_do = { always = no }
 }
@@ -376,7 +382,7 @@ RVA = { # Dortmund
 }
 SAA = { # Saarland
 	provinces = {
-		x904020
+		x904020 x5D7A68 xD080A0
 	}
 	ai_will_do = { always = no }
 }

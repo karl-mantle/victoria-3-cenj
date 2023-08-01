@@ -155,10 +155,7 @@
 	}		
 	c:CHL = {	
 		add_declared_interest = region_andes
-	}	
-	c:PEU = {	
-		add_declared_interest = region_chile
-	}	
+	}
 	# North America
 	c:USA = {
 		add_declared_interest = region_pacific_northwest

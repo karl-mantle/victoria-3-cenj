@@ -23,11 +23,12 @@ ALA = { # Alaska
 		}
 	}
 	flag_definition = {
-		coa = ALA_fascist
-		subject_canton = ALA_fascist
+		coa = ALA_subject_RUS
+		allow_overlord_canton = no
+		subject_canton = LVN_subject_RUS
 		priority = 20
-		trigger = {
-			coa_def_fascist_flag_trigger = yes
+		trigger = { 
+			coa_def_russian_ensign_trigger = yes
 		}
 	}
 }

@@ -26,6 +26,7 @@ gov_griqua_state = {
 	
 	possible = {
 		country_has_primary_culture = cu:griqua
+		has_law = law_type:law_presidential_republic
 	}
 }
 
@@ -39,6 +40,7 @@ gov_governorate = {
 	female_heir = "" # Empty on purpose
 	
 	possible = {
+		NOT = { is_country_type = colonial }
 		exists = c:RUS
 		c:RUS = { has_law = law_type:law_monarchy }
 		is_subject_of = c:RUS
@@ -57,6 +59,7 @@ gov_viceroyalty = {
 	female_heir = "" # Empty on purpose
 	
 	possible = {
+		NOT = { is_country_type = colonial }
 		exists = c:RUS
 		c:RUS = { has_law = law_type:law_monarchy }
 		is_subject_of = c:RUS

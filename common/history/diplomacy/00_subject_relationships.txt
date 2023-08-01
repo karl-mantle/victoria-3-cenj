@@ -75,6 +75,10 @@
 			country = c:SVA
 			type = protectorate
 		}
+		create_diplomatic_pact = {
+			country = c:ALA
+			type = dominion
+		}
 	}
 	c:PRU = {
 		create_diplomatic_pact = {
@@ -137,7 +141,7 @@
 		}
 		create_diplomatic_pact = {
 			country = c:ORG
-			type = puppet
+			type = dominion
 		}	
 		create_diplomatic_pact = {
 			country = c:HAN

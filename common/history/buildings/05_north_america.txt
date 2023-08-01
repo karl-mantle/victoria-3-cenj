@@ -317,7 +317,7 @@
 		}
 	}
 	s:STATE_ALASKA={
-		region_state:RUS={
+		region_state:ALA={
 			create_building={
 				building="building_port"
 				level=2

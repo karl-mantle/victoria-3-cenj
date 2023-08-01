@@ -1335,7 +1335,7 @@ ZAZ_republic = {
 	color2 = "yellow"
 
 	colored_emblem = {
-		texture = "zaz.dds"
+		texture = "ce_coa_zaporizhia_republic.dds"
 		color1 = "blue"
 		color2 = "yellow"
 		color3 = "red"

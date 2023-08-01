@@ -612,21 +612,20 @@ boer_republics.6 = {
 				name = zulu_conflict
 			}
 		}
+	}
 
-		option = {
-			name = boer_republics.6.a
-			default_option = yes
-			ai_chance = { base = 1 }
+	option = {
+		name = boer_republics.6.a
+		default_option = yes
+		ai_chance = { base = 1 }
 
-			c:GBR = {
-				create_diplomatic_pact = {
-					country = c:ORA
-					type = puppet
-				}
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:ORA
+				type = puppet
 			}
 		}
-
-	}   
+	}
 }
 
 # Winburg-Potchefstroom

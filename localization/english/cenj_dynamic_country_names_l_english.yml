@@ -103,6 +103,8 @@
  dyn_c_wnl_griqualand_west_adj:0 "West Griqua"
 
 # North America
+ dyn_c_ala_subject_rus:0 "Russian-American Company"
+ dyn_c_ala_subject_rus_adj:0 "Russian-American"
  dyn_c_cal_union:0 "Two Californias"
  dyn_c_com_centralized:0 "Comancheria"
  dyn_c_com_centralized_adj:0 "Comanche"

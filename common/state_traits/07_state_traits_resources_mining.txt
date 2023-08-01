@@ -308,6 +308,26 @@ state_trait_new_caledonian_nickel = {
 	}
 }
 
+# Quarries
+
+state_trait_de_kempen = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_clay.dds"
+	
+	modifier = {
+		building_quarry_throughput_mult = 0.1
+		building_output_clay_mult = 0.05
+	}
+}
+
+state_trait_london_clay = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_clay.dds"
+	
+	modifier = {
+		building_quarry_throughput_mult = 0.1
+		building_output_clay_mult = 0.05
+	}
+}
+
 # Silver
 
 state_trait_kongsberg_silver_mine = {

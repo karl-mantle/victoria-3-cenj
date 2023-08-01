@@ -1,4 +1,27 @@
-﻿CAL = { # California
+﻿ALA = { # Alaska
+
+	# Russian-American Company
+	dynamic_country_name = {
+		name = dyn_c_ala_subject_rus
+		adjective = dyn_c_ala_subject_rus_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:ALA
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+CAL = { # California
 
 	# Two Californias
 	dynamic_country_name = {

@@ -33,7 +33,7 @@ ANS = { # Ansbach
 	country_type = recognized
 	tier = city_state
 	cultures = { south_german }
-	capital = STATE_FRANCONIA
+	capital = STATE_BAVARIA
 }
 AUG = { # Augsburg
 	color = { 20 188 118 }
@@ -117,7 +117,7 @@ CLB = { # Calenberg
 	country_type = recognized
 	tier = city_state
 	cultures = { north_german }
-	capital = STATE_HANNOVER
+	capital = STATE_HESSE
 }
 CNN = { # Clanricarde
 	color = { 193 237 85 }

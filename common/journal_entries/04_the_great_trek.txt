@@ -309,7 +309,7 @@ je_sand_river_convention = {
 
 	complete = {
 		exists = c:TRN
-		c:TRN = { is_recognized = yes }
+		c:TRN = { is_country_type = recognized }
 	}
 
 	on_complete = {

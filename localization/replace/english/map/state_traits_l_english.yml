@@ -303,6 +303,8 @@
  state_trait_sicilian_sulfur_mines:0 "Sicilian Sulfur Mines"
  state_trait_bone_valley:0 "Bone Valley"
  state_trait_chincha_islands:0 "Chincha Islands"
+ state_trait_de_kempen:0 "De Kempen"
+ state_trait_london_clay:0 "London Clay"
 
  # Resources (Misc)
  state_trait_rosendale_cement:0 "Rosendale Cement"
