@@ -1,7 +1,7 @@
 ﻿# Added
 
 pm_traditional_medicine = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
@@ -19,7 +19,7 @@ pm_traditional_medicine = {
 }
 
 pm_early_modern_medicine = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base2.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
 	unlocking_technologies = {
 		medical_degrees
@@ -48,7 +48,7 @@ pm_early_modern_medicine = {
 }
 
 pm_modern_medicine = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base3.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
 	unlocking_technologies = {
 		antibiotics

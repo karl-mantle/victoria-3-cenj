@@ -153,7 +153,7 @@ pm_horizontal_drawer_cabinets = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 25 # 50
+			country_bureaucracy_add = 30 # 50
 		}
 	}
 	
@@ -165,8 +165,8 @@ pm_horizontal_drawer_cabinets = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 0.1
-			building_input_paper_add = 5 # 10
+			building_input_oil_add = 0.05
+			building_input_paper_add = 5
 		}			
 	
 		level_scaled = {
@@ -183,7 +183,7 @@ pm_vertical_filing_cabinets = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 35 # 65
+			country_bureaucracy_add = 45 # 65
 		}
 	}	
 	
@@ -195,8 +195,8 @@ pm_vertical_filing_cabinets = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 0.5
-			building_input_paper_add = 10 # 20
+			building_input_oil_add = 0.1
+			building_input_paper_add = 10
 		}	
 	
 		level_scaled = {
@@ -225,8 +225,8 @@ pm_switch_boards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 1
-			building_input_paper_add = 10 # 20
+			building_input_oil_add = 0.2
+			building_input_paper_add = 15 # 20
 			building_input_telephones_add = 2.5 # 5
 		}
 
@@ -307,9 +307,8 @@ pm_scholastic_education = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 0.1
-			building_input_paper_add = 5
-			building_input_literature_add = 0.5
+			building_input_oil_add = 0.05
+			building_input_paper_add = 2.5
 		}	
 	
 		level_scaled = {
@@ -340,10 +339,9 @@ pm_philosophy_department = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 0.1
-			building_input_paper_add = 2.5 # 10
-			building_input_literature_add = 2.5
-			building_output_literature_add = 5
+			building_input_oil_add = 0.05
+			building_input_paper_add = 5
+			building_input_literature_add = 2
 		}
 		
 		level_scaled = {
@@ -374,10 +372,9 @@ pm_analytical_philosophy_department = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 0.2
-			building_input_paper_add = 5 # 15
+			building_input_oil_add = 0.1
+			building_input_paper_add = 10
 			building_input_literature_add = 2.5
-			building_output_literature_add = 5
 		}
 		
 		level_scaled = {
@@ -486,8 +483,6 @@ pm_airship_mooring_post = {
 		}
 	}
 }
-
-# Added
 
 pm_merchant_guilds_building_port = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"

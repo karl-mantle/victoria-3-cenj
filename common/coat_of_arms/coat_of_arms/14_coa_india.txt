@@ -1,4 +1,6 @@
-﻿### Awadh
+﻿@third = @[1/3]
+
+### Awadh
 AWA = {
 	# 1842 design
 

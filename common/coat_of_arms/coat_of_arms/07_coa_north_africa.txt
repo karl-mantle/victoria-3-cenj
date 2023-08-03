@@ -1,4 +1,6 @@
-﻿### Ait Abbas
+﻿@third = @[1/3]
+
+### Ait Abbas
 AIT = { 
 	pattern = "pattern_solid.tga"
 	color1 = "green"

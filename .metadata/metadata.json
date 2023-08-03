@@ -1,7 +1,7 @@
 {
   "name" : "cenj (early build)",
   "id" : "",
-  "version" : "0.0.45",
+  "version" : "0.0.46",
   "supported_game_version" : "1.3.6",
   "short_description" : "cenj (Working Title) is an experimental mod for Victoria 3.",
   "tags" : [],
@@ -9,9 +9,9 @@
   "game_custom_data" : {
     "multiplayer_synchronized" : true,
     "replace_paths" : [
-      "common/country_creation"
-      "common/country_definitions"
-      "common/country_formation"
+      "common/country_creation",
+      "common/country_definitions",
+      "common/country_formation",
       "common/state_traits"
 		]
   }

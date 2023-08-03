@@ -108,13 +108,12 @@ ideology_junker_paternalistic = {
 		law_no_police = disapprove
 	}
 
-	lawgroup_currency_policy = {
-        law_bartering = disapprove
-		law_cupronickel_currency = disapprove
-        law_silver_standard = approve
-        law_bimetallic_standard = neutral
-        law_gold_standard = disapprove
-        law_fiat_money = strongly_disapprove
+	lawgroup_monetary_system = {
+        law_no_monetary_system = disapprove
+		law_standardized_monetary_system = disapprove
+        law_silver_standard_monetary_system = approve#
+        law_gold_standard_monetary_system = disapprove
+        law_fiat_monetary_system = strongly_disapprove
     }
 }
 

@@ -3325,7 +3325,7 @@ pm_publicly_traded_building_munition_plants = {
 # Added
 
 pm_basic_chemical_process = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	pollution_generation = 5
 
 	building_modifiers = {
@@ -3347,7 +3347,7 @@ pm_basic_chemical_process = {
 }
 
 pm_batch_operation = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base2.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	pollution_generation = 10
 
 	unlocking_technologies = {
@@ -3373,7 +3373,7 @@ pm_batch_operation = {
 }
 
 pm_continuous_operation = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base3.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	pollution_generation = 15
 
 	unlocking_technologies = {
@@ -3401,10 +3401,9 @@ pm_continuous_operation = {
 }
 
 # Brickworks
-# Unlocking technologies are temporary.
 
 pm_scove_kilns = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -3423,7 +3422,7 @@ pm_scove_kilns = {
 }
 
 pm_beehive_kilns = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base2.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	
 	unlocking_technologies = {
 		bessemer_process
@@ -3447,7 +3446,7 @@ pm_beehive_kilns = {
 }
 
 pm_hoffman_kilns = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base3.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	unlocking_technologies = {
 		open_hearth_process
 	}
@@ -3601,10 +3600,9 @@ pm_worker_cooperative_building_brickworks = {
 }
 
 # Cement Factory
-# Unlocking technologies are temporary.
 
 pm_static_kilns = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	
 	building_modifiers = {
 		workforce_scaled = {
@@ -3623,7 +3621,7 @@ pm_static_kilns = {
 }
 
 pm_shaft_kilns = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base2.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	
 	unlocking_technologies = {
 		shaft_mining
@@ -3647,7 +3645,7 @@ pm_shaft_kilns = {
 }
 
 pm_rotary_kilns = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base3.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	unlocking_technologies = {
 		rotary_valve_engine
 	}

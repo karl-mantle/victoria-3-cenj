@@ -289,7 +289,7 @@ pm_government_run_construction_sector = {
 			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
-			building_government_shares_add = 1
+			#building_government_shares_add = 1
 		}
 	}
 }

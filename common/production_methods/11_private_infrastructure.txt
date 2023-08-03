@@ -375,7 +375,7 @@ pm_trade_center_diesel_trucks = {
 }
 
 pm_natural_routes = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	
 	unlocking_production_methods = {
 		pm_natural_routes
@@ -399,7 +399,7 @@ pm_natural_routes = {
 }
 
 pm_historic_roads = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base2.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
 	unlocking_production_methods = {
 		
@@ -423,7 +423,7 @@ pm_historic_roads = {
 }
 
 pm_maintained_roads = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base3.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
 	unlocking_production_methods = {
 		pm_historic_roads
@@ -448,7 +448,7 @@ pm_maintained_roads = {
 }
 
 pm_modern_roads = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base4.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	pollution_generation = 5
 
 	unlocking_technologies = {
@@ -479,7 +479,7 @@ pm_modern_roads = {
 }
 
 pm_early_motorway = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base5.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 	pollution_generation = 10
 
 	unlocking_production_methods = {
@@ -514,7 +514,7 @@ pm_no_coaches = {
 }
 
 pm_stagecoaches = {
-	texture = "gfx/interface/icons/production_method_icons/public_trams.dds"
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
@@ -548,7 +548,7 @@ pm_intercity_motorbuses = {
 }
 
 pm_commonly_owned_building_road_network = { # Change to no ownership
-	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 	
 	unlocking_production_methods = {
 		pm_commonly_owned_building_road_network
@@ -556,7 +556,7 @@ pm_commonly_owned_building_road_network = { # Change to no ownership
 	
 	building_modifiers = { 
 		level_scaled = {
-			building_employment_aristocrats_add = 15 # 25
+			building_employment_aristocrats_add = 25
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 1

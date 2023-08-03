@@ -1,4 +1,6 @@
-﻿### Ashanti
+﻿@third = @[1/3]
+
+### Ashanti
 ASH = {
 	# Ashanti Empire - 1935
 	

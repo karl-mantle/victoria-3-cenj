@@ -8,7 +8,6 @@
 	
 	production_method_groups = {
 		pmg_base_building_finance_sector
-		pmg_central_bank_policy
 		pmg_ownership_capital_finance_sector
 	}
 	
@@ -25,10 +24,10 @@ building_mint = {
 	}
 	
 	production_method_groups = {
-		pmg_mint_currency_standard
+		pmg_base_building_mint
 		pmg_ownership_capital_building_mint
 	}
 	
-	required_construction = construction_cost_medium
+	required_construction = construction_cost_high
 	
 }

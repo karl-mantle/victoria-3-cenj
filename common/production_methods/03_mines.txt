@@ -1761,8 +1761,8 @@ pm_picks_and_shovels_building_quarry = {
 			building_input_tools_add = 2.5 # 5
 			
 			# output goods
-			building_output_clay_add = 10 # 20
-			building_output_limestone_add = 5 # 10
+			building_output_clay_add = 5 # 20
+			building_output_limestone_add = 10 # 10
 		}
 
 		level_scaled = {
@@ -1786,8 +1786,8 @@ pm_atmospheric_engine_pump_building_quarry = {
 			building_input_coal_add = 5 # 10
 			
 			# output goods
-			building_output_clay_add = 12.5 # 25
-			building_output_limestone_add = 10 # 20
+			building_output_clay_add = 7.5 # 25
+			building_output_limestone_add = 12.5 # 20
 		}
 
 		level_scaled = {
@@ -1812,7 +1812,7 @@ pm_condensing_engine_pump_building_quarry = {
 			building_input_coal_add = 7.5 # 15
 			
 			# output goods
-			building_output_clay_add = 17.5 # 35
+			building_output_clay_add = 12.5 # 35
 			building_output_limestone_add = 15 # 30
 		}
 
@@ -1839,8 +1839,8 @@ pm_diesel_pump_building_quarry = {
 			building_input_oil_add = 2.5 # 5
 			
 			# output goods
-			building_output_clay_add = 20 # 40
-			building_output_limestone_add = 20 # 40
+			building_output_clay_add = 17.5 # 40
+			building_output_limestone_add = 22.5 # 40
 
 		}
 

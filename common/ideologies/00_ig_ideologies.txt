@@ -51,13 +51,12 @@
 		law_free_trade = disapprove
 	}	
 
-	lawgroup_currency_policy = {
-		law_bartering = disapprove
-		law_cupronickel_currency = neutral
-		law_silver_standard = approve
-		law_bimetallic_standard = approve
-		law_gold_standard = approve
-		law_fiat_money = neutral
+	lawgroup_monetary_system = {
+		law_no_monetary_system = disapprove
+		law_standardized_monetary_system = neutral
+		law_silver_standard_monetary_system = approve
+		law_gold_standard_monetary_system = approve
+		law_fiat_monetary_system = neutral
 	}
 }
 
@@ -101,13 +100,12 @@ ideology_laissez_faire = {
 		law_commercialized_agriculture = approve
 	}
 
-	lawgroup_currency_policy = {
-		law_bartering = strongly_disapprove
-		law_cupronickel_currency = disapprove
-		law_silver_standard = disapprove
-		law_bimetallic_standard = disapprove
-		law_gold_standard = disapprove
-		law_fiat_money = strongly_approve
+	lawgroup_monetary_system = {
+		law_no_monetary_system = strongly_disapprove
+		law_standardized_monetary_system = disapprove
+		law_silver_standard_monetary_system = disapprove
+		law_gold_standard_monetary_system = disapprove
+		law_fiat_monetary_system = strongly_approve
 	}
 }
 
@@ -223,13 +221,12 @@ ideology_agrarian = {
 		law_land_based_taxation = disapprove
 	}
 
-	lawgroup_currency_policy = {
-		law_bartering = approve
-		law_cupronickel_currency = neutral
-		law_silver_standard = neutral
-		law_bimetallic_standard = neutral
-		law_gold_standard = neutral
-		law_fiat_money = disapprove
+	lawgroup_monetary_system = {
+		law_no_monetary_system = approve
+		law_standardized_monetary_system = neutral
+		law_silver_standard_monetary_system = neutral
+		law_gold_standard_monetary_system = neutral
+		law_fiat_monetary_system = disapprove
 	}
 
 }
@@ -281,13 +278,12 @@ ideology_isolationist = {
 		law_free_trade = disapprove
 	}
 
-	lawgroup_currency_policy = {
-		law_bartering = approve
-		law_cupronickel_currency = neutral
-		law_silver_standard = neutral
-		law_bimetallic_standard = neutral
-		law_gold_standard = neutral
-		law_fiat_money = strongly_disapprove
+	lawgroup_monetary_system = {
+		law_no_monetary_system = approve
+		law_standardized_monetary_system = neutral
+		law_silver_standard_monetary_system = neutral
+		law_gold_standard_monetary_system = neutral
+		law_fiat_monetary_system = strongly_disapprove
 	}
 }
 
@@ -641,13 +637,12 @@ ideology_reactionary = {
 		law_no_migration_controls = disapprove
 	}
 
-	lawgroup_currency_policy = {
-		law_bartering = neutral
-		law_cupronickel_currency = approve
-		law_silver_standard = strongly_approve
-		law_bimetallic_standard = neutral
-		law_gold_standard = disapprove
-		law_fiat_money = strongly_disapprove
+	lawgroup_monetary_system = {
+		law_no_monetary_system = neutral
+		law_standardized_monetary_system = approve
+		law_silver_standard_monetary_system = strongly_approve
+		law_gold_standard_monetary_system = disapprove
+		law_fiat_monetary_system = strongly_disapprove
 	}
 }
 
@@ -688,13 +683,12 @@ ideology_plutocratic = {
 		law_colonial_resettlement = neutral
 	}
 
-	lawgroup_currency_policy = {
-		law_bartering = strongly_disapprove
-		law_cupronickel_currency = disapprove
-		law_silver_standard = disapprove
-		law_bimetallic_standard = neutral
-		law_gold_standard = approve
-		law_fiat_money = strongly_approve
+	lawgroup_monetary_system = {
+		law_no_monetary_system = strongly_disapprove
+		law_standardized_monetary_system = disapprove
+		law_silver_standard_monetary_system = disapprove
+		law_gold_standard_monetary_system = approve
+		law_fiat_monetary_system = strongly_approve
 	}
 }
 

@@ -1,4 +1,7 @@
-﻿### Angola Janga
+﻿@third = @[1/3]
+@uru_canton_height = 0.556
+
+### Angola Janga
 AGJ = {
 	pattern = "pattern_per_saltire.dds"
 	color1 = "green"

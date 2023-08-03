@@ -1,5 +1,16 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.46
+- added new institution - central bank
+- re-written currency standards law, now is monetary system
+- replaced pm icons with placeholders
+- changed quarry base production methods outputs
+- changed mint buildings production methods
+- balancing changes to oil consumption in government pm's
+- removed central bank pmg from finance sector
+- fixed construction sector double cost bug
+- fixed coa missing dependencies
+- pop changes in greece / anatolia
 ### 0.0.45
 - re-written country creation, definitions, and formations, and coa definitions
 - added new culture (griko)

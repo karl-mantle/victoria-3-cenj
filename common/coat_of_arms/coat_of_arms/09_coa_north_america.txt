@@ -1,4 +1,6 @@
-﻿### Absaroke Crow
+﻿@third = @[1/3]
+
+### Absaroke Crow
 ABS = {
 	# Combination of traditionnal Crow designs
 	

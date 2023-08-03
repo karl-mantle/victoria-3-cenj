@@ -1,4 +1,4 @@
-﻿lawgroup_currency_policy = {
+﻿lawgroup_monetary_system = {
 	law_group_category = economy
 	
 	progressive_movement_chance = 1.5

@@ -2391,13 +2391,12 @@ ideology_market_liberal = {
 	
 	character_ideology = yes
 
-	lawgroup_currency_policy = {
-        law_bartering = strongly_disapprove
-		law_cupronickel_currency = disapprove
-        law_silver_standard = disapprove
-        law_bimetallic_standard = disapprove
-        law_gold_standard = disapprove
-        law_fiat_money = strongly_approve
+	lawgroup_monetary_system = {
+        law_no_monetary_system = strongly_disapprove
+		law_standardized_monetary_system = disapprove
+        law_silver_standard_monetary_system = disapprove
+        law_gold_standard_monetary_system = disapprove
+        law_fiat_monetary_system = strongly_approve
     }
 
 	lawgroup_economic_system = {	

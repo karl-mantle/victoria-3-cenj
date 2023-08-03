@@ -1,4 +1,6 @@
-﻿### Cambodia
+﻿@third = @[1/3]
+
+### Cambodia
 CAM = {
 	# Flag of Khmer Empire before 1863
 	

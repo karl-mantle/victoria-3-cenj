@@ -1383,6 +1383,11 @@
 				culture = lacustrine_bantu
 				size = 2000
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 1200
+			}
 		}
 	}
 	s:STATE_KARASI = {
@@ -1447,6 +1452,11 @@
 				culture = lacustrine_bantu
 				size = 6100
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 800
+			}
 		}
 	}
 	s:STATE_KONYA = {
@@ -1473,6 +1483,11 @@
 				culture = lacustrine_bantu
 				size = 1200
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 120
+			}
 		}
 	}
 	s:STATE_ANTALYA = {
@@ -1493,6 +1508,11 @@
 				pop_type = slaves
 				culture = lacustrine_bantu
 				size = 1000
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 300
 			}
 		}
 	}
@@ -1523,6 +1543,11 @@
 				pop_type = slaves
 				culture = lacustrine_bantu
 				size = 1200
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 250
 			}
 		}
 	}
@@ -1681,6 +1706,11 @@
 				pop_type = slaves
 				culture = lacustrine_bantu
 				size = 400
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 130
 			}
 		}
 	}
@@ -1876,6 +1906,11 @@
 				pop_type = slaves
 				culture = circassian
 				size = 1000
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 300
 			}
 		}
 	}

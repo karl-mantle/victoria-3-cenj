@@ -1180,6 +1180,14 @@
 				culture = greek
 				size = 551592
 			}
+			create_pop = {
+				culture = sephardic
+				size = 3200
+			}
+			create_pop = {
+				culture = romanian
+				size = 650
+			}
 		}
 	}
 	s:STATE_EPIRUS = {
@@ -1211,11 +1219,24 @@
 				religion = orthodox
 				size = 950
 			}
+			create_pop = {
+				culture = romanian
+				size = 1200
+			}
+			create_pop = {
+				culture = romanian
+				religion = sunni
+				size = 800
+			}
 		}
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
 				size = 133592
+			}
+			create_pop = {
+				culture = romanian
+				size = 500
 			}
 		}
 	}
@@ -1240,14 +1261,30 @@
 			}
 			create_pop = {
 				culture = romani
-				religion = orthodox
 				size = 1100
+			}
+			create_pop = {
+				culture = romanian
+				religion = sunni
+				size = 200
+			}
+			create_pop = {
+				culture = romanian
+				size = 1400
 			}
 		}
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
 				size = 101592
+			}
+			create_pop = {
+				culture = romanian
+				size = 800
+			}
+			create_pop = {
+				culture = romani
+				size = 200
 			}
 		}
 	}
@@ -1281,6 +1318,15 @@
 			create_pop = {
 				culture = romani
 				size = 1600
+			}
+			create_pop = {
+				culture = romanian
+				religion = sunni
+				size = 450
+			}
+			create_pop = {
+				culture = romanian
+				size = 1700
 			}
 		}
 	}
@@ -1321,6 +1367,15 @@
 				culture = lacustrine_bantu
 				size = 700
 			}
+			create_pop = {
+				culture = romanian
+				size = 1400
+			}
+			create_pop = {
+				culture = romanian
+				religion = sunni
+				size = 450
+			}
 		}
 	}
 	s:STATE_WESTERN_THRACE = {
@@ -1356,7 +1411,15 @@
 				culture = lacustrine_bantu
 				size = 1500
 			}
-
+			create_pop = {
+				culture = romanian
+				religion = sunni
+				size = 600
+			}
+			create_pop = {
+				culture = romanian
+				size = 1300
+			}
 		}
 	}
 	s:STATE_IONIAN_ISLANDS = {

@@ -1,4 +1,10 @@
-﻿### Aotearoa
+﻿@third = @[1/3]
+@sixth = @[1/6]
+@canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
+@NZL_coa_offset = @[3/16]
+
+### Aotearoa
 AOT = {
 	pattern = "pattern_solid.tga"
 	color1 = "black"

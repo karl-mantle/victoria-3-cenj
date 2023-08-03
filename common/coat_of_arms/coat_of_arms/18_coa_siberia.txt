@@ -1,4 +1,6 @@
-﻿### Kamchatka
+﻿@third = @[1/3]
+
+### Kamchatka
 FER = {
 	# Alleged nationalist flag 
 

@@ -1,4 +1,6 @@
-﻿### Abkhazia
+﻿@third = @[1/3]
+
+### Abkhazia
 ABK = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow_green"
