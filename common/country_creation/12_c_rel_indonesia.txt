@@ -1,0 +1,149 @@
+﻿ACE = {
+	states = {
+		STATE_ACEH
+	}
+	ai_will_do = { always = no }
+}
+BAL = {
+	provinces = {
+		x5ABA94 x100090
+	}
+	ai_will_do = { always = no }
+}
+BNJ = {
+	provinces = {
+		x9B7A4D x496AEF xDF0BCF x0ED6AA xE9E984 xDB778E xEA35E9 x71A232 x3660F5 x9C48FE x38416A
+		x6A70EA x88A1EC xFF0B89 x10645D x0E858D x8D8D4A x8F8FDE x0596C2 x0A7250 x0A8175
+	}
+	ai_will_do = { always = no }
+}
+BRU = {
+	states = {
+		STATE_NORTH_BORNEO
+	}
+	ai_will_do = { always = no }
+}
+BTN = {
+	states = {
+		STATE_CELEBES
+	}
+	ai_will_do = { always = no }
+}
+JAV = { # Java
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+JMB = { # Jambi
+	provinces = {
+		x5157D3 xDA82F4 x7AC280 xAE71B4 xEC5DEA xA2F773 x6ED39E xE4C2D6
+	}
+	ai_will_do = { always = no }
+}
+JOH = { # Johore
+	states = {
+		STATE_MALAYA
+	}
+	ai_will_do = { always = no }
+}
+KLT = { # Kalimantan
+	states = {
+		STATE_WEST_BORNEO
+		STATE_EAST_BORNEO
+		STATE_NORTH_BORNEO
+	}
+	ai_will_do = { always = no }
+}
+KHN = {
+	states = {
+		STATE_KACHIN
+	}
+	ai_will_do = { always = no }
+}
+LAN = { # Lanfang
+	provinces = {
+		x1C7417 x2A3D46 xE02CB6
+	}
+	ai_will_do = { always = no }
+}
+PON = {
+	provinces = {
+		xFFE074 x71D428 x706E00 xA91194 x4DD36E xB7B05B xAD54BC x4408AB xF8375D 
+	}
+	ai_will_do = { always = no }
+}
+PRK = {
+	provinces = {
+		xAA2287 x78EF92 xCF3E8D xD8E596 xE87C53
+	}
+	ai_will_do = { always = no }
+}
+SAK = {
+	provinces = { 
+		x01317D x3F7EA0 x677AA6 x87F7B6 x8171EA x48428B x6021D0 x5BE3D2 x8B7A14 x35213F 
+	}
+	ai_will_do = { always = no }
+}
+SEL = {
+	provinces = {
+		x23578B x8E3305 xC84C4C
+	}
+	ai_will_do = { always = no }
+}
+SGP = { # Singapore
+	provinces = {
+		xC00130
+	}
+	ai_will_do = { always = no }
+}
+SMB = {
+	provinces = {
+		x60FDC2 x42973E x6D4CDF
+	}
+	ai_will_do = { always = no }
+}
+SRK = {
+	provinces = {
+		x143969
+	}
+	ai_will_do = { always = no }
+}
+STG = {
+	provinces = { 
+		x477680 xA6D36E xCF4105 x7FFBF0 xBC374E xA5A916 x56FE77 x445D59 x9910E9 x939612 x04BB3B 
+	}
+	ai_will_do = { always = no }
+}
+SUL = { # Sulu
+	provinces = {
+		x0180F0 x99D030
+	}
+	ai_will_do = { always = no }
+}
+TID = { # Tidore
+	states = {
+		STATE_MOLUCCAS
+	}
+	ai_will_do = { always = no }
+}
+TOB = {
+	states = {
+		STATE_NORTH_SUMATRA
+	}
+	ai_will_do = { always = no }
+}
+YOG = {
+	provinces = {
+		xD19D2E
+	}
+	ai_will_do = { always = no }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1125 @@
+﻿### Aotearoa
+AOT = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_koru.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+}
+### Australia
+AST = {
+	# Eureka flag
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	
+	@eureka_star_scale = 0.302
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 0.102 0.730 } position = { 0.5 0.5 } }
+		instance = { scale = { 0.8 0.154 } position = { 0.5 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_star_08_eureka.dds"
+		color1 = "white"
+		color2 = "blue"
+		instance = { scale = { @eureka_star_scale @eureka_star_scale } position = { 0.5 0.5 } }
+		instance = { scale = { @eureka_star_scale @eureka_star_scale } position = { 0.1 0.5 } }		
+		instance = { scale = { @eureka_star_scale @eureka_star_scale } position = { 0.9 0.5 } }		
+		instance = { scale = { @eureka_star_scale @eureka_star_scale } position = { 0.5 0.135 } }		
+		instance = { scale = { @eureka_star_scale @eureka_star_scale } position = { 0.5 0.865 } }				
+	}
+}
+AST_subject = {	
+	# blue ensign with commonwealth star and southern cross
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.33 0.33 } position = { 0.25 0.75 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.743 0.181 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.625 0.484 } }
+		instance = { scale = { 0.17 0.17 } position = { 0.861 0.37 } }
+		instance = { scale = { 0.20 0.20 } position = { 0.743 0.849 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.1 0.1 } position = { 0.8 0.543 } }
+	}
+}
+AST_theocracy = {
+	# Australian Anglican flag
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+	color4 = "yellow"
+	colored_emblem = {
+		texture = "ce_cross_england_fimbriated.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_cross_england_fimbriated.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_mitre.dds"
+		color1 = "white"
+		color2 = "yellow"
+		color3 = "red"
+		instance = { scale = { @third @third } position = { 0.5 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = color2
+		color2 = color2
+		
+		instance = { scale = { @third @third } position = { @[1/5] @[1/6] } } # top left
+		instance = { scale = { @third @third } position = { @[1/5] @[1-(1/6)] } } 
+		instance = { scale = { @third @third } position = { @[1-(1/5)] @[1-(1/6)] } } 
+		instance = { scale = { @third @third } position = { @[1-(1/5)] @[1/6] } } 
+	}
+}
+AST_monarchy = {
+	# Early COA
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_laurel_circled.dds"
+		color1 = "green_dark"
+		color2 = "red"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.552 } }
+	}
+	colored_emblem = {
+		texture = "ce_laurel_circled.dds"
+		color1 = "green"
+		color2 = "orange"
+		color3 = "red"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.55 } }
+	}
+	colored_emblem = {		
+		texture = "ce_coa_australia.dds"
+		color1 = "blue"
+		color2 = "white"
+		color3 = "red"
+        instance = { scale = { 0.55 0.55 } position = { 0.5 0.55 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "pearl"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.23 } }
+	}	
+}
+### Bilua/Solomon Islands
+BLA = { 
+	# Modern flag simplified
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "blue"
+	color2 = "green"
+
+	colored_emblem = {
+		texture = "ce_bend_sinister.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }		
+	}			
+}
+BLA_republic = {
+	# Modern flag of Solomon Islands (bend is thinner)
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "blue"
+	color2 = "green"
+
+	colored_emblem = {
+		texture = "ce_bend_sinister.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.16 0.16 } position = { 0.16 0.24 } }		
+		instance = { scale = { 0.16 0.16 } position = { 0.08 0.12 } }	
+		instance = { scale = { 0.16 0.16 } position = { 0.24 0.12 } }	
+		instance = { scale = { 0.16 0.16 } position = { 0.08 0.36 } }	
+		instance = { scale = { 0.16 0.16 } position = { 0.24 0.36 } }		
+	}	
+}
+BLA_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.16 0.16 } position = { 0.75 0.5 } }		
+		instance = { scale = { 0.16 0.16 } position = { 0.67 0.38 } }	
+		instance = { scale = { 0.16 0.16 } position = { 0.83 0.38 } }	
+		instance = { scale = { 0.16 0.16 } position = { 0.67 0.62 } }	
+		instance = { scale = { 0.16 0.16 } position = { 0.83 0.62 } }		
+	}	
+}
+BLA_subject_FRA = {
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "blue"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_bend_sinister.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }		
+	}	
+}
+BLA_subject_GBR = {
+	# Solomon islands blue ensign
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "pearl"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.5 } } 		
+
+	}		
+	colored_emblem = {
+		texture = "ce_legend_solomon_islands.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }	
+	}		
+}
+### Fiji
+FJI = {
+	# First design 1865
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.50 0.50 } }			
+	}	
+}
+FJI_subject = {
+	# Colonial flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"	
+    sub = {
+        parent = "sub_GBR_uk" 
+        instance = { scale = { 0.5 0.5 } } 
+    }	
+	colored_emblem = {
+		texture = "ce_legend_fidji.dds"
+		color1 = "black"
+		color2 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.5 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.3 0.3 } position = { 0.75 0.51 } }
+	}	
+	colored_emblem = {
+		texture = "ce_lion_statant_guardant.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.20 0.20 } position = { 0.75 0.41 } }
+	}	
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.08 0.08 } position = { 0.728 0.338 } }
+	}	
+}
+### Hawaii
+HAW = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_stripes_08_hawaii.dds"
+		color1 = "red"
+		color2 = "blue"
+	}
+}
+### Kaurna
+KAU = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_hand_dreaming.dds"
+		color1 = "red"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}
+}
+### Kanak
+KNK = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "black"
+
+	colored_emblem = {
+		texture = "ce_totem_kanak.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+### Nauru
+NRU = {
+	# Modern flag of Nauru
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 1.0 0.1 } position = { 0.5 0.5 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_star_12.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.33 0.75 } }				
+	}	
+}
+NRU_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_star_12.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }				
+	}	
+}
+NRU_subject_GBR = {
+	# Blue ensign with original british name
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "pearl"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.5 } } 		
+	}		
+	colored_emblem = {
+		texture = "ce_legend_nauru.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }	
+	}		
+}
+### New South Wales
+NSW = {
+	# New South Wales Ensign
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "blue"
+
+	colored_emblem = {		
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+
+	colored_emblem = {		
+		texture = "ce_star_08.dds"
+		color1 = color1
+		color2 = color1
+        instance = { scale = { 0.2 0.2 } position = { 0.5 0.5 }  } # centre
+        instance = { scale = { 0.2 0.2 } position = { 0.5 0.2 }  } # top
+        instance = { scale = { 0.2 0.2 } position = { 0.782 0.5 }  } # right
+        instance = { scale = { 0.2 0.2 } position = { 0.5 0.8 }  } # bottom
+        instance = { scale = { 0.2 0.2 } position = { 0.218 0.5 }  } # left
+	}
+}
+### Ngāi Tahu
+NTU = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "red"
+	colored_emblem = {
+		texture = "ce_star_04.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+### New Zealand
+NZL = {	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_05_hollow.dds"
+		color1 = color2
+		color2 = color3
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.25 } } # top
+		instance = { scale = { 0.4 0.4 } position = { 0.75 0.5 } } # right
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.75 } } # bottom
+		instance = { scale = { 0.4 0.4 } position = { 0.25 0.5 } } # left
+	}
+}
+NZL_canton = {
+	# blue ensign
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_05_hollow.dds"
+		color1 = color2
+		color2 = color3
+		instance = { scale = { 0.2 0.2 } position = { 0.74 0.23 } }
+		instance = { scale = { 0.2 0.2 } position = { 0.63 0.44 } }
+		instance = { scale = { 0.18 0.18 } position = { 0.835 0.385 } }
+		instance = { scale = { 0.22 0.22 } position = { 0.74 0.775 } }
+	}
+}
+NZL_republic = {
+	# red peak (no black)
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "blue"
+	color3 = "white"
+	color4 = "red"
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 1.0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_chevron.dds"
+		color1 = color3
+		color2 = color4
+	}
+}
+NZL_republic_maori = {
+	# red peak with maori black
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "blue"
+	color3 = "white"
+	color4 = "red"
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 1.0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_chevron.dds"
+		color1 = color3
+		color2 = color4
+	}
+}
+NZL_coa = {
+	# Not used in definitions
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+	color4 = "yellow"
+	color5 = "black"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.25 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_galley.dds"
+		color1 = color5
+		color2 = color5
+		color3 = color5
+		instance = { position = { 0.5 @sixth } scale = { @third @third } }
+		instance = { position = { 0.5 0.5 } scale = { @third @third } }
+		instance = { position = { 0.5 @[1-sixth] } scale = { @third @third } }
+	}
+	colored_emblem = {
+		texture = "ce_golden_fleece.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { @[1-NZL_coa_offset] 0.25 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_mining_hammers.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { @[1-NZL_coa_offset] 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_wheat_garb.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { @NZL_coa_offset 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		@nzl_coa_star_scale = 0.2
+		texture = "ce_star_05_hollow.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { @[0.55*NZL_coa_offset] 0.24 } 	scale = { @nzl_coa_star_scale @nzl_coa_star_scale } }
+		instance = { position = { @[1.45*NZL_coa_offset] 0.24 } 	scale = { @nzl_coa_star_scale @nzl_coa_star_scale } }
+		instance = { position = { @NZL_coa_offset @[0.5/4] } 	scale = { @nzl_coa_star_scale @nzl_coa_star_scale } }
+		instance = { position = { @NZL_coa_offset @[1.5/4] } 	scale = { @[nzl_coa_star_scale*1.33] @[nzl_coa_star_scale*1.33] } }
+	}
+}
+NZL_theocracy = {
+	# Based on the arms of the Anglican diocese of Auckland.
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+    sub = {
+        parent = "sub_NZL_theocracy" 
+        #instance = { scale = { 0.5 0.5 } offset = { 0.5 0.25 }  } # top left
+    }
+}
+NZL_theocracy_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+    sub = {
+        parent = "sub_NZL_theocracy" 
+        instance = { scale = { 0.5 0.5 } offset = { 0.5 0.25 }  } # top left
+    }
+}
+NZL_colony_subject = {
+	# Earliest blue ensign, not used in definitions atm
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+    sub = {
+        parent = "sub_NZL_colony" 
+        instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 }  } # top left
+    }
+}
+NZL_absolute_monarchy = {	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "red"
+	color4 = "yellow"
+	color5 = "black"
+
+    sub = {
+        parent = "sub_NZL_coa" 
+		instance = { scale = { 0.75 0.75 } offset = { 0.125 0.225 } }
+    }
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.26 } } 
+	}	
+}
+NZL_absolute_monarchy_subject = {	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "red"
+	color4 = "yellow"
+	color5 = "black"
+
+    sub = {
+        parent = "sub_NZL_coa" 
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.3 } }
+    }
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.32 } } 
+	}	
+}
+NZL_dictatorship = {	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 0.5 1.0 } position = { 0.5 0.5 } } 
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.4 1.0 } position = { 0.5 0.5 } } 
+	}
+
+	colored_emblem = {
+		texture = "ce_southern_cross_new_zealand.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } } 
+	}
+}
+NZL_fascist = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 1.0 0.21 } position = { 0.5 0.5 } } 
+		instance = { scale = { 0.14 1.0 } position = { 0.4 0.5 } } 		
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "blue"
+		instance = { scale = { 1.0 0.12 } position = { 0.5 0.5 } } 
+		instance = { scale = { 0.08 1.0 } position = { 0.4 0.5 } } 		
+	}	
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.70 0.70 } position = { 0.4 0.5 } } 
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.65 0.65 } position = { 0.4 0.5 } } 
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.62 0.62 } position = { 0.4 0.5 } } 
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"		
+		instance = { scale = { 0.25 0.06 } position = { 0.4 0.5 } } 
+		instance = { scale = { 0.04 0.3 } position = { 0.4 0.5 } } 			
+	}	
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.26 0.26 } position = { 0.52 0.505 } } 
+		instance = { scale = { 0.26 0.26 } position = { 0.28 0.505 } } 	
+		instance = { scale = { 0.26 0.26 } position = { 0.4 0.32 } } 
+		instance = { scale = { 0.26 0.26 } position = { 0.4 0.68 } } 			
+	}	
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.2 0.2 } position = { 0.52 0.505 } } 
+		instance = { scale = { 0.2 0.2 } position = { 0.28 0.505 } } 	
+		instance = { scale = { 0.2 0.2 } position = { 0.4 0.32 } } 
+		instance = { scale = { 0.2 0.2 } position = { 0.4 0.68 } } 			
+	}
+}
+### Tahiti
+PLY = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.15 0.2 } }
+	}
+}
+PLY_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_05_safcp.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 0.4 0.4 } position = { 0.15 0.2 } }
+	}
+}
+### Polynesia
+PNS = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripes_08_hawaii.dds"
+		color1 = "black"
+		color2 = "white"
+	}
+
+	colored_emblem = {
+		texture = "ce_shield_hesse.dds"
+		color1 = "black"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }	
+	}
+
+	colored_emblem = {
+		texture = "ce_kanaka.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }	
+	}
+}
+PNS_communist = {
+	pattern = "pattern_gironny_32.dds"
+	color1 = "red"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = "blue"
+		color2 = "light_blue"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }	
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
+	}
+
+	colored_emblem = {
+		texture = "ce_hammer_ddr.dds"
+		color1 = "red"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } rotation = 25 }	
+	}
+
+	colored_emblem = {
+		texture = "ce_outrigger_hook.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } rotation = -25 }	
+	}
+}
+### Papua
+PPU = { 
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "white"
+
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+        instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }				
+	}	
+	colored_emblem = {		
+		texture = "ce_bird_paradise.dds"
+		color1 = "tan"
+		color2 = "yellow"
+		color3 = "grey"
+        instance = { position = { 0.75 0.29 } scale = { 0.75 0.75 } }
+	}
+	
+}
+PPU_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
+	}
+	colored_emblem = {		
+		texture = "ce_bird_paradise.dds"
+		color1 = "tan"
+		color2 = "yellow"
+		color3 = "grey"
+        instance = { position = { 0.75 0.5 } scale = { 0.5 0.5 } }
+	}
+}
+PPU_subject_GBR = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
+	}
+    sub = {
+        parent = "sub_PPU" 
+        instance = { scale = { 0.45 0.45 } offset = { 0.525 0.275 }  }
+    }	
+}
+### South Australia
+SAS = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "black"
+	color3 = "white"
+	colored_emblem = {		
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+        instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }
+	}
+	colored_emblem = {		
+		texture = "ce_southern_cross_australia.dds"
+		color1 = color3
+		color2 = color3
+        instance = { position = { 0.5 0.5 } scale = { 0.5 0.5 } }
+	}
+}
+SAS_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "black"
+	color3 = "white"
+	colored_emblem = {		
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+        instance = { position = { 0.75 0.5 } scale = { 0.6 0.6 } }
+	}
+	colored_emblem = {		
+		texture = "ce_southern_cross_australia.dds"
+		color1 = color3
+		color2 = color3
+        instance = { position = { 0.82 0.48 } scale = { 0.45 0.45 } }
+	}
+	colored_emblem = {		
+		texture = "ce_star_08.dds"
+		color1 = color3
+		color2 = color3
+        instance = { position = { 0.625 0.625 } scale = { 0.09 0.09 } }
+        instance = { position = { 0.67 0.57 } scale = { 0.09 0.09 } }
+	}
+}
+### Tasmania / Van Diemans Land
+TAS = { 
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+	color3 = "black"
+	colored_emblem = {		
+		texture = "ce_lion_passant_guardant.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+TAS_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = white
+	color3 = "red"
+	color4 = "black"
+	colored_emblem = {		
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+        instance = { position = { 0.75 0.5 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {		
+		texture = "ce_lion_passant_guardant.dds"
+		color1 = color3
+		color2 = color4
+        instance = { position = { 0.75 0.5 } scale = { 0.5 0.5 } }
+	}
+}
+### Tonga
+TNG = {
+	# First hist. design with Ave Maria monogram
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_cross_couped.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.36 0.36 } position = { 0.16 0.32 } }	
+		instance = { scale = { 0.36 0.36 } position = { 0.16 0.68 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_cross_couped.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.36 0.36 } position = { 0.84 0.32 } }	
+		instance = { scale = { 0.36 0.36 } position = { 0.84 0.68 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_monogram_tonga.dds"
+		color1 = "red"
+		color2 = "blue"
+		instance = { scale = { 0.8 0.8 } position = { 0.50 0.50 } }			
+	}	
+}
+TNG_theocracy = { # Tonga
+	# 1862 design with center cross
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_cross_couped.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }			
+	}		
+}
+TNG_republic = {
+	# 1866 design with cross within canton
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+        instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_cross_couped.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.45 0.45 } position = { 0.25 0.25 } }			
+	}	
+}
+### United Tribes
+UNT = {
+	# with black fimbriation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+    sub = {
+        parent = "sub_UNT_canton_black" 
+        instance = { scale = { @canton_scale_cross_x @canton_scale_cross_y }  } # top left
+    }
+}
+UNT_subject = {
+	# with white fimbriation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+    sub = {
+        parent = "sub_UNT_canton_white" 
+        instance = { scale = { @canton_scale_cross_x @canton_scale_cross_y }  } # top left
+    }
+}
+### Vanuatu
+VNT = { 
+	# Simplified Independentist flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+	
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 1.6 1.0 } position = { 1 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { 0.2 1.0 } position = { 0.1 0.5 } }		
+	}	
+}
+VNT_subject = {
+	# Offset for overlord flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+	
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 1 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { 0.5 1.0 } position = { 0.25 0.5 } }		
+	}	
+}
+VNT_subject_GBR = {
+	# New Hebrides blue ensign
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "pearl"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.5 } } 		
+
+	}		
+	colored_emblem = {
+		texture = "ce_legend_new_hebrides.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }	
+	}		
+}
+VNT_subject_FRA = {
+	# Franceville flag
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_bicolor_right.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.12 0.12 } position = { 0.5 0.36 } }		
+		instance = { scale = { 0.12 0.12 } position = { 0.40 0.47 } }	
+		instance = { scale = { 0.12 0.12 } position = { 0.60 0.47 } }	
+		instance = { scale = { 0.12 0.12 } position = { 0.44 0.63 } }	
+		instance = { scale = { 0.12 0.12 } position = { 0.56 0.63 } }		
+	}		
+}
+### Western Australia
+WAS = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "black"
+	colored_emblem = {		
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+        instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }
+	}
+	colored_emblem = {		
+		texture = "ce_swan.dds"
+		color1 = "black"
+		color2 = "red"
+		color3 = "white"
+        instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }
+	}
+}
+WAS_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "black"
+	colored_emblem = {		
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+        instance = { position = { 0.75 0.5 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {		
+		texture = "ce_swan.dds"
+		color1 = "black"
+		color2 = "red"
+		color3 = "white"
+        instance = { position = { 0.75 0.51 } scale = { 0.5 0.5 } }
+	}
+}

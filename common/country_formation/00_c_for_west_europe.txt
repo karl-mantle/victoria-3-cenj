@@ -1,0 +1,85 @@
+﻿
+
+ENG = { # England
+	states = {
+		STATE_HOME_COUNTIES
+		STATE_EAST_MIDLANDS
+		STATE_WEST_MIDLANDS
+		STATE_EAST_ANGLIA
+		STATE_WEST_COUNTRY
+		STATE_YORKSHIRE
+		STATE_LANCASHIRE
+		STATE_NORTHUMBRIA
+	}
+	required_states_fraction = 0.75	
+	ai_will_do = { always = yes }
+}
+FRA = { # France
+	states = { 
+		STATE_ILE_DE_FRANCE 
+		STATE_PROVENCE 
+		STATE_NORMANDY 
+		STATE_LANGUEDOC
+		STATE_RHONE
+		STATE_FRENCH_LOW_COUNTRIES
+		STATE_PICARDY
+		STATE_ALSACE_LORRAINE
+		STATE_POITOU
+		STATE_GUYENNE
+		STATE_AUVERGNE_LIMOUSIN
+		STATE_BRITTANY
+		STATE_BURGUNDY
+		STATE_CHAMPAGNE
+		STATE_FRANCHE_COMTE
+		STATE_LORRAINE
+		STATE_AQUITAINE
+		STATE_ORLEANS
+	}
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+GBR = { # United Kingdom
+	use_culture_states = yes
+	required_states_fraction = 0.75	
+	ai_will_do = { always = yes }
+}
+IRE = { # Ireland
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+NGF = { # North German Federation
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	possible = {
+		has_technology_researched = nationalism
+	}
+	ai_will_do = { always = yes }
+}
+PRU = { # Prussia
+	states = { 
+		STATE_BRANDENBURG
+		STATE_POMERANIA
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+		STATE_SILESIA
+		STATE_POSEN
+	}
+	required_states_fraction = 0.8
+	ai_will_do = { always = yes }
+}
+SGF = { # South German Federation
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+SWE = { # Sweden
+	states = { 
+		STATE_SVEALAND 
+		STATE_GOTALAND 
+		STATE_SCANIA 
+		STATE_NORRLAND 
+	}
+	required_states_fraction = 0.75
+	ai_will_do = { always = no }
+}

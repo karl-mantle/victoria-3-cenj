@@ -1,0 +1,160 @@
+﻿ABK = { # Abkhazia
+	color = { 100 200 75 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { circassian }
+	religion = orthodox
+	capital = STATE_KUTAIS
+}
+ARM = { # Armenia
+	color = { 128 63 128 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { armenian }
+	capital = STATE_ERIVAN
+	is_named_from_capital = yes
+}
+AZB = { # Azerbaijan
+	color = { 172 56 32 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { azerbaijani }
+	capital = STATE_BAKU
+	is_named_from_capital = yes
+}
+BUK = { # Bukkhara
+	color = { 147 82 173 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { uzbek }
+	capital = STATE_BUKHARA
+}
+CAU = { # Transcaucasia
+	color = { 200 100 55 }
+	country_type = recognized
+	tier = empire
+	cultures = { azerbaijani armenian georgian }
+	capital = STATE_KUTAIS
+	religion = orthodox
+}
+CIR = { # Circassia
+	color = { 75 96 55 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { circassian }
+	capital = STATE_KUBAN
+}
+CHC = { # Caucasian Imamate / Chechnya
+	color = { 35 52 48 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { chechen }
+	capital = STATE_TEREK
+}
+DAG = { # Dagestan
+	color = { 56 172 32 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_caucasian }
+	capital = STATE_TEREK
+	is_named_from_capital = yes
+}
+GEO = { # Georgia
+	color = { 210 45 45 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { georgian }
+	capital = STATE_KUTAIS
+	is_named_from_capital = yes
+}
+IUS = {
+	color = { 11 115 39 }
+	country_type = recognized
+	tier = principality
+	cultures = { tatar }
+	capital = STATE_KAZAN
+}
+KAZ = { # Kazakhstan
+	color = { 110 150 190 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { kazak }
+	capital = STATE_SEMIPALATINSK
+}
+KHI = { # Khiva
+	color = { 188 123 103 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { uzbek }
+	capital = STATE_KHIVA
+}
+KLM = { # Kalmykia
+	color = { 58 65 73 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { kalmyk }
+	capital = STATE_ASTRAKHAN
+}
+KOK = { # Kokand
+	color = { 119 130 145 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { kirgiz }
+	capital = STATE_FERGANA
+}
+KZH = {
+	color = { 90 120 120 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { kazak }
+	capital = STATE_TURGAI
+}
+MIN = { # Mingrelia
+	color = { 120 220 95  }
+	country_type = unrecognized
+	tier = principality
+	cultures = { georgian }
+	capital = STATE_KUTAIS
+}
+NCA = {
+	color = { 97 162 242 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_caucasian }
+	capital = STATE_KAZAN
+}
+OZH = {
+	color = { 80 80 100 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { kazak }
+	capital = STATE_SEMIPALATINSK
+}
+SVA = { # Svaneti
+	color = { 140 240 115  }
+	country_type = unrecognized
+	tier = principality
+	cultures = { georgian }
+	capital = STATE_KUTAIS
+}
+TRC = { # Turkmenia
+	color = { 165 117 208 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { turkmen }
+	capital = STATE_TRANSCASPIA
+}
+TRH = { # Turkestan
+	color = { 213 0 39 }
+	country_type = unrecognized
+	tier = empire
+	cultures = { uzbek kirgiz kazak turkmen tajik uighur }
+	capital = STATE_TRANSCASPIA
+}
+UZH = {
+	color = { 70 100 80 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { kazak }
+	capital = STATE_AKMOLINSK
+}

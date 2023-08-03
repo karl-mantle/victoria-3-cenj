@@ -1,0 +1,53 @@
+﻿FER = {
+	states = {
+		STATE_OKHOTSK
+		STATE_KAMCHATKA
+		STATE_CHUKOTKA
+		STATE_OUTER_MANCHURIA
+		STATE_SAKHALIN
+		STATE_AMUR
+	}
+	ai_will_do = { always = no }
+}
+PRM = { # Perm
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+SIB = { # Siberia
+	states = {
+		STATE_YAKUTSK
+		STATE_IRKUTSK
+		STATE_OKHOTSK
+		STATE_CHUKOTKA
+		STATE_UPPER_YENISEYSK
+		STATE_TOMSK
+		STATE_KAMCHATKA
+		STATE_BURYATIA
+		STATE_CHITA
+		STATE_KRASNOYARSK
+	}
+
+	required_num_states = 4
+
+	ai_will_do = { always = no }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+	}
+}
+TNS = {
+	states = {
+		STATE_OKHOTSK
+	}
+	ai_will_do = { always = no }
+}
+TUV = { # Tannu Tuva
+	states = {
+		STATE_TUVA
+	}
+	ai_will_do = { always = no }
+}
+YAK = { # Yakutia
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}

@@ -68,6 +68,10 @@
 				culture = armenian
 				size = 8400
 			}
+			create_pop = {
+				culture = romani
+				size = 400
+			}
 			
 		}
 		region_state:CHC = {
@@ -107,6 +111,10 @@
 				culture = mongol
 				size = 2000
 			}
+			create_pop = {
+				culture = romani
+				size = 1600
+			}
 		}
 		region_state:CIR = {
 			create_pop = {
@@ -130,8 +138,12 @@
 				size = 8000
 			}
 			create_pop = {
-				culture = greek
+				culture = pontic_greek
 				size = 1000
+			}
+			create_pop = {
+				culture = romani
+				size = 500
 			}
 		}
 		region_state:ABK = {
@@ -168,8 +180,8 @@
 				size = 2000
 			}
 			create_pop = {
-				culture = roma
-				size = 3500
+				culture = romani
+				size = 2900
 			}
 		}
 		region_state:CIR = {

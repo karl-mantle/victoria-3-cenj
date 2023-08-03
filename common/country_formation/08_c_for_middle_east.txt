@@ -1,0 +1,42 @@
+﻿ARA = { # Arabia
+	states = {
+		STATE_YEMEN
+		STATE_OMAN
+		STATE_ABU_DHABI
+		STATE_NEJD
+		STATE_HEDJAZ
+		STATE_HAIL
+		STATE_BAGHDAD
+		STATE_TRANSJORDAN
+		STATE_PALESTINE
+		STATE_LEBANON
+		STATE_DAMASCUS
+		STATE_ALEPPO
+		STATE_MOSUL
+		STATE_DEIR_EZ_ZOR
+		STATE_BASRA
+		STATE_NASIRIYA
+		STATE_SINAI
+		STATE_LOWER_EGYPT
+		STATE_MATRUH
+		STATE_KHARGA
+		STATE_QUSEIR
+		STATE_LUXOR
+		STATE_SUEZ
+		STATE_MEDINA
+		STATE_JAWF
+	}
+	required_states_fraction = 0.75	
+	ai_will_do = { always = yes }
+	possible = {
+		has_technology_researched = pan-nationalism
+	}
+}
+YEM = { # Yemen
+	states = {
+		STATE_YEMEN
+		STATE_HAIL
+	}
+	required_states_fraction = 0.75	
+	ai_will_do = { always = yes }
+}

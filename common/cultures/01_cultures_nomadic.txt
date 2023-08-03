@@ -2,7 +2,7 @@
 
 fantefolk={
 	color= rgb{ 105 39 70 }
-	religion = syncretic
+	religion = animist
 	traits = { scandinavian_culture_group european_heritage nomadic }
 	male_common_first_names={
 		Adrian Alfred Amund Anders Andreas Arne Arve August
@@ -110,160 +110,10 @@ fantefolk={
 		1 = caucasian
 	}
 }
-kale={
+romani={
 	color= hsv{ 0.24 0.16 0.90 }
-	religion = syncretic
-	traits = { south_asian_heritage hindustani nomadic }
-	male_common_first_names={
-		Bhagwant
-		Bhai
-		Durga
-		Fateh
-		Harsha
-		Hayat
-		Hussain
-		Jawapala
-		Malik
-		Mirza_Raja
-		Muhammad
-		Rai
-		Rao
-		Sardar
-		Sawai
-		Umar
-		Veer
-	}
-	female_common_first_names = {
-		Gayatri
-		Indira
-		Kishore
-		Maji
-		Marudhar
-	}	
-	noble_last_names = {
-		Gujar
-		Jethwa
-		Kunwar
-		Raksel
-	}
-	common_last_names={
-		Bachittar_Singh
-		Bhatti
-		Qaim
-		Shekha
-		Singh
-		Tiwana
-		ur_Rahman
-	}
-	ethnicities = {
-		1 = indian
-	}
-	graphics = european
-}
-roma={
-	color= hsv{ 0.24 0.16 0.80 }
-	religion = syncretic
-	traits = { south_asian_heritage hindustani nomadic }
-	male_common_first_names={
-		Bhagwant
-		Bhai
-		Durga
-		Fateh
-		Harsha
-		Hayat
-		Hussain
-		Jawapala
-		Malik
-		Mirza_Raja
-		Muhammad
-		Rai
-		Rao
-		Sardar
-		Sawai
-		Umar
-		Veer
-	}
-	female_common_first_names = {
-		Gayatri
-		Indira
-		Kishore
-		Maji
-		Marudhar
-	}	
-	noble_last_names = {
-		Gujar
-		Jethwa
-		Kunwar
-		Raksel
-	}
-	common_last_names={
-		Bachittar_Singh
-		Bhatti
-		Qaim
-		Shekha
-		Singh
-		Tiwana
-		ur_Rahman
-	}
-	ethnicities = {
-		1 = indian
-	}
-	graphics = european
-}
-romanichal={
-	color= hsv{ 0.24 0.16 0.70 }
-	religion = syncretic
-	traits = { south_asian_heritage hindustani nomadic }
-	male_common_first_names={
-		Bhagwant
-		Bhai
-		Durga
-		Fateh
-		Harsha
-		Hayat
-		Hussain
-		Jawapala
-		Malik
-		Mirza_Raja
-		Muhammad
-		Rai
-		Rao
-		Sardar
-		Sawai
-		Umar
-		Veer
-	}
-	female_common_first_names = {
-		Gayatri
-		Indira
-		Kishore
-		Maji
-		Marudhar
-	}	
-	noble_last_names = {
-		Gujar
-		Jethwa
-		Kunwar
-		Raksel
-	}
-	common_last_names={
-		Bachittar_Singh
-		Bhatti
-		Qaim
-		Shekha
-		Singh
-		Tiwana
-		ur_Rahman
-	}
-	ethnicities = {
-		1 = indian
-	}
-	graphics = european
-}
-sinti={
-	color= hsv{ 0.24 0.16 0.60 }
-	religion = syncretic
-	traits = { south_asian_heritage hindustani nomadic }
+	religion = orthodox
+	traits = { south_asian_heritage nomadic }
 	male_common_first_names={
 		Bhagwant
 		Bhai

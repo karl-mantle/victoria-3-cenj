@@ -735,6 +735,7 @@ STATES = {
 		}
 		
 		add_homeland = yankee
+		add_homeland = franco_canadian
 	}	
 	s:STATE_MAINE = {
 		create_state = {

@@ -1,0 +1,325 @@
+﻿ADG = {
+	color = { 215 132 165 }
+	country_type = decentralized
+	tier = principality
+	cultures = { tuareg }
+	capital = STATE_TIMBUKTU
+}
+AIR = {
+	color = { 30 31 162 }
+	country_type = decentralized
+	tier = principality
+	cultures = { tuareg }
+	capital = STATE_NIGER
+}
+AIT = {
+	color = { 255 255 153 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { berber }
+	capital = STATE_CONSTANTINE
+}
+AHG = {
+	color = { 138 168 70 }
+	country_type = decentralized
+	tier = principality
+	cultures = { tuareg }
+	capital = STATE_EAST_SAHARA
+}
+ALD = { # Algeria
+	color = { 220  202  96 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { maghrebi berber }
+	capital = STATE_ALGIERS
+}
+AWS = {
+	color = { 125 125 100 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { afar tigray }
+	capital = STATE_AMHARA
+}
+BGI = {
+	color = { 64 124 157 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { baguirmi }
+	capital = STATE_WADDAI
+}
+BGM = {
+	color = { 228 243 104 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { amhara oromo tigray }
+	capital = STATE_GALLA_SIDAMO
+}
+BJA = { # Beja
+	color = { 140 65 135 }
+	country_type = decentralized
+	tier = principality
+	cultures = { beja }
+	capital = STATE_DONGOLA
+}
+BRN = {
+	color = { 236 236 104 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { oromo }
+	capital = STATE_GALLA_SIDAMO
+}
+CON = { # Constantine
+	color = { 228 3 16 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { maghrebi berber }
+	capital = STATE_CONSTANTINE
+}
+CNR = { # Canary Islands
+	color = { 255 191 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { spanish }
+	capital = STATE_CANARY_ISLANDS
+}
+DFR = {
+	color = { 44 160 70 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { fur bedouin }
+	capital = STATE_DARFUR
+}
+EGY = { # Egypt
+	color = { 255  205  155 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { misri }
+	capital = STATE_LOWER_EGYPT
+}
+ETH = { # Ethiopia
+	color = { 56  120  191 }
+	country_type = unrecognized
+	tier = empire
+	
+	cultures = { amhara oromo tigray }
+	capital = STATE_AMHARA
+}
+GAO = { # Gao
+	color = { 62 175 151 }
+	country_type = decentralized
+	tier = principality
+	cultures = { songhai }
+	capital = STATE_TIMBUKTU
+}
+GJM = {
+	color = { 191 147 79 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { amhara oromo }
+	capital = STATE_GALLA_SIDAMO
+}
+GLD = {
+	color = { 38 160 67 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { somali }
+	capital = STATE_SOMALIA
+}
+HAR = { # Harar
+	color = { 175 75 15 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { somali amhara }
+	capital = STATE_SCIOA
+}
+HOB = {
+	color = { 255 73 7 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { somali }
+	capital = STATE_SOMALIA
+}
+ISQ = {
+	color = { 224 255 182 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { somali }
+	capital = STATE_SOMALIA
+}
+KFA = {
+	color = { 150 0 25 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { sidama oromo }
+	capital = STATE_GALLA_SIDAMO
+}
+KRT = {
+	color = { 127 28 45 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { bambara }
+	capital = STATE_WESTERN_MALI
+}
+MAL = { # Mali
+	color = { 75 179 27}
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { bambara fulbe}
+	capital = STATE_WESTERN_MALI
+}
+MAS = {
+	color = { 0 129 48 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { maghrebi berber }
+	capital = STATE_ORAN
+}
+MJT = {
+	color = { 220 200 100 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { somali }
+	capital = STATE_SOMALIA
+}
+MOR = { # Morocco
+	color = { 224  146  113 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { maghrebi berber }
+	capital = STATE_FEZ
+}
+MSN = {
+	color = { 230 231 62 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { fulbe }
+	capital = STATE_EASTERN_MALI
+}
+OUA = {
+	color = { 113 95 122 }
+	country_type = decentralized
+	tier = principality
+	cultures = { bidan }
+	capital = STATE_INNER_MAURITANIA
+}
+SAH = { # Sahrawi
+	color = { 220  202  96 }	
+	country_type = decentralized
+	tier = principality
+	cultures = { berber }
+	capital = STATE_WEST_SAHARA
+}
+SDM = {
+	color = { 83 65 167 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { sidama oromo }
+	capital = STATE_GALLA_SIDAMO
+}
+SGU = {
+	color = { 27 28 145 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { bambara }
+	capital = STATE_WESTERN_MALI
+}
+SHW = {
+	color = { 1 200 200 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { amhara oromo }
+	capital = STATE_SCIOA
+}
+SUD = { # Sudanese
+	color = { 189 159 69 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { sudanese beja bedouin }
+	capital = STATE_BLUE_NILE
+}
+TBI = {
+	color = { 220 210 97 }
+	country_type = decentralized
+	tier = principality
+	cultures = { teda }
+	capital = STATE_CHAD
+}
+TIR = { # Tiris
+	color = { 106 95 79 }
+	country_type = decentralized
+	tier = principality
+	cultures = { haratin }
+	capital = STATE_MAURITANIA
+}
+TGR = {
+	color = { 167 218 207 }
+	country_type = unrecognized
+	tier = principality
+	cultures =  { tigray amhara }
+	capital = STATE_GALLA_SIDAMO
+}
+TRI = { # Tripoli
+	color = { 180  137  148 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { maghrebi }
+	capital = STATE_TRIPOLI
+	is_named_from_capital = yes
+}
+TRZ = {
+	color = { 230 123 17 }
+	country_type = decentralized
+	tier = principality
+	cultures = { bidan }
+	capital = STATE_MAURITANIA
+}
+TUA = {
+	color = { 142 88 74 }
+	country_type = decentralized
+	tier = principality
+	cultures = { tuareg }
+	capital = STATE_SAHARA
+}
+TUG = {
+	color = { 90 140 190 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { berber }
+	capital = STATE_EAST_SAHARA
+}
+TUN = { # Tunis
+	color = { 131  101  85 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { maghrebi }
+	capital = STATE_TUNISIA
+	is_named_from_capital = yes
+}
+WAD = {
+	color = { 194 66 41 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { fur }
+	capital = STATE_WADDAI
+}
+WLG = {
+	color = { 126 208 222 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { oromo }
+	capital = STATE_GALLA_SIDAMO
+}
+WLO = {
+	color = { 222 199 163 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { amhara }
+	capital = STATE_GALLA_SIDAMO
+}
+WSG = {
+	color = { 18 97 128 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { somali }
+	capital = STATE_SOMALIA
+}

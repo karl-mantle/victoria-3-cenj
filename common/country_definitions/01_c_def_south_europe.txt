@@ -1,0 +1,434 @@
+﻿ACA = { # Achaea
+ 	color = { 255 213 51 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_PELOPONNESE
+}
+ALB = { # Albania
+	color = { 181 72 106 }
+	country_type = recognized
+	tier = principality
+	cultures = { albanian }
+	capital = STATE_ALBANIA
+	is_named_from_capital = yes
+}
+ANL = { # Andalusia
+	color = hsv360{ 82 87 78 }
+	country_type = recognized
+	tier = principality
+	cultures = { spanish }
+	capital = STATE_ANDALUSIA
+	is_named_from_capital = yes
+}
+AQU = { # Aquileia
+	color = { 34 30 174 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_ISTRIA
+}
+ARR = { # Aragon
+	color = { 166 68 72 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { catalan }
+	capital = STATE_ARAGON
+}
+ATR = { # Asturias
+	color = { 104 173 230 }
+	country_type = recognized
+	tier = principality
+	cultures = { spanish }
+	capital = STATE_ASTURIAS
+}
+ATH = { # Athens
+	color = { 113 112 96 }
+	country_type = recognized
+	tier = city_state
+	cultures = { greek }
+	capital = STATE_ATTICA
+}
+BLN = { # Bologna
+	color = { 236 95 0 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+}
+BYZ = { # Byzantine Empire
+	color = { 147 82 173 }
+	country_type = recognized
+	tier = empire
+	cultures = { greek }	
+	capital = STATE_EASTERN_THRACE
+	valid_as_home_country_for_separatists = { always = no } # root = country to separate from
+}
+CAS = { # Castile
+	color = hsv360{ 51 67 78 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { spanish }
+	capital = STATE_TOLEDO
+	is_named_from_capital = yes
+}
+CAT = { # Catalonia
+	color = { 213 132 76 }
+	country_type = recognized
+	tier = principality
+	cultures = { catalan }
+	capital = STATE_CATALONIA
+	is_named_from_capital = yes
+}
+CEP = { # Corfu
+	color = { 211 172 185 }
+	country_type = recognized
+	tier = city_state
+	cultures = { greek }
+	capital = STATE_IONIAN_ISLANDS
+}
+COR = { # Corsica
+	color = { 68 242 236}
+	country_type = recognized
+	tier = principality
+	cultures = { corsican }
+	capital = STATE_CORSICA
+}
+CRE = { # Crete
+	color = { 165 111 159 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_CRETE
+	is_named_from_capital = yes
+}
+CYP = { # Cyprus
+	color = { 78 75 39 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_CYPRUS
+	is_named_from_capital = yes
+}
+EPI = { # Epirus
+	color = { 230 228 214 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_EPIRUS
+}
+ETR = { # Etruria
+	color = { 114 154 143 } 
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_TUSCANY
+}
+FEA = { # Ferrara
+	color = { 21 128 21 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+}
+GEN = { # Genoa
+	color = { 218 215 56 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_LIGURIA
+}
+GIB = { # Gibraltar
+	color = { 218 0 12 }
+	country_type = recognized
+	tier = city_state
+	cultures = { british spanish }
+	capital = STATE_GRANADA
+}
+GLI = { # Galicia
+	color = { 125 243 255 }
+	country_type = recognized
+	tier = principality
+	cultures = { galician }
+	capital = STATE_GALICIA
+}
+GRE = { # Greece
+	color = { 122 180 210 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { greek }	
+	capital = STATE_ATTICA
+}
+IBE = { # Iberia
+	color = { 250 181 0 }
+	country_type = recognized
+	tier = empire
+	cultures = { spanish catalan portuguese basque galician }
+	capital = STATE_TOLEDO
+}
+ION = { # Ionian Islands
+	color = { 153 141 117 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }	
+	capital = STATE_IONIAN_ISLANDS
+	is_named_from_capital = yes
+}
+ITA = { # Italy
+	color = { 125 171 84 }
+	country_type = recognized
+	tier = empire
+	
+	cultures = { italian }
+	capital = STATE_LAZIO
+}
+KNI = { # Knights of Rhodes
+	color = { 106 127 183 }
+	country_type = recognized
+	tier = city_state
+	cultures = { maltese greek }
+	capital = STATE_AEGEAN_ISLANDS
+}
+LOM = { # Lombardy
+	color = { 146 108 146 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+	is_named_from_capital = yes
+}
+LUC = { # Lucca
+	color = { 114 171 184 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_EMILIA
+}
+MAT = { # Mantua
+	color = { 191 83 101 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+MCD = { # Macedonia
+	color = { 230 0 38 }
+	tier = principality
+	country_type = recognized
+	cultures = { greek }
+	capital = STATE_MACEDONIA
+}
+MFA = { # Montferrat
+	color = { 96 183 6 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+MLO = { # Milan
+	color = { 166 108 146 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+MLT = { # Malta
+	color = { 28 146 136 }
+	country_type = recognized
+	tier = city_state
+	cultures = { maltese }
+	capital = STATE_MALTA
+}
+MOD = { # Modena
+	color = { 241 252 151 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_EMILIA
+}
+MOE = { # Morea
+	color = { 168 121 129 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_PELOPONNESE
+}
+NAP = { # Naples
+	color = { 100 50 150 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_italian }
+	capital = STATE_CAMPANIA
+}
+NAV = { # Navarre
+	color = { 185 112 55 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { basque }
+	capital = STATE_NAVARRA
+	is_named_from_capital = yes
+}
+NAX = { # Naxos
+	color = { 24 50 123 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_CYCLADES
+}
+OCC = { # Occitania
+	color = { 101 50 253 }
+	country_type = recognized
+	tier = principality
+	cultures = { occitan }
+	capital = STATE_LANGUEDOC
+}
+PAP = { # Papal States
+	color = { 211 220 178 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_italian north_italian }
+	capital = STATE_LAZIO
+}
+PAR = { # Parma
+	color = { 128 202 129 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_EMILIA
+}
+PDV = { # Padua
+	color = { 186 106 58 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+PIS = { # Pisa
+	color = { 177 150 109 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_TUSCANY
+}
+POR = { # Portugal
+	color = { 28 82 148 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { portuguese }
+	capital = STATE_ESTREMADURA
+}
+SAD = { # Sardinia
+	color = { 117 146 167 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_italian }
+	capital = STATE_SARDINIA
+}
+SAR = { # Sardinia-Piedmont
+	color = { 117 146 167 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+	is_named_from_capital = yes
+}
+SIC = { # Two Sicilies
+	color = { 73 152 76 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_italian }
+	capital = STATE_CAMPANIA
+}
+SKL = { # Sicily
+	color = { 73 152 76 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_italian }
+	capital = STATE_SICILY
+}
+SPA = { # Spain
+	color = hsv360{ 38 97 83 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { spanish }
+	capital = STATE_TOLEDO
+}
+SPL = { # Spoleto
+	color = { 169 26 5 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_italian }
+	capital = STATE_UMBRIA
+}
+SZO = { # Saluzzo
+	color = { 137 185 203 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+THR = { # Thrace
+	color = { 0 128 255 }
+	tier = principality
+	country_type = recognized
+	cultures = { greek }
+	capital = STATE_EASTERN_THRACE
+}
+TNT = { # Trent
+	color = { 148 122 151 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_SOUTH_TYROL
+}
+TRE = { # Trieste
+	color = { 208 104 44 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_ISTRIA
+}
+TUS = { # Tuscany
+	color = { 84 96 136 }
+	country_type = recognized
+	tier = principality
+	capital = STATE_TUSCANY
+	cultures = { north_italian }
+	is_named_from_capital = yes
+}
+URB = { # Urbino
+	color = { 61 152 180 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_UMBRIA
+}
+VAL = { # Valencia
+	color = { 132 97 138 }
+	country_type = recognized
+	tier = city_state
+	cultures = { catalan }
+	capital = STATE_VALENCIA
+}
+VEN = { # Venice
+	color = { 180 12 1 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+	is_named_from_capital = yes
+}
+VRD = { # Vardaria
+	color = { 230 191 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { bulgarian }
+	capital = STATE_SKOPIA
+}
+VRN = { # Verona
+	color = { 121 163 114 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}

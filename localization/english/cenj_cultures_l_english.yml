@@ -35,7 +35,8 @@
 
  newfoundlander:0 "Newfoundlander"
  texan:0 "Texan"
-# Asia
+# Middle East
+ griko:0 "Griko"
  pontic_greek:0 "Pontic Greek"
 # Europe
  angevin:0 "Angevin"
@@ -86,11 +87,8 @@
  westphalian:0 "Westphalian"
  zipser:0 "Zipser"
 # Nomadic
- kale:0 "Kale"
  fantefolk:0 "Fantefolk"
- roma:0 "Romany"
- romanichal:0 "Romanichal"
- sinti:0 "Sinti"
+ romani:0 "Romani"
  yenish:0 "Yenish"
 # Russia
  abkhaz:0 "Abkhaz"

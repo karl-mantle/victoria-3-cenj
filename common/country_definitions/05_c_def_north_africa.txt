@@ -1,9 +1,0 @@
-﻿# Added
-
-CNR = { # Canary Islands
-	color = { 255 191 0 }
-	tier = principality
-	country_type = recognized
-	cultures = { spanish }
-	capital = STATE_CANARY_ISLANDS
-}

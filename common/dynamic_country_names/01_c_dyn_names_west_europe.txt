@@ -167,7 +167,12 @@ GBR = { # United Kingdom
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
+			scope:actor = {
+				exists = capital
+				NOT = {
+					capital = { state_region = s:STATE_LANCASHIRE }
+				}
+			}
 			coa_def_republic_flag_trigger = yes
 		}
 	}

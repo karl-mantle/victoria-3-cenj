@@ -1,5 +1,12 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.45
+- re-written country creation, definitions, and formations, and coa definitions
+- added new culture (griko)
+- reduced romani to one culture and adjusted population levels globally
+- changes to pops in western europe, russia, ottoman empire and siberia/central asia
+- gave french canadians a homeland in new hampshire
+- minor bugfixes in events and journals
 ### 0.0.44
 - added russian american company as a dominion of russia in control of alaska à la hudson's bay company
 - added 2 new state traits

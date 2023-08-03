@@ -1,0 +1,18 @@
+﻿BRZ = { # Brazil
+	use_culture_states = yes
+	required_states_fraction = 0.8
+	ai_will_do = { always = yes }
+}
+CLM = { # Colombia
+	use_culture_states = yes
+	required_states_fraction = 0.8
+	ai_will_do = { always = yes }
+}
+GCO = { # Gran Colombia
+	use_culture_states = yes
+	required_states_fraction = 0.75	
+	ai_will_do = { always = yes }
+	possible = {
+		has_technology_researched = nationalism
+	}
+}

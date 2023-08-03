@@ -1,0 +1,14 @@
+﻿ALD = { # Algeria
+	states = {
+		STATE_ALGIERS
+		STATE_ORAN
+		STATE_CONSTANTINE
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+ETH = { # Ethiopia
+	use_culture_states = yes
+	required_states_fraction = 0.50
+	ai_will_do = { always = yes }
+}

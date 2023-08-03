@@ -1,5 +1,4 @@
-﻿# Achaea
-
+﻿### Achaea
 ACA = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -14,7 +13,6 @@ ACA = {
 		color1 = "blue"
 	}
 }
-
 ACA_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -30,7 +28,6 @@ ACA_communist = {
 		color1 = "blue"
 	}
 }
-
 ACA_fascist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -41,7 +38,6 @@ ACA_fascist = {
 		color2 = "black"
 	}
 }
-
 ACA_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -51,7 +47,6 @@ ACA_monarchy = {
 		color1 = "yellow"
 	}
 }
-
 ACA_republic = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -76,15 +71,60 @@ ACA_republic = {
 		instance = { scale = { 0.3 0.31 } position = { 0.5 0.51 } }
 	}
 }
+### Albania
+ALB = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "black"
 
-# Aquileia
+	colored_emblem = {
+		texture = "ce_eagle_albania.dds"
+		color1 = color3
+		color2 = color3
+		color3 = color1
+        instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 }  }
+	}	
+}
+ALB_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "black"
 
+	colored_emblem = {
+		texture = "ce_eagle_albania.dds"
+		color1 = color3
+		color2 = color3
+		color3 = color1
+        instance = { scale = { 0.95 0.95 } position = { 0.5 0.55 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.15 0.15 } position = { 0.5 0.15 }  }
+	}	
+}
+### Andalusia
+ANL = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color1
+	}
+}
+### Aquileia
 AQU = {
 	pattern = "pattern_horizontal_split_01.tga"
 	color2 = "blue"
 	color1 = "yellow"
 }
-
 AQU_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -99,7 +139,6 @@ AQU_communist = {
 		instance = { scale = { 0.2 0.2 } position = { 0.8 0.2 } }
 	}
 }
-
 AQU_fascist = {
 	pattern = "pattern_per_bend.dds"
 	color1 = "blue"
@@ -118,7 +157,6 @@ AQU_fascist = {
 		instance = { scale = { 0.7 0.7 } position = { 0.75 0.4 } rotation = 30 }
 	}
 }
-
 AQU_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
@@ -129,13 +167,10 @@ AQU_monarchy = {
 		color2 = "red"
 	}
 }
-
 AQU_republic = {
-	textured_emblem = { texture = "EU4toVic2/AQU_republic.tga" } # MISSING
+	textured_emblem = { texture = "EU4toVic2/AQU_republic.tga" } ### MISSING
 }
-
-# Aragon
-
+### Aragon
 ARR = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
@@ -146,7 +181,6 @@ ARR = {
 		instance = { rotation = 90 scale = { 1 1.3 } position = { 0.45 0.5 } }
 	}
 }
-
 ARR_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -165,7 +199,6 @@ ARR_communist = {
 		instance = { scale = { 0.5 0.5 } }
 	}
 }
-
 ARR_fascist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -185,7 +218,6 @@ ARR_fascist = {
 	}
 	sub = { parent = "censorship_mask" }
 }
-
 ARR_republic = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -195,13 +227,10 @@ ARR_republic = {
 		color1 = "yellow"
 	}
 }
-
-# Asturias
-
+### Asturias
 ATR = { 
 	textured_emblem = { texture = "EU4toVic2/ATR.tga" } 
 }
-
 ATR_communist = {
 
 	pattern = "pattern_solid.tga"
@@ -212,17 +241,13 @@ ATR_communist = {
 		color1 = "red"
 	}
 }
-
 ATR_fascist = {
 	textured_emblem = { texture = "EU4toVic2/ATR_fascist.tga" }
 }
-
 ATR_republic = {
 	textured_emblem = { texture = "EU4toVic2/ATR_republic.tga" } 
 }
-
-# Athens
-
+### Athens
 ATH = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -239,7 +264,6 @@ ATH = {
 		instance = { scale = { 0.8 0.8 } }
 	}
 }
-
 ATH_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -256,7 +280,6 @@ ATH_communist = {
 		instance = { scale = { 0.8 0.8 } }
 	}
 }
-
 ATH_fascist = {
 	textured_emblem = { texture = "EU4toVic2/ATH_fascist.tga" }
 }
@@ -264,9 +287,7 @@ ATH_fascist = {
 ATH_monarchy = {
 	textured_emblem = { texture = "EU4toVic2/ATH_monarchy.tga" }
 }
-
-# Bologna
-
+### Bologna
 BLN = {
 	textured_emblem = { texture = "EU4toVic2/BLN.tga" }
 }
@@ -299,9 +320,132 @@ BLN_fascist = {
 BLN_monarchy = {
 	textured_emblem = { texture = "EU4toVic2/BLN_monarchy.tga" }
 }
+### Byzantine Empire
+BYZ = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
 
-# Corfu
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_letter_beta.dds"
+		color1 = color2
+		color2 = color2
+		
+        instance = { position = { @[canton_scale_cross_x/2] @[canton_scale_cross_y/2] } scale = { @[-1/5*2] @[1/5*2] } } # top left
+        instance = { position = { @[1-(canton_scale_cross_x/2)] @[canton_scale_cross_y/2] } scale = { @[1/5*2] @[1/5*2] } } # top right
+        instance = { position = { @[canton_scale_cross_x/2] @[1-(canton_scale_cross_y/2)] } scale = { @[-1/5*2] @[1/5*2] } } # bottom left
+        instance = { position = { @[1-(canton_scale_cross_x/2)] @[1-(canton_scale_cross_y/2)] } scale = { @[1/5*2] @[1/5*2] } } # bottom right
+	}
+}
+### Castile
+CAS = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "purple"
+	color5 = "blue"
 
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_rampant_crowned.dds"
+		color1 = color4
+		color2 = color3
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_castle.dds"
+		color1 = color3
+		color2 = color5
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.45 } }
+		instance = { position = { 0.75 0.75 } scale = { 0.5 0.45 } }
+	}
+}
+### Catalonia
+CAT = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripes_9.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+}
+CAT_coa = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripes_9.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { rotation = 90 } 
+	}
+}
+CAT_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "blue"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_stripes_9.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.175 0.5 } scale = { 0.4 0.4 } }
+	}
+}
+CAT_communist = {	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "yellow"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripes_9.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.175 0.5 } scale = { 0.4 0.4 } }
+	}
+}
+### Corfu
 CEP = { 
 	textured_emblem = { texture = "EU4toVic2/CEP.tga" }
 }
@@ -350,9 +494,133 @@ CEP_fascist = {
 CEP_republic = {
 	textured_emblem = { texture = "EU4toVic2/CEP_republic.tga" }
 }
+### Corsica
+COR = { 
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_moors_head.dds"
+		color1 = "black_light"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
+	}
+}
+COR_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+		
+	colored_emblem = {
+		texture = "ce_moors_head.dds"
+		color1 = "black_light"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 0.7 0.7 } position = { 0.75 0.60 } }
+	}
+}
+### Crete
+CRE = { 
+	# 1898 Ottoman star in canton
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
 
-# Epirus
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.25 } }		
+	}
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.21 0.21 } scale = { 0.4 0.4 } }
+	}	
+}
+CRE_variant = {
+	# Variant with stripes
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
 
+	colored_emblem = {
+		texture = "ce_stripes_9.dds"
+		color1 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { @third @uru_canton_height } position = { @[third/2] @[uru_canton_height/2] } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { @[uru_canton_height*0.66] @[uru_canton_height*0.66] } position = { @[third/2] @[uru_canton_height/2] } }
+	}
+}
+### Cyprus
+CYP = { 
+	# Flag used by cypriots during greek war of independence
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_cotised.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+CYP_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant.dds"
+		color1 = "red"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.40 } }
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.58 } }		
+	}
+}
+CYP_TUR = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.2 0.28 } }		
+		instance = { scale = { 0.45 0.45 } position = { 0.2 0.72 } }		
+		instance = { scale = { 0.45 0.45 } position = { 0.45 0.5 } }				
+	}
+}
+### Epirus
 EPI = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
@@ -392,9 +660,7 @@ EPI_monarchy = {
 EPI_republic = {
 	textured_emblem = { texture = "EU4toVic2/EPI_republic.tga" } 
 }
-
-# Etruria
-
+### Etruria
 ETR = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -499,9 +765,7 @@ ETR_monarchy = {
 		instance = { scale = { 0.2 0.2 } position = { 0.565 0.38 } }
 	}
 }
-
-# Ferrara
-
+### Ferrara
 FEA = {
 	pattern = "pattern_horizontal_split_01.tga"
 	color2 = "black"
@@ -554,9 +818,7 @@ FEA_republic = {
 		instance = { scale = { 0.8 0.8 } }
 	}
 }
-
-# Genoa
-
+### Genoa
 GEN = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -593,9 +855,7 @@ GEN_fascist = {
 GEN_monarchy = { 
 	textured_emblem = { texture = "EU4toVic2/GEN_monarchy.tga" } 
 }
-
-# Gibraltar
-
+### Gibraltar
 GIB = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -612,9 +872,325 @@ GIB = {
 		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }
 	}
 }
+### Galicia
+GLI = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bend_dexter.dds"
+		color1 = "light_blue"
+	}
+}
+### Greece
+GRE = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
 
-# Knights of Rhodes
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+GRE_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "blue"
 
+	colored_emblem = {
+		texture = "ce_stripes_9.dds"
+		color1 = color2
+		color2 = color2
+	}
+	
+    sub = {
+        parent = "sub_GRE_square" 
+		instance = { scale = { @[1/9*5/1.5] @[1/9*5] } }			
+    }	
+}
+GRE_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = "yellow"
+		color2 = "azure"
+		color3 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.5 0.5 } }
+	}
+}
+GRE_fascist = {		
+	# EON flag, without the crown in canton
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "yellow_dark"
+		color2 = "green"
+		instance = { scale = { 0.66 0.66 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_labrys.dds"
+		color1 = "yellow_dark"
+		color2 = "yellow_dark"
+		instance = { scale = { 0.45 0.45 } position = { 0.5 0.52 } }
+	}	
+}
+### Iberia
+IBE = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "white"
+	# top right
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.25 } }
+	}
+	# bottom left
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.75 } }
+	}
+	# bottom right
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.75 } }
+	}
+}
+### Ionian Islands
+ION = { 
+	# Septinsular Republic
+	
+	pattern = "pattern_border_of_4.dds"
+	color1 = "blue"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_lion_corfu.dds"
+		color1 = "yellow"
+		color2 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
+	}
+}
+ION_subject = {
+	pattern = "pattern_border_of_3.dds"
+	color1 = "blue"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_lion_corfu.dds"
+		color1 = "yellow"
+		color2 = "pearl"
+		instance = { scale = { 0.5 0.5 } position = { 0.68 0.69 } }	
+	}
+}
+### Italy
+ITA = { 
+	# Until 1946
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_italia.dds"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.62 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.25 } }
+	}	
+}
+ITA_sicilian = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_necklace_two_sicilies.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.50 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.375 0.375 } position = { 0.5 0.30 } }
+	}	
+	textured_emblem = {
+		texture = "te_coa_two_sicilies.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.50 } }
+	}			
+}
+ITA_papal = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_papal_states_tiara.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.49 } }
+	}					
+}
+ITA_tuscan = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_tuscany.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.55 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.33 0.33 } position = { 0.5 0.27 } }
+	}		
+}
+ITA_modenan = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.27 } }
+	}	
+    sub = {
+        parent = "sub_MOD_coa" 
+        instance = { scale = { @[third*2] @[third*2] } offset = { @[third/2] 0.20 } }
+    }		
+}
+ITA_parmesan = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	
+    sub = {
+        parent = "sub_PAR_coa" 
+		instance = { scale = { 0.85 0.85 } offset = { 0.075 0.075 } }
+    }
+}
+ITA_luccan = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.292 } }	
+	}	
+	textured_emblem = {
+		texture = "te_coa_lucca.dds"
+		instance = { scale = { 0.83 0.83 } position = { 0.5 0.65 } }	
+	}	
+}
+ITA_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}		
+}
+ITA_dictatorship = {
+	# Flag of Napoleonic kingdom
+	
+	pattern = "pattern_rhombus.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_eagle_napoleonian.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		color3 = "green"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }
+	}
+}
+ITA_communist = {
+	pattern = "pattern_border_double.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "green"
+
+	colored_emblem = {
+		texture = "ce_hammer_sickle_italy.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.4 0.4 } position = { 0.20 0.30 } } 
+	}	
+}
+ITA_fascist = {		
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+    sub = {
+        parent = "sub_ITA_eagle" 
+        instance = { scale = { 1.0 1.0 } }
+    }		
+}
+### Knights of Rhodes
 KNI = { 
 	textured_emblem = { texture = "EU4toVic2/KNI.tga" } 
 }
@@ -633,9 +1209,84 @@ KNI_republic = {
 		color1 = "white"
 	}
 }
+### Lombardy
+LOM = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
 
-# Mantua
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+### Lucca
+LUC = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.125 0.125 } scale = { 0.250 0.250 } }		
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.125 0.187 } scale = { 0.250 0.125 } }		
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.25 } }	
+	}	
+	textured_emblem = {
+		texture = "te_coa_lucca.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.65 } }	
+	}	
+}
+LUC_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
 
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+LUC_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { @[0.25*1.5] 0.5 } position = { @[0.25*1.5/2] 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_hammer_sickle_italy.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.17 0.24 } } 
+	}	
+}
+LUC_subject_FRA = {	
+	pattern = "pattern_border_of_4.dds"
+	color1 = "white"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.875 0.8 } position = { 0.5 0.5 } }		
+	}		
+}
+### Mantua
 MAT = { 
 	textured_emblem = { texture = "EU4toVic2/MAT.tga" } 
 }
@@ -648,10 +1299,8 @@ MAT_fascist = {
 MAT_monarchy = { 
 	textured_emblem = { texture = "EU4toVic2/MAT_monarchy.tga" } 
 }
-
-# Macedonia
-
-MCD = { #TODO
+### Macedonia
+MCD = { ###TODO
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 
@@ -661,9 +1310,7 @@ MCD = { #TODO
 		color2 = "yellow"
 	}
 }
-
-# Montferrat
-
+### Montferrat
 MFA = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -707,9 +1354,19 @@ MFA_republic = {
 		color2 = "white"
 	}
 }
+### Malta
+MLT = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
 
-# Milan
-
+	colored_emblem = {		
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+### Milan
 MLO = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -740,9 +1397,84 @@ MLO_fascist = {
 MLO_monarchy = { 
 	textured_emblem = { texture = "EU4toVic2/MLO_monarchy.tga" }
 }
+### Modena
+MOD = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
 
-# Morea
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.372 1.0 } position = { 0.5 0.5 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.124 1.0 } position = { 0.5 0.5 } }		
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.27 } }
+	}	
+    sub = {
+        parent = "sub_MOD_coa" 
+        instance = { scale = { @[third*2] @[third*2] } offset = { @[third/2] 0.20 } }
+    }		
+}
+MOD_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
 
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "blue"
+	}
+}
+MOD_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "blue"
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { scale = { 0.72 0.72 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}	
+}
+MOD_subject = {
+	pattern = "pattern_border_of_4.dds"
+	color1 = "blue"
+	color2 = "white"
+	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.33 0.33 } position = { 0.725 0.32 } }
+	}	
+    sub = {
+        parent = "sub_MOD_coa_subject" 
+        instance = { scale = { 0.6 0.6 } offset = { 0.275 0.25 } }
+    }		
+}
+### Morea
 MOE = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -846,17 +1578,15 @@ MOE_republic = {
 		instance = { scale = { 0.4 0.4 } position = { 0.25 0.2 } }
 	}
 }
-
-# Naples
-
+### Naples
 NAP = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 
-	colored_emblem = { # Semy-de-lys
+	colored_emblem = { ### Semy-de-lys
 		texture = "ce_fleur_de_lis.dds"
 		color1 = "yellow"
-		# Row one
+		### Row one
 		instance = { scale = { 0.2 0.2 } position = { 0.05 0.05 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.20 0.05 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.35 0.05 } }
@@ -864,14 +1594,14 @@ NAP = {
 		instance = { scale = { 0.2 0.2 } position = { 0.65 0.05 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.80 0.05 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.95 0.05 } }
-		# Row two
+		### Row two
 		instance = { scale = { 0.2 0.2 } position = { 0.13 0.20 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.28 0.20 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.43 0.20 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.58 0.20 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.73 0.20 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.88 0.20 } }
-		# Row one
+		### Row one
 		instance = { scale = { 0.2 0.2 } position = { 0.05 0.35 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.20 0.35 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.35 0.35 } }
@@ -879,14 +1609,14 @@ NAP = {
 		instance = { scale = { 0.2 0.2 } position = { 0.65 0.35 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.80 0.35 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.95 0.35 } }
-		# Row two
+		### Row two
 		instance = { scale = { 0.2 0.2 } position = { 0.13 0.50 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.28 0.50 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.43 0.50 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.58 0.50 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.73 0.50 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.88 0.50 } }
-		# Row one
+		### Row one
 		instance = { scale = { 0.2 0.2 } position = { 0.05 0.65 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.20 0.65 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.35 0.65 } }
@@ -894,14 +1624,14 @@ NAP = {
 		instance = { scale = { 0.2 0.2 } position = { 0.65 0.65 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.80 0.65 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.95 0.65 } }
-		# Row two
+		### Row two
 		instance = { scale = { 0.2 0.2 } position = { 0.13 0.80 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.28 0.80 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.43 0.80 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.58 0.80 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.73 0.80 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.88 0.80 } }
-		# Row one
+		### Row one
 		instance = { scale = { 0.2 0.2 } position = { 0.05 0.95 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.20 0.95 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.35 0.95 } }
@@ -909,7 +1639,7 @@ NAP = {
 		instance = { scale = { 0.2 0.2 } position = { 0.65 0.95 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.80 0.95 } }
 		instance = { scale = { 0.2 0.2 } position = { 0.95 0.95 } }
-		# Row three
+		### Row three
 	}
 	colored_emblem = {
 		texture = "ce_solid.dds"
@@ -960,9 +1690,35 @@ NAP_republic = {
 		color2 = "red"
 	}
 }
+### Navarre
+NAV = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
 
-# Naxos
+	colored_emblem = {
+		texture = "ce_chains.dds"
+		color1 = "yellow"
+		color2 = "green"
+	}
+}
+NAV_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "green"
+	color3 = "white"
 
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color3
+		color2 = color3
+	}
+}
+### Naxos
 NAX = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -1018,9 +1774,171 @@ NAX_republic = {
 		instance = { scale = { 0.5 0.5 } }
 	}
 }
+### Occitania
+OCC = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	
+	colored_emblem = { 
+		texture = "ce_cross_occitan.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.25 0.25 } position = { 0.8 0.25 } }
+	}	
+}
+OCC_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
 
-# Padua
+	colored_emblem = { 
+		texture = "ce_cross_occitan.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.75 0.5 } }
+	}	
+}
+### Papal States
+PAP = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "yellow"
+}
+PAP_theocracy = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "yellow"
+	color2 = "white"
+	textured_emblem = {
+		texture = "te_coa_papal_states_tiara.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.75 0.49 } }
+	}		
+}
+PAP_republic = {
+	# BWR republican is for Rome/Latium
+	pattern = "pattern_solid.tga"
+	color1 = "black"
 
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+}
+PAP_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}		
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.56 0.56 } position = { 0.5 0.5 } } 
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.44 0.44 } position = { 0.5 0.5 } } 
+	}
+}
+PAP_fascist = {	
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_chi_rho.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
+	}	
+}
+### Parma
+PAR = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "white"
+}
+PAR_absolute_monarchy = {
+	# Great arms flag, before 1802 & after 1847
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+    sub = {
+        parent = "sub_PAR_coa" 
+		instance = { scale = { 0.85 0.85 } offset = { 0.075 0.075 } }
+    }
+}
+PAR_absolute_monarchy_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+    sub = {
+        parent = "sub_PAR_coa_subject" 
+		instance = { scale = { 0.75 0.75 } offset = { 0.188 0.15 } }
+    }
+}
+PAR_republic = {
+	# 1848 Horiz. Bicolour
+	
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "blue_light"
+		color2 = "blue_light"
+	}
+}
+PAR_dictatorship = {
+	# Gironny flag
+	
+	pattern = "pattern_gironny_8.dds"
+	color1 = "yellow"
+	color2 = "blue_light"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.05 } scale = { 1.0 0.1 } }
+		instance = { position = { 0.5 0.95 } scale = { 1.0 0.1 } }		
+		instance = { position = { 0.05 0.5 } scale = { 0.1 1.0 } }	
+		instance = { position = { 0.95 0.5 } scale = { 0.1 1.0 } }			
+	}
+}
+PAR_communist = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_hammer_sickle_italy.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.17 0.24 } } 
+	}		
+}
+### Padua
 PDV = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -1047,9 +1965,7 @@ PDV_communist = {
 PDV_monarchy = { 
 	textured_emblem = { texture = "EU4toVic2/PDV_monarchy.tga" }
 }
-
-# Pisa
-
+### Pisa
 PIS = { 
 	textured_emblem = { texture = "EU4toVic2/PIS.tga" } 
 }
@@ -1062,9 +1978,160 @@ PIS_fascist = {
 PIS_monarchy = { 
 	textured_emblem = { texture = "EU4toVic2/PIS_monarchy.tga" } 
 }
+### Portugal
+POR = { 
+	pattern = "pattern_solid.tga"
+	color1 = "white"
 
-# Sardinia
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.5 1.0 } position = { 0.25 0.5 } }			
+	}
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.68 0.75 } position = { 0.5 0.28 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portugal.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.67 } }
+	}	
+}
+POR_republic = {
+	# 1910 Republican flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
 
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { @third 1.0 } position = { @[third/2] 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { @third 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portuguese_republic.dds"
+		instance = { scale = { 0.55 0.55 } position = { @third 0.5 } }
+	}	
+}
+POR_dictatorship = {
+	# Design mostly borrowed from republican war flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { 0.5 1.0 } position = { 0.25 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.60 0.60 } position = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portuguese_republic.dds"
+		instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 } }
+	}	
+}
+POR_absolute_monarchy = {
+	# 1816-26
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	textured_emblem = {
+		texture = "te_crown_cut.dds"
+		instance = { scale = { 0.5 0.5 } position = { @third 0.235 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { @third 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.7 0.7 } position = { @third 0.58 } }
+	}
+
+	textured_emblem = {
+		texture = "te_coa_portugal.dds"
+		instance = { scale = { 0.7 0.7 } position = { @third 0.58 } }
+	}
+}
+POR_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "green"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "green"
+		color2 = "green"
+	}
+	colored_emblem = {
+		texture = "ce_hammer_and_sickle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.16 0.29 } scale = { 0.4 0.4 } } 
+	}
+	colored_emblem = {
+		texture = "ce_star_05_hollow.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.14 0.11 } scale = { 0.12 0.12 } } 
+	}	
+}
+POR_fascist = {		
+	# MNS flag
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_cross_order_christ.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}	
+}
+POR_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.30 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portugal.dds"
+		instance = { scale = { 0.67 0.67 } position = { 0.75 0.54 } }
+	}	
+}
+### Sardinia
 SAD = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -1084,9 +2151,204 @@ SAD = {
 		color1 = "red"
 	}
 }
+### Sardinia-Piedmont
+SAR = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
 
-# Sicily
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_cross_sardinia.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.17 0.17 } position = { 0.25 0.050 } }
+	}	
+}
+SAR_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
 
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_cross_sardinia.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+	}
+}
+SAR_canton = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_sardinia.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+SAR_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { @[0.25*1.5] 0.5 } position = { @[0.25*1.5/2] 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_hammer_sickle_italy.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.17 0.24 } } 
+	}	
+}
+SAR_subject = {
+	# Based on royal standard
+	pattern = "pattern_border_of_4.dds"
+	color1 = "white"
+	color2 = "blue"
+		
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.36 0.36 } position = { 0.75 0.300 } }
+	}
+	colored_emblem = {
+		texture = "ce_shield_cross.dds"
+		color1 = "black"
+		color2 = "black"
+		color3 = "black"
+		instance = { scale = { 0.46 0.46 } position = { 0.75 0.54 } }
+	}		
+	colored_emblem = {
+		texture = "ce_shield_cross.dds"
+		color1 = "red"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.54 } }
+	}	
+}
+SAR_subject_GBR = {
+	pattern = "pattern_border_of_4.dds"
+	color1 = "blue"
+	color2 = "red"
+		
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.36 0.36 } position = { 0.75 0.300 } }
+	}
+	colored_emblem = {
+		texture = "ce_shield_cross.dds"
+		color1 = "red"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.75 0.54 } }
+	}	
+}
+### Two Sicilies
+SIC = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_necklace_two_sicilies.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.38 0.50 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.38 0.22 } }
+	}	
+	textured_emblem = {
+		texture = "te_coa_two_sicilies.dds"
+		instance = { scale = { 0.67 0.67 } position = { 0.38 0.50 } }
+	}			
+}
+SIC_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_necklace_two_sicilies.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.75 0.50 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.36 0.36 } position = { 0.75 0.28 } }
+	}	
+	textured_emblem = {
+		texture = "te_coa_two_sicilies.dds"
+		instance = { scale = { 0.55 0.55 } position = { 0.75 0.50 } }
+	}			
+}
+SIC_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_checkered_orle.dds"
+		color1 = "red"
+		color2 = "white"
+	}	
+}
+SIC_dictatorship = {
+	pattern = "pattern_checkers_01.tga"
+	color1 = "red"
+	color2 = "black"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"
+		color2 = "white"
+	}	
+	colored_emblem = {
+		texture = "ce_triskelion_sicily.dds"
+		color1 = "peach" # or plain gold
+		color2 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }		
+	}	
+}
+SIC_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_hammer_sickle_italy.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.16 0.24 } } 
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue_light"
+		color2 = "blue_light"
+		instance = { scale = { 1.0 0.1 } position = { 0.5 0.75 } }
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 1.0 0.1 } position = { 0.5 0.85 } }
+	}		
+}
+### Sicily
 SKL = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
@@ -1132,9 +2394,191 @@ SKL_communist = {
 SKL_fascist = { 
 	textured_emblem = { texture = "EU4toVic2/SKL_fascist.tga" } 
 }
+### Spain
+SPA = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
 
-# Spoleto
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.125 } }	
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.875 } }			
+	}
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.35 0.35 } position = { 0.33 0.36 } }
+	}		
+    sub = {
+        parent = "sub_SPA_coa" 
+        instance = { scale = { 0.5 0.5 } offset = { 0.08 0.32 } }
+    }	
+}
+SPA_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
 
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+SPA_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "purple"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	textured_emblem = {
+		texture = "te_coa_spanish_republic.dds"
+		instance = { position = { 0.5 0.51 }scale = { 0.45 0.45 } } 
+	}
+}
+SPA_dictatorship = {
+	# Just the overall idea for now : Will look much better with the corrected eagle as supporter
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "yellow_dark"
+		color2 = "yellow_dark"
+		instance = { scale = { 0.28 0.28 } position = { 0.505 0.315 } }
+	}		
+	colored_emblem = {
+		texture = "ce_eagle.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}		
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { 0.32 0.32 } position = { 0.5 0.55 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_spanish_republic.dds"
+		instance = { scale = { 0.37 0.37 } position = { 0.5 0.50 } } 
+	}
+}
+SPA_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "purple"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.875 } scale = { 1.0 0.25 } } 		
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.75 } scale = { 1.0 0.1 } } 		
+	}	
+	colored_emblem = {
+		texture = "ce_hammer_and_sickle_round.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.16 0.24 } scale = { 0.4 0.4 } } 
+	}
+}
+SPA_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.125 } }	
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.875 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.28 0.56 } position = { 0.33 0.5 } rotation = 45 }				
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.25 0.5 } position = { 0.33 0.5 } rotation = 45 }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_cross_santiago.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.6 0.6 } position = { 0.33 0.52 } }
+	}	
+}
+SPA_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 1.0 0.2 } position = { 0.5 0.1 } }	
+		instance = { scale = { 1.0 0.2 } position = { 0.5 0.9 } }			
+	}
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.34 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_round_per_pale.dds"
+		color1 = "yellow_dark"
+		color2 = "yellow"
+		instance = { scale = { 0.42 0.42 } position = { 0.75 0.55 } }
+	}	
+    sub = {
+        parent = "sub_SPA_coa" 
+        instance = { scale = { 0.5 0.5 } offset = { 0.5 0.30 } }
+    }	
+}
+SPA_subject_GBR = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.34 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_round_per_pale.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.425 0.425 } position = { 0.75 0.55 } }
+	}	
+    sub = {
+        parent = "sub_SPA_coa" 
+        instance = { scale = { 0.5 0.5 } offset = { 0.5 0.30 } }
+    }	
+}
+### Spoleto
 SPL = { 
 	textured_emblem = { texture = "EU4toVic2/SPL.tga" } 
 }
@@ -1144,9 +2588,7 @@ SPL_communist = {
 SPL_fascist = { 
 	textured_emblem = { texture = "EU4toVic2/SPL_fascist.tga" } 
 }
-
-# Saluzzo
-
+### Saluzzo
 SZO = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -1179,9 +2621,7 @@ SZO_fascist = {
 SZO_republic = { 
 	textured_emblem = { texture = "EU4toVic2/SZO_republic.tga" } 
 }
-
-# Thrace
-
+### Thrace
 THR = {
 	pattern = "pattern_solid.tga"
 	color1 = { 0 20 137 }
@@ -1191,9 +2631,7 @@ THR = {
 		color1 = "black"
 	}
 }
-
-# Trent
-
+### Trent
 TNT = { 
 	textured_emblem = { texture = "EU4toVic2/TNT.tga" } 
 }
@@ -1219,9 +2657,101 @@ TNT_republic = {
 		color3 = "white"
 	}
 }
+### Trieste
+TRE = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_corseca_trieste.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
+	}		
+}
+TRE_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_corseca_trieste.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.65 0.65 } position = { 0.75 0.5 } }
+	}	
+}
+### Tuscany
+TUS = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
 
-# Urbino
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_tuscany.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.38 0.55 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.44 0.44 } position = { 0.38 0.18 } }
+	}		
+	
+}
+TUS_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
 
+	textured_emblem = {
+		texture = "te_coa_tuscany.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.68 0.58 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.44 0.44 } position = { 0.68 0.21 } }
+	}			
+}
+TUS_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "blue_light"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}	
+}
+TUS_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "blue_light"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_hammer_sickle_italy.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.175 0.5 } } 
+	}	
+}
+### Urbino
 URB = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
@@ -1267,9 +2797,7 @@ URB_monarchy = {
 URB_republic = { 
 	textured_emblem = { texture = "EU4toVic2/URB_republic.tga" } 
 }
-
-# Valencia
-
+### Valencia
 VAL = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -1336,10 +2864,30 @@ VAL_fascist = {
 VAL_monarchy = { 
 	textured_emblem = { texture = "EU4toVic2/VAL_monarchy.tga" } 
 }
-
-# Vardaria
-
-VRD = { #TODO
+### Venice
+VEN = {
+	pattern = "pattern_border_venice.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+	
+	textured_emblem = {
+		texture = "te_lion_san_marco.dds"
+		instance = { scale = { 1.2 1.2 } position = { 0.50 0.52 } }
+	}		
+}
+VEN_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	
+	textured_emblem = {
+		texture = "te_lion_san_marco.dds"
+		instance = { scale = { 0.8 0.8 } position = { 0.72 0.65 } }	
+	}	
+}
+### Vardaria
+VRD = { ###TODO
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -1349,9 +2897,7 @@ VRD = { #TODO
 		color2 = "yellow"
 	}
 }
-
-# Verona
-
+### Verona
 VRN = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"

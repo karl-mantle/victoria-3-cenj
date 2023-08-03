@@ -25,6 +25,10 @@
 				culture = ashkenazi
 				size = 5600
 			}
+			create_pop = {
+				culture = romani
+				size = 600
+			}
 		}
 	}
 	s:STATE_PSKOV = {
@@ -42,13 +46,17 @@
 				size = 12000
 			}
 			create_pop = {
-				culture = ugrian
+				culture = livonian
 				religion = orthodox
 				size = 8004
 			}
 			create_pop = {
 				culture = ashkenazi
 				size = 5600
+			}
+			create_pop = {
+				culture = romani
+				size = 500
 			}
 		}
 	}
@@ -61,6 +69,11 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 2200
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 200
 			}
 		}
 	}
@@ -132,6 +145,11 @@
 				culture = lithuanian
 				size = 25996
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 500
+			}
 		}
 	}
 	s:STATE_VOLHYNIA = {
@@ -151,6 +169,11 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 134800
+			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 400
 			}
 		}
 	}
@@ -172,6 +195,11 @@
 				culture = russian
 				size = 50400
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 600
+			}
 		}
 	}
 	s:STATE_PODOLIA = {
@@ -191,6 +219,15 @@
 			create_pop = {
 				culture = russian
 				size = 6400
+			}
+			create_pop = {
+				culture = romani
+				size = 1500
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 600
 			}
 		}
 	}
@@ -215,6 +252,11 @@
 			create_pop = {
 				culture = byelorussian
 				size = 10000
+			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 200
 			}
 		}
 	}
@@ -252,6 +294,10 @@
 				culture = ukrainian
 				size = 4004
 			}
+			create_pop = {
+				culture = karelian
+				size = 12000
+			}
 		}
 	}
 	s:STATE_SMOLENSK = {
@@ -266,7 +312,7 @@
 			}
 			create_pop = {
 				culture = karelian
-				size = 84000
+				size = 7000
 			}
 			create_pop = {
 				culture = byelorussian
@@ -344,6 +390,11 @@
 				culture = polish
 				size = 20208
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 200
+			}
 		}
 	}
 	s:STATE_EAST_KARELIA = {
@@ -359,7 +410,7 @@
 			}
 			create_pop = {
 				culture = karelian
-				size = 47200
+				size = 57200
 			}
 			create_pop = {
 				culture = finnish
@@ -375,13 +426,11 @@
 				size = 202996
 			}
 			create_pop = {
-				culture = ugrian
-				religion = animist
-				size = 1000
+				culture = veps
+				size = 3000
 			}
 			create_pop = {
-				culture = finnish
-				religion = orthodox
+				culture = karelian
 				size = 27200
 			}
 		}
@@ -407,7 +456,8 @@
 			}
 			create_pop = {
 				culture = veps
-				size = 50996
+				religion = orthodox
+				size = 2300
 			}
 		}
 	}
@@ -418,9 +468,8 @@
 				size = 1009596
 			}
 			create_pop = {
-				culture = ugrian
-				religion = orthodox
-				size = 9996
+				culture = karelian
+				size = 19996
 			}
 		}
 	}
@@ -450,6 +499,15 @@
 				culture = ashkenazi
 				size = 9000
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 1900
+			}
+			create_pop = {
+				culture = romani
+				size = 300
+			}
 		}
 	}
 	s:STATE_YEKATERINOSLAV = {
@@ -475,8 +533,13 @@
 				size = 6000
 			}
 			create_pop = {
-				culture = greek
+				culture = pontic_greek
 				size = 10400
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 600
 			}
 		}
 	}
@@ -499,8 +562,13 @@
 				size = 10000
 			}
 			create_pop = {
-				culture = greek
+				culture = pontic_greek
 				size = 10400
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 800
 			}
 		}
 	}
@@ -586,6 +654,11 @@
 				culture = tatar
 				size = 24000
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 600
+			}
 		}
 	}
 	s:STATE_NOVGOROD = {
@@ -600,7 +673,12 @@
 			}
 			create_pop = {
 				culture = karelian
-				size = 20000
+				size = 26000
+			}
+			create_pop = {
+				culture = romani
+				religion = protestant
+				size = 200
 			}
 		}
 	}
@@ -646,6 +724,11 @@
 				culture = bulgarian
 				size = 12000
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 2100
+			}
 		}
 	}
 	s:STATE_GALICH = {
@@ -655,7 +738,7 @@
 				size = 851996
 			}
 			create_pop = {
-				culture = komi
+				culture = ugrian
 				size = 3996
 			}
 		}
@@ -666,6 +749,11 @@
 				culture = russian
 				size = 750996
 			}
+			create_pop = {
+				culture = veps
+				religion = orthodox
+				size = 50996
+			}
 		}
 	}
 	s:STATE_USTYUG = {
@@ -675,7 +763,7 @@
 				size = 250996
 			}
 			create_pop = {
-				culture = ugrian
+				culture = komi
 				religion = orthodox
 				size = 20096
 			}
@@ -707,6 +795,11 @@
 				culture = russian
 				size = 8136
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 400
+			}
 		}
 	}
 	s:STATE_ROSTOV = {
@@ -716,7 +809,7 @@
 				size = 556600
 			}
 			create_pop = {
-				culture = greek
+				culture = pontic_greek
 				size = 4000
 			}
 			create_pop = {
@@ -735,6 +828,11 @@
 				culture = mongol
 				size = 19996
 			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 900
+			}
 		}
 	}
 	s:STATE_NIZHNY_NOVGOROD = {
@@ -744,7 +842,7 @@
 				size = 1005124
 			}
 			create_pop = {
-				culture = ugrian
+				culture = mordvin
 				religion = orthodox
 				size = 30004
 			}
@@ -762,7 +860,7 @@
 				size = 1003944
 			}
 			create_pop = {
-				culture = komi
+				culture = ugrian
 				size = 6000
 			}
 			create_pop = {
@@ -770,7 +868,7 @@
 				size = 16000
 			}
 			create_pop = {
-				culture = ugrian
+				culture = komi
 				religion = orthodox
 				size = 20000
 			}
@@ -783,7 +881,7 @@
 				size = 853944
 			}
 			create_pop = {
-				culture = ugrian
+				culture = komi
 				religion = orthodox
 				size = 20000
 			}
@@ -796,7 +894,8 @@
 				size = 550944
 			}
 			create_pop = {
-				culture = ugrian
+				culture = komi
+				religion = orthodox
 				size = 66000
 			}
 			create_pop = {
@@ -902,6 +1001,11 @@
 				culture = russian
 				size = 4000
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 800
+			}
 		}
 	}
 	s:STATE_SAMOGITIA = {
@@ -951,6 +1055,11 @@
 				religion = protestant
 				size = 16000
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 500
+			}
 		}
 	}
 	s:STATE_SILESIA = {
@@ -982,8 +1091,9 @@
 				size = 60000
 			}
 			create_pop = {
-				culture = roma
-				size = 1500
+				culture = romani
+				religion = catholic
+				size = 1200
 			}
 		}
 	}
@@ -1005,6 +1115,11 @@
 			create_pop = {
 				culture = east_german
 				size = 28000
+			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 700
 			}
 		}
 	}
@@ -1031,6 +1146,11 @@
 				culture = east_german
 				size = 20000
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 400
+			}
 		}
 	}
 	s:STATE_WEST_PRUSSIA = {
@@ -1056,6 +1176,11 @@
 				culture = prussian
 				religion = catholic
 				size = 8004
+			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 400
 			}
 		}
 	}
@@ -1084,6 +1209,11 @@
 				religion = protestant
 				size = 28000
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 400
+			}
 		}
 	}
 	s:STATE_POSEN = {
@@ -1106,8 +1236,9 @@
 				size = 141160
 			}
 			create_pop = {
-				culture = roma
-				size = 1000
+				culture = romani
+				religion = catholic
+				size = 1500
 			}
 		}
 	}
@@ -1134,8 +1265,9 @@
 				size = 136000
 			}
 			create_pop = {
-				culture = roma
-				size = 1000
+				culture = romani
+				religion = catholic
+				size = 1400
 			}
 		}
 		region_state:KRA = {
@@ -1154,6 +1286,11 @@
 			create_pop = {
 				culture = ukrainian
 				size = 16000
+			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 200
 			}
 		}
 	}
@@ -1180,8 +1317,13 @@
 				size = 180000
 			}
 			create_pop = {
-				culture = roma
-				size = 1500
+				culture = romani
+				religion = catholic
+				size = 1600
+			}
+			create_pop = {
+				culture = romani
+				size = 800
 			}
 		}
 	}
@@ -1210,8 +1352,13 @@
 				size = 31996
 			}
 			create_pop = {
-				culture = roma
-				size = 5000
+				culture = romani
+				religion = catholic
+				size = 4100
+			}
+			create_pop = {
+				culture = romani
+				size = 600
 			}
 		}
 	}
@@ -1252,8 +1399,13 @@
 				size = 16004
 			}
 			create_pop = {
-				culture = roma
-				size = 7500
+				culture = romani
+				religion = catholic
+				size = 4700
+			}
+			create_pop = {
+				culture = romani
+				size = 3600
 			}
 		}
 	}
@@ -1299,8 +1451,9 @@
 				size = 59996
 			}
 			create_pop = {
-				culture = roma
-				size = 1500
+				culture = romani
+				religion = catholic
+				size = 3100
 			}
 		}
 	}
@@ -1331,8 +1484,13 @@
 				size = 44000
 			}
 			create_pop = {
-				culture = roma
-				size = 2500
+				culture = romani
+				size = 4800
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 900
 			}
 		}
 	}
@@ -1382,8 +1540,13 @@
 				size = 64956
 			}
 			create_pop = {
-				culture = roma
-				size = 2500
+				culture = romani
+				size = 7900
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 600
 			}
 		}
 	}
@@ -1423,8 +1586,13 @@
 				size = 8000
 			}
 			create_pop = {
-				culture = roma
-				size = 7500
+				culture = romani
+				religion = catholic
+				size = 6000
+			}
+			create_pop = {
+				culture = romani
+				size = 1200
 			}
 		}
 	}
@@ -1468,8 +1636,13 @@
 				size = 40080
 			}
 			create_pop = {
-				culture = roma
-				size = 7500
+				culture = romani
+				religion = catholic
+				size = 2600
+			}
+			create_pop = {
+				culture = romani
+				size = 6400
 			}
 		}
 	}
@@ -1501,8 +1674,8 @@
 				size = 87996
 			}
 			create_pop = {
-				culture = roma
-				size = 10000
+				culture = romani
+				size = 12400
 			}
 		}
 	}
@@ -1534,8 +1707,8 @@
 				size = 32800
 			}
 			create_pop = {
-				culture = roma
-				size = 10000
+				culture = romani
+				size = 11000
 			}
 		}
 	}
@@ -1566,8 +1739,8 @@
 				size = 32000
 			}
 			create_pop = {
-				culture = roma
-				size = 4000
+				culture = romani
+				size = 5400
 			}
 		}
 		region_state:MOL = {
@@ -1576,13 +1749,18 @@
 				size = 1388304
 			}
 			create_pop = {
-				culture = lipovan
-				size = 5000
+				culture = russian
+				# old believer
+				size = 4300
+			}
+			create_pop = {
+				culture = romani
+				size = 3200
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = roma
-				size = 10000
+				culture = romani
+				size = 5000
 			}
 		}
 	}
@@ -1597,13 +1775,18 @@
 				size = 20000
 			}
 			create_pop = {
-				culture = lipovan
-				size = 5000
+				culture = russian
+				# old believer
+				size = 3800
+			}
+			create_pop = {
+				culture = romani
+				size = 8400
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = roma
-				size = 10000
+				culture = romani
+				size = 5000
 			}
 		}
 	}
@@ -1633,6 +1816,15 @@
 			create_pop = {
 				culture = ukrainian
 				size = 40000
+			}
+			create_pop = {
+				culture = romani
+				size = 3200
+			}
+			create_pop = {
+				culture = romani
+				religion = sunni
+				size = 900
 			}
 		}
 	}

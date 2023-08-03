@@ -112,7 +112,7 @@
 						c:COM.tension:root >= 90
 						army_size >= 5
 					}
-					texan_indian_wars_dp_fired = yes
+					has_variable = texan_indian_wars_dp_fired
 				}
 				create_diplomatic_play = {
 					name = je_texan_indian_wars
