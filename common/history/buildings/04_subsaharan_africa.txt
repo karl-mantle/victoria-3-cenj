@@ -1401,7 +1401,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_no_coaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_natural_routes" "pm_privately_owned_building_road_network" }
 			}
 		}
 	}

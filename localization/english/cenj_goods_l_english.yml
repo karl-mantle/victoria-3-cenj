@@ -2,7 +2,6 @@
 # Goods
  bricks:0 "Bricks"
  cement:0 "Cement"
- charterparties:0 "Charterparties"
  chemicals:0 "Chemicals"
  clay:0 "Clay"
  copper:0 "Copper"
@@ -20,7 +19,6 @@
 # Lens Views
  trade_route_import_lens_option_bricks_tooltip:0 "Establish a $bricks$ import trade route"
  trade_route_import_lens_option_cement_tooltip:0 "Establish a $cement$ import trade route"
- trade_route_import_lens_option_charterparties_tooltip:0 "Establish a $charterparties$ import trade route"
  trade_route_import_lens_option_chemicals_tooltip:0 "Establish a $chemicals$ import trade route"
  trade_route_import_lens_option_clay_tooltip:0 "Establish a $clay$ import trade route"
  trade_route_import_lens_option_copper_tooltip:0 "Establish a $copper$ import trade route"
@@ -34,7 +32,6 @@
 
  trade_route_export_lens_option_bricks_tooltip:0 "Establish a $bricks$ export trade route"
  trade_route_export_lens_option_cement_tooltip:0 "Establish a $cement$ export trade route"
- trade_route_export_lens_option_charterparties_tooltip:0 "Establish a $charterparties$ export trade route"
  trade_route_export_lens_option_chemicals_tooltip:0 "Establish a $chemicals$ export trade route"
  trade_route_export_lens_option_clay_tooltip:0 "Establish a $clay$ export trade route"
  trade_route_export_lens_option_copper_tooltip:0 "Establish a $copper$ export trade route"

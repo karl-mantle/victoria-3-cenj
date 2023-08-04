@@ -32,14 +32,10 @@ pmg_ownership_capital_building_railway = {
 
 pmg_base_building_trade_center = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	#ai_selection = most_productive
+	ai_selection = most_productive
 
 	production_methods = {
 		pm_trade_center
-		pm_trade_center_maritime
-		pm_trade_center_freight_rail
-		pm_trade_center_steam_wagons
-		pm_trade_center_diesel_trucks
 	}
 }
 
@@ -64,24 +60,14 @@ pmg_base_building_road_network = {
 		pm_historic_roads
 		pm_maintained_roads
 		pm_modern_roads
-		pm_early_motorway
+		pm_early_motorways
 	}
 }
 
-pmg_interstate_road_network = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	
-	production_methods = {
-		pm_no_coaches
-		pm_stagecoaches
-		pm_intercity_motorbuses
-	}
-}
-
-pmg_ownership_capital_road_network = {
+pmg_ownership_capital_building_road_network = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
-		pm_commonly_owned_building_road_network
+		pm_merchant_guilds_building_road_network
 		pm_privately_owned_building_road_network
 		pm_publicly_traded_building_road_network
 		pm_government_run_building_road_network

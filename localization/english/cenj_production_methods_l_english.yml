@@ -120,8 +120,10 @@
  pm_publicly_traded_building_silver_mine:1 "$pm_publicly_traded$"
  pm_government_run_building_silver_mine:1 "$pm_government_run$"
  pm_worker_cooperative_building_silver_mine:1 "$pm_worker_cooperative$"
+
 # 06_urban_center.txt
  pm_oil_streetlights:0 "Oil Lamp Streetlights"
+
 # 07_government.txt
  pmg_ownership_capital_building_port:1 "$pmg_ownership$"
  pm_merchant_guilds_building_port:1 "$pm_merchant_guilds$"
@@ -129,28 +131,22 @@
  pm_publicly_traded_building_port:1 "$pm_publicly_traded$"
  pm_government_run_building_port:1 "$pm_government_run$"
  pm_worker_cooperative_building_port:1 "$pm_worker_cooperative$"
+
 # 11_private_infrastructure.txt
-#pm_trade_center:0 "Caravan Trading Post"
- pm_trade_center_maritime:0 "Maritime Trade Center"
- pm_trade_center_freight_rail:0 "Freight Rail Station"
- pm_trade_center_steam_wagons:0 "Steam Wagon Trade Center"
- pm_trade_center_diesel_trucks:0 "Diesel Truck Trade Center"
  pmg_base_building_road_network:0 "$pm_base$"
  pm_natural_routes:0 "Natural Routes"
  pm_historic_roads:0 "Historic Roads"
  pm_maintained_roads:0 "Maintained Roads"
  pm_modern_roads:0 "Modern Roads"
- pm_early_motorway:0 "Early Motorway"
- pmg_interstate_road_network:0 "Transit"
- pm_no_coaches:0 "No Coaches"
- pm_stagecoaches:0 "Stagecoaches"
- pm_intercity_motorbuses:0 "Intercity Motor Carriages"
- pmg_ownership_capital_road_network:0 "$pmg_ownership$"
- pm_commonly_owned_building_road_network:0 "Common Ownership"
+ pm_early_motorways:0 "Early Motorways"
+
+ pmg_ownership_capital_building_road_network:0 "$pmg_ownership$"
+ pm_merchant_guilds_building_road_network:0 "$pm_merchant_guilds$"
  pm_privately_owned_building_road_network:0 "$pm_privately_owned$"
  pm_publicly_traded_building_road_network:0 "$pm_publicly_traded$"
  pm_government_run_building_road_network:0 "$pm_government_run$"
  pm_worker_cooperative_building_road_network:0 "$pm_worker_cooperative$"
+
 # 12_subsistence.txt
  pmg_base_building_subsistence_arctic_fishing:0 "$pm_base$"
  pmg_home_workshops_building_subsistence_arctic_fishing:0 "$pmg_home_workshops$"
@@ -162,12 +158,7 @@
 
 # 13_construction.txt
  pm_masonry_buildings:0 "Masonry Buildings"
- pmg_ownership_construction_sector:0 "$pmg_ownership$"
- pm_merchant_guilds_construction_sector:0 "$pm_merchant_guilds$"
- pm_privately_owned_construction_sector:0 "$pm_privately_owned$"
- pm_publicly_traded_construction_sector:0 "$pm_publicly_traded$"
- pm_government_run_construction_sector:0 "$pm_government_run$"
- pm_worker_cooperative_construction_sector:0 "$pm_worker_cooperative$"
+
 # 14_finance.txt
  pmg_base_building_finance_sector:0 "$pm_base$"
  pm_finance_sector_merchant_bank:0 "Merchant Bank"
@@ -175,40 +166,45 @@
  pm_finance_sector_modern_bank:0 "Modern Bank"
  pm_finance_sector_national_bank:0 "National Bank"
  pm_finance_sector_credit_union:0 "Credit Union"
- pmg_central_bank_policy:0 "Central Bank Policy"
- pm_finance_sector_no_central_bank:0 "No Central Bank"
- pm_finance_sector_central_bank:0 "Central Bank"
- pmg_ownership_capital_finance_sector:0 "$pmg_ownership$"
- pm_merchant_guilds_finance_sector:0 "$pm_merchant_guilds$"
- pm_privately_owned_finance_sector:0 "$pm_privately_owned$"
- pm_publicly_traded_finance_sector:0 "$pm_publicly_traded$"
- pm_government_run_finance_sector:0 "$pm_government_run$"
- pm_worker_cooperative_finance_sector:0 "$pm_worker_cooperative$"
+
+ pmg_ownership_capital_building_finance_sector:0 "$pmg_ownership$"
+ pm_merchant_guilds_building_finance_sector:0 "$pm_merchant_guilds$"
+ pm_privately_owned_building_finance_sector:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_finance_sector:0 "$pm_publicly_traded$"
+ pm_government_run_building_finance_sector:0 "$pm_government_run$"
+ pm_worker_cooperative_building_finance_sector:0 "$pm_worker_cooperative$"
+
  pmg_base_building_mint:0 "$pm_base$"
  pm_mint_currency_standard:0 "Standardized Currency"
  pm_mint_currency_silver_standard:0 "Silver Standard Currency"
  pm_mint_currency_gold_standard:0 "Gold Standard Currency"
  pm_mint_currency_fiat_money:0 "Fiat Banknotes"
+
  pmg_ownership_capital_building_mint:0 "$pmg_ownership$"
- pm_privately_owned_mint:0 "$pm_privately_owned$"
- pm_publicly_traded_mint:0 "$pm_publicly_traded$"
- pm_government_run_mint:0 "$pm_government_run$"
- pm_worker_cooperative_mint:0 "$pm_worker_cooperative$"
+ pm_merchant_guilds_building_mint:0 "$pm_merchant_guilds$"
+ pm_privately_owned_building_mint:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_mint:0 "$pm_publicly_traded$"
+ pm_government_run_building_mint:0 "$pm_government_run$"
+ pm_worker_cooperative_building_mint:0 "$pm_worker_cooperative$"
+
 # 15_healthcare.txt
  pmg_base_building_health_facilities:0 "$pm_base$"
  pm_traditional_medicine:0 "Traditional Medicine"
  pm_early_modern_medicine:0 "Early Modern Medicine"
  pm_modern_medicine:0 "Modern Medicine"
- pmg_production_building_health_facilities:0 "Medicine Access"
+
+ pmg_luxury_building_health_facilities:0 "Dispensary"
  pm_no_pharmaceuticals:0 "No Pharmaceuticals"
  pm_health_facilities_apothecaries:0 "Apothecaries"
  pm_health_facilities_pharmacies:0 "Pharmacies"
- pmg_ownership_building_health_facilities:0 "$pmg_ownership$"
- pm_charity_run_health_facilities:0 "Charity Run"
- pm_privately_owned_health_facilities:0 "$pm_privately_owned$"
- pm_publicly_traded_health_facilities:0 "$pm_publicly_traded$"
- pm_government_run_health_facilities:0 "$pm_government_run$"
- pm_university_run_health_facilities:0 "University Run"
+
+ pmg_ownership_capital_building_health_facilities:0 "$pmg_ownership$"
+ pm_charity_run_building_health_facilities:0 "Charity Run"
+ pm_privately_owned_building_health_facilities:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_health_facilities:0 "$pm_publicly_traded$"
+ pm_government_run_building_health_facilities:0 "$pm_government_run$"
+ pm_university_run_building_health_facilities:0 "University"
+
 # 16_extras.txt
  pmg_base_building_publishing_house:0 "$pm_base$"
  pm_rag_paper:0 "Rag Paper"
@@ -221,6 +217,7 @@
  pm_cylindrical_printing_press:0 "Cylinder Printing Press"
  pm_rotary_printing_press:0 "Rotary Printing Press"
  pm_electric_rotary_printing_press:0 "Electric Rotary Printing Press"
+
  pmg_ownership_capital_building_publishing_house:0 "$pmg_ownership$"
  pm_privately_owned_building_publishing_house:0 "$pm_privately_owned$"
  pm_publicly_traded_building_publishing_house:0 "$pm_publicly_traded$"

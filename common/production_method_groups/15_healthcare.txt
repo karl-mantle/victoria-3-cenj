@@ -7,7 +7,7 @@
 	}
 }
 
-pmg_production_building_health_facilities = {
+pmg_luxury_building_health_facilities = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_health_facilities_apothecaries
@@ -15,13 +15,13 @@ pmg_production_building_health_facilities = {
 	}
 }
 
-pmg_ownership_building_health_facilities = {
+pmg_ownership_capital_building_health_facilities = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
-		pm_charity_run_health_facilities
-		pm_privately_owned_health_facilities
-		pm_publicly_traded_health_facilities
-		pm_government_run_health_facilities
-		pm_university_run_health_facilities
+		pm_charity_run_building_health_facilities
+		pm_privately_owned_building_health_facilities
+		pm_publicly_traded_building_health_facilities
+		pm_government_run_building_health_facilities
+		pm_university_run_building_health_facilities
 	}
 }

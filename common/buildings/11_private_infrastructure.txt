@@ -55,8 +55,7 @@ building_road_network = {
 
 	production_method_groups = {
 		pmg_base_building_road_network
-		pmg_interstate_road_network
-		pmg_ownership_capital_road_network
+		pmg_ownership_capital_building_road_network
 	}
 
 	required_construction = construction_cost_medium

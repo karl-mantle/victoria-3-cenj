@@ -1,6 +1,8 @@
 ﻿l_english:
 # Institutions
  institution_central_bank:0 "Central Bank"
+ modifier_country_institution_central_bank_max_investment_add:0 "Max $institution_central_bank$ [concept_institution] Investment"
+ modifier_country_institution_central_bank_max_investment_add_desc:0 "A bonus or penalty to the maximum investment level of the $institution_central_bank$ [concept_institution]"
 # Law Groups
  lawgroup_monetary_system:0 "Monetary System"
 # Laws

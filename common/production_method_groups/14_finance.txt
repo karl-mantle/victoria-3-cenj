@@ -10,14 +10,14 @@
 	}
 }
 
-pmg_ownership_capital_finance_sector = {
+pmg_ownership_capital_building_finance_sector = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
-		pm_merchant_guilds_finance_sector
-		pm_privately_owned_finance_sector
-		pm_publicly_traded_finance_sector
-		pm_government_run_finance_sector
-		pm_worker_cooperative_finance_sector
+		pm_merchant_guilds_building_finance_sector
+		pm_privately_owned_building_finance_sector
+		pm_publicly_traded_building_finance_sector
+		pm_government_run_building_finance_sector
+		pm_worker_cooperative_building_finance_sector
 	}
 }
 
@@ -34,9 +34,10 @@ pmg_base_building_mint = {
 pmg_ownership_capital_building_mint = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
-		pm_privately_owned_mint
-		pm_publicly_traded_mint
-		pm_government_run_mint
-		pm_worker_cooperative_mint
+		pm_merchant_guilds_building_mint
+		pm_privately_owned_building_mint
+		pm_publicly_traded_building_mint
+		pm_government_run_building_mint
+		pm_worker_cooperative_building_mint
 	}
 }

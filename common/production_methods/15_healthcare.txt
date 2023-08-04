@@ -120,7 +120,7 @@ pm_health_facilities_pharmacies = {
 	}	
 }
 
-pm_charity_run_health_facilities = {
+pm_charity_run_building_health_facilities = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
 
 	unlocking_laws = {
@@ -128,7 +128,6 @@ pm_charity_run_health_facilities = {
 	}
 
 	disallowing_laws = {
-		law_total_separation
 		law_state_atheism
 	}
 
@@ -143,9 +142,13 @@ pm_charity_run_health_facilities = {
 	}
 }
 
-pm_privately_owned_health_facilities = {
+pm_privately_owned_building_health_facilities = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 
+	unlocking_laws = {
+		law_private_health_insurance
+	}
+	
 	disallowing_laws = {
 		law_command_economy
 		law_cooperative_ownership
@@ -161,7 +164,7 @@ pm_privately_owned_health_facilities = {
 	}
 }
 
-pm_publicly_traded_health_facilities = {
+pm_publicly_traded_building_health_facilities = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
 	unlocking_laws = {
@@ -170,6 +173,7 @@ pm_publicly_traded_health_facilities = {
 	
 	disallowing_laws = {
 		law_command_economy
+		law_cooperative_ownership
 	}
 
 	unlocking_technologies = {
@@ -186,7 +190,7 @@ pm_publicly_traded_health_facilities = {
 	}
 }
 
-pm_government_run_health_facilities = {
+pm_government_run_building_health_facilities = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
 
 	unlocking_laws = {
@@ -205,11 +209,12 @@ pm_government_run_health_facilities = {
 	}
 }
 
-pm_university_run_health_facilities = {
+pm_university_run_building_health_facilities = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
 	
-	disallowing_laws = {
-		law_no_health_system
+	unlocking_laws = {
+		law_private_health_insurance
+		law_public_health_insurance
 	}
 
 	country_modifiers = {

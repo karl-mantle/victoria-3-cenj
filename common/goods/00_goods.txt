@@ -215,16 +215,6 @@ electricity = {
 
 # Added
 
-charterparties = {
-	texture = "gfx/interface/icons/goods_icons/charterparties.dds"
-	cost = 75
-	category = staple
-
-	prestige_factor = 10
-	traded_quantity = 1
-	convoy_cost_multiplier = 0.25
-}
-
 currency = {
 	texture = "gfx/interface/icons/goods_icons/currency.dds"
 	cost = 25

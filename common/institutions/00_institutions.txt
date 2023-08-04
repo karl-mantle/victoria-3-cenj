@@ -55,7 +55,7 @@ institution_central_bank = {
 	icon = "gfx/interface/icons/institution_icons/placeholder.dds"
 	background_texture = "gfx/interface/illustrations/institutions/health_service.dds"
 	modifier = {
+		country_gold_reserve_limit_mult = 0.05
 		country_minting_mult = 0.05
-		country_consumption_tax_cost_mult = -0.05
 	}
 }

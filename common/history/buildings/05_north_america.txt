@@ -18,7 +18,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 			create_building={
 				building="building_white_house"
@@ -63,7 +63,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_maintained_roads" "pm_stagecoaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_maintained_roads" "pm_privately_owned_building_road_network" }
 			}
 		}
 	}
@@ -79,7 +79,7 @@
 				building="building_construction_sector"
 				level=6
 				reserves=1
-				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" }
 			}		
 			create_building={
 				building="building_arms_industry"
@@ -169,7 +169,7 @@
 				building="building_finance_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_publishing_house"
@@ -193,13 +193,13 @@
 				building="building_road_network"
 				level=8
 				reserves=1
-				activate_production_methods={ "pm_maintained_roads" "pm_stagecoaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_maintained_roads" "pm_privately_owned_building_road_network" }
 			}
 			create_building={
 				building="building_health_facilities"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_health_facilities" }
+				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_building_health_facilities" }
 			}		
 		}
 	}
@@ -228,7 +228,7 @@
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" }
 			}
 			create_building={
 				building="building_arms_industry"
@@ -312,7 +312,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_maintained_roads" "pm_stagecoaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_maintained_roads" "pm_privately_owned_building_road_network" }
 			}
 		}
 	}
@@ -420,7 +420,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_natural_routes" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -454,7 +454,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -502,13 +502,13 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -536,7 +536,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -552,7 +552,7 @@
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -600,7 +600,7 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_quarry"
@@ -618,7 +618,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -676,7 +676,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -728,7 +728,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -762,7 +762,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -814,7 +814,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -884,13 +884,13 @@
 				building="building_health_facilities"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_health_facilities" }
+				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_building_health_facilities" }
 			}		
 			create_building={
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -952,13 +952,13 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 			create_building={
 				building="building_health_facilities"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_health_facilities" }
+				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_building_health_facilities" }
 			}		
 		}
 	}
@@ -986,13 +986,13 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1062,13 +1062,13 @@
 				building="building_mint"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_mint_currency_silver_standard" "pm_government_run_mint" }
+				activate_production_methods={ "pm_mint_currency_silver_standard" "pm_government_run_building_mint" }
 			}
 			create_building={
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_publishing_house"
@@ -1092,13 +1092,13 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 			create_building={
 				building="building_health_facilities"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_health_facilities" }
+				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_building_health_facilities" }
 			}		
 		}
 	}
@@ -1138,7 +1138,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_maintained_roads" "pm_stagecoaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_maintained_roads" "pm_privately_owned_building_road_network" }
 			}
 		}
 	}
@@ -1172,7 +1172,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_natural_routes" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1200,13 +1200,13 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1234,7 +1234,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1250,7 +1250,7 @@
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_masonry_buildings" "pm_privately_owned_construction_sector" }
+				activate_production_methods={ "pm_masonry_buildings" }
 			}
 			create_building={
 				building="building_university"
@@ -1322,7 +1322,7 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_quarry"
@@ -1340,13 +1340,13 @@
 				building="building_road_network"
 				level=4
 				reserves=1
-				activate_production_methods={ "pm_maintained_roads" "pm_stagecoaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_maintained_roads" "pm_privately_owned_building_road_network" }
 			}
 			create_building={
 				building="building_health_facilities"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_health_facilities" }
+				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_building_health_facilities" }
 			}		
 		}
 	}
@@ -1374,7 +1374,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1402,7 +1402,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1448,7 +1448,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}		
 		}
 	}
@@ -1506,13 +1506,13 @@
 				building="building_mint"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_mint_currency_silver_standard" "pm_government_run_mint" }
+				activate_production_methods={ "pm_mint_currency_silver_standard" "pm_government_run_building_mint" }
 			}	
 			create_building={
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1566,7 +1566,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_natural_routes" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1675,13 +1675,13 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_maintained_roads" "pm_stagecoaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_maintained_roads" "pm_privately_owned_building_road_network" }
 			}
 			create_building={
 				building="building_health_facilities"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_health_facilities" }
+				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_building_health_facilities" }
 			}		
 		}
 	}
@@ -1715,7 +1715,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_natural_routes" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 		region_state:NVS = {
@@ -1741,7 +1741,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -1793,19 +1793,19 @@
 				building="building_finance_sector"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_finance_sector" }
+				activate_production_methods={ "pm_finance_sector_merchant_bank" "pm_merchant_guilds_building_finance_sector" }
 			}
 			create_building={
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_maintained_roads" "pm_stagecoaches" "pm_privately_owned_building_road_network" }
+				activate_production_methods={ "pm_maintained_roads" "pm_privately_owned_building_road_network" }
 			}
 			create_building={
 				building="building_health_facilities"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_health_facilities" }
+				activate_production_methods={ "pm_early_modern_medicine" "pm_health_facilities_apothecaries" "pm_privately_owned_building_health_facilities" }
 			}		
 		}
 		region_state:HBC={
@@ -1931,7 +1931,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_natural_routes" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_natural_routes" "pm_merchant_guilds_building_road_network" }
 			}
 			create_building={
 				building="building_naval_base"
@@ -2074,7 +2074,7 @@
 				building="building_construction_sector"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" "pm_merchant_guilds_construction_sector" }
+				activate_production_methods={ "pm_wooden_buildings" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -2128,7 +2128,7 @@
 				building="building_mint"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_mint_currency_silver_standard" "pm_government_run_mint" }
+				activate_production_methods={ "pm_mint_currency_silver_standard" "pm_government_run_building_mint" }
 			}
 			create_building={
 				building="building_publishing_house"
@@ -2140,7 +2140,7 @@
 				building="building_road_network"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -2192,7 +2192,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 			create_building={
 				building="building_naval_base"
@@ -2244,7 +2244,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -2284,7 +2284,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -2324,7 +2324,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -2358,7 +2358,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -2398,7 +2398,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}
@@ -2420,7 +2420,7 @@
 				building="building_road_network"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_historic_roads" "pm_stagecoaches" "pm_commonly_owned_building_road_network" }
+				activate_production_methods={ "pm_historic_roads" "pm_merchant_guilds_building_road_network" }
 			}
 		}
 	}

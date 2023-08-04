@@ -19,16 +19,6 @@ texticon = {
 }
 
 texticon = {
-	icon = charterparties
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/charterparties.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
 	icon = chemicals
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/chemicals.dds"

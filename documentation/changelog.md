@@ -1,5 +1,13 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.47
+- restored vanilla trade center/port/construction behaviour for now
+- changed finance and health building pm's
+- central bank institution now has 5 levels and new modifiers
+- other minor pm changes to buildings
+- fixed localisation mistakes
+- fixed political setup scripted effects
+- tweaked defines re: migration
 ### 0.0.46
 - added new institution - central bank
 - re-written currency standards law, now is monetary system

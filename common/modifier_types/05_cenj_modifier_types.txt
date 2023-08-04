@@ -20,16 +20,6 @@ building_output_cement_add = {
 	percent = no
 }
 
-building_input_charterparties_add = {
-	good = no
-	percent = no
-}
-
-building_output_charterparties_add = {
-	good = yes
-	percent = no
-}
-
 building_input_chemicals_add = {
 	good = no
 	percent = no

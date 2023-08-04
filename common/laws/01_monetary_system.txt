@@ -89,7 +89,7 @@ law_gold_standard_monetary_system = {
 	progressiveness = 50
 	
 	unlocking_technologies = {
-		currency_standards
+		central_banking
 	}
 	
 	on_enact = {
@@ -98,6 +98,7 @@ law_gold_standard_monetary_system = {
 	
 	modifier = {
 		country_loan_interest_rate_mult = -0.1
+		country_institution_central_bank_max_investment_add = 1
 	}
 
 	institution = institution_central_bank
@@ -130,7 +131,8 @@ law_fiat_monetary_system = {
 	}
 	
 	modifier = {
-		country_loan_interest_rate_mult = -0.25
+		country_loan_interest_rate_mult = -0.2
+		country_institution_central_bank_max_investment_add = 1
 	}
 
 	institution = institution_central_bank

@@ -8,8 +8,8 @@
 	
 	production_method_groups = {
 		pmg_base_building_health_facilities
-		pmg_production_building_health_facilities
-		pmg_ownership_building_health_facilities
+		pmg_luxury_building_health_facilities
+		pmg_ownership_capital_building_health_facilities
 	}
 	
 	required_construction = construction_cost_high

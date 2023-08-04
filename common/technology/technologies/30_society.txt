@@ -504,6 +504,7 @@ central_banking = {
 	modifier = {
 		country_minting_mult = 0.1
 		country_loan_interest_rate_add = -0.02
+		country_institution_central_bank_max_investment_add = 1
 	}	
 	
 	unlocking_technologies = {
@@ -920,6 +921,7 @@ mutual_funds = {
 	modifier = {
 		country_minting_mult = 0.1
 		country_loan_interest_rate_add = -0.02
+		country_institution_central_bank_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {

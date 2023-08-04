@@ -713,7 +713,7 @@ bg_construction = {
 
 	fired_pops_become_radical = no
 
-	cash_reserves_max = 25000
+	#cash_reserves_max = 25000
 
 }
 
