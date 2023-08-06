@@ -10,6 +10,30 @@ modifier_haitian_independence_payments = {
 	country_tax_income_add = 2000
 }
 
+# ODB's Tweaks
+
+aus_unified_sgf = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_mult = 0.1
+}
+
+fra_secular_legacy = { # URGENT
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_accepted_birth_rate_mult = -0.2
+}
+
+missouri_compromise = { # edited to increase landowner strength in USA
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_landowners_pol_str_mult = 0.3
+	country_aristocrats_voting_power_add = 50
+	country_farmers_voting_power_add = 25
+}
+
+warlord_dominance = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_minting_add = 60000
+}
+
 # Canal Modifiers
 
 kra_purchase = {
@@ -28,13 +52,6 @@ modifier_surveying_kra = {
 }
 
 # North America
-
-missouri_compromise = { # edited to increase landowner strength in USA
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	interest_group_ig_landowners_pol_str_mult = 0.3
-	country_aristocrats_voting_power_add = 50
-	country_farmers_voting_power_add = 25
-}
 
 major_indian_raids_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds

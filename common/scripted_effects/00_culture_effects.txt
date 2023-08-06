@@ -240,7 +240,7 @@ country_create_homeland_by_culture = {
 			limit = {
 				culture_percent_state = {
 					target = cu:$TRIGGER_CULTURE$
-					value >= 0.01
+					value >= 0.05
 				}
 			}
 			THIS.state_region = {

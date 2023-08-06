@@ -6,6 +6,7 @@ je_french_natural_borders_button_a = {
 
 	visible = {
 		NOT = { has_variable = natural_borders_var }
+		NOT = { has_variable = reject_natural_borders }
 	}
 
 	effect = {
@@ -49,6 +50,7 @@ je_french_natural_borders_button_b = {
 
 	visible = {
 		NOT = { has_variable = natural_borders_var }
+		NOT = { has_variable = reject_natural_borders }
 	}
 
 	effect = {
@@ -108,6 +110,27 @@ je_french_natural_borders_button_b = {
 			months = long_modifier_time # very_long_modifier_time
 			# country_infamy_decay_mult
 		}
+		custom_tooltip = {
+			text = rhine_crisis_tt
+			every_country = {
+				limit = {
+					relations:root < relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:wallonian
+					}
+				}
+				set_secret_goal = {
+					country = c:FRA
+					secret_goal = antagonize
+				}
+				change_relations = {
+					country = root
+					value = -10
+				}
+			}
+		}	
 	}
 
 	ai_chance = {
@@ -128,10 +151,111 @@ je_french_natural_borders_button_b = {
 					}
 				}
 			}
-			add = 5
+			add = 15
 		}
 	}
 }
+
+je_french_natural_borders_button_c = {
+	name = "je_french_natural_borders_reject_natural_borders"
+	desc = "je_french_natural_borders_reject_natural_borders_desc"
+
+	visible = {
+		has_variable = natural_borders_var
+		NOT = { has_variable = reject_natural_borders }
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = dismiss_natural_borders_tt
+			remove_variable = natural_borders_var
+			set_variable = reject_natural_borders
+		}
+		#trigger_event = { id = natural_borders.1 popup = yes }
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_WALLONIA }
+			}
+			s:STATE_WALLONIA = {
+				remove_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_FLANDERS }
+			}
+			s:STATE_FLANDERS = {
+				remove_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_RHINELAND }
+			}
+			s:STATE_RHINELAND = {
+				remove_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_NORTH_RHINE }
+			}
+			s:STATE_NORTH_RHINE = {
+				remove_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_SAVOY }
+			}
+			s:STATE_SAVOY = {
+				remove_claim = ROOT
+			}
+		}
+		change_infamy = -10
+		#add_modifier = {
+		#	name = france_natural_borders_pursuit
+		#	months = long_modifier_time # very_long_modifier_time
+		#	# country_infamy_decay_mult
+		#}
+		#custom_tooltip = {
+		#	text = rhine_crisis_tt
+		#every_country = {
+		#	limit = {
+		#		relations:root < relations_threshold:amicable
+		#		OR = {
+		#			country_has_primary_culture = cu:south_german
+		#			country_has_primary_culture = cu:north_german
+		#			country_has_primary_culture = cu:wallonian
+		#		}
+		#	}
+		#	set_secret_goal = {
+		#		country = c:FRA
+		#		secret_goal = antagonize
+		#	}
+		#	change_relations = {
+		#		country = root
+		#		value = -10
+		#	}
+		#}
+		#}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				any_interest_group = {
+					is_in_government = yes
+					leader = {
+						has_ideology = ideology:ideology_pacifist
+					}
+				}
+			}
+			add = 20	
+		}
+	}
+}	
 
 je_treaty_of_turin_france_button = {
 	name = "je_treaty_of_turin_france_button"

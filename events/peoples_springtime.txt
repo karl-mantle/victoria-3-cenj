@@ -280,7 +280,7 @@ peoples_springtime.4 = {
 			owner = {
 				has_technology_researched = egalitarianism
 				any_interest_group = {
-					is_marginal = no
+					is_powerful = yes
 					OR = {
 						is_interest_group_type = ig_rural_folk
 						is_interest_group_type = ig_intelligentsia
@@ -306,7 +306,7 @@ peoples_springtime.4 = {
 
 	duration = 3
 
-	cooldown = { months = 24 }
+	cooldown = { months = normal_modifier_time }
 
 	option = {
 		name = peoples_springtime.4.a
@@ -315,7 +315,7 @@ peoples_springtime.4 = {
 				owner = {
 					has_technology_researched = egalitarianism
 					any_interest_group = {
-						is_marginal = no
+						is_powerful = yes
 						OR = {
 							is_interest_group_type = ig_rural_folk
 							is_interest_group_type = ig_intelligentsia
@@ -904,13 +904,10 @@ peoples_springtime.102 = {
 			value = very_large_radicals
 			culture = scope:massacre_victims
 		}
-		random_scope_state = {
-			limit = { 
-				owner = ROOT
-				is_capital = yes
-			}
+		capital = {
 			add_radicals_in_state = {
 				value = very_large_radicals
+				culture = scope:ROOT_culture
 			}
 		}
 	}
@@ -1485,7 +1482,7 @@ peoples_springtime.120 = {
 		name = peoples_springtime.120.a						
 		default_option = yes
 		scope:generic_nationalist_state_scope = {
-			add_radicals_in_state = {
+			add_radicals = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1507,7 +1504,7 @@ peoples_springtime.120 = {
 		name = peoples_springtime.120.b
 		change_infamy = 5
 		scope:generic_nationalist_state_scope = {
-			add_radicals_in_state = {
+			add_radicals = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1601,7 +1598,7 @@ peoples_springtime.121 = {
 			months = short_modifier_time
 		}
 		scope:generic_nationalist_state_scope = {
-			add_radicals_in_state = {
+			add_radicals = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1630,7 +1627,7 @@ peoples_springtime.121 = {
 			months = short_modifier_time
 		}
 		scope:generic_nationalist_state_scope = {
-			add_radicals_in_state = {
+			add_radicals = {
 				value = large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1739,7 +1736,7 @@ peoples_springtime.122 = {
 			value = 20
 		}
 		scope:generic_nationalist_state_scope = {
-			add_radicals_in_state = {
+			add_radicals = {
 				value = very_large_radicals
 				culture = scope:discriminated_culture_scope
 			}
@@ -1748,7 +1745,7 @@ peoples_springtime.122 = {
 	option = { # let it peter out
 		name = peoples_springtime.122.b
 		scope:generic_nationalist_state_scope = {
-			add_radicals_in_state = {
+			add_radicals = {
 				value = very_large_radicals
 				culture = scope:discriminated_culture_scope
 			}

@@ -1,4 +1,14 @@
 ﻿l_english:
+# Building Groups
+ bg_copper_fields:0 "Copper Fields"
+ bg_copper_mining:0 "Copper Mining"
+ bg_finance:0 "Financial Buildings"
+ bg_healthcare:0 "Healthcare"
+ bg_quarries:0 "Quarries"
+ bg_road_network:0 "Road Network"
+ bg_silver_fields:0 "Silver Fields"
+ bg_silver_mining:0 "Silver Mining"
+# Buildings
 # 01_industry.txt
  building_brickworks:0 "Brickworks"
  building_brickworks_lens_option:0 "Expand $building_brickworks$"

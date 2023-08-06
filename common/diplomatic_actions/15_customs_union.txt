@@ -29,6 +29,7 @@
 			scope:target_country = { has_law = law_type:law_isolationism }
 			scope:target_country = { has_journal_entry = je_warlord_china }
 			scope:target_country = {
+				exists = c:CHI
 				this = c:CHI
 			}
 			scope:target_country = {
@@ -111,9 +112,11 @@
 				scope:target_country = { has_law = law_type:law_isolationism }
 				has_law = law_type:law_isolationism		
 				scope:target_country = {
+					exists = c:CHI
 					this = c:CHI
 				}
 				scope:target_country = {
+					exists = c:TUR
 					this = c:TUR
 				}
 			}
@@ -327,6 +330,29 @@
 			}
 
 			add = {
+				desc = "FELLOW_ITALIAN_BONUS"
+				if = {
+					limit = {
+						has_technology_researched = nationalism
+						has_strategy = ai_strategy_unify_italy
+						scope:actor = {
+							OR = {
+								country_has_primary_culture = cu:north_italian
+								country_has_primary_culture = cu:north_italian
+							}
+							country_rank < rank_value:minor_power
+						}
+						scope:actor.market = {
+							any_scope_country = {
+								has_strategic_land_adjacency = root
+							}
+						}
+					}
+					add = 80
+				}
+			}
+
+			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_INFAMY"
 				if = {
 					limit = {
@@ -508,6 +534,61 @@
 			}
 
 			add = {
+				desc = "FELLOW_ITALIAN_BONUS"
+				if = {
+					limit = {
+						NOT = { has_strategy = ai_strategy_unify_italy }
+						has_technology_researched = nationalism
+						OR = {
+							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:north_italian
+						}
+						scope:actor.market = {
+							any_scope_country = {
+								has_strategic_land_adjacency = root
+							}
+						}
+						scope:actor = {
+							OR = {
+								has_strategy = ai_strategy_unify_italy
+								AND = {
+									has_journal_entry = je_italian_unification
+									is_ai = no
+								}
+							}
+							country_rank >= rank_value:minor_power
+						}
+					}
+					add = 80
+				}
+			}
+
+			add = {
+				desc = "ANTI_FELLOW_ITALIAN_BONUS"
+				if = {
+					limit = {
+						has_technology_researched = nationalism
+						OR = {
+							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:north_italian
+						}
+						has_strategy = ai_strategy_unify_italy
+						country_rank >= rank_value:minor_power
+						NOT = {
+							is_supporting_unification_candidate = { who = scope:actor country_formation = ITA }
+						}
+						scope:actor = {
+							NOR = {
+								country_has_primary_culture = cu:north_italian
+								country_has_primary_culture = cu:north_italian
+							}
+						}
+					}
+					add = -50
+				}
+			}
+
+			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_INFAMY"
 				if = {
 					limit = {
@@ -592,6 +673,7 @@
 						has_law = law_type:law_council_republic	
 					}	
 				}
+				has_strategy = ai_strategy_unify_italy
 			}
 		}
 
@@ -606,10 +688,10 @@
 							country_has_primary_culture = cu:north_italian
 						}
 						is_ai = yes
-						country_rank <= rank_value:minor_power
+						country_rank < rank_value:minor_power
 					}
 				}
-				add = 30
+				add = 800
 			}
 			if = {
 				limit = {
@@ -629,6 +711,12 @@
 
 		propose_break_score = {
 			value = 10
+			if = {
+				limit = {
+					has_strategy = ai_strategy_unify_italy
+				}
+				add = 100
+			}
 		}
 
 		use_obligation_chance = {
@@ -710,6 +798,20 @@ join_customs_union = {
 
 	possible = {
 		NOT = { has_war_with = scope:target_country }
+
+		NOR = {
+			has_law = law_type:law_isolationism
+			has_journal_entry = je_warlord_china
+			AND = {
+				exists = c:CHI
+				this = c:CHI
+			}
+			AND = {
+				exists = c:TUR
+				this = c:TUR	
+			}
+		
+		}		
 
 		# if we are the senior partner in an existing customs union,
 		# we don't want to join someone else's union

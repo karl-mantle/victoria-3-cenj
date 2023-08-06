@@ -104,8 +104,8 @@ lawgroup_land_reform = {
 lawgroup_colonization = {
 	law_group_category = economy
 	
-	progressive_movement_chance = 3 # 1.5
-	regressive_movement_chance = 0.05
+	progressive_movement_chance = 5 # 1.5
+	regressive_movement_chance = 2 # 0.05
 }
 
 lawgroup_policing = {

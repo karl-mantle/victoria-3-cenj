@@ -138,40 +138,40 @@ natural_borders.1 = {
 			}
 		}
 	}
-	option = { # imperialist IG's unhappy
-		name = natural_borders.1.b
-		ai_chance = {
-			base = 0
-		}
-		custom_tooltip = {
-			text = dismiss_natural_borders_tt
-			set_variable = reject_natural_borders
-		}
-		every_interest_group = {
-			limit = {
-				is_powerful = yes
-				is_in_government = yes
-				OR = {
-					is_interest_group_type = ig_armed_forces
-					leader = {
-						OR = {
-							has_ideology = ideology:ideology_jingoist_leader
-							has_ideology = ideology:ideology_ethno_nationalist
-							has_ideology = ideology:ideology_fascist
-							has_ideology = ideology:ideology_authoritarian
-							has_ideology = ideology:ideology_bonapartist
-						}
-					}
-				}
-			}
-			add_modifier = {
-				name = no_natural_borders
-				months = long_modifier_time
-				is_decaying = yes
-				# interest_group_approval_add
-			}
-		}
-	}
+	#option = { # imperialist IG's unhappy
+	#	name = natural_borders.1.b
+	#	ai_chance = {
+	#		base = 0
+	#	}
+	#	custom_tooltip = {
+	#		text = dismiss_natural_borders_tt
+	#		set_variable = reject_natural_borders
+	#	}
+	#	every_interest_group = {
+	#		limit = {
+	#			is_powerful = yes
+	#			is_in_government = yes
+	#			OR = {
+	#				is_interest_group_type = ig_armed_forces
+	#				leader = {
+	#					OR = {
+	#						has_ideology = ideology:ideology_jingoist_leader
+	#						has_ideology = ideology:ideology_ethno_nationalist
+	#						has_ideology = ideology:ideology_fascist
+	#						has_ideology = ideology:ideology_authoritarian
+	#						has_ideology = ideology:ideology_bonapartist
+	#					}
+	#				}
+	#			}
+	#		}
+	#		add_modifier = {
+	#			name = no_natural_borders
+	#			months = long_modifier_time
+	#			is_decaying = yes
+	#			#interest_group_approval_add
+	#		}
+	#	}
+	#}
 }
 
 # reward event
@@ -322,6 +322,9 @@ natural_borders.3 = {
 				}
 				save_scope_as = savoy_state
 			}
+			s:STATE_SAVOY = {
+				remove_homeland = north_italian
+			}
 			if = {
 				limit = {
 					any_scope_state = {
@@ -351,6 +354,9 @@ natural_borders.3 = {
 					setting = no
 				}
 			}
+		}
+		change_relations = {
+			country = scope:savoy_country value = 30
 		}
 		if = {
 			limit = {
@@ -390,6 +396,9 @@ natural_borders.3 = {
 					setting = no
 				}
 			}
+		}
+		change_relations = {
+			country = scope:savoy_country value = 30
 		}
 		if = {
 			limit = {

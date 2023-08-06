@@ -651,7 +651,7 @@ heavenly.5 = {
 				owner = ROOT
 				has_variable = saved_incorporated_state
 			}
-			set_state_owner = c:CHI #Just in case.
+			#set_state_owner = c:CHI #Just in case.
 			set_state_type = incorporated
 			remove_variable = saved_incorporated_state
 		}

@@ -150,6 +150,20 @@ ideology_atheist = {
 		law_total_separation = approve
 		law_state_atheism = strongly_approve
 	}
+
+	lawgroup_health_system = {
+		law_no_health_system = disapprove
+		law_charitable_health_system = disapprove
+		law_private_health_insurance = neutral
+		law_public_health_insurance = neutral
+	}
+	
+	lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = disapprove
+		law_private_schools = neutral
+		law_public_schools = neutral
+	}
 	
 	possible = {
 		# Agitators should have an ideology at odds with current laws
@@ -162,6 +176,7 @@ ideology_atheist = {
 					has_law = law_type:law_council_republic
 				}
 				has_law = law_type:law_state_atheism
+				has_law = law_type:law_total_separation
 			}
 		}
 		# Monarchs cannot be republicans
@@ -197,7 +212,7 @@ ideology_atheist = {
 	}
 	
 	leader_weight = {
-		value = 100
+		value = 25 # 100
 		# this is not very relevant if you're a republic with religious freedom
 		if = { 
 			limit = {
@@ -221,7 +236,7 @@ ideology_atheist = {
 					}
 				}
 			}
-			add = 75
+			add = 125 # 75
 		}
 		if = {
 			limit = { 
@@ -229,7 +244,7 @@ ideology_atheist = {
 					has_variable = nihilism_var 
 				}
 			}
-			add = 150 # 75
+			add = 75
 		}
 		if = {
 			limit = { 
@@ -237,7 +252,15 @@ ideology_atheist = {
 					has_variable = big_nihilism_var
 				}
 			}
-			add = 200 # 150
+			add = 150
+		}
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_state_religion
+				}
+			}
+			add = 50
 		}
 	}
 }
@@ -454,11 +477,11 @@ ideology_radical = {
 						}
 						any_scope_state = {
 							is_incorporated = yes
-							turmoil >= 0.25
+							turmoil >= 0.10 # 0.25
 						}
 					}
 				}
-				add = 100
+				add = 200 # 100
 			}
 			if = {
 				limit = {
@@ -469,11 +492,11 @@ ideology_radical = {
 						}
 						any_scope_state = {
 							is_incorporated = yes
-							turmoil >= 0.5
+							turmoil >= 0.15 # 0.5
 						}
 					}
 				}
-				add = 50
+				add = 150 # 50
 			}
 			# less likely if issues are not relevant
 			if = {
@@ -676,6 +699,15 @@ ideology_reformer = {
 			}
 			add = 50
 		}
+		# Russian patriarch
+		if = {
+			limit = {
+				scope:interest_group = {
+					has_ideology = ideology:ideology_russian_patriarch
+				}
+			}
+			multiply = 0.2
+		}	
 	}
 }
 
@@ -1094,9 +1126,9 @@ ideology_jingoist_leader = {
 	}
 
 	lawgroup_colonization = {		
-		law_no_colonial_affairs = neutral
-		law_colonial_resettlement = approve
-		law_colonial_exploitation = strongly_approve
+		law_no_colonial_affairs = disapprove # neutral
+		law_colonial_resettlement = neutral # approve
+		law_colonial_exploitation = approve # strongly_approve
 	}
 	
 	possible = {
@@ -1416,7 +1448,19 @@ ideology_social_democrat = {
 			limit = {
 				scope:interest_group = {
 					is_interest_group_type = ig_trade_unions
-					ig_approval >= 0
+					ig_approval >= -5 # 0
+				}
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+				}
+			}
+			add = 75
+		}
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_intelligentsia
+					ig_approval >= -5
 				}
 				owner = {
 					NOT = { has_law = law_type:law_council_republic }
@@ -1542,7 +1586,7 @@ ideology_communist = {
 				}
 				scope:interest_group = {
 					NOT = { is_interest_group_type = ig_armed_forces }
-					ig_approval <= -5
+					ig_approval <= -8 # -5
 				}
 			}
 			add = 100
@@ -1637,6 +1681,27 @@ ideology_vanguardist = {
 		law_homesteading = neutral
 		law_collectivized_agriculture = approve
 	}			
+
+	lawgroup_free_speech = {
+		law_protected_speech = disapprove
+		law_right_of_assembly = neutral
+		law_censorship = approve
+		law_outlawed_dissent = strongly_approve
+	}	
+
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = disapprove
+		law_no_home_affairs = neutral
+		law_national_guard = approve
+		law_secret_police = strongly_approve
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove
+		law_freedom_of_conscience = disapprove
+		law_total_separation = approve
+		law_state_atheism = approve
+	}
 	
 	possible = {
 		owner = { has_technology_researched = socialism }
@@ -1689,7 +1754,7 @@ ideology_vanguardist = {
 					NOT = { has_law = law_type:law_council_republic }
 				}
 				scope:interest_group = {
-					ig_approval <= -5
+					ig_approval <= -8 # -5
 					NOT = { is_interest_group_type = ig_armed_forces }
 				}
 			}
@@ -1791,6 +1856,10 @@ ideology_fascist = {
 	
 	character_ideology = yes
 
+	lawgroup_governance_principles = {
+		law_council_republic = strongly_disapprove
+	}
+
 	lawgroup_distribution_of_power = {
 		law_single_party_state = strongly_approve
 		law_autocracy = approve
@@ -1801,6 +1870,12 @@ ideology_fascist = {
 		law_census_voting = strongly_disapprove
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove				
+	}
+
+	lawgroup_economic_system = {
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = disapprove
+		law_industry_banned = strongly_disapprove
 	}
 
 	lawgroup_citizenship = {
@@ -1823,6 +1898,13 @@ ideology_fascist = {
 		law_right_of_assembly = disapprove
 		law_censorship = neutral
 		law_outlawed_dissent = strongly_approve
+	}
+
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_disapprove
+		law_no_home_affairs = disapprove
+		law_national_guard = approve
+		law_secret_police = strongly_approve
 	}
 
 	lawgroup_policing = {
@@ -2010,7 +2092,7 @@ ideology_anarchist = {
 		law_agrarianism = neutral
 		law_traditionalism = strongly_disapprove	
 		law_laissez_faire = strongly_disapprove
-		law_industry_banned = disapprove
+		law_industry_banned = strongly_disapprove # disapprove
 	}
 
 	lawgroup_army_model = {
@@ -2092,7 +2174,7 @@ ideology_anarchist = {
 					NOT = { has_law = law_type:law_council_republic }
 				}
 				scope:interest_group = {
-					ig_approval <= -5
+					ig_approval <= 8 # -5
 				}
 			}
 			add = 100
@@ -2771,8 +2853,14 @@ ideology_authoritarian = {
 						has_law = law_type:law_autocracy
 						has_law = law_type:law_oligarchy
 					}
-					has_law = law_type:law_secret_police
-					has_law = law_type:law_outlawed_dissent
+					OR = {
+						has_law = law_type:law_secret_police
+						has_law = law_type:law_national_guard
+					}
+					OR = {
+						has_law = law_type:law_outlawed_dissent
+						has_law = law_type:law_censorship
+					}
 				}
 			}
 			add = -50

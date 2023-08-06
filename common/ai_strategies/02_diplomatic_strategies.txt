@@ -120,6 +120,22 @@
 			}
 			add = 20
 		}
+		if = {
+			limit = {
+				exists = c:RUS
+				THIS = c:RUS
+				has_law = law_type:law_autocracy
+	}
+			add = 15
+		}
+		if = {
+			limit = {
+				exists = c:AUS
+				THIS = c:AUS
+				has_law = law_type:law_autocracy
+			}
+			add = 15
+		}	
 	}
 }
 
@@ -199,6 +215,15 @@ ai_strategy_territorial_expansion = {
 				min = 0.5
 			}			
 		}			
+		
+		if = {
+			limit = {
+				NOT = {
+					has_strategic_adjacency = scope:target_country
+				}
+			}
+			add = -50
+		}
 	}
 
 	building_group_weights = {
@@ -208,11 +233,92 @@ ai_strategy_territorial_expansion = {
 	secret_goal_weights = {
 		protect = 0.5
 		conquer = 1.5
+		dominate = 1.5
 	}
 
-	wargoal_weights = {
-		conquer_state = 1.5
-		return_state = 1.5
+	#wargoal_weights = {
+	#	conquer_state = 1.5
+	#	return_state = 1.5
+	#}
+	
+	wargoal_scores = {
+		conquer_state = {
+			value = 0
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_state
+				}
+				add = 2
+			}
+
+			if = {
+				limit = {
+					is_adjacent = scope:target_state
+				}
+				add = 4
+			}
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_state
+					scope:target_state = {
+						is_homeland_of_country_cultures = ROOT
+					}
+				}
+				add = 10
+			}
+		}
+
+		return_state = {
+			value = 0
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_state
+				}
+				add = 10
+			}
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_state
+					scope:target_state = {
+						is_homeland_of_country_cultures = ROOT
+					}
+				}
+				add = 10
+			}
+		}
+
+		annex_country = {
+			value = 0
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_country
+				}
+				add = 100
+			}
+		}
+
+		make_puppet = {
+			value = 0
+
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_country
+				}
+			add = 2
+			}
+
+			if = {
+				limit = {
+					is_adjacent = scope:target_state
+				}
+			add = 10
+			}
+		}
 	}	
 		
 	possible = {
@@ -240,7 +346,15 @@ ai_strategy_territorial_expansion = {
 		
 		if = {
 			limit = { country_is_in_europe = yes }
-			multiply = 0.25
+			multiply = 0.10 # 0.25
+		}	
+		if = {
+			limit = {
+				exists = c:RUS
+				THIS = c:RUS
+				has_law = law_type:law_autocracy
+	}
+			add = 20
 		}	
 	}
 }
@@ -299,6 +413,40 @@ ai_strategy_colonial_expansion = {
 				limit = { has_technology_researched = civilizing_mission }
 				add = 1.0
 			}			
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					NOT = { is_country_type = unrecognized }
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = { 
+						is_country_type = unrecognized 
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 5
+			}			
+		}
+		if = {
+			limit = {
+				exists = c:DEI
+				c:DEI = {
+					is_subject_of = ROOT
+					}
+				scope:target_country = {
+					is_country_type = unrecognized
+					any_scope_state = { 
+						OR = {
+							region = sr:region_east_sunda_islands
+							region = sr:region_west_sunda_islands
+							region = sr:region_borneo
+							region = sr:region_papua
+						}
+					}
+				}
+			}
+			add = 5
 		}
 
 		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
@@ -361,6 +509,17 @@ ai_strategy_colonial_expansion = {
 			limit = { navy_size >= 120 }
 			add = 0.1
 		}			
+		
+		if = {
+			limit = {
+				country_is_in_north_america = yes
+				NOT = {
+					has_law = law_type:law_colonial_exploitation
+					has_law = law_type:law_slave_trade
+				}
+			}
+			multiply = 0.0
+		}
 	}
 	
 	secret_goal_scores = {
@@ -378,6 +537,21 @@ ai_strategy_colonial_expansion = {
 				}
 				add = 200
 			}	
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						is_subject_of = ROOT
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 500
+			}
 		}		
 		conquer = {
 			if = {
@@ -393,6 +567,21 @@ ai_strategy_colonial_expansion = {
 				}
 				add = 200
 			}	
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						is_subject_of = ROOT
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 1000
+			}	
 		}		
 	}
 
@@ -400,6 +589,174 @@ ai_strategy_colonial_expansion = {
 		conquer_state = 1.5
 		make_dominion = 1.5
 		take_treaty_port = 1.5
+		make_puppet = 1.5
+		annex_country = 1.5
+	}	
+
+	wargoal_scores = {	
+
+		annex_country = {
+			value = 0
+		
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						is_subject_of = ROOT
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 100
+			}
+		}
+		make_puppet = {
+			value = 0
+		
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						country_rank <= rank_value:unrecognized_regional_power
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 100
+			}
+			if = {
+				limit = {
+					can_reach_target_state = yes
+					NOT = { is_country_type = unrecognized }
+					has_technology_researched = sea_lane_strategies
+					scope:target_country = { 
+						is_country_type = unrecognized
+						country_rank <= rank_value:unrecognized_regional_power
+						any_scope_state = {
+							region = sr:region_arabic
+						}
+					}
+				}
+				add = 5
+			}
+		}
+		conquer_state = {
+		
+			if = {
+				limit = {
+					can_reach_target_state = yes
+					has_technology_researched = civilizing_mission
+					scope:target_country = {
+						is_subject = no
+						is_country_type = unrecognized
+						exists = c:KON
+						this = c:KON
+					}
+				}
+				add = 100
+			}
+			if = {
+				limit = {
+					can_reach_target_state = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						country_rank < rank_value:unrecognized_regional_power
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 100
+			}
+
+			if = {
+				limit = {
+					can_reach_target_state = yes
+					NOT = { is_country_type = unrecognized }
+					has_technology_researched = malaria_prevention
+					scope:target_country = { 
+						is_country_type = recognized
+						any_scope_state = {
+							state_is_in_africa = yes
+							NOT = { state_is_in_north_africa = yes }
+						}
+					}
+				}
+				add = 5
+			}
+
+			if = {
+				limit = {
+					can_reach_target_state = yes
+					NOT = { is_country_type = unrecognized }
+					has_technology_researched = sea_lane_strategies
+					scope:target_state = { 
+							region = sr:region_arabic
+					}
+				}
+				add = 5
+			}
+			
+			if = { #Do Not Take Chinese States In Full, unless another power has already done so
+				limit = {
+					country_rank >= rank_value:major_power
+					scope:target_state = {
+						owner = { 
+							OR = {
+								has_journal_entry = je_warlord_china 
+								has_variable = warlord_state
+							}
+						}
+						OR = {
+							region = sr:region_north_china
+							region = sr:region_east_china
+							region = sr:region_south_china
+							region = sr:region_mongolia
+							region = sr:region_manchuria
+							region = sr:region_himalayas
+							region = sr:region_central_asia
+						}
+					}				
+					OR = {
+						country_is_in_north_america = yes
+						country_is_in_europe = yes
+						country_is_in_south_america = yes
+					}					
+					NOT = {
+						any_country = {
+							NOT = { THIS = ROOT }
+							country_rank >= rank_value:major_power
+							OR = {
+								country_is_in_north_america = yes
+								country_is_in_europe = yes
+								country_is_in_south_america = yes
+							}
+							any_scope_state = {
+								NOT = { is_treaty_port = yes }
+								OR = {
+									region = sr:region_north_china
+									region = sr:region_east_china
+									region = sr:region_south_china
+									region = sr:region_mongolia
+									region = sr:region_manchuria
+								}
+							}
+						}					
+					}
+				}
+				multiply = 0
+			}
+		}
 	}	
 		
 	possible = {
@@ -408,6 +765,10 @@ ai_strategy_colonial_expansion = {
 		OR = {
 			has_law = law_type:law_colonial_resettlement
 			has_law = law_type:law_colonial_exploitation
+		}
+		NOT = {
+			country_is_in_north_america = yes
+			has_law = law_type:law_colonial_resettlement
 		}
 	}
 
@@ -449,6 +810,15 @@ ai_strategy_colonial_expansion = {
 			limit = { has_technology_researched = civilizing_mission }
 			multiply = 1.25
 		}				
+		
+		if = {
+			limit = {
+				exists = c:RUS
+				THIS = c:RUS
+				has_law = law_type:law_autocracy
+			}
+			add = -30
+		}
 	}
 }
 
@@ -569,7 +939,7 @@ ai_strategy_economic_imperialism = {
 	}			
 	
 	diplomatic_play_neutrality = {
-		value = 10
+		value = 30 # 10
 	}
 	
 	diplomatic_play_boldness = {
@@ -591,8 +961,43 @@ ai_strategy_economic_imperialism = {
 			
 			if = {
 				limit = { has_technology_researched = civilizing_mission }
-				add = 0.5
+				add = 1.0
 			}			
+		}
+		if = {
+			limit = {
+				can_reach_target_country = yes
+				has_law = law_type:law_colonial_exploitation
+				has_technology_researched = civilizing_mission
+				NOT = { is_country_type = unrecognized }
+				scope:target_country = { 
+					is_country_type = unrecognized 
+					any_scope_state = {
+						state_is_in_africa = yes
+					}
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				has_strategic_adjacency = scope:target_country
+				c:DEI = {
+					is_subject_of = ROOT
+				}
+				scope:target_country = {
+					is_country_type = unrecognized
+					any_scope_state = {
+						OR = {
+							region = sr:region_east_sunda_islands
+							region = sr:region_west_sunda_islands
+							region = sr:region_borneo
+							region = sr:region_papua
+						}
+					}
+				}
+			}
+			add = 5
 		}
 		
 		if = {
@@ -604,6 +1009,30 @@ ai_strategy_economic_imperialism = {
 				} 
 			}
 			add = 10
+		}
+		if = {
+			limit = {
+				can_reach_target_country = yes
+				has_technology_researched = civilizing_mission
+				has_law = law_type:law_colonial_exploitation
+				scope:target_country = {
+					is_country_type = unrecognized
+					is_subject_of = ROOT
+					any_scope_state = {
+						state_is_in_africa = yes
+					}
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				country_is_in_europe = yes
+				scope:target_country = {
+					country_is_in_europe = yes
+				}
+			}
+			multiply = 0.05
 		}
 
 		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
@@ -666,6 +1095,17 @@ ai_strategy_economic_imperialism = {
 			limit = { navy_size >= 120 }
 			add = 0.05
 		}			
+		
+		if = {
+			limit = {
+				country_is_in_north_america = yes
+				NOT = {
+					has_law = law_type:law_colonial_exploitation
+					has_law = law_type:law_slave_trade
+				}
+			}
+			multiply = 0.0
+		}
 	}
 	
 	secret_goal_scores = {
@@ -703,6 +1143,20 @@ ai_strategy_economic_imperialism = {
 				}
 				add = 50
 			}		
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_law = law_type:law_colonial_exploitation
+					NOT = { is_country_type = unrecognized }
+					scope:target_country = { 
+						is_country_type = unrecognized 
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 100
+			}		
 		}		
 		conquer = {		
 			if = {
@@ -717,6 +1171,36 @@ ai_strategy_economic_imperialism = {
 					scope:target_country = { NOT = { is_country_type = unrecognized } }
 				}
 				multiply = 0.5
+			}			
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_law = law_type:law_colonial_exploitation
+					NOT = { is_country_type = unrecognized }
+					scope:target_country = { 
+						is_country_type = unrecognized 
+						any_scope_state = {
+							state_is_in_africa = yes
+							NOT = { state_is_in_north_africa = yes }
+						}
+					}
+				}
+				add = 100
+			}
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						is_subject_of = ROOT
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 1000
 			}			
 		}		
 	}
@@ -737,9 +1221,123 @@ ai_strategy_economic_imperialism = {
 					can_reach_target_country = yes
 					scope:target_country = {
 						has_law = law_type:law_isolationism
+						total_population >= 6000000
 					}
 				}
 				add = 1000
+			}
+		}
+
+		take_treaty_port = {
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					scope:target_country = {
+						has_law = law_type:law_isolationism
+						total_population >= 6000000
+					}
+				}
+				add = 100
+			}
+			if = {
+				limit = {
+					country_is_in_europe = yes
+					scope:target_country = {
+						country_is_in_europe = yes
+					}
+				}
+				multiply = 0
+			}
+		}
+
+		annex_country = {
+			value = 100
+		
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						is_subject_of = ROOT
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 1000
+			}
+		}
+		make_puppet = {
+			value = 0
+		
+			if = {
+				limit = {
+					can_reach_target_country = yes
+					has_technology_researched = civilizing_mission
+					has_law = law_type:law_colonial_exploitation
+					scope:target_country = {
+						is_country_type = unrecognized
+						country_rank <= rank_value:unrecognized_regional_power
+						any_scope_state = {
+							state_is_in_africa = yes
+						}
+					}
+				}
+				add = 20
+			}
+		}
+
+		conquer_state = {
+			if = { #Do Not Take Chinese States In Full, unless another power has already done so
+				limit = {
+					country_rank >= rank_value:major_power
+					scope:target_state = {
+						owner = { 
+							OR = {
+								has_journal_entry = je_warlord_china 
+								has_variable = warlord_state
+							}
+						}
+						OR = {
+							region = sr:region_north_china
+							region = sr:region_east_china
+							region = sr:region_south_china
+							region = sr:region_mongolia
+							region = sr:region_manchuria
+							region = sr:region_himalayas
+							region = sr:region_central_asia
+						}
+					}				
+					OR = {
+						country_is_in_north_america = yes
+						country_is_in_europe = yes
+						country_is_in_south_america = yes
+					}					
+					NOT = {
+						any_country = {
+							NOT = { THIS = ROOT }
+							country_rank >= rank_value:major_power
+							OR = {
+								country_is_in_north_america = yes
+								country_is_in_europe = yes
+								country_is_in_south_america = yes
+							}
+							any_scope_state = {
+								NOT = { is_treaty_port = yes }
+								OR = {
+									region = sr:region_north_china
+									region = sr:region_east_china
+									region = sr:region_south_china
+									region = sr:region_mongolia
+									region = sr:region_manchuria
+								}
+							}
+						}					
+					}
+				}
+				multiply = 0
 			}
 		}
 	}
@@ -791,9 +1389,18 @@ ai_strategy_economic_imperialism = {
 		}		
 		
 		if = {
-			limit = { navy_size >= 75 }
+			limit = { navy_size >= 150 }
 			multiply = 1.5
 		}			
+		
+		if = {
+			limit = {
+				exists = c:RUS
+				THIS = c:RUS
+				has_law = law_type:law_autocracy
+	}
+			add = -20
+		}
 	}
 }
 
@@ -840,14 +1447,65 @@ ai_strategy_unify_germany = {
 			}
 			add = 25
 		}
+
+		if = {
+			limit = { 
+				scope:target_country = {
+					NOT = { is_unification_candidate = GER }			
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+				}
+				NOR = {
+					scope:target_country = { is_subject = yes }
+					has_diplomatic_pact = {
+						who = scope:target_country
+						type = customs_union
+					}					
+				}
+			}
+			add = 25
+		}		
 	}	
 
 	recklessness = {
 		value = 0.5
+
+		if = {
+			limit = {
+				has_technology_researched = pan-nationalism
+			}
+			add = 0.25
+		}
+		if = {
+			limit = {
+				scope:target_country = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					NOT = { is_unification_candidate = GER }
+					is_subject = yes
+				}
+			}
+			add = 100
+		}	
+
+		if = {
+			limit = { 
+				wants_to_solve_schleswig_holstein = yes
+				scope:target_country = { 
+					is_oppressor_of_schleswig_holstein = yes
+				}
+			}
+			add = 10
+		}	
 	}
 	
 	aggression = {
-		value = 0.25
+		# Total aggression calculated here is multiplied by UNIFICATION_AGGRESSION_MULT_HIGHER_TIER in defines for the purpose of Unification/Leadership plays # VANILLA = 20.0
+		value = 0.0
 		
 		if = {
 			limit = { 
@@ -856,9 +1514,131 @@ ai_strategy_unify_germany = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
 					}
+					NOT = { is_unification_candidate = GER }
+					is_subject = no
 				}
 			}
-			add = 2.75
+			#add = 10 # VANILLA = 10
+			multiply = 0.1 # DONT WANT PRUSSIA TO ATTACK MINORS
+		}
+
+		if = {
+			limit = {
+				has_journal_entry = je_north_german_unification
+				scope:target_country = {
+					is_unification_candidate = GER
+				}													
+			}
+			add = 2
+		}
+
+		if = {
+			limit = {
+				scope:target_country = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					NOT = { is_unification_candidate = GER }
+					is_subject = yes
+				}
+				scope:target_country.top_overlord = {
+					NOR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+				}
+			}
+			add = 5
+		}	
+
+		if = {
+			limit = {
+				scope:target_country = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					NOT = { is_unification_candidate = GER }
+					is_subject = yes
+				}
+				scope:target_country.top_overlord = {
+					NOR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+				}
+				has_technology_researched = organized_sports
+			}
+			multiply = 5
+		}	
+
+		if = {
+			limit = {
+				NOT = { is_unification_candidate = GER }
+				scope:target_country = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					NOT = { is_unification_candidate = GER }
+					is_subject = yes
+				}
+				scope:target_country.top_overlord = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+				}
+				has_technology_researched = organized_sports
+			}
+			multiply = 5
+		}	
+
+		if = {
+			limit = {
+				has_technology_researched = pan-nationalism
+				scope:target_country = {
+					is_unification_candidate = GER
+				}
+			}
+			add = 5
+		}
+
+		if = {
+			limit = {
+				scope:target_country = {
+					is_unification_candidate = GER
+				}
+				has_technology_researched = pan-nationalism
+				has_global_variable = schleswig_holstein_question_solved
+			}
+			multiply = 100.0
+		}
+
+		if = {
+			limit = { 
+				has_journal_entry = je_german_unification
+				scope:target_country = {
+					NOR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					country_rank >= rank_value:major_power		
+					any_scope_state = {
+						OR = {
+							state_region = {
+								is_homeland = cu:north_german
+							}
+							state_region = {
+								is_homeland = cu:south_german	
+							}
+						}
+					
+					}	
+				}
+			}
+			add = 1000
 		}
 
 		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
@@ -901,8 +1681,14 @@ ai_strategy_unify_germany = {
 	
 	wargoal_scores = {
 		conquer_state = {
+			multiply = 0.0
 			if = {
 				limit = {
+					NOT = {
+						scope:target_country = {
+							is_unification_candidate = GER
+						}
+					}
 					scope:target_state = {
 						state_region = {
 							OR = {
@@ -910,25 +1696,62 @@ ai_strategy_unify_germany = {
 								is_homeland = cu:south_german
 							}
 						}
-						owner = {
+					}
+					is_adjacent = scope:target_state
+					#can_reach_target_state = yes				
+				}
+				add = 10
+			}
+			if = {
+				limit = {
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+						NOT = { is_unification_candidate = GER }
+						is_subject = yes
+					}
+					scope:target_country.top_overlord = {
 							NOR = { 
-								is_supporting_unification_candidate = { who = root country_formation = GER }
-								is_subject_of = root
-								has_diplomatic_pact = {
-									who = scope:target_country
-									type = customs_union
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
 								}							
 							}						
 						}
+				add = 5
 					}
-					can_reach_target_state = yes					
+	
+			if = {
+				limit = {
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
 				}
-				add = 100
+						NOT = { is_unification_candidate = GER }
+						is_subject = yes
+			}
+					scope:target_country.top_overlord = {
+						NOR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}
+					has_technology_researched = organized_sports
+				}
+				multiply = 10
 			}
 		}
 		return_state = {
+			value = 0
 			if = {
 				limit = {
+					NOT = {
+						scope:target_country = {
+							is_unification_candidate = GER
+						}
+					}
 					scope:target_state = {
 						state_region = {
 							OR = {
@@ -937,14 +1760,75 @@ ai_strategy_unify_germany = {
 							}
 						}	
 					}
-					can_reach_target_state = yes
+					is_adjacent = scope:target_state
+					#can_reach_target_state = yes
+				}
+				add = 25
+			}
+		}		
+		unification_leadership = {
+			if = {
+				limit = {
+					scope:target_country = {
+						is_unification_candidate = GER
+		}	
+	}
+				value = 2
+			}
+			if = {
+				limit = {
+					has_technology_researched = pan-nationalism
+					has_global_variable = schleswig_holstein_question_solved
+				}
+				multiply = 100.0
+			}
+		}
+		unification = {
+			value = 1.0
+			if = {
+				limit = {
+					has_technology_researched = pan-nationalism
+				}
+				add = 1000
+			}
+		}
+		transfer_subject = {
+			if = { # We dont like German states that are subjects to non-Germans
+				limit = {
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}
+					scope:target_country.top_overlord = {
+						NOR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german						
+						}
+					}
+				}
+				add = 100
+			}
+			
+			if = { # We dont like German states that are subjects to Germans
+				limit = {
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}
+					scope:target_country.top_overlord = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german						
+						}
+					}
 				}
 				add = 100
 			}
 		}		
-		unification_leadership = {
-			value = 1000
-		}	
 	}
 	
 	secret_goal_scores = {
@@ -957,20 +1841,34 @@ ai_strategy_unify_germany = {
 							country_has_primary_culture = cu:south_german
 						}
 						NOT = { is_unification_candidate = GER }
+						#is_supporting_unification_candidate = { who = root country_formation = GER } # Prussia should seek to protect all German minors
+						NOT = {
+							is_subject = yes
+						}
+					}
+				}
+				add = 100
+			}		
+		}
+		befriend = {		
+			if = {
+				limit = {
+					scope:target_country = {
 						OR = { 
-							is_supporting_unification_candidate = { who = root country_formation = GER }
-							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
 							}							
+						NOT = { is_unification_candidate = GER }
+						NOT = { is_supporting_unification_candidate = { who = root country_formation = GER } }
+						NOT = {
+							is_subject = yes
 						}						
 					}
 				}
-				add = 1000
+				add = 100
 			}		
 		}		
-		dominate = {		
+		reconcile = {		
 			if = {
 				limit = {
 					scope:target_country = {
@@ -979,34 +1877,211 @@ ai_strategy_unify_germany = {
 							country_has_primary_culture = cu:south_german
 						}					
 						NOT = { is_unification_candidate = GER }
+						NOT = { is_supporting_unification_candidate = { who = root country_formation = GER } }
+						NOT = {
+							is_subject = yes
+						}
+					}
+				}
+				add = 100
+			}		
+		}		
+		conquer = {				
+			if = {
+				limit = {
+					scope:target_country = {				
+						is_unification_candidate = GER
+						NOT = { is_supporting_unification_candidate = { who = root country_formation = GER } }
+					}
+				}
+				add = 500
+			}
+			if = {
+				limit = {
+					has_journal_entry = je_north_german_unification
+					scope:target_country = {
+						is_unification_candidate = GER
+					}					
+				}
+				add = 10
+			}		
+			if = {
+				limit = {
+					has_journal_entry = je_german_unification
+					scope:target_country = {
+						is_unification_candidate = GER
+					}					
+				}
+				add = 10
+			}	
+			if = {
+				limit = {
+					scope:target_country = {
+						is_unification_candidate = GER
+					}
+					has_technology_researched = pan-nationalism
+				}
+				multiply = 8.0
+			}
+			if = {
+				limit = {
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+						NOT = { is_unification_candidate = GER }
+						is_subject = yes
+					}
+				}
+				add = 1000
+			}	
+			if = { # clean up the board
+				limit = {
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}					
+						NOT = { is_unification_candidate = GER }
+						NOT = { is_supporting_unification_candidate = { who = root country_formation = GER } }
+					}
+					NOT = {
+						any_country = {
+							NOT = {	THIS = ROOT }
+							is_unification_candidate = GER
+						}
+					}
+				}
+				add = 1000
+			}
+			if = {
+				limit = { 
+					has_journal_entry = je_german_unification
+					scope:target_country = {
 						NOR = { 
-							is_supporting_unification_candidate = { who = root country_formation = GER }
-							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
 							}							
+						country_rank >= rank_value:major_power		
+						any_scope_state = {
+							OR = {
+								state_region = {
+									is_homeland = cu:north_german
+						}	
+								state_region = {
+									is_homeland = cu:south_german	
+								}
+							}
+						
 						}	
 					}
 				}
 				add = 1000
 			}		
+			
+			if = {
+				limit = { 
+					has_journal_entry = je_german_unification
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
 		}
-		conquer = {				
+						country_rank < rank_value:great_power
+						any_scope_state = {
+							OR = {
+								state_region = {
+									is_homeland = cu:north_german
+								}
+								state_region = {
+									is_homeland = cu:south_german	
+								}
+							}
+						
+						}	
+					}
+				}
+				add = 1000
+			}
+		}	
+		antagonize = {				
 			if = {
 				limit = {
 					scope:target_country = {				
-						is_unification_candidate =GER
+						is_unification_candidate = GER
+					}
+				}
+				add = 200
+
+			}
+			if = {
+				limit = {
+					has_journal_entry = je_north_german_unification
+					scope:target_country = {
+						is_unification_candidate = GER
+					}					
+				}
+				multiply = 1.5
+			}
+			if = {
+				limit = { 
+					wants_to_solve_schleswig_holstein = yes
+					scope:target_country = { 
+						is_oppressor_of_schleswig_holstein = yes
 					}
 				}
 				add = 1000
 			}			
+			if = {
+				limit = {
+					scope:target_country = {
+						is_unification_candidate = GER
 		}
+					has_technology_researched = pan-nationalism
+				}
+				multiply = 0.10
 	}	
 
+			if = {
+				limit = {
+					NOT = { is_unification_candidate = GER }
+					scope:target_country = {
+						is_unification_candidate = GER
+					}
+					has_technology_researched = pan-nationalism
+				}
+				add = 200
+			}
+		}					
+	}	
+
+	#	wargoal_weights = {
+	#		conquer_state = 0.5
+	#		return_state = 1.0
+	#		unification_leadership = 2.5
+	#		unification = 1.5
+	#		liberate_subject = 1.5
+	#		transfer_subject = 1.5
+	#	}	
 	possible = {
-		is_unification_candidate = GER	
-		NOT = { country_tier = empire }
+		OR = {
+			AND = {
+				has_technology_researched = nationalism
+				has_journal_entry = je_schleswig_holstein_question
+				country_rank = rank_value:great_power
+				NOT =  { country_tier = empire	}
+			}
+			AND = {
+				is_unification_candidate = GER	
+				NOT = { country_tier = empire }
+			}		
+			AND = {
+				has_technology_researched = pan-nationalism
+				exists = c:NGF
+				THIS = c:NGF
+			}
+		}
 	}
 
 	weight = {
@@ -1032,7 +2107,7 @@ ai_strategy_unify_italy = {
 	}
 	
 	wargoal_maneuvers_fraction = {
-		value = 0.2
+		value = 0.5
 	}		
 	
 	diplomatic_play_neutrality = {
@@ -1061,6 +2136,23 @@ ai_strategy_unify_italy = {
 	
 	recklessness = {
 		value = 0.5
+		if = { #unification-recklessness
+				limit = {
+					has_journal_entry = je_italian_unification
+					has_technology_researched = pan-nationalism
+					scope:target_country = {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_LOMBARDY
+								state_region = s:STATE_VENETIA
+								state_region = s:STATE_ISTRIA
+								state_region = s:STATE_SOUTH_TYROL
+							}
+						}
+					}
+				}
+				add = 5
+			}
 	}	
 	
 	aggression = {
@@ -1072,10 +2164,31 @@ ai_strategy_unify_italy = {
 					OR = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:south_italian
+						has_journal_entry = je_italian_unification
 					}	
 				}
 			}
 			add = 2.75
+		}
+
+		if = {
+			limit = { 
+				has_technology_researched = organized_sports
+				scope:target_country = {
+					NOT = {
+						is_supporting_unification_candidate = { who = root country_formation = ITA }
+					}	
+					any_scope_state = {
+						state_region = {
+							OR = {
+								is_homeland = cu:north_italian
+								is_homeland = cu:south_italian
+							}
+						}
+					}
+				}
+			}
+			add = 20
 		}
 
 		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
@@ -1129,7 +2242,7 @@ ai_strategy_unify_italy = {
 						}
 						owner = {
 							NOR = { 
-								is_supporting_unification_candidate = { who = root country_formation = GER }
+								is_supporting_unification_candidate = { who = root country_formation = ITA }
 								is_subject_of = root
 								has_diplomatic_pact = {
 									who = scope:target_country
@@ -1138,11 +2251,68 @@ ai_strategy_unify_italy = {
 							}						
 						}						
 					}	
-					can_reach_target_state = yes
+					is_adjacent = scope:target_state
+					#can_reach_target_state = yes
 				}
 				add = 100
 			}
+			if = {
+				limit = {
+					scope:target_country = {
+						is_unification_candidate = ITA
 		}
+					#is_adjacent = scope:target_state
+					#can_reach_target_state = yes				
+				}
+				multiply = 0.0
+			}
+			
+			if = {
+				limit = {
+					exists = c:AUS
+					scope:target_country = {
+						THIS = c:AUS
+					}
+				}
+				multiply = 0.0
+			}
+		}
+
+		make_puppet = {		
+				if = {
+					limit = {
+						scope:target_country = {
+							OR = {
+								country_has_primary_culture = cu:north_italian
+								country_has_primary_culture = cu:south_italian
+							}
+							has_journal_entry = je_italian_unification					
+							NOR = { 
+
+								is_supporting_unification_candidate = { who = root country_formation = ITA }
+								is_subject_of = root
+								has_diplomatic_pact = {
+									who = scope:target_country
+									type = customs_union
+								}							
+							}	
+						}
+					}
+					add = 200
+				}	
+				if = {
+					limit = {
+						is_unification_candidate = ITA
+						scope:target_country = {
+							is_unification_candidate = ITA
+						}
+						#is_adjacent = scope:target_state
+						#can_reach_target_state = yes				
+					}
+					add = 100
+				}	
+		}
+
 		return_state = {
 			if = {
 				limit = {
@@ -1154,12 +2324,40 @@ ai_strategy_unify_italy = {
 							}
 						}					
 					}
-					can_reach_target_state = yes
+					#can_reach_target_state = yes
+					is_adjacent = scope:target_state
+					NOT = {
+						has_journal_entry = je_italian_unification
 				}
+				}
+
 				add = 100
+			}
+			if = {
+				limit = {
+					scope:target_country = {
+						is_unification_candidate = ITA
+					}
+					#is_adjacent = scope:target_state
+					#can_reach_target_state = yes				
+				}
+				multiply = 0.0
+			}
+			
+			if = {
+				limit = {
+					exists = c:AUS
+					scope:target_country = {
+						THIS = c:AUS
+					}
+				}
+				multiply = 0.0
 			}
 		}
 		unification_leadership = {
+			value = 0
+		}		
+		unification = {
 			value = 1000
 		}			
 	}	
@@ -1195,8 +2393,8 @@ ai_strategy_unify_italy = {
 							country_has_primary_culture = cu:north_italian
 							country_has_primary_culture = cu:south_italian
 						}					
+						has_journal_entry = je_italian_unification					
 						NOR = { 
-							is_unification_candidate = ITA
 							is_supporting_unification_candidate = { who = root country_formation =ITA }
 							is_subject_of = root
 							has_diplomatic_pact = {
@@ -1213,17 +2411,69 @@ ai_strategy_unify_italy = {
 			if = {
 				limit = {
 					scope:target_country = {				
-						is_unification_candidate = ITA
+						has_journal_entry = je_italian_unification
+						NOT = {
+							is_supporting_unification_candidate = { who = root country_formation =ITA }
+						}
+					}
+				}
+				add = 200
+			}	
+
+			if = { #cleanup + austria
+				limit = {
+					has_journal_entry = je_italian_unification
+					scope:target_country = {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_LOMBARDY
+								state_region = s:STATE_VENETIA
+								state_region = s:STATE_ISTRIA
+								state_region = s:STATE_SOUTH_TYROL
+							}
+						}
 					}
 				}
 				add = 1000
 			}			
+			
+			if = {
+				limit = {
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:south_italian
+		}		
+						is_subject = yes
+					}
+				}
+				add = 1000
+			}	
+		}
+		befriend = {
+			if = {
+				limit = {
+					has_technology_researched = nationalism
+					has_journal_entry = je_italian_unification
+					scope:target_country = {
+						OR = {
+							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:north_italian
+						}
+						country_rank < rank_value:minor_power
+					}
+				}
+				add = 1000
+			}
 		}		
 	}
 		
 	possible = {
+		has_journal_entry = je_italian_unification
+		OR = {
+			country_rank >= rank_value:major_power
 		is_unification_candidate = ITA	
-		NOT = { country_tier = empire }
+		}
 	}
 
 	weight = {
@@ -1431,7 +2681,7 @@ ai_strategy_unify_china = {
 	type = diplomatic
 	
 	undesirable_infamy_level = {
-		value = 50
+		value = 75
 	}
 	
 	unacceptable_infamy_level = {
@@ -1475,6 +2725,13 @@ ai_strategy_unify_china = {
 		if = {
 			limit = { 
 				scope:target_country = { can_form_nation = CHI }
+			}
+			add = 2.5
+		}
+
+		if = {
+			limit = { 
+				scope:target_country = { THIS = c:CHI }
 			}
 			add = 2.5
 		}
@@ -1561,6 +2818,22 @@ ai_strategy_unify_china = {
 				add = 200
 			}
 		}		
+		make_puppet = {
+			if = {
+				limit = {
+					scope:target_state = {					
+						state_region = {
+							OR = {
+								is_homeland = cu:manchu
+								is_homeland = cu:han
+							}
+						}	
+					}
+					can_reach_target_state = yes
+				}
+				add = 200
+			}
+		}		
 	}			
 	
 	secret_goal_scores = {
@@ -1568,35 +2841,63 @@ ai_strategy_unify_china = {
 			if = {
 				limit = {
 					scope:target_country = {
-						can_form_nation = CHI
+						OR = {
+							country_has_primary_culture = cu:han
+							country_has_primary_culture = cu:uighur
+							country_has_primary_culture = cu:yue
+							country_has_primary_culture = cu:manchu
+							country_has_primary_culture = cu:yi
+						}
 					}
 				}
 				add = 150
-				
+			
 				if = {
 					limit = {
 						can_reach_target_country = no
 					}	
 					add = 150
-				}	
+				}
 			}
-		}				
-		conquer = {				
+		}
+		conquer = {
 			if = {
 				limit = {
 					scope:target_country = {
-						can_form_nation = CHI
+						OR = {
+							country_has_primary_culture = cu:han
+							country_has_primary_culture = cu:uighur
+							country_has_primary_culture = cu:yue
+							country_has_primary_culture = cu:manchu
+							country_has_primary_culture = cu:yi
+						}
 					}
 					can_reach_target_country = yes
 				}
 				add = 500
-			}				
-		}			
+			}			
+			
+			if = {
+				limit = {
+					scope:target_country = {
+						THIS = c:CHI
+				}
+				can_reach_target_country = yes
+				}
+				add = 500
+			}
+		}
 	}	
 
 	possible = {
-		NOT = { exists = c:CHI }
-		can_form_nation = CHI	
+		has_global_variable = china_shatters
+		OR = {
+			country_has_primary_culture = cu:han
+			country_has_primary_culture = cu:yue
+			country_has_primary_culture = cu:uighur
+			country_has_primary_culture = cu:manchu
+			country_has_primary_culture = cu:yi
+		}
 	}
 
 	weight = {
@@ -1606,15 +2907,19 @@ ai_strategy_unify_china = {
 			limit = { NOT = { is_country_type = unrecognized } }
 			add = 100
 		}		
+		if = {
+			limit = { has_variable = warlord_state }
+			add = 200
+		}		
 		
 		if = {
 			limit = { country_rank = rank_value:unrecognized_regional_power }
-			add = 25
+			add = 100
 		}
 
 		if = {
 			limit = { country_rank = rank_value:unrecognized_major_power }
-			add = 50
+			add = 100
 		}		
 	}
 }

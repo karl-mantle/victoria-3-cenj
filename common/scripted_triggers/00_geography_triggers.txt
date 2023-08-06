@@ -98,6 +98,16 @@ state_is_in_africa = {
 	}
 }
 
+state_is_in_north_africa = { 
+	OR = {
+		region = sr:region_algeria
+		region = sr:region_libya
+		region = sr:region_morocco
+		region = sr:region_nile_basin
+		region = sr:region_sudan
+	}
+}
+
 state_is_in_middle_east = {
 	OR = {
 		region = sr:region_anatolia
@@ -238,6 +248,13 @@ country_is_in_southeast_asia = {
 	exists = capital
 	capital = {
 		state_is_in_southeast_asia = yes
+	}
+}
+
+country_is_in_china = {
+	exists = capital
+	capital = {
+		state_is_in_china = yes
 	}
 }
 

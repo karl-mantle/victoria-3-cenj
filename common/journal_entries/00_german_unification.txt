@@ -33,11 +33,8 @@
 				NOT = { c:SCH ?= this }
 				exists = c:DEN
 			}		
-			OR = { 
-				c:HOL ?= { is_subject_of = root }	
 				custom_tooltip = {
 					text = je_schleswig_holstein_question_state_ownership_desc
-				}
 				any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
 				s:STATE_SCHLESWIG_HOLSTEIN = {
 					NOT = {
@@ -104,36 +101,16 @@ je_german_unification_idea = {
 			country_has_primary_culture = cu:north_german
 			country_has_primary_culture = cu:south_german
 		}
-		NOT = {
-			has_variable = je_german_unification_idea
-		}
 	}
 
 	possible = {
-		custom_tooltip = {
-			has_global_variable = schleswig_holstein_question_solved
-			text = je_schleswig_holstein_question_solved_trigger_desc
-		}	
 		OR = {
 			country_has_primary_culture = cu:north_german
 			country_has_primary_culture = cu:south_german
 		}	
 	}
-
-	immediate = {
-		set_variable = {
-			name = unification_var
-			value = 0
-			days = 7
-		}
-	}
 	
 	complete = {		
-		hidden_trigger = {
-			NOT = {
-				has_variable = unification_var
-			}
-		}
 		any_country = {
 			filter = {
 				OR = {
@@ -259,7 +236,6 @@ je_german_unification_idea = {
 		}	
 		
 		hidden_effect = { set_variable = je_german_unification_idea }
-		hidden_effect = { remove_variable = unification_var }
 		trigger_event = { id = german_unification.5 } # German National Identity
 	}
 
@@ -299,6 +275,18 @@ je_north_german_unification = {
 		}				
 	}
 
+	fail = {
+		custom_tooltip = {
+			text = je_german_unification_german_hegemony_has_been_decided
+			any_country = {
+				has_variable = je_german_confederate_unifier
+			}	
+		}	
+	}
+
+	on_fail = {
+	}
+
 	on_monthly_pulse = {
 		events = {
 			german_unification.3 # Bismarck
@@ -317,6 +305,14 @@ je_north_german_unification = {
 		remove_variable = je_unification_progress
 	}
 
+	invalid = {
+		OR = {
+			exists = c:GER
+			exists = c:SGF
+			exists = c:NGF
+		}
+    }
+
 	status_desc = {
 		first_valid = {
 			triggered_desc = { 
@@ -331,6 +327,18 @@ je_north_german_unification = {
 
 je_south_german_unification = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	fail = {
+		custom_tooltip = {
+			text = je_german_unification_german_hegemony_has_been_decided
+			any_country = {
+				has_variable = je_german_confederate_unifier
+			}	
+		}	
+	}
+
+	on_fail = {
+	}
 
 	complete = {
 		custom_tooltip = {
@@ -363,7 +371,22 @@ je_south_german_unification = {
 	}
 
 	on_complete = {
-		trigger_event = { id = german_unification.1 } # South German Confederation
+		if = {
+			limit = {
+				NOT = {
+					country_tier = empire
+				}
+			}
+			trigger_event = { id = german_unification.1 } # South German Confederation for German minors
+
+		}
+		if = {
+			limit = {
+					country_tier = empire
+			}
+			trigger_event = { id = german_unification.100 } # South German Confederation for Austria
+
+		}
 		remove_variable = je_unification_progress
 	}
 

@@ -6,18 +6,38 @@
 	unification_play = dp_unify_germany
 	leadership_play = dp_leadership_germany
 
-	required_states_fraction = 0.63
+	required_states_fraction = 0.73 # 0.63
 	
 	ai_will_do = { has_technology_researched = nationalism }
 
 	possible = {
 		OR = {
+			any_country = {
+				filter = {
+					country_rank >= rank_value:major_power
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german				
+					}
+				}
 			has_technology_researched = pan-nationalism
+				percent >= 1.00
+			}
 			custom_tooltip = {
 				text = je_german_unification_idea_trigger_desc
 				has_variable = je_german_unification_idea
 			}					
+			custom_tooltip = {
+				text = german_homelands_trigger_desc
+				has_global_variable = german_homelands_under_threat
+			}					
 		}
+		#NOT = {
+		#	AND = {
+		#		exists = c:NGF
+		#		exists = c:SGF
+		#	}
+		#}
 	}
 }
 
@@ -29,21 +49,20 @@ ITA = { # Italy
 	unification_play = dp_unify_italy
 	leadership_play = dp_leadership_italy
 
-	required_states_fraction = 0.9
+	required_states_fraction = 0.87
 
-	ai_will_do = { has_technology_researched = nationalism }
+	ai_will_do = { has_journal_entry = je_italian_unification }
 
 	possible = {
-		OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:south_italian
-		}
 		any_country = {
+			filter = {
 			OR = {
 				country_has_primary_culture = cu:north_italian
 				country_has_primary_culture = cu:south_italian
 			}
+			}
 			has_technology_researched = nationalism
+			percent >= 0.50
 		}
 	}
 }
@@ -66,6 +85,7 @@ SCA = { # Scandinavia
 			country_has_primary_culture = cu:danish
 			country_has_primary_culture = cu:norwegian
 			country_has_primary_culture = cu:icelandic
+			country_has_primary_culture = cu:scanian
 		}	
 		any_country = {
 			OR = {
@@ -73,6 +93,7 @@ SCA = { # Scandinavia
 				country_has_primary_culture = cu:danish
 				country_has_primary_culture = cu:norwegian
 				country_has_primary_culture = cu:icelandic
+				country_has_primary_culture = cu:scanian
 			}	
 			has_technology_researched = pan-nationalism	
 		}

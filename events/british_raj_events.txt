@@ -543,9 +543,9 @@ raj.6 = {
 			}
 			create_diplomatic_play = {
 				name = sepoy_mutiny
-				war = yes
-				type = dp_annex_war
 
+				type = dp_annex_war
+				escalation = 80
 				target_state = s:STATE_DELHI.region_state:MUG
 
 				add_war_goal = {
@@ -568,6 +568,12 @@ raj.6 = {
 					type = conquer_state
 					target_state = s:STATE_CENTRAL_INDIA.region_state:BIC
 				}
+
+				#add_war_goal = {
+				#	holder = c:BIC
+				#	type = annex_country
+				#	target_country = c:MUG
+				#}
 			}
 		}
 		add_modifier = {

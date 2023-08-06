@@ -1,4 +1,110 @@
-﻿# Culture Related on_actions
+﻿# Additional on_actions
+
+# Re-calculates literacy rate for all POPs in the first month
+calculate_literacy_rate_on_action = {
+	effect = {
+		if = {
+			limit = { has_global_variable = literacy_rate_calculated }
+			## Decentralized countries are reset to baseline
+			if = {
+				limit = {
+					is_country_type = decentralized
+				}
+				effect_starting_pop_literacy_baseline = yes
+			}
+			## Reset Global Literacy
+			else_if = {
+				limit = {
+					NOT = { is_country_type = decentralized }
+					OR = { # Baseline
+						country_is_in_africa = yes
+						country_is_in_central_asia = yes
+						country_is_in_india = yes
+						country_is_in_southeast_asia = yes
+					}
+				}
+				effect_starting_pop_literacy_baseline = yes
+			}
+			else_if = {
+				limit = { # Very Low
+					NOT = { is_country_type = decentralized }
+					OR = {
+						country_is_in_central_america = yes
+						country_is_in_south_america = yes
+						country_is_in_middle_east = yes
+						country_is_in_east_asia = yes
+					}
+				}
+				effect_starting_pop_literacy_very_low = yes
+			}
+			else_if = {
+				limit = { # Low
+					NOT = { is_country_type = decentralized }
+					OR = {
+						country_is_in_china = yes
+						country_is_in_north_america = yes
+						country_is_in_europe = yes
+						country_is_in_east_asia = yes
+					}
+				}
+				effect_starting_pop_literacy_low = yes
+			}
+			# Reset Regional Literacy
+			else_if = { # Very Low
+				limit = {
+					exists = capital
+					OR = {
+						capital.region = sr:region_russia
+						capital.region = sr:region_arkhangelsk
+						capital.region = sr:region_white_ruthenia
+						capital.region = sr:region_volgar
+						capital.region = sr:region_dnieper
+					}
+				}
+				effect_starting_pop_literacy_very_low = yes
+			}
+			else_if = { # Middling
+				limit = {
+					exists = capital
+					OR = {
+						capital.region = sr:region_crown_of_aragon
+						capital.region = sr:region_occitania
+						capital.region = sr:region_burgundy
+						capital.region = sr:region_north_germany
+						capital.region = sr:region_rhineland
+						capital.region = sr:region_south_germany
+						capital.region = sr:region_north_italy
+						capital.region = sr:region_north_atlantic
+					}
+				}
+				effect_starting_pop_literacy_middling = yes
+			}
+			else_if = { # High
+				limit = {
+					exists = capital
+					OR = {
+						capital.region = sr:region_france
+						capital.region = sr:region_benelux
+						capital.region = sr:region_england
+					}
+				}
+				effect_starting_pop_literacy_high = yes
+			}
+			else_if = { # Very High
+				limit = {
+					exists = capital
+					OR = {
+						capital.region = sr:region_scandinavia
+						capital.region = sr:region_southern_africa
+					}
+				}
+				effect_starting_pop_literacy_very_high = yes
+			}
+			## Set a variable to stop it firing again
+			set_global_variable = literacy_rate_calculated
+		}
+	}
+}
 
 # Creates a homeland for a culture if population in state reaches a certain threshold.
 dynamic_homeland_on_action = {

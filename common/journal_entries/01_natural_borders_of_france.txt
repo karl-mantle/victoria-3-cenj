@@ -1,10 +1,30 @@
 ﻿je_french_natural_borders = {
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 
+	scripted_button = je_french_natural_borders_button_a
+	scripted_button = je_french_natural_borders_button_b
+	scripted_button = je_french_natural_borders_button_c
+
 	is_shown_when_inactive = {
 		exists = c:FRA
 		this = c:FRA
 		has_dlc_feature = voice_of_the_people_content
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					any_scope_state = {
+						OR = {
+							state_region = s:STATE_RHINELAND
+							state_region = s:STATE_NORTH_RHINE
+						}
+					}
+				}
+				set_global_variable = german_homelands_under_threat
+			}
+		}
 	}
 
 	possible = {
@@ -12,8 +32,8 @@
 		any_interest_group = {
 			is_powerful = yes
 			is_in_government = yes
-			#OR = {
-				#is_interest_group_type = ig_armed_forces
+			OR = {
+				is_interest_group_type = ig_armed_forces
 				leader = {
 					OR = {
 						has_ideology = ideology:ideology_jingoist_leader
@@ -23,13 +43,11 @@
 						has_ideology = ideology:ideology_bonapartist
 					}
 				}
-			#}
+			}
 		}
 	}
 
-	immediate = {
-		trigger_event = { id = natural_borders.1 popup = yes }
-	}
+	immediate = {}
 
 	complete = {
 		is_at_war = no
@@ -77,7 +95,10 @@
 	}
 
 	invalid = {
+		custom_tooltip = {
+			text = reject_natural_borders_tt
 			has_variable = reject_natural_borders
+	}
 	}
 
 	should_be_pinned_by_default = yes

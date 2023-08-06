@@ -50,7 +50,7 @@
 			}
 			any_interest_group = {
 				is_marginal = no
-				ig_approval <= -5
+				ig_approval <= -10
 				leader = { has_ideology = ideology:ideology_radical }
 			}
 		}
@@ -192,13 +192,13 @@
 			1848.5
 		}
 		random_events = {
-			150 = 0
-			8 = peoples_springtime.3
+			100 = 0
+			10 = peoples_springtime.3
 			10 = peoples_springtime.4
 			10 = peoples_springtime.5
-			15 = peoples_springtime.100
-			10 = peoples_springtime.110
-			10 = peoples_springtime.120
+			#15 = peoples_springtime.100
+			#10 = peoples_springtime.110
+			#10 = peoples_springtime.120
 		}
 	}
 
@@ -210,7 +210,6 @@
 	should_be_pinned_by_default = yes
 
 	transferable = no
-	can_revolution_inherit = no
 
 	timeout = 3650
 

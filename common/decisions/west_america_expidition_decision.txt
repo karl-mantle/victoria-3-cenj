@@ -14,10 +14,18 @@
 	}
 
 	possible = {
-		has_interest_marker_in_region = region_pacific_northwest
-		has_interest_marker_in_region = region_southwest
+		OR = { 
+			has_interest_marker_in_region = region_pacific_northwest
+			has_interest_marker_in_region = region_southwest
+		}
 		is_at_war = no
+		OR = {
+			is_ai = yes
+			AND = {
+				is_ai = no
 		has_technology_researched = quinine
+			}
+		}
 		any_scope_character = {
 			OR = {
 				has_role = general
@@ -77,7 +85,7 @@
 				is_diplomatic_play_committed_participant = yes
 				is_at_war = yes
 			}
-			add = -1000
+			add = -200
 		}		
 	}
 }

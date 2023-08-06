@@ -1,5 +1,11 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.48
+- added a script to create appropriate literacy rates that fires throughout the first in-game month
+- updated OPB's tweaks to latest version
+- fixed dutch east indies decision
+- minor changes to AI
+- changes to file structure
 ### 0.0.47
 - restored vanilla trade center/port/construction behaviour for now
 - changed finance and health building pm's

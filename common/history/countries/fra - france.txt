@@ -20,13 +20,14 @@
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_per_capita_based_taxation
-		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_colonial_exploitation
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_poor_laws
 		activate_law = law_type:law_censorship # The July Monarchy was already backtracking on promises made in 1830
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_tenant_farmers
+
 			
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -61,9 +62,7 @@
 
 		add_modifier = {
 			name = modifier_haitian_independence_payments
-			
 		}
-
 
 		### AGITATORS. MAYBE ADD A DLC CHECK IN HERE LATER ON?
 		set_variable = {

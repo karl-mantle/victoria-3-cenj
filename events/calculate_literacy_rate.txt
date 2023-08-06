@@ -1,0 +1,129 @@
+﻿namespace = calculate_literacy_rate
+
+calculate_literacy_rate.1 = {
+	type = country_event
+	hidden = yes
+	trigger = {
+		#scope:actor = { 
+			NOT = { has_variable = literacy_rate_calculated }
+		#}
+	}
+	immediate = {
+		## Decentralized countries are reset to baseline
+		if = {
+			limit = {
+				is_country_type = decentralized
+			}
+			effect_starting_pop_literacy_baseline = yes
+		}
+		## Reset Global Literacy
+		if = {
+			limit = {
+				NOT = { is_country_type = decentralized }
+				OR = { # Baseline
+					country_is_in_africa = yes
+					country_is_in_central_asia = yes
+					country_is_in_india = yes
+					country_is_in_southeast_asia = yes
+				}
+			}
+			effect_starting_pop_literacy_baseline = yes
+		}
+		if = {
+			limit = { # Very Low
+				NOT = { is_country_type = decentralized }
+				OR = {
+					country_is_in_central_america = yes
+					country_is_in_south_america = yes
+					country_is_in_middle_east = yes
+					country_is_in_east_asia = yes
+				}
+			}
+			effect_starting_pop_literacy_very_low = yes
+		}
+		if = {
+			limit = { # Low
+				NOT = { is_country_type = decentralized }
+				OR = {
+					country_is_in_china = yes
+					country_is_in_north_america = yes
+					country_is_in_europe = yes
+					country_is_in_east_asia = yes
+				}
+			}
+			effect_starting_pop_literacy_low = yes
+		}
+		# Reset Regional Literacy
+		if = { # Very Low
+			limit = {
+				NOT = { is_country_type = decentralized }
+				exists = capital
+				OR = {
+					capital.region = sr:region_russia
+					capital.region = sr:region_arkhangelsk
+					capital.region = sr:region_white_ruthenia
+					capital.region = sr:region_volgar
+					capital.region = sr:region_dnieper
+					capital.region = sr:region_ethiopia
+					capital.region = sr:region_algeria
+					capital.region = sr:region_libya
+					capital.region = sr:region_morocco
+					capital.region = sr:region_nile_basin
+					capital.region = sr:region_sudan
+				}
+			}
+			effect_starting_pop_literacy_very_low = yes
+		}
+		if = { # Middling
+			limit = {
+				NOT = { is_country_type = decentralized }
+				exists = capital
+				OR = {
+					capital.region = sr:region_crown_of_aragon
+					capital.region = sr:region_occitania
+					capital.region = sr:region_burgundy
+					capital.region = sr:region_north_germany
+					capital.region = sr:region_rhineland
+					capital.region = sr:region_south_germany
+					capital.region = sr:region_north_italy
+					capital.region = sr:region_north_atlantic
+				}
+			}
+			effect_starting_pop_literacy_middling = yes
+		}
+		if = { # High
+			limit = {
+				NOT = { is_country_type = decentralized }
+				exists = capital
+				OR = {
+					capital.region = sr:region_france
+					capital.region = sr:region_benelux
+					capital.region = sr:region_england
+				}
+			}
+			effect_starting_pop_literacy_high = yes
+		}
+		if = { # Very High
+			limit = {
+				NOT = { is_country_type = decentralized }
+				NOT = { root = c:FIN }
+				exists = capital
+				OR = {
+					capital.region = sr:region_scandinavia
+				}
+			}
+			effect_starting_pop_literacy_very_high = yes
+		}
+		## Set a variable to stop it firing again
+		#scope:actor = {
+			set_variable = literacy_rate_calculated
+		#}
+		## Post notification
+		if = {
+			limit = {
+				is_ai = no
+			}
+			post_notification = literacy_rate_calculated_notification
+		}
+	}
+}

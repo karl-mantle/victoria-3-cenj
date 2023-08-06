@@ -1,10 +1,4 @@
 ﻿l_english:
-# Content
- seminole_resistance_modifier:0 "Seminole Resistance"
- seminole_war_modifier:0 "Seminole War"
- union_of_south_africa_modifier:0 "Parliament of South Africa"
- volksraad_government:0 "Volksraad Government"
-
 # Building Input / Add
  modifier_building_input_bricks_add:0 "@bricks! Bricks input per level"
  modifier_building_input_bricks_add_desc:0 "The amount of @bricks! Bricks consumed by buildings"

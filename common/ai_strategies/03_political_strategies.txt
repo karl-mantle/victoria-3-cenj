@@ -4,7 +4,7 @@
 	type = political
 	
 	revolution_aversion = {
-		value = 5
+		value = 10 # 5
 	}
 	
 	min_law_chance_to_pass = {
@@ -240,6 +240,18 @@ ai_strategy_progressive_agenda = {
 	
 	revolution_aversion = {
 		value = 2.5
+		if = {
+			limit = {
+				AND = {
+					is_enacting_law = law_type:law_slavery_banned
+					exists = c:USA
+					this = c:USA
+				 	exists = ig:ig_landowners
+					ig:ig_landowners = { is_insurrectionary = yes } 
+				}
+			}
+			add = -10
+		}		
 	}
 	
 	min_law_chance_to_pass = {
@@ -270,8 +282,8 @@ ai_strategy_progressive_agenda = {
 
 	anti_interest_groups = {
 		ig_landowners
-		ig_devout
-		ig_petty_bourgeoisie
+		#ig_devout
+		#ig_petty_bourgeoisie
 	}
 
 	institution_scores = {
@@ -395,6 +407,18 @@ ai_strategy_egalitarian_agenda = {
 	
 	revolution_aversion = {
 		value = 1
+		if = {
+			limit = {
+				AND = {
+					is_enacting_law = law_type:law_slavery_banned
+					exists = c:USA
+					this = c:USA
+				 	exists = ig:ig_landowners
+					ig:ig_landowners = { is_insurrectionary = yes } 
+				}
+			}
+			add = -10
+		}		
 	}
 	
 	min_law_chance_to_pass = {
@@ -520,6 +544,18 @@ ai_strategy_nationalist_agenda = {
 	
 	revolution_aversion = {
 		value = 2.5
+		if = {
+			limit = {
+				AND = {
+					is_enacting_law = law_type:law_slavery_banned
+					exists = c:USA
+					this = c:USA
+				 	exists = ig:ig_landowners
+					ig:ig_landowners = { is_insurrectionary = yes } 
+				}
+			}
+			add = -10
+		}		
 	}
 	
 	min_law_chance_to_pass = {
@@ -690,7 +726,7 @@ ai_strategy_maintain_mandate_of_heaven = {
 	
 	institution_scores = {
 		institution_colonial_affairs = {	
-			value = 50			
+			value = 100 # 50			
 		}				
 		institution_social_security = {	
 			value = 50			
@@ -726,6 +762,160 @@ ai_strategy_maintain_mandate_of_heaven = {
 				has_variable = lost_opium_wars
 			}
 			multiply = 0.05
+		}
+	}
+}
+
+ai_strategy_anti_shogunate_agenda = {
+	icon = "gfx/interface/icons/ai_strategy_icons/nationalist_agenda.dds"
+	
+	type = political
+	
+	revolution_aversion = {
+		value = 2.5
+		if = {
+			limit = {
+				AND = {
+				 	exists = ig:ig_landowners
+					ig:ig_landowners = { is_insurrectionary = yes } 
+				}
+			}
+			add = -20
+		}		
+	}
+	
+	min_law_chance_to_pass = {
+		value = 20
+	}
+	
+	max_progressiveness = {
+		value = 100
+	}
+	
+	max_regressiveness = {
+		value = 25
+	}
+	
+	change_law_chance = { 
+		value = 30	
+		
+		if = {
+			limit = { any_interest_group = { is_insurrectionary = yes } }
+			add = 10
+		}			
+	}	
+	
+	pro_interest_groups = {
+		ig_intelligentsia
+		ig_industrialists
+		ig_petty_bourgeoisie
+	}
+
+	institution_scores = {
+		institution_colonial_affairs = {	
+			value = 75	
+		}				
+		institution_social_security = {	
+			value = 100			
+		}
+		institution_workplace_safety = {	
+			value = 100			
+		}		
+		institution_schools = {	
+			value = 200			
+		}		
+		institution_police = {	
+			value = 75			
+		}		
+		institution_health_system = {	
+			value = 100			
+		}		
+		institution_home_affairs = {	
+			value = 100			
+		}				
+	}
+
+	possible = {
+		exists = c:JAP
+		this = c:JAP
+		has_law = law_type:law_monarchy
+		NOT = {
+			has_variable = meiji_restoration_complete
+		}
+		OR = {
+			AND = {
+				exists = ig:ig_intelligentsia
+				ig:ig_intelligentsia = { is_marginal = no }
+			}
+			AND = {			
+				exists = ig:ig_industrialists
+				ig:ig_industrialists = { is_marginal = no }
+			}
+		}	
+	}
+	
+	weight = {
+		value = 20
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_japan
+					owner = {
+						country_is_in_europe = yes
+					}
+				}
+			}
+			add = 100
+		}	
+
+		if = {
+			limit = {
+				exists = ruler
+				ruler = {
+					has_ideology = ideology:ideology_republican_leader
+				}
+			}
+			
+			add = 40
+		}			
+				
+		if = {
+			limit = {
+				exists = ig:ig_intelligentsia
+				ig:ig_intelligentsia = { is_powerful = yes }
+			}
+			add = 10
+		}
+		
+		if = {
+			limit = {
+				exists = ig:ig_industrialists
+				ig:ig_industrialists = { is_powerful = yes }
+			}
+			add = 10
+		}
+
+		if = {
+			limit = {
+				exists = ig:ig_intelligentsia
+				ig:ig_intelligentsia = { is_marginal = no }
+			}
+			add = 10
+		}
+		
+		if = {
+			limit = {
+				exists = ig:ig_industrialists
+				ig:ig_industrialists = { is_marginal = no }
+			}
+			add = 10
+		}
+
+		if = {
+			limit = {
+				has_variable = japan_forced_to_open_market
+			}
+			add = 200
 		}
 	}
 }

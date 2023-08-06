@@ -5,8 +5,12 @@ on_monthly_pulse_country = {
 	on_actions = {
 		tag_breakup_check_on_action
 		change_primary_culture_on_action
+		#calculate_literacy_rate_on_action
 	}
 	events = {
+		# On-start
+		calculate_literacy_rate.1 
+
 		communism.8 # Red Army
 		peoples_springtime.1
 		opium_wars.1
@@ -812,16 +816,16 @@ on_acquired_technology = {
 			}
 			post_notification = acquired_technology_notification
 		}
-		if = {
-			limit = {
-				has_technology_researched = socialism
-				NOT = { has_variable = socialism_researched }
-			}
-			set_variable = socialism_researched
-			ig:ig_trade_unions = {
-				add_ideology = ideology_socialist
-			}
-		}
+		#if = { # THIS IS NOW DONE IN THE "TRIUMPH OF THE X JE" FOR THE TIME BEING
+		#	limit = {
+		#		has_technology_researched = socialism
+		#		NOT = { has_variable = socialism_researched }
+		#	}
+		#	set_variable = socialism_researched
+		#	ig:ig_trade_unions = {
+		#		add_ideology = ideology_socialist
+		#	}
+		#}
 		if = {
 			limit = {
 				is_player = yes
@@ -2367,6 +2371,32 @@ on_secession_start = {
 # Root = Country
 # scope:target = Uprising country
 on_secession_end = {
+	effect = {
+		if = {
+			limit = {
+				exists = c:ITA
+				scope:target = {
+					OR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+			}
+			c:ITA = { annex = scope:target }
+		}
+		#if = {
+		#	limit = {
+		#		exists = c:GER
+		#		scope:target = {
+		#			can_form_nation = GER
+		#		}
+		#	}
+		#	scope:target_country = {
+		#		THIS = c:GER
+		#		annex = scope:target
+		#	}
+		#}
+	}
 }
 
 # Root = Country
