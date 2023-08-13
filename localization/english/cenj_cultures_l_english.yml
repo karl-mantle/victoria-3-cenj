@@ -11,7 +11,13 @@
  north_italian_minor:0 "North Italian minor"
  south_italian_minor:0 "South Italian minor"
  caledonian:0 "Caledonian"
- nomadic:0 "Nomadic"
+ nomadic_traditions:0 "Nomadic Traditions"
+# Religions
+ anglican:0 "Anglican"
+ ibadi:0 "Ibadi"
+ old_believer:0 "Old Believer"
+ reformed:0 "Reformed"
+ syncretic:0 "Syncretic"
 # Cultures
  immigrant_culture:0 "Immigrant Placeholder"
 # Africa

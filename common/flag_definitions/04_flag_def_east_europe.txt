@@ -1,5 +1,71 @@
-﻿# Added
+﻿# common variables
+@coa_width = 768
+@coa_height = 512
+@canton_scale_cross_x = @[ ( 333 / coa_width ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / coa_height ) + 0.001 ]
+@canton_scale_sweden_x = @[ ( 255 / coa_width ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / coa_height ) + 0.001 ]
+@canton_scale_norway_x = @[ ( 192 / coa_width ) + 0.001 ]
+@canton_scale_norway_y = @[ ( 192 / coa_height ) + 0.001 ]
+@canton_scale_denmark_x = @[ ( 220 / coa_width ) + 0.001 ]
+@canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
+@third = @[1/3]
 
+BOH = { # Bohemia
+	flag_definition = {
+		coa = BOH
+		subject_canton = BOH
+		priority = 1
+	}
+	flag_definition = {
+		coa = BOH_absolute_monarchy
+		subject_canton = BOH_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+}
+BOS = { # Bosnia
+	flag_definition = {
+		coa = BOS
+		subject_canton = BOS
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = BOS_subject
+		priority = 1
+	}
+}
+BUL = { # Bulgaria
+	flag_definition = {
+		coa = BUL
+		subject_canton = BUL	
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = BUL_subject			
+		priority = 1
+	}
+}
+BYE = { # Belarus
+	flag_definition = {
+		coa = BYE
+		subject_canton = BYE			
+		priority = 1
+	}
+	flag_definition = {
+		coa = BYE_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BYE_absolute_monarchy
+		subject_canton = BYE_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+}
 CHR = { # Chernigov
 	flag_definition = {
 		coa = CHR
@@ -85,6 +151,46 @@ COU = { # Courland
 		}
 	}
 }
+CRO = { # Croatia
+	flag_definition = {
+		coa = CRO
+		subject_canton = CRO
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = CRO_subject			
+		priority = 1
+	}
+	flag_definition = {
+		coa = CRO_republic
+		subject_canton = CRO_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CRO_dictatorship
+		subject_canton = CRO_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+}
+CZH = { # Czechoslovakia
+	flag_definition = {
+		coa = CZH
+		subject_canton = CZH			
+		priority = 1
+	}
+	flag_definition = {
+		coa = CZH_fascist
+		subject_canton = CZH_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
 DAL = { # Dalmatia
 	flag_definition = {
 		coa = DAL
@@ -121,6 +227,85 @@ DAL = { # Dalmatia
 		priority = 20
 		trigger = {
 			coa_def_republic_flag_trigger = yes
+		}
+	}
+}
+DON = {	# Don Republic
+	flag_definition = {
+		coa = DON
+		subject_canton = DON
+		priority = 1
+	}
+}
+DZG = { # Danzig
+	flag_definition = {
+		coa = DZG
+		subject_canton = DZG
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = DZG_subject			
+		priority = 1
+	}
+	flag_definition = {
+		coa = DZG_absolute_monarchy
+		subject_canton = DZG_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = DZG_republic
+		subject_canton = DZG_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = DZG_dictatorship
+		subject_canton = DZG_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = DZG_subject	
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_french_ensign_trigger = yes
+		}
+	}	
+}
+EST = { # Estonia
+	flag_definition = {
+		coa = EST
+		subject_canton = EST	
+		priority = 1
+	}
+	flag_definition = {
+		coa = EST_absolute_monarchy
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = EST_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = EST_subject_RUS
+		subject_canton = EST_subject_RUS
+		priority = 50
+		trigger = { 
+			coa_def_russian_ensign_trigger = yes
 		}
 	}
 }
@@ -163,6 +348,14 @@ FEO = { # Theodoro
 		}
 	}
 }
+GAL = { # Galicia (Halych)	
+	flag_definition = {
+		coa = GAL	
+		subject_canton = GAL
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
 HRZ = { # Herzegovina
 	flag_definition = {
 		coa = HRZ
@@ -202,6 +395,21 @@ HRZ = { # Herzegovina
 		}
 	}
 }
+HUN = { # Hungary
+	flag_definition = {
+		coa = HUN
+		subject_canton = HUN	
+		priority = 1
+	}
+	flag_definition = {
+		coa = HUN_fascist
+		subject_canton = HUN_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}	
 KIE = { # Kiev
 	flag_definition = {
 		coa = KIE
@@ -264,6 +472,53 @@ KRL = { # Karelia
 		}
 	}
 }
+LAT = { # Latvia
+	flag_definition = {
+		coa = LAT
+		subject_canton = LAT
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+	flag_definition = {
+		coa = LAT_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+}
+LIT = { # Lithuania
+	flag_definition = {
+		coa = LIT
+		subject_canton = LIT
+		#allow_overlord_canton = yes		
+		priority = 1
+	}
+	flag_definition = {
+		coa = LIT_monarchy
+		subject_canton = LIT_monarchy
+		priority = 5
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = LIT_dictatorship
+		subject_canton = LIT_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = LIT_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+}
+
 LIV = { # Livonian Order
 	flag_definition = {
 		coa = LIV
@@ -413,6 +668,52 @@ MSV = { # Muscovy
 		}
 	}
 }
+MOL = { # Moldavia
+	flag_definition = {
+		coa = MOL	
+		subject_canton = MOL
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = MOL_subject			
+		priority = 1
+	}
+	flag_definition = {
+		# Corner cantons with stars when ruled by the Ottoman Empire
+		coa = MOL_subject_TUR
+		subject_canton = MOL
+		priority = 2
+		trigger = { 
+			coa_def_turkish_ensign_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = MOL_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+}
+MON = { # Montenegro
+	flag_definition = {
+		coa = MON	
+		subject_canton = MON
+		priority = 1
+	}
+	flag_definition = {
+		coa = MON_absolute_monarchy
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = MON_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}		
+}
 MOV = { # Moravia
 	flag_definition = {
 		coa = MOV
@@ -535,6 +836,13 @@ PLB = { # Polabia
 		}
 	}
 }
+PLC = { # Poland-Lithuania
+	flag_definition = {
+		coa = PLC
+		subject_canton = PLC	
+		priority = 1
+	}
+}
 PLT = { # Polotsk
 	flag_definition = {
 		coa = PLT
@@ -594,6 +902,76 @@ PML = { # Pomerelia
 			c:POL = { save_temporary_scope_as = custom_overlord }
 			coa_def_ensign_trigger = yes
 		}
+	}
+}
+POL = { # Poland
+	flag_definition = {
+		coa = POL
+		subject_canton = POL
+		priority = 1
+	}	
+	flag_definition = {
+		coa = POL_absolute_monarchy
+		subject_canton = POL_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = POL_republic
+		subject_canton = POL_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = POL_oligarchy
+		subject_canton = POL_oligarchy
+		priority = 25
+		trigger = { 
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = POL_fascist
+		subject_canton = POL_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = POL_dictatorship
+		subject_canton = POL_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = POL_republic
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = POL_subject_RUS
+		subject_canton = POL
+		priority = 50
+		trigger = { 
+			coa_def_russian_ensign_trigger = yes
+		}
+	}
+}
+POM = { # Pommerania
+	flag_definition = {
+		coa = POM
+		subject_canton = POM
+		allow_overlord_canton = yes		
+		priority = 1
 	}
 }
 POZ = { # Posen / Poznań
@@ -720,6 +1098,21 @@ RIG = { # Riga
 		}
 	}
 }
+ROM = { # Romania
+	flag_definition = {
+		coa = ROM
+		subject_canton = ROM
+		priority = 1
+	}
+	flag_definition = {
+		coa = ROM_fascist
+		subject_canton = ROM_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
 RSO = { # Rostov
 	flag_definition = {
 		coa = RSO
@@ -751,6 +1144,76 @@ RSO = { # Rostov
 		}
 	}
 }
+RUS = { # Russia
+	flag_definition = {
+		coa = RUS_imperial
+		allow_overlord_canton = yes		
+		subject_canton = RUS_imperial
+		priority = 1
+	}
+	flag_definition = {
+		coa = RUS_absolute_monarchy
+		subject_canton = RUS 
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = RUS_republic
+		subject_canton = RUS_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = RUS_dictatorship
+		subject_canton = RUS_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = RUS_oligarchy
+		subject_canton = RUS_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = RUS_soviet_union
+		priority = 1500 # need to override the DEFAULT
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_fascist
+		subject_canton = RUS_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = RUS_theocracy
+		subject_canton = RUS_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = RUS_nihilist
+		priority = 1500 # need to override the DEFAULT
+		trigger = { 
+			coa_def_nihilist_flag_trigger = yes
+		}
+	}
+}	
 RYA = { # Ryazan
 	flag_definition = {
 		coa = RYA
@@ -790,6 +1253,41 @@ RYA = { # Ryazan
 		}
 	}
 }
+SER = { # Serbia
+	flag_definition = {
+		coa = SER
+		subject_canton = SER
+		allow_overlord_canton = yes			
+		coa_with_overlord_canton = SER_subject					
+		priority = 1
+	}
+	flag_definition = {
+		coa = SER_absolute_monarchy
+		subject_canton = SER_absolute_monarchy
+		allow_overlord_canton = yes			
+		coa_with_overlord_canton = SER_subject			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SER
+		subject_canton = SER
+		allow_overlord_canton = yes				
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SER_subject_TUR
+		priority = 50
+		trigger = { 
+			coa_def_turkish_ensign_trigger = yes
+		}
+	}		
+}
 SLA = { # Silesia
 	flag_definition = {
 		coa = SLA
@@ -828,6 +1326,21 @@ SLA = { # Silesia
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+SLV = { # Slovakia
+	flag_definition = {
+		coa = SLV
+		subject_canton = SLV	
+		priority = 1
+	}
+	flag_definition = {
+		coa = SLV_fascist
+		subject_canton = SLV_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
 }
 SMO = { # Smolensk
 	flag_definition = {
@@ -938,6 +1451,57 @@ TVE = { # Tver
 		}
 	}
 }
+UKR = { # Ukraine
+	flag_definition = {
+		coa = UKR
+		allow_overlord_canton = yes		
+		subject_canton = UKR
+		priority = 1
+	}
+	flag_definition = {
+		coa = UKR_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = UKR_free_state
+		priority = 1600
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+	flag_definition = {
+		coa = UKR_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+}
+WAL = { # Wallachia
+	flag_definition = {
+		coa = WAL
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = WAL_subject		
+		subject_canton = WAL
+		priority = 1
+	}
+	flag_definition = {
+		# Canton with stars when ruled by the Ottoman Empire
+		coa = WAL_subject
+		subject_canton = WAL
+		priority = 2
+		trigger = { 
+			coa_def_turkish_ensign_trigger = yes		
+		}
+	}	
+}	
 YAR = { # Yaroslavl
 	flag_definition = {
 		coa = YAR
@@ -976,6 +1540,21 @@ YAR = { # Yaroslavl
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+YUG = { # Yugoslavia
+	flag_definition = {
+		coa = YUG
+		subject_canton = YUG
+		allow_overlord_canton = no		
+		priority = 1
+	}
+	flag_definition = {
+		coa = YUG_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
 }
 ZAZ = { # Zaporizhia	
 	flag_definition = {

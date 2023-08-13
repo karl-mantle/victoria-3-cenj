@@ -1,1 +1,6 @@
-﻿# This file is intentionally blank.
+﻿POPULATION = {
+	c:ORA = {
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_very_low = yes
+	}
+}

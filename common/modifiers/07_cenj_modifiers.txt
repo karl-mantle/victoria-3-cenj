@@ -79,22 +79,43 @@ seminole_war_modifier = {
 
 # South Africa
 
-union_of_south_africa_modifier = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	country_authority_mult = 0.15
+battle_of_blood_river_lost = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_zulu_standard_of_living_add = -2
+}
+
+laager_defence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_defense_mult = 0.25
+	unit_supply_consumption_mult = 0.75
+}
+
+laager_supplies = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = 500
+}
+
+the_great_trek = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_colony_growth_speed_mult = 0.33
+}
+
+trekboers_leaving = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.15
 }
 
 volksraad_government = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_authority_mult = -0.15
 	country_law_enactment_time_mult = -0.1
 }
 
-zulu_conflict = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-	state_colony_growth_speed_mult = -0.5
-	state_mortality_mult = 0.05
-}
+#zulu_conflict = {
+#	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+#	state_colony_growth_speed_mult = -0.5
+#	state_mortality_mult = 0.05
+#}
 
 # Silver Rush Events
 

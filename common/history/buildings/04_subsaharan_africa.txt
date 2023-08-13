@@ -890,7 +890,7 @@
 		}
 		region_state:ONI={
 		}
-		region_state:ZAF={
+		region_state:ZFY={
 		}
 	}
 	s:STATE_NORTH_MADAGASCAR={
@@ -1282,7 +1282,7 @@
 		}
 	}
 	s:STATE_VRYSTAAT={
-		region_state:WIB={
+		region_state:ORA={
 			create_building={
 				building="building_barracks"
 				level=1
@@ -1300,7 +1300,7 @@
 		}
 	}
 	s:STATE_TRANSVAAL={
-		region_state:ZOU={
+		region_state:TRN={
 			create_building={
 				building="building_millet_farm"
 				level=2

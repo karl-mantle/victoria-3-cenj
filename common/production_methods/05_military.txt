@@ -1162,6 +1162,11 @@ pm_wound_dressing = {
 	texture = "gfx/interface/icons/production_method_icons/wound_dressing.dds"
 
 	building_modifiers = {
+		workforce_scaled = {
+			building_input_liquor_add = 1
+			building_input_fabric_add = 0.5
+		}
+
 		unscaled = {
 			unit_recovery_rate_add = 0.25
 		}
@@ -1175,7 +1180,8 @@ pm_first_aid = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_liquor_add = 2
+			building_input_medicine_add = 0.5
+			building_input_liquor_add = 1
 			building_input_fabric_add = 1
 		}
 
@@ -1194,7 +1200,7 @@ pm_field_hospitals = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_liquor_add = 2
-			building_input_opium_add = 2
+			building_input_medicine_add = 2
 			building_input_fabric_add = 1
 			building_input_tools_add = 1
 		}

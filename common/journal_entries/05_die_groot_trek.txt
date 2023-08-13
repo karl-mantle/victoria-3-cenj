@@ -1,0 +1,261 @@
+﻿# Die Groot Trek
+je_die_groot_trek = {
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	is_shown_when_inactive = {
+		exists = capital
+		capital.region = sr:region_southern_africa
+	}
+
+	possible = {
+		exists = capital
+		capital.region = sr:region_southern_africa
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = dgt_winburg_formed
+		}
+		set_global_variable = {
+			name = dgt_zoutpansberg_formed
+		}
+		c:SAF = {
+			if = {
+				limit = {
+					this = {
+						NOT = { has_modifier = trekboers_leaving }
+					}
+				}
+				add_modifier = {
+					name = trekboers_leaving
+					months = 24
+				}
+			}
+			
+		}
+	}
+
+	on_monthly_pulse = {
+		events = {
+			die_groot_trek.4 # Winburg-Potchefstroom
+			die_groot_trek.100 # Displacement of the Matabele
+			die_groot_trek.500 # Trekboers leaving the Cape!
+		}
+		effect = {
+			# Nothing yet
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = dgt_winburg_formed_tt
+			has_global_variable = dgt_winburg_formed
+		}
+		custom_tooltip = {
+			text = dgt_potchefstroom_formed_tt
+			has_global_variable = dgt_potchefstroom_formed
+		}
+		custom_tooltip = {
+			text = dgt_zoutpansberg_formed_tt
+			has_global_variable = dgt_zoutpansberg_formed
+		}
+		custom_tooltip = {
+			text = dgt_natalia_formed_tt
+			has_global_variable = dgt_natalia_formed
+		}
+		# Boers own all the Vrystaat en Transvaal
+		AND = {
+			exists = c:ORA
+			c:ORA = { owns_entire_state_region = STATE_VRYSTAAT }
+		}
+		AND = {
+			exists = c:TRN
+			c:TRN = { owns_entire_state_region = STATE_TRANSVAAL }
+		}
+	}
+
+	on_complete = {
+		# Start Journal Entry for Anglo-Boer Wars
+		set_global_variable = die_groot_trek_complete
+		# Change South African Boer Commandos back to Armed Forces
+		c:SAF = {
+			ig:ig_armed_forces = {
+				set_interest_group_name = ig_armed_forces
+			}
+		}
+		# Remove Trekking bonus
+		every_country = {
+			limit = { has_modifier = the_great_trek }
+			remove_modifier = the_great_trek
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+# Natalia Republic c. 1839
+je_natalia_republic = {
+	
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	is_shown_when_inactive = {
+		exists = capital
+		capital.region = sr:region_southern_africa
+	}
+
+	possible = {
+		exists = capital
+		capital.region = sr:region_southern_africa
+
+		# The Matabele have been displaced
+		has_global_variable = matabele_displaced_global
+	}
+
+	on_monthly_pulse = {
+		# Events around the Natalia Republic formation for Cape Colony, Oranje and Zulu
+		events = {
+			die_groot_trek.1 # The Natalia Republic is formed
+			die_groot_trek.101 # Massacre of Piet Retief's Delegation
+			die_groot_trek.102 # Weenen Massacre
+			die_groot_trek.103 # The Battle of Blood River
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = dgt_natalia_formed_tt
+			has_global_variable = dgt_natalia_formed
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = die_groot_trek.104 # Dingane reasserts his leadership
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+# Natal Colony
+je_natal_colony = {
+	
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	is_shown_when_inactive = {
+		has_global_variable = dgt_natalia_formed
+		exists = capital
+		capital.region = sr:region_southern_africa
+	}
+
+	possible = {
+		has_global_variable = dgt_natalia_formed
+		exists = c:NAL
+		exists = c:SAF
+		exists = capital
+		capital.region = sr:region_southern_africa
+	}
+
+	on_monthly_pulse = {
+		events = {
+			die_groot_trek.2 # Natal Colony
+		}
+	}
+
+	complete = {
+		OR = { 
+			c:NAL = { is_subject_of = c:GBR }
+			c:NAL = { is_subject_of = c:SAF }
+		}
+	}
+
+	on_complete = {
+		c:NAL = {
+			remove_modifier = volksraad_government
+			add_primary_culture = cu:british
+		}
+		# Trigger Event where Boers leave Natal to go to Oranje and Transvaal
+	}
+}
+# Potchefstroom Republic c. 1838
+je_potchefstroom_republic = {
+	
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	is_shown_when_inactive = {
+		exists = capital
+		capital.region = sr:region_southern_africa
+	}
+
+	possible = {
+		exists = capital
+		capital.region = sr:region_southern_africa
+	}
+
+	on_monthly_pulse = {
+		events = {
+			die_groot_trek.3 # Potchefstroom Republic is formed
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = dgt_potchefstroom_formed_tt
+			has_global_variable = dgt_potchefstroom_formed
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = je_potchefstroom_republic_complete_tt
+		}
+
+		hidden_effect = {
+			c:ORA = {
+				set_mutual_secret_goal = {
+					country = c:PTF
+					secret_goal = befriend
+				}
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}
+# Orange River Sovereignty
+je_orange_river_sovereignty = {
+	
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	is_shown_when_inactive = {
+		OR = {
+			root ?= c:ORA
+			root ?= c:SAF
+		}
+	}
+
+	possible = {
+		has_global_variable = die_groot_trek_complete
+		# Cape Colony OR United Kingdom have positive relations with Oranje
+	}
+
+	on_monthly_pulse = {
+		# Event that makes ORA a subject of SAF
+	}
+
+	complete = {
+		exists = c:ORA
+		c:ORA = {
+			is_subject_of = c:SAF
+		}
+	}
+
+	on_complete = {
+		# remove volksraad modifier
+	}
+
+	should_be_pinned_by_default = yes
+}
+
+# 
+# Sand River Convention 1852 Transvaal Gets Independence, all of Transvaal and is recognized
+# Orange River Convention 1854 Oranje Gets Independence and is recognized

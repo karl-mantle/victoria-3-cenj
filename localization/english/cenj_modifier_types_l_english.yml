@@ -94,7 +94,7 @@
  modifier_building_output_silver_mult_desc:0 "A bonus or penalty to the amount of @silver! output produced by buildings"
  modifier_building_output_sulfur_mult:0 "Building @sulfur! Sulfur output"
  modifier_building_output_sulfur_mult_desc:0 "A bonus or penalty to the amount of @sulfur! output produced by buildings"
- modifier_building_output_tea_mult:0 "Building @tea! Sulfur output"
+ modifier_building_output_tea_mult:0 "Building @tea! Tea output"
  modifier_building_output_tea_mult_desc:0 "A bonus or penalty to the amount of @tea! output produced by buildings"
  modifier_building_output_tobacco_mult:0 "Building @tobacco! Tobacco output"
  modifier_building_output_tobacco_mult_desc:0 "A bonus or penalty to the amount of @tobacco! output produced by buildings"

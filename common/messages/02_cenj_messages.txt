@@ -28,6 +28,16 @@ literacy_rate_calculated_notification = {
 	type = country
 	texture = "gfx/interface/icons/notification_icons/pops.dds"
 	notification_type = toast
-	days = 31
-	#on_created_soundeffect = "event:/SFX/UI/Alerts/Toasts/immigrant_target"
+}
+
+trekboers_left_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/pops.dds"
+	notification_type = feed
+}
+
+trekboers_arrived_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/pops.dds"
+	notification_type = feed
 }

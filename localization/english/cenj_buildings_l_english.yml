@@ -8,6 +8,7 @@
  bg_road_network:0 "Road Network"
  bg_silver_fields:0 "Silver Fields"
  bg_silver_mining:0 "Silver Mining"
+ bg_subsistence_ranching:0 "Subsistence Ranching"
 # Buildings
 # 01_industry.txt
  building_brickworks:0 "Brickworks"
@@ -29,6 +30,10 @@
  building_silver_fields_discovered_resource:0 "Silver"
  building_silver_mine:0 "Silver Mine"
  building_silver_mine_lens_option:0 "Expand $building_silver_mine$"
+# 10_canals.txt
+ canal_kra:0 "Kra Canal"
+ building_kra_canal:0 "Kra Canal"
+ building_kra_canal_lens_option:0 "Construct $building_kra_canal$"
 # 11_private_infrastructure.txt
  building_road_network:0 "Road Network"
  building_road_network_lens_option:0 "Expand $building_road_network$"

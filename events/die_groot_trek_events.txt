@@ -1,0 +1,973 @@
+﻿namespace = die_groot_trek
+
+die_groot_trek.1 = { # The Natalia Republic is formed c. 1839
+	type = country_event
+	placement = root
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.1.t
+	desc = die_groot_trek.1.d
+	flavor = die_groot_trek.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/africa_construction_colony.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	duration = 3
+
+	trigger = {
+		# Completion of the Natalia Republic Journal Entry
+		NOT = { has_global_variable = dgt_natalia_formed }
+		NOT = { exists = c:XHO }
+		c:ZUL = {
+			NOT = { has_modifier = battle_of_blood_river_lost }
+		}
+	}
+
+	immediate = {
+		create_country = {
+			tag = NAL
+			origin = this
+			state = s:STATE_NATAL.region_state:ZUL
+			on_created = {
+				# Land
+				s:STATE_NATAL.region_state:ZUL = { set_state_owner = c:NAL }
+				# Modifiers
+				add_modifier = {
+					name = volksraad_government
+				}
+				add_modifier = {
+					name = laager_defence
+				}
+				# Technology
+				effect_starting_technology_tier_3_tech = yes
+				# Government
+				set_ruling_interest_groups = { ig_rural_folk }
+				set_next_election_date = 1839.10.12
+				# Interest Groups
+				ig:ig_rural_folk = {
+					set_interest_group_name = ig_voortrekkers
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_evangelical_church
+				}
+				ig:ig_armed_forces = {
+					set_interest_group_name = ig_kommandos
+				}
+				# Laws
+				if = {
+					limit = { NOT = { has_law = law_type:law_presidential_republic } }
+					activate_law = law_type:law_presidential_republic
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_landed_voting } }
+					activate_law = law_type:law_landed_voting
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_national_supremacy } }
+					activate_law = law_type:law_national_supremacy
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_mercantilism } }
+					activate_law = law_type:law_mercantilism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_interventionism } }
+					activate_law = law_type:law_interventionism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_slave_trade } }
+					activate_law = law_type:law_slave_trade
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_censorship } }
+					activate_law = law_type:law_censorship
+				}
+				# Leader
+				create_character = {
+					template = nal_andries_pretorius_template
+				}
+			}
+		}
+
+		s:STATE_NATAL = {
+			add_claim = c:ZUL
+		}
+		
+		set_global_variable = {
+			name = dgt_natalia_formed
+		}
+	}
+
+	option = {
+		name = die_groot_trek.1.a
+		default_option = yes
+		ai_chance = { base = 1 }
+
+		c:SAF = {
+			every_scope_state = {
+				every_scope_pop = {
+					limit = { culture = cu:boer }
+					change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+				}
+				every_scope_pop = {
+					limit = { culture = cu:immigrant_culture }
+					move_pop = s:STATE_NATAL.region_state:NAL
+				}
+			}
+		}
+
+		s:STATE_NATAL.region_state:NAL = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = die_groot_trek.1.b
+		ai_chance = { base = 0 }
+
+		c:SAF = {
+			every_scope_state = {
+				every_scope_pop = {
+					limit = { culture = cu:boer }
+					change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+				}
+				every_scope_pop = {
+					limit = { culture = cu:immigrant_culture }
+					move_pop = s:STATE_NATAL.region_state:NAL
+				}
+			}
+		}
+		s:STATE_NATAL.region_state:NAL = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+
+		c:NAL = {
+			save_scope_as = natalia_republic
+		}
+
+		play_as = scope:natalia_republic
+	}
+}
+
+die_groot_trek.2 = { # Natal Colony
+	type = country_event
+	placement = root
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.2.t
+	desc = die_groot_trek.2.d
+	flavor = die_groot_trek.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/Africa_diplomats_negotiating.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/diplomats_negotiating"
+
+	duration = 3
+
+	trigger = {
+		# Natal Colony Journal Entry
+		root ?= c:NAL
+		exists = c:SAF
+		c:SAF = {
+			relations:root <= relations_threshold:neutral
+		}
+	}
+
+	immediate = {
+		
+	}
+
+	option = { # Accept British Subjugation
+		name = die_groot_trek.2.a
+		default_option = yes
+		ai_chance = { base = 1 }
+
+		c:SAF = {
+			create_diplomatic_pact = {
+				country = c:NAL
+				type = puppet
+			}
+		}
+
+		c:NAL = {
+			add_radicals = {
+				value = very_large_radicals
+				culture = cu:boer
+			}
+		}
+	}
+
+	option = { # Reject the British
+		name = die_groot_trek.2.b
+		ai_chance = { base = 0 }
+
+		c:SAF = {
+			create_diplomatic_play = {
+				name = anglo_natal_war
+				target_state = s:STATE_NATAL.region_state:NAL
+				war = yes
+				type = dp_make_puppet
+			}
+		}
+		c:NAL = {
+			add_loyalists = {
+				value = medium_radicals
+				culture = cu:boer
+			}
+		}
+	}
+}
+
+die_groot_trek.3 = { # Potchefstroom Republic is formed c. 1838
+	type = country_event
+	placement = root
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.3.t
+	desc = die_groot_trek.3.d
+	flavor = die_groot_trek.3.f
+
+	duration = 3
+
+	trigger = {
+		# je_potchefstroom_republic.on_monthly_pulse
+		NOR = {
+			has_global_variable = dgt_potchefstroom_formed
+			c:SAF = {
+				has_modifier = trekboers_leaving
+			}
+		}
+		c:ORA = {
+			any_scope_state = {
+				num_provinces >= 8
+			}
+		}
+	}	
+
+	immediate = {
+		create_country = {
+			tag = PTF
+			origin = this
+			province = p:x8BDC4D
+			on_created = {
+				# Land
+				s:STATE_TRANSVAAL = {
+					set_owner_of_provinces = {
+						country = c:PTF
+						provinces = { x8BDC4D xBE553D xD0A010 }
+					}
+					add_claim = c:PTF
+				}
+				# Modifiers
+				add_modifier = {
+					name = laager_supplies
+					months = 12
+				}
+				add_modifier = {
+					name = volksraad_government
+				}
+				# Technology
+				effect_starting_technology_tier_3_tech = yes
+				# Government
+				set_ruling_interest_groups = { ig_rural_folk }
+				# Interest Groups
+				ig:ig_rural_folk = {
+					set_interest_group_name = ig_voortrekkers
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_evangelical_church
+				}
+				ig:ig_armed_forces = {
+					set_interest_group_name = ig_kommandos
+				}
+				# Laws
+				if = {
+					limit = { NOT = { has_law = law_type:law_presidential_republic } }
+					activate_law = law_type:law_presidential_republic
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_oligarchy } }
+					activate_law = law_type:law_oligarchy
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_national_supremacy } }
+					activate_law = law_type:law_national_supremacy
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_protectionism } }
+					activate_law = law_type:law_protectionism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_agrarianism } }
+					activate_law = law_type:law_agrarianism
+				}	
+				if = {
+					limit = { NOT = { has_law = law_type:law_legacy_slavery } }
+					activate_law = law_type:law_legacy_slavery
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_national_militia } }
+					activate_law = law_type:law_national_militia
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_cultural_exclusion } }
+					activate_law = law_type:law_cultural_exclusion
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_bartering } }
+					activate_law = law_type:law_bartering
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_no_migration_controls } }
+					activate_law = law_type:law_no_migration_controls
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_homesteading } }
+					activate_law = law_type:law_homesteading
+				}
+				if = {
+					limit = { NOT = { has_law = law_type:law_colonial_resettlement } }
+					activate_law = law_type:law_colonial_resettlement
+				}
+				# Leader
+				create_character = {
+					template = ptf_hendrik_potgieter_template
+				}
+			}
+		}
+		set_global_variable = {
+			name = dgt_potchefstroom_formed
+		}
+	}
+
+	option = {
+		name = die_groot_trek.3.a
+		default_option = yes
+		ai_chance = { base = 1 }
+
+		c:SAF = {
+			every_scope_state = {
+				every_scope_pop = {
+					limit = { culture = cu:boer }
+					change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+				}
+				every_scope_pop = {
+					limit = { culture = cu:immigrant_culture }
+					move_pop = s:STATE_TRANSVAAL.region_state:PTF
+				}
+			}
+		}
+		s:STATE_TRANSVAAL.region_state:PTF = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = die_groot_trek.3.b
+		ai_chance = { base = 0 }
+
+		c:SAF = {
+			every_scope_state = {
+				limit = { owner = c:SAF }
+				every_scope_pop = {
+					limit = { culture = cu:boer }
+					change_pop_culture = { target = cu:immigrant_culture value = 0.05 }	
+				}
+				every_scope_pop = {
+					limit = { culture = cu:immigrant_culture }
+					move_pop = s:STATE_TRANSVAAL.region_state:PTF
+				}
+			}
+		}
+		s:STATE_TRANSVAAL.region_state:PTF = {
+			every_scope_pop = {
+				limit = { culture = cu:immigrant_culture }
+				change_pop_culture = { target = cu:boer value = 1 }
+			}
+		}
+		c:PTF = {
+			save_scope_as = potchefstroom_republic
+		}
+		play_as = scope:potchefstroom_republic
+	}
+}
+
+die_groot_trek.4 = { # Winburg-Potchefstroom c. 1840
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.4.t
+	desc = die_groot_trek.4.d
+	flavor = die_groot_trek.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/Africa_diplomats_negotiating.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/diplomats_negotiating"
+
+	duration = 3
+
+	trigger = {
+		# je_die_groot_trek.on_monthly_pulse
+		AND = {
+			exists = c:ORA
+			exists = c:PTF
+		}
+		OR = {
+			AND = {
+				root = c:ORA
+				c:PTF = {
+					relations:root >= relations_threshold:amicable
+				}
+			}
+			AND = {
+				root = c:PTF
+				c:ORA = {
+					relations:root >= relations_threshold:amicable
+				}
+			}
+		}
+	}
+
+	immediate = {
+		# Merge Winburg and Potchefstroom into same tag
+		s:STATE_TRANSVAAL.region_state:PTF = { set_state_owner = c:ORA }
+		# Set variable for dynamic name
+		set_variable = winburg_potchefstroom
+		# Check it has the Volksraad modifier
+		if = {
+			limit = {
+				c:ORA = {
+					NOT = { has_modifier = volksraad_government }
+				}
+			}
+			c:ORA = {
+				add_modifier = {
+					name = volksraad_government
+				}
+			}
+		}
+	}
+
+	option = { # Don't play as Winburg-Potchefstroom
+		name = die_groot_trek.4.b
+		default_option = yes
+		ai_chance = { base = 1 }
+
+		# post notification to all southern african countries?
+	}
+
+	option = { # Play as Winburg-Potchefstroom
+		name = die_groot_trek.4.b
+		ai_chance = { base = 0 }
+
+		play_as = c:ORA
+	}
+
+}
+
+
+
+die_groot_trek.100 = { # Displacement of the Matabele
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.100.t
+	desc = die_groot_trek.100.d
+	flavor = die_groot_trek.100.f
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_global_variable = matabele_displaced_global }
+		has_global_variable = dgt_potchefstroom_formed
+		c:TRN = {
+			any_scope_state = {
+				num_provinces >= 8
+			}
+		}
+	}
+
+	immediate = {
+		# Rowzi Empire is annexed by Matabele
+		s:STATE_ZAMBEZI.region_state:RZW = { set_state_owner = c:MTB }
+		# Create Southern Matabele
+		create_country = {
+			tag = MTE
+			origin = this
+			state = s:STATE_TRANSVAAL.region_state:MTB
+			s:STATE_TRANSVAAL.region_state:MTB = { set_state_owner = c:MTE }
+			# History
+			effect_starting_technology_tier_6_tech = yes
+			effect_native_conscription_4 = yes
+			effect_starting_politics_traditional = yes
+			activate_law = law_type:law_debt_slavery
+		}
+	}
+
+	option = {
+        name = die_groot_trek.100.b
+		default_option = yes
+
+		c:MTB = {
+			create_diplomatic_pact = {
+				country = c:MTE
+				type = puppet
+			}
+		}
+		
+		#c:MTE = {
+		#	add_modifier = {
+		#		name = matabele_displacement
+		#		# months = 36
+		#	}
+		#}
+
+		hidden_effect = {
+			c:MTB = {
+				set_variable = {
+					name = matabele_displaced_var
+				}
+			}
+			c:MTE = {
+				set_variable = {
+					name = matabele_displaced_var
+				}
+			}
+			set_global_variable = {
+				name = matabele_displaced_global
+			}
+		}
+	}
+}
+
+die_groot_trek.101 = { # Massacre of Piet Retief's Delegation c. 1838
+	type = country_event
+	placement = scope:natal_state
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.101.t
+	desc = die_groot_trek.101.d
+	flavor = die_groot_trek.101.f
+
+	duration = 3
+
+	trigger = {
+		# Natalia Republic Journal Entry
+		NOT = { c:ZUL = { has_variable = massacared_piet_retief } }
+		OR = {
+			root ?= c:ORA
+			root ?= c:PTF
+			root ?= c:TRN
+		}
+	}
+
+	immediate = {
+		# Piet Retief is killed
+		c:SAF = {
+			random_scope_character = {
+				limit = { has_variable = piet_retief_var }
+				save_scope_as = piet_retief
+			}
+		}
+
+		scope:piet_retief = {
+			kill_character = yes
+		}
+
+		c:ZUL = {
+			set_variable = {
+				name = massacared_piet_retief
+			}
+		}
+	}
+
+	option = {
+		name = die_groot_trek.101.a
+		default_option = yes
+
+		every_country = {
+			limit = { country_has_primary_culture = cu:boer }
+			change_relations = {
+				country = c:ZUL
+				value = -50
+			}
+		}
+	}
+}
+
+die_groot_trek.102 = { # Weenen Massacre c. 1838
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.102.t
+	desc = die_groot_trek.102.d
+	flavor = die_groot_trek.102.f
+
+	duration = 3
+
+	trigger = {
+		root ?= c:ORA
+
+		exists = c:ZUL
+		c:ZUL = {
+			has_variable = massacared_piet_retief
+		}
+	}
+
+	immediate = {
+		kill_population_percent = {
+			percent = 0.02
+			culture = cu:boer
+		}
+	}
+
+	option = {
+        name = die_groot_trek.102.b
+		default_option = yes
+
+		every_country = {
+			limit = { country_has_primary_culture = cu:boer }
+			change_relations = {
+				country = c:ZUL
+				value = -50
+			}
+		}
+
+		hidden_effect = {
+			c:ZUL = {
+				set_variable = {
+					name = weenen_massacre
+				}
+			}
+		}
+	}
+}
+
+die_groot_trek.103 = { # The Battle of Blood River c. 1838
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.103.t
+	desc = die_groot_trek.103.d
+	flavor = die_groot_trek.103.f
+
+	duration = 3
+
+	trigger = {
+		root ?= c:ZUL
+		c:ZUL = {
+			AND = {
+				has_variable = massacared_piet_retief
+				has_variable = weenen_massacre
+			}
+		}
+	}
+
+	immediate = {
+		c:ZUL = {
+			kill_population_percent = {
+				percent = 0.1
+				culture = cu:zulu
+			}
+			add_radicals = {
+				value = very_large_radicals
+			}
+		}
+	}
+
+	option = {
+        name = die_groot_trek.102.b
+		default_option = yes
+
+		
+		hidden_effect = {
+			c:ZUL = {
+				set_variable = battle_of_blood_river_lost
+			}
+		}
+	}
+}
+
+die_groot_trek.104 = { # Dingane reasserts his leadership
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.104.t
+	desc = die_groot_trek.104.d
+	flavor = die_groot_trek.104.f
+
+	duration = 3
+
+	trigger = {
+		root ?= c:ZUL
+		c:ZUL = {
+			has_modifier = battle_of_blood_river_lost
+		}
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+        name = die_groot_trek.104.b
+		default_option = yes
+
+		# Invade Swazi
+
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+        name = die_groot_trek.104.b
+
+		# Don't invade Swazi
+		# Starts Civil War
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+die_groot_trek.105 = { # Zulu Civil War
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.105.t
+	desc = die_groot_trek.105.d
+	flavor = die_groot_trek.105.f
+
+	duration = 3
+
+	minor_left_icon = c:ZUL
+	minor_right_icon = c:ZUL
+
+	trigger = {
+		# OR
+		# didn't invade swazi
+		# lost against swazi
+	}
+
+	immediate = {
+		c:ZUL = {
+			change_relations = {
+				country = c:NAL
+				value = -50
+			}
+		}
+	}
+
+	option = {
+        name = die_groot_trek.102.b
+		default_option = yes
+
+		
+	
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+die_groot_trek.106 = { # The Battle of Maqongqo
+	type = country_event
+	placement = ROOT
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = die_groot_trek.106.t
+	desc = die_groot_trek.106.d
+	flavor = die_groot_trek.106.f
+
+	duration = 3
+
+	minor_left_icon = c:NAL
+	minor_right_icon = c:ZUL
+
+	trigger = {
+		# Triggered by Zulu civil war
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+        name = die_groot_trek.106.b
+		default_option = yes
+
+		
+	
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+die_groot_trek.500 = { # Trekboers leaving the Cape!
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		root ?= c:SAF
+	}
+
+	immediate = {
+		random_list = {
+			35 = {
+				random_scope_state = {
+					limit = { owner = c:SAF }
+					every_scope_pop = {
+						limit = { culture = cu:boer }	
+						change_pop_culture = { target = cu:immigrant_culture value = 0.025 }	
+					}
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						move_pop = s:STATE_TRANSVAAL.region_state:TRN
+					}
+				}
+				s:STATE_TRANSVAAL.region_state:TRN = {
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						change_pop_culture = { target = cu:boer value = 1 }
+					}
+					if = {
+						limit = { 
+							owner = { is_ai = no }
+						}
+						owner = { post_notification = trekboers_arrived_notification }
+					}
+				}
+			}
+			35 = {
+				random_scope_state = {
+					limit = { owner = c:SAF }
+					every_scope_pop = {
+						limit = { culture = cu:boer }	
+						change_pop_culture = { target = cu:immigrant_culture value = 0.025 }	
+					}
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						move_pop = s:STATE_VRYSTAAT.region_state:ORA
+					}
+				}
+				s:STATE_VRYSTAAT.region_state:ORA = {
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						change_pop_culture = { target = cu:boer value = 1 }
+					}
+					if = {
+						limit = { 
+							owner = { is_ai = no }
+						}
+						owner = { post_notification = trekboers_arrived_notification }
+					}
+				}
+			}
+			15 = {
+				trigger = {
+					exists = c:NAL
+				}
+				random_scope_state = {
+					limit = { owner = c:SAF }
+					every_scope_pop = {
+						limit = { culture = cu:boer }	
+						change_pop_culture = { target = cu:immigrant_culture value = 0.025 }	
+					}
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						move_pop = s:STATE_NATAL.region_state:NAL
+					}
+				}
+				s:STATE_NATAL.region_state:NAL = {
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						change_pop_culture = { target = cu:boer value = 1 }
+					}
+					if = {
+						limit = { 
+							owner = { is_ai = no }
+						}
+						owner = { post_notification = trekboers_arrived_notification }
+					}
+				}
+			}
+			15 = {
+				trigger = {
+					exists = c:PTF
+				}
+				random_scope_state = {
+					limit = { owner = c:SAF }
+					every_scope_pop = {
+						limit = { culture = cu:boer }	
+						change_pop_culture = { target = cu:immigrant_culture value = 0.025 }	
+					}
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						move_pop = s:STATE_TRANSVAAL.region_state:PTF
+					}
+				}
+				s:STATE_TRANSVAAL.region_state:PTF = {
+					every_scope_pop = {
+						limit = { culture = cu:immigrant_culture }
+						change_pop_culture = { target = cu:boer value = 1 }
+					}
+					if = {
+						limit = { 
+							owner = { is_ai = no }
+						}
+						owner = { post_notification = trekboers_arrived_notification }
+					}
+				}
+			}
+		}
+
+		## Post notification
+		if = {
+			limit = {
+				is_ai = no
+			}
+			post_notification = trekboers_left_notification
+		}
+	}
+}

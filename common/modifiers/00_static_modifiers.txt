@@ -5,9 +5,9 @@
 
 # Global Static Modifiers
 base_values = {
-	country_weekly_innovation_add = 50
-	country_weekly_innovation_max_add = 50
-	country_tech_spread_add = 40 # 25
+	country_weekly_innovation_add = 25 # 40
+	country_weekly_innovation_max_add = 75 # 50
+	country_tech_spread_add = 50 # 25
 	
 	country_loan_interest_rate_add = 0.2
 	
@@ -36,7 +36,7 @@ base_values = {
 	state_aristocrats_investment_pool_contribution_add = 0.10
 	state_capitalists_investment_pool_contribution_add = 0.20	
 	
-	state_unincorporated_starting_wages_mult = -0.15 # To balance for unincorporated states not paying taxes
+	state_unincorporated_starting_wages_mult = -0.35 # -0.15 # To balance for unincorporated states not paying taxes
 
 	country_construction_add = 5
 	

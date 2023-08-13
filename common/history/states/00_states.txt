@@ -4366,7 +4366,7 @@ STATES = {
 			owned_provinces = { xBFA51F xE8FA9B x676257 x7A489E x33BDA3 x714D08 xB5FA86 x4DC413 x071AEC x2D9669 x1BB5E5 xDBFAC1 xE6F19B xF18FED xDCB2F8 x15A1AC xB7598B x034485 x9D8997 xE480E0 xDB3D79 xBCB8C0 x425701 x1B65BD x1FAF90 x6D48C1 x2B3FCB x9F5F4C x471161 xE655F6 xEA95C4 x5F8C33 x40C0E0 xFC9FEC xADD893 xF2317F x794F7A xB9259E x44FC6E x9C2288 xF81480 x94059D x5897EC x606CE0 }
 		}
 		create_state = {
-			country = c:ZAF
+			country = c:ZFY
 			owned_provinces = { xB0B64A xED95E1 xC910DF x132895 xA58AC5 x10A7DF x5D2D79 x19F69A }
 		}
 		create_state = {
@@ -5383,7 +5383,7 @@ STATES = {
 	}
 	s:STATE_VRYSTAAT = {
 		create_state = {
-			country = c:WIB
+			country = c:ORA
 			owned_provinces = { xCEE3D2 x9D6A16 x75FA4B x56929D x8EF6E1 }
 		}
 		create_state = {
@@ -5394,11 +5394,11 @@ STATES = {
 		add_homeland = boer
 		add_homeland = sotho
 		add_homeland = nguni
-		add_claim = c:WIB
+		add_claim = c:ORA
 	}
 	s:STATE_TRANSVAAL = {
 		create_state = {
-			country = c:ZOU
+			country = c:TRN
 			owned_provinces = { x8DF37C xDABE56 xD34CB1 x3DA2B5 xCAEAEB x8CD439 x4760DD xB19AFE x24A528 }
 		}
 		create_state = {
@@ -5411,7 +5411,7 @@ STATES = {
 		add_homeland = nguni
 		add_homeland = tswana
 		add_homeland = zulu
-		add_claim = c:ZOU
+		add_claim = c:TRN
 	}
 	s:STATE_EASTERN_NEW_GUINEA = {
 		create_state = {

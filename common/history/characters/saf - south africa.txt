@@ -15,27 +15,5 @@
 				cruel
 			}		
 		}
-		create_character = {
-			# Piet Retief, governor of the "United Laagers" in 1837, was a Boer Kommandant in the 6th Xhosa War
-			is_general = yes
-			hq = region_southern_africa
-			first_name = "Piet"
-			last_name = "Retief"
-			historical = yes
-			culture = cu:boer
-			birth_date = 1780.11.12
-			interest_group = ig_armed_forces
-			ideology = ideology_moderate
-			ig_leader = yes
-			traits = {
-				explorer
-				direct
-			}		
-			on_created = {
-				set_variable = {
-					name = is_piet_retief
-				}
-			}
-		}
 	}
 }

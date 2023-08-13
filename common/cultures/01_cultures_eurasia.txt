@@ -1,0 +1,1675 @@
+﻿cossack={
+	color= hsv{ 0.16 0.32 0.42 }
+	religion = orthodox
+	traits = { east_slavic european_heritage nomadic_traditions }
+	male_common_first_names={
+		Alexei
+		Andrei
+		Anton
+		Arkadiy
+		Borys
+		Dmitro
+		Fyodor
+		Hryhoriy
+		Ivan
+		Lavr
+		Leonid
+		Lev
+		Mikhail
+		Mykola
+		Nikita
+		Oleksandr
+		Panteleimon 
+		Pavel
+		Petro
+		Roman
+		Semyon
+		Sergiy
+		Valeriy
+		Viktor
+		Vladislav
+		Volodimir
+		Yevhen
+		Yuriy
+	}
+	female_common_first_names = {
+		Darya
+		Dniprova
+		Hrytsko
+		Kolomba
+		Lyubov
+		Lyudmila
+		Maria
+		Nadazhda
+		Nataliya
+		Olena
+		Olha
+		Polina
+		Ruslana
+		Slava
+		Ulyana
+		Valeriya
+		Xenia
+		Yevheniya
+	}	
+	noble_last_names = {
+		Chubynsky
+		Czajkowski
+		Drahomanov
+		Gogol-Yanovsky
+		Hnizdovsky
+		Hrekov
+		Hrushevsky
+		Karaszewicz-Tokarzewski
+		Kobyliansky
+		Konysky
+		Kropyvnytsky
+		Kulish
+		Levytsky
+		Lototsky
+		Ohonovsky
+		Omelianovych-Pavlenko
+		Ortynsky
+		Petrushevych
+		Rodzianko
+		Sas-Kuilovsky
+		Shakhovskoy
+		Sheptytsky
+		Skoropadskyi
+		Vakhnianyn
+		Vitovsky
+		Zubrytsky
+	}
+	common_last_names={
+		Bezruchko
+		Chernyakhovsky
+		Dyachenko
+		Gamula
+		Grigoriev
+		Hrekov
+		Ivanenko
+		Ivanov
+		Kapustiansky
+		Kondratenko
+		Leshchenko
+		Leshchinskiy
+		Paskevich
+		Petliura
+		Radchenko
+		Shevchenko
+		Skoropadskyi
+		Stefaniv
+		Tymoshenko
+		Vitovsky
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+livonian={
+	color= hsv{ 0.72 0.25 0.50 }
+	religion = protestant
+	traits = { finnic baltic_culture_group european_heritage }
+	male_common_first_names={
+		Aadu
+		Alar
+		Aleksander
+		Andrus
+		Artur
+		August
+		Bernard
+		Dmitri
+		Eduard
+		Eerik
+		Elmar
+		Ernst
+		Georg
+		Gustav
+		Haman
+		Harri
+		Heino
+		Hendrik
+		Hjalmar
+		Ivari
+		Jaan
+		Jakob
+		Johannes
+		Joosep
+		Juhan
+		Julius
+		Juri
+		Kaarel
+		Kalev
+		Konstantin
+		Lennart
+		Ludvig
+		Madis
+		Mart
+		Mikhel
+		Nigul
+		Olev
+		Paavo
+		Peeter
+		Pent
+		Ragnar
+		Siiri
+		Sven
+		Tarmo
+		Toomas
+		Tonis
+		Uno
+		Valmar
+		Villwm
+		Voldemar
+	}
+	female_common_first_names = {
+		Aino
+		Anna
+		Astrid
+		Caroline
+		Doris
+		Dorothea
+		Jutta
+		Mari
+		Marta
+	}	
+	noble_last_names = {
+		Angelus
+		Brede
+		Kopp
+		Kukk
+		Leesment
+		Rahamagi
+		von_Ditmar
+		von_Schilling
+		von_Stackelberg
+		von_zur-Muhlen
+	}
+	common_last_names={
+		Aamisepp
+		Aavik
+		Adams
+		Anvel
+		Barbarus
+		Bornhohe
+		Eenpalu
+		Hint
+		Hurt
+		Irv
+		Jaakson
+		Jekelius
+		Jervan
+		Kalm
+		Kangro
+		Kint
+		Klaasen
+		Klumberg
+		Koern
+		Kogerman
+		Kotli
+		Kranig
+		Kumari
+		Kupine
+		Kuulmata
+		Kuusik
+		Koiv
+		Laidoner
+		Laretei
+		Leppik
+		Lipping
+		Lohk
+		Moora
+		Mae
+		Mannil
+		Natus
+		Nurkse
+		Nurmekund
+		Orkivu
+		Perna
+		Piiper
+		Poska
+		Puusepp
+		Pats
+		Poopuu
+		Rei
+		Reinman
+		Rank
+		Siinmaa
+		Sikkar
+		Sirk
+		Strandman
+		Tonisson
+		Uluots
+		Vaga
+		Veske
+		Vilbaste
+		Vilms
+		Warma
+		von_Uexkull
+		Okva
+		Opik
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+rusyn={
+	color= hsv{ 0.16 0.32 0.82 }
+	religion = catholic
+	traits = { east_slavic european_heritage }
+	male_common_first_names={
+		Alexei
+		Andrei
+		Anton
+		Arkadiy
+		Borys
+		Dmitro
+		Fyodor
+		Hryhoriy
+		Ivan
+		Lavr
+		Leonid
+		Lev
+		Mikhail
+		Mykola
+		Nikita
+		Oleksandr
+		Panteleimon 
+		Pavel
+		Petro
+		Roman
+		Semyon
+		Sergiy
+		Valeriy
+		Viktor
+		Vladislav
+		Volodimir
+		Yevhen
+		Yuriy
+	}
+	female_common_first_names = {
+		Darya
+		Dniprova
+		Hrytsko
+		Kolomba
+		Lyubov
+		Lyudmila
+		Maria
+		Nadazhda
+		Nataliya
+		Olena
+		Olha
+		Polina
+		Ruslana
+		Slava
+		Ulyana
+		Valeriya
+		Xenia
+		Yevheniya
+	}	
+	noble_last_names = {
+		Chubynsky
+		Czajkowski
+		Drahomanov
+		Gogol-Yanovsky
+		Hnizdovsky
+		Hrekov
+		Hrushevsky
+		Karaszewicz-Tokarzewski
+		Kobyliansky
+		Konysky
+		Kropyvnytsky
+		Kulish
+		Levytsky
+		Lototsky
+		Ohonovsky
+		Omelianovych-Pavlenko
+		Ortynsky
+		Petrushevych
+		Rodzianko
+		Sas-Kuilovsky
+		Shakhovskoy
+		Sheptytsky
+		Skoropadskyi
+		Vakhnianyn
+		Vitovsky
+		Zubrytsky
+	}
+	common_last_names={
+		Bezruchko
+		Chernyakhovsky
+		Dyachenko
+		Gamula
+		Grigoriev
+		Hrekov
+		Ivanenko
+		Ivanov
+		Kapustiansky
+		Kondratenko
+		Leshchenko
+		Leshchinskiy
+		Paskevich
+		Petliura
+		Radchenko
+		Shevchenko
+		Skoropadskyi
+		Stefaniv
+		Tymoshenko
+		Vitovsky
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+# North Caucasians
+abkhaz = {
+	color= rgb{ 55 91 52 }
+	religion = orthodox
+	traits = { caucasus_group european_heritage }
+
+	male_common_first_names = {
+		Aidamir
+		Aliy
+		Amirkhan
+		Azik
+		Qerandiqo
+		Hatajuq
+		Ismail
+		Shuwpagwe
+		Sefer
+		Qarabatir
+		Ibrahim
+		Hasan
+		Muhammad
+		Inarmas
+		Aksak
+		Kudenet
+		Dokshuka
+		Khizir
+		Kuba
+		Mukhadin
+		Nalbi
+		Nedighe
+		Petrezok
+		Shumaf
+		Anfoko
+		Tlepsh
+		Zalimkhan
+		Aleguko
+		Zawirbiy
+		Ziramikw
+	}
+	female_common_first_names = {
+		Adiyiku
+		Ayshet
+		Bzcho
+		Elmeskhan
+		Fatme
+		Fayzet
+		Fyzh
+		Gupse
+		Gwaschemasche
+		Lashyn
+		Madiyne	
+		Mariyne
+		Marzet
+		Naghwe
+		Nakihat
+		Pizchine
+		Sakinat
+		Sataney
+		Temare
+		Zahret
+		Xwzchpagwe
+		Zhanwise
+		Zulima
+	}
+	noble_last_names = {
+		Berzeg
+		Zaneqo
+		Qalawebateqo
+		Aublaa
+		Diman
+		Shogenukov
+		Atazhuko
+		Boletoqo
+		Shirikhuqo
+		Akhedjaqo
+		Khirtsizhiqo
+	}
+	common_last_names = {
+		Achazh
+		Baga
+		Bzish
+		Berqa
+		Jarem
+		Yamezagh
+		Yarghuzh
+		Qakhw
+		Malish
+		Mafawud
+		Natkho
+		Namilhaqu
+		Watah
+		Sakhut
+		Thaqwakho
+		Tiqo
+		Tiw
+		Hapiy
+		Hatkh
+		Hatuw
+		Shiwmizh
+		Chemso
+		Abir
+		Bzac
+		Candar
+		Khapaye
+		Yiwnih
+		Qalebate
+		Khabatir
+		Tughuzhuqo
+	}
+
+	ethnicities = {
+		1 = north_caucasian
+	}
+	graphics = european
+}
+avar={
+	color= hsv{ 0.17 0.26 0.99 }
+	religion = sunni
+	traits = { caucasus_group middle_eastern_heritage }
+	male_common_first_names={
+		Aslan
+		Hamza
+		Jamal_al-Din
+		Mansur
+		Mohammad
+		Murad
+		Ruslan
+		Shamil
+		Soferbi
+		Zamudin
+	}
+	female_common_first_names = {
+		Albina
+		Irina
+		Jilfidan
+		Maria
+		Melek
+		Nadia
+		Svetlana
+		Tamara
+	}	
+	noble_last_names = {
+		Cherkassky
+		Chetao
+		Dipsheu
+		Kuadzhe
+		Tkhaghapseu
+	}
+	common_last_names={
+		Bek
+		Chemiakin
+		Guchev
+		Mollah
+		Nafash
+		Natkho
+		Shaaban
+	}
+	ethnicities = {
+		1 = north_caucasian
+	}
+	graphics = european
+}
+chechen={
+	color= hsv{ 0.17 0.26 0.89 }
+	religion = sunni
+	traits = { caucasus_group middle_eastern_heritage }
+	male_common_first_names={
+		Aslan
+		Hamza
+		Jamal_al-Din
+		Mansur
+		Mohammad
+		Murad
+		Ruslan
+		Shamil
+		Soferbi
+		Zamudin
+	}
+	female_common_first_names = {
+		Albina
+		Irina
+		Jilfidan
+		Maria
+		Melek
+		Nadia
+		Svetlana
+		Tamara
+	}	
+	noble_last_names = {
+		Cherkassky
+		Chetao
+		Dipsheu
+		Kuadzhe
+		Tkhaghapseu
+	}
+	common_last_names={
+		Bek
+		Chemiakin
+		Guchev
+		Mollah
+		Nafash
+		Natkho
+		Shaaban
+	}
+	ethnicities = {
+		1 = north_caucasian
+	}
+	graphics = european
+}
+dargin={
+	color= hsv{ 0.17 0.26 0.79 }
+	religion = sunni
+	traits = { caucasus_group middle_eastern_heritage }
+	male_common_first_names={
+		Aslan
+		Hamza
+		Jamal_al-Din
+		Mansur
+		Mohammad
+		Murad
+		Ruslan
+		Shamil
+		Soferbi
+		Zamudin
+	}
+	female_common_first_names = {
+		Albina
+		Irina
+		Jilfidan
+		Maria
+		Melek
+		Nadia
+		Svetlana
+		Tamara
+	}	
+	noble_last_names = {
+		Cherkassky
+		Chetao
+		Dipsheu
+		Kuadzhe
+		Tkhaghapseu
+	}
+	common_last_names={
+		Bek
+		Chemiakin
+		Guchev
+		Mollah
+		Nafash
+		Natkho
+		Shaaban
+	}
+	ethnicities = {
+		1 = north_caucasian
+	}
+	graphics = european
+}
+kumyk={
+	color= hsv{ 0.67 0.38 0.61 }
+	religion = sunni
+	traits = { caucasus_group turkic middle_eastern_heritage }
+	male_common_first_names={
+		Ahmad
+		Ali
+		Aliagha
+		Bahram
+		Elbay
+		Farhad
+		Firudin
+		Hamid
+		Hasan
+		Heydar
+		Huseyin
+		Ibrahim
+		Ismayil
+		Jalil
+		Mahmud
+		Malik
+		Mehdi
+		Mohammad
+		Murad
+		Samad
+		Tahir
+		Zahid
+	}
+	female_common_first_names = {
+		Alaviyya
+		Amaliya
+		Aziza
+		Hagigat
+		Hamida
+		Heyran
+		Izzet
+		Maryam
+		Munavvar 
+		Nasiba
+		Nesrin
+		Nuriyya
+		Sakina
+		Shargiyya
+		Shirin
+	}	
+	noble_last_names = {
+		Akhundzade 
+		Ashurbeyov
+		Bahmani-Qajar
+		Bakikhanov
+		Kazembek
+		Kengerli 
+		Ibrahimbek
+		Javanshir
+		Kalantarli
+		Mammadbeyov
+		Mehmandarov
+		Nakhchivanski
+		Narimanbekov 
+		Qasimbek
+		Topchubashi
+	}
+	common_last_names={
+		Ahmadbek
+		Ahmadzade
+		Akbarzade
+		Edigar
+		Ganjavi
+		Ildyrym
+		Mehmandar
+		Nakhchivani
+		Qasimzade
+		Rasulzade
+		Tahirzade
+		Talishkhan
+		Zardabi
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = mideast_indian
+}
+lezgin={
+	color= hsv{ 0.17 0.26 0.49 }
+	religion = sunni
+	traits = { caucasus_group middle_eastern_heritage }
+	male_common_first_names={
+		Aslan
+		Hamza
+		Jamal_al-Din
+		Mansur
+		Mohammad
+		Murad
+		Ruslan
+		Shamil
+		Soferbi
+		Zamudin
+	}
+	female_common_first_names = {
+		Albina
+		Irina
+		Jilfidan
+		Maria
+		Melek
+		Nadia
+		Svetlana
+		Tamara
+	}	
+	noble_last_names = {
+		Cherkassky
+		Chetao
+		Dipsheu
+		Kuadzhe
+		Tkhaghapseu
+	}
+	common_last_names={
+		Bek
+		Chemiakin
+		Guchev
+		Mollah
+		Nafash
+		Natkho
+		Shaaban
+	}
+	ethnicities = {
+		1 = north_caucasian
+	}
+	graphics = european
+}
+nogai={
+	color= hsv{ 0.67 0.38 0.81 }
+	religion = sunni
+	traits = { caucasus_group turkic middle_eastern_heritage }
+	male_common_first_names={
+		Ahmad
+		Ali
+		Aliagha
+		Bahram
+		Elbay
+		Farhad
+		Firudin
+		Hamid
+		Hasan
+		Heydar
+		Huseyin
+		Ibrahim
+		Ismayil
+		Jalil
+		Mahmud
+		Malik
+		Mehdi
+		Mohammad
+		Murad
+		Samad
+		Tahir
+		Zahid
+	}
+	female_common_first_names = {
+		Alaviyya
+		Amaliya
+		Aziza
+		Hagigat
+		Hamida
+		Heyran
+		Izzet
+		Maryam
+		Munavvar 
+		Nasiba
+		Nesrin
+		Nuriyya
+		Sakina
+		Shargiyya
+		Shirin
+	}	
+	noble_last_names = {
+		Akhundzade 
+		Ashurbeyov
+		Bahmani-Qajar
+		Bakikhanov
+		Kazembek
+		Kengerli 
+		Ibrahimbek
+		Javanshir
+		Kalantarli
+		Mammadbeyov
+		Mehmandarov
+		Nakhchivanski
+		Narimanbekov 
+		Qasimbek
+		Topchubashi
+	}
+	common_last_names={
+		Ahmadbek
+		Ahmadzade
+		Akbarzade
+		Edigar
+		Ganjavi
+		Ildyrym
+		Mehmandar
+		Nakhchivani
+		Qasimzade
+		Rasulzade
+		Tahirzade
+		Talishkhan
+		Zardabi
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = mideast_indian
+}
+ossetian={
+	color= hsv{ 0.1 0.43 0.76 }
+	religion = orthodox
+	traits = { caucasus_group iranian_turanian_culture_group middle_eastern_heritage }
+	male_common_first_names={
+		Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Ahmad Ali 
+		Bahram 
+		Ebrahim Esmail 
+		Fath_Ali Fazlollah
+		Hamzeh Hasan Hossein
+		Kamran Karim
+		Lotf_Ali
+		Mahmoud Massoud Mohammad Moin_ed-Din Mozzafer_ed-Din Muhsin Murad
+		Naser_ed-Din Nosret
+		Reza
+		Sadegh
+	}
+	female_common_first_names = {
+		Asieh
+		Bibi_Khatoom
+		Ghazaleh
+		Marjane Marsha Maryam
+		Sedigheh
+	}	
+	noble_last_names = {
+		al-Saltaneh Alamir Astarabadi Ashtiani
+		Bakhtiari
+		Farmanfarma
+		Hakimi Hedayat
+		Khalatbari 
+		Pirnia
+		Qajar
+	}
+	common_last_names={
+		Airom Ansari Ayrum
+		Buzarjomehri
+		Davallu
+		Esfahani
+		Farhani
+		Jahanbani Jamshidian
+		Kashani Khan Khuzai
+		Meshhedi
+		Nakhchevani
+		Pesyan
+		Rokni
+		Sadegh Shafaei Shahbakhti Shirazi
+		Tabrizi Tahmasebi
+		Zahedi
+	}
+	male_regal_first_names = {
+		Ahmad
+		Fath_Ali Fereydoun
+		Mahmoud Mohammad Mohammad_Ali Mohammad_Hassan Mozzafer_ed-Din
+		Naser_ed-Din
+		Sultan_Hamid
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = mideast_indian
+}
+# Ugric, Finnic, Uralic, etc. People
+ingrian={
+	color= hsv{ 0.07 0.23 0.99 }
+	religion = orthodox
+	traits = { finnic european_heritage }
+	male_common_first_names={
+		Aatto
+		Abraham
+		Akseli
+		Aleksanteri
+		Anders
+		Aukusti
+		Edvard
+		Eemil
+		Erkki
+		Erno
+		Fabian
+		Fredrik
+		Fridolf
+		Georg
+		Gosta
+		Harald
+		Hjalmar
+		Hugo
+		Johannes
+		Juho
+		Kaarlo
+		Kurt
+		Lars
+		Martti
+		Mikko
+		Paavo
+		Petteri
+		Rudolf
+		Viktor
+		Vilho
+		Vaino
+	}
+	female_common_first_names = {
+		Agneta
+		Alexandra
+		Amanda
+		Anna
+		Brita
+		Caroline
+		Elisabeth
+		Hilda
+		Johanna
+		Josefina
+		Margareta
+		Maria
+		Mathilda
+		Ottaliana
+		Sofia
+		Thorild
+		Ulrika
+		Sanna
+	}	
+	noble_last_names = {
+		Adlercreutz
+		Alfthan
+		Alopaeus
+		Antell
+		Armfelt
+		Arppe
+		Berbom
+		Berg
+		Carpelan
+		Cedercreutz
+		Edelfelt
+		Edelheim
+		Ehrnrooth
+		Finckenberg
+		Furuhjelm
+		Gadolin
+		Goeoes
+		Granfelt
+		Gripenberg
+		Hisinger
+		Jaegerhorn
+		Jarnefalt
+		Klick
+		Klinckowstrom
+		Mannerheim
+		Molander
+		Nordenswan
+		Pipping
+		Rosenkampff
+		Snellman
+		Tawaststjerna
+		Tudeer
+		von_Becker
+		von_Blom
+		von_Bonsdorff
+		von_Born
+		von_Chiewitz
+		von_Daehn
+		von_Etter
+		von_Fieandt
+		von_Haartman
+		von_Hellens
+		von_Hesse_Kassel
+		von_Kothen
+		von_Kraemer
+		von_Rajalin
+		von_Rechenberg
+		Walheim
+		Zilliacus
+	}
+	common_last_names={
+		Airo
+		Aspara
+		Cajander
+		Heinrichs
+		Heiskanen
+		Holsti
+		Ignatius
+		Koistinen
+		Kuusi
+		Kyander
+		Linder
+		Mechelin
+		Multamaki
+		Nenonen
+		Oesch
+		Paasikivi
+		Raappana
+		Ramsay
+		Sihvo
+		Siilasvuo
+		Stadius
+		Talvela
+		Thesleff
+		Tujulin
+		Tuompo
+		Walden
+		Wallenius
+		Wetzer
+		Oquist
+		Osterman
+		von_Schoultz
+		Nurmivaara
+		Valapuro
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+karelian={
+	color= hsv{ 0.04 0.53 0.99 }
+	religion = orthodox
+	traits = { finnic european_heritage }
+	male_common_first_names={
+		Aatto
+		Abraham
+		Akseli
+		Aleksanteri
+		Anders
+		Aukusti
+		Edvard
+		Eemil
+		Erkki
+		Erno
+		Fabian
+		Fredrik
+		Fridolf
+		Georg
+		Gosta
+		Harald
+		Hjalmar
+		Hugo
+		Johannes
+		Juho
+		Kaarlo
+		Kurt
+		Lars
+		Martti
+		Mikko
+		Paavo
+		Petteri
+		Rudolf
+		Viktor
+		Vilho
+		Vaino
+	}
+	female_common_first_names = {
+		Agneta
+		Alexandra
+		Amanda
+		Anna
+		Brita
+		Caroline
+		Elisabeth
+		Hilda
+		Johanna
+		Josefina
+		Margareta
+		Maria
+		Mathilda
+		Ottaliana
+		Sofia
+		Thorild
+		Ulrika
+		Sanna
+	}	
+	noble_last_names = {
+		Adlercreutz
+		Alfthan
+		Alopaeus
+		Antell
+		Armfelt
+		Arppe
+		Berbom
+		Berg
+		Carpelan
+		Cedercreutz
+		Edelfelt
+		Edelheim
+		Ehrnrooth
+		Finckenberg
+		Furuhjelm
+		Gadolin
+		Goeoes
+		Granfelt
+		Gripenberg
+		Hisinger
+		Jaegerhorn
+		Jarnefalt
+		Klick
+		Klinckowstrom
+		Mannerheim
+		Molander
+		Nordenswan
+		Pipping
+		Rosenkampff
+		Snellman
+		Tawaststjerna
+		Tudeer
+		von_Becker
+		von_Blom
+		von_Bonsdorff
+		von_Born
+		von_Chiewitz
+		von_Daehn
+		von_Etter
+		von_Fieandt
+		von_Haartman
+		von_Hellens
+		von_Hesse_Kassel
+		von_Kothen
+		von_Kraemer
+		von_Rajalin
+		von_Rechenberg
+		Walheim
+		Zilliacus
+	}
+	common_last_names={
+		Airo
+		Aspara
+		Cajander
+		Heinrichs
+		Heiskanen
+		Holsti
+		Ignatius
+		Koistinen
+		Kuusi
+		Kyander
+		Linder
+		Mechelin
+		Multamaki
+		Nenonen
+		Oesch
+		Paasikivi
+		Raappana
+		Ramsay
+		Sihvo
+		Siilasvuo
+		Stadius
+		Talvela
+		Thesleff
+		Tujulin
+		Tuompo
+		Walden
+		Wallenius
+		Wetzer
+		Oquist
+		Osterman
+		von_Schoultz
+		Nurmivaara
+		Valapuro
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+komi={
+	color= hsv{ 0.13 0.69 0.75 }
+	religion = animist
+	traits = { finnic european_heritage }
+	male_common_first_names={
+		Aatto
+		Abraham
+		Akseli
+		Aleksanteri
+		Anders
+		Aukusti
+		Edvard
+		Eemil
+		Erkki
+		Erno
+		Fabian
+		Fredrik
+		Fridolf
+		Georg
+		Gosta
+		Harald
+		Hjalmar
+		Hugo
+		Johannes
+		Juho
+		Kaarlo
+		Kurt
+		Lars
+		Martti
+		Mikko
+		Paavo
+		Petteri
+		Rudolf
+		Viktor
+		Vilho
+		Vaino
+	}
+	female_common_first_names = {
+		Agneta
+		Alexandra
+		Amanda
+		Anna
+		Brita
+		Caroline
+		Elisabeth
+		Hilda
+		Johanna
+		Josefina
+		Margareta
+		Maria
+		Mathilda
+		Ottaliana
+		Sofia
+		Thorild
+		Ulrika
+		Sanna
+	}	
+	noble_last_names = {
+		Adlercreutz
+		Alfthan
+		Alopaeus
+		Antell
+		Armfelt
+		Arppe
+		Berbom
+		Berg
+		Carpelan
+		Cedercreutz
+		Edelfelt
+		Edelheim
+		Ehrnrooth
+		Finckenberg
+		Furuhjelm
+		Gadolin
+		Goeoes
+		Granfelt
+		Gripenberg
+		Hisinger
+		Jaegerhorn
+		Jarnefalt
+		Klick
+		Klinckowstrom
+		Mannerheim
+		Molander
+		Nordenswan
+		Pipping
+		Rosenkampff
+		Snellman
+		Tawaststjerna
+		Tudeer
+		von_Becker
+		von_Blom
+		von_Bonsdorff
+		von_Born
+		von_Chiewitz
+		von_Daehn
+		von_Etter
+		von_Fieandt
+		von_Haartman
+		von_Hellens
+		von_Hesse_Kassel
+		von_Kothen
+		von_Kraemer
+		von_Rajalin
+		von_Rechenberg
+		Walheim
+		Zilliacus
+	}
+	common_last_names={
+		Airo
+		Aspara
+		Cajander
+		Heinrichs
+		Heiskanen
+		Holsti
+		Ignatius
+		Koistinen
+		Kuusi
+		Kyander
+		Linder
+		Mechelin
+		Multamaki
+		Nenonen
+		Oesch
+		Paasikivi
+		Raappana
+		Ramsay
+		Sihvo
+		Siilasvuo
+		Stadius
+		Talvela
+		Thesleff
+		Tujulin
+		Tuompo
+		Walden
+		Wallenius
+		Wetzer
+		Oquist
+		Osterman
+		von_Schoultz
+		Nurmivaara
+		Valapuro
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+mordvin={
+	color= hsv{ 0.75 0.53 0.79 }
+	religion = animist
+	traits = { finnic european_heritage }
+	male_common_first_names={
+		Aatto
+		Abraham
+		Akseli
+		Aleksanteri
+		Anders
+		Aukusti
+		Edvard
+		Eemil
+		Erkki
+		Erno
+		Fabian
+		Fredrik
+		Fridolf
+		Georg
+		Gosta
+		Harald
+		Hjalmar
+		Hugo
+		Johannes
+		Juho
+		Kaarlo
+		Kurt
+		Lars
+		Martti
+		Mikko
+		Paavo
+		Petteri
+		Rudolf
+		Viktor
+		Vilho
+		Vaino
+	}
+	female_common_first_names = {
+		Agneta
+		Alexandra
+		Amanda
+		Anna
+		Brita
+		Caroline
+		Elisabeth
+		Hilda
+		Johanna
+		Josefina
+		Margareta
+		Maria
+		Mathilda
+		Ottaliana
+		Sofia
+		Thorild
+		Ulrika
+		Sanna
+	}	
+	noble_last_names = {
+		Adlercreutz
+		Alfthan
+		Alopaeus
+		Antell
+		Armfelt
+		Arppe
+		Berbom
+		Berg
+		Carpelan
+		Cedercreutz
+		Edelfelt
+		Edelheim
+		Ehrnrooth
+		Finckenberg
+		Furuhjelm
+		Gadolin
+		Goeoes
+		Granfelt
+		Gripenberg
+		Hisinger
+		Jaegerhorn
+		Jarnefalt
+		Klick
+		Klinckowstrom
+		Mannerheim
+		Molander
+		Nordenswan
+		Pipping
+		Rosenkampff
+		Snellman
+		Tawaststjerna
+		Tudeer
+		von_Becker
+		von_Blom
+		von_Bonsdorff
+		von_Born
+		von_Chiewitz
+		von_Daehn
+		von_Etter
+		von_Fieandt
+		von_Haartman
+		von_Hellens
+		von_Hesse_Kassel
+		von_Kothen
+		von_Kraemer
+		von_Rajalin
+		von_Rechenberg
+		Walheim
+		Zilliacus
+	}
+	common_last_names={
+		Airo
+		Aspara
+		Cajander
+		Heinrichs
+		Heiskanen
+		Holsti
+		Ignatius
+		Koistinen
+		Kuusi
+		Kyander
+		Linder
+		Mechelin
+		Multamaki
+		Nenonen
+		Oesch
+		Paasikivi
+		Raappana
+		Ramsay
+		Sihvo
+		Siilasvuo
+		Stadius
+		Talvela
+		Thesleff
+		Tujulin
+		Tuompo
+		Walden
+		Wallenius
+		Wetzer
+		Oquist
+		Osterman
+		von_Schoultz
+		Nurmivaara
+		Valapuro
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+samoyed={
+	color= hsv{ 0.04 0.57 0.55 }
+	religion = animist
+	traits = { north_asian_heritage siberian_culture_group finnic }
+	male_common_first_names={
+		Afanasiy
+		Aleksandr
+		Alitet
+		Diniyar
+		Donduk
+		Gabdull
+		Grigory
+		Mirsayet
+		Sihabetdin
+		Viktor
+	}
+	female_common_first_names = {
+		Galina
+		Sainkho
+	}	
+	noble_last_names = {
+		Khan
+	}
+	common_last_names={
+		Bilyaletdinov
+		Chaoke
+		Khovalyg
+		Krakovetsky
+		Nemtushkin
+		Nulgynet
+		Potanin
+		Shaimiev
+		Shashkov
+		Shchapov
+		Yadrintsev
+	}
+	ethnicities = {
+		1 = circumpolar
+	}
+	graphics = asian
+}
+veps={
+	color= hsv{ 0.04 0.85 0.85 }
+	religion = animist
+	traits = { finnic european_heritage }
+	male_common_first_names={
+		Aatto
+		Abraham
+		Akseli
+		Aleksanteri
+		Anders
+		Aukusti
+		Edvard
+		Eemil
+		Erkki
+		Erno
+		Fabian
+		Fredrik
+		Fridolf
+		Georg
+		Gosta
+		Harald
+		Hjalmar
+		Hugo
+		Johannes
+		Juho
+		Kaarlo
+		Kurt
+		Lars
+		Martti
+		Mikko
+		Paavo
+		Petteri
+		Rudolf
+		Viktor
+		Vilho
+		Vaino
+	}
+	female_common_first_names = {
+		Agneta
+		Alexandra
+		Amanda
+		Anna
+		Brita
+		Caroline
+		Elisabeth
+		Hilda
+		Johanna
+		Josefina
+		Margareta
+		Maria
+		Mathilda
+		Ottaliana
+		Sofia
+		Thorild
+		Ulrika
+		Sanna
+	}	
+	noble_last_names = {
+		Adlercreutz
+		Alfthan
+		Alopaeus
+		Antell
+		Armfelt
+		Arppe
+		Berbom
+		Berg
+		Carpelan
+		Cedercreutz
+		Edelfelt
+		Edelheim
+		Ehrnrooth
+		Finckenberg
+		Furuhjelm
+		Gadolin
+		Goeoes
+		Granfelt
+		Gripenberg
+		Hisinger
+		Jaegerhorn
+		Jarnefalt
+		Klick
+		Klinckowstrom
+		Mannerheim
+		Molander
+		Nordenswan
+		Pipping
+		Rosenkampff
+		Snellman
+		Tawaststjerna
+		Tudeer
+		von_Becker
+		von_Blom
+		von_Bonsdorff
+		von_Born
+		von_Chiewitz
+		von_Daehn
+		von_Etter
+		von_Fieandt
+		von_Haartman
+		von_Hellens
+		von_Hesse_Kassel
+		von_Kothen
+		von_Kraemer
+		von_Rajalin
+		von_Rechenberg
+		Walheim
+		Zilliacus
+	}
+	common_last_names={
+		Airo
+		Aspara
+		Cajander
+		Heinrichs
+		Heiskanen
+		Holsti
+		Ignatius
+		Koistinen
+		Kuusi
+		Kyander
+		Linder
+		Mechelin
+		Multamaki
+		Nenonen
+		Oesch
+		Paasikivi
+		Raappana
+		Ramsay
+		Sihvo
+		Siilasvuo
+		Stadius
+		Talvela
+		Thesleff
+		Tujulin
+		Tuompo
+		Walden
+		Wallenius
+		Wetzer
+		Oquist
+		Osterman
+		von_Schoultz
+		Nurmivaara
+		Valapuro
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

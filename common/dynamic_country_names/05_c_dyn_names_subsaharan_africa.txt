@@ -37,12 +37,43 @@ MAD = { # Madagascar
 	}
 }
 
+MTB = { # Matabele
+
+	# Northern Matabele
+	dynamic_country_name = {
+		name = dyn_c_mtb_northern_matabele
+		
+		is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_variable = matabele_displaced_var
+			}
+		}
+	}
+	# Matabeleland
+	dynamic_country_name = {
+		name = dyn_c_mtb_subject_gbr
+		
+		is_main_tag_only = yes
+		priority = 20
+		
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+}
+
+
+
 ORA = { # Oranje
 
-	# Winburg-Potchefstroom
+	# Winburg
 	dynamic_country_name = {
-		name = dyn_c_ora_winburg_ptf
-		adjective = dyn_c_ora_winburg_ptf_adj
+		name = dyn_c_ora_winburg
+		adjective = dyn_c_ora_winburg_adj
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -50,6 +81,25 @@ ORA = { # Oranje
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
+				AND = {
+					NOT = { owns_entire_state_region = STATE_VRYSTAAT }
+					has_modifier = volksraad_government
+				}
+			}
+		}
+	}
+	# Winburg-Potchefstroom
+	dynamic_country_name = {
+		name = dyn_c_ora_winburg_ptf
+		adjective = dyn_c_ora_winburg_ptf_adj
+		
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_variable = winburg_potchefstroom
 				has_modifier = volksraad_government
 			}
 		}
@@ -60,7 +110,7 @@ ORA = { # Oranje
 		adjective = dyn_c_ora_subject_gbr_adj
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 20
 		
 		trigger = {
 			coa_def_british_ensign_trigger = yes
@@ -68,7 +118,7 @@ ORA = { # Oranje
 	}
 }
 
-SAF = { # South Africa
+SAF = { # Cape of Good Hope
 
 	# Cape Colony
 	dynamic_country_name = {
@@ -91,6 +141,25 @@ SAF = { # South Africa
 	}
 }
 
+SWZ = { # Swaziland
+
+	# Eswatini
+	dynamic_country_name = {
+		name = dyn_c_swz_centralized
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { is_country_type = decentralized }
+			}
+			coa_def_british_ensign_trigger = no
+		}
+	}
+}
+
 TRN = { # Transvaal
 
 	# Zoutpansberg
@@ -104,6 +173,7 @@ TRN = { # Transvaal
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
+				NOT = { owns_entire_state_region = STATE_TRANSVAAL }
 				has_modifier = volksraad_government
 			}
 		}
@@ -113,7 +183,7 @@ TRN = { # Transvaal
 		name = dyn_c_trn_subject_gbr
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 20
 		
 		trigger = {
 			coa_def_british_ensign_trigger = yes
@@ -126,7 +196,7 @@ TSW = { # Tswana
 	# Botswana
 	dynamic_country_name = {
 		name = dyn_c_tsw_centralized
-		adjective = dyn_c_botswana_adj
+		adjective = dyn_c_tsw_centralized_adj
 		
 		is_main_tag_only = yes
 		priority = 0

@@ -301,8 +301,6 @@ state_trait_river_orange = {
 	
 	modifier = {
 		state_infrastructure_add = 15
-
-		state_colony_growth_speed_mult = -0.25
 	}
 }
 
@@ -311,8 +309,6 @@ state_trait_river_vaal = {
 	
 	modifier = {
 		state_infrastructure_add = 15
-
-		state_colony_growth_speed_mult = -0.25
 	}
 }
 

@@ -1599,7 +1599,7 @@
 				size = 500
 			}
 		}
-		region_state:ZAF = {
+		region_state:ZFY = {
 			create_pop = {
 				culture = malagasy
 				size = 91296
@@ -2902,7 +2902,7 @@
 		}
 	}
 	s:STATE_VRYSTAAT = {
-		region_state:WIB = {
+		region_state:ORA = {
 			create_pop = {
 				culture = sotho
 				size = 3400
@@ -2938,7 +2938,7 @@
 		}
 	}
 	s:STATE_TRANSVAAL = {
-		region_state:ZOU = {
+		region_state:TRN = {
 			create_pop = {
 				culture = sotho
 				size = 1800

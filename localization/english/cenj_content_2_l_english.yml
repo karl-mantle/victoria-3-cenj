@@ -1,5 +1,4 @@
 ﻿l_english:
-# Mostly from OPBs tweaks
 # Dead Man
  je_dead_man_walking:0 "A Dead Man Walking"
  je_dead_man_walking_reason:0 "The Ottoman Empire cannot survive in its current form. We must reform and create a country that allows all of its people to call it their home or face destruction."
@@ -18,7 +17,6 @@
 #dei_breakup.1.a:0 "India will be divided between local Princes."
 #dei_breakup.1.b:0 "This is the birth of an Indonesian nation."
 #dei_breakup.1.c:0 "Dutch rule must be maintained at all costs."
-
 # People's Springtime
  notification_springtime_of_the_people_je_opened_name:0 "Springtime of the Peoples in [SCOPE.sC('originator').GetName]"
  notification_springtime_of_the_people_je_opened_desc:0 "Liberal agitators in [SCOPE.sC('originator').GetName] are demanding more freedoms. Unless stamped out or compromised with, this may lead to a revolution."
@@ -121,15 +119,13 @@
  je_french_natural_borders_reject_natural_borders_desc:0 "This is an absurd notion."
  je_french_natural_borders_embrace_natural_borders:0 "Embrace our Natural Borders!"
  je_french_natural_borders_embrace_natural_borders_desc:0 "Our borders must reach the Rhine."
-### Italy
  FELLOW_ITALIAN_BONUS:0 "Wants to unify Italy with you"
  ANTI_FELLOW_ITALIAN_BONUS:0 "Wants to unify Italy on their own"
-### Corn Laws
+# Corn Laws
  JE_CORN_LAWS_TIMER_TOOLTIP:0 "For a total of 5 Years:"
  JE_CORN_LAWS_TIMEOUT_IF_TOOLTIP:0 "If Grain prices have not recovered below #HEADER 25%#! more expensive than the [concept_base_price]:"
  JE_CORN_LAWS_TIMEOUT_ELSE_TOOLTIP:0 "Else:"
-
-## German Unification
+# German Unification
  aus_sgf_relations_tt:0 "Have at least Amicable relations with two South German subjects of yours."
  unite_sgf_tt:0 "Two South German subjects will be unified."
  sgf_test_modifier:0 "South German Unifier"
@@ -181,13 +177,61 @@
  setting_leave_france_alone_desc:0 "The French birth rate is unaltered."
  setting_dunk_on_france:0 "Decrease Birth Rate"
  setting_dunk_on_france_desc:0 "France's accepted pops will suffer from a 20% birth rate decrease."
- 
 ### MISSING LOCS
  german_unification.100.d1:0 "#TODO If you see this ingame and you are not OPB please make a report!#!"
  german_unification.101.d1:0 "#TODO If you see this ingame and you are not OPB please make a report!#!"
  prussia_form_ngf:0 "Form NGF"
  prussia_form_ngf_desc:0 "You are AI, you can't read."
-
 ### China
  warlord_dominance:0 "Plundered Qing Gold Reserves"
+# More Canals
+ je_kra_survey:0 "The Kra Survey"
+ je_kra_survey_goal:1 "Await the completion of the #bold 30 month#! survey"
+ je_kra_survey_reason:0 "Our engineers believe it may be possible to construct a canal linking the Indian and Pacific Oceans. They are currently conducting a survey of the Isthmus of Kra to determine the feasibility of the project."
+ je_kra_canal:0 "Construct the Kra Canal"
+ je_kra_canal_reason:0 "We have determined that it would be possible to construct a canal linking the Atlantic and Pacific Oceans. We must now secure the region and construct the canal."
+ kra_canal_purchase_available:0 "Decision 'Acquire Land in Kra' is now available"
+ kra_canal_construction_available:0 "It is now possible to construct the Kra Canal in Kra"
+ kra_purchase:0 "The Kra Purchase"
+ kra_sale:0 "The Kra Sale"
+ canal_events.102.d:0 "Our survey of the Kra Isthmus is complete. We have confirmed that it would be possible to construct a canal linking the Indian and Pacific Oceans. Next we must acquire the land from [SCOPE.sCountry('kra_owner').GetName]."
 
+ canal_events.9.t:0 "Request Land in Kra"
+ canal_events.9.d:0 "After having completed our survey of the Isthmus, we should now approach about the possibility of acquiring land on the Kra Isthmus to build the canal."
+ canal_events.9.f:0 ""Creating a new shortcut between the Indian and Pacific Oceans will be a historic event. No longer will we need to travel through Singapore to get to the other side of Asia, we will be able to go straight through to either ocean.""
+ canal_events.9.a:0 "Offer to build the canal."
+ canal_events.10.t:0 "Connecting the Oceans"
+ canal_events.10.d:0 "Ambassadors from [SCOPE.sCountry('kra_scope').GetName] have approached us about the possibility of them acquiring land on the Kra Isthmus to build a canal."
+ canal_events.10.f:0 ""We should at least let them try. They have already put in the effort to scout the area. Whose to say they won't just attack us also if we say no."\n\n"The mere question of if we would give up any of our land to foriegners should not even be entertained by this government. If they want our land, they will have to take it from us by force.""
+ canal_events.10.a:0 "None of the cost and all of the benefit."
+ canal_events.10.b:0 "We will not give away an inch of our land."
+ canal_events.11.t:0 "[SCOPE.sCountry('kra_owner_scope').GetName] Accepts Our Deal"
+ canal_events.11.d:0 "The [SCOPE.sCountry('kra_owner_scope').GetName] Government has accepted our request to acquire land on the Kra Isthmus. We can now begin construction of the canal."
+ canal_events.11.f:0 ""Finally after over a year of surveying, planning and negotiating we now have the opportunity to start construction of the canal. Soon we will be able to sail between the Indian and the Pacific Oceans without going through Singapore.""
+ canal_events.11.a:0 "Time to start building."
+ canal_events.12.t:0 "[SCOPE.sCountry('panama_owner_scope').GetName] Rejects Our Deal"
+ canal_events.12.d:0 "The [SCOPE.sCountry('kra_owner_scope').GetName] Government has rejected our request to acquire land to build a canal that can connect the Indian Ocean to the Pacific Ocean"
+ canal_events.12.f:0 ""How can they reject such an offer? We practically offered to build the whole canal for them, and after we spent all the time surveying the area. How could they be so blind to the potential of this project?"\n\n"You know what they say, when diplomacy fails, bring out the stick.""
+ canal_events.12.a:0 "Diplomacy has failed us this time."
+
+ kra_canal_purchase:0 "Acquire Land in Kra"
+ kra_canal_purchase_desc:0 "Begin discussions regarding the possibility of acquiring land in Kra to begin construction of a canal."
+ kra_survey_complete:0 "Has Surveyed Kra Isthmus"
+ kra_canal_purchase_happened:0 "Land in Kra has been acquired."
+
+ canal_events.10_tt:0 "This will give [SCOPE.sCountry('kra_scope').GetName] a claim on Kra, and may lead to conflict in the future."
+
+ kra_survey_decision:0 "Survey the Kra Isthmus"
+ kra_survey_decision_desc:0 "Authorize a survey to map the potential of building a canal in across the Kra Isthmus"
+
+ expedition_events.420.t:1 "Kra Isthmus Surveyed"
+ expedition_events.420.d:1 "Our survey of the Kra Isthmus is complete. We have confirmed that it would be possible to construct a canal linking the Indian and Pacific Oceans."
+ expedition_events.420.f:1 ""A faster route between the Indian and Pacfic has long been sought, but now we shall make it ourselves.""
+ expedition_events.420.a:0 "Very good!"
+
+ notification_kra_survey_started_desc:0 "Kra Isthmus Survey Started"
+ notification_kra_survey_started_tooltip:0 "Kra Isthmus Survey Started"
+ kra_survey_complete_tooltip:0 "Kra Survey Complete"
+
+ modifier_building_kra_canal_throughput_mult:0 "$building_kra_canal$ building [concept_throughput]"
+ modifier_building_kra_canal_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_kra_canal$"

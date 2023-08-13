@@ -1,6 +1,6 @@
 ﻿namespace = calculate_literacy_rate
 
-calculate_literacy_rate.1 = {
+calculate_literacy_rate.2 = {
 	type = country_event
 	hidden = yes
 	trigger = {
@@ -119,6 +119,269 @@ calculate_literacy_rate.1 = {
 			set_variable = literacy_rate_calculated
 		#}
 		## Post notification
+		if = {
+			limit = {
+				is_ai = no
+			}
+			post_notification = literacy_rate_calculated_notification
+		}
+	}
+}
+
+calculate_literacy_rate.1 = {
+	type = country_event
+	hidden = yes
+	trigger = {
+		NOT = { has_variable = literacy_rate_calculated }
+	}
+	immediate = {
+		# Decentralised nations are set to baseline literacy
+		if = {
+			limit = {
+				is_country_type = decentralized
+			}
+			effect_starting_pop_literacy_baseline = yes
+		}
+
+		# Global base literacy rates
+		## Baseline
+		if = {
+			limit = {
+				NOT = { is_country_type = decentralized }
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						state_is_in_africa = yes
+						state_is_in_central_asia = yes
+						state_is_in_india = yes
+						state_is_in_southeast_asia = yes
+					}
+				}
+				effect_starting_pop_literacy_baseline = yes
+			}
+		}
+		## Very Low
+		if = {
+			limit = {
+				NOT = { is_country_type = decentralized }
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						state_is_in_central_america = yes
+						state_is_in_south_america = yes
+						state_is_in_middle_east = yes
+					}
+				}
+				effect_starting_pop_literacy_very_low = yes
+			}
+		}
+		## Low
+		if = {
+			limit = {
+				OR = {
+					is_country_type = recognized
+					is_country_type = colonial
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						state_is_in_north_america = yes
+						state_is_in_europe = yes
+						region = sr:region_southern_africa
+					}
+				}
+				effect_starting_pop_literacy_low = yes
+			}
+		}
+
+		# Regional Literacy Rates
+		## Very Low
+		if = {
+			limit = {
+				NOT = { 
+					is_country_type = decentralized
+					root ?= c:DFR
+					root ?= c:TUG
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						region = sr:region_russia
+						region = sr:region_arkhangelsk
+						region = sr:region_white_ruthenia
+						region = sr:region_volgar
+						region = sr:region_dnieper
+						region = sr:region_ethiopia
+						region = sr:region_algeria
+						region = sr:region_libya
+						region = sr:region_morocco
+						region = sr:region_nile_basin
+						region = sr:region_sudan
+					}
+				}
+				effect_starting_pop_literacy_very_low = yes
+			}
+		}
+		## Low
+		if = {
+			limit = {
+				NOT = { is_country_type = decentralized }
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						state_is_in_china = yes
+						owner ?= c:ARG
+						owner ?= c:URU
+						owner ?= c:PNI
+					}
+				}
+				effect_starting_pop_literacy_low = yes
+			}
+		}
+		## Middling
+		if = { # Middling
+			limit = {
+				OR = {
+					is_country_type = recognized
+					is_country_type = colonial
+				}
+				NOR = {
+					root ?= c:SIC
+					root ?= c:PAP
+					root ?= c:RUS
+					root ?= c:FIN
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						region = sr:region_north_germany
+						region = sr:region_south_germany
+						region = sr:region_north_italy
+						region = sr:region_occitania
+						region = sr:region_crown_of_aragon
+						region = sr:region_baltic # this boosts the Baltic States somewhat but they still get dampened down to low~very low by the discrimination penalties
+						region = sr:region_poland # this boosts Prussian lands to the east but doesn't affect Russian Poland
+					}
+				}
+				effect_starting_pop_literacy_middling = yes
+			}
+		}
+		## High
+		if = {
+			limit = {
+				OR = {
+					is_country_type = recognized
+					is_country_type = colonial
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						region = sr:region_rhineland
+						region = sr:region_france
+						region = sr:region_burgundy
+						region = sr:region_benelux
+						region = sr:region_england
+						region = sr:region_north_atlantic
+						# Alps
+						state_region = s:STATE_RHONE
+						state_region = s:STATE_WEST_SWITZERLAND
+						state_region = s:STATE_EAST_SWITZERLAND
+					}
+				}
+				effect_starting_pop_literacy_high = yes
+			}
+		}
+		## Very High
+		if = {
+			limit = {
+				OR = {
+					is_country_type = recognized
+					is_country_type = colonial
+				}
+				# We don't want Russians knowing how to read
+				NOR = { 
+					root ?= c:FIN
+					root ?= c:RUS
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+					OR = {
+						region = sr:region_scandinavia
+					}
+				}
+				effect_starting_pop_literacy_very_high = yes
+			}
+		}
+
+		# Fixes for outliers
+		## Fix Austria and Sardinia
+		if = {
+			limit = {
+				OR = {
+					root ?= c:AUS
+					root ?= c:SAR
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = root
+				}
+				effect_starting_pop_literacy_middling = yes
+			}
+		}
+		## Normalise some border/frontier regions
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_CATALONIA
+					state_region = s:STATE_ARAGON
+					state_region = s:STATE_ROMAGNA
+					state_region = s:STATE_BRITTANY
+					state_region = s:STATE_POITOU
+				}
+			}
+			effect_starting_pop_literacy_middling = yes
+		}
+		# Boost Franco-Provençal
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_SAVOY
+					state_region = s:STATE_PIEDMONT
+					state_region = s:STATE_PROVENCE
+				}
+			}
+			effect_starting_pop_literacy_high = yes
+		}
+		## Piedmont had high literacy at time of Italian unification, Sardinia did not
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_SARDINIA
+			}
+			effect_starting_pop_literacy_low = yes
+		}
+		## I'm not sure what to do about Nice
+		
+		# Set a variable to stop it firing after the first month
+		set_variable = literacy_rate_calculated
+
+		# Post notification to the player
 		if = {
 			limit = {
 				is_ai = no

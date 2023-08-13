@@ -1,10 +1,27 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.49
+- all new journal entries for south africa covering natalia republic, oranje, transvaal, etc
+- new events for boer republics, cape colony and zulu
+- new dynamic names for south african countries
+- new flags for south african countries
+- added new pm to logging camps: charcoal piles
+- added papal moralist ideology back
+- re-written flag definitions file
+- malaria now has construction penalty to slow down ai mass building in guinea and gambia
+- unincorporated states pay is now worse to account for more than just not paying taxes
+- removed zou and win as independent tags, they now start as dynamic variations of ora and trn
+- changed zaf's tag to zfy
+- military medical treatment pm's now use medicine good
+- changed some mass migration defines to make them more common and more random targeting
+- fixed griqualand west dynamic name localisation
+- fixed newfoundland and cape colony flags
+- fixed modifier localisations missing / wrong
 ### 0.0.48
 - added a script to create appropriate literacy rates that fires throughout the first in-game month
-- updated OPB's tweaks to latest version
+- updated opb's tweaks to latest version
 - fixed dutch east indies decision
-- minor changes to AI
+- minor changes to ai
 - changes to file structure
 ### 0.0.47
 - restored vanilla trade center/port/construction behaviour for now

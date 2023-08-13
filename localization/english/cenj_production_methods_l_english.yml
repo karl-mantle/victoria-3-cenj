@@ -132,6 +132,9 @@
  pm_government_run_building_port:1 "$pm_government_run$"
  pm_worker_cooperative_building_port:1 "$pm_worker_cooperative$"
 
+# 09_misc_resources
+ pm_charcoal_pile:0 "Charcoal Pile"
+
 # 11_private_infrastructure.txt
  pmg_base_building_road_network:0 "$pm_base$"
  pm_natural_routes:0 "Natural Routes"

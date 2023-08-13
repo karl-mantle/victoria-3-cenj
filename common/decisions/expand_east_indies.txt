@@ -133,7 +133,7 @@
 				}
 				if = {
 					limit = { 
-						is_subject_type = subject_type_puppet{
+						is_subject_type = subject_type_puppet
 						OR = {
 							capital.region = sr:region_east_sunda_islands
 							capital.region = sr:region_west_sunda_islands

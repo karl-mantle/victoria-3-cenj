@@ -1,4 +1,15 @@
-﻿# Added
+﻿# common variables
+@coa_width = 768
+@coa_height = 512
+@canton_scale_cross_x = @[ ( 333 / coa_width ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / coa_height ) + 0.001 ]
+@canton_scale_sweden_x = @[ ( 255 / coa_width ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / coa_height ) + 0.001 ]
+@canton_scale_norway_x = @[ ( 192 / coa_width ) + 0.001 ]
+@canton_scale_norway_y = @[ ( 192 / coa_height ) + 0.001 ]
+@canton_scale_denmark_x = @[ ( 220 / coa_width ) + 0.001 ]
+@canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
+@third = @[1/3]
 
 AAC = { # Aachen
 	flag_definition = {
@@ -156,6 +167,21 @@ AMG = { # Armagnac
 		}
 	}
 }
+ANH = { # Anhalt
+	flag_definition = {
+		coa = ANH
+		subject_canton = ANH
+		priority = 1
+	}
+	flag_definition = {
+		coa = ANH_absolute_monarchy
+		subject_canton = ANH_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+}	
 ANS = { # Ansbach
 	flag_definition = {
 		coa = ANS
@@ -234,6 +260,73 @@ AUG = { # Augsburg
 		}
 	}
 }
+AUS = { # Austria
+	flag_definition = {
+		coa = AUS
+		subject_canton = AUS		
+		allow_overlord_canton = yes
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = AUS_absolute_monarchy
+		subject_canton = AUS_absolute_monarchy
+		coa_with_overlord_canton = AUS_subject
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.337 0.337 }			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AUS_republic
+		subject_canton = AUS_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = AUS_dictatorship
+		subject_canton = AUS_dictatorship
+		priority = 20
+		trigger = { 
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AUS_theocracy
+		subject_canton = AUS_theocracy
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = KUK
+		subject_canton = KUK
+		priority = 100
+		trigger = { 
+			scope:actor = { country_has_primary_culture = cu:hungarian }
+		}
+	}
+	flag_definition = {
+		coa = AUS_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AUS_fascist
+		subject_canton = AUS_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}			
+}
 AUV = { # Auvergne
 	flag_definition = {
 		coa = AUV
@@ -304,6 +397,45 @@ AVI = { # Avignon
 		}
 	}
 }
+BAD = { # Baden
+	flag_definition = {
+		coa = BAD
+		subject_canton = BAD
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = BAD_republic
+		subject_canton = BAD_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAD_absolute_monarchy
+		subject_canton = BAD_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAD_oligarchy
+		subject_canton = BAD_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAD_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+}
 BAR = { # Bar
 	flag_definition = {
 		coa = BAR
@@ -332,6 +464,215 @@ BAR = { # Bar
 		priority = 20
 		trigger = {
 			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+}
+BAV = { # Bavaria
+	flag_definition = {
+		coa = BAV
+		subject_canton = BAV
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = BAV_republic
+		subject_canton = BAV_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAV_absolute_monarchy
+		subject_canton = BAV_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAV_theocracy
+		subject_canton = BAV_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BAV_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAV_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+}
+BEL = { # Belgium
+	flag_definition = {
+		coa = BEL
+		subject_canton = BEL
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = BEL_subject			
+		priority = 1
+	}
+	flag_definition = {
+		coa = BEL_absolute_monarchy
+		subject_canton = BEL_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BEL_republic
+		subject_canton = BEL_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BEL_dictatorship
+		subject_canton = BEL_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BEL_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BEL_fascist
+		subject_canton = BEL_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BEL_subject	
+		subject_canton = BEL
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_french_ensign_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BEL_subject	
+		subject_canton = BEL
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_spanish_ensign_trigger = yes
+		}
+	}		
+}
+BRA = { # Brunswick
+	flag_definition = {
+		coa = BRA
+		subject_canton = BRA
+		priority = 1
+	}
+	flag_definition = {
+		coa = BRA_republic
+		subject_canton = BRA_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BRA_absolute_monarchy
+		subject_canton = BRA_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+}
+BRE = { # Bremen
+	flag_definition = {
+		coa = BRE
+		subject_canton = BRE
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = BRE_subject		
+		priority = 1
+	}
+	flag_definition = {
+		coa = BRE_republic
+		subject_canton = BRE_republic
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = BRE_subject			
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRE_absolute_monarchy
+		subject_canton = BRE_absolute_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = BRE_subject			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BRE_dictatorship
+		subject_canton = BRE_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRE_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRE_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+}	
+BRI = { # Brittany
+	flag_definition = {
+		coa = BRI_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRI_theocracy
+		subject_canton = BRI_theocracy
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
 		}
 	}
 }
@@ -622,6 +963,14 @@ CNN = { # Clanricarde
 		}
 	}
 }
+COB = { # Saxe-Coburg-Gotha
+	flag_definition = {
+		coa = COB
+		subject_canton = COB
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
 CRN = { # Cornwall
 	flag_definition = {
 		coa = CRN
@@ -683,6 +1032,38 @@ DAU = { # Dauphine
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+DEN = { # Denmark
+	flag_definition = {
+		coa = DEN
+		coa_with_overlord_canton = DEN
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_denmark_x @canton_scale_denmark_y }
+		subject_canton = DEN_canton
+	}
+	flag_definition = {
+		coa = DEN_absolute_monarchy
+		subject_canton = DEN_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = DEN_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = DEN_fascist
+		subject_canton = DEN_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
 }
 DMS = { # Desmond
 	flag_definition = {
@@ -776,6 +1157,66 @@ EFR = { # East Frisia
 		}
 	}
 }
+ENG = { # England
+	flag_definition = {
+		coa = ENG
+		subject_canton = ENG
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+
+		priority = 1
+	}
+	flag_definition = {
+		# no colonial canton when ruled by UK
+		coa = ENG
+		subject_canton = ENG
+		priority = 2
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ENG_coa
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ENG_coa_france
+		priority = 11
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_controls_part_of_france = yes
+		}
+	}
+}
+FIN = { # Finland
+	flag_definition = {
+		coa = FIN
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = FIN_subject		
+		subject_canton = FIN
+		priority = 1
+	}
+	flag_definition = {
+		coa = FIN_subject_RUS
+		allow_overlord_canton = yes		
+		subject_canton = FIN
+		priority = 2
+		trigger = { 
+			coa_def_russian_ensign_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = FIN_fascist
+		subject_canton = FIN_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
 FKN = { # Franconia
 	flag_definition = {
 		coa = FKN
@@ -815,6 +1256,15 @@ FKN = { # Franconia
 		}
 	}
 }
+FLA = {	# Flanders
+	flag_definition = {
+		coa = FLA
+		subject_canton = FLA
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FLA_subject			
+		priority = 1
+	}
+}
 FOI = { # Foix
 	flag_definition = {
 		coa = FOI
@@ -843,6 +1293,321 @@ FOI = { # Foix
 		priority = 20
 		trigger = {
 			coa_def_republic_flag_trigger = yes
+		}
+	}
+}
+FRA = { # France
+	flag_definition = {
+		coa = FRA
+		subject_canton = FRA
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject		
+		priority = 1
+	}
+	flag_definition = {
+		coa = FRA
+		subject_canton = FRA
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.337 0.337 }			
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = FRA_dictatorship
+		subject_canton = FRA_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_bourbon
+		subject_canton = FRA_bourbon
+		priority = 30
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject			
+		trigger = {	
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				has_variable = legitimist_restoration_var
+			}
+		}
+	}
+	flag_definition = {
+		coa = FRA_absolute_monarchy
+		subject_canton = FRA_absolute_monarchy	
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject			
+		priority = 25
+		trigger = {
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = FRA_second_empire
+		subject_canton = FRA
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject			
+		priority = 30
+		trigger = {
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				has_variable = bonapartist_restoration_var
+			}
+		}
+	}	
+	flag_definition = {
+		coa = FRA_theocracy
+		subject_canton = FRA_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_communist
+		subject_canton = FRA_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_military
+		subject_canton = FRA_military
+		priority = 1500
+		trigger = { 
+			coa_def_military_junta_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = FRA_fascist
+		subject_canton = FRA_fascist
+		priority = 1550
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}		
+}
+FRM = { # Frankfurt
+	flag_definition = {
+		coa = FRM
+		subject_canton = FRM
+		coa_with_overlord_canton = FRM_subject	
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = FRM_dictatorship
+		subject_canton = FRM_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = FRM_absolute_monarchy
+		subject_canton = FRM_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = FRM_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = FRM_subject	
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_french_ensign_trigger = yes
+		}
+	}	
+}
+GBR = { # Great Britain / United Kingdom
+	flag_definition = {
+		coa = GBR
+		subject_canton = GBR
+		priority = 1
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+	}
+	flag_definition = {
+		coa = GBR_uk
+		subject_canton = GBR_uk
+		priority = 2
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		trigger = { 
+			coa_def_controls_part_of_ireland = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_scotland
+		subject_canton = GBR_scotland
+		priority = 10
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		trigger = { 
+			coa_def_dominant_scotland_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_republic
+		priority = 15
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		# English and Scottish flags quartered
+		coa = GBR_dictatorship
+		subject_canton = ENG
+		priority = 16
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		# English, Scottish, Irish crosses quartered
+		coa = GBR_dictatorship_uk
+		subject_canton = ENG
+		priority = 17
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+			coa_def_controls_part_of_ireland = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_coa
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_coa_scotland
+		priority = 21
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_dominant_scotland_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_coa_france
+		priority = 22
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_controls_part_of_france = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_uk_coa
+		priority = 23
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_controls_part_of_ireland = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_uk_coa_france
+		priority = 24
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_controls_part_of_ireland = yes
+			coa_def_controls_part_of_france = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_uk_scotland_coa
+		priority = 24
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_controls_part_of_ireland = yes
+			coa_def_dominant_scotland_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_uk_scotland_coa_france
+		priority = 25
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_controls_part_of_ireland = yes
+			coa_def_dominant_scotland_trigger = yes
+			coa_def_controls_part_of_france = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_theocracy
+		subject_canton = GBR_theocracy
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_white_ensign
+		subject_canton = GBR
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 20
+		trigger = { 
+			coa_def_military_junta_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_uk_white_ensign
+		subject_canton = GBR_uk
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 21
+		trigger = { 
+			coa_def_military_junta_flag_trigger = yes
+			coa_def_controls_part_of_ireland = yes
+		}
+	}
+	flag_definition = {
+		coa = MAC
+		subject_canton = MAC
+		priority = 22
+		trigger = { 
+			exists = scope:actor
+			scope:actor = { capital = { state_region = s:STATE_LANCASHIRE } }
+		}
+	}
+	flag_definition = {
+		coa = MAC_communist
+		priority = 23
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor = { capital = { state_region = s:STATE_LANCASHIRE } }
+		}
+	}
+	flag_definition = {
+		coa = GBR_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+			scope:actor = { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
+		}
+	}	
+	flag_definition = {
+		coa = GBR_fascist
+		subject_canton = GBR_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
 		}
 	}
 }
@@ -876,6 +1641,165 @@ GEL = { # Gelre
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+GER = { # Germany
+	flag_definition = {
+		coa = GER_modern
+		subject_canton = GER_modern
+	}
+	flag_definition = {
+		coa = GER_modern
+		subject_canton = GER_modern
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GER_dictatorship
+		subject_canton = GER_dictatorship
+		priority = 15
+		trigger = { 
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GER_communist
+		subject_canton = GER_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GER_fascist
+		subject_canton = GER_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GER_bavarian
+		subject_canton = GER_bavarian
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				was_formed_from = BAV
+			}
+		}
+	}	
+	flag_definition = {
+		coa = GER_austrian
+		subject_canton = GER
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				was_formed_from = AUS
+			}
+		}
+	}	
+
+	flag_definition = {
+		coa = GER_saxon
+		subject_canton = GER_saxon
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				was_formed_from = SAX
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = GER_saxon_monarchist
+		subject_canton = GER_saxon_monarchist
+		priority = 150
+		trigger = {
+			coa_def_absolute_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				was_formed_from = SAX
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = GER_hannover
+		subject_canton = GER_hannover
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				was_formed_from = HAN
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = GER_wurttemberg
+		subject_canton = GER_wurttemberg
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				was_formed_from = WUR
+			}
+		}
+	}
+	
+	# Black-White-Red tricolor is reserved for a Prussian monarchy
+	flag_definition = {
+		coa = GER
+		subject_canton = GER
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				was_formed_from = PRU
+			}
+		}
+	}
+	flag_definition = {
+		coa = GER_iron_cross
+		subject_canton = GER_iron_cross
+		priority = 5
+		trigger = {
+			coa_def_autocracy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				was_formed_from = PRU
+			}
+		}
+	}	
+	flag_definition = {
+		coa = GER_nihilist
+		subject_canton = GER_nihilist
+		priority = 1500
+		trigger = { 
+			coa_def_nihilist_flag_trigger = yes
+		}
+	}
+}
+GGR = { # Greater Germany
+	includes = GER
+	flag_definition = {
+		coa = GGR_fascist
+		subject_canton = GGR_fascist
+		priority = 20
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
 }
 GNV = { # Geneva
 	flag_definition = {
@@ -978,6 +1902,194 @@ GUY = { # Gascony
 		}
 	}
 }
+HAM = { # Hamburg
+	flag_definition = {
+		coa = HAM_monarchy
+		subject_canton = HAM_monarchy
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = HAM_subject			
+		priority = 1
+	}
+	flag_definition = {
+		coa = HAM
+		subject_canton = HAM
+		coa_with_overlord_canton = HAM_subject			
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAM_absolute_monarchy
+		subject_canton = HAM_absolute_monarchy
+		coa_with_overlord_canton = HAM_subject			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAM_dictatorship
+		subject_canton = HAM_dictatorship
+		coa_with_overlord_canton = HAM_subject			
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAM_subject	
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_french_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = HAM_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+}	
+HAN = { # Hannover
+	flag_definition = {
+		coa = HAN
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = HAN_subject
+		subject_canton = HAN
+		priority = 1
+	}
+	flag_definition = {
+		coa = HAN_subject_GBR
+		priority = 2
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_absolute_monarchy
+		subject_canton = HAN_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_republic
+		subject_canton = HAN_republic
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = HAN_subject		
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = HAN_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_subject	
+		subject_canton = HAN		
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_french_ensign_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_subject_gold
+		subject_canton = HAN
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_spanish_ensign_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+}	
+HEK = { # Hesse-Kassel
+	flag_definition = {
+		coa = HEK
+		subject_canton = HEK
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
+HES = { # Hesse
+	flag_definition = {
+		coa = HES
+		subject_canton = HES
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = HES_subject				
+		priority = 1
+	}
+	flag_definition = {
+		coa = HES_absolute_monarchy
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HES_republic
+		subject_canton = HES_republic
+		allow_overlord_canton = yes				
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HES_oligarchy
+		subject_canton = HES_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HES_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HES_subject	
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_french_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = HES_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}		
+}	
 HLL = { # Holland
 	flag_definition = {
 		coa = HLL
@@ -1009,6 +2121,51 @@ HLL = { # Holland
 		}
 	}
 }
+HOH = { # Hohenzollern
+	flag_definition = {
+		coa = HOH
+		subject_canton = HOH		
+		priority = 1
+	}
+}
+HOL = { # Holstein
+	flag_definition = {
+		coa = HOL	
+		subject_canton = HOL
+		priority = 1
+	}
+	flag_definition = {
+		coa = HOL_republic
+		subject_canton = HOL_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = HOL_subject_DEN
+		subject_canton = HOL_subject_DEN
+		priority = 35
+		trigger = {
+			coa_def_danish_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = HOL_oligarchy
+		subject_canton = HOL_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HOL_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+}	
 HSC = { # Gaeldom
 	flag_definition = {
 		coa = HSC
@@ -1086,6 +2243,104 @@ ING = { # Ingolstadt
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+IRE = { # Ireland
+	flag_definition = {
+		coa = IRE
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = IRE_with_canton
+		priority = 1
+	}
+	flag_definition = {
+		coa = IRE_coa
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = IRE_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = IRE_theocracy
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = IRE_republic_state_religion
+		priority = 11
+		trigger = {
+			coa_def_catholic_trigger = yes
+			coa_def_republic_flag_trigger = yes
+			coa_def_state_religion_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = IRE_theocracy_state_religion
+		priority = 12
+		trigger = { 
+			coa_def_catholic_trigger = yes
+			coa_def_theocracy_flag_trigger = yes
+			coa_def_state_religion_flag_trigger = yes
+			
+		}
+	}
+	flag_definition = {
+		coa = IRE_dictatorship
+		priority = 15
+		trigger = { 
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = IRE_st_patrick_saltire
+		priority = 20
+		trigger = { 
+			coa_def_catholic_trigger = no
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = IRE_easter_rising
+		priority = 20
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+			coa_def_secessionist_country_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = IRE_fascist
+		subject_canton = IRE_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
+JAN = { # Jan Mayen
+	flag_definition = {
+		coa = JAN
+		subject_canton = JAN
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = JAN_subject			
+		priority = 1
+	}
+	flag_definition = {
+		coa = JAN_republic
+		subject_canton = JAN_republic
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = JAN_subject			
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}		
 }
 KID = { # Kildare
 	flag_definition = {
@@ -1406,6 +2661,14 @@ LIE = { # Liège
 		}
 	}
 }
+LIP = { # Lippe-Detmold
+	flag_definition = {
+		coa = LIP
+		subject_canton = LIP
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
 LOI = { # The Isles
 	flag_definition = {
 		coa = LOI
@@ -1436,6 +2699,52 @@ LOI = { # The Isles
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+LUB = { # Lubeck
+	flag_definition = {
+		coa = LUB
+		subject_canton = LUB
+		priority = 1
+	}
+	flag_definition = {
+		coa = LUB_absolute_monarchy
+		subject_canton = LUB_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = LUB_republic
+		subject_canton = LUB_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = LUB_oligarchy
+		subject_canton = LUB_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = LUB_dictatorship
+		subject_canton = LUB_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = LUB_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
 }
 LUN = { # Lüneburg
 	flag_definition = {
@@ -1576,6 +2885,61 @@ MCM = { # Munster
 		}
 	}
 }
+MEC = { # Mecklenburg
+	flag_definition = {
+		coa = MEC	
+		subject_canton = MEC
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = MEC_subject	
+		priority = 1
+	}
+	flag_definition = {
+		coa = MEC_republic
+		subject_canton = MEC_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = MEC_oligarchy
+		subject_canton = MEC_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = MEC_absolute_monarchy
+		subject_canton = MEC_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = MEC_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = MEC_subject_PRU
+		priority = 30
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+}	
+MEI = { # Saxe-Meinengen
+	flag_definition = {
+		coa = MEI
+		subject_canton = MEI
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
 MEM = { # Memmingen
 	flag_definition = {
 		coa = MEM
@@ -1607,6 +2971,7 @@ MEM = { # Memmingen
 		}
 	}
 }
+
 MNT = { # Thomond
 	flag_definition = {
 		coa = MNT
@@ -1644,6 +3009,14 @@ MNT = { # Thomond
 		trigger = {
 			coa_def_republic_flag_trigger = yes
 		}
+	}
+}
+MST = { # Mecklenburg-Strelitz
+	flag_definition = {
+		coa = MST
+		subject_canton = MST
+		allow_overlord_canton = yes		
+		priority = 1
 	}
 }
 MUN = { # Münster
@@ -1685,6 +3058,75 @@ MUN = { # Münster
 		}
 	}
 }
+NAS = { # Nassau
+	flag_definition = {
+		coa = NAS
+		subject_canton = NAS		
+		priority = 1		
+	}
+	flag_definition = {
+		coa = NAS_republic
+		subject_canton = NAS_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = NAS_absolute_monarchy
+		subject_canton = NAS_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = NAS_subject_PRU
+		priority = 30
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+}
+NET = { # Netherlands
+	flag_definition = {
+		coa = NET
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = NET_subject		
+		priority = 1
+	}
+	flag_definition = {
+		coa = NET_princes_flag
+		priority = 5
+		trigger = { 
+			coa_def_autocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NET_republic
+		subject_canton = NET_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = NET_dictatorship
+		subject_canton = NET_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = NET_fascist
+		subject_canton = NET_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}			
+}
 NEV = { # Nevers
 	flag_definition = {
 		coa = NEV
@@ -1724,6 +3166,29 @@ NEV = { # Nevers
 		}
 	}
 }
+NGF = { # North Germany
+	includes = GER
+	flag_definition = {
+		coa = NGF
+		subject_canton = NGF	
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = NGF_absolute_monarchy
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NGF_fascist
+		subject_canton = NGF_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
 NOL = { # Northumberland
 	flag_definition = {
 		coa = NOL
@@ -1762,6 +3227,41 @@ NOL = { # Northumberland
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+NOR = { # Norway
+	flag_definition = {
+		coa = NOR
+		priority = 1
+		coa_with_overlord_canton = NOR
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_norway_x @canton_scale_norway_y }
+		subject_canton = NOR_canton
+	}
+	flag_definition = {
+		coa = NOR
+		priority = 5
+		subject_canton = NOR_canton
+		trigger = { 
+			# Norway didn't use a Swedish canton in 1836
+			coa_SWE_use_union_mark_canton_trigger = no
+			coa_def_swedish_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NOR_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NOR_fascist
+		subject_canton = NOR_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}		
 }
 NRM = { # Normandy
 	flag_definition = {
@@ -1832,6 +3332,56 @@ NUM = { # Nuremberg
 			coa_def_absolute_monarchy_flag_trigger = yes
 		}
 	}
+}
+OLD = { # Oldenburg
+	flag_definition = {
+		coa = OLD
+		subject_canton = OLD
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 1
+	}
+	flag_definition = {
+		coa = OLD_civil_flag
+		subject_canton = OLD_civil_flag
+		allow_overlord_canton = yes		
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = OLD_oligarchy
+		subject_canton = OLD_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = OLD_coa
+		subject_canton = OLD
+		allow_overlord_canton = yes			
+		coa_with_overlord_canton = OLD_subject			
+		priority = 10
+		trigger = { 
+			coa_def_undemocratic_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = OLD_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = OLD_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
 }
 ORL = { # Orleans
 	flag_definition = {
@@ -2012,6 +3562,67 @@ PRO = { # Provence
 		}
 	}
 }
+PRS = { # Paris Commune
+	flag_definition = {
+		coa = PRS
+		subject_canton = PRS
+		priority = 1
+	}
+}
+PRU = { # Prussia
+	flag_definition = {
+		coa = PRU	
+		subject_canton = PRU
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = PRU_subject	
+		overlord_canton_scale = { 0.337 0.337 }			
+		priority = 1
+	}
+	flag_definition = {
+		coa = PRU_teutonic_order
+		subject_canton = PRU_teutonic_order
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 5		
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = PRU_republic
+		subject_canton = PRU_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = PRU_absolute_monarchy
+		subject_canton = PRU_absolute_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = PRU_subject	
+		overlord_canton_scale = { 0.337 0.337 }				
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = PRU_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = PRU_fascist
+		subject_canton = PRU_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}	
 REG = { # Regensburg
 	flag_definition = {
 		coa = REG
@@ -2033,6 +3644,13 @@ REG = { # Regensburg
 		trigger = {
 			coa_def_fascist_flag_trigger = yes
 		}
+	}
+}
+RHE = { # Rhineland
+	flag_definition = {
+		coa = RHE
+		subject_canton = RHE
+		priority = 1
 	}
 }
 ROT = { # Rothenburg
@@ -2104,6 +3722,178 @@ SAA = { # Saarland TODO
 		priority = 1
 	}
 }
+SAX = { # Saxony
+	flag_definition = {
+		coa = SAX
+		allow_overlord_canton = yes		
+		subject_canton = SAX
+		priority = 1
+	}
+	flag_definition = {
+		coa = SAX_republic
+		subject_canton = SAX_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SAX_absolute_monarchy
+		subject_canton = SAX_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SAX_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SAX_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+}
+SCA = { # Scandinavia
+	flag_definition = {
+		coa = SCA
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		subject_canton = SCA_canton
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = SCA_kalmar_union
+		subject_canton = SCA_kalmar_union
+		allow_overlord_canton = yes		
+		priority = 20
+		trigger = {
+			coa_def_kalmar_flag_trigger = yes
+		}
+	}
+}
+SCM = { # Schaumburg-Lippe
+	flag_definition = {
+		coa = SCM
+		subject_canton = SCM
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
+SCN = { # Scania
+	flag_definition = {
+		coa = SCN
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_denmark_x @canton_scale_denmark_y }
+		subject_canton = SCN_canton
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = SCN_republic
+		subject_canton = SCN_republic
+		allow_overlord_canton = yes		
+		priority = 15
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = SCN_sweden
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		subject_canton = SCN_canton
+		priority = 5
+		trigger = { 
+			coa_def_swedish_ensign_trigger = yes
+		}
+	}
+}
+SCO = { # Scotland
+	flag_definition = {
+		coa = SCO
+		subject_canton = SCO
+		priority = 1
+	}
+	flag_definition = {
+		coa = SCO_theocracy
+		subject_canton = SCO_theocracy
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SCO_coa
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SCO_military
+		subject_canton = SCO
+		priority = 20
+		trigger = { 
+			coa_def_military_junta_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SCO_fascist
+		subject_canton = SCO_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SCO_military
+		allow_overlord_canton = no	
+		priority = 50
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}	
+}
+SCW = { # Schwarzburg
+	flag_definition = {
+		coa = SCW
+		subject_canton = SCW
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
+SGF = { # South German Federation
+	flag_definition = {
+		coa = SGF
+		subject_canton = SGF
+		priority = 1
+	}
+	flag_definition = {
+		coa = SGF_republic
+		subject_canton = SGF_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SGF_fascist
+		subject_canton = SGF_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
 SLN = { # Sligo
 	flag_definition = {
 		coa = SLN
@@ -2170,6 +3960,29 @@ SLZ = { # Salzburg
 		subject_canton = SLZ_republic
 		priority = 20
 		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+}
+SMI = { # Sapmi Lappland
+	flag_definition = {
+		coa = SMI
+		coa_with_overlord_canton = SMI_subject
+		allow_overlord_canton = yes
+	}
+	flag_definition = {
+		coa = SMI_sweden
+		coa_with_overlord_canton = SMI_sweden_subject
+		allow_overlord_canton = yes
+		priority = 10
+		trigger = { 
+			coa_def_swedish_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SMI_republic
+		priority = 15
+		trigger = { 
 			coa_def_republic_flag_trigger = yes
 		}
 	}
@@ -2266,6 +4079,123 @@ SWA = { # Swabia
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+SWE = { # Sweden
+	flag_definition = {
+		coa = SWE
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		subject_canton = SWE_canton
+		priority = 1
+	}
+	flag_definition = {
+		coa = SWE_norway
+		coa_with_overlord_canton = SWE
+		allow_overlord_canton = yes
+		subject_canton = SWE_canton
+		overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		priority = 5
+		trigger = {
+			coa_SWE_use_norway_canton_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SWE_union_mark_canton
+		coa_with_overlord_canton = SWE
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		subject_canton = sub_SWE_union_mark
+		priority = 6
+		trigger = {
+			coa_SWE_use_norway_canton_trigger = yes
+			coa_SWE_use_union_mark_canton_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = sub_SWE_union_mark
+		subject_canton = sub_SWE_union_mark
+		priority = 7
+		trigger = {
+			coa_SWE_use_union_mark_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SWE_theocracy
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		subject_canton = SWE_theocracy_canton
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SWE_absolute_monarchy
+		# allow_overlord_canton = yes
+		# overlord_canton_scale = { @canton_scale_sweden_x @canton_scale_sweden_y }
+		subject_canton = SWE
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SWE_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SWE_fascist
+		subject_canton = SWE_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}			
+}
+SWI = { # Switzerland
+	flag_definition = {
+		coa = SWI
+		subject_canton = SWI
+		allow_overlord_canton = yes		
+		coa_with_overlord_canton = SWI_subject			
+		priority = 1
+	}
+	flag_definition = {
+		coa = SWI_fascist
+		subject_canton = SWI_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SWI_dictatorship
+		subject_canton = SWI_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SWI_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SWI_subject	
+		allow_overlord_canton = yes	
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }			
+		priority = 50
+		trigger = { 
+			coa_def_french_ensign_trigger = yes
+		}
+	}	
 }
 THU = { # Thuringia
 	flag_definition = {
@@ -2586,6 +4516,46 @@ ULM = { # Ulm
 		}
 	}
 }
+ULS = { # Ulster / Northern Ireland flegs
+	flag_definition = {
+		coa = ULS_uk
+		priority = 5
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ULS_uk_monarchy
+		priority = 6
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ULS_third_way
+		priority = 10
+		trigger = { 
+			coa_def_independent_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ULS_third_way
+		priority = 11
+		trigger = { 
+			coa_def_independent_trigger = yes
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ULS_theocracy
+		subject_canton = ENG
+		priority = 15
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
 UTR = { # Utrecht
 	flag_definition = {
 		coa = UTR
@@ -2663,4 +4633,129 @@ VER = { # Verden
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+}
+WEI = { # Saxe-Weimar
+	flag_definition = {
+		coa = WEI
+		subject_canton = WEI
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
+WES = { # Westphalia
+	flag_definition = {
+		coa = WES
+		allow_overlord_canton = yes				
+		subject_canton = WES
+		priority = 1
+	}
+}
+WLD = { # Waldeck
+	flag_definition = {
+		coa = WLD
+		subject_canton = WLD
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+}
+WLL = { # Wallonia
+	flag_definition = {
+		coa = WLL
+		# allow_overlord_canton = yes				
+		subject_canton = WLL
+		priority = 1
+	}
+}
+WLS = { # Wales
+	flag_definition = {
+		coa = WLS_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_theocracy
+		subject_canton = WLS_theocracy
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_coa
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_fascist
+		subject_canton = WLS_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger =yes
+		}
+	}	
+	flag_definition = {
+		coa = WLS_subject_GBR
+		allow_overlord_canton = yes		
+		priority = 50
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}	
+}
+WUR = { # Wurttemberg
+	flag_definition = {
+		coa = WUR
+		subject_canton = WUR
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = WUR_absolute_monarchy
+		subject_canton = WUR_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = WUR_republic
+		subject_canton = WUR_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = WUR_oligarchy
+		subject_canton = WUR_oligarchy
+		priority = 25
+		trigger = {
+			coa_def_oligarchy_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = WUR_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = WUR_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
 }

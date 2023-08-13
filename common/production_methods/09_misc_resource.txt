@@ -76,6 +76,17 @@ pm_hardwood = {
 	}
 }
 
+pm_charcoal_pile = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods										
+			building_output_wood_add = -10 # -20			
+			building_output_coal_add = 6 # 10	
+		}
+	}
+}
+
 pm_no_equipment = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 }

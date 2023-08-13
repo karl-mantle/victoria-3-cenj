@@ -530,6 +530,13 @@ MTB = { # Matabele
 	cultures = { nguni shona }
 	capital = STATE_ZAMBEZI
 }
+MTE = { # Southern Matabele
+	color = { 172 110 85 }
+	country_type = decentralized
+	tier = principality
+	cultures = { nguni shona }
+	capital = STATE_ZAMBEZI
+}
 NAL = { # Natalia
 	color = { 106  178  46 }
 	country_type = unrecognized
@@ -696,10 +703,10 @@ SSU = {
 }
 SWZ = { # Swaziland
 	color = { 255 191 0 }
-	country_type = unrecognized
+	country_type = decentralized
 	tier = kingdom
 	cultures = { nguni }
-	capital = STATE_TRANSVAAL
+	capital = STATE_SWAZILAND
 }
 TIV = { # Tivland
 	color = { 240 213 100 }
@@ -737,7 +744,7 @@ TRK = {
 	cultures = { nilotic maasai }
 	capital = STATE_RIFT_VALLEY
 }
-TSW = {
+TSW = { # Botswana
 	color = { 117 170 219 }
 	country_type = decentralized
 	tier = principality
@@ -757,13 +764,6 @@ WBL = {  # Waterboersland
 	tier = principality
 	cultures = { griqua }
 	capital = STATE_NORTHERN_CAPE
-}
-WIB = { # Winburg
-	color = { 255 204 102 }
-	country_type = unrecognized
-	tier = principality
-	cultures = { boer }
-	capital = STATE_VRYSTAAT
 }
 WNH = { # Windhoek
 	color = { 66 78 69 }
@@ -786,7 +786,7 @@ YKA = {
 	cultures = { bakongo lunda }
 	capital = STATE_BAS_CONGO
 }
-ZAF = { # Zafimanely
+ZFY = { # Zafimanely
 	color = { 255 179 25 }
 	country_type = decentralized
 	tier = principality
@@ -814,13 +814,6 @@ ZND = {
 	tier = principality
 	cultures = { azande }
 	capital = STATE_CONGO_ORIENTALE
-}
-ZOU = { # Zoutpansberg
-	color = { 0 0 77 }
-	country_type = unrecognized
-	tier = principality
-	cultures = { boer }
-	capital = STATE_TRANSVAAL
 }
 ZUL = { # Zulu
 	color = { 204  186  201 }

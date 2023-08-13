@@ -1,1 +1,20 @@
-﻿# This file is intentionally blank.
+﻿CHARACTERS = {
+	c:TRN = {
+		create_character = {
+			# Louis Tregardt
+			is_general = yes
+			hq = region_southern_africa
+			first_name = "Louis"
+			last_name = "Trichardt"
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1783.8.10
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				explorer
+			}
+		}
+	}
+}

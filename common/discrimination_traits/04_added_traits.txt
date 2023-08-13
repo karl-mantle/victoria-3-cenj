@@ -13,4 +13,4 @@ occitan_minor = {}
 north_italian_minor = {}
 south_italian_minor = {}
 caledonian = {}
-nomadic = {}
+nomadic_traditions = {}

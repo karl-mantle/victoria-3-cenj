@@ -3,7 +3,7 @@
 fantefolk={
 	color= rgb{ 105 39 70 }
 	religion = animist
-	traits = { scandinavian_culture_group european_heritage nomadic }
+	traits = { scandinavian_culture_group european_heritage nomadic_traditions }
 	male_common_first_names={
 		Adrian Alfred Amund Anders Andreas Arne Arve August
 		Bernt Bernhard Birger Bj_Orn Blostrup
@@ -113,7 +113,7 @@ fantefolk={
 romani={
 	color= hsv{ 0.24 0.16 0.90 }
 	religion = orthodox
-	traits = { south_asian_heritage nomadic }
+	traits = { south_asian_heritage nomadic_traditions }
 	male_common_first_names={
 		Bhagwant
 		Bhai
@@ -163,7 +163,7 @@ romani={
 yenish={
 	color= hsv{ 0.24 0.16 0.50 }
 	religion = catholic
-	traits = { north_german_minor european_heritage nomadic }
+	traits = { north_german_minor european_heritage nomadic_traditions }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
