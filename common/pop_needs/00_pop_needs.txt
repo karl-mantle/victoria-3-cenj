@@ -251,6 +251,14 @@ popneed_free_movement = {
 	}
 
 	entry = {
+		goods = horses
+		
+		weight = 1
+		max_weight = 4.0 # Maxes out at 80% of supply share
+		min_weight = 0.0
+	}
+
+	entry = {
 		goods = transportation
 		
 		weight = 1

@@ -3,14 +3,14 @@
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_wood_add = 1.5 # 3 #5
-			building_output_services_add = 7.5 # 15 #25
+			building_input_wood_add = 3 #5
+			building_output_services_add = 15 #25
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1250 # 2500 #3500
-			building_employment_clerks_add = 450 # 900
-			building_employment_shopkeepers_add = 200 # 400
+			building_employment_laborers_add = 2500 #3500
+			building_employment_clerks_add = 900
+			building_employment_shopkeepers_add = 400
 		}
 		
 		unscaled = {
@@ -26,15 +26,15 @@ pm_market_squares = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_wood_add = 1.5 # 3 #5
-			building_input_glass_add = 1.5 # 3 #5
-			building_output_services_add = 10 # 20 #40
+			building_input_wood_add = 3 #5
+			building_input_glass_add = 3 #5
+			building_output_services_add = 20 #40
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000 # 2000 #2500
-			building_employment_clerks_add = 750 # 1500 #1900
-			building_employment_shopkeepers_add = 200 # 400
+			building_employment_laborers_add = 2000 #2500
+			building_employment_clerks_add = 1500 #1900
+			building_employment_shopkeepers_add = 400
 		}
 		
 		unscaled = {
@@ -51,15 +51,15 @@ pm_covered_markets = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_glass_add = 2.5 # 5 #8
-			building_input_steel_add = 2.5 # 5 #8
-			building_output_services_add = 15 # 30 #60
+			building_input_glass_add = 5 #8
+			building_input_steel_add = 5 #8
+			building_output_services_add = 30 #60
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 750 # 1500 #2000
-			building_employment_clerks_add = 1000 # 2000 #2400
-			building_employment_shopkeepers_add = 200 # 400
+			building_employment_laborers_add = 1500 #2000
+			building_employment_clerks_add = 2000 #2400
+			building_employment_shopkeepers_add = 400
 		}
 		
 		unscaled = {
@@ -76,15 +76,15 @@ pm_arcades = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_glass_add = 4 # 8 #10
-			building_input_steel_add = 4 # 8 #10
-			building_output_services_add = 20 # 40 #80
+			building_input_glass_add = 8 #10
+			building_input_steel_add = 8 #10
+			building_output_services_add = 40 #80
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 400 # 800 #1000
-			building_employment_clerks_add = 1250 # 2500 #3000
-			building_employment_shopkeepers_add = 500 # 1000
+			building_employment_laborers_add = 800 #1000
+			building_employment_clerks_add = 2500 #3000
+			building_employment_shopkeepers_add = 1000
 		}
 		
 		unscaled = {
@@ -105,13 +105,13 @@ pm_oil_streetlights = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 2.5 # 5
-			building_output_services_add = 10 # 20
+			building_input_oil_add = 2.5 #5
+			building_output_services_add = 10 #20
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 200 # 400
-			building_employment_engineers_add = 25 # 100
+			building_employment_laborers_add = 500
+			building_employment_engineers_add = 50
 		}
 	}
 }		
@@ -124,13 +124,13 @@ pm_gas_streetlights = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_coal_add = 5 # 10
-			building_output_services_add = 15 # 30
+			building_input_coal_add = 5 #10
+			building_output_services_add = 15 #30
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 200 # 400
-			building_employment_engineers_add = 50 # 100
+			building_employment_laborers_add = 400
+			building_employment_engineers_add = 100
 		}
 	}
 }		
@@ -145,12 +145,12 @@ pm_electric_streetlights = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_electricity_add = 5 #10
-			building_output_services_add = 25 # 20 #50
+			building_output_services_add = 20 #50
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 175 # 350
-			building_employment_engineers_add = 75 # 150
+			building_employment_laborers_add = 350
+			building_employment_engineers_add = 150
 		}
 	}
 }			
@@ -169,11 +169,11 @@ pm_public_trams = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 2.5 # 5
+			building_input_transportation_add = 5
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -250 # -500
+			building_employment_laborers_add = -500
 		}
 	}
 }
@@ -188,11 +188,11 @@ pm_public_motor_carriages = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 5 # 10
+			building_input_transportation_add = 10
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -500 # -1000	
+			building_employment_laborers_add = -1000	
 		}
 	}
 }
@@ -202,11 +202,12 @@ pm_state_urban_clergy = {
 	
 	disallowing_laws = {
 		law_total_separation
+		law_state_atheism
 	}	
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clergymen_add = 125 # 250 #200
+			building_employment_clergymen_add = 250 #200
 		}		
 		
 		unscaled = {
@@ -220,13 +221,14 @@ pm_free_urban_clergy = {
 	
 	disallowing_laws = {
 		law_state_religion
+		law_state_atheism
 	}	
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 25 # 50
-			building_employment_clerks_add = 25 # 50
-			building_employment_clergymen_add = 75 # 150
+			building_employment_shopkeepers_add = 50
+			building_employment_clerks_add = 50
+			building_employment_clergymen_add = 150
 		}	
 
 		unscaled = {
@@ -243,8 +245,8 @@ pm_no_urban_clergy = {
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clerks_add = 75 # 150
-			building_employment_bureaucrats_add = 25 # 50
+			building_employment_clerks_add = 150
+			building_employment_bureaucrats_add = 50
 		}	
 
 		unscaled = {
@@ -259,8 +261,8 @@ pm_traditional_art = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_oil_add = 0.125
-			building_input_paper_add = 1.25 # 2.5 # 75
-			building_output_fine_art_add = 0.5 # 1 # 200 - profit of 125
+			building_input_paper_add = 2.5 # 75
+			building_output_fine_art_add = 10 # 1 # 200 - profit of 125
 		}
 	}
 }
@@ -276,8 +278,8 @@ pm_realist_art = {
 	
 		workforce_scaled = {
 			building_input_oil_add = 0.25
-			building_input_paper_add = 2.5 # 5 # 150
-			building_output_fine_art_add = 0.75 # 1.5 # 300 - profit of 150
+			building_input_paper_add = 5 # 150
+			building_output_fine_art_add = 15 # 1.5 # 300 - profit of 150
 		}				
 	}
 }
@@ -293,10 +295,10 @@ pm_photographic_art = {
 	
 		workforce_scaled = {
 			building_input_oil_add = 0.25
-			building_input_paper_add = 2.5 # 5 # 150
-			building_input_tools_add = 1 # 2 # 80
+			building_input_paper_add = 5 # 150
+			building_input_tools_add = 2 # 80
 
-			building_output_fine_art_add = 1 # 2 # 400 - profit of 170
+			building_output_fine_art_add = 20 # 2 # 400 - profit of 170
 		}					
 	}
 }
@@ -311,12 +313,12 @@ pm_film_art = {
 	building_modifiers = {		
 	
 		workforce_scaled = {
-			building_input_tools_add = 2.5 # 5 # 150
+			building_input_tools_add = 5 # 150
 			building_input_oil_add = 0.25
-			building_input_paper_add = 2.5 # 5 # 200
-			building_input_electricity_add = 1 # 2 # 60
+			building_input_paper_add = 5 # 200
+			building_input_electricity_add = 2 # 60
 			
-			building_output_fine_art_add = 1.5 # 3 # 600 - profit of 190
+			building_output_fine_art_add = 30 # 3 # 600 - profit of 190
 		}					
 	}
 }	
@@ -331,8 +333,8 @@ pm_traditional_patronage = {
 
 	building_modifiers = {		
 		level_scaled = {
-			building_employment_aristocrats_add = 75 # 150
-			building_employment_academics_add = 425 # 850
+			building_employment_aristocrats_add = 150
+			building_employment_academics_add = 850
 		}		
 
 		unscaled = {
@@ -356,9 +358,9 @@ pm_bourgeoisie_patronage = {
 
 	building_modifiers = {		
 		level_scaled = {
-			building_employment_capitalists_add = 50 # 100
-			building_employment_aristocrats_add = 25 # 50
-			building_employment_academics_add = 425 # 850
+			building_employment_capitalists_add = 100
+			building_employment_aristocrats_add = 50
+			building_employment_academics_add = 850
 		}		
 
 		unscaled = {
@@ -378,7 +380,7 @@ pm_independent_artists = {
 
 	building_modifiers = {		
 		level_scaled = {
-			building_employment_academics_add = 500 # 1000
+			building_employment_academics_add = 1000
 		}		
 
 		unscaled = {
@@ -389,25 +391,25 @@ pm_independent_artists = {
 }
 
 pm_hydroelectric_plant = {
-	texture = "gfx/interface/icons/production_method_icons/power_plant.dds"
+	texture = "gfx/interface/icons/production_method_icons/hydroelectric_plant.dds"
 	pollution_generation = 10
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 5 # 10
-			building_output_electricity_add = 25 # 50
+			building_input_engines_add = 10
+			building_output_electricity_add = 50
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1250 # 2500
-			building_employment_machinists_add = 900 # 1800
-			building_employment_engineers_add = 600 # 1200
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1800
+			building_employment_engineers_add = 1200
 		}
 	}
 }
 
 pm_coal-fired_plant = {
-	texture = "gfx/interface/icons/production_method_icons/power_plant.dds"
+	texture = "gfx/interface/icons/production_method_icons/coal_fired_plant.dds"
 	pollution_generation = 50
 	
 	unlocking_technologies = {
@@ -416,21 +418,21 @@ pm_coal-fired_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 7.5 # 15
-			building_input_coal_add = 15 # 30
-			building_output_electricity_add = 50 # 100
+			building_input_engines_add = 15
+			building_input_coal_add = 30
+			building_output_electricity_add = 100
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000 # 2000
-			building_employment_machinists_add = 750 # 1500
-			building_employment_engineers_add = 700 # 1400
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1400
 		}
 	}
 }
 
 pm_oil-fired_plant = {
-	texture = "gfx/interface/icons/production_method_icons/power_plant.dds"
+	texture = "gfx/interface/icons/production_method_icons/oil_fired_plant.dds"
 	pollution_generation = 75
 	
 	unlocking_technologies = {
@@ -439,15 +441,15 @@ pm_oil-fired_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 10 # 20
-			building_input_oil_add = 20 # 40
-			building_output_electricity_add = 75 # 150
+			building_input_engines_add = 20
+			building_input_oil_add = 40
+			building_output_electricity_add = 150
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000 # 2000
-			building_employment_machinists_add = 750 # 1500
-			building_employment_engineers_add = 700 # 1400
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1400
 		}
 	}
 }
@@ -466,10 +468,435 @@ pm_publicly_traded_building_power_plant = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 75 # 150
+			building_employment_capitalists_add = 150
 		}
 		unscaled = {
 			building_capitalists_shares_add = 10
+		}
+		workforce_scaled = {
+			building_output_securities_add = 0.2
+		}
+	}
+}
+
+# Finance Sector
+
+pm_finance_sector_silver_reserves = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+	is_default = yes
+
+	unlocking_laws = {
+		law_commodity_monetary_system
+		law_silver_standard_monetary_system
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_silver_add = 15 # 750
+			building_input_lead_add = 5 # 200
+			building_input_copper_add = 5 # 175
+
+			building_output_securities_add = 15 # 1500
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 1000
+		}
+	}
+}
+
+pm_finance_sector_gold_reserves = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+
+	unlocking_laws = {
+		law_commodity_monetary_system
+		law_gold_standard_monetary_system
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_gold_add = 10 # 1000
+			building_input_lead_add = 10 # 400
+			building_input_copper_add = 10 # 350
+
+			building_output_securities_add = 25 # 2500
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 1500
+		}
+	}
+}
+
+pm_finance_sector_fiat_money = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+
+	unlocking_laws = {
+		law_fiat_monetary_system
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_securities_add = 25 # 2500
+			building_output_securities_add = 35 # 3500
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 2500
+		}
+	}
+}
+
+pm_finance_sector_full_reserve_banking = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+	is_default = yes
+}
+
+pm_finance_sector_fractional_reserve_banking = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+	
+	unlocking_technologies = {
+		modern_financial_instruments
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_securities_add = 10 # 1000
+		}
+		level_scaled = {
+			building_employment_clerks_add = -500
+		}
+	}
+}
+
+pm_merchant_guilds_building_finance_sector = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+	is_default = yes
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+		}
+	}
+}
+
+pm_privately_owned_building_finance_sector = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_publicly_traded_building_finance_sector = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 250
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+		workforce_scaled = {
+			building_output_securities_add = 0.25
+		}
+	}
+}
+
+pm_government_run_building_finance_sector = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 250
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_finance_sector = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+# Healthcare
+
+pm_traditional_medicine = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_opium_add = 10
+			building_input_fabric_add = 5
+
+			building_output_medicine_add = 20
+		}	
+	
+		level_scaled = {
+			building_employment_clerks_add = 1000
+			building_employment_laborers_add = 500
+		}
+	}	
+}
+
+pm_early_modern_medicine = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+
+	unlocking_technologies = {
+		medical_degrees
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_birth_rate_mult = 0.001
+		}		
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_chemicals_add = 15
+			building_input_fabric_add = 5
+
+			building_output_medicine_add = 35
+		}	
+	
+		level_scaled = {
+			building_employment_clerks_add = 1000
+			building_employment_shopkeepers_add = 250
+			building_employment_laborers_add = 250
+		}
+	}	
+}
+
+pm_modern_medicine = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+
+	unlocking_technologies = {
+		antibiotics
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_birth_rate_mult = 0.002
+		}		
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_chemicals_add = 25
+			building_input_fabric_add = 10
+
+			building_output_medicine_add = 70
+		}	
+	
+		level_scaled = {
+			building_employment_clerks_add = 1000
+			building_employment_shopkeepers_add = 500
+		}
+	}	
+}
+
+pm_health_facilities_apothecaries = {
+	texture = "gfx/interface/icons/production_method_icons/unused/apothecaries.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_mortality_mult = -0.001
+		}		
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_medicine_add = 10
+		}	
+	
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+	}	
+}
+
+pm_health_facilities_pharmacies = {
+	texture = "gfx/interface/icons/production_method_icons/unused/pharmacies.dds"
+	
+	unlocking_technologies = {
+		pharmaceuticals
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_mortality_mult = -0.002
+		}		
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_medicine_add = 20
+		}	
+	
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+			building_employment_engineers_add = 250
+		}
+	}	
+}
+
+pm_charity_run_building_health_facilities = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
+
+	unlocking_laws = {
+		law_charitable_health_system
+	}
+
+	disallowing_laws = {
+		law_state_atheism
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = -1000
+			building_employment_clergymen_add = 1000
+		}
+		unscaled = {
+			building_clergymen_shares_add = 10
+		}
+	}
+}
+
+pm_privately_owned_building_health_facilities = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_private_health_insurance
+	}
+	
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 50
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_publicly_traded_building_health_facilities = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = {
+		law_private_health_insurance
+	}
+	
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_government_run_building_health_facilities = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_public_health_insurance
+		law_command_economy
+		law_cooperative_ownership
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_university_run_building_health_facilities = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
+	
+	unlocking_laws = {
+		law_private_health_insurance
+		law_public_health_insurance
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 1
+		}
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = -500
+			building_employment_academics_add = 1200
+		}
+		unscaled = {
+			building_academics_shares_add = 10
 		}
 	}
 }

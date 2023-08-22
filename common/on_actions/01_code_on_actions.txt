@@ -68,7 +68,6 @@ calculate_literacy_rate_on_action = {
 					exists = capital
 					OR = {
 						capital.region = sr:region_crown_of_aragon
-						capital.region = sr:region_occitania
 						capital.region = sr:region_burgundy
 						capital.region = sr:region_north_germany
 						capital.region = sr:region_rhineland
@@ -83,6 +82,7 @@ calculate_literacy_rate_on_action = {
 				limit = {
 					exists = capital
 					OR = {
+						capital.region = sr:region_occitania
 						capital.region = sr:region_france
 						capital.region = sr:region_benelux
 						capital.region = sr:region_england
@@ -341,28 +341,18 @@ change_pop_culture_on_action = {
 		# French-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = french_minor"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = francophone"
 			TARGET_CULTURE = "american_french"
 		}
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_minor"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_culture_group"
 			TARGET_CULTURE = "american_french"
 		}
 		# German-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
-			TARGET_CULTURE = "american_german"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_german_minor"
-			TARGET_CULTURE = "american_german"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_german_minor"
 			TARGET_CULTURE = "american_german"
 		}
 		# Hispanic-American
@@ -381,16 +371,6 @@ change_pop_culture_on_action = {
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = italophone"
-			TARGET_CULTURE = "american_italian"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_italian_minor"
-			TARGET_CULTURE = "american_italian"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_italian_minor"
 			TARGET_CULTURE = "american_italian"
 		}
 		# Japanese-American
@@ -420,7 +400,7 @@ change_pop_culture_on_action = {
 		# Scottish-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = caledonian"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = scottish_culture_group"
 			TARGET_CULTURE = "american_scottish"
 		}
 		# Yugoslav-American
@@ -475,28 +455,18 @@ change_pop_culture_on_action = {
 		# French-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = french_minor"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = francophone"
 			TARGET_CULTURE = "franco_canadian"			
 		}
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_minor"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_culture_group"
 			TARGET_CULTURE = "franco_canadian"
 		}
 		# German-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
-			TARGET_CULTURE = "canadian_german"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_german_minor"
-			TARGET_CULTURE = "canadian_german"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_german_minor"
 			TARGET_CULTURE = "canadian_german"
 		}
 		# Greek-Canadian
@@ -528,16 +498,6 @@ change_pop_culture_on_action = {
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = italophone"
 			TARGET_CULTURE = "canadian_italian"
 		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = north_italian_minor"
-			TARGET_CULTURE = "canadian_italian"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = south_italian_minor"
-			TARGET_CULTURE = "canadian_italian"
-		}
 		# Polish-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
@@ -553,7 +513,7 @@ change_pop_culture_on_action = {
 		# Scottish-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = caledonian"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = scottish_culture_group"
 			TARGET_CULTURE = "canadian_scottish"
 		}
 		# Ukrainian-Canadian
@@ -572,77 +532,77 @@ change_pop_culture_on_action = {
 	## NATIONALISM TECH ##
 
 		# North German
-		country_change_pop_culture_by_technology = {
-			TECHNOLOGY = "nationalism"
-			LIMIT = "OR = { country_has_primary_culture = cu:north_german country_has_primary_culture = cu:south_german }"
-			TRIGGER_CULTURE = "has_discrimination_trait = north_german_minor"
-			TARGET_CULTURE = "north_german"
-		}
+		#country_change_pop_culture_by_technology = {
+		#	TECHNOLOGY = "nationalism"
+		#	LIMIT = "OR = { country_has_primary_culture = cu:north_german country_has_primary_culture = cu:south_german }"
+		#	TRIGGER_CULTURE = "has_discrimination_trait = north_german_minor"
+		#	TARGET_CULTURE = "north_german"
+		#}
 		# South German
-		country_change_pop_culture_by_technology = {
-			TECHNOLOGY = "nationalism"
-			LIMIT = "OR = { country_has_primary_culture = cu:north_german country_has_primary_culture = cu:south_german }"
-			TRIGGER_CULTURE = "has_discrimination_trait = south_german_minor"
-			TARGET_CULTURE = "south_german"
-		}
+		#country_change_pop_culture_by_technology = {
+		#	TECHNOLOGY = "nationalism"
+		#	LIMIT = "OR = { country_has_primary_culture = cu:north_german country_has_primary_culture = cu:south_german }"
+		#	TRIGGER_CULTURE = "has_discrimination_trait = south_german_minor"
+		#	TARGET_CULTURE = "south_german"
+		#}
 		# North Italian
-		country_change_pop_culture_by_technology = {
-			TECHNOLOGY = "nationalism"
-			LIMIT = "OR = { country_has_primary_culture = cu:north_italian country_has_primary_culture = cu:south_italian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = north_italian_minor"
-			TARGET_CULTURE = "north_italian"
-		}
+		#country_change_pop_culture_by_technology = {
+		#	TECHNOLOGY = "nationalism"
+		#	LIMIT = "OR = { country_has_primary_culture = cu:north_italian country_has_primary_culture = cu:south_italian }"
+		#	TRIGGER_CULTURE = "has_discrimination_trait = north_italian_minor"
+		#	TARGET_CULTURE = "north_italian"
+		#}
 		# South Italian
-		country_change_pop_culture_by_technology = {
-			TECHNOLOGY = "nationalism"
-			LIMIT = "OR = { country_has_primary_culture = cu:north_italian country_has_primary_culture = cu:south_italian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = south_italian_minor"
-			TARGET_CULTURE = "south_italian"
-		}
+		#country_change_pop_culture_by_technology = {
+		#	TECHNOLOGY = "nationalism"
+		#	LIMIT = "OR = { country_has_primary_culture = cu:north_italian country_has_primary_culture = cu:south_italian }"
+		#	TRIGGER_CULTURE = "has_discrimination_trait = south_italian_minor"
+		#	TARGET_CULTURE = "south_italian"
+		#}
 		# French
-		country_change_pop_culture_by_technology = {
-			TECHNOLOGY = "nationalism"
-			LIMIT = "OR = { country_has_primary_culture = cu:french country_has_primary_culture = cu:occitan }"
-			TRIGGER_CULTURE = "has_discrimination_trait = french_minor"
-			TARGET_CULTURE = "french"
-		}
+		#country_change_pop_culture_by_technology = {
+		#	TECHNOLOGY = "nationalism"
+		#	LIMIT = "OR = { country_has_primary_culture = cu:french country_has_primary_culture = cu:occitan }"
+		#	TRIGGER_CULTURE = "has_discrimination_trait = french_minor"
+		#	TARGET_CULTURE = "french"
+		#}
 		# Occitan
 		country_change_pop_culture_by_technology = {
 			TECHNOLOGY = "nationalism"
 			LIMIT = "OR = { country_has_primary_culture = cu:french country_has_primary_culture = cu:occitan }"
-			TRIGGER_CULTURE = "has_discrimination_trait = occitan_minor"
+			TRIGGER_CULTURE = "has_discrimination_trait = occitan_culture_group"
 			TARGET_CULTURE = "occitan"
 		}
 
 	## PAN-NATIONALISM TECH ##
 
 		# American
-		country_change_pop_culture_by_technology = {
-			TECHNOLOGY = "pan-nationalism"
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = american_minor"
-			TARGET_CULTURE = "yankee"
-		}
+		#country_change_pop_culture_by_technology = {
+		#	TECHNOLOGY = "pan-nationalism"
+		#	LIMIT = "country_has_primary_culture = cu:yankee"
+		#	TRIGGER_CULTURE = "has_discrimination_trait = american_minor"
+		#	TARGET_CULTURE = "yankee"
+		#}
 		# Southern-American
-		country_change_pop_culture_by_technology = {
-			TECHNOLOGY = "pan-nationalism"
-			LIMIT = "country_has_primary_culture = cu:dixie"
-			TRIGGER_CULTURE = "has_discrimination_trait = american_minor"
-			TARGET_CULTURE = "dixie"
-		}
+		#country_change_pop_culture_by_technology = {
+		#	TECHNOLOGY = "pan-nationalism"
+		#	LIMIT = "country_has_primary_culture = cu:dixie"
+		#	TRIGGER_CULTURE = "has_discrimination_trait = american_minor"
+		#	TARGET_CULTURE = "dixie"
+		#}
 		# German
 		country_change_pop_culture_by_technology = {
 			LIMIT = "country_has_primary_culture = cu:german"
 			TECHNOLOGY = "pan-nationalism"
 			TRIGGER_CULTURE = "has_discrimination_trait = german_speaking"
-			TARGET_CULTURE = "yankee"
+			TARGET_CULTURE = "german"
 		}
 		# Italian
 		country_change_pop_culture_by_technology = {
 			LIMIT = "country_has_primary_culture = cu:italian"
 			TECHNOLOGY = "pan-nationalism"
 			TRIGGER_CULTURE = "has_discrimination_trait = italophone"
-			TARGET_CULTURE = "yankee"
+			TARGET_CULTURE = "italian"
 		}
 	}
 }

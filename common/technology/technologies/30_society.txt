@@ -86,6 +86,10 @@ currency_standards = {
 		international_trade
 		centralization
 	}
+
+	modifier = {
+		state_building_mint_max_level_add = 5
+	}
 	
 	ai_weight = {
 		value = 3 # Very important in general
@@ -175,8 +179,8 @@ banking = {
 	category = society
 	
 	modifier = {
-		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
+		country_loan_interest_rate_add = -0.05
+		state_building_mint_max_level_add = 5
 	}
 	
 	unlocking_technologies = {
@@ -502,9 +506,9 @@ central_banking = {
 	category = society
 	
 	modifier = {
-		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
 		country_institution_central_bank_max_investment_add = 1
+		country_loan_interest_rate_add = -0.05
+		state_building_mint_max_level_add = 5
 	}	
 	
 	unlocking_technologies = {
@@ -919,9 +923,9 @@ mutual_funds = {
 	category = society
 	
 	modifier = {
-		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
 		country_institution_central_bank_max_investment_add = 1
+		country_loan_interest_rate_add = -0.05
+		state_building_mint_max_level_add = 5
 	}
 	
 	unlocking_technologies = {
@@ -1134,8 +1138,9 @@ international_exchange_standards = {
 	category = society
 	
 	modifier = {
-		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
+		country_institution_central_bank_max_investment_add = 1
+		country_loan_interest_rate_add = -0.05
+		state_building_mint_max_level_add = 5
 	}
 	
 	unlocking_technologies = {
@@ -1296,7 +1301,8 @@ modern_financial_instruments = {
 	category = society
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02		
+		country_loan_interest_rate_add = -0.02	
+		state_building_mint_max_level_add = 5	
 	}
 	unlocking_technologies = {
 		international_exchange_standards

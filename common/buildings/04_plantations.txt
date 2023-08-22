@@ -10,7 +10,7 @@ building_coffee_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	production_method_groups = {
 		pmg_base_building_coffee_plantation
@@ -29,7 +29,7 @@ building_cotton_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_cotton_plantation
@@ -48,7 +48,7 @@ building_dye_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	production_method_groups = {
 		pmg_base_building_dye_plantation
@@ -67,7 +67,7 @@ building_opium_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	production_method_groups = {
 		pmg_base_building_opium_plantation
@@ -99,7 +99,7 @@ building_tea_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	production_method_groups = {
 		pmg_base_building_tea_plantation
@@ -118,7 +118,7 @@ building_tobacco_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	production_method_groups = {
 		pmg_base_building_tobacco_plantation
@@ -137,7 +137,7 @@ building_sugar_plantation = {
 	}
 	
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_sugar_plantation
@@ -156,7 +156,7 @@ building_banana_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	production_method_groups = {
 		pmg_base_building_banana_plantation
@@ -175,7 +175,7 @@ building_silk_plantation = {
 	}
 
 	city_type = farm
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_silk_plantation

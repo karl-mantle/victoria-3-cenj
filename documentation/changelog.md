@@ -1,5 +1,32 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.50
+- reverted buildings to vanilla size
+- adjusted construction sector, quarry, mint and urban centres pm inputs/outputs and employment numbers
+- finance sectors turn deposits into securities
+- mints create government minting from raw materials
+- removed currency good
+- changed pms for finance sector and mint
+- changed central bank institution bonuses
+- moved some buildings to different categories and lenses
+- adjusted ownership pms for new mines
+- changed monetary system law, petitions should work now, different modifiers
+- added trees to kyushu in japan
+- temporary localisation for new south african journals/events
+- publishing house now requires mass communications technology
+- fixed ai war goals extra bracket
+- fixed missing on_created in die groot trek event for matabele
+- added sugar beets pm to rye and wheat farms
+- changed palm oil pm to need tech
+- overhauled the road network pms (was causing issues for certain tags)
+- added new transport methods for plantations and mines
+- added new horses good
+- fixed occitania not being able to read
+- changed discrimination traits for new cultures, tweaked existing
+- new goods icon for horses
+- new icon and background for central bank institution
+- new state picture for savanna terrain
+- fixed mestizo heritage characters not having clothes
 ### 0.0.49
 - all new journal entries for south africa covering natalia republic, oranje, transvaal, etc
 - new events for boer republics, cape colony and zulu

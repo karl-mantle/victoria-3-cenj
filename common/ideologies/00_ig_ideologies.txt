@@ -53,7 +53,7 @@
 
 	lawgroup_monetary_system = {
 		law_no_monetary_system = disapprove
-		law_standardized_monetary_system = neutral
+		law_commodity_monetary_system = neutral
 		law_silver_standard_monetary_system = approve
 		law_gold_standard_monetary_system = approve
 		law_fiat_monetary_system = neutral
@@ -102,7 +102,7 @@ ideology_laissez_faire = {
 
 	lawgroup_monetary_system = {
 		law_no_monetary_system = strongly_disapprove
-		law_standardized_monetary_system = disapprove
+		law_commodity_monetary_system = disapprove
 		law_silver_standard_monetary_system = disapprove
 		law_gold_standard_monetary_system = disapprove
 		law_fiat_monetary_system = strongly_approve
@@ -223,7 +223,7 @@ ideology_agrarian = {
 
 	lawgroup_monetary_system = {
 		law_no_monetary_system = approve
-		law_standardized_monetary_system = neutral
+		law_commodity_monetary_system = neutral
 		law_silver_standard_monetary_system = neutral
 		law_gold_standard_monetary_system = neutral
 		law_fiat_monetary_system = disapprove
@@ -280,7 +280,7 @@ ideology_isolationist = {
 
 	lawgroup_monetary_system = {
 		law_no_monetary_system = approve
-		law_standardized_monetary_system = neutral
+		law_commodity_monetary_system = neutral
 		law_silver_standard_monetary_system = neutral
 		law_gold_standard_monetary_system = neutral
 		law_fiat_monetary_system = strongly_disapprove
@@ -639,7 +639,7 @@ ideology_reactionary = {
 
 	lawgroup_monetary_system = {
 		law_no_monetary_system = neutral
-		law_standardized_monetary_system = approve
+		law_commodity_monetary_system = approve
 		law_silver_standard_monetary_system = strongly_approve
 		law_gold_standard_monetary_system = disapprove
 		law_fiat_monetary_system = strongly_disapprove
@@ -685,7 +685,7 @@ ideology_plutocratic = {
 
 	lawgroup_monetary_system = {
 		law_no_monetary_system = strongly_disapprove
-		law_standardized_monetary_system = disapprove
+		law_commodity_monetary_system = disapprove
 		law_silver_standard_monetary_system = disapprove
 		law_gold_standard_monetary_system = approve
 		law_fiat_monetary_system = strongly_approve

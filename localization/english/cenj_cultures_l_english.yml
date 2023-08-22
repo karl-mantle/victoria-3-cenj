@@ -1,17 +1,10 @@
 ﻿l_english:
 # Discrimination Traits
+ #american_culture_group:0 "American"
+ canadian_culture_group:0 "Canadian"
  mestizo_heritage:0 "Mestizo Heritage"
-# Cultural Traits
- american_minor:0 "American"
- canadian_minor:0 "Canadian"
- north_german_minor:0 "North German minor"
- south_german_minor:0 "South German minor"
- french_minor:0 "French minor"
- occitan_minor:0 "Occitan minor"
- north_italian_minor:0 "North Italian minor"
- south_italian_minor:0 "South Italian minor"
- caledonian:0 "Caledonian"
  nomadic_traditions:0 "Nomadic Traditions"
+ scottish_culture_group:0 "Scottish"
 # Religions
  anglican:0 "Anglican"
  ibadi:0 "Ibadi"

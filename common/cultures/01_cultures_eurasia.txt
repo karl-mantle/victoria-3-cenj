@@ -1,7 +1,7 @@
 ﻿cossack={
 	color= hsv{ 0.16 0.32 0.42 }
 	religion = orthodox
-	traits = { east_slavic european_heritage nomadic_traditions }
+	traits = { nomadic_traditions east_slavic european_heritage }
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -110,7 +110,7 @@
 livonian={
 	color= hsv{ 0.72 0.25 0.50 }
 	religion = protestant
-	traits = { finnic baltic_culture_group european_heritage }
+	traits = { baltic_culture_group finnic european_heritage }
 	male_common_first_names={
 		Aadu
 		Alar
@@ -1487,7 +1487,7 @@ mordvin={
 samoyed={
 	color= hsv{ 0.04 0.57 0.55 }
 	religion = animist
-	traits = { north_asian_heritage siberian_culture_group finnic }
+	traits = { siberian_culture_group finnic north_asian_heritage }
 	male_common_first_names={
 		Afanasiy
 		Aleksandr

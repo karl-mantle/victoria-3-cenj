@@ -1,4 +1,5 @@
 ﻿l_english:
+## Silver Rush
  state_silver_rush:0 "Silver Rush"
  state_limited_silver_rush:0 "Limited Silver Rush"
  state_silver_depleted:0 "Silver Mines Depleted"
@@ -58,8 +59,8 @@
  texan_indian_wars.2.b:0 "We are not bound by Mexican treaties."
  texan_indian_wars.2.a_transfer:0 "This will cede all our territory north of the Red and Arkansas Rivers, and east of the 100th meridian, to the United States."
  texan_indian_wars.3.title:0 "Major Comanche Raid"
- texan_indian_wars.3.desc:0 "The Comanche have audaciously launched a major attack against a larger settlement, causing serious damage and lose of life."
- texan_indian_wars.3.a:0 "If its war they want..."
+ texan_indian_wars.3.desc:0 "The Comanche have audaciously launched a major attack against a larger settlement, causing serious damage and loss of life."
+ texan_indian_wars.3.a:0 "If it's war they want..."
  texan_indian_wars.3.b:0 "We must descalate."
  texan_indian_wars.4.title:0 "Minor Comanche Incursion"
  texan_indian_wars.4.desc:0 "The Comanche have raided small settlements along our border! The damage is minor but have rattled our frontier settlers, who are calling for action."
@@ -67,6 +68,97 @@
  texan_indian_wars.4.b:0 "Cooler heads must prevail."
  major_indian_raids_modifier:0 "Major Indian Raids"
  minor_indian_raids_modifier:0 "Minor Indian Raids"
+
+## South African flavour
+
+battle_of_blood_river_lost:0 "Lost the Battle of Blood River"
+laager_defence:0 "Laager Defensive Formation"
+laager_supplies:0 "Laager Supplies"
+the_great_trek:0 "The Great Trek"
+trekboers_leaving:0 "Trekboers Leaving"
+volksraad_government:0 "Volksraad Government"
+
+dgt_winburg_formed_tt:0 "The Winburg republic has formed."
+dgt_potchefstroom_formed_tt:0 "The Potchefstroom republic has formed."
+dgt_zoutpansberg_formed_tt:0 "The Zoutpansberg republic has formed."
+dgt_natalia_formed_tt:0 "The Natalia republic has formed."
+
+je_die_groot_trek:0 "Die Groot Trek"
+je_natalia_republic:0 "The Natalia Republic"
+je_natal_colony:0 "Natal Colony"
+je_potchefstroom_republic:0 "The Potchefstroom Republic"
+je_potchefstroom_republic_complete_tt: "The Potchefstroom Republic exists."
+je_orange_river_sovreignty:0 "The Orange River Sovreignty"
+
+die_groot_trek.1.t: "The Natalia Republic"
+die_groot_trek.1.d: "REPLACE"
+die_groot_trek.1.f: "REPLACE"
+die_groot_trek.1.a: "REPLACE"
+die_groot_trek.1.b: "REPLACE"
+
+die_groot_trek.2.t: "Natal Colony"
+die_groot_trek.2.d: "REPLACE"
+die_groot_trek.2.f: "REPLACE"
+die_groot_trek.2.a: "We should accept the British offer."
+die_groot_trek.2.b: "We will never accept British subjugation!"
+
+die_groot_trek.3.t: "The Potchefstroom Republic"
+die_groot_trek.3.d: "REPLACE"
+die_groot_trek.3.f: "REPLACE"
+die_groot_trek.3.a: "REPLACE"
+die_groot_trek.3.b: "REPLACE"
+
+die_groot_trek.4.t: "Federation of Winburg-Potchefstroom"
+die_groot_trek.4.d: "REPLACE"
+die_groot_trek.4.f: "REPLACE"
+die_groot_trek.4.a: "REPLACE"
+die_groot_trek.4.b: "REPLACE"
+
+die_groot_trek.100.t: "The Displacement of the Matabele"
+die_groot_trek.100.d: "REPLACE"
+die_groot_trek.100.f: "REPLACE"
+die_groot_trek.100.a: "REPLACE"
+die_groot_trek.100.b: "REPLACE"
+
+die_groot_trek.101.t: "Massacre of Piet Retief's Delegation"
+die_groot_trek.101.d: "REPLACE"
+die_groot_trek.101.f: "REPLACE"
+die_groot_trek.101.a: "REPLACE"
+die_groot_trek.101.b: "REPLACE"
+
+die_groot_trek.102.t: "Weenen Massacre"
+die_groot_trek.102.d: "REPLACE"
+die_groot_trek.102.f: "REPLACE"
+die_groot_trek.102.a: "REPLACE"
+die_groot_trek.102.b: "REPLACE"
+
+die_groot_trek.103.t: "The Battle of Blood River"
+die_groot_trek.103.d: "REPLACE"
+die_groot_trek.103.f: "REPLACE"
+die_groot_trek.103.a: "REPLACE"
+die_groot_trek.103.b: "REPLACE"
+
+die_groot_trek.104.t: "Dingane re-asserts his leadership!"
+die_groot_trek.104.d: "REPLACE"
+die_groot_trek.104.f: "REPLACE"
+die_groot_trek.104.a: "REPLACE"
+die_groot_trek.104.b: "REPLACE"
+
+die_groot_trek.105.t: "Conflict in the Zulu Kingdom"
+die_groot_trek.105.d: "REPLACE"
+die_groot_trek.105.f: "REPLACE"
+die_groot_trek.105.a: "REPLACE"
+die_groot_trek.105.b: "REPLACE"
+
+die_groot_trek.106.t: "The Battle of Maqongqo"
+die_groot_trek.106.d: "REPLACE"
+die_groot_trek.106.f: "REPLACE"
+die_groot_trek.106.a: "REPLACE"
+die_groot_trek.106.b: "REPLACE"
+
+die_groot_trek.500.t: "Trekboers are leaving the Cape!"
+
+
 
 # Old SA Journal Entries for reference
 #je_anglo_zulu_war:0 "Anglo-Zulu War"
@@ -87,31 +179,11 @@
 #je_founding_of_the_south_african_republic:0 "Founding of the South African Republic"
 #je_second_boer_war:0 "Second Boer War"
 
-# South Africa
- union_of_south_africa_modifier:0 "Parliament of South Africa"
- volksraad_government:0 "Volksraad Government"
 ### Journal Entries
  je_the_great_trek:0 "Die Groot Trek"
  je_the_great_trek_reason:0 "Due to rising tensions between the British colonial administration and the Boers, a number of Boers have started to emigrate northwards from the British Cape Colony. These Boers are calling themselves Voortrekkers and have begun establishing their own isolationist republics in the Transvaal and Orange River regions."
  je_the_great_trek_goal:0 "The Voortrekkers have established several autonomous republics beyond the Orange River."
 
- je_natalia_foundation:0 "The Natalia Republic"
- je_natalia_foundation_reason:0 "The Natalia Republic"
-
- je_natal_colony:0 "Natal Colony"
- je_natal_colony_reason:0 "Natal Colony"
-
- je_potchefstroom_foundation:0 "The Republic of Potchefstroom"
- je_potchefstroom_foundation_reason:0 "The Republic of Potchefstroom"
-
- je_winburg_potchefstroom:0 "The Winburg-Potchefstroom Federation"
- je_winburg_potchefstroom_reason:0 "The Winburg-Potchefstroom Federation"
-
- je_orange_river_sovereignty:0 "Orange River Sovereignty"
- je_orange_river_sovereignty_reason:0 "Orange River Sovereignty"
-
- je_sand_river_convention:0 "Sand River Convention"
- je_sand_river_convention_reason:0 "Sand River Convention"
 ### Events
 # Voortrekker, no idea where this is from.
  voortrekker.1.t:0 "Massacre of Piet Retief's Delegation"
@@ -126,51 +198,3 @@
  voortrekker.1.d:0 "Piet Retief's delegation of around one hundred boers including dozens of women and children has been massacred!"
  voortrekker.2.d:0 "The Battle of Blood Rivier has seen a miracle!"
  voortrekker.3.d:0 "The Battle of Maqongqo has lead to the death of King Dingane!"
-
-# boer_republics.txt
- boer_republics.1.t:0 "Displacement of the Matabele"
- boer_republics.1.d:0 "The Matabele have been displaced from their homeland."
- boer_republics.1.f:0 "The Matabele..."
-
- boer_republics.2.t:0 "The Birth of the Natalia Republic"
- boer_republics.2.d:0 "LOCAL"
- boer_republics.2.f:0 "LOCAL"
- boer_republics.2.a:0 "Blah blah.."
- boer_republics.2.b:0 "Play As"
-
- boer_republics.3.t:0 "Zulu Response to Natalia"
- boer_republics.3.d:0 "LOCAL"
- boer_republics.3.f:0 "LOCAL"
- boer_republics.3.a:0 "The Voortrekkers will pay..."
-
- boer_republics.4.t:0 "British Seize Natalia"
- boer_republics.4.d:0 "LOCAL"
- boer_republics.4.f:0 "LOCAL"
- boer_republics.4.a:0 "Accept British Suzerain"
- boer_republics.4.b:0 "Reject the British"
-
- boer_republics.5.t:0 "The Birth of the Potchefstroom Republic"
- boer_republics.5.d:0 "LOCAL"
- boer_republics.5.f:0 "LOCAL"
- boer_republics.5.a:0 "Don't play as"
- boer_republics.5.b:0 "Play As"
-
- boer_republics.6.t:0 "The Orange River Sovereignty"
- boer_republics.6.d:0 "LOCAL"
- boer_republics.6.f:0 "LOCAL"
- boer_republics.6.a:0 "The British are now in control."
-
- boer_republics.7.t:0 "Winburg-Potchefstroom"
- boer_republics.7.d:0 "LOCAL"
- boer_republics.7.f:0 "LOCAL"
- boer_republics.7.a:0 "Federate!"
-
- boer_republics.66.t:0 "LOCAL"
- boer_republics.66.d:0 "LOCAL"
- boer_republics.66.f:0 "LOCAL"
- boer_republics.66.a:0 "LOCAL"
- boer_republics.66.b:0 "LOCAL"
- 
-
-
-

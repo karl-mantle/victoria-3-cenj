@@ -50,18 +50,18 @@ building_output_copper_add = {
 	percent = no
 }
 
-building_input_currency_add = {
-	good = no
-	percent = no
-}
-
-building_output_currency_add = {
-	good = yes
-	percent = no
-}
-
 building_input_gold_add = {
 	good = no
+	percent = no
+}
+
+building_input_horses_add = {
+	good = no
+	percent = no
+}
+
+building_output_horses_add = {
+	good = yes
 	percent = no
 }
 
@@ -157,11 +157,6 @@ building_output_coffee_mult = {
 	percent = yes
 }
 
-building_output_currency_mult = {
-	good = yes
-	percent = yes
-}
-
 building_output_dye_mult = {
 	good = yes
 	percent = yes
@@ -173,6 +168,11 @@ building_output_fish_mult = {
 }
 
 building_output_grain_mult = {
+	good = yes
+	percent = yes
+}
+
+building_output_horses_mult = {
 	good = yes
 	percent = yes
 }
@@ -324,6 +324,13 @@ building_tobacco_plantation_throughput_mult = {
 building_vineyard_throughput_mult = {
 	good = yes
 	percent = yes
+}
+
+# Other
+
+state_building_mint_max_level_add = {
+	good = yes
+	percent = no
 }
 
 # I don't know what these do or where they came from yet.

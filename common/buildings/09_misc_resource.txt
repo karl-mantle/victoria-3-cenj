@@ -4,7 +4,7 @@
 	city_type = wood
 	required_construction = construction_cost_low
 	terrain_manipulator = forestry
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_logging_camp
@@ -27,7 +27,7 @@ building_rubber_plantation = {
 	}
 
 	city_type = wood
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	production_method_groups = {
 		pmg_base_building_rubber_plantation
@@ -85,7 +85,7 @@ building_oil_rig = {
 	building_group = bg_oil_extraction
 	texture = "gfx/interface/icons/building_icons/oil_rig.dds"
 	city_type = mine
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	required_construction = construction_cost_medium
 
 	unlocking_technologies = {

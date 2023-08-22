@@ -19,6 +19,7 @@
 		liquor = { stance = wants_export }
 		wine = { stance = wants_export }
 		fabric = { stance = wants_export }
+		horses = { stance = wants_high_supply }
 		fertilizer = { 
 			stance = wants_high_supply
 			trigger = {
@@ -113,6 +114,7 @@ ai_strategy_plantation_economy = {
 	type = administrative
 
 	goods_stances = {
+		horses = { stance = wants_high_supply }
 		fruit = { stance = wants_export }
 		fabric = { stance = wants_export }
 		sugar = { stance = wants_export }
@@ -221,6 +223,7 @@ ai_strategy_resource_expansion = {
 		sulfur = { stance = wants_export }			
 		limestone = { stance = wants_high_supply }
 		clay = { stance = wants_high_supply }
+		horses = { stance = wants_high_supply }
 		copper = { stance = wants_export }
 	}
 
@@ -435,6 +438,7 @@ ai_strategy_placate_population = {
 		fruit = { stance = wants_high_supply }
 		fabric = { stance = wants_high_supply }
 		wood = { stance = wants_high_supply }
+		horses = { stance = wants_high_supply }
 		opium = { stance = does_not_want }
 	}
 

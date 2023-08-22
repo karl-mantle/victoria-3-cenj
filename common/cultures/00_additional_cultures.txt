@@ -93,7 +93,7 @@
 scottish={
 	color={ 72 79 127 }
 	religion = protestant
-	traits = { anglophone european_heritage caledonian }
+	traits = { scottish_culture_group anglophone european_heritage }
 	
 	male_common_first_names = {
 		Alexander Alasdair Archibald Andrew Angus Asher Auckland Arthur Aeneas Adam Alan
@@ -613,7 +613,7 @@ balinese={
 cajun={
 	color= hsv{ 0.62 0.54 0.72 }
 	religion = catholic
-	traits = { francophone european_heritage }
+	traits = { american_culture_group francophone european_heritage }
 	male_common_first_names={
 		Amos Anatole Aaron Augustin Achille
         Baptiste Bernard Bolivar Blaise Baudouin Branford Barnabe Benjamin

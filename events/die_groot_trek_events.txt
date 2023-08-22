@@ -521,12 +521,15 @@ die_groot_trek.100 = { # Displacement of the Matabele
 			tag = MTE
 			origin = this
 			state = s:STATE_TRANSVAAL.region_state:MTB
-			s:STATE_TRANSVAAL.region_state:MTB = { set_state_owner = c:MTE }
-			# History
-			effect_starting_technology_tier_6_tech = yes
-			effect_native_conscription_4 = yes
-			effect_starting_politics_traditional = yes
-			activate_law = law_type:law_debt_slavery
+			on_created = {
+				s:STATE_TRANSVAAL.region_state:MTB = { set_state_owner = c:MTE }
+				# History
+				effect_starting_technology_tier_6_tech = yes
+				effect_native_conscription_4 = yes
+				effect_starting_politics_traditional = yes
+				activate_law = law_type:law_debt_slavery
+			}
+			
 		}
 	}
 

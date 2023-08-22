@@ -1,9 +1,9 @@
 {
   "name" : "cenj (early build)",
   "id" : "",
-  "version" : "0.0.49",
+  "version" : "0.0.50",
   "supported_game_version" : "1.3.6",
-  "short_description" : "cenj (Working Title) is an experimental mod for Victoria 3.",
+  "short_description" : "victoria-3-cenj is an experimental overhaul mod for Victoria 3.",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {

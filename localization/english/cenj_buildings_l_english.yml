@@ -1,4 +1,7 @@
 ﻿l_english:
+# Modifier Types
+ modifier_state_building_mint_max_level_add:0 "$building_mint$ Max Level Add"
+ modifier_state_building_mint_max_level_add_desc:0 "$building_mint$ Max Level Add"
 # Building Groups
  bg_copper_fields:0 "Copper Fields"
  bg_copper_mining:0 "Copper Mining"
@@ -19,6 +22,8 @@
  building_explosives_industry_lens_option:0 "Expand $building_explosives_industry$"
  building_fertilizer_factory:0 "Fertilizer Factory"
  building_fertilizer_factory_lens_option:0 "Expand $building_fertilizer_factory$"
+ building_publishing_house:0 "Publishing House"
+ building_publishing_house_lens_option:0 "Expand $building_publishing_house$"
 # 03_mines.txt
  building_copper_fields:0 "Copper Fields"
  building_copper_fields_discovered_resource:0 "Copper"
@@ -30,6 +35,14 @@
  building_silver_fields_discovered_resource:0 "Silver"
  building_silver_mine:0 "Silver Mine"
  building_silver_mine_lens_option:0 "Expand $building_silver_mine$"
+# 06_urban_center.txt
+ building_finance_sector:0 "Finance Sector"
+ building_finance_sector_lens_option:0 "Expand $building_finance_sector$"
+ building_health_facilities:0 "Health Facilities"
+ building_health_facilities_lens_option:0 "Expand $building_health_facilities$"
+# 07_government.txt
+ building_mint:0 "Government Mint"
+ building_mint_lens_option:0 "Expand $building_mint$"
 # 10_canals.txt
  canal_kra:0 "Kra Canal"
  building_kra_canal:0 "Kra Canal"
@@ -39,14 +52,3 @@
  building_road_network_lens_option:0 "Expand $building_road_network$"
 # 12_subsistence.txt
  building_subsistence_arctic_fishing:0 "Arctic Fishing Villages"
-# 14_finance.txt
- building_finance_sector:0 "Finance Sector"
- building_finance_sector_lens_option:0 "Expand $building_finance_sector$"
- building_mint:0 "Mint"
- building_mint_lens_option:0 "Expand $building_mint$"
-# 15_healthcare.txt
- building_health_facilities:0 "Health Facilities"
- building_health_facilities_lens_option:0 "Expand $building_health_facilities$"
-# 16_extras.txt
- building_publishing_house:0 "Publishing House"
- building_publishing_house_lens_option:0 "Expand $building_publishing_house$"

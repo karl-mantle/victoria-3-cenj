@@ -8,8 +8,8 @@
 # Laws
  law_no_monetary_system:0 "No Monetary System"
  law_no_monetary_system_desc:0 "An economy that does not have a standardized currency."
- law_standardized_monetary_system:0 "Standardized Monetary System"
- law_standardized_monetary_system_desc:0 "A commodity monetary system where the local currency contains a defined amount of uncommon or rare metals."
+ law_commodity_monetary_system:0 "Commodity Monetary System"
+ law_commodity_monetary_system_desc:0 "A commodity monetary system where the local currency contains a defined amount of base or rare metals."
  law_silver_standard_monetary_system:0 "Silver Standard"
  law_silver_standard_monetary_system_desc:0 "A commodity monetary system where national currency is convertible to a defined amount of silver."
  law_gold_standard_monetary_system:0 "Gold Standard"

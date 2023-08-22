@@ -57,15 +57,6 @@ bg_heavy_industry = {
 	infrastructure_usage_per_level = 3
 }
 
-bg_publishing_house = {
-	parent_group = bg_manufacturing
-
-	lens = light_industry
-	
-	urbanization = 20
-	infrastructure_usage_per_level = 2
-}
-
 # Agriculture
 
 bg_agriculture = {
@@ -193,7 +184,6 @@ bg_subsistence_ranching = {
 	
 	hires_unemployed_only = yes
 }
-
 
 # Plantations
 
@@ -593,6 +583,10 @@ bg_arts = {
 
 bg_power = {
 	parent_group = bg_heavy_industry
+
+	lens = infrastructure
+
+	category = development
 }
 
 bg_finance = {
@@ -618,7 +612,7 @@ bg_healthcare = {
 # Government
 
 bg_government = {
-	category = urban
+	category = development
 
 	always_possible = yes
 	
@@ -639,6 +633,10 @@ bg_technology = {
 }
 
 bg_bureaucracy = {
+	parent_group = bg_government
+}
+
+bg_mint = {
 	parent_group = bg_government
 }
 
@@ -705,16 +703,13 @@ bg_construction = {
 
 	lens = government
 
+	is_government_funded = yes
+
 	can_use_slaves = yes
 
 	urbanization = 5
 
 	economy_of_scale_ai_factor = 2.0
-
-	fired_pops_become_radical = no
-
-	#cash_reserves_max = 25000
-
 }
 
 bg_private_infrastructure = {

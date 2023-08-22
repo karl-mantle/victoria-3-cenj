@@ -29,7 +29,7 @@ building_arts_academy = {
 
 	city_type = city
 	
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	unlocking_technologies = {
 		romanticism
@@ -48,7 +48,7 @@ building_arts_academy = {
 building_power_plant = {
 	building_group = bg_power
 	texture = "gfx/interface/icons/building_icons/power_plant.dds"
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	city_type = city
 	
@@ -73,4 +73,49 @@ building_power_plant = {
 			}
 		}
 	}
+}
+
+building_finance_sector = {
+	building_group = bg_finance
+	texture = "gfx/interface/icons/building_icons/finance_sector.dds"
+	
+	unlocking_technologies = {
+		currency_standards
+	}
+	
+	production_method_groups = {
+		pmg_base_building_finance_sector
+		pmg_ownership_capital_building_finance_sector
+	}
+	
+	required_construction = construction_cost_high
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_no_monetary_system } 
+				}
+			}
+		}
+	}
+}
+
+building_health_facilities = {
+	building_group = bg_healthcare
+	texture = "gfx/interface/icons/building_icons/health_facilities.dds"
+	
+	unlocking_technologies = {
+		medical_degrees
+	}
+	
+	production_method_groups = {
+		pmg_base_building_health_facilities
+		pmg_luxury_building_health_facilities
+		pmg_ownership_capital_building_health_facilities
+	}
+	
+	required_construction = construction_cost_high
+	
 }

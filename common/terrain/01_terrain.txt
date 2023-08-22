@@ -51,7 +51,7 @@ plains = {
 					has_state_trait_grasslands = yes
 				}
 			}
-			multiply = 2
+			add = 3
 		}
 	}
 	textures = {
@@ -102,6 +102,25 @@ plains = {
 			}
 			path = "gfx/state_pictures/plains.dds"
 			effect = "vfx_entity_ui_state_plains"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:region = {
+							AND = {
+								is_subtropic_farmland = yes
+								is_arid_region = no
+							}
+						}
+						
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/hills_subtropic.dds"
+			effect = "vfx_entity_ui_state_hills_subtropic"
 		}
 	}
 
@@ -191,14 +210,14 @@ forest = {
 	label = label_forested
 	#weight = 1.5
 	weight = {
-		value = 3
+		value = 2
 		if = {
 			limit = {
 				state = {
 					has_state_trait_forest = yes
 				}
 			}
-			multiply = 4
+			multiply = 3
 		}
 	}
 	textures = {
@@ -225,14 +244,14 @@ hills = {
 	label = label_elevated
 	#weight = 2
 	weight = {
-		value = 4
+		value = 2
 		if = {
 			limit = {
 				state = {
 					has_state_trait_highland = yes
 				}
 			}
-			multiply = 2
+			multiply = 10
 		}
 	}
 	textures = {
@@ -304,14 +323,14 @@ mountain = {
 	label = label_hazardous
 	#weight = 1.5
 	weight = {
-		value = 2
+		value = 1
 		if = {
 			limit = {
 				state = {
 					has_state_trait_mountains = yes
 				}
 			}
-			multiply = 2
+			multiply = 3
 		}
 	}
 	textures = {
@@ -391,14 +410,14 @@ jungle = {
 	label = label_hazardous
 	#weight = 1
 	weight = {
-		value = 3
+		value = 1
 		if = {
 			limit = {
 				state = {
 					has_state_trait_rainforest = yes
 				}
 			}
-			multiply = 5
+			multiply = 10
 		}
 	}
 	textures = {
@@ -425,14 +444,14 @@ wetland = {
 	label = label_hazardous
 	#weight = 2
 	weight = {
-		value = 4
+		value = 1
 		if = {
 			limit = {
 				state = {
 					has_state_trait_wetland = yes
 				}
 			}
-			multiply = 4
+			multiply = 5
 		}
 	}
 	textures = {
@@ -464,14 +483,14 @@ desert = {
 	label = label_hazardous
 	#weight = 2
 	weight = {
-		value = 4
+		value = 0.5
 		if = {
 			limit = {
 				state = {
 					has_state_trait_desert = yes
 				}
 			}
-			multiply = 4
+			multiply = 10
 		}
 	}
 	textures = {
@@ -525,7 +544,17 @@ desert = {
 tundra = {
 	label = label_flat
 	label = label_hazardous
-	weight = 3 # 1.5
+	weight = {
+		value = 2
+		if = {
+			limit = {
+				state = {
+					has_state_trait = state_trait_tundra
+				}
+			}
+			multiply = 10
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -552,14 +581,14 @@ savanna = {
 	label = label_flat
 	#weight = 1
 	weight = {
-		value = 2
+		value = 1
 		if = {
 			limit = {
 				state = {
 					has_state_trait_grasslands = yes
 				}
 			}
-			multiply = 2
+			multiply = 3
 		}
 	}
 	textures = {
@@ -567,8 +596,8 @@ savanna = {
 			weight = {
 				value = 1
 			}
-			path = "gfx/state_pictures/plains_arid.dds"
-			effect = "vfx_entity_ui_state_plains"
+			path = "gfx/state_pictures/savanna.dds"
+			effect = "vfx_entity_ui_state_desert"
 		}
 	}
 	combat_width = 1
@@ -585,7 +614,17 @@ savanna = {
 
 snow = {
 	label = label_hazardous
-	weight = 1
+	weight = {
+		value = 1
+		if = {
+			limit = {
+				state = {
+					has_state_trait = state_trait_climate_arctic
+				}
+			}
+			multiply = 10
+		}
+	}
 	textures = {
 		{
 			weight = {
@@ -610,7 +649,7 @@ snow = {
 farmland_rye = { 
 	label = label_flat
 	label = label_developed
-	weight = 4 # 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -690,7 +729,7 @@ farmland_rye = {
 pasture = {
 	label = label_flat
 	label = label_developed
-	weight = 4 # 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -714,7 +753,7 @@ pasture = {
 farmland_rice = {
 	label = label_flat
 	label = label_developed
-	weight = 4 # 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -794,7 +833,7 @@ farmland_rice = {
 farmland_millet = {
 	label = label_flat
 	label = label_developed
-	weight = 4 # 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -874,7 +913,7 @@ farmland_millet = {
 plantation = {
 	label = label_flat
 	label = label_developed
-	weight = 4 # 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -897,7 +936,7 @@ plantation = {
 farmland_wheat = {
 	label = label_flat
 	label = label_developed
-	weight = 4 # 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -977,7 +1016,7 @@ farmland_wheat = {
 farmland_maize = {
 	label = label_flat
 	label = label_developed
-	weight = 4 # 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -1057,7 +1096,7 @@ farmland_maize = {
 cleared_land = {
 	label = label_flat
 	label = label_developed
-	weight = 2
+	weight = 3
 	textures = {
 		{
 			weight = {
@@ -1112,10 +1151,20 @@ mining = {
 			}
 			add = state.b:building_gold_mine.level
 		}
-		subtract = 5
-		min = 0.1
-		multiply = state.num_provinces
-		divide = 5 # 3
+		if = {
+			limit = {
+				exists = state.b:building_silver_mine
+			}
+			add = state.b:building_silver_mine.level
+		}
+		if = {
+			limit = {
+				exists = state.b:building_copper_mine
+			}
+			add = state.b:building_copper_mine.level
+		}
+		divide = state.num_provinces
+		multiply = 0.5
 	}
 	textures = {
 		{
@@ -1150,7 +1199,7 @@ forestry = {
 		subtract = 5
 		min = 0.1
 		multiply = state.num_provinces
-		divide = 4 # 2
+		divide = 4
 	}
 	
 	textures = {
@@ -1174,16 +1223,14 @@ urban = {
 	label = label_forested
 	label = label_developed
 	weight = {
-		value = 0.1
+		value = 0
 		if = {
 			limit = {
 				exists = state.b:building_urban_center
 			}
 			add = state.b:building_urban_center.level
-			subtract = 5
-			min = 0.1
-			multiply = state.num_provinces
-			divide = 8 # 4
+			divide = state.num_provinces
+			multiply = 0.1
 		}
 	}
 	textures = {
@@ -1320,10 +1367,8 @@ docks = {
 				exists = state.b:building_port
 			}
 			add = state.b:building_port.level
-			subtract = 3
-			min = 0.1
-			multiply = state.num_provinces
-			divide = 4 # 3
+			divide = state.num_provinces
+			multiply = 4
 		}
 	}
 	textures = {

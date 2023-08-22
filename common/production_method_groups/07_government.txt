@@ -94,3 +94,13 @@ pmg_ownership_capital_building_port = {
 	}
 }
 
+pmg_base_building_mint = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_mint_currency_standard
+		pm_mint_currency_silver_standard
+		pm_mint_currency_gold_standard
+		pm_mint_currency_fiat_money
+	}
+}
+

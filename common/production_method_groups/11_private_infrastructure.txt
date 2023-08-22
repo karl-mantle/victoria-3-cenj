@@ -56,11 +56,10 @@ pmg_base_building_road_network = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 
 	production_methods = {
-		pm_natural_routes
-		pm_historic_roads
-		pm_maintained_roads
-		pm_modern_roads
-		pm_early_motorways
+		pm_road_carts_roads
+		pm_draught_animal_wagons
+		pm_steam_powered_wagons
+		pm_diesel_engine_wagons
 	}
 }
 

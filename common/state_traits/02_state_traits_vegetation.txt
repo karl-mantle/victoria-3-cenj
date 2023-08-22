@@ -157,31 +157,37 @@ state_trait_hawaii_sandalwood = {
 
 state_trait_sahara_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/desert_sahara.dds"
-	 
+	
+	required_techs_for_colonization = { "civilizing_mission" } # Era 3
+
 	modifier = {
 		state_infrastructure_mult = -0.25
 
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.2
 	}
 }
 
 state_trait_kalahari_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/desert_coastal.dds"
-	 
+	
+	required_techs_for_colonization = { "civilizing_mission" } # Era 3
+
 	modifier = {
 		state_infrastructure_mult = -0.25
 
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.2
 	}
 }
 
 state_trait_namib_coastal_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/desert_coastal.dds"
-	 
+	
+	required_techs_for_colonization = { "civilizing_mission" } # Era 3
+	
 	modifier = {
 		state_infrastructure_mult = -0.25
 
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.2
 	}
 }
 
@@ -199,7 +205,7 @@ state_trait_chihuahuan_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/desert_mesa.dds"
 	
 	modifier = {
-		state_infrastructure_mult = -0.15
+		state_infrastructure_mult = -0.1
 
 		building_group_bg_ranching_throughput_mult = 0.5
 	}
@@ -209,7 +215,7 @@ state_trait_sonoran_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/desert_mexico.dds"
 	
 	modifier = {
-		state_infrastructure_mult = -0.15
+		state_infrastructure_mult = -0.1
 		building_group_bg_ranching_throughput_mult = 0.5
 	}
 }
@@ -218,7 +224,7 @@ state_trait_atacama_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/desert_coastal.dds"
 
 	modifier = {
-		state_infrastructure_mult = -0.25
+		state_infrastructure_mult = -0.1
 
 		building_group_bg_subsistence_ranching_throughput_mult = 0.5
 		building_group_bg_sulfur_mining_throughput_mult = 0.25
@@ -231,7 +237,7 @@ state_trait_arabian_desert = {
 	modifier = {
 		state_infrastructure_mult = -0.25
 
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.2
 	}
 }
 
@@ -241,7 +247,7 @@ state_trait_taklamakan_desert = {
 	modifier = {
 		state_infrastructure_mult = -0.25
 
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.2
 	}
 }
 
@@ -251,7 +257,7 @@ state_trait_gobi_desert = {
 	modifier = {
 		state_infrastructure_mult = -0.25
 
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.2
 	}
 }
 
@@ -314,7 +320,7 @@ state_trait_kazakh_steppe = {
 	icon = "gfx/interface/icons/state_trait_icons/steppe_asian.dds"
 	
 	modifier = {
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.25
 	}
 }
 
@@ -322,7 +328,7 @@ state_trait_mongolian_steppe = {
 	icon = "gfx/interface/icons/state_trait_icons/steppe_asian.dds"
 	
 	modifier = {
-		building_group_bg_subsistence_ranching_throughput_mult = 0.5
+		building_group_bg_subsistence_ranching_throughput_mult = 0.25
 	}
 }
 

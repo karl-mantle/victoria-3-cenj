@@ -1,7 +1,7 @@
 ﻿newfoundlander={
 	color= hsv{ 0.35 0.58 0.34 }
 	religion = protestant
-	traits = { anglophone european_heritage }
+	traits = { canadian_culture_group anglophone european_heritage }
 	male_common_first_names={
 		Albert
 		Alexander
@@ -207,7 +207,7 @@
 texan={
 	color= rgb { 4  144  178 }
 	religion = protestant
-	traits = { anglophone european_heritage }
+	traits = { american_culture_group anglophone european_heritage }
 
 	obsessions = {
 		meat
@@ -331,7 +331,7 @@ texan={
 american_asian={ # Done
 	color= hsv{ 0.62 0.46 0.50 }
 	religion = protestant
-	traits = { east_asian_heritage american_minor }
+	traits = { american_culture_group east_asian_heritage }
 	male_common_first_names={
 		Alexander Andrew Alvin
 		Benjamin Benedict Brian
@@ -391,7 +391,7 @@ american_asian={ # Done
 american_chinese={
 	color= hsv{ 0.80 0.36 0.39 }
 	religion = mahayana
-	traits = { han_chinese east_asian_heritage }
+	traits = { american_culture_group han_chinese east_asian_heritage }
 	male_common_first_names={
 		Chen
 		Cheng
@@ -467,7 +467,7 @@ american_chinese={
 american_french={
 	color= rgb{ 87 120 181 }
 	religion = catholic
-	traits = { francophone european_heritage american_minor }
+	traits = { american_culture_group francophone european_heritage }
 	male_common_first_names={
 		Adolphe
 		Alain
@@ -627,7 +627,7 @@ american_french={
 american_hispanic={
 	color=hsv{ 0.99 0.50 0.65 }
 	religion = catholic
-	traits = { hispanophone mestizo_heritage }
+	traits = { american_culture_group hispanophone mestizo_heritage }
 	male_common_first_names={
 		Adrian_2
 		Agustin
@@ -837,8 +837,7 @@ american_hispanic={
 american_irish={
 	color= hsv{ 0.35 0.58 0.54 }
 	religion = catholic
-	traits = { celtic_people european_heritage american_minor }
-	# could have anglophone but would make them non-discriminated in Britain
+	traits = { american_culture_group celtic_people european_heritage }
 	male_common_first_names={
 		Alexander
 		Arthur
@@ -1013,12 +1012,7 @@ american_irish={
 american_italian={
 	color= rgb{ 97 77 117 }
 	religion = catholic
-	traits = { italophone european_heritage american_minor }
-	
-	obsessions = {
-		wine
-	}	
-	
+	traits = { american_culture_group italophone european_heritage }
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
 		Bartolomeo Benedetto
@@ -1100,7 +1094,7 @@ american_italian={
 american_japanese={
 	color= hsv{ 0 0 90 }
 	religion = mahayana
-	traits = { yamato east_asian_heritage }
+	traits = { american_culture_group yamato east_asian_heritage }
 	male_common_first_names={
 		Aritomo
 		Gentaro
@@ -1275,8 +1269,7 @@ american_japanese={
 american_jewish={
 	color= hsv{ 0.13 0.80 0.99 }
 	religion = jewish
-	traits = { jewish_group european_heritage american_minor } 
-	# could have German-speaking, but would make them not discriminated which would be very ahistorical
+	traits = { american_culture_group jewish_group european_heritage }
 	male_common_first_names={
 		Abraham
 		Albert
@@ -1362,7 +1355,7 @@ american_jewish={
 american_german={
 	color= hsv{ 0.60 0.38 0.75 }
 	religion = protestant
-	traits = { german_speaking european_heritage american_minor }
+	traits = { american_culture_group german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -1481,7 +1474,7 @@ american_german={
 american_portuguese={
 	color= hsv{ 0.50 0.53 0.40 }
 	religion = catholic
-	traits = { lusophone mestizo_heritage }
+	traits = { american_culture_group lusophone mestizo_heritage }
 	male_common_first_names={
 		Afonso
 		Antonio_3
@@ -1619,7 +1612,7 @@ american_portuguese={
 american_polish={
 	color= hsv{ 0 0.22 0.5 }
 	religion = catholic
-	traits = { west_slavic european_heritage }
+	traits = { american_culture_group west_slavic european_heritage }
 	male_common_first_names={
 		Adam
 		Aleksander
@@ -1770,7 +1763,7 @@ american_polish={
 american_russian={
 	color= hsv{ 0.35 0.40 0.37 }
 	religion = orthodox
-	traits = { east_slavic european_heritage }
+	traits = { american_culture_group east_slavic european_heritage }
 	male_common_first_names={
 		Aleksandr Alexei Andrei Anton
 		Boris
@@ -1879,7 +1872,7 @@ american_russian={
 american_scottish={
 	color={ 72 79 127 }
 	religion = protestant
-	traits = { anglophone european_heritage american_minor caledonian }
+	traits = { american_culture_group scottish_culture_group anglophone european_heritage }
 	
 	male_common_first_names = {
 		Alexander Alasdair Archibald Andrew Angus Asher Auckland Arthur Aeneas Adam Alan
@@ -1997,7 +1990,7 @@ american_scottish={
 american_yugoslav={
 	color= hsv{ 0.97 0.26 0.58 }
 	religion = orthodox
-	traits = { jugoslav european_heritage }
+	traits = { american_culture_group jugoslav european_heritage }
 	male_common_first_names={
 		Alaksandar
 		Arsenije
@@ -2160,7 +2153,7 @@ american_yugoslav={
 canadian_african={
 	color= hsv{ 0.10 0.10 0.24 }
 	religion = protestant
-	traits = { anglophone african_heritage }
+	traits = { canadian_culture_group anglophone african_heritage }
 	male_common_first_names={
 		Albert Abraham Alexander Anthony Adam
 		Booker
@@ -2237,7 +2230,7 @@ canadian_african={
 canadian_asian={
 	color= hsv{ 0.62 0.46 0.50 }
 	religion = animist
-	traits = { hmong_mien_language east_asian_heritage }
+	traits = { canadian_culture_group east_asian_heritage }
 	male_common_first_names={
 		Bang
 		Blong
@@ -2301,7 +2294,7 @@ canadian_asian={
 canadian_chinese={
 	color= hsv{ 0.80 0.36 0.39 }
 	religion = mahayana
-	traits = { han_chinese east_asian_heritage}
+	traits = { canadian_culture_group han_chinese east_asian_heritage}
 	male_common_first_names={
 		Chen
 		Cheng
@@ -2378,7 +2371,7 @@ canadian_chinese={
 canadian_dutch={
 	color= hsv{ 0.07 0.49 0.93 }
 	religion = protestant
-	traits = { beneluxian_culture_group european_heritage canadian_minor }
+	traits = { canadian_culture_group beneluxian_culture_group european_heritage }
 	male_common_first_names={
 		Abraham
 		Adolf
@@ -2627,7 +2620,7 @@ canadian_dutch={
 canadian_german={
 	color= rgb{ 62 77 100 }
 	religion = protestant
-	traits = { german_speaking european_heritage canadian_minor }
+	traits = { canadian_culture_group german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -2746,7 +2739,7 @@ canadian_german={
 canadian_greek={
 	color= hsv{ 0.94 0.45 0.48 }
 	religion = orthodox
-	traits = { greek_culture european_heritage canadian_minor }
+	traits = { canadian_culture_group greek_culture european_heritage }
 	
 	obsessions = {
 		wine
@@ -2859,7 +2852,7 @@ canadian_greek={
 canadian_indian={
 	color= hsv{ 0.08 0.10 0.74 }
 	religion = hindu
-	traits = { south_asian_heritage hindustani }
+	traits = { canadian_culture_group hindustani south_asian_heritage }
 	male_common_first_names={
 		Baba
 		Banda
@@ -2914,8 +2907,8 @@ canadian_indian={
 canadian_irish={
 	color= hsv{ 0.35 0.58 0.54 }
 	religion = catholic
-	traits = { celtic_people european_heritage canadian_minor }
-	# could have anglophone but would make them non-discriminated in Britain
+	traits = { canadian_culture_group celtic_people european_heritage }
+
 	male_common_first_names={
 		Alexander
 		Arthur
@@ -3090,12 +3083,7 @@ canadian_irish={
 canadian_italian={
 	color= rgb{ 97 77 117 }
 	religion = catholic
-	traits = { italophone european_heritage canadian_minor }
-	
-	obsessions = {
-		wine
-	}	
-	
+	traits = { canadian_culture_group italophone european_heritage }
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
 		Bartolomeo Benedetto
@@ -3177,7 +3165,7 @@ canadian_italian={
 canadian_polish={
 	color= hsv{ 0 0.22 0.5 }
 	religion = catholic
-	traits = { west_slavic european_heritage }
+	traits = { canadian_culture_group west_slavic european_heritage }
 	male_common_first_names={
 		Adam
 		Aleksander
@@ -3328,7 +3316,7 @@ canadian_polish={
 canadian_portuguese={
 	color= hsv{ 0.50 0.53 0.40 }
 	religion = catholic
-	traits = { lusophone mestizo_heritage }
+	traits = { canadian_culture_group lusophone mestizo_heritage }
 	male_common_first_names={
 		Afonso
 		Antonio_3
@@ -3466,7 +3454,7 @@ canadian_portuguese={
 canadian_scottish={
 	color={ 72 79 127 }
 	religion = protestant
-	traits = { anglophone european_heritage caledonian canadian_minor }
+	traits = { canadian_culture_group scottish_culture_group anglophone european_heritage }
 	
 	male_common_first_names = {
 		Alexander Alasdair Archibald Andrew Angus Asher Auckland Arthur Aeneas Adam Alan
@@ -3584,7 +3572,7 @@ canadian_scottish={
 canadian_ukrainian={
 	color= hsv{ 0.16 0.32 0.62 }
 	religion = orthodox
-	traits = { east_slavic european_heritage }
+	traits = { canadian_culture_group east_slavic european_heritage }
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -3693,7 +3681,7 @@ canadian_ukrainian={
 canadian_yugoslav={
 	color= hsv{ 0.97 0.26 0.58 }
 	religion = orthodox
-	traits = { jugoslav european_heritage }
+	traits = { canadian_culture_group jugoslav european_heritage }
 	male_common_first_names={
 		Alaksandar
 		Arsenije

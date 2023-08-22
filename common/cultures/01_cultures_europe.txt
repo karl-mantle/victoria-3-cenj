@@ -2,7 +2,7 @@
 baltic_german={
 	color= hsv{ 0.60 0.38 0.75 }
 	religion = protestant
-	traits = { german_speaking european_heritage }
+	traits = { baltic_culture_group german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -121,7 +121,7 @@ baltic_german={
 cornish={
 	color= hsv{ 0 0 0.40 }
 	religion = protestant
-	traits = { celtic_people european_heritage }
+	traits = { anglophone celtic_people european_heritage }
 	
 	male_common_first_names={
 		Abraham Abel Arthur
@@ -580,7 +580,7 @@ frisian={
 gaelic_scots={
 	color= hsv{ 0.64 0.43 0.95 }
 	religion = protestant
-	traits = { celtic_people european_heritage caledonian }
+	traits = { scottish_culture_group celtic_people european_heritage }
 	
 	male_common_first_names = {
 		Alexander Alasdair Archibald Andrew Angus Asher Auckland Arthur Aeneas Adam Alan
@@ -1193,7 +1193,7 @@ silesian={
 ulster_scots={
 	color= hsv{ 0.64 0.43 0.55 }
 	religion = protestant
-	traits = { anglophone european_heritage caledonian }
+	traits = { scottish_culture_group anglophone european_heritage }
 	
 	male_common_first_names = {
 		Alexander Alasdair Archibald Andrew Angus Asher Auckland Arthur Aeneas Adam Alan
@@ -1313,7 +1313,7 @@ ulster_scots={
 eastphalian={
 	color= hsv{ 0.55 0.38 0.85 }
 	religion = protestant
-	traits = { north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -1432,7 +1432,7 @@ eastphalian={
 low_saxon={
 	color= hsv{ 0.60 0.38 0.55 }
 	religion = protestant
-	traits = { north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -1551,7 +1551,7 @@ low_saxon={
 pomeranian={
 	color= hsv{ 0.60 0.38 0.60 }
 	religion = protestant
-	traits = { north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -1670,7 +1670,7 @@ pomeranian={
 prussian={
 	color= hsv{ 0.60 0.38 0.35 }
 	religion = protestant
-	traits = { north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -1789,7 +1789,7 @@ prussian={
 silesian_german={
 	color= hsv{ 0.66 0.40 0.60 }
 	religion = protestant
-	traits = { north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -1908,7 +1908,7 @@ silesian_german={
 volga_german={
 	color= hsv{ 0.60 0.62 0.68 }
 	religion = protestant
-	traits = { north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -2027,7 +2027,7 @@ volga_german={
 westphalian={
 	color= hsv{ 0.60 0.38 0.70 }
 	religion = protestant
-	traits = { north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -2147,7 +2147,7 @@ westphalian={
 austro_bavarian={
 	color= hsv{ 0.50 0.43 0.35 }
 	religion = catholic
-	traits = { south_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -2272,7 +2272,7 @@ austro_bavarian={
 franconian={
 	color= hsv{ 0.50 0.43 0.50 }
 	religion = protestant
-	traits = { south_german_minor north_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -2397,7 +2397,7 @@ franconian={
 sudeten_german={
 	color= hsv{ 0.50 0.43 0.55 }
 	religion = catholic
-	traits = { south_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -2522,7 +2522,7 @@ sudeten_german={
 swabian={
 	color= hsv{ 0.44 0.40 0.55 }
 	religion = catholic
-	traits = { south_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -2647,7 +2647,7 @@ swabian={
 upper_saxon={
 	color= hsv{ 0.50 0.43 0.70 }
 	religion = protestant
-	traits = { south_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -2772,7 +2772,7 @@ upper_saxon={
 zipser={
 	color= hsv{ 0.66 0.40 0.40 }
 	religion = catholic
-	traits = { south_german_minor european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -2898,11 +2898,7 @@ zipser={
 angevin={
 	color= hsv{ 0.66 0.45 0.75 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -3012,9 +3008,10 @@ angevin={
 burgundian={
 	color= hsv{ 0.66 0.25 0.45 }
 	religion = catholic
-	traits = { french_minor european_heritage }
+	traits = { francophone european_heritage }
 	
 	obsessions = {
+		wine
 	}
 	
 	male_common_first_names={
@@ -3126,7 +3123,7 @@ burgundian={
 champenois={
 	color= hsv{ 0.66 0.25 0.55 }
 	religion = catholic
-	traits = { french_minor european_heritage }
+	traits = { francophone european_heritage }
 	
 	obsessions = {
 		wine
@@ -3241,11 +3238,7 @@ champenois={
 comtois={
 	color= hsv{ 0.66 0.25 0.65 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -3355,11 +3348,7 @@ comtois={
 gallo={
 	color= hsv{ 0.66 0.45 0.65 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -3469,12 +3458,7 @@ gallo={
 lorrainian={
 	color= hsv{ 0.55 0.20 0.55 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-		wine
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -3584,11 +3568,7 @@ lorrainian={
 norman={
 	color= hsv{ 0.66 0.45 0.45 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -3698,12 +3678,7 @@ norman={
 orleanais={
 	color= hsv{ 0.66 0.25 0.35 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-		wine
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -3813,11 +3788,7 @@ orleanais={
 picard={
 	color= hsv{ 0.66 0.45 0.85 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -3927,12 +3898,7 @@ picard={
 poitevin={
 	color= hsv{ 0.66 0.45 0.25 }
 	religion = catholic
-	traits = { french_minor european_heritage }
-	
-	obsessions = {
-		wine
-	}
-	
+	traits = { francophone european_heritage }
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -4043,13 +4009,7 @@ poitevin={
 auvergnat={
 	color= hsv{ 0.55 0.20 0.35 }
 	religion = catholic
-	traits = { occitan_minor european_heritage }
-
-	# the best wine is from Occitania, of course.
-	obsessions = {
-		wine
-	}
-
+	traits = { occitan_culture_group francophone european_heritage }
 	male_common_first_names={
 		August Adrian Antonin Avit AristO_tel Andrieu Arnaut AnfO_s Alexandre Agustin AlE_xi Armand
 		Brut Bernat BerenguiE_r Beneset Bonifaci
@@ -4111,13 +4071,7 @@ auvergnat={
 gascon={
 	color= hsv{ 0.55 0.20 0.45 }
 	religion = catholic
-	traits = { occitan_minor european_heritage }
-
-	# the best wine is from Occitania, of course.
-	obsessions = {
-		wine
-	}
-
+	traits = { occitan_culture_group francophone european_heritage }
 	male_common_first_names={
 		August Adrian Antonin Avit AristO_tel Andrieu Arnaut AnfO_s Alexandre Agustin AlE_xi Armand
 		Brut Bernat BerenguiE_r Beneset Bonifaci
@@ -4179,13 +4133,7 @@ gascon={
 provencal={
 	color= hsv{ 0.55 0.20 0.65 }
 	religion = catholic
-	traits = { occitan_minor european_heritage }
-
-	# the best wine is from Occitania, of course.
-	obsessions = {
-		wine
-	}
-
+	traits = { occitan_culture_group francophone european_heritage }
 	male_common_first_names={
 		August Adrian Antonin Avit AristO_tel Andrieu Arnaut AnfO_s Alexandre Agustin AlE_xi Armand
 		Brut Bernat BerenguiE_r Beneset Bonifaci
@@ -4248,11 +4196,7 @@ provencal={
 dalmatian={
 	color= hsv{ 0.38 0.27 0.30 }
 	religion = catholic
-	traits = { north_italian_minor european_heritage }
-	
-	obsessions = {
-	}	
-	
+	traits = { italophone jugoslav european_heritage }
 	male_common_first_names={
 		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
 		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
@@ -4326,12 +4270,8 @@ dalmatian={
 emilian_romagnol={
 	color= hsv{ 0.38 0.27 0.60 }
 	religion = catholic
-	traits = { north_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
 		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
@@ -4405,7 +4345,7 @@ emilian_romagnol={
 ligurian={
 	color= hsv{ 0.38 0.27 0.40 }
 	religion = catholic
-	traits = { north_italian_minor european_heritage }
+	traits = { italophone european_heritage }
 	
 	obsessions = {
 		wine
@@ -4484,12 +4424,8 @@ ligurian={
 lombard={
 	color= hsv{ 0.38 0.27 0.35 }
 	religion = catholic
-	traits = { north_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
 		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
@@ -4563,12 +4499,8 @@ lombard={
 piedmontese={
 	color= hsv{ 0.38 0.27 0.45 }
 	religion = catholic
-	traits = { north_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
 		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
@@ -4642,12 +4574,8 @@ piedmontese={
 tuscan={
 	color= hsv{ 0.38 0.27 0.75 }
 	religion = catholic
-	traits = { north_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
 		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
@@ -4721,12 +4649,8 @@ tuscan={
 venetian={
 	color= hsv{ 0.38 0.27 0.65 }
 	religion = catholic
-	traits = { north_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
 		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
@@ -4801,12 +4725,8 @@ venetian={
 calabrian={
 	color= rgb{ 97 77 117 }
 	religion = catholic
-	traits = { south_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
 		Bartolomeo Benedetto
@@ -4888,12 +4808,8 @@ calabrian={
 neapolitan={
 	color= rgb{ 115 95 135 }
 	religion = catholic
-	traits = { south_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
 		Bartolomeo Benedetto
@@ -4975,11 +4891,7 @@ neapolitan={
 roman={
 	color= rgb{ 105 85 125 }
 	religion = catholic
-	traits = { south_italian_minor european_heritage }
-	
-	obsessions = {
-	
-	}	
+	traits = { italophone european_heritage }
 	
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
@@ -5062,12 +4974,8 @@ roman={
 sardinian={
 	color= rgb{ 92 72 112 }
 	religion = catholic
-	traits = { south_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
 		Bartolomeo Benedetto
@@ -5149,12 +5057,8 @@ sardinian={
 sicilian={
 	color= rgb{ 85 65 105 }
 	religion = catholic
-	traits = { south_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
 		Bartolomeo Benedetto
@@ -5236,12 +5140,8 @@ sicilian={
 umbrian={
 	color= rgb{ 77 57 97 }
 	religion = catholic
-	traits = { south_italian_minor european_heritage }
-	
-	obsessions = {
-		
-	}	
-	
+	traits = { italophone european_heritage }
+
 	male_common_first_names={
 		Alessandro Armando Augusto Achille Antonio Agesilao
 		Bartolomeo Benedetto

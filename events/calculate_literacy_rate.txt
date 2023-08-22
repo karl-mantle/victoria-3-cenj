@@ -80,7 +80,6 @@ calculate_literacy_rate.2 = {
 				exists = capital
 				OR = {
 					capital.region = sr:region_crown_of_aragon
-					capital.region = sr:region_occitania
 					capital.region = sr:region_burgundy
 					capital.region = sr:region_north_germany
 					capital.region = sr:region_rhineland
@@ -97,6 +96,7 @@ calculate_literacy_rate.2 = {
 				exists = capital
 				OR = {
 					capital.region = sr:region_france
+					capital.region = sr:region_occitania
 					capital.region = sr:region_benelux
 					capital.region = sr:region_england
 				}
@@ -271,7 +271,6 @@ calculate_literacy_rate.1 = {
 						region = sr:region_north_italy
 						region = sr:region_occitania
 						region = sr:region_crown_of_aragon
-						region = sr:region_baltic # this boosts the Baltic States somewhat but they still get dampened down to low~very low by the discrimination penalties
 						region = sr:region_poland # this boosts Prussian lands to the east but doesn't affect Russian Poland
 					}
 				}

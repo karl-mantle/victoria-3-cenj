@@ -113,7 +113,7 @@ fantefolk={
 romani={
 	color= hsv{ 0.24 0.16 0.90 }
 	religion = orthodox
-	traits = { south_asian_heritage nomadic_traditions }
+	traits = { nomadic_traditions south_asian_heritage }
 	male_common_first_names={
 		Bhagwant
 		Bhai
@@ -163,7 +163,7 @@ romani={
 yenish={
 	color= hsv{ 0.24 0.16 0.50 }
 	religion = catholic
-	traits = { north_german_minor european_heritage nomadic_traditions }
+	traits = { nomadic_traditions german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus

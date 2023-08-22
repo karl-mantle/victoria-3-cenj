@@ -14,6 +14,7 @@ pmg_secondary_building_rye_farm = {
 		pm_no_secondary
 		pm_potatoes
 		pm_apple_orchards
+		pm_sugar_beets
 	}
 }
 
@@ -22,6 +23,7 @@ pmg_harvesting_process_building_rye_farm = {
 	production_methods = {
 		pm_tools_disabled
 		pm_tools
+		pm_draught_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
@@ -54,6 +56,7 @@ pmg_secondary_building_wheat_farm = {
 	production_methods = {
 		pm_no_secondary
 		pm_citrus_orchards
+		pm_sugar_beets
 		pm_vineyards
 	}
 }
@@ -63,6 +66,7 @@ pmg_harvesting_process_building_wheat_farm = {
 	production_methods = {
 		pm_tools_disabled
 		pm_tools
+		pm_draught_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
@@ -95,6 +99,7 @@ pmg_secondary_building_rice_farm = {
 	production_methods = {
 		pm_no_secondary
 		pm_fig_orchards
+		pm_palm_oil
 	}
 }
 
@@ -103,6 +108,7 @@ pmg_harvesting_process_building_rice_farm = {
 	production_methods = {
 		pm_tools_disabled
 		pm_tools
+		pm_draught_animals
 		pm_steam_threshers
 	}
 }
@@ -142,6 +148,7 @@ pmg_harvesting_process_building_maize_farm = {
 	production_methods = {
 		pm_tools_disabled
 		pm_tools
+		pm_draught_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
@@ -183,6 +190,7 @@ pmg_harvesting_process_building_millet_farm = {
 	production_methods = {
 		pm_tools_disabled
 		pm_tools
+		pm_draught_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors

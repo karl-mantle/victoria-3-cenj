@@ -4,7 +4,7 @@ building_food_industry = {
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/food_industry.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		manufacturies
@@ -26,7 +26,7 @@ building_textile_mills = {
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/textile_industry.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		manufacturies
@@ -46,7 +46,7 @@ building_furniture_manufacturies = {
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/furniture_manufacturies.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		manufacturies
@@ -66,7 +66,7 @@ building_glassworks = {
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/glassworks.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		manufacturies
@@ -91,7 +91,7 @@ building_tooling_workshops = {
 	}
 
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_tooling_workshops
@@ -113,7 +113,7 @@ building_paper_mills = {
 	}
 
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_paper_mills
@@ -133,7 +133,7 @@ building_chemical_plants = {
 	}
 	
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_chemical_plants
@@ -158,7 +158,7 @@ building_synthetics_plants = {
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/synthetics_plants.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		aniline
@@ -188,7 +188,7 @@ building_steel_mills = {
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	unlocking_technologies = {
 		steelworking
@@ -218,7 +218,7 @@ building_motor_industry = {
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/motor_industry.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		atmospheric_engine
@@ -274,7 +274,7 @@ building_war_machine_industry = {
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/vehicles_industry.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		military_aviation
@@ -304,7 +304,7 @@ building_electrics_industry = {
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/electrics_industry.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		telephone
@@ -334,7 +334,7 @@ building_arms_industry = {
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/arms_industry.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		gunsmithing
@@ -354,7 +354,7 @@ building_munition_plants = {
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/munition_plants.dds"
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 	
 	unlocking_technologies = {
 		percussion_cap
@@ -391,7 +391,7 @@ building_brickworks = {
 	}
 
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_brickworks
@@ -423,7 +423,7 @@ building_cement_factory = {
 	}
 
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_cement_factory
@@ -453,7 +453,7 @@ building_explosives_industry = {
 	}
 	
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_explosives_industry
@@ -483,7 +483,7 @@ building_fertilizer_factory = {
 	}
 	
 	city_type = city
-	levels_per_mesh = 10
+	levels_per_mesh = 5
 
 	production_method_groups = {
 		pmg_base_building_fertilizer_factory
@@ -502,4 +502,25 @@ building_fertilizer_factory = {
 			}
 		}
 	}
+}
+
+building_publishing_house = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/publishing_house.dds"
+
+	unlocking_technologies = {
+		manufacturies
+	}
+	
+	city_type = city
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_publishing_house
+		pmg_production_building_publishing_house
+		pmg_automation_building_publishing_house
+		pmg_ownership_capital_building_publishing_house
+	}
+	
+	required_construction = construction_cost_high
 }

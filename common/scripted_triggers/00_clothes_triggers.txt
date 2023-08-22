@@ -497,7 +497,10 @@ european_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		culture = {
-			has_discrimination_trait = european_heritage
+			OR = {
+				has_discrimination_trait = european_heritage
+				has_discrimination_trait = mestizo_heritage
+			}
 		}
 		NOT = {
 			culture = cu:circassian
@@ -723,7 +726,10 @@ european_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		culture = {
-			has_discrimination_trait = european_heritage
+			OR = {
+				has_discrimination_trait = european_heritage
+				has_discrimination_trait = mestizo_heritage
+			}
 		}
 		NOT = {
 			culture = cu:circassian

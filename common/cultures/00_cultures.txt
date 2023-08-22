@@ -1,7 +1,7 @@
 ﻿north_german={
 	color= rgb{ 62 77 100 }
 	religion = protestant
-	traits = { german_speaking european_heritage north_german_minor }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred August
 		Bernhard Burkhard Bruno		
@@ -121,7 +121,7 @@
 south_german={
 	color= hsv{ 0.50 0.43 0.45 }
 	religion = catholic
-	traits = { german_speaking european_heritage south_german_minor }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -856,7 +856,7 @@ flemish={
 wallonian={
 	color= hsv{ 0.74 0.59 0.74 }
 	religion = catholic
-	traits = { beneluxian_culture_group french_minor european_heritage }
+	traits = { beneluxian_culture_group francophone european_heritage }
 	male_common_first_names={
 		Albert
 		Alexandre
@@ -1231,7 +1231,7 @@ boer={
 alemannic={
 	color= hsv{ 0.50 0.43 0.30 }
 	religion = protestant
-	traits = { south_german_minor swiss european_heritage }
+	traits = { german_speaking european_heritage swiss }
 	male_common_first_names={
 		Adolf Alexander Anton Augustus Albert Andreas Ambros Alois
 		Benedicht
@@ -2409,7 +2409,7 @@ australian={
 north_italian={
 	color= hsv{ 0.38 0.27 0.86 }
 	religion = catholic
-	traits = { italophone european_heritage north_italian_minor }
+	traits = { italophone european_heritage }
 	
 	obsessions = {
 		wine
@@ -2489,7 +2489,7 @@ north_italian={
 south_italian={
 	color= rgb{ 97 77 117 }
 	religion = catholic
-	traits = { italophone european_heritage south_italian_minor }
+	traits = { italophone european_heritage }
 	
 	obsessions = {
 		wine
@@ -2578,7 +2578,7 @@ south_italian={
 maltese={
 	color= hsv{ 0.40 0.03 0.58 }
 	religion = catholic
-	traits = { european_heritage south_italian_minor }
+	traits = { italophone european_heritage }
 	male_common_first_names={
 		Alessandru
 		Beru
@@ -3306,7 +3306,7 @@ portuguese={
 french={
 	color= rgb{ 76 118 155 }
 	religion = catholic
-	traits = { francophone european_heritage french_minor }
+	traits = { francophone european_heritage }
 	
 	obsessions = {
 		wine
@@ -3422,7 +3422,7 @@ french={
 occitan={
 	color= rgb{ 164 193 223 }
 	religion = catholic
-	traits = { occitan_minor european_heritage }
+	traits = { occitan_culture_group francophone european_heritage }
 
 	# the best wine is from Occitania, of course.
 	obsessions = {
@@ -13307,7 +13307,7 @@ cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
 yankee={
 	color= rgb{ 135 206 235 } # Sky Blue
 	religion = protestant
-	traits = { anglophone european_heritage }
+	traits = { american_culture_group anglophone european_heritage }
 	male_common_first_names = {
 		Albert Alexander Aeneas Andrew Aaron Alton Atlee Asa Ambrose Abner Alvin August Abraham Abel Abijah Alonzo Ansel Amos Absalom
 		Benjamin Bartholomew Byron Benedict Barnabas Bildad
@@ -13432,7 +13432,7 @@ yankee={
 dixie={
 	color=rgb{ 204 154 91 } # Butternut
 	religion = protestant
-	traits = { anglophone european_heritage }
+	traits = { american_culture_group anglophone european_heritage }
 	male_common_first_names = {
 		Andrew Alexander Atticus Alpheus Alfred Allen Arthur Augustus Archibald Algernon Ambrose Asa Arthur Angus Abner Auburn Archer Adam Arnold Amos Alben Alwyn
 		Braxton Basil Birkett Bushrod Benedict
@@ -13761,7 +13761,7 @@ mexican={
 central_american={
 	color= hsv{ 0.51 0.21 0.67 }
 	religion = catholic
-	traits = { hispanophone european_heritage }
+	traits = { hispanophone mestizo_heritage }
 	male_common_first_names={
 		Alejandro
 		Andres
@@ -14582,7 +14582,7 @@ brazilian={
 afro_american={
 	color= hsv{ 0.10 0.10 0.24 }
 	religion = protestant
-	traits = { anglophone african_heritage }
+	traits = { american_culture_group anglophone african_heritage }
 	male_common_first_names={
 		Albert Abraham Alexander Anthony Adam
 		Booker
@@ -19606,7 +19606,7 @@ tuvan={
 corsican = {
 	color= hsv{ 0.49 0.51 0.84 }
 	religion = catholic
-	traits = { european_heritage north_italian_minor }
+	traits = { italophone european_heritage }
 	male_common_first_names={
 		Joseph
 		Louis

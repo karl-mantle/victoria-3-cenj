@@ -21,7 +21,7 @@ base_values = {
 
 	state_education_access_wealth_add = 0.005
 	
-	country_minting_add = 500
+	country_minting_add = 0 # 500
 
 	state_tax_capacity_add = 100
 	state_infrastructure_add = 3
@@ -129,6 +129,7 @@ incorporated_state = {
 unincorporated_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_infrastructure_mult = -0.25
+	state_construction_mult = -0.25
 	state_conscription_rate_mult = -0.5
 	state_expected_sol_mult = -0.33
 	state_pop_pol_str_mult = -0.50
@@ -522,7 +523,7 @@ country_literacy_rate = {
 excess_innovation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_add = 0.2
-}
+} 
 
 # Scales with admiral convoy raiding strength
 convoy_raiding = {

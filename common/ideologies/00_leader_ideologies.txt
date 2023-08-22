@@ -2475,7 +2475,7 @@ ideology_market_liberal = {
 
 	lawgroup_monetary_system = {
         law_no_monetary_system = strongly_disapprove
-		law_standardized_monetary_system = disapprove
+		law_commodity_monetary_system = disapprove
         law_silver_standard_monetary_system = disapprove
         law_gold_standard_monetary_system = disapprove
         law_fiat_monetary_system = strongly_approve

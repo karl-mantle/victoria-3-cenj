@@ -244,7 +244,10 @@ ai_strategy_default = {
 		}		
 		institution_home_affairs = {	
 			value = 10		
-		}				
+		}			
+		institution_central_bank = {	
+			value = 10		
+		}		
 	}	
 	
 	# How much value does the AI place on an obligation from another country?
@@ -1486,7 +1489,7 @@ ai_strategy_default = {
 	# How many levels of construction sector should the AI aim to have
 	# Using this value in other strategies will function additively
 	wanted_construction_sector_levels = {
-		value = 1 # 0
+		value = 2 # 0
 		
 		add = {
 			value = investment_pool
@@ -1852,19 +1855,19 @@ ai_strategy_default = {
 			trigger = {
 				has_technology_researched = pharmaceuticals
 			}
-		}		
-		currency = { 
-			stance = wants_high_supply
-			trigger = {
-				has_technology_researched = currency_standards
-			}
-		}		
+		}
 		securities = { 
 			stance = wants_high_supply
 			trigger = {
 				has_technology_researched = mutual_funds
 			}
 		}		
+		horses = {
+			stance = does_not_want
+			trigger = {
+				has_technology_researched = combustion_engine
+			}
+		}
 	}
 	
 	# How many of its interests should the AI dedicate to regions with unrecognized and decentralized powers
@@ -4794,6 +4797,7 @@ ai_strategy_default = {
 				}
 				add = 50
 			}
+
 			if = {
 				limit = {
 					country_has_primary_culture = cu:russian
@@ -4811,7 +4815,7 @@ ai_strategy_default = {
 						scope:target_country = { is_country_type = recognized }
 					}						
 				multiply = 0.2
-	}
+			}
 			
 			if = {
 				limit = { 
@@ -6829,11 +6833,6 @@ ai_strategy_default = {
 				max = 2.0
 			}				
 		}
-			min = 0
-			max = 100				
-	}
-
-			
 
 		force_recognition = {
 			value = 0
@@ -6877,6 +6876,8 @@ ai_strategy_default = {
 		secession = {
 			value = 100
 		}		
+			min = 0
+			max = 100				
 	}
 
 	# Trigger for whether this strategy can be randomly allocated to a country
