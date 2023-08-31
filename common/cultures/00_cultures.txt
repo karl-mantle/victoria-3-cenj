@@ -7822,6 +7822,11 @@ mongol={
 	color= rgb{ 74 125 155 }
 	religion = gelugpa
 	traits = { north_asian_heritage mongol_language }
+
+	obsessions = {
+		horses
+	}
+
 	male_common_first_names={
 		Badamdorj
 		Balingiin
@@ -7877,6 +7882,11 @@ kalmyk={
 	color= rgb{ 250 182 3 }
 	religion = gelugpa
 	traits = { central_asian_heritage mongol_language }
+
+	obsessions = {
+		horses
+	}
+
 	male_common_first_names={
 		Badamdorj
 		Balingiin
@@ -13550,7 +13560,7 @@ dixie={
 mexican={
 	color=hsv{ 0.99 0.50 0.65 }
 	religion = catholic
-	traits = { hispanophone european_heritage }
+	traits = { hispanophone mestizo_heritage }
 	male_common_first_names={
 		Adrian_2
 		Agustin
@@ -13895,7 +13905,7 @@ central_american={
 caribeno={
 	color= hsv { 0.9 0.4 0.47 }
 	religion = catholic
-	traits = { hispanophone european_heritage }
+	traits = { hispanophone mestizo_heritage }
 	male_common_first_names={
 		Alberto
 		Alejandro
@@ -14032,7 +14042,7 @@ caribeno={
 north_andean={
 	color= hsv{ 0.20 0.35 0.41 }
 	religion = catholic
-	traits = { hispanophone european_heritage }
+	traits = { hispanophone mestizo_heritage }
 	male_common_first_names={
 		Antonio
 		Camilo
@@ -14169,7 +14179,7 @@ north_andean={
 south_andean={
 	color= hsv{ 0.45 0.15 0.61 }
 	religion = catholic
-	traits = { hispanophone european_heritage }
+	traits = { hispanophone mestizo_heritage }
 	male_common_first_names={
 		Adolfo
 		Agustin
@@ -14443,7 +14453,7 @@ platinean={
 brazilian={
 	color= hsv{ 0.50 0.53 0.40 }
 	religion = catholic
-	traits = { lusophone european_heritage }
+	traits = { lusophone mestizo_heritage }
 	male_common_first_names={
 		Afonso
 		Antonio_3

@@ -2,6 +2,11 @@
 	color= hsv{ 0.16 0.32 0.42 }
 	religion = orthodox
 	traits = { nomadic_traditions east_slavic european_heritage }
+
+	obsessions = {
+		horses
+	}
+
 	male_common_first_names={
 		Alexei
 		Andrei

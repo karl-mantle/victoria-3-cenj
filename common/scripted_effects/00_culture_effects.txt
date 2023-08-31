@@ -252,11 +252,11 @@ country_create_homeland_by_culture = {
 
 state_change_pop_culture_by_discrimination_trait = {
 	every_scope_state = {
-		limit = { state_region = s:$STATE_REGION$ }
+		limit = { $LIMIT$ }
 		every_scope_pop = {
-			limit = { culture = { $FROMCULTURE$ } }
+			limit = { culture = { $TRIGGER_CULTURE$ } }
 			change_pop_culture = {
-				target = cu:$TOCULTURE$
+				target = cu:$TARGET_CULTURE$
 				value = 0.1
 			}
 		}

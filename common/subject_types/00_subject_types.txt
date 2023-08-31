@@ -12,7 +12,8 @@
 	use_for_release_country = yes
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
-	convoy_contribution = 0.75
+	can_be_used_in_sway_offers = yes
+	convoy_contribution = 0.5
 		
 	diplomatic_action = protectorate
 	
@@ -47,6 +48,12 @@
 		unrecognized_regional_power	
 		unrecognized_power
 	}
+
+	# Affects both subject_value and become_subject_value in AI strategies
+	# Higher value means AI is more interested in having this type of subject but less interested in *being* this type of subject
+	ai_value = {
+		value = 10
+	}
 }
 
 subject_type_puppet = {
@@ -63,7 +70,7 @@ subject_type_puppet = {
 	use_for_release_country = yes
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
-	convoy_contribution = 0.5
+	convoy_contribution = 0.75
 	
 	diplomatic_action = puppet
 	
@@ -99,6 +106,12 @@ subject_type_puppet = {
 		unrecognized_regional_power	
 		unrecognized_power
 	}
+
+	# Affects both subject_value and become_subject_value in AI strategies
+	# Higher value means AI is more interested in having this type of subject but less interested in *being* this type of subject
+	ai_value = {
+		value = 50
+	}
 }
 
 subject_type_tributary = {
@@ -115,6 +128,7 @@ subject_type_tributary = {
 	use_for_release_country = yes
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
+	can_be_used_in_sway_offers = yes
 	convoy_contribution = 0.5
 	
 	diplomatic_action = tributary
@@ -149,6 +163,12 @@ subject_type_tributary = {
 		unrecognized_regional_power	
 		unrecognized_power
 	}
+
+	# Affects both subject_value and become_subject_value in AI strategies
+	# Higher value means AI is more interested in having this type of subject but less interested in *being* this type of subject
+	ai_value = {
+		value = 10
+	}	
 }
 
 subject_type_vassal = {
@@ -156,7 +176,7 @@ subject_type_vassal = {
 	use_overlord_map_color = yes
 	use_overlord_ruler = no
 	annex_on_country_formation = yes
-	can_start_own_diplomatic_plays = yes
+	can_start_own_diplomatic_plays = no
 	breaks_if_subject_not_protected = yes
 	join_overlord_wars = yes
 	can_have_subjects = no
@@ -198,6 +218,12 @@ subject_type_vassal = {
 		unrecognized_regional_power
 		unrecognized_power
 	}
+
+	# Affects both subject_value and become_subject_value in AI strategies
+	# Higher value means AI is more interested in having this type of subject but less interested in *being* this type of subject
+	ai_value = {
+		value = 50
+	}
 }
 
 subject_type_dominion = {
@@ -214,7 +240,7 @@ subject_type_dominion = {
 	use_for_release_country = yes
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
-	convoy_contribution = 0.25
+	convoy_contribution = 0.5
 	
 	diplomatic_action = dominion
 	
@@ -250,6 +276,12 @@ subject_type_dominion = {
 		unrecognized_regional_power
 		unrecognized_power
 	}
+
+	# Affects both subject_value and become_subject_value in AI strategies
+	# Higher value means AI is more interested in having this type of subject but less interested in *being* this type of subject
+	ai_value = {
+		value = 25
+	}
 }
 
 subject_type_personal_union = {
@@ -265,6 +297,7 @@ subject_type_personal_union = {
 	use_for_release_country = no
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
+	can_target_with_transfer_wargoal = no
 	convoy_contribution = 0.5
 	
 	diplomatic_action = personal_union
@@ -297,6 +330,12 @@ subject_type_personal_union = {
 		unrecognized_regional_power
 		unrecognized_power		
 	}
+
+	# Affects both subject_value and become_subject_value in AI strategies
+	# Higher value means AI is more interested in having this type of subject but less interested in *being* this type of subject
+	ai_value = {
+		value = 25
+	}
 }
 
 subject_type_customs_union = {
@@ -313,6 +352,7 @@ subject_type_customs_union = {
 	use_for_release_country = no
 	gives_prestige_to_overlord = no
 	subservient_to_overlord = no # A customs union is not an actual subject and is excluded from is_subject triggers, etc
+	can_target_with_transfer_wargoal = no
 	convoy_contribution = 0.25
 		
 	diplomatic_action = customs_union

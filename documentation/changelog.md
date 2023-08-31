@@ -1,5 +1,14 @@
 # Changelog
 *This list is not exhaustive.*
+### 0.0.51
+- changes to subject types
+- added icons for religions
+- added horse obsessions for cossacks and mongols
+- added bonus horses output for mongol and kazakh steppe
+- added a livestock ranch to texas history
+- americans now become texans in texas and french speakers can become cajuns in louisiana
+- renamed state traits (rivers) and corrected capitalisation of 'the'
+- added mountain state traits to norway
 ### 0.0.50
 - reverted buildings to vanilla size
 - adjusted construction sector, quarry, mint and urban centres pm inputs/outputs and employment numbers

@@ -310,6 +310,19 @@ change_pop_culture_on_action = {
 
 	## UNITED STATES ##
 
+		# Texan
+		state_change_pop_culture_by_discrimination_trait = {
+			LIMIT = "state_region = s:STATE_TEXAS"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage"
+			TARGET_CULTURE = "texan"
+		}
+		# Cajun
+		state_change_pop_culture_by_discrimination_trait = {
+			LIMIT = "state_region = { is_homeland = cu:cajun }"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = francophone"
+			TARGET_CULTURE = "cajun"
+		}
+
 		# African-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
@@ -341,7 +354,7 @@ change_pop_culture_on_action = {
 		# French-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = francophone"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = francophone NOT = { has_discrimination_trait = american_culture_group }"
 			TARGET_CULTURE = "american_french"
 		}
 		country_change_pop_culture_by_discrimination_trait = {

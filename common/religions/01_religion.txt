@@ -1,13 +1,5 @@
-﻿syncretic = {
-	texture = "gfx/interface/icons/religion_icons/unused/mormonism.dds"
-	traits = {
-		christian
-		animist
-	}
-	color = { 0.6 0.3 0.1 }
-}
-old_believer = {
-	texture = "gfx/interface/icons/religion_icons/orthodox.dds" #needs new icon
+﻿old_believer = {
+	texture = "gfx/interface/icons/religion_icons/old_believer.dds"
 	traits = {
 		christian
 	}
