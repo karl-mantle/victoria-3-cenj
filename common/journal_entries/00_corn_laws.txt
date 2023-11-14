@@ -142,16 +142,15 @@
 						}
 					}					
 				}
+				add_radicals = {
+					value = 0.10
+					pop_type = laborers
+				}
+				add_radicals = {
+					value = 0.10
+					pop_type = peasants
+				}
 			}
-			add_radicals = {
-				value = 0.10
-				pop_type = laborers
-			}
-			add_radicals = {
-				value = 0.10
-				pop_type = peasants
-			}
-			
 		}
 		show_as_tooltip = {
 			add_radicals = {
@@ -176,14 +175,14 @@
 						}						
 					}
 				}
-			}
-			add_radicals = {
-				value = 0.05
-				pop_type = laborers
-			}
-			add_radicals = {
-				value = 0.05
-				pop_type = peasants
+				add_radicals = {
+					value = 0.05
+					pop_type = laborers
+				}
+				add_radicals = {
+					value = 0.05
+					pop_type = peasants
+				}
 			}
 		}
 		show_as_tooltip = {

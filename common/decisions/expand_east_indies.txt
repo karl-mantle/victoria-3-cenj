@@ -21,7 +21,6 @@
 					region = sr:region_borneo
 					region = sr:region_papua
 				}
-				is_under_colonization = no
 			}
 			any_subject_or_below = {
 				OR = {

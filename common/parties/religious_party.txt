@@ -216,6 +216,22 @@ religious_party = {
 		if = {
 			limit = {
 				owner = {
+					country_is_in_north_america = yes
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+					has_law = law_type:law_presidential_republic
+				}
+			}
+			add = {
+				value = -10
+				desc = "usa_two_party_system"
+			}
+		}
+		if = {
+			limit = {
+				owner = {
 					any_interest_group = {
 						is_interest_group_type = ig_landowners
 						is_marginal = no
@@ -313,20 +329,6 @@ religious_party = {
 			add = {
 				value = 3
 				desc = "from_patriarchy"
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = religious_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
 			}
 		}
 		if = {
@@ -456,9 +458,11 @@ religious_party = {
 					}
 				}
 				owner = {
-					exists = py:religious_party
 					any_interest_group = {
-						is_member_of_party = owner.py:religious_party
+						has_party = yes
+						party = {
+							is_party_type = religious_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_orleanist
@@ -480,9 +484,11 @@ religious_party = {
 					}
 				}
 				owner = {
-					exists = py:religious_party
 					any_interest_group = {
-						is_member_of_party = owner.py:religious_party
+						has_party = yes
+						party = {
+							is_party_type = religious_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_legitimist
@@ -504,9 +510,11 @@ religious_party = {
 					}
 				}
 				owner = {
-					exists = py:religious_party
 					any_interest_group = {
-						is_member_of_party = owner.py:religious_party
+						has_party = yes
+						party = {
+							is_party_type = religious_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_bonapartist
@@ -532,6 +540,37 @@ religious_party = {
 			}
 			multiply = {
 				value = 0
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+	         		has_variable = only_valid_party
+	         	}
+				owner.var:only_valid_party = {
+		        	is_party_type = religious_party
+		        }
+	         	owner.ruler = {
+					this.interest_group = prev
+				}
+			}
+			add = {
+				value = 1000
+				desc = "from_only_legal_party"
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+	         		has_variable = only_valid_party
+	         	}
+	         	 owner.var:only_valid_party = {
+		        	is_party_type = religious_party
+		        }
+			}
+			add = {
+				value = 3
+				desc = "from_only_legal_party"
 			}
 		}
 	}

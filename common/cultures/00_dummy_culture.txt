@@ -1,0 +1,29 @@
+﻿# dummy culture for events
+
+immigrant_culture={
+	color= hsv{ 0 0 0.1 }
+	religion = catholic
+	traits = { }
+	male_common_first_names={
+		John
+	}
+	female_common_first_names = {
+		Anna
+	}	
+	noble_last_names = {
+		d_Aspre_von_Hoobreuk
+	}
+	common_last_names={
+		Auerbach
+	}
+	male_regal_first_names={
+	}
+	female_regal_first_names={
+	}
+	regal_last_names={
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

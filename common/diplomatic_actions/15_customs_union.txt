@@ -1,13 +1,16 @@
 ﻿customs_union = {
 	requires_approval = yes
 	can_use_obligations = yes
-
+	
 	unlocking_technologies = {
 		international_trade
 	}
 
 	potential = {
-		NOT = { has_variable = tut_customs_union_block }
+		custom_tooltip = {
+			text = tut_customs_union_block_txt
+			NOT = { has_variable = tut_customs_union_block }
+		}
 		NOR = {
 			is_country_type = decentralized 
 			has_law = law_type:law_isolationism
@@ -55,7 +58,7 @@
 				}
 				market = {
 					any_scope_country = {
-						is_adjacent = scope:target_country
+						is_adjacent_to_country = scope:target_country
 					}
 				}
 			}
@@ -82,14 +85,16 @@
 		has_junior_participant = yes
 		recipient_pays_maintenance = no
 		is_customs_union = yes
-		
+		can_be_used_in_sway_offers = yes
+		sway_maneuvers_cost = 10
+
 		relations_progress_per_day = 1  # At 100, +1 relations
 		relations_improvement_max = 80		
 		
 		subject_type = subject_type_customs_union # A customs union is technically a type of subject, though it isn't presented this way in-game
 
 		is_about_to_auto_break = {
-			scope:target_country.relations:root < 23 # this is: cordial + 3
+		    scope:target_country.relations:root < 23 # this is: cordial + 3
 		}
 
 		should_auto_break = {
@@ -183,7 +188,7 @@
 					NOR = {
 						scope:actor.market = {
 							any_scope_country = {
-								is_adjacent = root
+								is_adjacent_to_country = root
 							}
 						}
 						scope:actor = {
@@ -338,7 +343,7 @@
 						scope:actor = {
 							OR = {
 								country_has_primary_culture = cu:north_italian
-								country_has_primary_culture = cu:north_italian
+								country_has_primary_culture = cu:south_italian
 							}
 							country_rank < rank_value:minor_power
 						}
@@ -391,7 +396,7 @@
 					NOR = {
 						scope:actor.market = {
 							any_scope_country = {
-								is_adjacent = root
+								is_adjacent_to_country = root
 							}
 						}
 						scope:actor = {
@@ -541,7 +546,7 @@
 						has_technology_researched = nationalism
 						OR = {
 							country_has_primary_culture = cu:north_italian
-							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:south_italian
 						}
 						scope:actor.market = {
 							any_scope_country = {
@@ -552,7 +557,7 @@
 							OR = {
 								has_strategy = ai_strategy_unify_italy
 								AND = {
-									has_journal_entry = je_italian_unification
+									has_journal_entry = je_risorgimento
 									is_ai = no
 								}
 							}
@@ -570,7 +575,7 @@
 						has_technology_researched = nationalism
 						OR = {
 							country_has_primary_culture = cu:north_italian
-							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:south_italian
 						}
 						has_strategy = ai_strategy_unify_italy
 						country_rank >= rank_value:minor_power
@@ -580,7 +585,7 @@
 						scope:actor = {
 							NOR = {
 								country_has_primary_culture = cu:north_italian
-								country_has_primary_culture = cu:north_italian
+								country_has_primary_culture = cu:south_italian
 							}
 						}
 					}
@@ -681,11 +686,11 @@
 			value = 10
 			if = {
 				limit = {
-					has_journal_entry = je_italian_unification
+					has_journal_entry = je_risorgimento
 					scope:target_country = {
 						OR = {
 							country_has_primary_culture = cu:north_italian
-							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:south_italian
 						}
 						is_ai = yes
 						country_rank < rank_value:minor_power
@@ -767,11 +772,11 @@
 			}
 			if = {
 				limit = {
-					has_journal_entry = je_italian_unification
+					has_journal_entry = je_risorgimento
 					scope:target_country = {
 						OR = {
 							country_has_primary_culture = cu:north_italian
-							country_has_primary_culture = cu:north_italian
+							country_has_primary_culture = cu:south_italian
 						}
 						is_ai = yes
 						country_rank <= rank_value:minor_power
@@ -788,7 +793,10 @@ join_customs_union = {
 	can_use_obligations = yes
 
 	potential = {
-		NOT = { has_variable = tut_customs_union_block }
+		custom_tooltip = {
+			text = tut_customs_union_block_txt
+			NOT = { has_variable = tut_customs_union_block }
+		}
 		NOT = { is_country_type = decentralized }
 
 		scope:target_country = {
@@ -847,7 +855,7 @@ join_customs_union = {
 				}
 				market = {
 					any_scope_country = {
-						is_adjacent = scope:target_country
+						is_adjacent_to_country = scope:target_country
 					}
 				}
 			}
@@ -897,7 +905,10 @@ change_customs_union = {
 	can_use_obligations = yes
 
 	potential = {
-		NOT = { has_variable = tut_customs_union_block }
+		custom_tooltip = {
+			text = tut_customs_union_block_txt
+			NOT = { has_variable = tut_customs_union_block }
+		}
 		NOT = { is_country_type = decentralized }
 		is_junior_in_customs_union = no
 		scope:target_country = {
@@ -937,7 +948,7 @@ change_customs_union = {
 				}
 				market = {
 					any_scope_country = {
-						is_adjacent = scope:target_country
+						is_adjacent_to_country = scope:target_country
 					}
 				}
 			}
@@ -968,7 +979,7 @@ change_customs_union = {
 			value = 10
 			if = {
 				limit = {
-					has_journal_entry = je_italian_unification
+					has_journal_entry = je_risorgimento
 					scope:target_country = {
 						OR = {
 							country_has_primary_culture = cu:north_italian
@@ -1048,7 +1059,7 @@ change_customs_union = {
 			}
 			if = {
 				limit = {
-					has_journal_entry = je_italian_unification
+					has_journal_entry = je_risorgimento
 					scope:target_country = {
 						OR = {
 							country_has_primary_culture = cu:north_italian

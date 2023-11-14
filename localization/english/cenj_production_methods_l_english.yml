@@ -1,5 +1,6 @@
 ﻿l_english:
 # 01_industry.txt
+ # Brickworks
  pmg_base_building_brickworks:0 "$pm_base$"
  pm_scove_kilns:0 "Scove Kilns"
  pm_beehive_kilns:0 "Beehive Kilns"
@@ -15,7 +16,7 @@
  pm_publicly_traded_building_brickworks:0 "$pm_publicly_traded$"
  pm_government_run_building_brickworks:0 "$pm_government_run$"
  pm_worker_cooperative_building_brickworks:0 "$pm_worker_cooperative$"
-
+ # Cement Factory
  pmg_base_building_cement_factory:0 "$pm_base$"
  pm_static_kilns:0 "Static Kilns"
  pm_shaft_kilns:0 "Shaft Kilns"
@@ -27,35 +28,15 @@
  pm_publicly_traded_building_cement_factory:0 "$pm_publicly_traded$"
  pm_government_run_building_cement_factory:0 "$pm_government_run$"
  pm_worker_cooperative_building_cement_factory:0 "$pm_worker_cooperative$"
-
- pmg_base_building_chemical_plants:0 "$pm_base$"
- pm_basic_chemical_process:0 "Basic Chemical Processes"
- pm_batch_operation:0 "Batch Operation"
- pm_continuous_operation:0 "Continuous Operation"
-
- pmg_ownership_capital_building_chemical_plant:0 "$pmg_ownership$"
- pm_publicly_traded_building_chemical_plant:0 "$pm_publicly_traded$"
-
- pmg_base_building_explosives_industry:0 "$pm_base$"
-
- pmg_ownership_capital_building_explosives_industry:0 "$pmg_ownership$"
- pm_merchant_guilds_building_explosives_industry:0 "$pm_merchant_guilds$"
- pm_privately_owned_building_explosives_industry:0 "$pm_privately_owned$"
- pm_publicly_traded_building_explosives_industry:0 "$pm_publicly_traded$"
- pm_government_run_building_explosives_industry:0 "$pm_government_run$"
- pm_worker_cooperative_building_explosives_industry:0 "$pm_worker_cooperative$"
-
- pmg_base_building_fertilizer_factory:0 "$pm_base$"
-
- pmg_ownership_capital_building_fertilizer_factory:0 "$pmg_ownership$"
- pm_publicly_traded_building_fertilizer_factory:0 "$pm_publicly_traded$"
-
+ # Publishing House
  pmg_base_building_publishing_house:0 "$pm_base$"
  pm_rag_paper:0 "Rag Paper"
  pm_newsprint:0 "Newsprint"
+
  pmg_production_building_publishing_house:0 "Product"
  pm_prod_newspapers:0 "Produce @newspapers! Newspapers"
  pm_prod_literature:0 "Produce @literature! Literature"
+
  pmg_automation_building_publishing_house:0 "$pmg_automation$"
  pm_hand_work:0 "Handwork"
  pm_cylindrical_printing_press:0 "Cylinder Printing Press"
@@ -69,17 +50,25 @@
  pm_worker_cooperative_building_publishing_house:0 "$pm_worker_cooperative$"
 
 # 02_agro.txt
+ pm_draft_animals:0 "Draft Animals"
+ # Secondaries
  pm_palm_oil:0 "Palm Groves"
  pm_sugar_beets:0 "Sugar Beets"
- pm_draught_animals:0 "Draft Animals"
+ pm_corn_syrup:0 "Corn Syrup"
+ # Sheep Ranches
+ pmg_ownership_land_building_sheep_ranch:0 "$pmg_ownership$"
+ pmg_stables:0 "Stables"
+ pm_no_stables:0 "No Stables"
+ pm_basic_stables:0 "Basic Stables"
+ pm_livery_yard:0 "Livery Yard"
+ pm_carriage_house:0 "Carriage House"
 
 # 03_mines.txt
- pmg_base_building_copper_fields:0 "$pm_base$"
- default_building_copper_fields:0 "Copper Fields"
-
+ pm_no_secondary_mining:0 "No Secondary Production"
+ # Silver Field
  pmg_base_building_silver_fields:0 "$pm_base$"
  default_building_silver_fields:0 "Silver Fields"
-
+ # Copper Mine
  pmg_mining_equipment_building_copper_mine:0 "Mining Equipment"
  pm_picks_and_shovels_building_copper_mine:0 "Picks and Shovels"
  pm_atmospheric_engine_pump_building_copper_mine:0 "Atmospheric Engine Pump"
@@ -99,27 +88,27 @@
  pm_publicly_traded_building_copper_mine:1 "$pm_publicly_traded$"
  pm_government_run_building_copper_mine:1 "$pm_government_run$"
  pm_worker_cooperative_building_copper_mine:1 "$pm_worker_cooperative$"
+ # Clay Pit
+ pmg_mining_equipment_building_clay_pit:0 "Mining Equipment"
+ pm_picks_and_shovels_building_clay_pit:0 "Picks and Shovels"
+ pm_atmospheric_engine_pump_building_clay_pit:0 "Atmospheric Engine Pump"
+ pm_condensing_engine_pump_building_clay_pit:0 "Condensing Engine Pump"
+ pm_diesel_pump_building_clay_pit:0 "Diesel Pump"
 
- pmg_mining_equipment_building_quarry:0 "Mining Equipment"
- pm_picks_and_shovels_building_quarry:0 "Picks and Shovels"
- pm_atmospheric_engine_pump_building_quarry:0 "Atmospheric Engine Pump"
- pm_condensing_engine_pump_building_quarry:0 "Condensing Engine Pump"
- pm_diesel_pump_building_quarry:0 "Diesel Pump"
+ pmg_secondary_building_clay_pit:0 "Workshops"
+ pm_ceramics_rural:0 "$pm_ceramics$"
+ pm_brickfield:0 "Brickfield"
 
- pmg_explosives_building_quarry:0 "Explosives"
- pm_nitroglycerin_building_quarry:0 "Nitroglycerin"
- pm_dynamite_building_quarry:0 "Dynamite"
+ pmg_steam_automation_building_clay_pit:1 "$pmg_steam_automation$"
+ pmg_train_automation_building_clay_pit:1 "$pmg_train_automation$"
 
- pmg_steam_automation_building_quarry:1 "$pmg_steam_automation$"
- pmg_train_automation_building_quarry:1 "$pmg_train_automation$"
-
- pmg_ownership_capital_building_quarry:1 "$pmg_ownership$"
- pm_merchant_guilds_building_quarry:1 "$pm_merchant_guilds$"
- pm_privately_owned_building_quarry:1 "$pm_privately_owned$"
- pm_publicly_traded_building_quarry:1 "$pm_publicly_traded$"
- pm_government_run_building_quarry:1 "$pm_government_run$"
- pm_worker_cooperative_building_quarry:1 "$pm_worker_cooperative$"
-
+ pmg_ownership_capital_building_clay_pit:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_clay_pit:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_clay_pit:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_clay_pit:1 "$pm_publicly_traded$"
+ pm_government_run_building_clay_pit:1 "$pm_government_run$"
+ pm_worker_cooperative_building_clay_pit:1 "$pm_worker_cooperative$"
+ # Silver Mine
  pmg_mining_equipment_building_silver_mine:0 "Mining Equipment"
  pm_picks_and_shovels_building_silver_mine:0 "Picks and Shovels"
  pm_atmospheric_engine_pump_building_silver_mine:0 "Atmospheric Engine Pump"
@@ -139,10 +128,51 @@
  pm_publicly_traded_building_silver_mine:1 "$pm_publicly_traded$"
  pm_government_run_building_silver_mine:1 "$pm_government_run$"
  pm_worker_cooperative_building_silver_mine:1 "$pm_worker_cooperative$"
+ # Stone Quarry
+ pmg_mining_equipment_building_stone_quarry:0 "Mining Equipment"
+ pm_picks_and_shovels_building_stone_quarry:0 "Picks and Shovels"
+ pm_atmospheric_engine_pump_building_stone_quarry:0 "Atmospheric Engine Pump"
+ pm_condensing_engine_pump_building_stone_quarry:0 "Condensing Engine Pump"
+ pm_diesel_pump_building_stone_quarry:0 "Diesel Pump"
 
- pm_wagon_transport:0 "Wagon Transport"
- #pm_rail_transport:0 "Rail Transport"
- pm_road_transport:0 "Road Transport"
+ pmg_stonemasonry_building_stone_quarry:0 "Stonemasonry"
+ pm_stonecutters:0 "Stonecutters"
+ pm_electric_stonecutters:0 "Electric Stonecutters"
+
+ pmg_steam_automation_building_stone_quarry:1 "$pmg_steam_automation$"
+ pmg_train_automation_building_stone_quarry:1 "$pmg_train_automation$"
+
+ pmg_ownership_capital_building_stone_quarry:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_stone_quarry:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_stone_quarry:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_stone_quarry:1 "$pm_publicly_traded$"
+ pm_government_run_building_stone_quarry:1 "$pm_government_run$"
+ pm_worker_cooperative_building_stone_quarry:1 "$pm_worker_cooperative$"
+# 04_plantations.txt
+
+ pmg_base_building_cocoa_plantation:0 "$pm_base$"
+ pmg_base_building_hemp_plantation:0 "$pm_base$"
+ pmg_base_building_spice_plantation:0 "$pm_base$"
+
+ default_building_cocoa_plantation:0 "$pm_default$"
+ default_building_hemp_plantation:0 "$pm_default$"
+ default_building_spice_plantation:0 "$pm_default$"
+
+ automatic_irrigation_building_cocoa_plantation:0 "$automatic_irrigation$"
+ automatic_irrigation_building_hemp_plantation:0 "$automatic_irrigation$"
+ automatic_irrigation_building_spice_plantation:0 "$automatic_irrigation$"
+
+ pmg_secondary_building_hemp_plantation:0 "Luxury Production"
+ no_secondary_building_hemp_plantation:0 "Prioritise Industrial Hemp"
+ secondary_building_hemp_plantation:0 "Psychoactive Cultivars"
+
+ pmg_train_automation_building_cocoa_plantation:0 "$pmg_train_automation$"
+ pmg_train_automation_building_hemp_plantation:0 "$pmg_train_automation$"
+ pmg_train_automation_building_spice_plantation:0 "$pmg_train_automation$"
+
+ pmg_ownership_land_building_cocoa_plantation:0 "$pmg_ownership$"
+ pmg_ownership_land_building_hemp_plantation:0 "$pmg_ownership$"
+ pmg_ownership_land_building_spice_plantation:0 "$pmg_ownership$"
 
 # 06_urban_center.txt
  pm_oil_streetlights:0 "Oil Lamp Streetlights"
@@ -163,37 +193,33 @@
  pm_government_run_building_finance_sector:0 "$pm_government_run$"
  pm_worker_cooperative_building_finance_sector:0 "$pm_worker_cooperative$"
 
- pmg_base_building_health_facilities:0 "$pm_base$"
+ pmg_base_building_hospital:0 "$pm_base$"
  pm_traditional_medicine:0 "Traditional Medicine"
  pm_early_modern_medicine:0 "Early Modern Medicine"
  pm_modern_medicine:0 "Modern Medicine"
 
- pmg_luxury_building_health_facilities:0 "Dispensary"
+ pmg_luxury_building_hospital:0 "Dispensary"
  pm_no_pharmaceuticals:0 "No Pharmaceuticals"
- pm_health_facilities_apothecaries:0 "Apothecaries"
- pm_health_facilities_pharmacies:0 "Pharmacies"
+ pm_hospital_apothecaries:0 "Apothecaries"
+ pm_hospital_pharmacies:0 "Pharmacies"
 
- pmg_ownership_capital_building_health_facilities:0 "$pmg_ownership$"
- pm_charity_run_building_health_facilities:0 "Charity Run"
- pm_privately_owned_building_health_facilities:0 "$pm_privately_owned$"
- pm_publicly_traded_building_health_facilities:0 "$pm_publicly_traded$"
- pm_government_run_building_health_facilities:0 "$pm_government_run$"
- pm_university_run_building_health_facilities:0 "University"
+ pmg_ownership_capital_building_hospital:0 "$pmg_ownership$"
+ pm_charity_run_building_hospital:0 "Charity Run"
+ pm_privately_owned_building_hospital:0 "$pm_privately_owned$"
+ pm_publicly_traded_building_hospital:0 "$pm_publicly_traded$"
+ pm_government_run_building_hospital:0 "$pm_government_run$"
+ pm_university_run_building_hospital:0 "University"
 
 
 # 07_government.txt
- pmg_ownership_capital_building_port:1 "$pmg_ownership$"
- pm_merchant_guilds_building_port:1 "$pm_merchant_guilds$"
- pm_privately_owned_building_port:1 "$pm_privately_owned$"
- pm_publicly_traded_building_port:1 "$pm_publicly_traded$"
- pm_government_run_building_port:1 "$pm_government_run$"
- pm_worker_cooperative_building_port:1 "$pm_worker_cooperative$"
-
  pmg_base_building_mint:0 "$pm_base$"
  pm_mint_currency_standard:0 "Currency"
  pm_mint_currency_silver_standard:0 "Silver Bullion"
  pm_mint_currency_gold_standard:0 "Gold Bullion"
  pm_mint_currency_fiat_money:0 "Reserve Banknotes"
+
+ pm_military_bureaucrats:0 "Military Bureaucrats"
+ pm_military_academia:0 "Military Academia"
 
 # 09_misc_resources
  pm_charcoal_pile:0 "Charcoal Pile"
@@ -201,7 +227,7 @@
 # 11_private_infrastructure.txt
  pmg_base_building_road_network:0 "$pm_base$"
  pm_road_carts_roads:0 "Road Carts"
- pm_draught_animal_wagons:0 "Draught Wagons"
+ pm_draft_animal_wagons:0 "Draft Wagons"
  pm_steam_powered_wagons:0 "Steam-powered Wagons"
  pm_diesel_engine_wagons:0 "Diesel-engine Wagons"
 
@@ -211,7 +237,10 @@
  pm_publicly_traded_building_road_network:0 "$pm_publicly_traded$"
  pm_government_run_building_road_network:0 "$pm_government_run$"
  pm_worker_cooperative_building_road_network:0 "$pm_worker_cooperative$"
-
+ # Shared Transport
+ pm_wagon_transport:0 "Wagon Transport"
+ #pm_rail_transport:0 "Rail Transport"
+ pm_road_transport:0 "Road Transport"
 # 12_subsistence.txt
  pmg_base_building_subsistence_arctic_fishing:0 "$pm_base$"
  pmg_home_workshops_building_subsistence_arctic_fishing:0 "$pmg_home_workshops$"

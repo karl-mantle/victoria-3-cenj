@@ -1,0 +1,341 @@
+﻿ALA = { # Alaska
+	# Russian-American Company
+	dynamic_country_name = {
+		name = dyn_c_russian_american_company
+		adjective = dyn_c_russian_american_company_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:ALA
+					type = dominion
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+CAU = { # Caucasia
+	# Viceroyalty
+	dynamic_country_name = {
+		name = dyn_c_caucasian_viceroyalty
+		adjective = CAU_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_law = law_type:law_monarchy
+				has_diplomatic_pact = {
+					who = c:CAU
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+COU = { # Courland
+	# Courland Governorate
+	dynamic_country_name = {
+		name = dyn_c_courland_governorate
+		adjective = COU_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:COU
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+EPR = { # East Prussia
+	# Ducal Prussia
+	dynamic_country_name = {
+		name = dyn_c_ducal_prussia
+		adjective = dyn_c_ducal_prussia_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = c:POL
+			c:POL = {
+				has_diplomatic_pact = {
+					who = c:EPR
+					type = personal_union
+					is_initiator = yes
+				}
+			}
+		}
+	}
+	# Teutonic Order
+	dynamic_country_name = {
+		name = dyn_c_teutonic_order
+		adjective = dyn_c_teutonic_order_adj
+		
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+EST = { # Estonia
+	# Estonian Governorate
+	dynamic_country_name = {
+		name = dyn_c_estonian_governorate
+		adjective = EST_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:EST
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+GAE = { # Gaeldom
+	# Alba
+	dynamic_country_name = {
+		name = dyn_c_alba
+		adjective = dyn_c_alba_adj
+		
+		priority = 10
+		
+		trigger = {
+			OR = {
+				coa_def_monarchy_flag_trigger = yes
+				coa_def_fascist_flag_trigger = yes
+			}
+		}
+	}
+}
+HEB = { # Hebrides
+	# Lordship of the Isles
+	dynamic_country_name = {
+		name = dyn_c_lordship_of_the_isles
+		adjective = dyn_c_the_isles_adj
+		
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_oligarchy
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# Kingdom of the Isles
+	dynamic_country_name = {
+		name = dyn_c_kingdom_of_the_isles
+		adjective = dyn_c_the_isles_adj
+		
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { has_law = law_type:law_oligarchy }
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	# Suðreyjar
+	dynamic_country_name = {
+		name = dyn_c_suthreyjar
+		adjective = dyn_c_suthreyjar_adj
+		
+		priority = 20
+		
+		trigger = {
+			exists = scope:overlord
+			scope:overlord = {
+				OR = {
+					country_has_primary_culture = cu:norwegian
+					country_has_primary_culture = cu:icelandic
+				}
+			}
+		}
+	}
+}
+LIV = { # Livonia
+	# Livonian Governorate
+	dynamic_country_name = {
+		name = dyn_c_livonian_governorate
+		adjective = LIV_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:LIV
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+	# Livonian Order
+	dynamic_country_name = {
+		name = dyn_c_livonian_order
+		adjective = LIV_ADJ
+		
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MTB = { # Matabele
+	# Northern Matabele
+	dynamic_country_name = {
+		name = dyn_c_northern_matabele
+		adjective = MTB_ADJ
+		
+		is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_variable = matabele_displaced_var
+			}
+		}
+	}
+	# Matabeleland
+	dynamic_country_name = {
+		name = dyn_c_matabeleland
+		adjective = MTB_ADJ
+		
+		is_main_tag_only = yes
+		priority = 20
+		
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+}
+PML = { # Pomerelia
+	# West Prussia
+	dynamic_country_name = {
+		name = dyn_c_west_prussia
+		adjective = dyn_c_west_prussia_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = scope:overlord
+			scope:overlord = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+			}
+		}
+	}
+	# Royal Prussia
+	dynamic_country_name = {
+		name = dyn_c_royal_prussia
+		adjective = dyn_c_royal_prussia_adj
+		
+		priority = 0
+		
+		trigger = {
+			exists = c:POL
+			c:POL = {
+				OR = {
+					has_diplomatic_pact = {
+						who = c:PML
+						type = personal_union
+						is_initiator = yes
+					}
+					has_diplomatic_pact = {
+						who = c:PML
+						type = puppet
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+}
+POL = { # Poland
+	# Congress Poland
+	dynamic_country_name = {
+		name = dyn_c_congress_poland
+		adjective = POL_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:POL
+					type = personal_union
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+SWZ = { # Swaziland
+	# Eswatini
+	dynamic_country_name = {
+		name = dyn_c_eswatini
+		adjective = SWZ_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = { is_country_type = decentralized }
+			}
+			coa_def_british_ensign_trigger = no
+		}
+	}
+}
+WBL = { # Waterboersland
+	# Griqualand West
+	dynamic_country_name = {
+		name = dyn_c_griqualand_west
+		adjective = dyn_c_griqualand_west_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			c:WBL = {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+}

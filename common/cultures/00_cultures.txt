@@ -119,7 +119,7 @@
 }
 
 south_german={
-	color= hsv{ 0.50 0.43 0.45 }
+	color= rgb { 0 128 128 }
 	religion = catholic
 	traits = { german_speaking european_heritage }
 	male_common_first_names={
@@ -2574,7 +2574,6 @@ south_italian={
 	}
 }
 
-
 maltese={
 	color= hsv{ 0.40 0.03 0.58 }
 	religion = catholic
@@ -3313,24 +3312,26 @@ french={
 	}
 	
 	male_common_first_names={
-		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
+		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud Alexis
 		Bertrand Bernardin Bernard Barthelemy
 		Charles Constant Camille Claude CE_lestin Christophe Cyprien
 		Daniel Denis Donat Dominique
 		Elie Eugene Edouard E_tienne Emile Emmanuel E_vrard ElzE_ar
 		Fernand Francois Frederic Felicien Felix Firmin Ferdinand
 		Georges Guillaume Gustave Gaston Guy Germain
-		Henri Hippolyte Hubert Hugo Hercule Hugues
+		Henri Hippolyte Hubert Hugo Hercule Hugues Hyacinthe
 		Jacques Jean Joseph Jules Julien Jeremie JE_rO_me Just
-		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide
+		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide LE_once
 		Matthieu Michel Marcel Maximilien Maxime Maurice MoI_se
 		Napoleon Nicolas
 		Olivier Oscar Octave Odilon
 		Patrice Paul Philippe Pierre Prosper Pascal
-		Robert Roland Rodolphe Raymond Rene RE_my
+		Quentin
+		Robert Roland Rodolphe Raymond RenE_ RE_my
 		Sebastien Simon
 		Thibaut Thierry Thomas Theophile Theodore ThE_obald
-		Vincent
+		Ulysse
+		Vincent Victor
 		Xavier
 		Yves
 	}
@@ -3338,7 +3339,7 @@ french={
 		Adelaide_2 Adele_2 Alexandrine Amelie_2 Angelique Anne Antoinette Athenais Augustine
 		Beatrice Blanche
 		Camille Caroline Catherine Charlotte Claire Clemence Clotilde
-		Delphine Diane
+		Delphine Diane DesirE_e
 		Eleonore_2 Ernestine Eugenie Eulalie
 		Francoise
 		Gabrielle
@@ -3353,43 +3354,43 @@ french={
 	}	
 	noble_last_names = {
 		d_Aumont
-		Baraguey_d_Hilliers Bergeret de_Beauharnais de_Bussiere de_Broglie
-		de_Chastellux de_Chodron_de_Courcel de_CambacE_rE_s de_Croy
+		Baraguey_d_Hilliers Bergeret de_Beauharnais de_Bussiere de_Broglie de_Boisdeffre
+		de_Chastellux de_Chodron_de_Courcel de_CambacE_rE_s de_Croy de_Castelnau de_Cools
 		Decazes de_Durfort
 		d_Essling
 		Fesch
 		Gros de_Gramont de_Guerin de_Gueydon de_Goyon
 		Kellermann
-		Lagrange de_Lamartine de_La_Luzerne de_Leuchtenberg
+		Lagrange de_Lamartine de_La_Luzerne de_Leuchtenberg de_Langle_de_Cary
 		Marbot de_MacMahon de_Montmorency-Laval Maret de_Morny MassE_na
-		de_Noailles
+		de_Noailles Ney_d_Elchingen
 		Oudinot
-		Pasquier de_Pourtales de_Polignac de_Persigny
+		Pasquier de_Pourtales de_Polignac de_Persigny PalE_ologue
 		de_La_Rochefoucauld de_Rochebouet de_Rohan-Chabot
 		Suchet de_Sabran de_Saulx de_SE_rent
 		de_Talleyrand-PE_rigord
 	}
 	common_last_names={
-		Anthoine Archinard Augereau Aucouturier Alavoine
-		Baraguey Bazaine Billot Bosquet Boulanger Bourbaki Boue_de_Lapeyrere Bouet-Willaumez Bugeaud Beaugendre Bronchard Baudet Bodinier Bouillet BiE_re
-		Caillard Canrobert Courbet Cousin-Mountauban de_Castellane de_Castelnau Combes ClouE_ Cornet Colas Chauvet Carrere Chartier Combelles Chaude Colin Cruchon Cauvry ChaudE_ Collet Cottrel Charron Caudrelier Courcelles Cibiel
-		Davout Depre Dubail Dubois Duchene Dupetit-Thouars Desbordes DelcassE_ Dortignacq Dargassies Desgrange Daumain Decaup Dozol Duboc Darche Deloffre Dutiron Denizot Dufour Devilly Dhers Dartigue Degy Delpech Daime
-		Exelmans
-		Foch Forey Franchet_d_Esperey Freycinet Faidherbe Fily Fleury Forestier Figuet
-		Gallieni Gouraud Guillaumat de_Gaulle Gain Georget Gabory Guillarme Garrigou Genin GE_raud Godivier Germain Gardent Goujon
+		Anthoine Archinard Augereau Aucouturier Alavoine Achard Astouin Astaix Avond
+		Baraguey Bazaine Billot Bosquet Boulanger Bourbaki Boue_de_Lapeyrere Bouet-Willaumez Bugeaud Beaugendre Bronchard Baudet Bodinier Bouillet BiE_re Beslay Bac Bavoux Bezanson Bidard Bonnin Bougueret Boussingault Bouzique Buvignier
+		Caillard Canrobert Courbet Cousin-Mountauban de_Castellane Combes ClouE_ Cornet Colas Chauvet Carrere Chartier Combelles Chaude Colin Cruchon Cauvry ChaudE_ Collet Cottrel Charron Caudrelier Courcelles Cibiel Coquerel Coutenceau
+		Davout Depre Dubail Dubois Duchene Dupetit-Thouars Desbordes DelcassE_ Dortignacq Dargassies Desgrange Daumain Decaup Dozol Duboc Darche Deloffre Dutiron Denizot Dufour Devilly Dhers Dartigue Degy Delpech Daime Delaire DE_gousE_e Daix Delespaul Debrotonne Demortreux Denissel Desaincthorent Ducluzeau Dudouyt
+		Exelmans Emmery Esquirou
+		Foch Forey Franchet_d_Esperey Freycinet Faidherbe Fily Fleury Forestier Figuet Farconnet Ferrouillat Foucqueteau Favart Favand Freslon Fresneau
+		Gallieni Gouraud Guillaumat de_Gaulle Gain Georget Gabory Guillarme Garrigou Genin GE_raud Godivier Germain Gardent Goujon Gonnor Guyon 
 		Hamelin Harispe Hoche Humbert d_Hilliers Habierre Herbelin Harquet
 		Jamais Jaures Joffre JaurE_guiberry Jousselin
-		Lebouef Lyautey de_Langle_de_Cary Leygoute Lignon Lallement Lacroix Lafourcade Le_Bars Lachaise Leman Lorillon Lecointe Langlade Leblanc Lagagner Leroy Lapize Lannelongue
-		Marmontel Murat de_Montaignac Mazel Maitron ME_nager Meili Mathonat
-		Ney_d_Elchingen Nivelle Nancy Neboux Nempon Nadaud
-		Oudin Ory
-		Petain Pellissier Pothier Pasquier Pautrat Payan Passerieu Paulmier Ponson PiE_trois Pardon
-		Quenon
-		Ringeval Roux Rabot Riviere Roche Riou Ricaux Roquebert Rottie Royannez
-		Saget de_Saint_Arnaud SouliE_
-		Trebutien Trousselier Tuvache
-		Vaillant Ventresque Villette Vivier Vaidis Vilette
-		Wattelier Winant
+		Lebouef Lyautey Leygoute Lignon Lallement Lacroix Lafourcade Le_Bars Lachaise Leman Lorillon Lecointe Langlade Leblanc Lagagner Leroy Lapize Lannelongue Lebon Lebelleguy Lubbert Luminais Luneau Lherbette Lortet
+		Marmontel Murat de_Montaignac Mazel Maitron ME_nager Meili Mathonat Marrast Madesclaire Malbois Mispoulet Milhoux Moutou
+		Niboyet Nivelle Nancy Neboux Nempon Nadaud Nourry Nachet Normant
+		Oudin Ory Osmont
+		Petain Pellissier Pothier Pasquier Pautrat Payan Passerieu Paulmier Ponson PiE_trois Pardon Paullian Perrenet Pigeon Pleignard Plocq
+		Quenon Quinet
+		Ringeval Roux Rabot Riviere Roche Riou Ricaux Roquebert Rottie Royannez Radoing Regembal Reibell Repellin Rouher Royol
+		Saget de_Saint_Arnaud SouliE_ Sobrier StE_venot Soubigou StoecklE_ Simiot Signard Saint-Beuve Saint-Romme
+		Trebutien Trousselier Tuvache Taschereau Tanchard Tassel Teulon Tixier Totain Trinchan
+		Vaillant Ventresque Villette Vivier Vaidis Vilette Voilquin Vilain Vignerte Vinoy Valladier Vavin Vendois Vergnes Vernhette Viox
+		Wattelier Winant Warnet Walferdin
 	}
 	male_regal_first_names={
 		Antoine
@@ -3418,7 +3419,6 @@ french={
 		1 = caucasian
 	}
 }
-
 occitan={
 	color= rgb{ 164 193 223 }
 	religion = catholic
@@ -4432,144 +4432,71 @@ romanian={
 	religion = orthodox
 	traits = { romanian_culture_group european_heritage }
 	male_common_first_names={
-		Adrian
-		Alexandru
-		Andrei
-		Anton
-		Artur
+		Adrian Alexandru Andrei Anton Artur Atanasie
 		Bogdan
-		Carol
-		Cezar
-		Constantin
-		Constin
-		Cosmin
-		Daniel
-		Dumitru
-		Emanuel
-		Eremia
-		Eugen
-		Ferdinand
-		Flaviu
-		Florea
-		Gheorghe
-		Grigore
-		Henric
-		Horatiu
-		Iacob
-		Ilie
-		Ioan
-		Ion
-		Ion_Emanuel
-		Iosif
-		Iulian
-		Iuliu
-		Laurentiu
-		Leontin
-		Luca
-		Lucian
-		Mihai
-		Mircea
+		Carol Cezar Constantin Constin Cosmin Cornel Coriolan
+		Daniel Dumitru
+		Emanuel Eremia Eugen Emilian
+		Ferdinand Flaviu Florea Filimon
+		Gheorghe Grigore
+		Henric Horatiu
+		Iacob Ilie Ioan Ion Ion_Emanuel Iosif Iulian Iuliu
+		Laurentiu Leontin Luca Lucian
+		Mihai Mircea
 		Nicolae
-		Ovidiu
-		Petru
+		Ovidiu Octav
+		Petru Procop
 		Radu
-		Sergiu
-		Silviu
-		Simion
-		Stefan
-		Valeriu
-		Vasile
-		Victor
-		Vintila
-		Vlad
+		Sergiu Silviu Simion Stefan Scarlat
+		Teodor Toma Traian Tita Tarquiniu
+		Ulise
+		Valeriu Vasile Victor Vintila Vlad Virgil
 	}
 	female_common_first_names = {
-		Adela
-		Ana
+		Adela Ana
 		Constanta
-		Daria
-		Dora
-		Ecaterina
-		Elena
-		Elisa
-		Elisabeta
-		Eugenia
-		Iulia
-		Iuliana
+		Daria Dora
+		Ecaterina Elena Elisa Elisabeta Eugenia
+		Glicheria
+		Iulia Iuliana
 		Lucretia
-		Maria
-		Maritica
+		Maria Maritica
 	}	
 	noble_last_names = {
-		Cantemir
-		Caradja
-		Conachi
-		de_Reuss-Mirza
-		de_Hohenzollern
-		Dinotto-Gusti
-		Dragos
-		Ghica
-		Hasdeu
-		Hurmuzachi
-		Kogalniceanu
-		Mocioni
-		Moruzi
-		Murgulet
-		Racovita
-		Sturdza
-		Vacarescu
+		Asachi
+		Botez-ForA_scu BaS_otA_ BuS_ilA_
+		Cantemir Caradja Conachi Catacazi Callimachi
+		de_Reuss-Mirza de_Hohenzollern
+		Dinotto-Gusti Dragos
+		Ghica Gane Greceanu GrA_diS_teanu
+		Hasdeu Hurmuzachi
+		Kogalniceanu 
+		Mocioni Moruzi Murgulet Miclescu MargA_rit
+		Onciul
+		Racovita RA_S_canu Russo
+		Sturdza Sion
+		Vacarescu Volcinschi
+		Yarka
 		Ionita
 	}
 	common_last_names={
-		Angelescu
-		Antonescu
-		Argetoianu
-		Averescu
-		Baldescu
-		Barozzi
-		Berindei
-		Cernat
-		Christecu
-		Cihoski
-		Ciuperca
-		Coanda
-		Crainiceanu
-		Critescu
-		Culcer
-		Cuza
-		Dona
-		Dragalina
-		Dumitrescu
-		Falcoianu
-		Flechtenmacher
-		Florescu
-		Froza
-		Gardescu
-		Grigorescu
-		Harjeu
-		Holban
-		Iancovescu
-		Iliasevici
-		Iliescu
-		Ionascu
-		Ionescu
-		Ionitiu
-		Koslinski
-		Lahovary
-		Lupescu
-		Mardarescu
-		Murgescu
-		Poenaru
-		Prezan
-		Salajan
-		Samsonovici
-		Schitiu
-		Scodrea
-		Slaniceanu
-		Steflea
-		Tatarascu
-		Tenescu
-		Vaitoianu
+		Angelescu Antonescu Argetoianu Averescu Anastasiade Apostol Angelescu Aurelian
+		Baldescu Barozzi Berindei Berechet Borlovan Berlescu Bragadiru Baiulescu Bogdan
+		Cernat Cazacu Christecu Cihoski Ciuperca Coanda Crainiceanu Critescu Culcer Cuza Cratunescu Covaci Coman Clompe Costache Cariadgi Cuteanu CrA_ciun
+		Dona Dragalina Dumitrescu David Dolecsko Diamandescu Dobrovici Dobrescu DoboS_an DomA_S_nean
+		Falcoianu Flechtenmacher Florescu Froza Firea Frimu Fleva Filipescu
+		Gardescu Grigorescu Gantz Gheorghiu Gheorghian Garoiu GrofS_orean
+		Harjeu Holban Hubert
+		Iancovescu Iliasevici Iliescu Ionascu Ionescu Ionitiu Iliescu Iatropol
+		Koslinski Kondorossy Kretzulescu
+		Lahovary Lupescu Luchide Lupu Latciu LazA_r
+		Mardarescu Murgescu Manu Marian Marinescu Man Mirea Manolescu Moga
+		Nedelcovici
+		Poenaru Prezan Plagino Panaitescu Petrovici Petrescu Popescu PA_rvu
+		Roman Robescu
+		Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Sfetescu Sterian Stroescu Socolescu Socaciu Stinghe Suciu
+		Tatarascu Tenescu Tudoran Tautu Timcic Teodorescu
+		Vaitoianu Vardala Volvoreanu Vartolomeu Vatamanu Verzea Voicu Vidrighin
 		Zottu
 	}
 	ethnicities = {
@@ -5660,7 +5587,7 @@ ugrian={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 latvian={
@@ -6221,132 +6148,57 @@ armenian={
 	religion = oriental_orthodox
 	traits = { caucasus_group european_heritage }
 	male_common_first_names={
-		Alexander
-		Arakel
-		Aram
-		Aramais
-		Arsen
-		Artashes
-		Artavazd
-		Artem
-		Ashot
-		Assadour
-		Atom
-		Barsegh
-		Benyamin
-		Deran
+		Alexander Arakel Aram Aramais Arsen Artashes Artavazd Artem Ashot Assadour Atom Andranik Avetis
+		Barsegh Benyamin Boghos
+		Deran Drastamat
 		Eduard
-		Gevorg
-		Gor
-		Gurgen
-		Hamazasp
-		Hayk
-		Hovhannes
-		Hovsep
-		Hrant
+		Gevorg Gor Gurgen
+		Hamazasp Hayk Hovhannes Hovsep Hrant
 		Isahak
-		Karapet
-		Kevork
+		Karapet Kevork
 		Levon
-		Mkrtich
-		Murad
+		Mkrtich Murad Martiros
 		Nubad
 		Papken
 		Rouben
-		Sarkis
-		Sergei
-		Sevan
-		Smbat
-		Soghomon
-		Souren
-		Spiru
-		Tadevos
-		Taniel
-		Vahan
-		Vahe
-		Vahram
-		Vano
-		Vartan
-		Vazrik
-		Vilen
-		Yegishe
-		Yervand
+		Sarkis Sergei Sevan Smbat Soghomon Souren Spiru
+		Tadevos Taniel Tovmas
+		Vahan Vahe Vahram Vano Vartan Vazrik Vilen
+		Yegishe Yervand
 		Zaven
 	}
 	female_common_first_names = {
-		Anna
-		Arshaluys
+		Anna Arshaluys
 		Diana
-		Hripsime 
+		Hripsime Horom
 		Mari
 		Perchuhi
-		Satenik
-		Shushanik
-		Sophia
+		Satenik Shushanik Sophia
+		Takuhi
 		Virginia
-		Zabel
-		Zardar
+		Zabel Zardar
 	}	
 	noble_last_names = {
-		Abamelik
-		Agadzhanian
-		Atabekian
-		Melik-Aghamalian
-		Melikyan
+		Abamelik Agadzhanian Atabekian
+		Melik-Aghamalian Melikyan
 	}
 	common_last_names={
-		Afeyan
-		Arakelian
-		Asdvadzadrian
-		Asriyan
-		Avakian
-		Aydinian
-		Azatian
-		Babadzhanian
-		Bogosian
-		Bounyatian
+		Afeyan Arakelian Asdvadzadrian Asriyan Avakian Aydinian Azatian Aharonian Amirkhanyan
+		Babadzhanian Bogosian Bounyatian Bagramyan
 		Chakheltian
-		Dombalagian
-		Egoyan
-		Erznvian
-		Ghakarian
-		Ghehanian
-		Ghorghanian
-		Guediguian
-		Hannessoghlian
-		Hasratian
-		Hovsepian
-		Kaloian
-		Kamalian
-		Khachaturian
-		Khakhanyan
-		Khatchaturiants
-		Konstandyan
-		Konstanian
-		Mamikonian
-		Mardvian
-		Matinian
-		Mirakian
-		Mkhitarian
-		Mussiniants
-		Pahlevanian
-		Peleshyan
-		Safrazpekian
-		Sahakiam
-		Sarksyan
-		Sekoyan
-		Shadunts
-		Shahsuvarian
-		Tavakyalian
-		Tchartichian
-		Tcholakhian
-		Ter-Sarkayan
-		Terzian
-		Tigraniants
-		Tigranov
-		Toshian
-		Varapetian
-		Vartanian
+		Dombalagian Dndesian
+		Egoyan Erznvian Ephrikian
+		Ghakarian Ghehanian Ghorghanian Guediguian Ganatchian Galanderian Gazarossian
+		Hannessoghlian Hasratian Hovsepian Hagopian
+		Izmirlian Isahakyan
+		Kaloian Kamalian Khachaturian Khakhanyan Khatchaturiants Konstandyan Konstanian Kechekjan Khrimian
+		Mamikonian Mardvian Matinian Mirakian Mkhitarian Mussiniants Melkonyan
+		Nazarbekian Nahashbedian
+		Ozanian Ormanian
+		Pahlevanian Peleshyan
+		Safrazpekian Sahakiam Sarksyan Sekoyan Shadunts Shahsuvarian Silikyan Sassouni Shaumian Soghomonian Srvandztian
+		Tavakyalian Tchartichian Tcholakhian Ter-Sarkayan Terzian Tigraniants Tigranov Toshian Tashjian Tumacan Tourian
+		Varapetian Vartanian
 	}
 	ethnicities = {
 		1 = slavic
@@ -6599,7 +6451,7 @@ turkish={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 azerbaijani={
@@ -6682,7 +6534,7 @@ azerbaijani={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 north_caucasian={
@@ -6837,7 +6689,7 @@ maghrebi={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 misri={
@@ -6942,7 +6794,7 @@ misri={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 mashriqi={
@@ -7044,7 +6896,7 @@ mashriqi={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 bedouin={
@@ -7140,7 +6992,7 @@ bedouin={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 berber={ # Amazigh
@@ -7184,7 +7036,7 @@ berber={ # Amazigh
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 persian={
@@ -7246,7 +7098,7 @@ persian={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 uzbek={
@@ -7307,7 +7159,7 @@ uzbek={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kazak={
@@ -7363,7 +7215,7 @@ kazak={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kirgiz={
@@ -7410,7 +7262,7 @@ kirgiz={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 tajik={
@@ -7469,7 +7321,7 @@ tajik={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 uighur={
@@ -7520,7 +7372,7 @@ uighur={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 pashtun={
@@ -7589,7 +7441,7 @@ pashtun={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 baluchi={
@@ -7633,7 +7485,7 @@ baluchi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 hazara={
@@ -7673,7 +7525,7 @@ hazara={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 turkmen={
@@ -7714,7 +7566,7 @@ turkmen={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kurdish={
@@ -7762,7 +7614,7 @@ kurdish={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 tatar={
@@ -7815,7 +7667,7 @@ tatar={
 		1 = central_asian
 		1 = arab
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 mongol={
@@ -7875,7 +7727,7 @@ mongol={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kalmyk={
@@ -7935,7 +7787,7 @@ kalmyk={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 siberian={
@@ -7977,7 +7829,7 @@ siberian={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 yakut={
@@ -8013,7 +7865,7 @@ yakut={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 tibetan={
@@ -8062,7 +7914,7 @@ tibetan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 assamese={
@@ -8103,7 +7955,7 @@ assamese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 bengali={
@@ -8163,7 +8015,7 @@ bengali={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 bihari={
@@ -8203,9 +8055,9 @@ bihari={
 		Valmiki
 	}
 	ethnicities = {
-		1 = asian
+		1 = indian
 	}
-	graphics = asian
+	graphics = south_asian
 }
 
 manipuri={
@@ -8248,9 +8100,9 @@ manipuri={
 		Sharma
 	}
 	ethnicities = {
-		1 = asian
+		1 = indian
 	}
-	graphics = asian
+	graphics = south_asian
 }
 
 nepali={
@@ -8309,7 +8161,7 @@ nepali={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 oriya={
@@ -8348,7 +8200,7 @@ oriya={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 sinhala={
@@ -8388,7 +8240,7 @@ sinhala={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 avadhi={
@@ -8428,7 +8280,7 @@ avadhi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 kanauji={
@@ -8463,7 +8315,7 @@ kanauji={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 panjabi={
@@ -8519,7 +8371,7 @@ panjabi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 kashmiri={
@@ -8564,7 +8416,7 @@ kashmiri={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 gujarati={
@@ -8609,7 +8461,7 @@ gujarati={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 marathi={
@@ -8669,7 +8521,7 @@ marathi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 sindi={
@@ -8722,7 +8574,7 @@ sindi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 rajput={
@@ -8773,7 +8625,7 @@ rajput={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 kannada={
@@ -8824,7 +8676,7 @@ kannada={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 malayalam={
@@ -8864,7 +8716,7 @@ malayalam={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 tamil={
@@ -8910,7 +8762,7 @@ tamil={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 telegu={
@@ -8953,7 +8805,7 @@ telegu={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = south_asian
 }
 
 vietnamese={
@@ -9004,7 +8856,7 @@ vietnamese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 khmer={
@@ -9047,7 +8899,7 @@ khmer={
 	ethnicities = {
 		1 = south_east_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 batak={
@@ -9097,7 +8949,7 @@ batak={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 dayak={
@@ -9155,7 +9007,7 @@ dayak={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 malagasy={
@@ -9202,7 +9054,7 @@ malagasy={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 filipino={
@@ -9263,7 +9115,7 @@ filipino={
 	ethnicities = {
 		1 = south_east_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 moro={
@@ -9356,7 +9208,7 @@ moro={
 	ethnicities = {
 		1 = south_east_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 javan={
@@ -9411,7 +9263,7 @@ javan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 moluccan={
@@ -9453,7 +9305,7 @@ moluccan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 thai={
@@ -9509,7 +9361,7 @@ thai={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 mon={
@@ -9541,7 +9393,7 @@ mon={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 khmu={
@@ -9588,7 +9440,7 @@ khmu={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 lao={
@@ -9635,7 +9487,7 @@ lao={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 shan={
@@ -9688,7 +9540,7 @@ shan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 burmese={
@@ -9732,7 +9584,7 @@ burmese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kachin={
@@ -9773,7 +9625,7 @@ kachin={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 karen={
@@ -9819,7 +9671,7 @@ karen={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 japanese={
@@ -9995,7 +9847,7 @@ japanese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 manchu={
@@ -10071,7 +9923,7 @@ manchu={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 han={
@@ -10152,7 +10004,7 @@ han={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 korean={
@@ -10235,7 +10087,7 @@ korean={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 ainu={
@@ -10283,7 +10135,7 @@ ainu={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 hakka={
@@ -10351,7 +10203,7 @@ hakka={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 miao={
@@ -10416,7 +10268,7 @@ miao={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 min={
@@ -10479,7 +10331,7 @@ min={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 zhuang={
@@ -10534,7 +10386,7 @@ zhuang={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 yi={
@@ -10612,7 +10464,7 @@ yi={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 yue={
@@ -10690,7 +10542,7 @@ yue={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 polynesian={
@@ -10714,9 +10566,9 @@ polynesian={
 		William
 	}
 	female_common_first_names = {
-		Auli'i
+		Auli_i
 		Elizabeth
-		Kina'u
+		Kina_u
 		Kaliko
 		Kamamalu
 		Kamaikui
@@ -10746,10 +10598,10 @@ polynesian={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
-hawaiian={
+hawaiian={ # 
 	color= hsv{ 0.29 0.26 0.60 }
 	religion = protestant
 	traits = { polynesian_group indigenous_oceanic_heritage }
@@ -10785,7 +10637,7 @@ hawaiian={
 		Elizabeth
 		Haupa Hana Haleloke 
 		Inaina
-		Kala Kina'u Kaliko Kamamalu Kamaikui Kekahili Kekelaokalani Kauwahine Kalukuna Kipa Kahiliopua Kauwa Kaha
+		Kala Kina_u Kaliko Kamamalu Kamaikui Kekahili Kekelaokalani Kauwahine Kalukuna Kipa Kahiliopua Kauwa Kaha
 		Lucy Laura Lanihau
 		Maria Miriama Mareta Maile Mele
 		Naomi Namahana Namokuelua Na_awa
@@ -10818,7 +10670,7 @@ hawaiian={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 melanesian={
@@ -10871,7 +10723,7 @@ melanesian={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 micronesian={
@@ -10925,7 +10777,7 @@ micronesian={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 maori={
@@ -10976,7 +10828,7 @@ maori={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 yuanzhumin={
@@ -10996,7 +10848,7 @@ yuanzhumin={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 aborigine={ # Aboriginal
@@ -11059,7 +10911,7 @@ aborigine={ # Aboriginal
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 zapotec={
@@ -11145,7 +10997,7 @@ zapotec={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 mayan={
@@ -11241,7 +11093,7 @@ mayan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 nahua={
@@ -11337,7 +11189,7 @@ nahua={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 tarascan={
@@ -11428,7 +11280,7 @@ tarascan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 quechua={
@@ -11520,7 +11372,7 @@ quechua={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 guarani={
@@ -11616,7 +11468,7 @@ guarani={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 aimara={
@@ -11714,7 +11566,7 @@ aimara={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 amazonian={
@@ -11807,7 +11659,7 @@ amazonian={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 patagonian={
@@ -11900,7 +11752,7 @@ patagonian={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 guajiro={
@@ -11969,7 +11821,7 @@ guajiro={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 tupinamba={
@@ -12038,7 +11890,7 @@ tupinamba={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 metis={
@@ -12085,7 +11937,7 @@ metis={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 dakota={
@@ -12137,7 +11989,7 @@ dakota={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 cherokee={
@@ -12202,7 +12054,7 @@ cherokee={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 muskogean={ # Creek and Seminole
@@ -12254,7 +12106,7 @@ muskogean={ # Creek and Seminole
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 pueblo={
@@ -12311,7 +12163,7 @@ pueblo={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 inuit={
@@ -12374,7 +12226,7 @@ inuit={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 cree={
@@ -12424,7 +12276,7 @@ cree={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 navajo={
@@ -12473,7 +12325,7 @@ navajo={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 athabaskan={
@@ -12536,7 +12388,7 @@ athabaskan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 salish={ # Tlingit and Haida merged together, forgive me
 	color= hsv{ 0.55 0.47 0.54 }
@@ -12582,7 +12434,7 @@ salish={ # Tlingit and Haida merged together, forgive me
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 nez_perce={ # Nez Perce
 	color= hsv{ 0.06 0.45 0.70 }
@@ -12620,7 +12472,7 @@ nez_perce={ # Nez Perce
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 siouan={
 	color= hsv{ 0.14 0.35 0.99 }
@@ -12671,7 +12523,7 @@ siouan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 comanche={
 	color= hsv{ 0.08 0.5 0.37 }
@@ -12717,7 +12569,7 @@ comanche={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 algonquian={
 	color= hsv{ 0.22 0.15 0.86 }
@@ -12756,7 +12608,7 @@ algonquian={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 iroquoian={
 	color= rgb{ 233 116 10 }
@@ -12799,7 +12651,7 @@ iroquoian={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 caddoan={ # Choctaw
 	color= hsv{ 0.16 0.65 0.85 }
@@ -12839,7 +12691,7 @@ caddoan={ # Choctaw
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 paiute={ # Ute and Shoshone
 	color= hsv{ 0.06 0.39 0.80 }
@@ -12897,7 +12749,7 @@ paiute={ # Ute and Shoshone
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 hokan={
 	color= hsv{ 0.94 0.27 0.87 }
@@ -12957,7 +12809,7 @@ hokan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 apache={
 	color= hsv{ 0.11 0.58 0.94 }
@@ -12995,7 +12847,7 @@ apache={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 oodham={
 	color= hsv{ 0.94 0.63 0.58 }
@@ -13043,7 +12895,7 @@ oodham={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 mixtec={
 	color={ 150 80 70 }
@@ -13138,7 +12990,7 @@ mixtec={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 muisca={
 	color={ 125 12 52 }
@@ -13187,7 +13039,7 @@ muisca={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 miskito = {
@@ -13262,7 +13114,7 @@ miskito = {
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
@@ -13311,7 +13163,7 @@ cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 	
 yankee={
@@ -13765,7 +13617,7 @@ mexican={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = european
 }
 
 central_american={
@@ -13899,7 +13751,7 @@ central_american={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = european
 }
 
 caribeno={
@@ -14036,7 +13888,7 @@ caribeno={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = european
 }
 
 north_andean={
@@ -14173,7 +14025,7 @@ north_andean={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = european
 }
 
 south_andean={
@@ -14312,7 +14164,7 @@ south_andean={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = european
 }
 
 platinean={
@@ -14447,7 +14299,7 @@ platinean={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = european
 }
 
 brazilian={
@@ -14586,7 +14438,7 @@ brazilian={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = european
 }
 
 afro_american={
@@ -19366,7 +19218,7 @@ franco_canadian={
 		Pierre
 		Pierre-Aurele
 		Pierre-Stanislas
-		Rene-Edouard
+		RenE_-E_douard
 		Simon-Napoleon
 		Telesphore
 		Theodore
@@ -19610,7 +19462,7 @@ tuvan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 corsican = {
@@ -19871,5 +19723,5 @@ yemenite={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }

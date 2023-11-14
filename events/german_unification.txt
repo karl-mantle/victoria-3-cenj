@@ -52,6 +52,9 @@ german_unification.1 = {
 						root = { country_has_primary_culture = cu:south_german }
 						country_has_primary_culture = cu:south_german
 					}					
+				}
+				NOT = {
+					THIS = ROOT
 				}				
 			}
 			
@@ -66,7 +69,7 @@ german_unification.1 = {
 						is_supporting_unification_candidate = { who = root country_formation = GER }
 					}
 				}			
-				root = { annex = prev }
+				root = { annex_with_incorporation = prev }
 			}
 			else = {
 				trigger_event = { id = german_unification.2 days = 0 popup = yes }
@@ -180,7 +183,7 @@ german_unification.2 = {
 				is_subject_of = scope:german_unification_candidate
 			}				
 		}
-		scope:german_unification_candidate = { annex = root }
+		scope:german_unification_candidate = { annex_with_incorporation = root }
 		ai_chance = {
 			base = 9
 		}
@@ -448,7 +451,7 @@ german_unification.5 = {
 	}
 }
 
-#SGF from the POV of Austria
+# South German Federation from Austria's perspective
 german_unification.100 = {
 	type = country_event
 	placement = ROOT
@@ -677,7 +680,7 @@ german_unification.101 = {
 				country = ROOT
 				type = dominion
 			}
-			trigger_event = { id = sgf_aus.6 days = 7 popup = yes }
+			trigger_event = { id = german_unification.102 days = 7 popup = yes }
 		}
 		
 	}
@@ -718,152 +721,52 @@ german_unification.101 = {
 	}
 }
 
+german_unification.6 = {
+	type = country_event
+	placement = ROOT
 
-# Annex a German country
-#german_unification.200 = {
-#	type = country_event
-#	placement = ROOT
-#
-#	title = german_unification.2.t
-#	desc = german_unification.2.d
-#	flavor = german_unification.2.f
-#
-#	event_image = {
-#		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
-#	}
-#
-#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-#	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
-#
-#	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-#
-#	duration = 3
-#
-#	cooldown = { months = 4 }
-#
-#	trigger = {
-#		root.infamy < infamy_threshold:infamous
-#		NOT = {
-#			is_unification_candidate = GER
-#		}
-#		NOT = {
-#			exists = c:GER
-#		}
-#		country_rank >= rank_value:great_power
-#		NOT =  { country_tier = empire	}
-#		has_technology_researched = pan-nationalism
-#		any_country = {
-#			trigger_if = {
-#				limit = {
-#					has_technology_researched = pan-nationalism
-#				}
-#				OR = {
-#					country_has_primary_culture = cu:north_german
-#					country_has_primary_culture = cu:south_german
-#				}
-#			}
-#			trigger_else_if = {
-#				limit = {
-#					ROOT = {
-#						country_has_primary_culture = cu:north_german
-#					}
-#				}
-#				country_has_primary_culture = cu:north_german
-#			}
-#			trigger_else_if = {
-#				limit = {
-#					ROOT = {
-#						country_has_primary_culture = cu:south_german
-#					}
-#				}
-#				country_has_primary_culture = cu:south_german
-#			}
-#			has_diplomatic_pact = {
-#				who = ROOT
-#				type = customs_union
-#			}
-#			OR = {
-#				is_subject = no
-#				is_subject_of = ROOT
-#			}
-#			country_rank < rank_value:major_power
-#			relations:root >= relations_threshold:amicable
-#			is_player = no
-#			NOT = { has_variable = german_minor_dont_annex }
-#		}
-#	}
-#
-#	immediate = {
-#		random_country = {
-#			limit = {
-#				trigger_if = {
-#					limit = {
-#						has_technology_researched = pan-nationalism
-#					}
-#					OR = {
-#						country_has_primary_culture = cu:north_german
-#						country_has_primary_culture = cu:south_german
-#					}
-#				}
-#				trigger_else_if = {
-#					limit = {
-#						ROOT = {
-#							country_has_primary_culture = cu:north_german
-#						}
-#					}
-#					country_has_primary_culture = cu:north_german
-#				}
-#				trigger_else_if = {
-#					limit = {
-#						ROOT = {
-#							country_has_primary_culture = cu:south_german
-#						}
-#					}
-#					country_has_primary_culture = cu:south_german
-#				}
-#				has_diplomatic_pact = {
-#					who = ROOT
-#					type = customs_union
-#				}
-#				OR = {
-#					is_subject = no
-#					is_subject_of = ROOT
-#				}
-#				country_rank < rank_value:major_power
-#				relations:root >= relations_threshold:amicable
-#				is_player = no
-#				NOT = { has_variable = german_minor_dont_annex }
-#			}
-#			save_scope_as = german_annex_country
-#		}
-#	}
-#
-#	option = {
-#		name = german_unification.2.a
-#		default_option = yes
-#		create_incident = {
-#			country = scope:german_annex_country
-#			value = 3
-#		}
-#		annex = scope:german_annex_country
-#		ai_chance = {
-#			base = 1
-#		}
-#	}
-#	option = {
-#		name = german_unification.2.b
-#		change_relations = {
-#			country = scope:german_annex_country
-#			value = 20
-#		}
-#		scope:german_annex_country = {
-#			set_variable = {
-#				name = german_minor_dont_annex
-#				days = 1825
-#			}
-#		}
-#		ai_chance = {
-#			base = 0
-#		}
-#	}
-#}
+	title = german_unification.6.t
+	desc = german_unification.6.d
+	flavor = german_unification.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_subject_or_below = {
+			limit = {
+				country_has_primary_culture = cu:south_german
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_FRANCONIA
+						state_region = s:STATE_BAVARIA
+						state_region = s:STATE_WURTTEMBERG
+						state_region = s:STATE_BADEN
+						state_region = s:STATE_ALSACE_LORRAINE
+					}
+					count >= 4
+				}
+			}
+			save_scope_as = SGF_country
+		}
+	}
+
+	option = {
+		name = german_unification.6.a
+		add_modifier = {
+			name = aus_unified_sgf
+			months = normal_modifier_time
+		}
+	}
+}

@@ -93,7 +93,7 @@
 			age = 51
 			traits = {
 				brave
-				experienced_artillery_commander
+				# experienced_artillery_commander
 			}
 		}
 	}

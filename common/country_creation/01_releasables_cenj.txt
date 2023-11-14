@@ -1,0 +1,975 @@
+﻿AAC = { # Aachen
+	provinces = {
+		x834B66 x486F6A
+	}
+	ai_will_do = { always = no }
+}
+# ABK = Abkhazia
+ACA = { # Achaeia
+	states = {
+		STATE_PELOPONNESE
+	}
+	ai_will_do = { always = no }
+}
+ALA = { # Alaska
+	states = {
+		STATE_ALASKA
+	}
+	ai_will_do = { always = no }
+}
+ALE = { # Alençon
+	provinces = {
+		x192CA5 x56E158 x30E080 x7CAE05
+	}
+	ai_will_do = { always = no }
+}
+ALS = { # Alsace
+	provinces = {
+		x6E4891 xCC3250 xB000E0 
+	}
+	ai_will_do = { always = no }
+}
+AMG = { # Armagnac
+	provinces = {
+		x106040 x306080 x5615DD x7C1D57 xA2BBE9 xB0E000 xD957E6 xECF077
+	}
+	ai_will_do = { always = no }
+}
+ANS = { # Ansbach
+	provinces = {
+		x010AD7
+	}
+	ai_will_do = { always = no }
+}
+AQU = { # Aquileia
+	states = {
+		STATE_ISTRIA
+	}
+	ai_will_do = { always = no }
+}
+ARR = { # Aragon
+	states = {
+		STATE_ARAGON
+	}
+	ai_will_do = { always = no }
+}
+ATR = { # Asturias
+	states = {
+		STATE_ASTURIAS
+	}
+	ai_will_do = { always = no }
+}
+ATH = { # Athens
+	provinces = {
+		x465F8D xC72C61 x8D7F62
+	}
+	ai_will_do = { always = no }
+}
+AUG = { # Augsburg
+	provinces = {
+		xC347B1 x704A5F
+	}
+	ai_will_do = { always = no }
+}
+AUV = { # Auvergne
+	provinces = {
+		x061121 x30E000 x70C060 xA27EFD xABE045 xAF89BC xBED0F4 xF0C060 xF3D359
+	}
+	ai_will_do = { always = no }
+}
+AVI = { # Avignon
+	provinces = {
+		xB0C0E0
+	}
+	ai_will_do = { always = no }
+}
+BAR = { # Bar
+	provinces = {
+		x70BFA0 x282DCC x7FC1E6 xA9D961 xC5F13A
+	}
+	ai_will_do = { always = no }
+}
+BGD = { # Burgundy
+	states = {
+		STATE_BURGUNDY
+	}
+	ai_will_do = { always = no }
+}
+BLN = { # Bologna
+	provinces = {
+		x7000A0
+	}
+	ai_will_do = { always = no }
+}
+BOU = { # Bourbonnais
+	provinces = {
+		x07BCC1 x3FE149 xA8AE71 xF080E0 x50A0C0 x3369C6 x71A804 xEF4060
+	}
+	ai_will_do = { always = no }
+}
+BRB = { # Brabant
+	provinces = {
+		x018061 x800060 x93FB2E x4C4894 xC0C0A0 x4C4894 xC0C0A0 x0000DF
+	}
+	ai_will_do = { always = no }
+}
+BRY = { # Berry
+	provinces = {
+		x6E4717 x14F855 xE3E249 x886277 xE7B296 x90E000
+	}
+	ai_will_do = { always = no }
+}
+BYT = { # Bayreuth
+	provinces = {
+		xD041A0 xF91154
+	}
+	ai_will_do = { always = no }
+}
+CEP = { # Corfu
+	provinces = {
+		x4B79CA
+	}
+	ai_will_do = { always = no }
+}
+CHG = { # Champagne
+	states = {
+		STATE_CHAMPAGNE
+	}
+	ai_will_do = { always = no }
+}
+CLB = { # Calenberg
+	provinces = {
+		xFF1DBB
+	}
+	ai_will_do = { always = no }
+}
+# CLI = Cilli
+CNN = { # Clanricarde
+	states = {
+		STATE_CONNAUGHT
+	}
+	ai_will_do = { always = no }
+}
+CNR = { # Canary Islands
+	states = {
+		STATE_CANARY_ISLANDS
+	}
+	ai_will_do = { always = no }
+}
+# COU = Courland
+CRN = { # Cornwall
+	provinces = {
+		x1E38F8 x63EF7E
+	}
+	ai_will_do = { always = no }
+}
+DAL = { # Dalmatia
+	states = {
+		STATE_DALMATIA
+	}
+	ai_will_do = { always = no }
+}
+DMS = { # Desmond
+	provinces = {
+		x969279 xA0E0C0 xEF3F71
+	}
+	ai_will_do = { always = no }
+}
+DTT = { # Dithmarschen
+	provinces = {
+		x804160
+	}
+	ai_will_do = { always = no }
+}
+DWT = { # Donauwörth
+	provinces = {
+		x318021
+	}
+	ai_will_do = { always = no }
+}
+EFR = { # East Frisia
+	provinces = { # TODO: Add more provinces.
+		xF9DCA2
+	}
+	ai_will_do = { always = no }
+}
+EPI = { # Epirus
+	provinces = {
+		x518791 xBF5160 xCA246A x405060 x01D0E0 x8050E0 x18C9AD
+	}
+	ai_will_do = { always = no }
+}
+EPR = { # East Prussia
+	states = {
+		STATE_EAST_PRUSSIA
+	}
+	ai_will_do = { always = no }
+}
+ETR = { # Etruria
+	states = {
+		STATE_TUSCANY
+	}
+	ai_will_do = { always = no }
+}
+FEA = { # Ferrara
+	provinces = {
+		xEF0021 xB080A0
+	}
+	ai_will_do = { always = no }
+}
+FEO = { # Theodoro
+	provinces = {
+		x31E0E0 xB0DFDF
+	}
+	ai_will_do = { always = no }
+}
+FKN = { # Franconia
+	states = {
+		STATE_FRANCONIA
+	}
+	ai_will_do = { always = no }
+}
+FLO = { # Florida
+	states = {
+		STATE_FLORIDA
+	}
+	ai_will_do = { always = no }
+}
+FOI = { # Foix
+	provinces = {
+		xCD8E77 xF02080 x5615DD x7C1D57
+	}
+	ai_will_do = { always = no }
+}
+FRM = { # Frankfurt
+	provinces = { 
+		x11C0A0
+	}
+	ai_will_do = { always = no }
+}
+GAE = { # Gaeldom
+	states = {
+		STATE_HIGHLANDS
+		STATE_STRATHCLYDE
+	}
+	ai_will_do = { always = no }
+}
+GAS = { # Gascony
+	states = {
+		STATE_AQUITAINE
+	}
+	ai_will_do = { always = no }
+}
+GEL = { # Guelders
+	states = {
+		STATE_GELRE
+	}
+	ai_will_do = { always = no }
+}
+GEN = { # Genoa
+	provinces = {
+		x54728A x5F6BAA x904061
+	}
+	ai_will_do = { always = no }
+}
+GIB = { # Gibraltar
+	provinces = {
+		xBC6ED3
+	}
+	ai_will_do = { always = no }
+}
+GNV = { # Geneva
+	provinces = {
+		x56B04B xDDDD3B
+	}
+	ai_will_do = { always = no }
+}
+GOT = { # Gotland
+	states = {
+		STATE_GOTLAND
+	}
+	ai_will_do = { always = no }
+}
+GUY = { # Guyana
+	provinces = {
+		xA22A4C xBB88B5 x218011 x1F5190 x6B802F xA52CE3 xE600F3 xA00111 x734F81 x8E31E8 x7B4B5E
+		x63ABD4 x3A069F x24A66B x719492 x41552E x4AE8F7 x9A88B5 xB21306 xB1960A x805A8C x518580
+		xC0C0D0 xADE6C2 xE85635 x9FEDF7 xAA1153 x6816FF x350473 xFAE8C5 xB3512B xD0678B xD0BA2B
+		xE7864B xA350D5 x6C6251
+	}
+	ai_will_do = { always = no }
+}
+HEB = { # Hebrides
+	provinces = {
+		x80DB90 x47C5CD xB7B8EA x0E7C03 x137263
+	}
+	ai_will_do = { always = no }
+}
+HLL = { # Holland
+	states = {
+		STATE_HOLLAND
+	}
+	ai_will_do = { always = no }
+}
+HRZ = { # Herzegovina
+	provinces = {
+		x1121E0 x5F13FD x9021E0 xAC2DD3 xD021A0
+	}
+	ai_will_do = { always = no }
+}
+ING = { # Ingolstadt
+	provinces = {
+		x010AD7 x6EA29B xE75868
+	}
+	ai_will_do = { always = no }
+}
+IOM = { # Isle of Man
+	provinces = {
+		x137263
+	}
+	ai_will_do = { always = no }
+}
+KID = { # Kildare
+	provinces = {
+		x2060C0 xA2A933
+	}
+	ai_will_do = { always = no }
+}
+KIE = { # Kiev
+	states = {
+		STATE_KIEV
+	}
+	ai_will_do = { always = no }
+}
+KLE = { # Cleves
+	provinces = {
+		x8001E0
+	}
+	ai_will_do = { always = no }
+}
+KNZ = { # Konstanz
+	provinces = {
+		xAEBA2A
+	}
+	ai_will_do = { always = no }
+}
+KOL = { # Cologne
+	provinces = {
+		x518021 x9F4072 x1BA4F6 x218061 x4101A0
+		x418021 x910095 x9F0060 xD08021 x5101A0
+	}
+	ai_will_do = { always = no }
+}
+KRL = { # Karelia
+	states = {
+		STATE_EAST_KARELIA
+		STATE_WEST_KARELIA
+		STATE_OLONETS
+	}
+	ai_will_do = { always = no }
+}
+LAU = { # Saxe-Lauenburg
+	provinces = {
+		xE000A0
+	}
+	ai_will_do = { always = no }
+}
+LBV = { # Landshut
+	provinces = {
+		xFDA6CB x318021 x565185 xFE59E7
+	}
+	ai_will_do = { always = no }
+}
+LEI = { # Leinster
+	states = {
+		STATE_LEINSTER
+	}
+	ai_will_do = { always = no }
+}
+LIE = { # Liège
+	provinces = {
+		x808061 x3A5FB9 x916574 xEF2040
+	}
+	ai_will_do = { always = no }
+}
+LIV = { # Livonia
+	states = {
+		STATE_LIVONIA
+	}
+	ai_will_do = { always = no }
+}
+LUN = { # Lüneburg
+	provinces = {
+		x392FDA x7C8FD3 xA5E2E8 xC080E0
+	}
+	ai_will_do = { always = no }
+}
+MAG = { # Magdeburg
+	provinces = {
+		x12694A
+	}
+	ai_will_do = { always = no }
+}
+MAI = { # Mainz
+	provinces = {
+		x1141A0 x11C0A0 x90C020 
+	}
+	ai_will_do = { always = no }
+}
+MAT = { # Mantua
+	provinces = {
+		x50C060 x70B8A9
+	}
+	ai_will_do = { always = no }
+}
+MAZ = { # Mazovia
+	states = {
+		STATE_MAZOVIA
+	}
+	ai_will_do = { always = no }
+}
+MBZ = { # Montfort-Bregenz
+	provinces = {
+		xD0C0E0
+	}
+	ai_will_do = { always = no }
+}
+MCD = { # Macedonia
+	states = {
+		STATE_MACEDONIA
+		STATE_SKOPIA
+	}
+	ai_will_do = { always = no }
+}
+MCM = { # Munster
+	states = {
+		STATE_MUNSTER
+	}
+	ai_will_do = { always = no }
+}
+MEM = { # Memmingen
+	provinces = {
+		xC347B1
+	}
+	ai_will_do = { always = no }
+}
+MFA = { # Montferrat
+	provinces = {
+		xA9397D
+	}
+	ai_will_do = { always = no }
+}
+MLD = { # Maldives
+	provinces = {
+		x5B5C22 x95AAA3
+	}
+	ai_will_do = { always = no }
+}
+MLO = { # Milan
+	provinces = {
+		xD04060 x3F1E38 xA40CE9
+	}
+	ai_will_do = { always = no }
+}
+MNT = { # Thomond
+	provinces = {
+		x20E0C0
+	}
+	ai_will_do = { always = no }
+}
+MOE = { # Morea
+	states = {
+		STATE_PELOPONNESE
+	}
+	ai_will_do = { always = no }
+}
+MOV = { # Moravia
+	states = {
+		STATE_MORAVIA
+	}
+	ai_will_do = { always = no }
+}
+MSV = { # Muscovy
+	states = {
+		STATE_MOSCOW
+		STATE_KALUGA
+		STATE_TULA
+		STATE_OREL
+		STATE_VLADIMIR
+	}
+	ai_will_do = { always = no }
+}
+MUN = { # Münster
+	provinces = {
+		x41C0A0 x784B8E x8080E0 x1DD141
+	}
+	ai_will_do = { always = no }
+}
+NAP = { # Naples
+	states = {
+		STATE_CAMPANIA
+	}
+	ai_will_do = { always = no }
+}
+NAX = { # Naxos
+	states = {
+		STATE_CYCLADES
+	}
+	ai_will_do = { always = no }
+}
+NEV = { # Nevers
+	provinces = {
+		x09BB96 xC69235
+	}
+	ai_will_do = { always = no }
+}
+NOL = { # Northumberland
+	states = {
+		STATE_NORTHUMBRIA
+		STATE_YORKSHIRE
+	}
+	ai_will_do = { always = no }
+}
+NOV = { # Novgorod
+	states = {
+		STATE_EAST_KARELIA
+		STATE_OLONETS
+		STATE_INGRIA
+		STATE_NOVGOROD
+		STATE_VOLOGDA
+		STATE_GALICH
+		STATE_USTYUG
+		STATE_NENETSIA
+	}
+	ai_will_do = { always = no }
+}
+NRM = { # Normandy
+	states = {
+		STATE_NORMANDY
+	}
+	ai_will_do = { always = no }
+}
+NUM = { # Nuremberg
+	provinces = {
+		xD0C0A0
+	}
+	ai_will_do = { always = no }
+}
+NZH = { # Nizhny Novgorod
+	states = {
+		STATE_NIZHNY_NOVGOROD
+	}
+	ai_will_do = { always = no }
+}
+ORL = { # Orleans
+	states = {
+		STATE_ORLEANS
+	}
+	ai_will_do = { always = no }
+}
+PAD = { # Paderborn
+	provinces = {
+		x218061
+	}
+	ai_will_do = { always = no }
+}
+PDV = { # Padua
+	provinces = {
+		# TODO
+	}
+	ai_will_do = { always = no }
+}
+PIC = { # Picardy
+	states = {
+		STATE_PICARDY
+	}
+	ai_will_do = { always = no }
+}
+PIS = { # Pisa
+	provinces = {
+		# TO DO
+	}
+	ai_will_do = { always = no }
+}
+PLB = { # Polabia
+	states = {
+		STATE_MECKLENBURG
+		STATE_POMERANIA
+		STATE_BRANDENBURG
+		STATE_SAXONY
+		STATE_ANHALT
+	}	
+	ai_will_do = { always = no }
+}
+PLL = { # The Palatinate
+	provinces = {
+		x11C021 x5D7A68 x707505 x904020 x318061 xE0A2B9 x82F4B9
+	}
+	ai_will_do = { always = no }
+}
+PLS = { # Polotsk
+	states = {
+		STATE_VITEBSK
+		STATE_MOGILEV
+	}
+	ai_will_do = { always = no }
+}
+PML = { # Pomerelia
+	states = {
+		STATE_WEST_PRUSSIA
+	}	
+	ai_will_do = { always = no }
+}
+POM = {
+	states = {
+		STATE_POMERANIA
+	}
+	ai_will_do = { always = no }
+}
+POZ = { # Poznań
+	states = {
+		STATE_POSEN
+	}
+	ai_will_do = { always = no }
+}
+PRO = { # Provence
+	states = {
+		STATE_PROVENCE
+	}
+	ai_will_do = { always = no }
+}
+PSK = { # Pskov
+	provinces = {
+		x0020E0 x042A4F x1AE461 x3266DE x6F9858 x86F5A3 xA981B3 xD0DA34 xD14E99 xD7689F xDF3F5C xF06F29
+	}
+	ai_will_do = { always = no }
+}
+RAG = { # Ragusa
+	provinces = {
+		x11A0E0
+	}
+	ai_will_do = { always = no }
+}
+REG = { # Regensburg
+	provinces = {
+		xA7094D
+	}
+	ai_will_do = { always = no }
+}
+RIG = { # Riga
+	provinces = {
+		x00A0A0 x3B8640 x3FFD66
+	}
+	ai_will_do = { always = no }
+}
+ROT = { # Rothenburg
+	provinces = {
+		x0B0DBA
+	}
+	ai_will_do = { always = no }
+}
+RSO = { # Rostov
+	provinces = {
+		x41FF83 x53CD52 x89264F xE02020 xFA15E7
+	}
+	ai_will_do = { always = no }
+}
+RVA = { # Dortmund
+	provinces = {
+		x0180E0
+	}
+	ai_will_do = { always = no }
+}
+RYA = { # Ryazan
+	states = {
+		STATE_RYAZAN
+	}
+	ai_will_do = { always = no }
+}
+RYU = { # Ryukyu Islands
+	states = {
+		STATE_RYUKYU_ISLANDS
+	}
+	ai_will_do = { always = no }
+}
+SAA = { # Saarland
+	provinces = {
+		x904020 x5D7A68 xD080A0
+	}
+	ai_will_do = { always = no }
+}
+SAD = { # Sardinia
+	states = {
+		STATE_SARDINIA
+	}
+	ai_will_do = { always = no }
+}
+SKL = { # Sicily
+	states = {
+		STATE_SICILY
+	}
+	ai_will_do = { always = no }
+}
+SLN = { # Sligo
+	provinces = {
+		x5DEF58 x85F13B xA060C0
+	}
+	ai_will_do = { always = no }
+}
+SLA = { # Silesia
+	states = {
+		STATE_SILESIA
+	}
+	ai_will_do = { always = no }
+}
+SLZ = { # Salzburg
+	provinces = {
+		x4A9C68 x5D4166 xAB7EB0
+	}
+	ai_will_do = { always = no }
+}
+SMO = { # Smolensk
+	states = {
+		STATE_SMOLENSK
+	}
+	ai_will_do = { always = no }
+}
+SPL = { # Spoleto
+	provinces = {
+		# TODO
+	}
+	ai_will_do = { always = no }
+}
+STE = { # Stettin
+	provinces = {
+		xA04121 xA9BD82 x6A53CF x19AE19 x3C26DD
+	}
+	ai_will_do = { always = no }
+}
+STY = { # Styria
+	states = {
+		STATE_STYRIA
+	}
+	ai_will_do = { always = no }
+}
+SWA = { # Swabia
+	states = {
+		STATE_BADEN
+		STATE_WURTTEMBERG
+	}
+	ai_will_do = { always = no }
+}
+SZO = { # Saluzzo
+	provinces = {
+		# TODO
+	}
+	ai_will_do = { always = no }
+}
+TBZ = { # Trebizond
+	states = {
+		STATE_TRABZON
+	}
+	ai_will_do = { always = no }
+}
+THR = { # Thrace
+	states = {
+		STATE_EASTERN_THRACE
+		STATE_WESTERN_THRACE
+		STATE_NORTHERN_THRACE
+	}
+	required_num_states = 2
+	ai_will_do = { always = no }
+}
+THU = { # Thuringia
+	provinces = {
+		x3C9B93 x4C16EA x5141A0 x51C021 x66FE0A xC00A37 xD0C021
+	}
+	ai_will_do = { always = no }
+}
+TIL = { # Tirol
+	states = {
+		STATE_TYROL
+	}
+	ai_will_do = { always = no }
+}
+TNT = { # Trent
+	states = {
+		STATE_SOUTH_TYROL
+	}
+	ai_will_do = { always = no }
+}
+TOU = { # Toulouse - needs doing properly.
+	states = {
+		STATE_LANGUEDOC
+	}
+	ai_will_do = { always = no }
+}
+TRR = { # Trier
+	provinces = {
+		x29CCD6 xC1B963 xD080A0
+	}
+	ai_will_do = { always = no }
+}
+TRY = { # Tyrconnell
+	provinces = {
+		xA0C0E0
+	}
+	ai_will_do = { always = no }
+}
+TTL = { # Three Leagues
+	states = {
+		STATE_EAST_SWITZERLAND
+	}
+	ai_will_do = { always = no }
+}
+TVE = { # Tver
+	states = {
+		STATE_TVER
+	}
+	ai_will_do = { always = no }
+}
+TYR = { # Tyrone
+	provinces = {
+		xAEAF93 x0A38AF x2BE1C8 xA06040 xAA6FA1 xCFCD2B
+	}
+	ai_will_do = { always = no }
+}
+UBV = { # Munich
+	provinces = {
+		x18A2E1 x3101A0 x68CE1C x8C26DD xB00121 xE76994
+	}
+	ai_will_do = { always = no }
+}
+ULM = { # Ulm
+	provinces = {
+		xDBB84C
+	}
+	ai_will_do = { always = no }
+}
+URB = { # Urbino
+	provinces = {
+		xFE3729 xD3A384
+	}
+	ai_will_do = { always = no }
+}
+UTR = { # Utrecht
+	provinces = {
+		x4141A0 xC041A0 xC04021
+	}
+	ai_will_do = { always = no }
+}
+VAL = { # Valencia
+	states = {
+		STATE_VALENCIA
+	}
+	ai_will_do = { always = no }
+}
+VER = { # Verden
+	provinces = {
+		x418061 xC08061 xF54C13
+	}
+	ai_will_do = { always = no }
+}
+VRD = { # Vardaria
+	states = {
+		STATE_SKOPIA
+	}
+	ai_will_do = { always = no }
+}
+VRM = { # Vermont
+	states = {
+		STATE_VERMONT
+	}
+	ai_will_do = { always = no }
+}
+YAR = { # Yaroslavl
+	states = {
+		STATE_YAROSLAVL
+	}
+	ai_will_do = { always = no }
+}
+ZAZ = { # Zaporizhia
+	states = { 
+		STATE_CHERSON
+		STATE_YEKATERINOSLAV
+	}
+	ai_will_do = { always = no }
+}
+
+## -- scratchpad
+
+KEN = { # Kenya
+	states = {
+		STATE_KENYA
+		STATE_RIFT_VALLEY
+	}
+	ai_will_do = { always = no }
+}
+NIG = { # Nigeria
+	states = {
+		STATE_BENIN
+		STATE_NIGER_DELTA
+		STATE_YORUBA_STATES
+		STATE_HAUSALAND
+		STATE_EAST_HAUSALAND
+		STATE_NIGERIA
+		STATE_BORNU
+	}
+	ai_will_do = { always = no }
+}
+NMB = { # Namibia
+	states = {
+		STATE_HEREROLAND
+		STATE_NAMAQUALAND 
+	}
+	ai_will_do = { always = no }
+}
+
+HKG = { # Hong Kong
+	provinces = {
+		xB03161
+	}
+	ai_will_do = { always = no }
+}
+MCC = { # Macao
+	provinces = {
+		xB031E0
+	}
+	ai_will_do = { always = no }
+}
+SGP = { # Singapore
+	provinces = {
+		xC00130
+	}
+	ai_will_do = { always = no }
+}
+
+# Pirates
+
+NSS = { # New Providence
+	provinces = {
+		x4EBC79
+	}
+	ai_will_do = { always = no }
+}
+PRY = { # Port Royal
+	provinces = {
+		x7070B8
+	}
+	ai_will_do = { always = no }
+}
+TOR = { # Tortuga
+	provinces = {
+		xEA2C2D
+	}
+	ai_will_do = { always = no }
+}
+
+# Rhodes
+
+KNI = { # Rhodes
+	provinces = {
+		xE011A0
+	}
+	ai_will_do = { always = no }
+}

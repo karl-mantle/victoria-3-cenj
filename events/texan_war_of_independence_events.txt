@@ -177,17 +177,16 @@ texan_war_of_independence.3 = {
 	type = country_event
 	placement = ROOT
 	event_image = {
-		texture = "gfx/event_pictures/the_surrender_of_santa_anna.dds"
+		video = "europenorthamerica_before_the_battle"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
-	title = texan_war_of_independence.3.title
-	desc = texan_war_of_independence.3.desc
-	flavor = texan_war_of_independence.3.flavor
+	title = texan_war_of_independence.3.t
+	desc = texan_war_of_independence.3.d
+	flavor = texan_war_of_independence.3.f
 
 	duration = 3
 
@@ -236,7 +235,7 @@ texan_war_of_independence.3 = {
 	}
 
 	option = {
-		name = texan_war_of_independence.3.treaty
+		name = texan_war_of_independence.3.a
 		default_option = yes
 		every_diplomatic_play = {
 			limit = {
@@ -265,7 +264,7 @@ texan_war_of_independence.3 = {
 		}		
 	}
 	option = {
-		name = texan_war_of_independence.3.revenge
+		name = texan_war_of_independence.3.b	
 		c:MEX = {
 			random_scope_character = {
 				limit = {

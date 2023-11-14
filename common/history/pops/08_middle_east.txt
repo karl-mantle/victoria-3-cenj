@@ -228,7 +228,7 @@
 			}
 		}
 	}
-	s:STATE_HAIL = {		
+	s:STATE_HADHRAMAUT = {		
 		region_state:MAH = {
 			create_pop = {
 				culture = bedouin

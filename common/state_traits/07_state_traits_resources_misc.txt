@@ -4,8 +4,8 @@ state_trait_rosendale_cement = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_cement.dds"
 	
 	modifier = {
-		building_cement_factory_throughput_mult = 0.2
-		building_output_cement_mult = 0.1
+		building_cement_factory_throughput_add = 0.2
+		goods_output_cement_mult = 0.1
 	}
 }
 
@@ -15,8 +15,8 @@ state_trait_mocha = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coffee.dds"
 	
 	modifier = {
-		building_coffee_plantation_throughput_mult = 0.2
-		building_output_coffee_mult = 0.1
+		building_coffee_plantation_throughput_add = 0.2
+		goods_output_coffee_mult = 0.1
 	}
 }
 
@@ -26,9 +26,9 @@ state_trait_cottonopolis = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_fabric.dds"
 	
 	modifier = {
-		building_textile_mills_throughput_mult = 0.2
-		building_output_clothes_mult = 0.1
-		building_output_luxury_clothes_mult = 0.05
+		building_textile_mills_throughput_add = 0.2
+		goods_output_clothes_mult = 0.1
+		goods_output_luxury_clothes_mult = 0.05
 	}
 }
 
@@ -38,8 +38,8 @@ state_trait_turqoise_deposits = {
 	icon = "gfx/interface/icons/state_trait_icons/turquoise.dds"
 
 	modifier = {
-		building_dye_plantation_throughput_mult = 0.2
-		building_output_dye_mult = 0.1
+		building_dye_plantation_throughput_add = 0.2
+		goods_output_dye_mult = 0.1
 	}
 }
 
@@ -49,8 +49,8 @@ state_trait_north_sea_fishing = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
 	
 	modifier = {
-		building_group_bg_fishing_throughput_mult = 0.2
-		building_output_fish_mult = 0.1
+		building_group_bg_fishing_throughput_add = 0.2
+		goods_output_fish_mult = 0.1
 	}
 }
 
@@ -58,8 +58,8 @@ state_trait_yukon_river_salmon_run = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
 	
 	modifier = {
-		building_group_bg_fishing_throughput_mult = 0.2
-		building_output_fish_mult = 0.1
+		building_group_bg_fishing_throughput_add = 0.2
+		goods_output_fish_mult = 0.1
 	}
 }
 
@@ -67,8 +67,8 @@ state_trait_grand_banks_fisheries = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
 	
 	modifier = {
-		building_group_bg_fishing_throughput_mult = 0.2
-		building_output_fish_mult = 0.1
+		building_group_bg_fishing_throughput_add = 0.2
+		goods_output_fish_mult = 0.1
 	}
 }
 
@@ -78,9 +78,9 @@ state_trait_the_potteries = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_porcelain.dds"
 	
 	modifier = {
-		building_brickworks_throughput_mult = 0.1
-		building_glassworks_throughput_mult = 0.1
-		building_output_porcelain_mult = 0.25
+		building_brickworks_throughput_add = 0.1
+		building_glassworks_throughput_add = 0.1
+		goods_output_porcelain_mult = 0.25
 	}
 }
 
@@ -88,9 +88,9 @@ state_trait_satsuma_ware = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_porcelain.dds"
 	
 	modifier = {
-		building_brickworks_throughput_mult = 0.1
-		building_glassworks_throughput_mult = 0.1
-		building_output_porcelain_mult = 0.25
+		building_brickworks_throughput_add = 0.1
+		building_glassworks_throughput_add = 0.1
+		goods_output_porcelain_mult = 0.25
 	}
 }
 
@@ -100,8 +100,8 @@ state_trait_demerara_sugar = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_sugar.dds"
 	
 	modifier = {
-		building_sugar_plantation_throughput_mult = 0.2
-		building_output_sugar_mult = 0.1
+		building_sugar_plantation_throughput_add = 0.2
+		goods_output_sugar_mult = 0.1
 	}
 }
 
@@ -111,8 +111,8 @@ state_trait_assam_tea = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
 	
 	modifier = {
-		building_tea_plantation_throughput_mult = 0.2
-		building_output_tea_mult = 0.1
+		building_tea_plantation_throughput_add = 0.2
+		goods_output_tea_mult = 0.1
 	}
 }
 
@@ -120,8 +120,8 @@ state_trait_darjeeling_tea = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
 	
 	modifier = {
-		building_tea_plantation_throughput_mult = 0.2
-		building_output_tea_mult = 0.1
+		building_tea_plantation_throughput_add = 0.2
+		goods_output_tea_mult = 0.1
 	}
 }
 
@@ -129,8 +129,8 @@ state_trait_ceylon_tea = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
 	
 	modifier = {
-		building_tea_plantation_throughput_mult = 0.2
-		building_output_tea_mult = 0.1
+		building_tea_plantation_throughput_add = 0.2
+		goods_output_tea_mult = 0.1
 	}
 }
 
@@ -138,8 +138,8 @@ state_trait_rooibos_tea = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tea.dds"
 	
 	modifier = {
-		building_tea_plantation_throughput_mult = 0.2
-		building_output_tea_mult = 0.1
+		building_tea_plantation_throughput_add = 0.2
+		goods_output_tea_mult = 0.1
 	}
 }
 
@@ -149,8 +149,8 @@ state_trait_burley_tobacco = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
 	
 	modifier = {
-		building_tobacco_plantation_throughput_mult = 0.2
-		building_output_tobacco_mult = 0.1
+		building_tobacco_plantation_throughput_add = 0.2
+		goods_output_tobacco_mult = 0.1
 	}
 }
 
@@ -158,8 +158,8 @@ state_trait_latakia_tobacco = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
 	
 	modifier = {
-		building_tobacco_plantation_throughput_mult = 0.2
-		building_output_tobacco_mult = 0.1
+		building_tobacco_plantation_throughput_add = 0.2
+		goods_output_tobacco_mult = 0.1
 	}
 }
 
@@ -167,8 +167,8 @@ state_trait_oriental_tobacco = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
 	
 	modifier = {
-		building_tobacco_plantation_throughput_mult = 0.1
-		building_output_tobacco_mult = 0.05
+		building_tobacco_plantation_throughput_add = 0.1
+		goods_output_tobacco_mult = 0.05
 	}
 }
 
@@ -176,8 +176,8 @@ state_trait_perique_tobacco = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
 	
 	modifier = {
-		building_tobacco_plantation_throughput_mult = 0.2
-		building_output_tobacco_mult = 0.1
+		building_tobacco_plantation_throughput_add = 0.2
+		goods_output_tobacco_mult = 0.1
 	}
 }
 
@@ -185,8 +185,8 @@ state_trait_virginia_tobacco = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_tobacco.dds"
 	
 	modifier = {
-		building_tobacco_plantation_throughput_mult = 0.2
-		building_output_tobacco_mult = 0.1
+		building_tobacco_plantation_throughput_add = 0.2
+		goods_output_tobacco_mult = 0.1
 	}
 }
 
@@ -196,7 +196,7 @@ state_trait_arctic_whaling = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_whales.dds"
 	
 	modifier = {
-		building_group_bg_whaling_throughput_mult = 0.2
+		building_group_bg_whaling_throughput_add = 0.2
 	}
 }
 
@@ -204,7 +204,7 @@ state_trait_antarctic_whaling = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_whales.dds"
 	
 	modifier = {
-		building_group_bg_whaling_throughput_mult = 0.2
+		building_group_bg_whaling_throughput_add = 0.2
 	}
 }
 
@@ -212,7 +212,7 @@ state_trait_new_england_whaling = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_whales.dds"
 	
 	modifier = {
-		building_group_bg_whaling_throughput_mult = 0.2
+		building_group_bg_whaling_throughput_add = 0.2
 	}
 }
 
@@ -222,8 +222,8 @@ state_trait_mission_grapes = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_wine.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -231,8 +231,8 @@ state_trait_wine_region_bordeaux = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -240,8 +240,8 @@ state_trait_wine_region_burgundy = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -249,8 +249,8 @@ state_trait_wine_region_champagne = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -258,8 +258,8 @@ state_trait_wine_region_tuscany = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -267,8 +267,8 @@ state_trait_wine_region_piedmont = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -276,8 +276,8 @@ state_trait_wine_region_rhone_valley = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -285,8 +285,8 @@ state_trait_wine_region_la_rioja = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -294,8 +294,8 @@ state_trait_wine_region_douro_valley = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }
 
@@ -303,7 +303,7 @@ state_trait_wine_region_veneto = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyards.dds"
 	
 	modifier = {
-		#building_vineyard_throughput_mult = 0.2
-		building_output_wine_mult = 0.1
+		building_vineyard_plantation_throughput_add = 0.2
+		goods_output_wine_mult = 0.1
 	}
 }

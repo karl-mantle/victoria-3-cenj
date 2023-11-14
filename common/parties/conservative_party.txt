@@ -726,7 +726,10 @@ conservative_party = {
 					NOT = { has_law = law_type:law_monarchy }
 					exists = py:conservative_party
 					any_interest_group = {
-						is_member_of_party = owner.py:conservative_party
+						has_party = yes
+						party = {
+							is_party_type = conservative_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_orleanist
@@ -757,9 +760,11 @@ conservative_party = {
 					}
 				}
 				owner = {
-					exists = py:conservative_party
 					any_interest_group = {
-						is_member_of_party = owner.py:conservative_party
+						has_party = yes
+						party = {
+							is_party_type = conservative_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_orleanist
@@ -781,9 +786,11 @@ conservative_party = {
 					}
 				}
 				owner = {
-					exists = py:conservative_party
 					any_interest_group = {
-						is_member_of_party = owner.py:conservative_party
+						has_party = yes
+						party = {
+							is_party_type = conservative_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_legitimist
@@ -805,9 +812,11 @@ conservative_party = {
 					}
 				}
 				owner = {
-					exists = py:conservative_party
 					any_interest_group = {
-						is_member_of_party = owner.py:conservative_party
+						has_party = yes
+						party = {
+							is_party_type = conservative_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_bonapartist
@@ -820,9 +829,6 @@ conservative_party = {
 				desc = "from_french_monarchist_rival"
 			}
 		}
-
-
-
 		if = {
 			limit = {
 				owner = {
@@ -846,6 +852,38 @@ conservative_party = {
 			}
 			add = {
 				value = 1000
+				desc = "from_jacksonian_democrat"
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+	         		has_variable = only_valid_party
+	         	}
+				owner.var:only_valid_party = {
+					is_party_type = conservative_party
+				}
+	         	owner.ruler = {
+					this.interest_group = prev
+				}
+			}
+			add = {
+				value = 1000
+				desc = "from_only_legal_party"
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+	         		has_variable = only_valid_party
+	         	}
+	         	 owner.var:only_valid_party = {
+		        	is_party_type = conservative_party
+		        }
+			}
+			add = {
+				value = 3
+				desc = "from_only_legal_party"
 			}
 		}
 	}

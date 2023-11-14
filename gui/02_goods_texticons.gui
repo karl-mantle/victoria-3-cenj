@@ -19,9 +19,9 @@ texticon = {
 }
 
 texticon = {
-	icon = chemicals
+	icon = clay
 	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/chemicals.dds"
+		texture = "gfx/interface/icons/goods_icons/clay.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18
@@ -29,9 +29,9 @@ texticon = {
 }
 
 texticon = {
-	icon = clay
+	icon = cocoa
 	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/clay.dds"
+		texture = "gfx/interface/icons/goods_icons/cocoa.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18
@@ -112,6 +112,16 @@ texticon = {
 	icon = silver
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/silver.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = spices
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/spices.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18

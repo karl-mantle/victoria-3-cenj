@@ -13,18 +13,9 @@
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 50
+			country_convoys_capacity_add = 50 # 20
 		}
 	}
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_infrastructure_add = 0
-		}
-	}
-	
-	#ai_value = 500 # Equivalent to 50 convoys
-	# removed otherwise the ai maxes out its ports before upgrading the production method...
 }			
 
 pm_basic_port = {
@@ -32,7 +23,7 @@ pm_basic_port = {
 	
 	building_modifiers = {
 		workforce_scaled = {	
-			building_input_clippers_add = 5
+			goods_input_clippers_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 3000
@@ -51,7 +42,7 @@ pm_basic_port = {
 			state_infrastructure_add = 5
 		}
 	}
-}			
+}		
 
 pm_industrial_port = {
 	texture = "gfx/interface/icons/production_method_icons/industrial_port.dds"
@@ -62,8 +53,8 @@ pm_industrial_port = {
 
 	building_modifiers = {
 		workforce_scaled = {	
-			building_input_steamers_add = 5
-			building_input_coal_add = 5
+			goods_input_steamers_add = 5
+			goods_input_coal_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 2000
@@ -75,7 +66,7 @@ pm_industrial_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 250
+			country_convoys_capacity_add = 250 # 175
 		}
 	}
 	state_modifiers = {
@@ -93,8 +84,8 @@ pm_modern_port = {
 	
 	building_modifiers = {
 		workforce_scaled = {	
-			building_input_steamers_add = 5	
-			building_input_oil_add = 5
+			goods_input_steamers_add = 5	
+			goods_input_oil_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 750
@@ -106,7 +97,7 @@ pm_modern_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 400
+			country_convoys_capacity_add = 400 # 200
 		}
 	}
 	state_modifiers = {
@@ -160,8 +151,8 @@ pm_horizontal_drawer_cabinets = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 5
-			building_input_oil_add = 0.05
+			goods_input_paper_add = 5
+			goods_input_oil_add = 0.05
 		}			
 	
 		level_scaled = {
@@ -190,8 +181,8 @@ pm_vertical_filing_cabinets = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 10
-			building_input_oil_add = 0.01
+			goods_input_paper_add = 10
+			goods_input_oil_add = 0.01
 		}	
 	
 		level_scaled = {
@@ -220,9 +211,9 @@ pm_switch_boards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 20
-			building_input_telephones_add = 5
-			building_input_oil_add = 0.2
+			goods_input_paper_add = 20
+			goods_input_telephones_add = 5
+			goods_input_oil_add = 0.2
 		}
 
 		level_scaled = {
@@ -250,8 +241,8 @@ pm_hereditary_bureaucrats = {
 pm_professional_bureaucrats = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 	
-	disallowing_laws = {
-		law_hereditary_bureaucrats
+	unlocking_laws = {
+		law_meritocratic_bureaucracy
 	}	
 	
 	building_modifiers = {
@@ -302,8 +293,8 @@ pm_scholastic_education = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 2.5
-			building_input_oil_add = 0.05
+			goods_input_paper_add = 2.5
+			goods_input_oil_add = 0.05
 		}	
 	
 		level_scaled = {
@@ -334,9 +325,9 @@ pm_philosophy_department = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 5
-			building_input_literature_add = 1.5
-			building_input_oil_add = 0.05
+			goods_input_paper_add = 5
+			goods_input_literature_add = 1.5
+			goods_input_oil_add = 0.05
 		}
 		
 		level_scaled = {
@@ -367,9 +358,9 @@ pm_analytical_philosophy_department = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_oil_add = 0.1
-			building_input_paper_add = 10
-			building_input_literature_add = 2.5
+			goods_input_oil_add = 0.1
+			goods_input_paper_add = 10
+			goods_input_literature_add = 2.5
 		}
 		
 		level_scaled = {
@@ -420,14 +411,14 @@ pm_skyscraper_bureaucratic_nexus = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			building_government_administration_throughput_mult = 0.25
+			building_government_administration_throughput_add = 0.25
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 25
-			building_input_oil_add = 0.125
+			goods_input_paper_add = 25
+			goods_input_oil_add = 0.125
 		}
 
 		level_scaled = {
@@ -449,8 +440,8 @@ pm_skyscraper_trade_nexus = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 25
-			building_input_oil_add = 0.125
+			goods_input_paper_add = 25
+			goods_input_oil_add = 0.125
 		}
 
 		level_scaled = {
@@ -479,70 +470,7 @@ pm_airship_mooring_post = {
 	}
 }
 
-pm_merchant_guilds_building_port = {
-	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
-
-	disallowing_laws = {
-		law_command_economy
-		law_cooperative_ownership
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-		}
-		unscaled = {
-			#building_shopkeepers_shares_add = 10
-		}
-	}
-}
-
-pm_privately_owned_building_port = {
-	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
-
-	unlocking_technologies = {
-		gantry_cranes
-	}
-
-	disallowing_laws = {
-		law_command_economy
-		law_cooperative_ownership
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_capitalists_add = 100
-		}
-		unscaled = {
-			#building_capitalists_shares_add = 5
-		}
-	}
-}
-
-pm_government_run_building_port = {
-	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
-	
-	unlocking_technologies = {
-		gantry_cranes
-	}
-	
-	unlocking_laws = {
-		law_command_economy
-		law_interventionism
-	}
-	
-	building_modifiers = {
-		level_scaled = {
-			building_employment_bureaucrats_add = 150
-		}
-		unscaled = {
-			#building_government_shares_add = 1
-		}
-		workforce_scaled = {
-			building_output_securities_add = 0.1
-		}
-	}
-}
+# Added
 
 pm_mint_currency_standard = {
 	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
@@ -554,8 +482,8 @@ pm_mint_currency_standard = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_lead_add = 25 # 1000
-			building_input_copper_add = 15 # 525
+			goods_input_lead_add = 25 # 1000
+			goods_input_copper_add = 15 # 525
 		}
 
 		level_scaled = {
@@ -580,9 +508,9 @@ pm_mint_currency_silver_standard = {
 
 	building_modifiers = {
 		workforce_scaled = { # 
-			building_input_silver_add = 15 # 750
-			building_input_lead_add = 25 # 1000
-			building_input_copper_add = 10 # 350
+			goods_input_silver_add = 15 # 750
+			goods_input_lead_add = 25 # 1000
+			goods_input_copper_add = 10 # 350
 		}
 
 		level_scaled = {
@@ -607,9 +535,9 @@ pm_mint_currency_gold_standard = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_gold_add = 10 # 1000
-			building_input_lead_add = 25 # 1000
-			building_input_copper_add = 10 # 350
+			goods_input_gold_add = 10 # 1000
+			goods_input_lead_add = 25 # 1000
+			goods_input_copper_add = 10 # 350
 		}
 
 		level_scaled = {
@@ -634,7 +562,7 @@ pm_mint_currency_fiat_money = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_securities_add = 30 # 2000
+			goods_input_securities_add = 30 # 2000
 		}
 
 		level_scaled = {
@@ -648,4 +576,38 @@ pm_mint_currency_fiat_money = {
 			country_minting_add = 4000
 		}
 	}
+}
+
+pm_military_academia = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_military.dds"
+	
+	unlocking_laws = {
+		law_military_schools
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_officers_add = 1000
+			building_employment_academics_add = 1000
+		}
+	}			
+}
+
+pm_military_bureaucrats = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_military.dds"
+	
+	disallowing_laws = {
+		law_no_armed_forces
+	}	
+
+	#unlocking_laws = {
+		#law_military_junta
+	#}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_officers_add = 250
+			building_employment_bureaucrats_add = 250
+		}
+	}			
 }

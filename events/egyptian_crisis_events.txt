@@ -9,11 +9,10 @@ egyptian_crisis_events.1 = {
 	flavor = egyptian_crisis_events.1.f
 
 	event_image = {
-		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+		video = "middleeast_courtroom_upheaval"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
@@ -27,9 +26,9 @@ egyptian_crisis_events.1 = {
 			OR = {
 				has_play_goal = conquer_state
 				has_play_goal = return_state
-				has_play_goal = make_dominion
-				has_play_goal = make_vassal
-				has_play_goal = make_puppet
+				has_play_goal = reduce_autonomy
+				has_play_goal = make_tributary
+				has_play_goal = make_protectorate
 			}
 		}
 		NOT = {
@@ -96,37 +95,29 @@ egyptian_crisis_events.1 = {
 		c:EGY = {
 			trigger_event = { id = egyptian_crisis_events.2 }
 		}
-
-		ai_chance = {
-			base = 1
-		}
 	}
 
-	option = {
+    option = {
 		name = egyptian_crisis_events.1.b
-		#default_option = yes
-		every_country = {
-			limit = {
-				country_rank = rank_value:great_power
-				country_is_in_europe = yes
-				NOR = {
-					has_interest_marker_in_region = region_syria
-					c:EGY = this
-					c:TUR = this
-					has_war_with = c:TUR
-					has_war_with = c:EGY
-				}
-			}
-			hidden_effect = { trigger_event = { id = egyptian_crisis_events.4 } }
-			custom_tooltip = egyptian_crisis_events.1.a.tt
-		}
-		c:EGY = {
-			trigger_event = { id = egyptian_crisis_events.2 }
-		}
-
-		ai_chance = {
-			base = 0
-		}
+        default_option = yes
+        every_country = {
+        	limit = {
+        		country_rank = rank_value:great_power
+        		country_is_in_europe = yes
+        		NOR = {
+        			has_interest_marker_in_region = region_syria
+        			c:EGY = this
+        			c:TUR = this
+        			has_war_with = c:TUR
+        			has_war_with = c:EGY
+        		}
+        	}
+        	hidden_effect = { trigger_event = { id = egyptian_crisis_events.4 } }
+        	custom_tooltip = egyptian_crisis_events.1.a.tt
+        }
+        c:EGY = {
+        	trigger_event = { id = egyptian_crisis_events.2 }
+        }
 	}
 }
 
@@ -139,11 +130,10 @@ egyptian_crisis_events.2 = {
 	flavor = egyptian_crisis_events.2.f
 
 	event_image = {
-		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+		video = "middleeast_courtroom_upheaval"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
@@ -161,7 +151,7 @@ egyptian_crisis_events.2 = {
 
 	option = {
 		name = egyptian_crisis_events.2.a
-		default_option = yes
+        default_option = yes
 		custom_tooltip = egyptian_crisis_events.2.a.tt
 	}
 }
@@ -175,11 +165,10 @@ egyptian_crisis_events.4 = {
 	flavor = egyptian_crisis_events.4.f
 
 	event_image = {
-		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+		video = "middleeast_courtroom_upheaval"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
@@ -199,10 +188,7 @@ egyptian_crisis_events.4 = {
 		name = egyptian_crisis_events.4.a
 		default_option = yes
 
-		add_declared_interest = region_arabic
 		add_declared_interest = region_syria
-		add_declared_interest = region_karamania
-		add_declared_interest = region_anatolia
 
 		hidden_effect = {
 			set_secret_goal = {

@@ -1,0 +1,1221 @@
+﻿# Mexico - MEX
+
+	mex_general_diaz = {
+		first_name = Porfirio
+		last_name = DIaz
+		historical = yes
+		culture = cu:mexican
+		female = no
+		religion = catholic
+		commander_rank = default
+		interest_group = ig_armed_forces
+		ideology = ideology_reformer
+		birth_date = 1830.9.15
+		traits = {
+			ambitious
+			basic_defensive_strategist
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			role = general
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1890.1.1	
+			chance = 75
+		}
+	}
+	mex_general_zaragoza = {
+		first_name = Ignacio
+		last_name = Zaragoza
+		historical = yes
+		culture = cu:mexican
+		female = no
+		religion = catholic
+		commander_rank = default
+		interest_group = ig_petty_bourgeoisie
+		ideology = ideology_radical
+		birth_date = 1829.3.24
+		traits = {
+			stalwart_defender
+			direct
+			celebrity_commander
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			role = general
+			earliest_usage_date = 1856.1.1
+			latest_usage_date = 1880.1.1	
+			chance = 75
+		}
+	}
+
+# United States - USA
+
+	usa_general_jesup = {
+		first_name = Thomas
+		last_name = Jesup
+		historical = yes
+		culture = cu:dixie
+		female = no
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1788.12.16
+		traits = {
+			meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1860.1.1	
+			chance = 75
+		}
+	}
+	usa_admiral_shubrick = {
+		first_name = William
+		last_name = Shubrick
+		historical = yes
+		culture = cu:dixie # Stayed loyal to the union during civil war, but from S.Car
+		female = no
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1790.10.31
+		traits = {
+			experienced_naval_commander
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1862.1.1	
+			chance = 75
+		}
+	}
+	usa_admiral_dewey = {
+		first_name = George
+		last_name = Dewey
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1837.12.26
+		traits = {
+			experienced_naval_commander
+			persistent
+			brave
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = admiral
+			earliest_usage_date = 1861.1.1
+			latest_usage_date = 1903.1.1	
+			chance = 50
+		}
+	}
+	usa_admiral_farragut = {
+		first_name = David
+		last_name = Farragut
+		historical = yes
+		culture = cu:dixie # NB Southern Unionist, regarded seccessionists as traitors
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1801.7.5
+		traits = {
+			experienced_naval_commander
+			direct
+			brave
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = admiral
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1860.1.1	
+			chance = 50
+		}
+	}
+	usa_admiral_perry = {
+		first_name = Matthew
+		last_name = Perry
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1794.4.10
+		traits = {
+			innovative
+			dockyard_master
+			explorer
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = admiral
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1855.1.1	
+			chance = 50
+		}
+	}
+	usa_admiral_buchanan = {
+		first_name = Franklin
+		last_name = Buchanan
+		historical = yes
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1800.9.17
+		traits = {
+			experienced_naval_commander
+			dockyard_master
+			innovative
+		}
+		commander_usage = {
+			country_trigger = {
+				OR ={
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CSA }
+					}
+					AND = {
+						exists = c:CSA
+						this = c:CSA
+					}
+				}
+			}
+			role = admiral
+			earliest_usage_date = 1841.1.1
+			latest_usage_date = 1860.1.1	
+			chance = 50
+		}
+	}
+	usa_general_lee = {
+		first_name = Robert
+		last_name = Lee
+		historical = yes
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_landowners
+		birth_date = 1807.1.19
+		traits = {
+			experienced_defensive_strategist
+			innovative
+			direct
+		}
+		commander_usage = {
+			country_trigger = {
+				OR ={
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CSA }
+					}
+					AND = {
+						exists = c:CSA
+						this = c:CSA
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1846.1.1
+			latest_usage_date = 1870.1.1	
+			chance = 50
+		}
+	}
+	usa_general_jackson = {
+		first_name = Thomas
+		last_name = Jackson
+		historical = yes
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1824.1.21
+		traits = {
+			surveyor
+			stalwart_defender
+			brave
+		}
+		commander_usage = {
+			country_trigger = {
+				OR ={
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CSA }
+					}
+					AND = {
+						exists = c:CSA
+						this = c:CSA
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1846.1.1
+			latest_usage_date = 1870.1.1	
+			chance = 50
+		}
+	}
+	usa_general_longstreet = {
+		first_name = James
+		last_name = Longstreet
+		historical = yes
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_radical
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1821.1.8
+		traits = {
+			experienced_offensive_planner
+			expert_defensive_strategist
+			brave
+		}
+		commander_usage = {
+			country_trigger = {
+				OR ={
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CSA }
+					}
+					AND = {
+						exists = c:CSA
+						this = c:CSA
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1846.1.1
+			latest_usage_date = 1874.1.1	
+			chance = 50
+		}
+	}
+	usa_general_sherman = {
+		first_name = William_Tecumseh
+		last_name = Sherman
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1820.2.8
+		traits = {
+			expert_offensive_planner
+			resupply_commander
+			pillager
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1870.1.1	
+			chance = 50
+		}
+	}
+	usa_general_chaffee = {
+		first_name = Adna
+		last_name = Chaffee
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1842.4.14
+		traits = {
+			innovative
+			basic_offensive_planner
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1882.1.1
+			latest_usage_date = 1906.1.1	
+			chance = 50
+		}
+	}
+	usa_general_grant = {
+		first_name = Ulysses
+		last_name = Grant
+		historical = yes
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_radical
+		commander_rank = default
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1822.1.21
+		traits = {
+			experienced_offensive_planner
+			persistent
+			alcoholic
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1846.1.1
+			latest_usage_date = 1874.1.1	
+			chance = 50
+		}
+	}
+	usa_general_pershing = {
+		first_name = John
+		last_name = Pershing
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1860.9.13
+		traits = {
+			experienced_offensive_planner
+			persistent
+			reserved
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1895.1.1
+			latest_usage_date = 1920.1.1	
+			chance = 50
+		}
+	}
+	usa_general_sheridan = {
+		first_name = Philip
+		last_name = Sheridan
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1831.3.6
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1865.1.1
+			latest_usage_date = 1890.1.1	
+			chance = 50
+		}
+	}
+	usa_custer_character_template = { # Colonel Custer
+		first_name = George_Armstrong
+		last_name = Custer
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_armed_forces
+		dna = dna_george_armstrong_custer
+		birth_date = 1839.12.5
+		traits = { reckless experienced_defensive_strategist }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1876.6.25
+			chance = 90
+		}
+	}
+	usa_macarthur_character_template = {
+		first_name = Douglas
+		last_name = MacArthur
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1880.1.26
+		dna = dna_douglas_macarthur
+		traits = { 
+			popular_commander
+			#experienced_artillery_commander
+			experienced_offensive_planner
+		}
+		commander_usage = {
+			country_trigger = {
+				AND = {
+					exists = c:USA
+					this = c:USA
+				}
+			}
+			role = general
+			earliest_usage_date = 1912.1.1
+			latest_usage_date = 1964.4.5
+			chance = 50
+		}
+	}
+	usa_general_worth = {
+		first_name = William
+		last_name = Worth
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1794.3.1
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1849.5.17	
+			chance = 81
+		}
+	}
+	usa_general_wool = {
+		first_name = John
+		last_name = Wool
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1787.2.20
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1861.4.3
+			chance = 88
+		}
+	}
+	usa_general_watts = {
+		first_name = Stephen
+		last_name = Watts
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1787.2.20
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1861.4.3
+			chance = 88
+		}
+	}
+	usa_general_trist = {
+		first_name = Nicholas
+		last_name = Trist
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1800.6.2
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1874.2.11
+			chance = 77
+		}
+	}
+	usa_general_ambrose = {
+		first_name = Ambrose
+		last_name = Burnside # Sideburns
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1824.5.23
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1881.9.13
+			chance = 77
+		}
+	}
+	usa_general_pope = {
+		first_name = John
+		last_name = Pope
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_abolitionist
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1822.3.16
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1849.1.1
+			latest_usage_date = 1892.9.23
+			chance = 77
+		}
+	}
+	usa_general_beauragard = {
+		first_name = Pierre
+		last_name = Beauregard
+		historical = yes
+		culture = cu:cajun
+		female = no
+		religion = protestant
+		ideology = ideology_slaver
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1818.5.28
+		traits = {
+			experienced_offensive_planner
+			pillager
+			cruel
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+				# Add to CSA too
+			}
+			role = general
+			earliest_usage_date = 1849.1.1
+			latest_usage_date = 1893.2.20
+			chance = 82
+		}
+	}
+	usa_general_meade = {
+		first_name = George
+		last_name = Mead
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_slaver
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1815.12.31
+		traits = {
+			experienced_offensive_planner
+			cautious
+			persistent
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1838.1.1
+			latest_usage_date = 1872.11.6
+			chance = 82
+		}
+	}
+	usa_general_slemmer = {
+		first_name = Adam_J
+		last_name = Slemmer
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_agrarian
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1828.1.24
+		traits = {
+			experienced_offensive_planner
+			pillager
+			persistent
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1843.1.1
+			latest_usage_date = 1868.10.7
+			chance = 82
+		}
+	}
+	usa_general_butler = {
+		first_name = Smedley
+		last_name = Butler
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_proletarian
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1881.7.24
+		traits = {
+			experienced_offensive_planner
+			pillager
+			direct
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1904.1.1
+			latest_usage_date = 1936.1.1
+			chance = 99
+		}
+	}
+	usa_general_abbott_fred = {
+		first_name = Frederic_V
+		last_name = Abbott
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1858.3.4
+		traits = {
+			arrogant
+			pillager
+			direct
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1882.1.1
+			latest_usage_date = 1928.9.26
+			chance = 99
+		}
+	}
+	usa_general_garlington = {
+		first_name = Ernest
+		last_name = Garlington
+		historical = yes
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1853.2.20
+		traits = {
+			imperious
+			ambitious
+			direct
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1875.1.1
+			latest_usage_date = 1924.10.16
+			chance = 99
+		}
+	}
+	usa_general_bundy = {
+		first_name = Omar
+		last_name = Bundy
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1861.6.17
+		traits = {
+			arrogant
+			reckless
+			direct
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1885.1.1
+			latest_usage_date = 1936.1.1
+			chance = 99
+		}
+	}
+	usa_general_durfee = {
+		first_name = Lucius
+		last_name = Durfee
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1861.6.17
+		traits = {
+			reserved
+			reckless
+				meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1886.1.1
+			latest_usage_date = 193.3.19
+			chance = 99
+		}
+	}
+	usa_general_forsyth = {
+		first_name = James
+		last_name = Forsyth
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1834.8.8
+		traits = {
+			reserved
+			reckless
+				meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1859.1.1
+			latest_usage_date = 1906.10.24
+			chance = 99
+		}
+	}
+	usa_general_miles = {
+		first_name = Nelson
+		last_name = Miles
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1839.8.8
+		traits = {
+			reserved
+			reckless
+				meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1859.1.1
+			latest_usage_date = 1915.1.1
+			chance = 99
+		}
+	}
+	usa_general_bliss = {
+		first_name = Tasker
+		last_name = Bliss
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1853.12.31
+		traits = {
+			reserved
+			reckless
+				meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1885.1.1
+			latest_usage_date = 1930.11.9
+			chance = 99
+		}
+	}
+	usa_general_smithy = {
+		first_name = James_Francis
+		last_name = Smith
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1859.1.29
+		traits = {
+			reserved
+			reckless
+				meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1883.1.1
+			latest_usage_date = 1928.6.29
+			chance = 99
+		}
+	}
+	usa_general_march = {
+		first_name = Peyton
+		last_name = March
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1864.12.27
+		traits = {
+			reserved
+			reckless
+				meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1895.1.1
+			latest_usage_date = 1936.1.1
+			chance = 99
+		}
+	}
+	usa_general_hare = {
+		first_name = Luther
+		last_name = Hare
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_liberal
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1851.6.24
+		traits = {
+			reserved
+			reckless
+			  meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1874.1.1
+			latest_usage_date = 1919.12.22
+			chance = 99
+		}
+	}
+	usa_general_rosecrans = {
+		first_name = William
+		last_name = Rosecrans
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1819.9.6
+		traits = {
+			reserved
+			reckless
+			  meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1845.1.1
+			latest_usage_date = 1898.3.11
+			chance = 99
+		}
+	}
+	usa_general_irvin_mcdewoell = {
+		first_name = Irvin
+		last_name = McDowell
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1818.10.15
+		traits = {
+			reserved
+			reckless
+			  meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1845.1.1
+			latest_usage_date = 1885.5.4
+			chance = 99
+		}
+	}
+	usa_general_j_hooker= {
+		first_name = Joseph
+		last_name = Hooker
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1814.11.13
+		traits = {
+			reserved
+			reckless
+			  meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1845.1.1
+			latest_usage_date = 1879.10.31
+			chance = 99
+		}
+	}
+	usa_general_heinz_ketchup = {
+		first_name = Samuel
+		last_name = Hentzelman
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1805.9.30
+		traits = {
+			reserved
+			reckless
+			  meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1880.5.1
+			chance = 99
+		}
+	}
+	usa_general_g_granger = {
+		first_name = Gordon
+		last_name = Granger
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_rural_folk
+		birth_date = 1821.11.6
+		traits = {
+			reserved
+			reckless
+			  meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1857.1.1
+			latest_usage_date = 1876.1.10
+			chance = 99
+		}
+	}
+	usa_general_cannonball_boy = {
+		first_name = Edward
+		last_name = Canby
+		historical = yes
+    culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_rural_folk
+		birth_date = 1817.11.9
+		traits = {
+			reserved
+			reckless
+			  meticulous
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			role = general
+			earliest_usage_date = 1840.1.1
+			latest_usage_date = 1873.4.11
+			chance = 99
+		}
+	}

@@ -1,0 +1,52 @@
+﻿romani={
+	color= hsv{ 0.24 0.16 0.90 }
+	religion = orthodox
+	traits = { nomadic_traditions south_asian_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+yenish={
+	color= hsv{ 0.24 0.16 0.50 }
+	religion = catholic
+	traits = { nomadic_traditions german_speaking european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	male_regal_first_names={
+		# TODO
+	}
+	female_regal_first_names={
+		# TODO
+	}
+	regal_last_names={
+		# TODO
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

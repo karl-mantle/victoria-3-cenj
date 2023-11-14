@@ -1,0 +1,9 @@
+﻿LAT = { # Latvia
+	states = {
+		STATE_LIVONIA
+		STATE_COURLAND
+	}
+	required_states_fraction = 1
+
+	ai_will_do = { always = yes }
+}

@@ -19,7 +19,6 @@
 		liquor = { stance = wants_export }
 		wine = { stance = wants_export }
 		fabric = { stance = wants_export }
-		horses = { stance = wants_high_supply }
 		fertilizer = { 
 			stance = wants_high_supply
 			trigger = {
@@ -114,7 +113,6 @@ ai_strategy_plantation_economy = {
 	type = administrative
 
 	goods_stances = {
-		horses = { stance = wants_high_supply }
 		fruit = { stance = wants_export }
 		fabric = { stance = wants_export }
 		sugar = { stance = wants_export }
@@ -124,6 +122,9 @@ ai_strategy_plantation_economy = {
 		tobacco = { stance = wants_export }
 		dye = { stance = wants_export }
 		silk = { stance = wants_export }
+		# Added
+		cocoa = { stance = wants_export }
+		spices = { stance = wants_export }
 	}	
 
 	building_group_weights = {
@@ -193,37 +194,25 @@ ai_strategy_resource_expansion = {
 	}
 	
 	goods_stances = {
-		chemicals = { 
-			stance = wants_high_supply 
-			trigger = {
-				has_technology_researched = nitroglycerin
-			}			
-		}	
 		explosives = { 
 			stance = wants_high_supply 
 			trigger = {
 				has_technology_researched = nitroglycerin
 			}			
 		}	
-		#fertilizer = { # Explosives byproduct
-		#	stance = wants_export   
-		#	trigger = {
-		#		has_technology_researched = nitroglycerin
-		#	}				
-		#}
 		tools = { stance = wants_high_supply }
 		coal = { stance = wants_export }
 		iron = { stance = wants_export }
 		oil = { stance = wants_export }
 		lead = { stance = wants_export }
 		wood = { stance = wants_export }
-		bricks = { stance = wants_export }
-		cement = { stance = wants_export }
 		hardwood = { stance = wants_export }
-		sulfur = { stance = wants_export }			
+		sulfur = { stance = wants_export }
+		# Added
+		bricks = { stance = wants_export }
+		cement = { stance = wants_export }			
 		limestone = { stance = wants_high_supply }
 		clay = { stance = wants_high_supply }
-		horses = { stance = wants_high_supply }
 		copper = { stance = wants_export }
 	}
 
@@ -244,6 +233,19 @@ ai_strategy_resource_expansion = {
 			}
 			add = 20
 		}
+		
+		if = {
+			limit = {
+				has_law = law_type:law_council_republic	
+				NOT = {
+					ig:ig_rural_folk ?= {
+						is_powerful = yes
+						is_in_government = yes
+					}
+				}
+			}
+			add = 25
+		}	
 		
 		if = {
 			limit = { is_country_type = unrecognized }
@@ -298,18 +300,28 @@ ai_strategy_industrial_expansion = {
 		building_lead_mine = wants_to_have
 		building_sulfur_mine = wants_to_have
 		building_chemical_plants = wants_to_have
+		# Added
 		building_brickworks = wants_to_have
-		building_quarry = wants_to_have
+		building_stone_quarry = wants_to_have
+		building_clay_pit = wants_to_have
 		building_copper_mine = wants_to_have
-
 	}
 	
 	goods_stances = {
-		electricity = { stance = wants_high_supply }
-		oil = { stance = wants_high_supply }
+		rubber = { 
+			stance = wants_high_supply 
+			trigger = {
+				has_technology_researched = rubber_mastication
+			}			
+		}
+		oil = { 
+			stance = wants_high_supply 
+			trigger = {
+				has_technology_researched = pumpjacks
+			}			
+		}
 		dye = { stance = wants_high_supply }
 		silk = { stance = wants_high_supply }
-		rubber = { stance = wants_high_supply }
 		tools = { stance = wants_high_supply }
 		coal = { stance = wants_high_supply }
 		iron = { stance = wants_high_supply }
@@ -318,15 +330,14 @@ ai_strategy_industrial_expansion = {
 		sulfur = { stance = wants_high_supply }
 		wood = { stance = wants_high_supply }
 		sugar = { stance = wants_high_supply }
+		explosives = { stance = wants_export }	
+		fertilizer = { stance = wants_export }
+		# Added
 		bricks = { stance = wants_high_supply }
 		cement = { stance = wants_high_supply }
-		chemicals = { stance = wants_high_supply }
 		clay = { stance = wants_high_supply }
 		copper = { stance = wants_high_supply }
 		limestone = { stance = wants_high_supply }
-
-		explosives = { stance = wants_export }	
-		fertilizer = { stance = wants_export }
 	}
 	
 	building_group_weights = {
@@ -349,13 +360,13 @@ ai_strategy_industrial_expansion = {
 			}
 			add = 20
 		}
-
+		
 		if = {
 			limit = {
 				has_variable = japan_forced_to_open_market
 			}
-			add = 20
-		}
+			add = 1000
+		}		
 
 		if = {
 			limit = { 
@@ -370,6 +381,26 @@ ai_strategy_industrial_expansion = {
 			}
 			add = 20
 		}
+
+		if = {
+			limit = {
+				has_law = law_type:law_council_republic	
+				NOT = {
+					ig:ig_rural_folk ?= {
+						is_powerful = yes
+						is_in_government = yes
+					}
+				}
+			}
+			add = 50
+		}	
+		
+		if = {
+			limit = {
+				has_law = law_type:law_command_economy	
+			}
+			multiply = 2
+		}	
 		
 		if = {
 			limit = { is_country_type = unrecognized }
@@ -438,7 +469,6 @@ ai_strategy_placate_population = {
 		fruit = { stance = wants_high_supply }
 		fabric = { stance = wants_high_supply }
 		wood = { stance = wants_high_supply }
-		horses = { stance = wants_high_supply }
 		opium = { stance = does_not_want }
 	}
 
@@ -503,4 +533,53 @@ ai_strategy_placate_population = {
 	}
 }
 
-# Add a service/advanced economy strategy e.g. medicine, securities, currency, universities, literature, newspapers,
+ai_strategy_colonial_extraction = {
+    icon = "gfx/interface/icons/ai_strategy_icons/resource_expansion.dds"
+    
+    type = administrative   
+    building_group_weights = {
+        bg_rubber = 1.5
+        bg_oil_extraction = 1.5
+        bg_mining = 1.5
+        bg_logging = 1.5
+        bg_plantations = 1.5
+    }
+    
+    subsidies = {
+        building_tooling_workshops = wants_to_have
+    }
+    
+    goods_stances = {
+        explosives = { 
+            stance = wants_high_supply 
+            trigger = {
+                has_technology_researched = nitroglycerin
+            }           
+        }
+        tools = { stance = wants_high_supply }
+        coal = { stance = wants_export }
+        iron = { stance = wants_export }
+        oil = { stance = wants_export }
+        lead = { stance = wants_export }
+        wood = { stance = wants_export }
+        hardwood = { stance = wants_export }
+        sulfur = { stance = wants_export }
+        fruit = { stance = wants_export }
+        fabric = { stance = wants_export }
+        sugar = { stance = wants_export }
+        coffee = { stance = wants_export }
+        tea = { stance = wants_export }
+        opium = { stance = wants_export }
+        tobacco = { stance = wants_export }
+        dye = { stance = wants_export }
+        silk = { stance = wants_export }    
+    }
+    possible = {
+    	is_subject = yes
+    	is_country_type = colonial
+    }
+    
+    weight = {
+        value = 100
+    }
+}

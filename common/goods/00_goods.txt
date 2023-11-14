@@ -184,7 +184,7 @@ services = {
 	texture = "gfx/interface/icons/goods_icons/services.dds"
 	cost = 30
 	category = staple
-	tradeable = no
+	local = yes
 	
 	prestige_factor = 3
 	
@@ -195,7 +195,7 @@ transportation = {
 	texture = "gfx/interface/icons/goods_icons/transportation.dds"
 	cost = 30
 	category = staple
-	tradeable = no
+	local = yes
 
 	prestige_factor = 4
 	
@@ -206,7 +206,7 @@ electricity = {
 	texture = "gfx/interface/icons/goods_icons/electricity.dds"
 	cost = 30
 	category = staple
-	tradeable = no
+	local = yes
 	
 	prestige_factor = 5
 	
@@ -219,7 +219,6 @@ horses = {
 	texture = "gfx/interface/icons/goods_icons/horses.dds"
 	cost = 25
 	category = staple
-	tradeable = no
 	
 	prestige_factor = 3
 	consumption_tax_cost = 300
@@ -442,18 +441,6 @@ cement = {
 	convoy_cost_multiplier = 1
 }
 
-chemicals = {
-	texture = "gfx/interface/icons/goods_icons/chemicals.dds"
-	cost = 40
-	category = industrial
-
-	prestige_factor = 5
-	traded_quantity = 10
-	convoy_cost_multiplier = 1
-
-	consumption_tax_cost = 200
-}
-
 clay = {
 	texture = "gfx/interface/icons/goods_icons/clay.dds"
 	cost = 20
@@ -670,6 +657,19 @@ fine_art = {
 
 # Added
 
+cocoa = {
+	texture = "gfx/interface/icons/goods_icons/cocoa.dds"
+	cost = 50
+	category = luxury
+	
+	obsession_chance = 1.5
+	prestige_factor = 4
+
+	traded_quantity = 7.5
+	convoy_cost_multiplier = 0.75
+	
+}
+
 securities = {
 	texture = "gfx/interface/icons/goods_icons/securities.dds"
 	cost = 100
@@ -690,4 +690,16 @@ silver = {
 	
 	prestige_factor = 5
 	convoy_cost_multiplier = 1.5
+}
+
+spices = {
+	texture = "gfx/interface/icons/goods_icons/spices.dds"
+	cost = 30
+	category = luxury
+	
+	obsession_chance = 1.5
+	prestige_factor = 4
+	
+	traded_quantity = 7.5
+	convoy_cost_multiplier = 0.75
 }

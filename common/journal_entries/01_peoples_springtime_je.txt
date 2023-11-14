@@ -196,9 +196,6 @@
 			10 = peoples_springtime.3
 			10 = peoples_springtime.4
 			10 = peoples_springtime.5
-			#15 = peoples_springtime.100
-			#10 = peoples_springtime.110
-			#10 = peoples_springtime.120
 		}
 	}
 
@@ -210,6 +207,7 @@
 	should_be_pinned_by_default = yes
 
 	transferable = no
+	can_revolution_inherit = no
 
 	timeout = 3650
 

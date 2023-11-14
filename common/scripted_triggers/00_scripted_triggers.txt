@@ -41,6 +41,7 @@ country_has_education_system = {
 		has_law = law_type:law_religious_schools
 		has_law = law_type:law_public_schools
 		has_law = law_type:law_private_schools
+		has_law = law_type:law_military_schools
 	}
 }
 
@@ -508,8 +509,7 @@ has_heavy_industry_building = {
 		# Added
 		has_building = building_brickworks
 		has_building = building_cement_factory
-		has_building = building_explosives_industry
-		has_building = building_fertilizer_factory
+		has_building = building_explosives_factory
 	}
 }
 
@@ -526,8 +526,7 @@ is_heavy_industry_building = {
 		# Added
 		is_building_type = building_brickworks
 		is_building_type = building_cement_factory
-		is_building_type = building_explosives_industry
-		is_building_type = building_fertilizer_factory
+		is_building_type = building_explosives_factory
 	}
 }
 
@@ -871,6 +870,7 @@ is_farm_building = {
 		is_building_type = building_maize_farm
 		is_building_type = building_millet_farm
 		is_building_type = building_livestock_ranch
+		is_building_type = building_sheep_ranch
 	}
 }
 
@@ -882,6 +882,7 @@ has_farm_building = {
 		has_building = building_maize_farm
 		has_building = building_millet_farm
 		has_building = building_livestock_ranch
+		has_building = building_sheep_ranch
 	}
 }
 
@@ -924,16 +925,20 @@ is_production_building = {
 		is_building_type = building_electrics_industry
 		is_building_type = building_war_machine_industry
 		is_building_type = building_arms_industry
+		is_building_type = building_artillery_foundries
 		is_building_type = building_munition_plants
 		is_building_type = building_power_plant
 		is_building_type = building_fishing_wharf
 		# Added
 		is_building_type = building_brickworks
 		is_building_type = building_cement_factory
-		is_building_type = building_explosives_industry
-		is_building_type = building_fertilizer_factory
+		is_building_type = building_explosives_factory
 		is_building_type = building_copper_mine
-		is_building_type = building_quarry
+		is_building_type = building_stone_quarry
+		is_building_type = building_clay_pit
+		is_building_type = building_cocoa_plantation
+		is_building_type = building_hemp_plantation
+		is_building_type = building_spice_plantation
 	}
 }
 
@@ -1027,7 +1032,8 @@ is_raw_industries_building = {
 		is_building_type = building_whaling_station
 		# Added
 		is_building_type = building_copper_mine
-		is_building_type = building_quarry
+		is_building_type = building_stone_quarry
+		is_building_type = building_clay_pit
 	}
 }
 is_plantation_building = {
@@ -1042,6 +1048,11 @@ is_plantation_building = {
 		is_building_type = building_rubber_plantation
 		is_building_type = building_banana_plantation
 		is_building_type = building_silk_plantation
+		is_building_type = building_vineyard_plantation
+		# Added
+		is_building_type = building_cocoa_plantation
+		is_building_type = building_hemp_plantation
+		is_building_type = building_spice_plantation
 	}
 }
 
@@ -1051,7 +1062,8 @@ is_economic_objective_building = {
 		is_building_type = building_iron_mine
 		# Added
 		is_building_type = building_copper_mine
-		is_building_type = building_quarry
+		is_building_type = building_stone_quarry
+		is_building_type = building_clay_pit
 	}
 }
 
@@ -1546,28 +1558,14 @@ movement_supports_enaction = {
 agitator_supports_enaction = {
 	any_scope_character = {
 		has_role = agitator
-		OR = {
+		law_stance = {
+			law = owner.currently_enacting_law.type
+			value > neutral
+		}
+		NOT = {
 			law_stance = {
 				law = owner.currently_enacting_law.type
-				value > neutral
-			}
-			AND = {	
-				law_stance = {
-					law = owner.currently_enacting_law.type
-					value > strongly_approve # Equals 'count'
-				}
-				interest_group = {
-					law_stance = {
-						law = owner.currently_enacting_law.type
-						value > neutral
-					}
-					NOT = {
-						law_stance = {
-							law = owner.currently_enacting_law.type
-							value > strongly_approve # Equals 'count'
-						}
-					}
-				}
+				value > strongly_approve # Equals 'count'
 			}
 		}
 	}
@@ -1593,28 +1591,14 @@ movement_opposes_enaction = {
 agitator_opposes_enaction = {
 	any_scope_character = {
 		has_role = agitator
-		OR = {
+		law_stance = {
+			law = owner.currently_enacting_law.type
+			value < neutral
+		}
+		NOT = {
 			law_stance = {
 				law = owner.currently_enacting_law.type
-				value < neutral
-			}
-			AND = {	
-				law_stance = {
-					law = owner.currently_enacting_law.type
-					value > strongly_approve # Equals 'count'
-				}
-				interest_group = {
-					law_stance = {
-						law = owner.currently_enacting_law.type
-						value < neutral
-					}
-					NOT = {
-						law_stance = {
-							law = owner.currently_enacting_law.type
-							value > strongly_approve # Equals 'count'
-						}
-					}
-				}
+				value > strongly_approve # Equals 'count'
 			}
 		}
 	}
@@ -1927,5 +1911,39 @@ budget_low_training_rate = {
 	OR = {
 		is_active_in_diplomatic_play = yes
 		is_at_war = yes
+	}
+}
+
+diplomatic_play_has_no_relations_blockers = {
+	diplomatic_play_has_no_relations_blocker_with_target = yes
+	diplomatic_play_has_no_relations_blocker_with_overlord = yes
+}
+
+diplomatic_play_has_no_relations_blocker_with_target = {
+	custom_tooltip = {
+		text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER_NOT
+		scope:target_country.relations:root < relations_threshold:cordial
+	}		
+}
+
+diplomatic_play_has_no_relations_blocker_with_overlord = {
+	trigger_if = {
+		limit = { scope:target_country = { is_subject = yes } }
+		custom_tooltip = {
+			text = DIPLO_ACTION_OVERLORD_RELATIONS_CORDIAL_OR_GREATER_NOT
+			scope:target_country.overlord.relations:root < relations_threshold:cordial
+		}	
+	}
+	trigger_if = {
+		limit = { 
+			scope:target_country = { 
+				is_subject = yes 
+				NOT = { overlord = top_overlord }
+			} 		
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_TOP_OVERLORD_RELATIONS_CORDIAL_OR_GREATER_NOT
+			scope:target_country.overlord.relations:root < relations_threshold:cordial
+		}	
 	}
 }

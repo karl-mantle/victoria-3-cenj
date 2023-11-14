@@ -1,12 +1,12 @@
-﻿pm_steam_trains = {
-	texture = "gfx/interface/icons/production_method_icons/trains_steam.dds"
-	pollution_generation = 15
+﻿pm_early_trains = {
+	texture = "gfx/interface/icons/production_method_icons/experimental_trains.dds"
+
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_engines_add = 10
-			building_input_coal_add = 10
-			building_output_transportation_add = 50
+			goods_input_engines_add = 8
+			goods_input_coal_add = 2
+			goods_output_transportation_add = 25
 		}
 		level_scaled = {
 			building_employment_laborers_add = 3000
@@ -18,13 +18,41 @@
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 20
+			state_pollution_generation_add = 25
+		}
+	}
+}
+
+pm_steam_trains = {
+	texture = "gfx/interface/icons/production_method_icons/trains_steam.dds"
+
+	unlocking_technologies = {
+		steel_railway_cars
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10
+			goods_input_coal_add = 4
+			goods_output_transportation_add = 30
+		}
+		level_scaled = {
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1500
+			building_employment_clerks_add = 750
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 25
+			state_pollution_generation_add = 20
 		}
 	}
 }
 
 pm_electric_trains = {
 	texture = "gfx/interface/icons/production_method_icons/trains_electric.dds"
-	pollution_generation = 10
 	
 	unlocking_technologies = {
 		electric_railway
@@ -32,9 +60,9 @@ pm_electric_trains = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_engines_add = 15
-			building_input_electricity_add = 15
-			building_output_transportation_add = 75
+			goods_input_engines_add = 12
+			goods_input_electricity_add = 6
+			goods_output_transportation_add = 40
 		}
 		level_scaled = {
 			building_employment_laborers_add = 2000
@@ -48,21 +76,21 @@ pm_electric_trains = {
 			state_infrastructure_add = 30
 		}
 	}
+
+	required_input_goods = electricity
 }
 
 pm_diesel_trains = {
-	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"
-	pollution_generation = 10
-	
+	texture = "gfx/interface/icons/production_method_icons/trains_diesel.dds"	
 	unlocking_technologies = {
 		compression_ignition
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_engines_add = 20
-			building_input_oil_add = 20
-			building_output_transportation_add = 100
+			goods_input_engines_add = 14
+			goods_input_oil_add = 8
+			goods_output_transportation_add = 50
 		}
 		level_scaled = {
 			building_employment_laborers_add = 1500
@@ -74,6 +102,7 @@ pm_diesel_trains = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 40
+			state_pollution_generation_add = 15
 		}
 	}
 }
@@ -84,29 +113,20 @@ pm_no_passenger_trains = {
 
 pm_wooden_passenger_carriages = {
 	texture = "gfx/interface/icons/production_method_icons/passenger_trains.dds"
-	pollution_generation = 10
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_wood_add = 5
-			building_output_transportation_add = 15
+			goods_input_wood_add = 10
+			goods_output_transportation_add = 15
 		}
 		level_scaled = {
-			building_employment_machinists_add = -250
-			building_employment_clerks_add = -250
+			building_employment_clerks_add = 250
 		}
-	}
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_infrastructure_add = -5
-		}
-	}				
+	}			
 }
 
 pm_steel_passenger_carriages = {
 	texture = "gfx/interface/icons/production_method_icons/passenger_carriages.dds"
-	pollution_generation = 10
 
 	unlocking_technologies = {
 		steel_railway_cars
@@ -114,20 +134,13 @@ pm_steel_passenger_carriages = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_steel_add = 5
-			building_output_transportation_add = 30
+			goods_input_steel_add = 10
+			goods_output_transportation_add = 30
 		}
 		level_scaled = {
-			building_employment_machinists_add = -500
-			building_employment_clerks_add = -500
+			building_employment_clerks_add = 500
 		}
-	}
-	
-	state_modifiers = {
-		workforce_scaled = {
-			state_infrastructure_add = -5
-		}
-	}				
+	}			
 }
 
 pm_privately_owned_building_railway = {
@@ -146,7 +159,7 @@ pm_privately_owned_building_railway = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -171,7 +184,7 @@ pm_publicly_traded_building_railway = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -213,18 +226,18 @@ pm_worker_cooperative_building_railway = {
 }
 
 pm_trade_center = {
-	texture = "gfx/interface/icons/production_method_icons/simple_organization.dds"
-
+	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
+	
 	state_modifiers = {
 		unscaled = {
 			state_migration_pull_mult = 0.25
 		}
 	}
-	building_modifiers = {
-		level_scaled = {
-			building_input_transportation_add = 0.1
-		}
-	}
+	#building_modifiers = {
+	#	level_scaled = {
+	#		goods_input_transportation_add = 0.1
+	#	}
+	#}
 }
 
 pm_trade_center_merchant_guilds = {
@@ -262,7 +275,7 @@ pm_trade_center_privately_owned = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.25
+			goods_output_securities_add = 0.25
 		}
 	}
 }
@@ -294,9 +307,9 @@ pm_road_carts_roads = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_grain_add = 2.5
-			building_input_horses_add = 2.5
-			building_output_transportation_add = 12.5
+			goods_input_grain_add = 2
+			goods_input_horses_add = 2
+			goods_output_transportation_add = 6
 		}
 		level_scaled = {
 			building_employment_laborers_add = 2500
@@ -305,19 +318,19 @@ pm_road_carts_roads = {
 
 	state_modifiers = {
 		level_scaled = {
-			state_infrastructure_add = 5
+			state_infrastructure_add = 4
 		}
 	}
 }
 
-pm_draught_animal_wagons = {
+pm_draft_animal_wagons = {
 	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_grain_add = 5
-			building_input_horses_add = 5
-			building_output_transportation_add = 25
+			goods_input_grain_add = 4
+			goods_input_horses_add = 4
+			goods_output_transportation_add = 12
 		}
 		level_scaled = {
 			building_employment_laborers_add = 2250
@@ -327,14 +340,13 @@ pm_draught_animal_wagons = {
 
 	state_modifiers = {
 		level_scaled = {
-			state_infrastructure_add = 10
+			state_infrastructure_add = 7
 		}
 	}
 }
 
 pm_steam_powered_wagons = {
 	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
-	pollution_generation = 15
 
 	unlocking_technologies = {
 		threshing_machine
@@ -342,9 +354,9 @@ pm_steam_powered_wagons = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_engines_add = 10
-			building_input_coal_add = 10
-			building_output_transportation_add = 50
+			goods_input_engines_add = 5
+			goods_input_coal_add = 10
+			goods_output_transportation_add = 25
 		}
 		level_scaled = {
 			building_employment_laborers_add = 1000
@@ -355,14 +367,14 @@ pm_steam_powered_wagons = {
 
 	state_modifiers = {
 		level_scaled = {
-			state_infrastructure_add = 15
+			state_infrastructure_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 }
 
 pm_diesel_engine_wagons = {
 	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
-	pollution_generation = 10
 
 	unlocking_technologies = {
 		compression_ignition
@@ -370,9 +382,9 @@ pm_diesel_engine_wagons = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_automobiles_add = 10
-			building_input_oil_add = 10
-			building_output_transportation_add = 100
+			goods_input_automobiles_add = 10
+			goods_input_oil_add = 5
+			goods_output_transportation_add = 50
 		}
 		level_scaled = {
 			building_employment_laborers_add = 750
@@ -383,7 +395,8 @@ pm_diesel_engine_wagons = {
 
 	state_modifiers = {
 		level_scaled = {
-			state_infrastructure_add = 20
+			state_infrastructure_add = 12
+			state_pollution_generation_add = 10
 		}
 	}
 }
@@ -394,7 +407,7 @@ pm_merchant_guilds_building_road_network = {
 
 	unlocking_production_methods = {
 		pm_road_carts_roads
-		pm_draught_animal_wagons
+		pm_draft_animal_wagons
 	}
 	
 	building_modifiers = { 
@@ -445,7 +458,7 @@ pm_publicly_traded_building_road_network = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -493,6 +506,13 @@ pm_worker_cooperative_building_road_network = {
 
 pm_road_carts = {
 	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_horses_add = 0.25
+		}
+	}
 }
 
 pm_wagon_transport = {
@@ -501,7 +521,8 @@ pm_wagon_transport = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-			building_input_horses_add = 2.5
+			goods_input_horses_add = 0.5
+			goods_input_transportation_add = 0.25
 		}
 
 		level_scaled = {
@@ -512,7 +533,11 @@ pm_wagon_transport = {
 
 pm_rail_transport = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 		
 	unlocking_technologies = {
 		railways
@@ -521,7 +546,7 @@ pm_rail_transport = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-			building_input_transportation_add = 5
+			goods_input_transportation_add = 5
 		}
 
 		level_scaled = {
@@ -532,7 +557,11 @@ pm_rail_transport = {
 
 pm_road_transport = {
 	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		combustion_engine
@@ -541,7 +570,7 @@ pm_road_transport = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-			building_input_automobiles_add = 2.5
+			goods_input_automobiles_add = 2.5
 		}
 
 		level_scaled = {

@@ -2,26 +2,33 @@
 	s:STATE_LOMBARDY = {
 		region_state:AUS = {
 			create_pop = {
-				culture = lombard
-				size = 2376996
+				culture = north_italian
+				size = 594249
 			}
 			create_pop = {
 				culture = lombard
-				religion = jewish
+				size = 1782747
+			}
+			create_pop = {
+				culture = sephardic
 				size = 396
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 4500
+				size = 950
 			}
 		}
 	}
 	s:STATE_PIEDMONT = {
 		region_state:SAR = {
 			create_pop = {
+				culture = north_italian
+				size = 336039
+			}
+			create_pop = {
 				culture = piedmontese
-				size = 1600188
+				size = 1264148
 			}
 			create_pop = {
 				culture = francoprovencal
@@ -30,33 +37,40 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 3900
+				size = 750
 			}
 		}
 	}
 	s:STATE_LIGURIA = {
 		region_state:SAR = {
 			create_pop = {
-				culture = ligurian
-				size = 767188
+				culture = north_italian
+				size = 253172
 			}
 			create_pop = {
 				culture = ligurian
-				religion = jewish
+				size = 514015
+			}
+			create_pop = {
+				culture = sephardic
 				size = 2804
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1400
+				size = 900
 			}
 		}
 	}
 	s:STATE_SARDINIA = {
 		region_state:SAR = {
 			create_pop = {
+				culture = south_italian
+				size = 41926
+			}
+			create_pop = {
 				culture = sardinian
-				size = 524084
+				size = 482157
 			}
 		}
 	}
@@ -75,8 +89,12 @@
 	s:STATE_UMBRIA = {
 		region_state:PAP = {
 			create_pop = {
+				culture = south_italian
+				size = 175890
+			}
+			create_pop = {
 				culture = umbrian
-				size = 451000
+				size = 275110
 			}
 			create_pop = {
 				culture = albanian
@@ -86,7 +104,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1200
+				size = 320
 			}
 		}
 	}
@@ -114,13 +132,17 @@
 	s:STATE_CAMPANIA = {
 		region_state:SIC = {
 			create_pop = {
+				culture = south_italian
+				size = 664922
+			}
+			create_pop = {
 				culture = neapolitan
-				size = 2557396
+				size = 1892473
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 4200
+				size = 750
 			}
 			create_pop = {
 				culture = albanian
@@ -132,8 +154,12 @@
 	s:STATE_CALABRIA = {
 		region_state:SIC = {
 			create_pop = {
+				culture = south_italian
+				size = 256025
+			}
+			create_pop = {
 				culture = calabrian
-				size = 882848
+				size = 626822
 			}
 			create_pop = {
 				culture = albanian
@@ -147,15 +173,19 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1000
+				size = 200
 			}
 		}
 	}
 	s:STATE_APULIA = {
 		region_state:SIC = {
 			create_pop = {
+				culture = south_italian
+				size = 500912
+			}
+			create_pop = {
 				culture = neapolitan
-				size = 1284392
+				size = 783479
 			}
 			create_pop = {
 				culture = albanian
@@ -169,15 +199,19 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 900
+				size = 150
 			}
 		}
 	}
 	s:STATE_ABRUZZO = {
 		region_state:SIC = {
 			create_pop = {
+				culture = south_italian
+				size = 343432
+			}
+			create_pop = {
 				culture = neapolitan
-				size = 660448
+				size = 317015
 			}
 			create_pop = {
 				culture = albanian
@@ -187,7 +221,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1100
+				size = 220
 			}
 		}
 	}
@@ -198,21 +232,69 @@
 				size = 287600
 			}
 			create_pop = {
+				culture = north_italian
+				size = 21744
+			}
+			create_pop = {
 				culture = piedmontese
-				size = 181200
+				size = 159456
+			}
+			create_pop = {
+				culture = yenish
+				size = 360
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 800
+				size = 100
 			}
 		}
 	}
 	s:STATE_EMILIA = {
 		region_state:PAR = {
 			create_pop = {
+				culture = north_italian
+				size = 151041
+			}
+			create_pop = {
 				culture = emilian_romagnol
-				size = 472004
+				size = 320962
+			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 210
+			}
+		}
+		region_state:MOD = {
+			create_pop = {
+				culture = north_italian
+				size = 194520
+			}
+			create_pop = {
+				culture = emilian_romagnol
+				size = 453880
+			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 250
+			}
+		}
+	}
+	s:STATE_TUSCANY = {
+		region_state:TUS = {
+			create_pop = {
+				culture = north_italian
+				size = 715176
+			}
+			create_pop = {
+				culture = tuscan
+				size = 910224
+			}
+			create_pop = {
+				culture = sephardic
+				size = 6996
 			}
 			create_pop = {
 				culture = romani
@@ -220,101 +302,90 @@
 				size = 650
 			}
 		}
-		region_state:MOD = {
-			create_pop = {
-				culture = emilian_romagnol
-				size = 648400
-			}
-			create_pop = {
-				culture = romani
-				religion = catholic
-				size = 500
-			}
-		}
-	}
-	s:STATE_TUSCANY = {
-		region_state:TUS = {
-			create_pop = {
-				culture = tuscan
-				size = 1625400
-			}
-			create_pop = {
-				culture = tuscan
-				religion = jewish
-				size = 6996
-			}
-			create_pop = {
-				culture = romani
-				religion = catholic
-				size = 2400
-			}
-		}
 		region_state:LUC = {
 			create_pop = {
+				culture = north_italian
+				size = 47699
+			}
+			create_pop = {
 				culture = emilian_romagnol
-				size = 108408
+				size = 60708
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 400
+				size = 100
 			}
 		}
 	}
 	s:STATE_ROMAGNA = {
 		region_state:PAP = {
 			create_pop = {
+				culture = north_italian
+				size = 273224
+			}
+			create_pop = {
 				culture = emilian_romagnol
-				size = 803600
+				size = 530376
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 600
+				size = 300
 			}
 		}
 	}
 	s:STATE_LAZIO = {
 		region_state:PAP = {
 			create_pop = {
-				culture = roman
-				size = 1333868
+				culture = south_italian
+				size = 440176
 			}
 			create_pop = {
 				culture = roman
-				religion = jewish
+				size = 893691
+			}
+			create_pop = {
+				culture = sephardic
 				size = 5596
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 3600
+				size = 980
 			}
 		}
 	}
 	s:STATE_VENETIA = {
 		region_state:AUS = {
 			create_pop = {
-				culture = venetian
-				size = 1855196
+				culture = north_italian
+				size = 352487
 			}
 			create_pop = {
 				culture = venetian
-				religion = jewish
+				size = 1502708
+			}
+			create_pop = {
+				culture = sephardic
 				size = 2000
 			}
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 4100
+				size = 1260
 			}
 		}
 	}
 	s:STATE_SICILY = {
 		region_state:SIC = {
 			create_pop = {
+				culture = south_italian
+				size = 247139
+			}
+			create_pop = {
 				culture = sicilian
-				size = 1647596
+				size = 1400456
 			}
 			create_pop = {
 				culture = albanian
@@ -324,11 +395,6 @@
 			create_pop = {
 				culture = griko
 				size = 3500
-			}
-			create_pop = {
-				culture = romani
-				religion = catholic
-				size = 400
 			}
 		}
 	}
@@ -341,7 +407,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1900
+				size = 2650
 			}
 		}
 	}
@@ -359,7 +425,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 500
+				size = 240
 			}
 		}
 	}
@@ -377,7 +443,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 700
+				size = 400
 			}
 		}	
 	}
@@ -394,7 +460,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 900
+				size = 1250
 			}
 		}
 	}
@@ -407,7 +473,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 900
+				size = 560
 			}
 		}
 	}
@@ -428,7 +494,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 650
+				size = 300
 			}
 		}
 	}
@@ -449,7 +515,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 800
+				size = 600
 			}
 		}
 	}
@@ -466,7 +532,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 2900
+				size = 1600
 			}
 		}
 	}
@@ -480,6 +546,11 @@
 				culture = spanish
 				size = 78020
 			}
+			create_pop = {
+				culture = romani
+				religion = catholic
+				size = 200
+			}
 		}
 	}
 	s:STATE_ANDALUSIA = {
@@ -491,7 +562,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 4500
+				size = 5680
 			}
 		}
 	}
@@ -504,7 +575,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 4800
+				size = 3540
 			}
 		}
 		region_state:GBR = {
@@ -531,7 +602,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 3600
+				size = 2540
 			}
 		}
 	}
@@ -548,7 +619,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 3700
+				size = 2780
 			}
 		}
 	}
@@ -561,7 +632,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 2900
+				size = 3400
 			}
 		}
 	}
@@ -574,7 +645,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1400
+				size = 300
 			}
 		}
 	}
@@ -587,7 +658,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1100
+				size = 400
 			}
 		}
 	}
@@ -600,7 +671,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 900
+				size = 250
 			}
 		}
 	}
@@ -613,7 +684,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1800
+				size = 460
 			}
 		}
 	}
@@ -693,11 +764,11 @@
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 4500
+				size = 3412
 			}
 			create_pop = {
 				culture = romani
-				size = 800
+				size = 360
 			}
 			create_pop = {
 				pop_type = slaves
@@ -735,15 +806,15 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 5400
+				size = 6545
 			}
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 1100
+				size = 965
 			}
 			create_pop = {
-				culture = east_german
+				culture = south_german
 				size = 2300
 			}
 		}
@@ -770,7 +841,7 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 300
+				size = 950
 			}
 		}
 	}
@@ -797,7 +868,7 @@
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 3600
+				size = 4250
 			}
 		}
 	}
@@ -821,8 +892,12 @@
 			}
 			create_pop = {
 				culture = romani
+				size = 2850
+			}
+			create_pop = {
+				culture = romani
 				religion = sunni
-				size = 4600
+				size = 2654
 			}
 		}
 	}
@@ -851,12 +926,12 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 4500
+				size = 3850
 			}
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 1600
+				size = 870
 			}
 		}
 	}
@@ -872,12 +947,12 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 8100
+				size = 2680
 			}
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 800
+				size = 4730
 			}
 		}
 	}
@@ -897,12 +972,12 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 4500
+				size = 2680
 			}
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 500
+				size = 1400
 			}
 		}
 	}
@@ -917,9 +992,13 @@
 				size = 21388
 			}
 			create_pop = {
+				culture = south_german
+				size = 1450
+			}
+			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1300
+				size = 300
 			}
 		}
 	}
@@ -940,7 +1019,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1900
+				size = 250
 			}
 		}
 	}
@@ -960,7 +1039,7 @@
 				size = 28000
 			}
 			create_pop = {
-				culture = austro_bavarian
+				culture = south_german
 				size = 40396
 			}
 			create_pop = {
@@ -970,12 +1049,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 2100
-			}
-			create_pop = {
-				culture = romani
-				religion = orthodox
-				size = 400
+				size = 460
 			}
 		}
 	}
@@ -994,17 +1068,13 @@
 				size = 16000
 			}
 			create_pop = {
-				culture = austro_bavarian
+				culture = south_german
 				size = 20140
 			}
 			create_pop = {
 				culture = romani
-				size = 1900
-			}
-			create_pop = {
-				culture = romani
 				religion = catholic
-				size = 2800
+				size = 900
 			}
 		}
 	}
@@ -1023,7 +1093,7 @@
 				size = 344504
 			}
 			create_pop = {
-				culture = austro_bavarian
+				culture = south_german
 				size = 9792
 			}
 			create_pop = {
@@ -1033,7 +1103,7 @@
 			create_pop = {
 				culture = romani
 				religion = catholic
-				size = 1000
+				size = 260
 			}
 		}
 	}
@@ -1053,12 +1123,8 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 600
-			}
-			create_pop = {
-				culture = romani
 				religion = sunni
-				size = 800
+				size = 426
 			}
 		}
 		region_state:MON = {
@@ -1072,8 +1138,27 @@
 			}	
 			create_pop = {
 				culture = romani
-				size = 700
+				size = 200
 			}		
+		}
+		# Cattaro Region, downscaled version of 1880 census, with inflated Italian numbers, and decreased German ones
+		region_state:AUS = {
+			create_pop = {
+				culture = serb
+				size = 15662
+			}
+			create_pop = {
+				culture = croat
+				size = 5261
+			}
+			create_pop = {
+				culture = dalmatian
+				size = 1281
+			}
+			create_pop = {
+				culture = south_german
+				size = 524
+			}
 		}
 	}
 	s:STATE_NORTHERN_SERBIA = {
@@ -1084,7 +1169,7 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 5800
+				size = 4352
 			}
 		}
 	}
@@ -1116,12 +1201,12 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 5600
+				size = 4430
 			}
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 1600
+				size = 1423
 			}
 		}
 	}
@@ -1212,12 +1297,11 @@
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 3200
+				size = 1420
 			}
 			create_pop = {
 				culture = romani
-				religion = orthodox
-				size = 950
+				size = 864
 			}
 			create_pop = {
 				culture = romanian
@@ -1237,6 +1321,10 @@
 			create_pop = {
 				culture = romanian
 				size = 500
+			}
+			create_pop = {
+				culture = romani
+				size = 410
 			}
 		}
 	}
@@ -1261,12 +1349,12 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 1100
+				size = 1320
 			}
 			create_pop = {
-				culture = romanian
+				culture = romani
 				religion = sunni
-				size = 200
+				size = 1135
 			}
 			create_pop = {
 				culture = romanian
@@ -1313,11 +1401,11 @@
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 12100
+				size = 14652
 			}
 			create_pop = {
 				culture = romani
-				size = 1600
+				size = 1125
 			}
 			create_pop = {
 				culture = romanian
@@ -1351,11 +1439,11 @@
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 4500
+				size = 2410
 			}
 			create_pop = {
 				culture = romani
-				size = 1200
+				size = 968
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1394,12 +1482,12 @@
 			}
 			create_pop = {
 				culture = romani
-				size = 300
+				size = 398
 			}
 			create_pop = {
 				culture = romani
 				religion = sunni
-				size = 2600
+				size = 1354
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1435,11 +1523,6 @@
 			create_pop = {
 				culture = sephardic
 				size = 2000
-			}
-			create_pop = {
-				culture = romani
-				religion = sunni
-				size = 200
 			}
 		}
 	}

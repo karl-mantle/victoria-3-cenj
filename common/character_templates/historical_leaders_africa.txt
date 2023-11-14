@@ -1,63 +1,526 @@
-﻿TRN_paul_kruger_template = { # Paul Kruger
-    first_name = Paul
-    last_name = Kruger
+﻿# Ashanti - ASH
+
+ash_asantewaa_character_template = {
+    first_name = Yaa
+    last_name = Asantewaa
     historical = yes
-    culture = cu:boer
-    female = no
-    religion = protestant
+    culture = cu:akan
+    female = yes
+    religion = animist
     ideology = ideology_traditionalist
-    interest_group = ig_rural_folk
-    birth_date = 1825.10.10
-    traits = {
-        pious
-    }   
+    interest_group = ig_landowners
+	dna = dna_yaa_asantewaa
+    birth_date = 1840.10.17
+    traits = { ambitious meticulous pious }
     interest_group_leader_usage = {
         country_trigger = {
-            exists = c:TRN
-            this = c:TRN
+            exists = c:ASH
+            this = c:ASH
         }
         interest_group_trigger = {
             is_marginal = no
             OR = {
-                is_interest_group_type = ig_rural_folk
                 is_interest_group_type = ig_landowners
-                is_interest_group_type = ig_petty_bourgeoisie
+                is_interest_group_type = ig_armed_forces
+                is_interest_group_type = ig_devout
             }
         }
-        earliest_usage_date = 1852.1.1
-        latest_usage_date = 1899.1.1
-        chance = 50
-    }   
-}
-
-nal_andries_pretorius_template = {
-    # Andries Pretorius
-    first_name = "Andries"
-    last_name = "Pretorius"
-    historical = yes
-    ruler = yes
-    birth_date = 1798.11.27
-    interest_group = ig_rural_folk
-    ideology = ideology_moderate
-    ig_leader = yes
-    traits = {
-        explorer
-    }		
-}
-
-ptf_hendrik_potgieter_template = {
-    is_general = yes
-    hq = region_southern_africa
-    first_name = "Hendrik"
-    last_name = "Potgieter"
-    historical = yes
-    ruler = yes
-    ig_leader = yes
-    birth_date = 1792.12.19
-    interest_group = ig_rural_folk
-    ideology = ideology_moderate
-    traits = {
-        explorer
-        pious
+        earliest_usage_date = 1883.1.1
+        latest_usage_date = 1921.10.17
+        chance = 90
     }
 }
+
+# Basuto - BST
+
+	bst_masopha_character_template = {
+		first_name = Masopha
+		last_name = EmptyMasopha
+		historical = yes
+		culture = cu:sotho
+		female = no
+		religion = animist
+		ideology = ideology_traditionalist
+		interest_group = ig_armed_forces
+		dna = dna_masopha
+		birth_date = 1820.7.3
+		traits = { plains_commander experienced_political_operator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:BST
+				this = c:BST
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1850.1.1
+			latest_usage_date = 1898.7.15
+			chance = 90
+		}
+	}
+
+
+#  Ethiopia
+
+	eth_betul_character_template = {
+		first_name = Taytu
+		last_name = Betul
+		historical = yes
+		culture = cu:amhara
+		female = yes
+		religion = oriental_orthodox
+		ideology = ideology_traditionalist
+		interest_group = ig_landowners
+		dna = dna_taytu_betul
+		birth_date = 1851.5.10
+		traits = { ambitious experienced_political_operator meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:ETH
+				this = c:ETH
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_landowners
+			}
+			earliest_usage_date = 1889.1.1
+			latest_usage_date = 1918.2.11
+			chance = 90
+		}
+	}
+	eth_makonnen_character_template = {
+		first_name = Makonnen # Makonnen Wolde Mikael
+		last_name = of_Harar
+		historical = yes
+		culture = cu:amhara
+		female = no
+		religion = oriental_orthodox
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		dna = dna_makonnen
+		birth_date = 1852.5.8
+		traits = { meticulous imperious expert_defensive_strategist }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ETH
+						this = c:ETH
+						NOT = { exists = c:SHW }
+					}
+					AND = {
+						exists = c:SHW
+						this = c:SHW
+					}
+				}
+			}
+			earliest_usage_date = 1887.1.1
+			latest_usage_date = 1906.3.21
+			chance = 50
+		}
+	}
+	eth_mikael_character_template = {
+		first_name = Mikael # Mikael of Wollo
+		last_name = of_Wello
+		historical = yes
+		culture = cu:amhara
+		female = no
+		religion = oriental_orthodox
+		ideology = ideology_reformer
+		interest_group = ig_armed_forces
+		dna = dna_mikael_of_wello
+		birth_date = 1850.4.7
+		traits = { reckless basic_offensive_planner ambitious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ETH
+						this = c:ETH
+						NOT = { exists = c:WLO }
+					}
+					AND = {
+						exists = c:WLO
+						this = c:WLO
+					}
+				}
+			}
+			earliest_usage_date = 1878.1.1
+			latest_usage_date = 1922.9.8
+			chance = 50
+		}
+	}
+
+# Madagascar - MAD
+
+	mad_rainilaiarivony_character_template = {
+		first_name = Rainilaiarivony
+		last_name = EmptyRainilaiarivony
+		historical = yes
+		culture = cu:malagasy
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_landowners
+		dna = dna_rainilaiarivony
+		birth_date = 1828.1.30
+		traits = { innovative tactful basic_diplomat }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MAD
+				this = c:MAD
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1896.7.17
+			chance = 90
+		}
+	}
+	mad_rainivoninahitriniony_character_template = {
+		first_name = Rainivoninahitriniony
+		last_name = EmptyRainivoninahitriniony
+		historical = yes
+		culture = cu:malagasy
+		female = no
+		religion = animist
+		ideology = ideology_traditionalist
+		interest_group = ig_landowners
+		dna = dna_rainivoninahitriniony
+		birth_date = 1824.2.20
+		traits = { ambitious cruel reckless }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MAD
+				this = c:MAD
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			earliest_usage_date = 1850.1.1
+			latest_usage_date = 1868.5.5
+			chance = 90
+		}
+	}
+
+# Natalia - NAL
+
+	nal_andries_pretorius_template = {
+		# Andries Pretorius
+		first_name = "Andries"
+		last_name = "Pretorius"
+		historical = yes
+		ruler = yes
+		birth_date = 1798.11.27
+		interest_group = ig_rural_folk
+		ideology = ideology_moderate
+		ig_leader = yes
+		traits = {
+			explorer
+		}		
+	}
+
+# Potchefstroom - PTF
+
+	ptf_hendrik_potgieter_template = {
+		is_general = yes
+		hq = region_southern_africa
+		first_name = "Hendrik"
+		last_name = "Potgieter"
+		historical = yes
+		ruler = yes
+		ig_leader = yes
+		birth_date = 1792.12.19
+		interest_group = ig_rural_folk
+		ideology = ideology_moderate
+		traits = {
+			explorer
+			pious
+		}
+	}
+	
+# Rwanda - RWD
+
+	rwd_muhumusa_character_template = {
+		first_name = Muhumusa
+		last_name = EmptyMuhumusa
+		historical = yes
+		culture = cu:ruanda
+		female = yes
+		religion = animist
+		ideology = ideology_theocrat
+		interest_group = ig_devout
+		dna = dna_muhumusa
+		birth_date = 1850.11.18
+		traits = { pious ambitious wrathful }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:BUG
+						this = c:BUG
+						NOT = { exists = c:RWD }
+					}
+					AND = {
+						exists = c:RWD
+						this = c:RWD
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1870.1.1
+			latest_usage_date = 1911.1.1
+			chance = 90
+		}
+	}
+
+# South Africa (Cape Colony) - SAF
+
+	saf_rhodes_character_template = {
+		first_name = Cecil
+		last_name = Rhodes
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_industrialists
+		dna = dna_cecil_rhodes
+		birth_date = 1853.7.5
+		traits = { bigoted ambitious meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:SAF
+				this = c:SAF
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			earliest_usage_date = 1880.1.1
+			latest_usage_date = 1902.3.26
+			chance = 90
+		}
+	}
+	saf_sprigg_character_template = {
+		first_name = Gordon
+		last_name = Sprigg
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_gordon_sprigg
+		birth_date = 1830.4.27
+		traits = { ambitious tactful basic_political_operator pious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:SAF
+				this = c:SAF
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1869.1.1
+			latest_usage_date = 1913.2.4
+			chance = 90
+		}
+	}
+
+# Sierra Leone - SIL
+
+	sil_cinque_character_template = {
+		first_name = Joseph
+		last_name = Cinque
+		historical = yes
+		culture = cu:afro_caribbean
+		female = no
+		religion = animist
+		ideology = ideology_traditionalist
+		interest_group = ig_rural_folk
+		dna = dna_joseph_cinque
+		birth_date = 1814.6.5
+		traits = { basic_political_operator scarred brave }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:SIL
+				this = c:SIL
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			earliest_usage_date = 1842.1.1
+			latest_usage_date = 1879.12.22
+			chance = 25
+		}
+	}
+
+
+# Transvaal - TRN
+
+	TRN_paul_kruger_template = { # Paul Kruger
+		first_name = Paul
+		last_name = Kruger
+		historical = yes
+		culture = cu:boer
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_rural_folk
+		birth_date = 1825.10.10
+		traits = {
+			pious
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:TRN
+				this = c:TRN
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			earliest_usage_date = 1852.1.1
+			latest_usage_date = 1899.1.1
+			chance = 50
+		}   
+	}
+
+# Zanzibar - ZAN
+
+	zan_tip_character_template = {
+		first_name = Tippu
+		last_name = Tip
+		historical = yes
+		culture = cu:swahili
+		female = no
+		religion = shiite
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		dna = dna_tippu_tip
+		birth_date = 1832.11.24
+		traits = { explorer ambitious cruel }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:ZAN
+				this = c:ZAN
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1905.6.14
+			chance = 90
+		}
+	}
+
+# Zimbabwe - ZIM
+
+	zim_nyakasikana_character_template = {
+		first_name = Charwe
+		last_name = Nyakasikana
+		historical = yes
+		culture = cu:shona
+		female = yes
+		religion = animist
+		ideology = ideology_jingoist_leader
+		interest_group = ig_devout
+		dna = dna_charwe_nyakasikana
+		birth_date = 1840.5.30
+		traits = { pious inspirational_orator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ZIM
+						this = c:ZIM
+						NOT = { exists = c:MSH }
+					}
+					AND = {
+						exists = c:MSH
+						this = c:MSH
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1880.1.1
+			latest_usage_date = 1899.1.1
+			chance = 90
+		}
+	}
+
+# Zulu - ZUL
+
+	zul_zibhebhu_character_template = {
+		first_name = Zibhebhu_kaMaphitha
+		last_name = Zulu
+		historical = yes
+		culture = cu:zulu
+		female = no
+		religion = animist
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		dna = dna_zibhebhu_kamaphitha
+		birth_date = 1841.1.8
+		traits = { ambitious reckless pillager }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:ZUL
+				this = c:ZUL
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1880.1.1
+			latest_usage_date = 1904.6.9
+			chance = 90
+		}
+	}

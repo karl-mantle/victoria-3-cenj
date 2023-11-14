@@ -64,7 +64,7 @@
 		"latin_colonial_manufactory_01_mesh"
 	}
 	# Added
-	building_copper_fields = {
+	building_clay_pit = {
 		"latin_mining_processing_01_mesh"
 	}
 	building_copper_mine = {
@@ -76,7 +76,7 @@
 	building_silver_mine = {
 		"latin_mining_coaldepo_01_mesh"
 	}
-	building_quarry = {
+	building_stone_quarry = {
 		"latin_mining_processing_01_mesh"
 	}
 }

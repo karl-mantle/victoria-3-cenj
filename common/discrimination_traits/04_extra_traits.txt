@@ -1,0 +1,15 @@
+﻿scottish_culture_group = {
+}
+
+canadian_culture_group = {
+}
+
+occitan_culture_group = {
+}
+
+nomadic_traditions = {
+}
+
+mestizo_heritage = {
+	heritage = yes
+}

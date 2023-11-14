@@ -1,0 +1,8 @@
+﻿default_revolutionary_canton = {
+	colored_emblem = {
+		texture = "ce_revolution_tear_lord_r.dds"
+		color1 = "black"
+		color2 = "black"
+		color3 = "highlight"
+	}
+}

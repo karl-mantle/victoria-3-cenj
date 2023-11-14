@@ -1,0 +1,274 @@
+﻿# Afghanistan - AFG
+
+	afg_general_mohammed = {
+		first_name = Yar
+		last_name = Mohammed
+		historical = yes
+		culture = cu:pashtun
+		female = no
+		religion = sunni
+		commander_rank = default
+		interest_group = ig_landowners
+		birth_date = 1800.1.1 # Uncertain birth date
+		traits = {
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:AFG
+				this = c:AFG
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1865.1.1	
+			chance = 75
+		}
+	}
+
+# Algeria - ALD
+
+	ald_general_nsoumer = {
+		first_name = Fatma
+		last_name = N_Soumer
+		historical = yes
+		culture = cu:berber
+		female = yes
+		religion = sunni
+		commander_rank = default
+		interest_group = ig_devout
+		ideology = ideology_theocrat
+		birth_date = 1830.8.21 # estimate
+		traits = {
+			brave
+			charismatic
+			stalwart_defender
+		}
+		commander_usage = {
+			country_trigger = {
+				AND = {
+					OR = {
+						AND = {
+							exists = c:ALD
+							this = c:ALD
+						}
+						AND = {
+							exists = c:MAS
+							this = c:MAS
+						}
+						AND = {
+							exists = c:CON
+							this = c:CON
+						}
+						AND = {
+							exists = c:AIT
+							this = c:AIT
+						}
+						AND = {
+							exists = c:TUG
+							this = c:TUG
+						}
+					}
+					is_subject = no
+					any_scope_state = {
+						OR = {
+							state_region = s:STATE_ORAN
+							state_region = s:STATE_ALGIERS
+							state_region = s:STATE_CONSTANTINE
+							state_region = s:STATE_EAST_SAHARA
+						}
+					}
+					AND = {
+						exists = c:FRA
+						c:FRA = {
+							any_scope_state = {
+								OR = {
+									state_region = s:STATE_ORAN
+									state_region = s:STATE_ALGIERS
+									state_region = s:STATE_CONSTANTINE
+									state_region = s:STATE_EAST_SAHARA
+								}
+							}
+						}
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1854.1.1	
+			chance = 75
+		}
+	}
+	ald_general_mokrani = {
+		first_name = Mohamed
+		last_name = al-Mokrani
+		historical = yes
+		culture = cu:berber
+		female = no
+		religion = sunni
+		commander_rank = default
+		interest_group = ig_landowners
+		ideology = ideology_traditionalist
+		birth_date = 1815.3.7 # only year known
+		traits = {
+			brave
+			popular_commander
+			experienced_offensive_planner
+		}
+		commander_usage = {
+			country_trigger = {
+				NOT = {
+					exists = c:AIT
+				}	
+				OR = {
+					AND = {
+						exists = c:ALD
+						this = c:ALD
+					}
+					AND = {
+						exists = c:MAS
+						this = c:MAS
+					}
+					AND = {
+						exists = c:CON
+						this = c:CON
+					}
+					AND = {
+						exists = c:TUG
+						this = c:TUG
+					}
+				}
+				is_subject = no
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_ORAN
+						state_region = s:STATE_ALGIERS
+						state_region = s:STATE_CONSTANTINE
+						state_region = s:STATE_EAST_SAHARA
+					}
+				}
+				AND = {
+					exists = c:FRA
+					c:FRA = {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_ORAN
+								state_region = s:STATE_ALGIERS
+								state_region = s:STATE_CONSTANTINE
+								state_region = s:STATE_EAST_SAHARA
+							}
+						}
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1854.1.1	
+			chance = 75
+		}
+	}
+
+# Ottoman Empire - TUR
+
+	tur_general_pasha = {
+		first_name = Mehmed_Naik
+		last_name = "Pasha"
+		historical = yes
+		culture = cu:turkish
+		female = no
+		religion = sunni
+		commander_rank = default
+		interest_group = ig_landowners
+		birth_date = 1804.2.4 # Only birth year certain
+		traits = {
+			persistent
+			basic_diplomat
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:TUR
+				this = c:TUR
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1880.1.1	
+			chance = 75
+		}
+	}
+	tur_admiral_hobart = { # Augustus Charles Hobart-Hampden
+		first_name = Hobart
+		last_name = Pasha
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1822.4.1
+		traits = {
+			experienced_convoy_raider
+			reckless
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:TUR
+				this = c:TUR
+			}
+			role = admiral
+			earliest_usage_date = 1862.2.5
+			latest_usage_date = 1880.1.1	
+			chance = 50
+		}
+	}
+	tur_general_mehmed_ali = { # Ludwig Karl Friedrich Detroit
+		first_name = Mehmed_Ali
+		last_name = Pasha
+		historical = yes
+		culture = cu:north_german
+		female = no
+		religion = sunni
+		ideology = ideology_traditionalist
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1827.11.18
+		traits = {
+			defense_in_depth_specialist
+			pillager
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:TUR
+				this = c:TUR
+			}
+			role = general
+			earliest_usage_date = 1865.1.1
+			latest_usage_date = 1888.1.1	
+			chance = 50
+		}
+	}
+	tur_general_osman_nuri = {
+		first_name = Osman_Nuri
+		last_name = Pasha
+		historical = yes
+		culture = cu:turkish
+		female = no
+		religion = sunni
+		ideology = ideology_moderate
+		commander_rank = default
+		interest_group = ig_armed_forces
+		birth_date = 1832.2.18
+		traits = {
+			stalwart_defender
+			experienced_defensive_strategist
+			brave
+		}
+		commander_usage = {
+			country_trigger = {
+				exists = c:TUR
+				this = c:TUR
+			}
+			role = general
+			earliest_usage_date = 1861.1.1
+			latest_usage_date = 1900.1.1	
+			chance = 50
+		}
+	}

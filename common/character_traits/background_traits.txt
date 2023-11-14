@@ -1,0 +1,1930 @@
+﻿### Background
+
+academic = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/academic.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        building_university_throughput_add = 0.1
+        country_authority_mult = -0.1
+	}
+
+    interest_group_modifier = {
+        country_academics_pol_str_mult = 0.1
+	}
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        interest_group = {
+			OR = {
+				is_interest_group_type = ig_landowners
+                is_interest_group_type = ig_devout
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_petty_bourgeoisie 
+			}
+		}
+        owner = {
+            has_technology_researched = academia
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+			limit = {
+                interest_group = {
+                    is_interest_group_type = ig_intelligentsia
+                }
+			}
+			add = 490
+		}
+		if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_landowners
+                        is_interest_group_type = ig_devout
+                        is_interest_group_type = ig_petty_bourgeoisie 
+                    }  
+                }
+            } 
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+banker = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/banker.dds"
+	
+	character_modifier = {
+        character_popularity_add = -10
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_minting_mult = 0.1
+        state_radicals_from_sol_change_mult = 0.1
+	}
+    interest_group_modifier = {
+        interest_group_in_government_approval_add = 1
+	}
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_council_republic }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_command_economy }
+        }
+        interest_group = {
+				is_interest_group_type = ig_industrialists
+		}
+        owner = {
+            has_technology_researched = banking
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+			    interest_group = {
+                        is_interest_group_type = ig_industrialists
+                }
+			}
+			add = 490
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+bureaucrat = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/bureaucrat.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_bureaucracy_mult = 0.05
+        country_law_enactment_time_mult = 0.1
+	}
+
+    interest_group_modifier = {
+        country_bureaucrats_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+				is_interest_group_type = ig_landowners
+                is_interest_group_type = ig_armed_forces
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_armed_forces
+                        is_interest_group_type = ig_intelligentsia
+                        is_interest_group_type = ig_petty_bourgeoisie
+                    }
+                }
+			}
+			add = 430
+		}
+        if = {
+            limit = {
+                AND = {
+                    interest_group = {
+                        is_interest_group_type = ig_landowners
+                    }
+                    owner = { has_law = law_type:law_hereditary_bureaucrats }
+                }
+			}
+            
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+clerk = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/clerk.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        state_tax_capacity_mult = 0.1
+        building_railway_throughput_add = -0.05
+	}
+
+    interest_group_modifier = {
+        country_clerks_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+				is_interest_group_type = ig_devout
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_petty_bourgeoisie
+                is_interest_group_type = ig_trade_unions
+			}
+		}
+        owner = {
+            has_technology_researched = socialism
+            literacy_rate >= 0.60
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+			}
+			add = 460
+		}
+        if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_devout
+                        is_interest_group_type = ig_intelligentsia
+                        is_interest_group_type = ig_trade_unions
+                    }
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+doctor = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/doctor.dds"
+	
+	character_modifier = {
+        character_health_add = 0.1
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        state_mortality_mult = -0.02
+        unit_kill_rate_add = -0.1
+	}
+
+    interest_group_modifier = {
+        interest_group_pop_attraction_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        interest_group = {
+			OR = {
+				is_interest_group_type = ig_devout
+                is_interest_group_type = ig_rural_folk
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_petty_bourgeoisie
+                is_interest_group_type = ig_trade_unions
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_devout
+                        is_interest_group_type = ig_rural_folk
+                        is_interest_group_type = ig_intelligentsia
+                        is_interest_group_type = ig_petty_bourgeoisie
+                        is_interest_group_type = ig_trade_unions
+                    }
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+inventor = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/inventor.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        building_construction_sector_throughput_add = 0.1
+        country_institution_size_change_speed_mult = 0.2
+	}
+
+    interest_group_modifier = {
+        country_engineers_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_industrialists
+                is_interest_group_type = ig_trade_unions
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_intelligentsia
+                        is_interest_group_type = ig_industrialists
+                        is_interest_group_type = ig_trade_unions
+                    }
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+entrepreneur = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/entrepreneur.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        state_dependent_wage_mult = 0.1
+        state_radicals_from_discrimination_mult = 0.05
+	}
+
+    interest_group_modifier = {
+        interest_group_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+           owner = {  has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_industrialists
+                is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_industrialists
+                }
+            }
+			add = 460
+		}
+		if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+mill_owner = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/mill_owner.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_authority_add = 100
+        tax_dividends_add = -0.025
+	}
+
+    interest_group_modifier = {
+        country_capitalists_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_council_republic }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_command_economy }
+        }
+        interest_group = {
+            is_interest_group_type = ig_industrialists
+		}
+        owner = {
+            has_technology_researched = manufacturies
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_industrialists
+                }
+            }
+			add = 490
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+farmer = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/farmer.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        building_group_bg_agriculture_throughput_add = 0.1
+        state_colony_growth_speed_mult = -0.1
+	}
+
+    interest_group_modifier = {
+        country_farmers_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_landowners
+                is_interest_group_type = ig_rural_folk
+			}
+		}
+        owner = {
+            has_technology_researched = socialism
+            literacy_rate >= 0.60
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_rural_folk
+                }
+            }
+			add = 460
+		}
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_landowners
+                }
+                OR = {
+                    owner = { has_law = law_type:law_anarchy }
+                    owner = { has_law = law_type:law_command_economy }
+                    owner = { has_law = law_type:law_council_republic }
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+journalist = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/journalist.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_revolution_progress_mult = -0.1
+        country_infamy_generation_mult = 0.1
+	}
+
+    interest_group_modifier = {
+        interest_group_in_opposition_approval_add = -2
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_rural_folk
+                is_interest_group_type = ig_armed_forces
+                is_interest_group_type = ig_industrialists
+                is_interest_group_type = ig_trade_unions
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+		if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_rural_folk
+                        is_interest_group_type = ig_armed_forces
+                        is_interest_group_type = ig_industrialists
+                        is_interest_group_type = ig_trade_unions
+                    }
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+labourer = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/labourer.dds"
+	
+	character_modifier = {
+        character_health_add = -0.1
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        building_group_bg_manufacturing_throughput_add = 0.1
+        country_prestige_mult = -0.05
+	}
+
+    interest_group_modifier = {
+        country_laborers_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_devout
+                is_interest_group_type = ig_trade_unions
+			}
+		}
+        owner = {
+            has_technology_researched = socialism
+            literacy_rate >= 0.60
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_trade_unions
+                }
+            }
+			add = 460
+		}
+		if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_devout
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+lawyer = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/lawyer.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_legitimacy_base_add = 10
+        country_bureaucracy_mult = -0.05
+	}
+
+    interest_group_modifier = {
+        interest_group_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_anarchy }
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_rural_folk
+                        is_interest_group_type = ig_petty_bourgeoisie
+                        is_interest_group_type = ig_trade_unions
+                    }
+                }
+            }
+			add = 490
+		}
+        if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_landowners
+                        is_interest_group_type = ig_devout
+                        is_interest_group_type = ig_intelligentsia
+                        is_interest_group_type = ig_industrialists
+                    }
+                }
+            }
+			add = 460
+		}
+		if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+merchant = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/merchant.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_trade_route_quantity_mult = 0.1
+        state_tax_waste_add = 0.02
+	}
+
+    interest_group_modifier = {
+        country_shopkeepers_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        } 
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_industrialists
+                is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+            }
+			add = 460
+		}
+		if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_intelligentsia
+                        is_interest_group_type = ig_industrialists
+                    }
+                }
+            }
+			add = 430
+		}
+        if = {
+            limit = {
+                has_variable = david_copperfield_var
+            }
+            add = 1000
+        }
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+military_officer = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/military_officer.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_war_exhaustion_casualties_mult = -0.1
+        country_military_goods_cost_mult = 0.05
+	}
+
+    interest_group_modifier = {
+        country_officers_pol_str_mult = 0.1
+        country_soldiers_pol_str_mult = 0.05
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_landowners
+                is_interest_group_type = ig_armed_forces
+			}
+		}
+        owner = {
+            has_technology_researched = standing_army
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+			add = 490
+		}
+		if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_landowners
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+landed_elite = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/landed_elite.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_prestige_mult = 0.05
+        interest_group_ig_rural_folk_approval_add = -1
+	}
+
+    interest_group_modifier = {
+        country_aristocrats_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        interest_group = {
+            is_interest_group_type = ig_landowners
+		}
+        NOT = {
+            owner = { has_law = law_type:law_council_republic }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_command_economy }
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_landowners
+                }
+            }
+			add = 490
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+police_chief = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/police_chief.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        state_turmoil_effects_mult = -0.1
+        country_decree_cost_mult = 0.1
+	}
+
+    interest_group_modifier = {
+        interest_group_approval_add = 1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_no_police }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_rural_folk
+                is_interest_group_type = ig_armed_forces
+			}
+		}
+        owner = {
+            has_technology_researched = socialism
+            literacy_rate >= 0.60
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_rural_folk
+                        is_interest_group_type = ig_armed_forces
+                    }
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+political_dynasty = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/political_dynasty.dds"
+	
+	character_modifier = {
+        character_popularity_add = 10
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        country_influence_mult = 0.05
+        country_opposition_ig_approval_add = -1
+	}
+
+    interest_group_modifier = {
+        interest_group_pol_str_mult = 0.15
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_anarchy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_landowners
+                is_interest_group_type = ig_armed_forces
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_landowners
+                }
+            }
+			add = 490
+		}
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+			add = 460
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+religious_leader = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/religious_leader.dds"
+	
+	character_modifier = {
+        character_popularity_add = 10
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        state_loyalists_from_sol_change_accepted_religion_mult = 0.05
+        country_tech_spread_mult = -0.1
+	}
+
+    interest_group_modifier = {
+        country_clergymen_pol_str_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_devout
+                is_interest_group_type = ig_rural_folk
+			}
+		}
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_devout
+                }
+            }
+			add = 490
+		}
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_rural_folk
+                }
+            }
+			add = 460
+		}
+        if = {
+            limit = {
+                owner = { has_law = law_type:law_theocracy }
+            }
+            add = 410
+        }
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+soldier = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/soldier.dds"
+	
+	character_modifier = {
+        character_health_add = -0.1
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        building_training_rate_mult = 0.1
+	}
+
+    interest_group_modifier = {
+        political_movement_radicalism_mult = 0.2
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_peasant_levies }
+        }
+        interest_group = {
+            is_interest_group_type = ig_armed_forces
+		}
+        owner = {
+            has_technology_researched = socialism
+            literacy_rate >= 0.60
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+			add = 460
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}
+
+teacher = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/teacher.dds"
+	
+	character_modifier = {
+	}
+	
+	command_modifier = {
+	}
+
+	country_modifier = {
+        state_education_access_add = 0.1
+        state_dependent_wage_mult = -0.1
+	}
+
+    interest_group_modifier = {
+        interest_group_pop_attraction_mult = 0.1
+    }
+
+	possible = {
+        has_role = politician
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law = law_type:law_monarchy }
+        }
+        NAND = {
+            is_ruler = yes
+            owner = { has_law = law_type:law_theocracy }
+        }
+        NAND = {
+            is_heir = yes
+            owner = { has_law =law_type:law_theocracy }
+        }
+        NOT = {
+            owner = { has_law = law_type:law_no_schools }
+        }
+        interest_group = {
+			OR = {
+                is_interest_group_type = ig_devout
+                is_interest_group_type = ig_rural_folk
+                is_interest_group_type = ig_trade_unions
+			}
+		}
+        owner = {
+            has_technology_researched = socialism
+            literacy_rate >= 0.60
+        }
+        NOT = { has_variable = has_historical_traits }
+        NOT = { has_variable = david_copperfield_var }
+        NOR = {
+            has_trait = academic
+            has_trait = banker
+            has_trait = bureaucrat
+            has_trait = clerk
+            has_trait = doctor
+            has_trait = inventor
+            has_trait = entrepreneur
+            has_trait = mill_owner
+            has_trait = farmer
+            has_trait = journalist
+            has_trait = labourer
+            has_trait = lawyer
+            has_trait = merchant
+            has_trait = military_officer
+            has_trait = landed_elite
+            has_trait = police_chief
+            has_trait = political_dynasty
+            has_trait = religious_leader
+            has_trait = soldier
+            has_trait = teacher
+        }
+        age > define:NPortrait|GRACEFUL_AGING_START
+	}
+	
+	weight = {
+		value = 0
+        if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        is_interest_group_type = ig_devout
+                        is_interest_group_type = ig_rural_folk
+                        is_interest_group_type = ig_trade_unions
+                    }
+                }
+            }
+			add = 430
+		}
+	}
+	
+	replace = {
+	}
+	
+	value = 1
+}

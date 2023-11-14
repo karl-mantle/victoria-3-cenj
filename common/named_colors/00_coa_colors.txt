@@ -1,4 +1,4 @@
-colors = {
+﻿colors = {
 	todo_purple = rgb { 1 0.4 0.6 }
 	highlight = 	hsv360 	{	195	25	100	}
 

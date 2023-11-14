@@ -1,7 +1,7 @@
 ﻿asian_mine = {
 	graphical_culture = "asian"
 	city_type = mine
-	center_building_mesh = "asian_mininghub_centerpiece_01_mesh"
+	center_building_mesh = "asian_mining_centerpiece_01_mesh"
 	center_building_size = { 3 3 }
 	
 
@@ -64,11 +64,11 @@
 		"asian_colonial_manufactory_01_mesh"
 	}
 	# Added
+	building_clay_pit = {
+		"asian_mining_processing_01_mesh"
+	}
 	building_copper_mine = {
 		"generic_rural_mining_coaldepo_02_mesh"
-	}
-	building_copper_fields = {
-		"asian_mining_processing_01_mesh"
 	}
 	building_silver_mine = {
 		"generic_rural_mining_coaldepo_02_mesh"
@@ -76,7 +76,7 @@
 	building_silver_fields = {
 		"asian_mining_processing_01_mesh"
 	}
-	building_quarry = {
+	building_stone_quarry = {
 		"asian_mining_processing_01_mesh"
 	}
 }

@@ -13,6 +13,13 @@
 		has_law = law_type:law_presidential_republic
 		has_modifier = volksraad_government
 	}
+
+	on_government_type_change = {
+		change_to_parliamentary_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_parliamentary_elective = yes
+	}
 }
 
 gov_griqua_state = {
@@ -27,6 +34,13 @@ gov_griqua_state = {
 	possible = {
 		country_has_primary_culture = cu:griqua
 		has_law = law_type:law_presidential_republic
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
 	}
 }
 
@@ -47,6 +61,13 @@ gov_governorate = {
 		has_law = law_type:law_presidential_republic
 		is_subject_type = subject_type_puppet
 	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_viceroyalty = {
@@ -65,5 +86,134 @@ gov_viceroyalty = {
 		is_subject_of = c:RUS
 		has_law = law_type:law_presidential_republic
 		is_subject_type = subject_type_dominion
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+### Corporate States
+
+gov_kor_chaebol_dictatorship = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_CHAIRMAN"
+	female_ruler = "RULER_TITLE_CHAIRWOMAN"
+
+	male_heir = "RULER_TITLE_VICE_CHAIRMAN"
+	female_heir = "RULER_TITLE_VICE_CHAIRWOMAN"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_single_party_state
+		}
+		
+		exists = c:KOR
+		c:KOR = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_jap_zaibatsu_dictatorship = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_TOSHU" # 当主
+	female_ruler = "RULER_TITLE_TOSHU"
+
+	male_heir = "RULER_TITLE_HEIR_ONZOUSHI" # 御曹司 or scion in english
+	female_heir = "RULER_TITLE_HEIR_OJOUSAMA" # お嬢様
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_single_party_state
+		}
+		
+		exists = c:JAP
+		c:JAP = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_corporate_dictatorship = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_CHAIRMAN"
+	female_ruler = "RULER_TITLE_CHAIRWOMAN"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_single_party_state
+		}
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_corporate_republic = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = yes
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		country_has_voting_franchise = yes
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+
+gov_corporate_state = {
+	transfer_of_power = parliamentary_elective
+	new_leader_on_reform_government = yes
+	
+	male_ruler = "RULER_TITLE_CHAIRMAN"
+	female_ruler = "RULER_TITLE_CHAIRWOMAN"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+	}
+
+	on_government_type_change = {
+		change_to_parliamentary_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_parliamentary_elective = yes
 	}
 }

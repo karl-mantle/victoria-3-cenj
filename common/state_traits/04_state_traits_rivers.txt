@@ -244,7 +244,7 @@ state_trait_river_nile = {
 	modifier = {
 		state_infrastructure_add = 40
 
-		building_group_bg_agriculture_throughput_mult = 0.2
+		building_group_bg_agriculture_throughput_add = 0.2
 	}
 }
 
@@ -374,7 +374,7 @@ state_trait_river_rio_grande = {
 	modifier = {
 		state_infrastructure_add = 25
 
-		building_group_bg_ranching_throughput_mult = 0.2
+		building_group_bg_ranching_throughput_add = 0.2
 	}	
 }
 
@@ -496,8 +496,8 @@ state_trait_river_ganges = {
 	modifier = {
 		state_infrastructure_add = 40
 
-		building_group_bg_agriculture_throughput_mult = 0.15
-		building_output_grain_mult = 0.1
+		building_group_bg_agriculture_throughput_add = 0.15
+		goods_output_grain_mult = 0.1
 		
 	}
 }

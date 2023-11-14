@@ -105,7 +105,7 @@ pmg_ownership_capital_building_finance_sector = {
 	}
 }
 
-pmg_base_building_health_facilities = {
+pmg_base_building_hospital = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_traditional_medicine
@@ -114,21 +114,21 @@ pmg_base_building_health_facilities = {
 	}
 }
 
-pmg_luxury_building_health_facilities = {
+pmg_luxury_building_hospital = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
-		pm_health_facilities_apothecaries
-		pm_health_facilities_pharmacies
+		pm_hospital_apothecaries
+		pm_hospital_pharmacies
 	}
 }
 
-pmg_ownership_capital_building_health_facilities = {
+pmg_ownership_capital_building_hospital = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
-		pm_charity_run_building_health_facilities
-		pm_privately_owned_building_health_facilities
-		pm_publicly_traded_building_health_facilities
-		pm_government_run_building_health_facilities
-		pm_university_run_building_health_facilities
+		pm_charity_run_building_hospital
+		pm_privately_owned_building_hospital
+		pm_publicly_traded_building_hospital
+		pm_government_run_building_hospital
+		pm_university_run_building_hospital
 	}
 }

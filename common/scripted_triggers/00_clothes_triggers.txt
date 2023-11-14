@@ -204,6 +204,7 @@ japanese_imperial_clothes_trigger = {
 				exists = c:JAP
 				home_country = {
 					this = c:JAP
+					NOT = { has_variable = meiji_restoration_complete }
 				}
 			}
 		}
@@ -496,27 +497,42 @@ ethiopian_clothes_trigger = {
 european_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
-		culture = {
-			OR = {
-				has_discrimination_trait = european_heritage
-				has_discrimination_trait = mestizo_heritage
+		OR = {
+			AND = {
+				culture = cu:japanese
+				devout_clothes_trigger = no
+				NOT = {
+					has_ideology = ideology:ideology_traditionalist
+					is_ruler = yes
+				}
+				owner = {
+					has_variable = meiji_restoration_complete
+				}
 			}
-		}
-		NOT = {
-			culture = cu:circassian
-		}
-		NOT = {
-			AND = { # Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
-				culture = cu:albanian
-				exists = home_country
-				OR = {
-					home_country = {
-						exists = c:TUR
-						c:TUR = this
+			AND = {
+				culture = {
+					OR = {
+						has_discrimination_trait = mestizo_heritage
+						has_discrimination_trait = european_heritage
 					}
-					home_country = {
-						exists = c:EGY
-						c:EGY = this
+				}
+				NOT = {
+					culture = cu:circassian
+				}
+				NOT = {
+					AND = { # Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
+						culture = cu:albanian
+						exists = home_country
+						OR = {
+							home_country = {
+								exists = c:TUR
+								c:TUR = this
+							}
+							home_country = {
+								exists = c:EGY
+								c:EGY = this
+							}
+						}
 					}
 				}
 			}
@@ -939,6 +955,14 @@ slavic_clothes_trigger = {
 				has_discrimination_trait = west_slavic
 				has_discrimination_trait = jugoslav
 			}
+		}   
+	}
+}
+
+nordic_clothes_pop_trigger = {
+	scope:pop ?= {
+		culture = {
+			has_discrimination_trait = scandinavian_culture_group			
 		}   
 	}
 }

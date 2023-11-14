@@ -1,0 +1,757 @@
+﻿afro_canadian={
+	color= hsv{ 0.10 0.10 0.24 }
+	religion = protestant
+	traits = { canadian_culture_group anglophone african_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+asian_american={
+	color= hsv{ 0.62 0.46 0.50 }
+	religion = protestant
+	traits = { american_culture_group east_asian_heritage }
+	male_common_first_names={
+		Alexander Andrew Alvin
+		Benjamin Benedict Brian
+		Charles 
+		Daniel David Dominic
+		Ezekiel Elijah Edward Ezra
+		Francis Frederick
+		George Gordon 
+		Henry
+		James Johnny
+		Lance Lawrence Leonard_2
+		Michael Matthew
+		Nicholas
+		Oliver
+		Peter Paul Patrick
+		Robert
+		Thomas
+		William
+		Zachary
+	}
+	female_common_first_names = {
+		Anna Alice Ariel
+		Catharine Charlotte
+		Delia Deborah
+		Elizabeth Emily Emma Eleanor
+		Florence
+		Grace Graceanna
+		Hannah Helen
+		Jane Julia Josephine
+		Louisa Lucy
+		Mary Maria
+		Tram_Anh
+		Yunmei
+		Wendy
+		Zara
+	}	
+	noble_last_names = {
+		Li
+	}
+	common_last_names={
+		Bui
+		Chen
+		Gouw
+		Hoang Huynh
+		Nguyen
+		Pao
+		Song
+		Thao Tran
+		Vang
+		Wong
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+asian_canadian={
+	color= hsv{ 0.62 0.46 0.50 }
+	religion = animist
+	traits = { canadian_culture_group east_asian_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+chinese_american={
+	color= hsv{ 0.80 0.36 0.39 }
+	religion = mahayana
+	traits = { american_culture_group han_chinese east_asian_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+chinese_canadian={
+	color= hsv{ 0.80 0.36 0.39 }
+	religion = mahayana
+	traits = { canadian_culture_group han_chinese east_asian_heritage}
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+dutch_canadian={
+	color= hsv{ 0.07 0.49 0.93 }
+	religion = protestant
+	traits = { canadian_culture_group beneluxian_culture_group european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+franco_american={
+	color= rgb{ 87 120 181 }
+	religion = catholic
+	traits = { american_culture_group francophone european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+german_american={
+	color= hsv{ 0.60 0.38 0.75 }
+	religion = protestant
+	traits = { american_culture_group german_speaking european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}
+	noble_last_names = {
+		# TODO
+	}	
+	common_last_names={
+		# TODO
+	}
+
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+german_canadian={
+	color= rgb{ 62 77 100 }
+	religion = protestant
+	traits = { canadian_culture_group german_speaking european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}
+	noble_last_names = {
+		# TODO
+	}	
+	common_last_names={
+		# TODO
+	}
+
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+greco_canadian={
+	color= hsv{ 0.94 0.45 0.48 }
+	religion = orthodox
+	traits = { canadian_culture_group greek_culture european_heritage }
+	
+	obsessions = {
+		wine
+	}	
+	
+	male_common_first_names = {
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+	noble_last_names = { 
+		# TODO
+	}
+	common_last_names = {
+		# TODO
+	}
+
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+hispanic_american={
+	color=hsv{ 0.99 0.50 0.65 }
+	religion = catholic
+	traits = { american_culture_group hispanophone mestizo_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = south_american
+	}
+	graphics = european
+}
+indo_american={
+	color= hsv{ 0.05 0.12 0.69 }
+	religion = hindu
+	traits = { american_culture_group hindustani south_asian_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+indo_canadian={
+	color= hsv{ 0.08 0.10 0.74 }
+	religion = hindu
+	traits = { canadian_culture_group hindustani south_asian_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+irish_american={
+	color= hsv{ 0.35 0.58 0.54 }
+	religion = catholic
+	traits = { american_culture_group celtic_people european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+irish_canadian={
+	color= hsv{ 0.35 0.58 0.54 }
+	religion = catholic
+	traits = { canadian_culture_group celtic_people european_heritage }
+
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+italian_american={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { american_culture_group italophone european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+italian_canadian={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { canadian_culture_group italophone european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+japanese_american={
+	color= hsv{ 0 0 90 }
+	religion = mahayana
+	traits = { american_culture_group yamato east_asian_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+jewish_american={
+	color= hsv{ 0.13 0.80 0.99 }
+	religion = jewish
+	traits = { american_culture_group jewish_group european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = caucasian
+	}
+	graphics = european
+}
+luso_american={
+	color= hsv{ 0.50 0.53 0.40 }
+	religion = catholic
+	traits = { american_culture_group lusophone mestizo_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = south_american
+	}
+	graphics = european
+}
+luso_canadian={
+	color= hsv{ 0.50 0.53 0.40 }
+	religion = catholic
+	traits = { canadian_culture_group lusophone mestizo_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = south_american
+	}
+	graphics = european
+}
+newfoundlander={
+	color= hsv{ 0.35 0.58 0.34 }
+	religion = protestant
+	traits = { anglophone european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+polish_american={
+	color= hsv{ 0 0.22 0.5 }
+	religion = catholic
+	traits = { american_culture_group west_slavic european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+polish_canadian={
+	color= hsv{ 0 0.22 0.5 }
+	religion = catholic
+	traits = { canadian_culture_group west_slavic european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+russian_american={
+	color= hsv{ 0.35 0.40 0.37 }
+	religion = orthodox
+	traits = { american_culture_group east_slavic european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+	regal_last_names = {
+		# TODO
+	}
+
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+scots_canadian={
+	color={ 72 79 127 }
+	religion = protestant
+	traits = { canadian_culture_group scottish_culture_group anglophone european_heritage }
+	
+	male_common_first_names = {
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names = {
+		# TODO
+	}
+	male_regal_first_names={
+		# TODO
+	}
+	female_regal_first_names={
+		# TODO
+	}
+	regal_last_names={
+		# TODO
+	}	
+	
+	ethnicities = {
+		1 = caucasian
+	}
+	graphics = european
+}
+texan={
+	color= rgb { 4  144  178 }
+	religion = protestant
+	traits = { american_culture_group anglophone european_heritage }
+
+	obsessions = {
+		meat
+	}
+
+	male_common_first_names = {
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names = {
+		# TODO
+	}
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+ukrainian_canadian={
+	color= hsv{ 0.16 0.32 0.62 }
+	religion = orthodox
+	traits = { canadian_culture_group east_slavic european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+yugoslav_american={
+	color= hsv{ 0.97 0.26 0.58 }
+	religion = orthodox
+	traits = { american_culture_group jugoslav european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+	regal_last_names = {
+		# TODO
+	}	
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+yugoslav_canadian={
+	color= hsv{ 0.97 0.26 0.58 }
+	religion = orthodox
+	traits = { canadian_culture_group jugoslav european_heritage }
+	male_common_first_names={
+		# TODO
+	}
+	female_common_first_names = {
+		# TODO
+	}	
+	noble_last_names = {
+		# TODO
+	}
+	common_last_names={
+		# TODO
+	}
+	male_regal_first_names = {
+		# TODO
+	}
+	female_regal_first_names = {
+		# TODO
+	}
+	regal_last_names = {
+		# TODO
+	}	
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}

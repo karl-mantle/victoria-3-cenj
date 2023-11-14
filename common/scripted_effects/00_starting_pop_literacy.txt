@@ -22,7 +22,7 @@ effect_starting_pop_literacy_very_high = {
 	every_scope_pop = {
 		set_pop_literacy = {
 			literacy_rate = {
-				value = 0.9
+				value = 0.8
 				# Peasants should be able to read less
 				if = {
 					limit = {
@@ -57,7 +57,7 @@ effect_starting_pop_literacy_high = {
 	every_scope_pop = {
 		set_pop_literacy = {
 			literacy_rate = {
-				value = 0.6
+				value = 0.5
 				# These people should be able to read.
 				if = {
 					limit = {

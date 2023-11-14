@@ -1153,7 +1153,6 @@ STATES = {
 		}
 		
 		add_homeland = romanian
-		add_homeland = east_german
 	}
 	s:STATE_WALLACHIA = {
 		create_state = {
@@ -1162,7 +1161,6 @@ STATES = {
 		}
 		
 		add_homeland = romanian
-		add_homeland = east_german
 	}
 	s:STATE_GALICIA = {
 		create_state = {
@@ -1470,7 +1468,7 @@ STATES = {
 		
 		add_homeland = bedouin
 	}
-	s:STATE_HAIL = {
+	s:STATE_HADHRAMAUT = {
 		create_state = {
 			country = c:MAH
 			owned_provinces = { x30A3E2 x37058f xAD1CE2 x8D121D x8D6307 xBDEA27 x02B35C xA2FDFA x6BD0A9 xB010DF x9D6547 xA0540A }
@@ -3183,7 +3181,7 @@ STATES = {
 		}
 		
 		add_homeland = scottish
-		add_homeland = gaelic_scots
+		add_homeland = gaelic
 	}
 	s:STATE_EAST_MIDLANDS = {
 		create_state = {
@@ -3233,7 +3231,6 @@ STATES = {
 		}
 		
 		add_homeland = scottish
-		add_homeland = gaelic_scots
 	}
 	s:STATE_ULSTER = {
 		create_state = {
@@ -3243,9 +3240,7 @@ STATES = {
 		}
 		
 		add_homeland = irish
-		add_homeland = british
 		add_homeland = scottish
-		add_homeland = ulster_scots
 	}
 	s:STATE_MUNSTER = {
 		create_state = {
@@ -3281,7 +3276,6 @@ STATES = {
 		}
 		
 		add_homeland = french
-		add_homeland = occitan
 		add_homeland = francoprovencal
 	}
 	s:STATE_FRENCH_LOW_COUNTRIES = {
@@ -3309,7 +3303,7 @@ STATES = {
 		}
 		
 		add_homeland = french
-		add_homeland = south_german
+		add_homeland = lorrainian
 		add_homeland = alemannic
 	}
 	s:STATE_POITOU = {
@@ -3328,7 +3322,6 @@ STATES = {
 		}
 		
 		add_homeland = french
-		add_homeland = occitan
 		add_homeland = gascon
 	}
 	s:STATE_AUVERGNE_LIMOUSIN = {
@@ -3338,7 +3331,6 @@ STATES = {
 		}
 		
 		add_homeland = french
-		add_homeland = occitan
 		add_homeland = auvergnat
 	}
 	s:STATE_BRITTANY = {
@@ -3349,6 +3341,7 @@ STATES = {
 		
 		add_homeland = french
 		add_homeland = breton
+		add_homeland = gallo
 	}
 	s:STATE_BURGUNDY = {
 		create_state = {
@@ -5886,6 +5879,10 @@ STATES = {
 			country = c:MON
 			owned_provinces = { x446E84 x8C6292 }
 		}
+		create_state = {
+			country = c:AUS
+			owned_provinces = { x90A0E0 }
+		}
 		
 		add_homeland = serb
 		add_homeland = albanian
@@ -6604,7 +6601,6 @@ STATES = {
 		create_state = {
 			country = c:POR
 			owned_provinces = { xB031E0 }
-			state_type = unincorporated
 			state_type = treaty_port
 		}
 
@@ -6788,7 +6784,7 @@ STATES = {
 	}
 	s:STATE_LIVONIA = {
 		create_state = {
-			country = c:LVN
+			country = c:LIV
 			owned_provinces = { x00A0A0 x0121A0 x297D54 x3B8640 x3D26D8 x3FA9D2 x3FFD66 x48F471 x521396 x675939 x6D20F8 x8487D5 xB9FF4E xBCF2BB xBF6060 xD51E75 xE3BB51 xE7C9B1 }
 		}
 
@@ -7511,7 +7507,6 @@ STATES = {
 		add_homeland = russian
 		add_homeland = tatar
 		add_homeland = ukrainian
-		add_homeland = east_german
 	}
 	s:STATE_YEKATERINOSLAV = {
 		create_state = {
@@ -7580,7 +7575,6 @@ STATES = {
 		}
 		
 		add_homeland = ukrainian
-		add_homeland = east_german
 	}
 	s:STATE_BESSARABIA = {
 		create_state = {
@@ -7652,7 +7646,6 @@ STATES = {
 		}
 		
 		add_homeland = south_italian
-		add_homeland = neapolitan
 	}	
 	s:STATE_CALABRIA = {
 		create_state = {
@@ -7670,7 +7663,6 @@ STATES = {
 		}
 		
 		add_homeland = south_italian
-		add_homeland = neapolitan
 	}
 	s:STATE_WEST_GALICIA = {
 		create_state = {
@@ -7683,7 +7675,6 @@ STATES = {
 		}
 		
 		add_homeland = polish
-		add_homeland = east_german
 	}
 	s:STATE_EAST_GALICIA = {
 		create_state = {
@@ -7693,7 +7684,6 @@ STATES = {
 		
 		add_homeland = polish
 		add_homeland = ukrainian
-		add_homeland = east_german
 		add_homeland = rusyn
 	}
 	s:STATE_WEST_SLOVAKIA = {
@@ -7719,7 +7709,7 @@ STATES = {
 	s:STATE_DALMATIA = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { xF9421B xEFA0C0 x11A0E0 x90A0E0 }
+			owned_provinces = { xF9421B xEFA0C0 x11A0E0 }
 		}
 		
 		add_homeland = croat
@@ -7761,7 +7751,6 @@ STATES = {
 		}
 		
 		add_homeland = hungarian
-		add_homeland = south_german
 		add_homeland = swabian
 	}
 	s:STATE_ISTRIA = {
@@ -7790,7 +7779,6 @@ STATES = {
 		}
 		
 		add_homeland = czech
-		add_homeland = south_german
 		add_homeland = sudeten_german
 	}
 	s:STATE_MORAVIA = {
@@ -7800,7 +7788,6 @@ STATES = {
 		}
 
 		add_homeland = czech
-		add_homeland = south_german
 		add_homeland = sudeten_german
 	}
 	s:STATE_CENTRAL_HUNGARY = {
@@ -7847,7 +7834,6 @@ STATES = {
 		
 		add_homeland = south_german
 		add_homeland = north_italian
-		add_homeland = austro_bavarian
 	}
 	s:STATE_SLOVENIA = {
 		create_state = {
@@ -7951,6 +7937,7 @@ STATES = {
 		
 		add_homeland = north_german
 		add_homeland = franconian
+		add_homeland = westphalian
 	}
 	s:STATE_RUHR = {
 		create_state = {
@@ -7960,6 +7947,7 @@ STATES = {
 		
 		add_homeland = north_german
 		add_homeland = franconian
+		add_homeland = westphalian
 	}
 	s:STATE_SILESIA = {
 		create_state = {
@@ -7970,7 +7958,6 @@ STATES = {
 		add_homeland = north_german
 		add_homeland = polish
 		add_homeland = silesian
-		add_homeland = silesian_german
 	}
 	s:STATE_BRANDENBURG = {
 		create_state = {
@@ -8010,7 +7997,6 @@ STATES = {
 		}
 		
 		add_homeland = south_german
-		add_homeland = alemannic
 		add_homeland = swabian
 	}
 	s:STATE_BADEN = {
@@ -8020,7 +8006,6 @@ STATES = {
 		}
 		
 		add_homeland = south_german
-		add_homeland = swabian
 		add_homeland = alemannic
 		add_homeland = franconian
 	}
@@ -8131,6 +8116,7 @@ STATES = {
 		}
 		
 		add_homeland = north_italian
+		add_homeland = piedmontese
 	}
 	s:STATE_LIGURIA = {
 		create_state = {
@@ -8139,6 +8125,7 @@ STATES = {
 		}
 		
 		add_homeland = north_italian
+		add_homeland = ligurian
 	}
 	s:STATE_SARDINIA = {
 		create_state = {
@@ -8202,7 +8189,6 @@ STATES = {
 		}
 		
 		add_homeland = polish
-		add_homeland = east_german
 	}
 	s:STATE_VOLHYNIA = {
 		create_state = {
@@ -8212,6 +8198,7 @@ STATES = {
 		
 		add_homeland = ukrainian
 		add_homeland = polish
+		add_homeland = volga_german
 	}
 	s:STATE_PODOLIA = {
 		create_state = {

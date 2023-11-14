@@ -109,7 +109,8 @@ je_atmospheric_engine = {
 				is_building_type = building_sulfur_mine
 				is_building_type = building_lead_mine
 				is_building_type = building_copper_mine
-				is_building_type = building_quarry
+				is_building_type = building_stone_quarry
+				is_building_type = building_clay_pit
 			}
 			level >= 3
 		}
@@ -125,7 +126,8 @@ je_atmospheric_engine = {
 					is_building_type = building_sulfur_mine
 					is_building_type = building_lead_mine
 					is_building_type = building_copper_mine
-					is_building_type = building_quarry
+					is_building_type = building_stone_quarry
+					is_building_type = building_clay_pit
 				}
 			}
 			percent > 0.75
@@ -135,7 +137,8 @@ je_atmospheric_engine = {
 			    has_active_production_method = pm_atmospheric_engine_pump_building_lead_mine
 			    has_active_production_method = pm_atmospheric_engine_pump_building_sulfur_mine
 				has_active_production_method = pm_atmospheric_engine_pump_building_copper_mine
-			    has_active_production_method = pm_atmospheric_engine_pump_building_quarry
+			    has_active_production_method = pm_atmospheric_engine_pump_building_stone_quarry
+			    has_active_production_method = pm_atmospheric_engine_pump_building_clay_pit
             }
 			cash_reserves_ratio > 0.25
 			weekly_profit > 0
@@ -158,7 +161,6 @@ je_atmospheric_engine = {
 
 	timeout = 3650
 }
-
 
 je_plastics = {
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
@@ -261,11 +263,10 @@ je_dynamite = {
 				is_building_type = building_lead_mine
 				is_building_type = building_sulfur_mine
 				is_building_type = building_copper_mine
-				is_building_type = building_quarry
 			}
 		}
 		any_scope_building = {
-			is_building_type = building_chemical_plants
+			is_building_type = building_explosives_factory
 		}
 	}
 
@@ -290,7 +291,6 @@ je_dynamite = {
 						is_building_type = building_lead_mine
 						is_building_type = building_sulfur_mine
 						is_building_type = building_copper_mine
-						is_building_type = building_quarry
 					}
 				}
 				percent > 0.75
@@ -301,7 +301,6 @@ je_dynamite = {
 	                    has_active_production_method = pm_dynamite_building_lead_mine
 	                    has_active_production_method = pm_dynamite_building_sulfur_mine
 						has_active_production_method = pm_dynamite_building_copper_mine
-	                    has_active_production_method = pm_dynamite_building_quarry
 	                }
                 }
                 custom_tooltip = has_activated_dynamite
@@ -313,7 +312,7 @@ je_dynamite = {
 		any_scope_building = {
 			custom_tooltip = je_shortform_building_chemical_plants_tooltip
 			filter = {
-				is_building_type = building_explosives_industry
+				is_building_type = building_explosives_factory
 			}
 			percent > 0.75
 			OR = {
@@ -405,8 +404,6 @@ je_railroads = {
 				is_building_type = building_iron_mine
 				is_building_type = building_lead_mine
 				is_building_type = building_sulfur_mine
-				is_building_type = building_copper_mine
-				is_building_type = building_quarry
 				is_building_type = building_logging_camp
 				is_building_type = building_oil_rig
 				is_building_type = building_coffee_plantation
@@ -418,6 +415,13 @@ je_railroads = {
 				is_building_type = building_sugar_plantation
 				is_building_type = building_rubber_plantation
 				is_building_type = building_banana_plantation
+				# Added
+				is_building_type = building_cocoa_plantation
+				is_building_type = building_hemp_plantation
+				is_building_type = building_spice_plantation
+				is_building_type = building_copper_mine
+				is_building_type = building_stone_quarry
+				is_building_type = building_clay_pit
 			}
 		}
 	}
@@ -439,7 +443,8 @@ je_railroads = {
 						is_building_type = building_lead_mine
 						is_building_type = building_sulfur_mine
 						is_building_type = building_copper_mine
-						is_building_type = building_quarry
+						is_building_type = building_stone_quarry
+						is_building_type = building_clay_pit
 						is_building_type = building_logging_camp
 						is_building_type = building_oil_rig
 					}
@@ -453,7 +458,8 @@ je_railroads = {
 						is_building_type = building_lead_mine
 						is_building_type = building_sulfur_mine
 						is_building_type = building_copper_mine
-						is_building_type = building_quarry
+						is_building_type = building_stone_quarry
+						is_building_type = building_clay_pit
 						is_building_type = building_logging_camp
 						is_building_type = building_oil_rig
 					}
@@ -476,6 +482,10 @@ je_railroads = {
 						is_building_type = building_sugar_plantation
 						is_building_type = building_rubber_plantation
 						is_building_type = building_banana_plantation
+						# Added
+						is_building_type = building_cocoa_plantation
+						is_building_type = building_hemp_plantation
+						is_building_type = building_spice_plantation
 					}
 				}
 			}
@@ -491,6 +501,10 @@ je_railroads = {
 						is_building_type = building_sugar_plantation
 						is_building_type = building_rubber_plantation
 						is_building_type = building_banana_plantation
+						# Added
+						is_building_type = building_cocoa_plantation
+						is_building_type = building_hemp_plantation
+						is_building_type = building_spice_plantation
 					}
 				}
 				percent > 0.2

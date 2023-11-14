@@ -4,10 +4,10 @@
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 5
+			goods_input_tools_add = 5
 			
 			# output goods
-			building_output_coal_add = 25
+			goods_output_coal_add = 25
 		}
 
 		level_scaled = {
@@ -18,19 +18,24 @@
 
 pm_atmospheric_engine_pump_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
 
 	unlocking_technologies = {
 		atmospheric_engine
 	}
 	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
+			goods_input_tools_add = 10
 			
 			# output goods
-			building_output_coal_add = 40
+			goods_output_coal_add = 40
 		}
 
 		level_scaled = {
@@ -42,19 +47,24 @@ pm_atmospheric_engine_pump_building_coal_mine = {
 
 pm_condensing_engine_pump_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
 
 	unlocking_technologies = {
 		watertube_boiler
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
+			goods_input_tools_add = 15
 			
 			# output goods
-			building_output_coal_add = 60
+			goods_output_coal_add = 60
 		}
 
 		level_scaled = {
@@ -67,20 +77,25 @@ pm_condensing_engine_pump_building_coal_mine = {
 
 pm_diesel_pump_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
 
 	unlocking_technologies = {
 		compression_ignition
 	}
 	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_coal_add = 90
+			goods_output_coal_add = 90
 		}
 
 		level_scaled = {
@@ -97,19 +112,29 @@ pm_no_explosives = {
 
 pm_nitroglycerin_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 	 	nitroglycerin
 	}
 	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_explosives_add = 5
 			
 			# output goods
-			building_output_coal_add = 15
+			goods_output_coal_add = 15
 		}
 
 		level_scaled = {
@@ -126,18 +151,23 @@ pm_nitroglycerin_building_coal_mine = {
 
 pm_dynamite_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
 
 	unlocking_technologies = {
 		dynamite
 	}
 	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
+			goods_input_explosives_add = 10
 			
 			# output goods
-			building_output_coal_add = 25
+			goods_output_coal_add = 25
 		}
 
 		level_scaled = {
@@ -152,7 +182,11 @@ pm_no_steam_automation = {
 
 pm_steam_donkey_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 		
 	unlocking_technologies = {
 		steam_donkey
@@ -161,12 +195,18 @@ pm_steam_donkey_building_coal_mine = {
 	disallowing_laws = {
 		law_industry_banned
 	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 		
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-				building_input_engines_add = 1
-				building_output_coal_add = -3
+				goods_input_engines_add = 1
+				goods_output_coal_add = -3
 			}
 
 		level_scaled = {
@@ -175,9 +215,9 @@ pm_steam_donkey_building_coal_mine = {
 	}
 }
 
-#pm_road_carts = {
-#	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
-#}
+pm_road_carts = {
+	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
+}
 
 pm_merchant_guilds_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
@@ -311,7 +351,7 @@ pm_privately_owned_building_coal_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -338,7 +378,7 @@ pm_privately_owned_building_iron_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -365,7 +405,7 @@ pm_privately_owned_building_lead_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -392,7 +432,7 @@ pm_privately_owned_building_sulfur_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -419,7 +459,7 @@ pm_privately_owned_building_gold_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -450,7 +490,7 @@ pm_publicly_traded_building_coal_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -481,7 +521,7 @@ pm_publicly_traded_building_iron_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -512,7 +552,7 @@ pm_publicly_traded_building_lead_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -543,7 +583,7 @@ pm_publicly_traded_building_sulfur_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -574,7 +614,7 @@ pm_publicly_traded_building_gold_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -792,10 +832,10 @@ pm_picks_and_shovels_building_iron_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 5
+			goods_input_tools_add = 5
 			
 			# output goods
-			building_output_iron_add = 20
+			goods_output_iron_add = 20
 		}
 
 		level_scaled = {
@@ -806,20 +846,25 @@ pm_picks_and_shovels_building_iron_mine = {
 
 pm_atmospheric_engine_pump_building_iron_mine = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
 
 	unlocking_technologies = {
 		atmospheric_engine
 	}
 	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
-			building_input_coal_add = 10
+			goods_input_tools_add = 10
+			goods_input_coal_add = 10
 			
 			# output goods
-			building_output_iron_add = 40
+			goods_output_iron_add = 40
 		}
 
 		level_scaled = {
@@ -831,20 +876,25 @@ pm_atmospheric_engine_pump_building_iron_mine = {
 
 pm_condensing_engine_pump_building_iron_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
 
 	unlocking_technologies = {
 		watertube_boiler
 	}
 	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_coal_add = 15
+			goods_input_tools_add = 15
+			goods_input_coal_add = 15
 			
 			# output goods
-			building_output_iron_add = 60
+			goods_output_iron_add = 60
 		}
 
 		level_scaled = {
@@ -857,20 +907,25 @@ pm_condensing_engine_pump_building_iron_mine = {
 
 pm_diesel_pump_building_iron_mine = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
 
 	unlocking_technologies = {
 		compression_ignition
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_iron_add = 70
+			goods_output_iron_add = 70
 		}
 
 		level_scaled = {
@@ -883,7 +938,11 @@ pm_diesel_pump_building_iron_mine = {
 
 pm_nitroglycerin_building_iron_mine = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 	 	nitroglycerin
@@ -892,10 +951,10 @@ pm_nitroglycerin_building_iron_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_explosives_add = 5
 			
 			# output goods
-			building_output_iron_add = 12
+			goods_output_iron_add = 12
 		}
 
 		level_scaled = {
@@ -912,7 +971,11 @@ pm_nitroglycerin_building_iron_mine = {
 
 pm_dynamite_building_iron_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		dynamite
@@ -920,10 +983,10 @@ pm_dynamite_building_iron_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
+			goods_input_explosives_add = 10
 			
 			# output goods
-			building_output_iron_add = 20
+			goods_output_iron_add = 20
 		}
 
 		level_scaled = {
@@ -934,7 +997,11 @@ pm_dynamite_building_iron_mine = {
 
 pm_steam_donkey_mine = {
 	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 		
 	unlocking_technologies = {
 		steam_donkey
@@ -947,8 +1014,8 @@ pm_steam_donkey_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-			building_input_engines_add = 1
-			building_input_coal_add = 4
+			goods_input_engines_add = 1
+			goods_input_coal_add = 4
 		}
 
 		level_scaled = {
@@ -957,25 +1024,29 @@ pm_steam_donkey_mine = {
 	}
 }
 
-#pm_rail_transport_mine = {
-#	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
-#	pollution_generation = 10
-#		
-#	unlocking_technologies = {
-#		railways
-#	}
-#		
-#	building_modifiers = {
-#		workforce_scaled = {
-#			# input goods					
-#			building_input_transportation_add = 5
-#		}
-#
-#		level_scaled = {
-#			building_employment_laborers_add = -1000
-#		}
-#	}
-#}
+pm_rail_transport_mine = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+		
+	unlocking_technologies = {
+		railways
+	}
+		
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods					
+			goods_input_transportation_add = 5
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
 
 pm_picks_and_shovels_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
@@ -983,11 +1054,11 @@ pm_picks_and_shovels_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 5
+			goods_input_tools_add = 5
 			
 			# output goods
-			building_output_lead_add = 20
-			building_output_silver_add = 4
+			goods_output_lead_add = 20
+			goods_output_silver_add = 4
 		}
 
 		level_scaled = {
@@ -998,7 +1069,11 @@ pm_picks_and_shovels_building_lead_mine = {
 
 pm_atmospheric_engine_pump_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		atmospheric_engine
@@ -1007,12 +1082,12 @@ pm_atmospheric_engine_pump_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
-			building_input_coal_add = 10
+			goods_input_tools_add = 10
+			goods_input_coal_add = 10
 			
 			# output goods
-			building_output_lead_add = 40
-			building_output_silver_add = 8
+			goods_output_lead_add = 40
+			goods_output_silver_add = 8
 		}
 
 		level_scaled = {
@@ -1024,7 +1099,11 @@ pm_atmospheric_engine_pump_building_lead_mine = {
 
 pm_condensing_engine_pump_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		watertube_boiler
@@ -1033,12 +1112,12 @@ pm_condensing_engine_pump_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_coal_add = 15
+			goods_input_tools_add = 15
+			goods_input_coal_add = 15
 			
 			# output goods
-			building_output_lead_add = 60
-			building_output_silver_add = 12
+			goods_output_lead_add = 60
+			goods_output_silver_add = 12
 		}
 
 		level_scaled = {
@@ -1051,7 +1130,11 @@ pm_condensing_engine_pump_building_lead_mine = {
 
 pm_diesel_pump_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
 
 	unlocking_technologies = {
 		compression_ignition
@@ -1060,12 +1143,12 @@ pm_diesel_pump_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_lead_add = 70
-			building_output_silver_add = 15
+			goods_output_lead_add = 70
+			goods_output_silver_add = 15
 		}
 
 		level_scaled = {
@@ -1078,20 +1161,24 @@ pm_diesel_pump_building_lead_mine = {
 
 pm_nitroglycerin_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
-		 nitroglycerin
+	 	nitroglycerin
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_explosives_add = 5
 			
 			# output goods
-			building_output_lead_add = 12
-			building_output_silver_add = 3
+			goods_output_lead_add = 12
+			goods_output_silver_add = 3
 		}
 
 		level_scaled = {
@@ -1108,7 +1195,11 @@ pm_nitroglycerin_building_lead_mine = {
 
 pm_dynamite_building_lead_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		dynamite
@@ -1116,18 +1207,18 @@ pm_dynamite_building_lead_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
+			goods_input_explosives_add = 10
 			
 			# output goods
-			building_output_lead_add = 20
-			building_output_silver_add = 6
+			goods_output_lead_add = 20
+			goods_output_silver_add = 6
 		}
 
 		level_scaled = {
 			building_employment_engineers_add = 250
 		}
 	}
-}
+}	
 
 pm_picks_and_shovels_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
@@ -1135,10 +1226,10 @@ pm_picks_and_shovels_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 5
+			goods_input_tools_add = 5
 			
 			# output goods
-			building_output_sulfur_add = 20
+			goods_output_sulfur_add = 20
 		}
 
 		level_scaled = {
@@ -1149,7 +1240,11 @@ pm_picks_and_shovels_building_sulfur_mine = {
 
 pm_atmospheric_engine_pump_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		atmospheric_engine
@@ -1158,11 +1253,11 @@ pm_atmospheric_engine_pump_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
-			building_input_coal_add = 10
+			goods_input_tools_add = 10
+			goods_input_coal_add = 10
 			
 			# output goods
-			building_output_sulfur_add = 40
+			goods_output_sulfur_add = 40
 		}
 
 		level_scaled = {
@@ -1174,7 +1269,11 @@ pm_atmospheric_engine_pump_building_sulfur_mine = {
 
 pm_condensing_engine_pump_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		watertube_boiler
@@ -1183,11 +1282,11 @@ pm_condensing_engine_pump_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_coal_add = 15
+			goods_input_tools_add = 15
+			goods_input_coal_add = 15
 			
 			# output goods
-			building_output_sulfur_add = 60
+			goods_output_sulfur_add = 60
 		}
 
 		level_scaled = {
@@ -1200,7 +1299,11 @@ pm_condensing_engine_pump_building_sulfur_mine = {
 
 pm_diesel_pump_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
 
 	unlocking_technologies = {
 		compression_ignition
@@ -1209,11 +1312,11 @@ pm_diesel_pump_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_sulfur_add = 80
+			goods_output_sulfur_add = 80
 		}
 
 		level_scaled = {
@@ -1226,7 +1329,11 @@ pm_diesel_pump_building_sulfur_mine = {
 
 pm_nitroglycerin_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 	 	nitroglycerin
@@ -1235,10 +1342,10 @@ pm_nitroglycerin_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_explosives_add = 5
 			
 			# output goods
-			building_output_sulfur_add = 10
+			goods_output_sulfur_add = 10
 		}
 
 		level_scaled = {
@@ -1255,7 +1362,11 @@ pm_nitroglycerin_building_sulfur_mine = {
 
 pm_dynamite_building_sulfur_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		dynamite
@@ -1263,10 +1374,10 @@ pm_dynamite_building_sulfur_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
+			goods_input_explosives_add = 10
 			
 			# output goods
-			building_output_sulfur_add = 20
+			goods_output_sulfur_add = 20
 		}
 
 		level_scaled = {
@@ -1282,10 +1393,10 @@ pm_picks_and_shovels_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 5
+			goods_input_tools_add = 5
 			
 			# output goods
-			building_output_gold_add = 10
+			goods_output_gold_add = 10
 		}
 
 		level_scaled = {
@@ -1302,7 +1413,11 @@ pm_picks_and_shovels_building_gold_mine = {
 
 pm_atmospheric_engine_pump_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		atmospheric_engine
@@ -1311,11 +1426,11 @@ pm_atmospheric_engine_pump_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
-			building_input_coal_add = 10
+			goods_input_tools_add = 10
+			goods_input_coal_add = 10
 			
 			# output goods
-			building_output_gold_add = 20
+			goods_output_gold_add = 20
 		}
 
 		level_scaled = {
@@ -1333,7 +1448,11 @@ pm_atmospheric_engine_pump_building_gold_mine = {
 
 pm_condensing_engine_pump_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		watertube_boiler
@@ -1342,11 +1461,11 @@ pm_condensing_engine_pump_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_coal_add = 15
+			goods_input_tools_add = 15
+			goods_input_coal_add = 15
 			
 			# output goods
-			building_output_gold_add = 30
+			goods_output_gold_add = 30
 		}
 
 		level_scaled = {
@@ -1365,7 +1484,11 @@ pm_condensing_engine_pump_building_gold_mine = {
 
 pm_diesel_pump_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
 
 	unlocking_technologies = {
 		compression_ignition
@@ -1374,11 +1497,11 @@ pm_diesel_pump_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_gold_add = 40
+			goods_output_gold_add = 40
 		}
 
 		level_scaled = {
@@ -1397,7 +1520,11 @@ pm_diesel_pump_building_gold_mine = {
 
 pm_nitroglycerin_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 	 	nitroglycerin
@@ -1406,10 +1533,10 @@ pm_nitroglycerin_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_explosives_add = 5
 			
 			# output goods
-			building_output_gold_add = 5
+			goods_output_gold_add = 5
 		}
 
 		level_scaled = {
@@ -1432,7 +1559,11 @@ pm_nitroglycerin_building_gold_mine = {
 
 pm_dynamite_building_gold_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		dynamite
@@ -1440,10 +1571,10 @@ pm_dynamite_building_gold_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
+			goods_input_explosives_add = 10
 			
 			# output goods
-			building_output_gold_add = 10
+			goods_output_gold_add = 10
 		}
 
 		level_scaled = {
@@ -1463,7 +1594,7 @@ default_building_gold_fields = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_gold_add = 20
+			goods_output_gold_add = 20
 		}
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
@@ -1484,29 +1615,6 @@ default_building_gold_fields = {
 
 # Added
 
-default_building_copper_fields = {
-	texture = "gfx/interface/icons/production_method_icons/copper_mining.dds"
-	
-	building_modifiers = {
-		workforce_scaled = {
-			building_output_copper_add = 20
-		}
-		level_scaled = {
-			building_employment_shopkeepers_add = 500
-			building_employment_laborers_add = 4500
-		}
-		unscaled = {
-			building_shopkeepers_shares_add = 3
-			building_laborers_shares_add = 1
-		}
-	}
-	
-	country_modifiers = {
-		workforce_scaled = {
-		}
-	}
-}
-
 # Copper Mine 
 
 pm_picks_and_shovels_building_copper_mine = {
@@ -1516,9 +1624,9 @@ pm_picks_and_shovels_building_copper_mine = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 10
-			building_output_copper_add = 15
-			building_output_silver_add = 1
+			goods_input_tools_add = 10
+			goods_output_copper_add = 15
+			goods_output_silver_add = 1
 		}
 
 		level_scaled = {
@@ -1529,7 +1637,11 @@ pm_picks_and_shovels_building_copper_mine = {
 
 pm_atmospheric_engine_pump_building_copper_mine = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		atmospheric_engine
@@ -1538,11 +1650,11 @@ pm_atmospheric_engine_pump_building_copper_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
+			goods_input_tools_add = 10
 			
 			# output goods
-			building_output_copper_add = 25
-			building_output_silver_add = 2
+			goods_output_copper_add = 25
+			goods_output_silver_add = 2
 		}
 
 		level_scaled = {
@@ -1554,7 +1666,11 @@ pm_atmospheric_engine_pump_building_copper_mine = {
 
 pm_condensing_engine_pump_building_copper_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		watertube_boiler
@@ -1563,11 +1679,11 @@ pm_condensing_engine_pump_building_copper_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 20
+			goods_input_tools_add = 20
 			
 			# output goods
-			building_output_copper_add = 50
-			building_output_silver_add = 3
+			goods_output_copper_add = 50
+			goods_output_silver_add = 3
 		}
 
 		level_scaled = {
@@ -1580,7 +1696,11 @@ pm_condensing_engine_pump_building_copper_mine = {
 
 pm_diesel_pump_building_copper_mine = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
 
 	unlocking_technologies = {
 		compression_ignition
@@ -1589,12 +1709,12 @@ pm_diesel_pump_building_copper_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_copper_add = 70
-			building_output_silver_add = 4
+			goods_output_copper_add = 70
+			goods_output_silver_add = 4
 		}
 
 		level_scaled = {
@@ -1607,7 +1727,11 @@ pm_diesel_pump_building_copper_mine = {
 
 pm_nitroglycerin_building_copper_mine = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		 nitroglycerin
@@ -1616,11 +1740,11 @@ pm_nitroglycerin_building_copper_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_explosives_add = 5
 			
 			# output goods
-			building_output_copper_add = 15
-			building_output_silver_add = 1
+			goods_output_copper_add = 15
+			goods_output_silver_add = 1
 		}
 
 		level_scaled = {
@@ -1637,7 +1761,11 @@ pm_nitroglycerin_building_copper_mine = {
 
 pm_dynamite_building_copper_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		dynamite
@@ -1645,11 +1773,11 @@ pm_dynamite_building_copper_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
+			goods_input_explosives_add = 10
 			
 			# output goods
-			building_output_copper_add = 30
-			building_output_silver_add = 3
+			goods_output_copper_add = 30
+			goods_output_silver_add = 3
 		}
 
 		level_scaled = {
@@ -1702,7 +1830,7 @@ pm_privately_owned_building_copper_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -1733,7 +1861,7 @@ pm_publicly_traded_building_copper_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -1784,19 +1912,18 @@ pm_worker_cooperative_building_copper_mine = {
 	}
 }
 
-# Quarries
+# Clay Pit
 
-pm_picks_and_shovels_building_quarry = {
+pm_picks_and_shovels_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 5
+			goods_input_tools_add = 5
 			
 			# output goods
-			building_output_clay_add = 30
-			building_output_limestone_add = 10
+			goods_output_clay_add = 30
 		}
 
 		level_scaled = {
@@ -1805,9 +1932,13 @@ pm_picks_and_shovels_building_quarry = {
 	}
 }
 
-pm_atmospheric_engine_pump_building_quarry = {
+pm_atmospheric_engine_pump_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		atmospheric_engine
@@ -1816,12 +1947,11 @@ pm_atmospheric_engine_pump_building_quarry = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
-			building_input_coal_add = 10
+			goods_input_tools_add = 10
+			goods_input_coal_add = 10
 			
 			# output goods
-			building_output_clay_add = 60
-			building_output_limestone_add = 20
+			goods_output_clay_add = 60
 		}
 
 		level_scaled = {
@@ -1831,9 +1961,13 @@ pm_atmospheric_engine_pump_building_quarry = {
 	}
 }
 
-pm_condensing_engine_pump_building_quarry = {
+pm_condensing_engine_pump_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		watertube_boiler
@@ -1842,12 +1976,11 @@ pm_condensing_engine_pump_building_quarry = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_coal_add = 15
+			goods_input_tools_add = 15
+			goods_input_coal_add = 15
 			
 			# output goods
-			building_output_clay_add = 90
-			building_output_limestone_add = 30
+			goods_output_clay_add = 90
 		}
 
 		level_scaled = {
@@ -1858,9 +1991,13 @@ pm_condensing_engine_pump_building_quarry = {
 	}
 }
 
-pm_diesel_pump_building_quarry = {
+pm_diesel_pump_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
 
 	unlocking_technologies = {
 		compression_ignition
@@ -1869,12 +2006,11 @@ pm_diesel_pump_building_quarry = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_clay_add = 100
-			building_output_limestone_add = 40
+			goods_output_clay_add = 120
 
 		}
 
@@ -1886,62 +2022,52 @@ pm_diesel_pump_building_quarry = {
 	}
 }
 
-pm_nitroglycerin_building_quarry = {
-	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+pm_brickfield = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 
-	unlocking_technologies = {
-	 	nitroglycerin
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_tools_add = 5
 			
 			# output goods
-			building_output_limestone_add = 25
+			goods_output_clay_add = -25
+			goods_output_bricks_add = 20
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 250
-		}
-
-		unscaled = {
-			building_laborers_mortality_mult = 0.3
-			building_machinists_mortality_mult = 0.2
-			building_engineers_mortality_mult = 0.1
+			building_employment_machinists_add = 500
 		}
 	}
 }
 
-pm_dynamite_building_quarry = {
-	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
-
-	unlocking_technologies = {
-		dynamite
-	}
+pm_ceramics_rural = {
+	texture = "gfx/interface/icons/production_method_icons/ceramics.dds"
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
-			
 			# output goods
-			building_output_limestone_add = 40
+			goods_output_clay_add = -25
+			goods_output_porcelain_add = 10
 		}
-
+		
 		level_scaled = {
-			building_employment_engineers_add = 250
-		}
+			building_employment_shopkeepers_add = 500
+		}						
 	}
 }
 
-pm_merchant_guilds_building_quarry = {
+pm_merchant_guilds_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 
 	unlocking_production_methods = {
-		pm_picks_and_shovels_building_quarry 
+		pm_picks_and_shovels_building_clay_pit 
 	}
 
 	disallowing_laws = {
@@ -1959,13 +2085,13 @@ pm_merchant_guilds_building_quarry = {
 	}
 }
 
-pm_privately_owned_building_quarry = {
+pm_privately_owned_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
 
 	unlocking_production_methods = {
-		pm_atmospheric_engine_pump_building_quarry 
-		pm_condensing_engine_pump_building_quarry 
-		pm_diesel_pump_building_quarry 
+		pm_atmospheric_engine_pump_building_clay_pit 
+		pm_condensing_engine_pump_building_clay_pit 
+		pm_diesel_pump_building_clay_pit 
 	}
 
 	disallowing_laws = {
@@ -1981,18 +2107,18 @@ pm_privately_owned_building_quarry = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
 
-pm_publicly_traded_building_quarry = {
+pm_publicly_traded_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
 	unlocking_production_methods = {
-		pm_atmospheric_engine_pump_building_quarry 
-		pm_condensing_engine_pump_building_quarry 
-		pm_diesel_pump_building_quarry 
+		pm_atmospheric_engine_pump_building_clay_pit 
+		pm_condensing_engine_pump_building_clay_pit 
+		pm_diesel_pump_building_clay_pit 
 	}
 	
 	disallowing_laws = {
@@ -2012,18 +2138,18 @@ pm_publicly_traded_building_quarry = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
 
-pm_government_run_building_quarry = {
+pm_government_run_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
 
 	unlocking_production_methods = {
-		pm_atmospheric_engine_pump_building_quarry 
-		pm_condensing_engine_pump_building_quarry 
-		pm_diesel_pump_building_quarry 
+		pm_atmospheric_engine_pump_building_clay_pit 
+		pm_condensing_engine_pump_building_clay_pit 
+		pm_diesel_pump_building_clay_pit 
 	}
 	
 	unlocking_laws = {
@@ -2040,13 +2166,313 @@ pm_government_run_building_quarry = {
 	}
 }
 
-pm_worker_cooperative_building_quarry = {
+pm_worker_cooperative_building_clay_pit = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_production_methods = {
-		pm_atmospheric_engine_pump_building_quarry
-		pm_condensing_engine_pump_building_quarry
-		pm_diesel_pump_building_quarry
+		pm_atmospheric_engine_pump_building_clay_pit
+		pm_condensing_engine_pump_building_clay_pit
+		pm_diesel_pump_building_clay_pit
+	}
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+# Stone Quarry
+
+pm_picks_and_shovels_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			
+			# output goods
+			goods_output_limestone_add = 30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4500
+		}
+	}
+}
+
+pm_atmospheric_engine_pump_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	unlocking_technologies = {
+		atmospheric_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 10
+			goods_input_coal_add = 10
+			
+			# output goods
+			goods_output_limestone_add = 60
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_machinists_add = 500
+		}
+	}
+}
+
+pm_condensing_engine_pump_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		watertube_boiler
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 15
+			goods_input_coal_add = 15
+			
+			# output goods
+			goods_output_limestone_add = 90
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
+pm_diesel_pump_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+	unlocking_technologies = {
+		compression_ignition
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
+			
+			# output goods
+			goods_output_limestone_add = 120
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+pm_stonecutters = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+
+	unlocking_technologies = {
+		mechanical_tools
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			
+			# output goods
+			goods_output_limestone_add = -25
+			goods_output_bricks_add = 25
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 500
+		}
+
+		unscaled = {
+			building_machinists_mortality_mult = 0.2
+		}
+	}
+}
+
+pm_electric_stonecutters = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	unlocking_technologies = {
+		electrical_generation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 10
+			goods_input_electricity_add = 5
+			
+			# output goods
+			goods_output_limestone_add = -40
+			goods_output_bricks_add = 40
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 250
+			building_employment_engineers_add = 250
+		}
+
+		unscaled = {
+			building_machinists_mortality_mult = 0.1
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_merchant_guilds_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_production_methods = {
+		pm_picks_and_shovels_building_stone_quarry 
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+		}
+	}
+}
+
+pm_privately_owned_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_stone_quarry 
+		pm_condensing_engine_pump_building_stone_quarry 
+		pm_diesel_pump_building_stone_quarry 
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+		workforce_scaled = {
+			goods_output_securities_add = 0.1
+		}
+	}
+}
+
+pm_publicly_traded_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_stone_quarry 
+		pm_condensing_engine_pump_building_stone_quarry 
+		pm_diesel_pump_building_stone_quarry 
+	}
+	
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+		workforce_scaled = {
+			goods_output_securities_add = 0.2
+		}
+	}
+}
+
+pm_government_run_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_stone_quarry 
+		pm_condensing_engine_pump_building_stone_quarry 
+		pm_diesel_pump_building_stone_quarry 
+	}
+	
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_stone_quarry = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_stone_quarry
+		pm_condensing_engine_pump_building_stone_quarry
+		pm_diesel_pump_building_stone_quarry
 	}
 
 	unlocking_laws = {
@@ -2070,7 +2496,7 @@ default_building_silver_fields = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_silver_add = 20
+			goods_output_silver_add = 20
 		}
 		level_scaled = {
 			building_employment_shopkeepers_add = 500
@@ -2098,8 +2524,8 @@ pm_picks_and_shovels_building_silver_mine = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 10
-			building_output_silver_add = 10
+			goods_input_tools_add = 10
+			goods_output_silver_add = 10
 		}
 
 		level_scaled = {
@@ -2110,7 +2536,11 @@ pm_picks_and_shovels_building_silver_mine = {
 
 pm_atmospheric_engine_pump_building_silver_mine = {
 	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		atmospheric_engine
@@ -2119,10 +2549,10 @@ pm_atmospheric_engine_pump_building_silver_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 10
+			goods_input_tools_add = 10
 			
 			# output goods
-			building_output_silver_add = 15
+			goods_output_silver_add = 15
 		}
 
 		level_scaled = {
@@ -2134,7 +2564,11 @@ pm_atmospheric_engine_pump_building_silver_mine = {
 
 pm_condensing_engine_pump_building_silver_mine = {
 	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		watertube_boiler
@@ -2143,10 +2577,10 @@ pm_condensing_engine_pump_building_silver_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 20
+			goods_input_tools_add = 20
 			
 			# output goods
-			building_output_silver_add = 20
+			goods_output_silver_add = 20
 		}
 
 		level_scaled = {
@@ -2159,7 +2593,11 @@ pm_condensing_engine_pump_building_silver_mine = {
 
 pm_diesel_pump_building_silver_mine = {
 	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
-	pollution_generation = 15
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
 
 	unlocking_technologies = {
 		compression_ignition
@@ -2168,11 +2606,11 @@ pm_diesel_pump_building_silver_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
 			
 			# output goods
-			building_output_silver_add = 35
+			goods_output_silver_add = 35
 		}
 
 		level_scaled = {
@@ -2185,7 +2623,11 @@ pm_diesel_pump_building_silver_mine = {
 
 pm_nitroglycerin_building_silver_mine = {
 	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
-	pollution_generation = 5
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
 
 	unlocking_technologies = {
 		 nitroglycerin
@@ -2194,10 +2636,10 @@ pm_nitroglycerin_building_silver_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_explosives_add = 5
+			goods_input_explosives_add = 5
 			
 			# output goods
-			building_output_silver_add = 10
+			goods_output_silver_add = 10
 		}
 
 		level_scaled = {
@@ -2214,7 +2656,11 @@ pm_nitroglycerin_building_silver_mine = {
 
 pm_dynamite_building_silver_mine = {
 	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
-	pollution_generation = 10
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
 
 	unlocking_technologies = {
 		dynamite
@@ -2222,10 +2668,10 @@ pm_dynamite_building_silver_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 10
+			goods_input_explosives_add = 10
 			
 			# output goods
-			building_output_silver_add = 25
+			goods_output_silver_add = 25
 		}
 
 		level_scaled = {
@@ -2278,7 +2724,7 @@ pm_privately_owned_building_silver_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.1
+			goods_output_securities_add = 0.1
 		}
 	}
 }
@@ -2309,7 +2755,7 @@ pm_publicly_traded_building_silver_mine = {
 			building_capitalists_shares_add = 10
 		}
 		workforce_scaled = {
-			building_output_securities_add = 0.2
+			goods_output_securities_add = 0.2
 		}
 	}
 }
@@ -2358,4 +2804,10 @@ pm_worker_cooperative_building_silver_mine = {
 			building_workforce_shares_add = 1
 		}
 	}
+}
+
+# Misc
+
+pm_no_secondary_mining = {
+	texture = "gfx/interface/icons/production_method_icons/placeholder.dds"
 }

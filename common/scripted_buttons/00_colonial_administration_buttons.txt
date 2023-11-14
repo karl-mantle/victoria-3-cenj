@@ -1,0 +1,1066 @@
+﻿je_colonial_administration_button_ethiopia = {
+	name = "je_colonial_administration_button_ethiopia"
+	desc = "je_colonial_administration_button_ethiopia_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_ethiopia
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = ethiopia_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_ethiopia
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_ethiopia
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_ethiopia
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_ethiopia
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_ethiopia
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = ethiopia_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_senegambia = {
+	name = "je_colonial_administration_button_senegambia"
+	desc = "je_colonial_administration_button_senegambia_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_senegambia
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = senegambia_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_senegambia
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_senegambia
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_senegambia
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_senegambia
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_senegambia
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = senegambia_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_guinea = {
+	name = "je_colonial_administration_button_guinea"
+	desc = "je_colonial_administration_button_guinea_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_guinea
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = guinea_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_guinea
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_guinea
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_guinea
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_guinea
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_guinea
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = guinea_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_mali = {
+	name = "je_colonial_administration_button_mali"
+	desc = "je_colonial_administration_button_mali_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_mali
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = mali_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_mali
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_mali
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_mali
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_mali
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_mali
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = mali_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_niger = {
+	name = "je_colonial_administration_button_niger"
+	desc = "je_colonial_administration_button_niger_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_niger
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = niger_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_niger
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_niger
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_niger
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_niger
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_niger
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = niger_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_nigeria = {
+	name = "je_colonial_administration_button_nigeria"
+	desc = "je_colonial_administration_button_nigeria_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_nigeria
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = nigeria_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_nigeria
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_nigeria
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_nigeria
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_nigeria
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_nigeria
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = nigeria_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_congo = {
+	name = "je_colonial_administration_button_congo"
+	desc = "je_colonial_administration_button_congo_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_congo
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = congo_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_congo
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_congo
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_congo
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_congo
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_congo
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = congo_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_angola = {
+	name = "je_colonial_administration_button_angola"
+	desc = "je_colonial_administration_button_angola_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_angola
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = angola_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_angola
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_angola
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_angola
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_angola
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_angola
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = angola_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_southern_africa = {
+	name = "je_colonial_administration_button_southern_africa"
+	desc = "je_colonial_administration_button_southern_africa_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_southern_africa
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = southern_africa_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_southern_africa
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_southern_africa
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_southern_africa
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_southern_africa
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_southern_africa
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = southern_africa_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_zanj = {
+	name = "je_colonial_administration_button_zanj"
+	desc = "je_colonial_administration_button_zanj_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_zanj
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = zanj_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_zanj
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_zanj
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_zanj
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_zanj
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_zanj
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = zanj_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}
+
+je_colonial_administration_button_zambezi = {
+	name = "je_colonial_administration_button_zambezi"
+	desc = "je_colonial_administration_button_zambezi_desc"
+
+	visible = {
+		country_is_in_africa = no
+		any_scope_state = {
+			region = sr:region_zambezi
+		}
+		NOT = {
+			any_subject_or_below = {
+				has_variable = zambezi_subject_var
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			region = sr:region_zambezi
+			is_largest_state_in_region = yes
+			count >= 2
+		}
+		custom_tooltip = {
+			text = colonial_administration_cooldown
+			NOT = {
+				any_subject_or_below = {
+					has_variable = newly_formed_colonial_nation_var
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+
+	effect = {
+		if = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_zambezi
+					has_decree = decree_greener_grass_campaign
+				}
+			}
+			random_scope_state = {
+				limit = {
+					region = sr:region_zambezi
+					has_decree = decree_greener_grass_campaign
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					region = sr:region_zambezi
+				}
+				save_scope_as = newly_formed_colonial_nation_capital_scope
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_zambezi
+			}
+			set_variable = state_to_cede
+		}
+		create_dynamic_country = {
+			origin = root
+			country_type = colonial
+			tier = principality
+			capital = scope:newly_formed_colonial_nation_capital_scope
+			cede_state_trigger = {
+				has_variable = state_to_cede
+			}
+			on_created = { 
+				set_variable = zambezi_subject_var
+				set_variable = {
+					name = newly_formed_colonial_nation_var
+					months = 3
+				}
+				every_scope_state = {
+					remove_variable = state_to_cede
+				}
+			}
+		}
+		hidden_effect = {
+			create_diplomatic_pact = {
+				country = scope:newly_formed_colonial_nation_capital_scope.owner
+				type = puppet
+			}
+		}
+		trigger_event = { id = colonial_administration_events.1 popup = yes }
+		custom_tooltip = je_colonial_administration_button_tt_1
+		custom_tooltip = je_colonial_administration_button_tt_2
+	}
+}

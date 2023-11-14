@@ -45,24 +45,6 @@ algeria_events.1 = {
 			}
 			save_scope_as = algerian_parade_general_scope
 		}
-
-		if = {
-			limit = {
-				is_ai = yes
-			}
-			every_scope_state = {
-				limit = {
-					owner = ROOT
-					OR = {
-						state_region = s:STATE_CONSTANTINE
-						state_region = s:STATE_ALGIERS
-						state_region = s:STATE_ORAN
-					}
-				}
-				set_state_type = incorporated
-			}
-		}
-
 	}
 
 	option = { # Focus on partying with the lads
@@ -710,15 +692,25 @@ algeria_events.5 = {
 					state_region = s:STATE_CONSTANTINE
 					state_region = s:STATE_ORAN
 				}
+				any_neighbouring_state = {
+					OR = {
+						c:CON ?= owner
+						c:AIT ?= owner
+						c:TUG ?= owner
+						c:MAS ?= owner
+					}
+					NOT = { owner = { is_subject_of = c:FRA } }
+					owner = { relations:root <= relations_threshold:neutral }
+				}
 			}
 			save_scope_as = algerian_raided_state_scope
 			random_neighbouring_state = {
 				limit = {
 					OR = {
-						owner = c:CON
-						owner = c:AIT
-						owner = c:TUG
-						owner = c:MAS
+						c:CON ?= owner
+						c:AIT ?= owner
+						c:TUG ?= owner
+						c:MAS ?= owner
 					}
 					NOT = { owner = { is_subject_of = c:FRA } }
 					owner = { relations:root <= relations_threshold:neutral }
@@ -1186,6 +1178,15 @@ algeria_events.9 = {
 				months = very_long_modifier_time
 			}
 		}
+		if = {
+			limit = {
+				has_journal_entry = je_divided_monarchists
+			}
+			custom_tooltip = {
+				text = bonapartist_progress_increase_15_tt
+				change_variable = { name = bonapartist_progress add = 15 }
+			}
+		}
 		ig:ig_armed_forces = {
 			# ig approval and some polstr
 			add_modifier = {
@@ -1200,6 +1201,15 @@ algeria_events.9 = {
 			add_modifier = {
 				name = legion_headquarters
 				months = very_long_modifier_time
+			}
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_divided_monarchists
+			}
+			custom_tooltip = {
+				text = bonapartist_progress_increase_5_tt
+				change_variable = { name = bonapartist_progress add = 5 }
 			}
 		}
 		every_scope_state = {

@@ -19,16 +19,5 @@
 			institution = institution_colonial_affairs
 			level = 1
 		}
-
-		ig:ig_devout = { 
-			set_interest_group_name = ig_orthodox_church 
-		}
-		ig:ig_landowners = {
-			set_interest_group_name = ig_gentry_assembly
-		}
-		ig:ig_rural_folk = {
-			remove_ideology = ideology_isolationist
-			add_ideology = ideology_isolationist_expansionism
-		}
 	}
 }

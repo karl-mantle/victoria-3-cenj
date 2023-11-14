@@ -42,7 +42,7 @@ building_arts_academy = {
 	
 	texture = "gfx/interface/icons/building_icons/building_arts_academy.dds"
 
-	required_construction = construction_cost_high
+	required_construction = construction_cost_medium
 }
 
 building_power_plant = {
@@ -102,18 +102,18 @@ building_finance_sector = {
 	}
 }
 
-building_health_facilities = {
+building_hospital = {
 	building_group = bg_healthcare
-	texture = "gfx/interface/icons/building_icons/health_facilities.dds"
+	texture = "gfx/interface/icons/building_icons/hospital.dds"
 	
 	unlocking_technologies = {
 		medical_degrees
 	}
 	
 	production_method_groups = {
-		pmg_base_building_health_facilities
-		pmg_luxury_building_health_facilities
-		pmg_ownership_capital_building_health_facilities
+		pmg_base_building_hospital
+		pmg_luxury_building_hospital
+		pmg_ownership_capital_building_hospital
 	}
 	
 	required_construction = construction_cost_high

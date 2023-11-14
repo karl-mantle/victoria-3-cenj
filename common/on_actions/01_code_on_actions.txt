@@ -121,86 +121,86 @@ dynamic_homeland_on_action = {
 		# Asian-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_asian"
-			TARGET_CULTURE = "american_asian"
+			TRIGGER_CULTURE = "asian_american"
+			TARGET_CULTURE = "asian_american"
 		}
 		# Chinese-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_chinese"
-			TARGET_CULTURE = "american_chinese"
+			TRIGGER_CULTURE = "chinese_american"
+			TARGET_CULTURE = "chinese_american"
 		}
-		# French-American
+		# Franco-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_french"
-			TARGET_CULTURE = "american_french"
+			TRIGGER_CULTURE = "franco_american"
+			TARGET_CULTURE = "franco_american"
 		}
 		# German-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_german"
-			TARGET_CULTURE = "american_german"
+			TRIGGER_CULTURE = "german_american"
+			TARGET_CULTURE = "german_american"
 		}
 		# Hispanic-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_hispanic"
-			TARGET_CULTURE = "american_hispanic"
+			TRIGGER_CULTURE = "hispanic_american"
+			TARGET_CULTURE = "hispanic_american"
+		}
+		# Indo-American
+		country_create_homeland_by_culture = {
+			LIMIT = "country_has_primary_culture = cu:yankee"
+			TRIGGER_CULTURE = "indo_american"
+			TARGET_CULTURE = "indo_american"
 		}
 		# Irish-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_irish"
-			TARGET_CULTURE = "american_irish"
+			TRIGGER_CULTURE = "irish_american"
+			TARGET_CULTURE = "irish_american"
 		}
 		# Italian-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_italian"
-			TARGET_CULTURE = "american_italian"
+			TRIGGER_CULTURE = "irish_american"
+			TARGET_CULTURE = "irish_american"
 		}
 		# Japanese-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_japanese"
-			TARGET_CULTURE = "american_japanese"
+			TRIGGER_CULTURE = "japanese_american"
+			TARGET_CULTURE = "japanese_american"
 		}
 		# Jewish-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_jewish"
-			TARGET_CULTURE = "american_jewish"
-		}
-		# Polish-American
-		country_create_homeland_by_culture = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_polish"
-			TARGET_CULTURE = "american_polish"
+			TRIGGER_CULTURE = "jewish_american"
+			TARGET_CULTURE = "jewish_american"
 		}
 		# Luso-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_portuguese"
-			TARGET_CULTURE = "american_portuguese"
+			TRIGGER_CULTURE = "luso_american"
+			TARGET_CULTURE = "luso_american"
 		}
-		# Scottish-American
+		# Polish-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_scottish"
-			TARGET_CULTURE = "american_scottish"
+			TRIGGER_CULTURE = "polish_american"
+			TARGET_CULTURE = "polish_american"
 		}
 		# Russian-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_russian"
-			TARGET_CULTURE = "american_russian"
+			TRIGGER_CULTURE = "russian_american"
+			TARGET_CULTURE = "russian_american"
 		}
 		# Yugoslav-American
 		country_create_homeland_by_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "american_yugoslav"
-			TARGET_CULTURE = "american_yugoslav"
+			TRIGGER_CULTURE = "yugoslav_american"
+			TARGET_CULTURE = "yugoslav_american"
 		}
 
 	## CANADA ##
@@ -208,8 +208,8 @@ dynamic_homeland_on_action = {
 		# Afro-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_african"
-			TARGET_CULTURE = "canadian_african"
+			TRIGGER_CULTURE = "afro_canadian"
+			TARGET_CULTURE = "afro_canadian"
 		}
 		# Anglo-Canadian
 		country_create_homeland_by_culture = {
@@ -220,20 +220,20 @@ dynamic_homeland_on_action = {
 		# Asian-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_asian"
-			TARGET_CULTURE = "canadian_asian"
+			TRIGGER_CULTURE = "asian_canadian"
+			TARGET_CULTURE = "asian_canadian"
 		}
 		# Chinese-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_chinese"
-			TARGET_CULTURE = "canadian_chinese"
+			TRIGGER_CULTURE = "chinese_canadian"
+			TARGET_CULTURE = "chinese_canadian"
 		}
 		# Dutch-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_dutch"
-			TARGET_CULTURE = "canadian_dutch"
+			TRIGGER_CULTURE = "dutch_canadian"
+			TARGET_CULTURE = "dutch_canadian"
 		}
 		# Franco-Canadian
 		country_create_homeland_by_culture = {
@@ -244,62 +244,62 @@ dynamic_homeland_on_action = {
 		# German-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_german"
-			TARGET_CULTURE = "canadian_german"
+			TRIGGER_CULTURE = "german_canadian"
+			TARGET_CULTURE = "german_canadian"
 		}
 		# Greek-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_greek"
-			TARGET_CULTURE = "canadian_greek"
+			TRIGGER_CULTURE = "greco_canadian"
+			TARGET_CULTURE = "greco_canadian"
 		}
 		# Indo-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_indian"
-			TARGET_CULTURE = "canadian_indian"
+			TRIGGER_CULTURE = "indo_canadian"
+			TARGET_CULTURE = "indo_canadian"
 		}
 		# Irish-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_irish"
-			TARGET_CULTURE = "canadian_irish"
+			TRIGGER_CULTURE = "irish_canadian"
+			TARGET_CULTURE = "irish_canadian"
 		}
 		# Italian-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_italian"
-			TARGET_CULTURE = "canadian_italian"
-		}
-		# Polish-Canadian
-		country_create_homeland_by_culture = {
-			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_polish"
-			TARGET_CULTURE = "canadian_polish"
+			TRIGGER_CULTURE = "italian_canadian"
+			TARGET_CULTURE = "italian_canadian"
 		}
 		# Luso-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_portuguese"
-			TARGET_CULTURE = "canadian_portuguese"
+			TRIGGER_CULTURE = "luso_canadian"
+			TARGET_CULTURE = "luso_canadian"
 		}
-		# Scottish Canadian
+		# Polish-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_scottish"
-			TARGET_CULTURE = "canadian_scottish"
+			TRIGGER_CULTURE = "polish_canadian"
+			TARGET_CULTURE = "polish_canadian"
+		}
+		# Scots-Canadian
+		country_create_homeland_by_culture = {
+			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
+			TRIGGER_CULTURE = "scots_canadian"
+			TARGET_CULTURE = "scots_canadian"
 		}
 		# Ukrainian-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_ukrainian"
-			TARGET_CULTURE = "canadian_ukrainian"
+			TRIGGER_CULTURE = "ukrainian_canadian"
+			TARGET_CULTURE = "ukrainian_canadian"
 		}
 		# Yugoslav-Canadian
 		country_create_homeland_by_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "canadian_yugoslav"
-			TARGET_CULTURE = "canadian_yugoslav"
+			TRIGGER_CULTURE = "yugoslav_canadian"
+			TARGET_CULTURE = "yugoslav_canadian"
 		}
 	}
 }
@@ -322,7 +322,6 @@ change_pop_culture_on_action = {
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = francophone"
 			TARGET_CULTURE = "cajun"
 		}
-
 		# African-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
@@ -332,95 +331,100 @@ change_pop_culture_on_action = {
 		# Asian-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
+			TRIGGER_CULTURE = "has_discrimination_trait = sinosphere"
+			TARGET_CULTURE = "asian_american"
+		}
+		country_change_pop_culture_by_discrimination_trait = {
+			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = southeast_asian_heritage"
-			TARGET_CULTURE = "american_asian"
+			TARGET_CULTURE = "asian_american"
 		}
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = hmong_mien_language"
-			TARGET_CULTURE = "american_asian"
+			TARGET_CULTURE = "asian_american"
 		}
 		# Chinese-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = sinosphere"
-			TARGET_CULTURE = "american_chinese"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = han_chinese"
-			TARGET_CULTURE = "american_chinese"
+			TARGET_CULTURE = "chinese_american"
 		}
 		# French-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = francophone NOT = { has_discrimination_trait = american_culture_group }"
-			TARGET_CULTURE = "american_french"
+			TARGET_CULTURE = "franco_american"
 		}
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = occitan_culture_group"
-			TARGET_CULTURE = "american_french"
+			TARGET_CULTURE = "franco_american"
 		}
 		# German-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
-			TARGET_CULTURE = "american_german"
+			TARGET_CULTURE = "german_american"
 		}
 		# Hispanic-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = hispanophone"
-			TARGET_CULTURE = "american_hispanic"
+			TARGET_CULTURE = "hispanic_american"
+		}
+		# Indo-Canadian
+		country_change_pop_culture_by_discrimination_trait = {
+			LIMIT = "country_has_primary_culture = cu:yankee"
+			TRIGGER_CULTURE = "has_discrimination_trait = hindustani"
+			TARGET_CULTURE = "indo_american"			
+		}
+		country_change_pop_culture_by_discrimination_trait = {
+			LIMIT = "country_has_primary_culture = cu:yankee"
+			TRIGGER_CULTURE = "has_discrimination_trait = northeast_indian"
+			TARGET_CULTURE = "indo_american"
 		}
 		# Irish-American
 		country_change_pop_culture_by_pop_culture = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "irish"
-			TARGET_CULTURE = "american_irish"
+			TARGET_CULTURE = "irish_american"
 		}
 		# Italian-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = italophone"
-			TARGET_CULTURE = "american_italian"
+			TARGET_CULTURE = "italian_american"
 		}
 		# Japanese-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = yamato"
-			TARGET_CULTURE = "american_japanese"
+			TARGET_CULTURE = "japanese_american"
 		}
 		# Jewish-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = jewish_group"
-			TARGET_CULTURE = "american_jewish"
+			TARGET_CULTURE = "jewish_american"
 		}
 		# Luso-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = lusophone"
-			TARGET_CULTURE = "american_portuguese"
+			TARGET_CULTURE = "luso_american"
 		}
 		# Russian-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = east_slavic"
-			TARGET_CULTURE = "american_russian"
-		}
-		# Scottish-American
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = scottish_culture_group"
-			TARGET_CULTURE = "american_scottish"
+			TARGET_CULTURE = "russian_american"
 		}
 		# Yugoslav-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "country_has_primary_culture = cu:yankee"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = jugoslav"
-			TARGET_CULTURE = "american_yugoslav"
+			TARGET_CULTURE = "yugoslav_american"
 		}
 
 	## CANADA ##
@@ -429,9 +433,9 @@ change_pop_culture_on_action = {
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = african_heritage"
-			TARGET_CULTURE = "canadian_african"
+			TARGET_CULTURE = "afro_canadian"
 		}
-		# Canadian
+		# Anglo-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = anglophone"
@@ -440,30 +444,30 @@ change_pop_culture_on_action = {
 		# Asian-American
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
+			TRIGGER_CULTURE = "has_discrimination_trait = sinosphere"
+			TARGET_CULTURE = "asian_canadian"
+		}
+		country_change_pop_culture_by_discrimination_trait = {
+			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = southeast_asian_heritage"
-			TARGET_CULTURE = "canadian_asian"
+			TARGET_CULTURE = "asian_canadian"
 		}
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = hmong_mien_language"
-			TARGET_CULTURE = "canadian_asian"
+			TARGET_CULTURE = "asian_canadian"
 		}
 		# Chinese-American
 		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
-			TRIGGER_CULTURE = "has_discrimination_trait = sinosphere"
-			TARGET_CULTURE = "canadian_chinese"
-		}
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "country_has_primary_culture = cu:yankee"
+			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = han_chinese"
-			TARGET_CULTURE = "canadian_chinese"
+			TARGET_CULTURE = "chinese_canadian"
 		}
 		# Dutch-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = beneluxian_culture_group"
-			TARGET_CULTURE = "canadian_dutch"
+			TARGET_CULTURE = "dutch_canadian"
 		}
 		# French-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
@@ -480,66 +484,66 @@ change_pop_culture_on_action = {
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = german_speaking"
-			TARGET_CULTURE = "canadian_german"
+			TARGET_CULTURE = "german_canadian"
 		}
 		# Greek-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = greek_culture"
-			TARGET_CULTURE = "canadian_greek"
+			TARGET_CULTURE = "greco_canadian"
 		}
 		# Indo-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = hindustani"
-			TARGET_CULTURE = "canadian_indian"			
+			TARGET_CULTURE = "indo_canadian"			
 		}
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = northeast_indian"
-			TARGET_CULTURE = "canadian_indian"
+			TARGET_CULTURE = "indo_canadian"
 		}
 		# Irish-Canadian
 		country_change_pop_culture_by_pop_culture = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "irish"
-			TARGET_CULTURE = "canadian_irish"
+			TARGET_CULTURE = "irish_canadian"
 		}
 		# Italian-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = italophone"
-			TARGET_CULTURE = "canadian_italian"
-		}
-		# Polish-Canadian
-		country_change_pop_culture_by_discrimination_trait = {
-			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
-			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = west_slavic"
-			TARGET_CULTURE = "canadian_polish"
+			TARGET_CULTURE = "italian_canadian"
 		}
 		# Luso-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = lusophone"
-			TARGET_CULTURE = "canadian_portuguese"
+			TARGET_CULTURE = "luso_canadian"
 		}
-		# Scottish-Canadian
+		# Polish-Canadian
+		country_change_pop_culture_by_discrimination_trait = {
+			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
+			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = west_slavic"
+			TARGET_CULTURE = "polish_canadian"
+		}
+		# Scots-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = scottish_culture_group"
-			TARGET_CULTURE = "canadian_scottish"
+			TARGET_CULTURE = "scots_canadian"
 		}
 		# Ukrainian-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = east_slavic"
-			TARGET_CULTURE = "canadian_ukrainian"
+			TARGET_CULTURE = "ukrainian_canadian"
 		}
 		# Yugoslav-Canadian
 		country_change_pop_culture_by_discrimination_trait = {
 			LIMIT = "OR = { country_has_primary_culture = cu:anglo_canadian country_has_primary_culture = cu:franco_canadian }"
 			TRIGGER_CULTURE = "has_discrimination_trait = european_heritage has_discrimination_trait = jugoslav"
-			TARGET_CULTURE = "canadian_yugoslav"
+			TARGET_CULTURE = "yugoslav_canadian"
 		}
 
 	## NATIONALISM TECH ##

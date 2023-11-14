@@ -74,15 +74,15 @@ peoples_springtime.1 = {
 		}
 	}
 
-	option = {
+    option = {
 		name = peoples_springtime.1.b
-		default_option = yes
-		scope:radical_ig_leader = {
-			add_modifier = {
-				name = treasonous_traitor
-				months = normal_modifier_time
-			}
-		}
+        default_option = yes
+        scope:radical_ig_leader = {
+        	add_modifier = {
+        		name = treasonous_traitor
+        		months = normal_modifier_time
+        	}
+        }
 	}
 }
 
@@ -145,18 +145,18 @@ peoples_springtime.2 = {
 		}
 	}
 
-	option = {
+    option = {
 		name = peoples_springtime.2.b
-		default_option = yes
-		scope:radical_ig = {
-			leader = { 
+        default_option = yes
+        scope:radical_ig = {
+        	leader = { 
 				set_ideology = ideology:ideology_radical
 				add_modifier = {
 					name = treasonous_traitor
 					months = normal_modifier_time
 				}
 		 	}
-		}
+        }
 	}
 }
 

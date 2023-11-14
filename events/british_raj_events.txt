@@ -12,11 +12,10 @@ raj.1 = {
 	duration = 3
 
 	event_image = {
-		video = "gfx/event_pictures/asia_hinduism_sikhism.bk2"
+		video = "asia_hinduism_sikhism"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/asia/hinduism_sikhism"
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
@@ -88,11 +87,10 @@ raj.2 = {
 	duration = 3
 
 	event_image = {
-		video = "gfx/event_pictures/asia_hinduism_sikhism.bk2"
+		video = "asia_hinduism_sikhism"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/asia/hinduism_sikhism"
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
@@ -206,11 +204,10 @@ raj.3 = {
 	duration = 3
 
 	event_image = {
-		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+		video = "middleeast_battlefield_trenches"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/battlefield_trenches"
 
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
@@ -280,11 +277,10 @@ raj.4 = {
 	duration = 3
 
 	event_image = {
-		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+		video = "middleeast_battlefield_trenches"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/battlefield_trenches"
 
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
@@ -359,11 +355,10 @@ raj.5 = {
 	duration = 3
 
 	event_image = {
-		video = "gfx/event_pictures/southamerica_christianity.bk2"
+		video = "southamerica_christianity"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/christianity"
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
@@ -472,11 +467,10 @@ raj.6 = {
 	duration = 3
 
 	event_image = {
-		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+		video = "asia_sepoy_mutiny"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/asia/sepoy_mutiny"
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
@@ -543,7 +537,6 @@ raj.6 = {
 			}
 			create_diplomatic_play = {
 				name = sepoy_mutiny
-
 				type = dp_annex_war
 				escalation = 80
 				target_state = s:STATE_DELHI.region_state:MUG
@@ -599,7 +592,7 @@ raj.6 = {
 				ideology = ideology_jingoist_leader
 				traits = { 
 					stalwart_defender 
-					experienced_artillery_commander 
+					# experienced_artillery_commander 
 				}
 			}
 		}
@@ -783,11 +776,10 @@ raj.7 = {
 	duration = 3
 
 	event_image = {
-		video = "gfx/event_pictures/asia_hinduism_sikhism.bk2"
+		video = "asia_hinduism_sikhism"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/asia/hinduism_sikhism"
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 

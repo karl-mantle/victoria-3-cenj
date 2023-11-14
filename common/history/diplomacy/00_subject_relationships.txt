@@ -60,7 +60,7 @@
 			type = puppet
 		}
 		create_diplomatic_pact = {
-			country = c:LVN
+			country = c:LIV
 			type = puppet
 		}
 		create_diplomatic_pact = {
@@ -141,7 +141,7 @@
 		}
 		create_diplomatic_pact = {
 			country = c:ORG
-			type = dominion
+			type = puppet
 		}	
 		create_diplomatic_pact = {
 			country = c:HAN
@@ -156,22 +156,22 @@
 		# Province of Upper Canada
 		create_diplomatic_pact = {
 			country = c:ONT
-			type = dominion
+			type = puppet
 		}
 		# Province of Lower Canada
 		create_diplomatic_pact = {
 			country = c:QUE
-			type = dominion
+			type = puppet
 		}
 		# New Brunswick
 		create_diplomatic_pact = {
 			country = c:NBS
-			type = dominion
+			type = puppet
 		}
 		# Nova Scotia
 		create_diplomatic_pact = {
 			country = c:NVS
-			type = dominion
+			type = puppet
 		}
 		# Hudson Bay Company has a weird autonomous charter
 		create_diplomatic_pact = {

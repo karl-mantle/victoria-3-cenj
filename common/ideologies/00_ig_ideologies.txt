@@ -6,6 +6,7 @@
 		law_theocracy = approve			
 		law_presidential_republic = neutral
 		law_parliamentary_republic = neutral
+		law_corporatocracy = disapprove
 		law_council_republic = strongly_disapprove
 	}
 	
@@ -14,6 +15,7 @@
 		law_landed_voting = strongly_approve
 		law_autocracy = strongly_approve
 		law_oligarchy = approve
+		law_ecclesiarchy = strongly_disapprove
 		law_wealth_voting = neutral
 		law_census_voting = disapprove
 		law_universal_suffrage = strongly_disapprove
@@ -25,12 +27,14 @@
 		law_hereditary_bureaucrats = approve
 		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = disapprove
+		law_meritocratic_bureaucracy = disapprove
 	}
 
 	lawgroup_policing = {
 		law_local_police = approve
 		law_dedicated_police = neutral
 		law_militarized_police = neutral
+		law_private_police = neutral
 		law_no_police = disapprove
 	}
 	
@@ -84,12 +88,14 @@ ideology_laissez_faire = {
 		law_child_labor_allowed = approve
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = disapprove
+		law_child_benefit = strongly_disapprove
 	}
 	
 	lawgroup_labor_rights = {
-		law_no_workers_rights = neutral
-		law_regulatory_bodies = disapprove
-		law_worker_protections = strongly_disapprove
+		law_no_workers_rights = approve
+		law_regulatory_bodies = neutral
+		law_worker_protections = disapprove
+		law_union_representation = strongly_disapprove
 	}
 
 	lawgroup_land_reform = {
@@ -107,6 +113,13 @@ ideology_laissez_faire = {
 		law_gold_standard_monetary_system = disapprove
 		law_fiat_monetary_system = strongly_approve
 	}
+
+	lawgroup_substance_controls = {
+		law_no_substance_controls = approve
+		law_opium_ban = neutral
+		law_prohibition = strongly_disapprove
+		law_regulated_alcohol_and_tobacco = disapprove
+	}
 }
 
 ideology_individualist = {
@@ -117,10 +130,12 @@ ideology_individualist = {
 		law_no_social_security = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = strongly_disapprove
+		law_disability_insurance = strongly_disapprove
 	}
 	
 	lawgroup_health_system = {
 		law_private_health_insurance = strongly_approve
+		law_university_health_system = approve
 		law_no_health_system = approve
 		law_charitable_health_system = neutral
 		law_public_health_insurance = disapprove
@@ -130,6 +145,7 @@ ideology_individualist = {
 		law_private_schools = approve
 		law_public_schools = neutral
 		law_religious_schools = neutral
+		law_military_schools = disapprove
 		law_no_schools = disapprove
 	}
 	
@@ -137,6 +153,13 @@ ideology_individualist = {
 		law_no_migration_controls = approve
 		law_migration_controls = disapprove
 		law_closed_borders = strongly_disapprove
+	}
+
+	lawgroup_substance_controls = {
+		law_no_substance_controls = strongly_approve
+		law_opium_ban = disapprove
+		law_prohibition = strongly_disapprove
+		law_regulated_alcohol_and_tobacco = strongly_disapprove
 	}
 }
 
@@ -148,6 +171,7 @@ ideology_stratocratic = {
 		law_professional_army = neutral
 		law_national_militia = neutral
 		law_mass_conscription = disapprove
+		law_no_armed_forces = strongly_disapprove
 	}
 	
 	lawgroup_land_reform = {
@@ -161,6 +185,7 @@ ideology_stratocratic = {
 	lawgroup_taxation = {
 		law_consumption_based_taxation = approve
 		law_land_based_taxation = approve
+		law_no_income_tax = neutral
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = disapprove
 		law_graduated_taxation = strongly_disapprove
@@ -171,6 +196,7 @@ ideology_stratocratic = {
 		law_poor_laws = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = disapprove
+		law_disability_insurance = disapprove
 	}
 }
 
@@ -182,14 +208,23 @@ ideology_pious = {
 		law_public_health_insurance = neutral
 		law_no_health_system = disapprove
 		law_private_health_insurance = disapprove
+		law_university_health_system = strongly_disapprove
 	}
 	
 	lawgroup_education_system = {
 		law_religious_schools = approve
 		law_no_schools = neutral
+		law_military_schools = disapprove
 		law_public_schools = disapprove
 		law_private_schools = disapprove		
 	}	
+
+	lawgroup_substance_controls = {
+		law_no_substance_controls = disapprove
+		law_opium_ban = approve
+		law_prohibition = approve
+		law_regulated_alcohol_and_tobacco = strongly_approve
+	}
 }
 
 ideology_agrarian = {
@@ -214,6 +249,7 @@ ideology_agrarian = {
 	}		
 
 	lawgroup_taxation = {
+		law_no_income_tax = strongly_approve
 		law_consumption_based_taxation = approve
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = neutral
@@ -236,6 +272,7 @@ ideology_particularist = {
 	
 	lawgroup_policing = {
 		law_militarized_police = strongly_disapprove
+		law_private_police = strongly_disapprove
 		law_local_police = disapprove
 		law_dedicated_police = neutral
 		law_no_police = approve
@@ -246,6 +283,7 @@ ideology_particularist = {
 		law_professional_army = neutral
 		law_mass_conscription = disapprove
 		law_peasant_levies = disapprove
+		law_no_armed_forces = strongly_disapprove
 	}
 
 	lawgroup_slavery = {
@@ -295,12 +333,14 @@ ideology_moralist = {
 		law_theocracy = approve	
 		law_presidential_republic = neutral
 		law_parliamentary_republic = neutral
+		law_corporatocracy = strongly_disapprove	
 		law_council_republic = strongly_disapprove
 	}
 
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_approve
 		law_freedom_of_conscience = neutral
+		law_religious_pluralism = disapprove
 		law_total_separation = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 	}
@@ -312,18 +352,27 @@ ideology_moralist = {
 		law_cultural_exclusion = disapprove
 		law_multicultural = strongly_disapprove	
 	}
+
+	lawgroup_substance_controls = {
+		law_no_substance_controls = strongly_disapprove
+		law_opium_ban = approve
+		law_prohibition = strongly_approve
+		law_regulated_alcohol_and_tobacco = neutral
+	}
 }
 
 ideology_meritocratic = {
 	icon = "gfx/interface/icons/ideology_icons/meritocratic.dds"
 
 	lawgroup_bureaucracy = {
+		law_meritocratic_bureaucracy = strongly_approve	
 		law_elected_bureaucrats = approve
 		law_appointed_bureaucrats = neutral		
 		law_hereditary_bureaucrats = disapprove
 	}	
 	
 	lawgroup_taxation = {
+		law_no_income_tax = approve
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = approve
 		law_consumption_based_taxation = neutral
@@ -338,6 +387,7 @@ ideology_patriotic = {
 	lawgroup_policing = {
 		law_militarized_police = strongly_approve
 		law_dedicated_police = approve
+		law_private_police = approve
 		law_local_police = neutral
 		law_no_police = disapprove
 	}	
@@ -366,6 +416,7 @@ ideology_loyalist = {
 		law_graduated_taxation = approve
 		law_land_based_taxation = neutral
 		law_consumption_based_taxation = disapprove
+		law_no_income_tax = strongly_disapprove
 	}
 }
 
@@ -377,6 +428,7 @@ ideology_jingoist = {
 		law_mass_conscription = approve
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
+		law_no_armed_forces = strongly_disapprove
 	}
 	
 	lawgroup_colonization = {
@@ -401,6 +453,7 @@ ideology_liberal = {
 		law_no_police = neutral
 		law_dedicated_police = neutral
 		law_local_police = disapprove
+		law_private_police = disapprove
 		law_militarized_police = strongly_disapprove
 	}
 	
@@ -408,7 +461,7 @@ ideology_liberal = {
 		law_guaranteed_liberties = strongly_approve
 		law_no_home_affairs = neutral
 		law_national_guard = disapprove
-		law_secret_police = disapprove
+		law_secret_police = strongly_disapprove
 	}
 	
 	lawgroup_free_speech = {
@@ -424,6 +477,13 @@ ideology_liberal = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
 	}
+
+	lawgroup_substance_controls = {
+		law_no_substance_controls = disapprove
+		law_opium_ban = approve
+		law_prohibition = strongly_disapprove
+		law_regulated_alcohol_and_tobacco = strongly_approve
+	}
 }
 
 ideology_anti_clerical = {
@@ -432,6 +492,7 @@ ideology_anti_clerical = {
 	lawgroup_church_and_state = {
 		law_state_atheism = neutral
 		law_total_separation = strongly_approve
+		law_religious_pluralism = strongly_approve
 		law_freedom_of_conscience = approve
 		law_state_religion = disapprove
 	}
@@ -439,11 +500,13 @@ ideology_anti_clerical = {
 	lawgroup_education_system = {
 		law_public_schools = approve
 		law_private_schools = approve
+		law_military_schools = neutral
 		law_no_schools = disapprove
 		law_religious_schools = disapprove		
 	}
 
 	lawgroup_bureaucracy = {
+		law_meritocratic_bureaucracy = approve
 		law_appointed_bureaucrats = approve
 		law_elected_bureaucrats = neutral	
 		law_hereditary_bureaucrats = disapprove
@@ -459,6 +522,7 @@ ideology_republican = {
 		law_monarchy = neutral	
 		law_theocracy = neutral
 		law_council_republic = disapprove
+		law_corporatocracy = disapprove	
 	}
 	
 	lawgroup_distribution_of_power = {
@@ -470,6 +534,7 @@ ideology_republican = {
 		law_technocracy = neutral
 		law_oligarchy = disapprove
 		law_autocracy = disapprove
+		law_ecclesiarchy = strongly_disapprove
 		law_anarchy = strongly_disapprove
 	}	
 }
@@ -482,6 +547,7 @@ ideology_proletarian = {
 		law_land_based_taxation = neutral
 		law_proportional_taxation = neutral
 		law_consumption_based_taxation = neutral
+		law_no_income_tax = neutral
 		law_graduated_taxation = approve
 	}	
 
@@ -495,13 +561,15 @@ ideology_proletarian = {
 	}
 	
 	lawgroup_welfare = {
-		law_old_age_pension = strongly_approve
-		law_wage_subsidies = approve
-		law_poor_laws = neutral
-		law_no_social_security = disapprove
+		law_disability_insurance = strongly_approve
+		law_old_age_pension = approve
+		law_wage_subsidies = neutral
+		law_poor_laws = disapprove
+		law_no_social_security = strongly_disapprove
 	}
 	
 	lawgroup_health_system = {
+		law_university_health_system = disapprove
 		law_private_health_insurance = disapprove
 		law_no_health_system = disapprove
 		law_charitable_health_system = neutral
@@ -510,6 +578,7 @@ ideology_proletarian = {
 	
 	lawgroup_education_system = {
 		law_public_schools = approve
+		law_military_schools = neutral
 		law_private_schools = neutral
 		law_religious_schools = neutral	
 		law_no_schools = disapprove	
@@ -527,12 +596,14 @@ ideology_egalitarian = {
 	}
 	
 	lawgroup_childrens_rights = {
-		law_compulsory_primary_school = strongly_approve
-		law_restricted_child_labor = approve	
+		law_child_benefit = strongly_approve
+		law_compulsory_primary_school = approve
+		law_restricted_child_labor = strongly_approve
 		law_child_labor_allowed = disapprove
 	}
 	
 	lawgroup_labor_rights = {		
+		law_union_representation = approve	
 		law_worker_protections = strongly_approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
@@ -557,6 +628,7 @@ ideology_populist = {
 		law_wealth_voting = disapprove
 		law_landed_voting = disapprove
 		law_technocracy = disapprove
+		law_ecclesiarchy = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove		
 	}
@@ -572,6 +644,7 @@ ideology_populist = {
 		law_mass_conscription = approve
 		law_peasant_levies = neutral
 		law_professional_army = disapprove
+		law_no_armed_forces = strongly_disapprove
 	}
 }
 
@@ -582,6 +655,7 @@ ideology_socialist = {
 		law_council_republic = approve
 		law_parliamentary_republic = neutral		
 		law_presidential_republic = neutral
+		law_corporatocracy = strongly_disapprove
 		law_theocracy = strongly_disapprove
 		law_monarchy = strongly_disapprove
 	}
@@ -608,6 +682,7 @@ ideology_socialist = {
 		law_land_based_taxation = neutral
 		law_proportional_taxation = neutral
 		law_consumption_based_taxation = neutral
+		law_no_income_tax = neutral
 		law_graduated_taxation = approve
 	}
 }
@@ -621,6 +696,7 @@ ideology_reactionary = {
 		law_presidential_republic = neutral
 		law_parliamentary_republic = neutral
 		law_council_republic = disapprove
+		law_corporatocracy = disapprove	
 	}
 
 	lawgroup_citizenship = {
@@ -644,6 +720,13 @@ ideology_reactionary = {
 		law_gold_standard_monetary_system = disapprove
 		law_fiat_monetary_system = strongly_disapprove
 	}
+
+	lawgroup_substance_controls = {
+		law_no_substance_controls = strongly_disapprove
+		law_opium_ban = approve
+		law_prohibition = strongly_approve
+		law_regulated_alcohol_and_tobacco = neutral
+	}
 }
 
 ideology_plutocratic = {
@@ -657,6 +740,7 @@ ideology_plutocratic = {
 		law_census_voting = neutral
 		law_single_party_state = neutral
 		law_autocracy = disapprove
+		law_ecclesiarchy = disapprove
 		law_universal_suffrage = strongly_disapprove
 		law_anarchy = strongly_disapprove
 	}
@@ -665,12 +749,14 @@ ideology_plutocratic = {
 		law_monarchy = neutral			
 		law_presidential_republic = neutral
 		law_parliamentary_republic = neutral
+		law_corporatocracy = neutral
 		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove
 	}
 	
 	lawgroup_taxation = {
 		law_per_capita_based_taxation = approve
+		law_no_income_tax = approve
 		law_consumption_based_taxation = neutral
 		law_land_based_taxation = neutral
 		law_proportional_taxation = neutral

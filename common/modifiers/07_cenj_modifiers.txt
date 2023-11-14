@@ -102,7 +102,7 @@ the_great_trek = {
 
 trekboers_leaving = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	building_group_bg_agriculture_throughput_mult = -0.15
+	building_group_bg_agriculture_throughput_add = -0.15
 }
 
 volksraad_government = {
@@ -131,7 +131,7 @@ state_silver_rush_less_migration = {
 
 state_silver_rush_explotation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	building_silver_fields_throughput_mult = 0.2
+	building_silver_fields_throughput_add = 0.2
 }	
 
 state_limited_silver_rush = {

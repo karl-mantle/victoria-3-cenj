@@ -195,6 +195,7 @@
 		OR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
+			has_law = law_type:law_ecclesiarchy
 			has_law = law_type:law_landed_voting
 			has_law = law_type:law_wealth_voting
 		}
@@ -237,6 +238,14 @@
 				has_law = law_type:law_oligarchy
 			}
 			law_type:law_oligarchy = {
+				save_scope_as = current_voting_law_scope
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_ecclesiarchy
+			}
+			law_type:law_ecclesiarchy = {
 				save_scope_as = current_voting_law_scope
 			}
 		}
@@ -342,6 +351,10 @@
 	immediate = {
 		random_interest_group = {
 			limit = {
+				OR = {
+					is_powerful = yes
+					is_insurrectionary = yes
+				}
 				leader = {
 					has_ideology = ideology:ideology_radical
 				}

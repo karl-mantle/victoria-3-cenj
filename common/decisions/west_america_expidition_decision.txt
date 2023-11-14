@@ -85,7 +85,7 @@
 				is_diplomatic_play_committed_participant = yes
 				is_at_war = yes
 			}
-			add = -200
+			add = -1000
 		}		
 	}
 }

@@ -14,16 +14,14 @@ pmg_secondary_building_rye_farm = {
 		pm_no_secondary
 		pm_potatoes
 		pm_apple_orchards
-		pm_sugar_beets
 	}
 }
 
 pmg_harvesting_process_building_rye_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
-		pm_tools_disabled
 		pm_tools
-		pm_draught_animals
+		pm_draft_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
@@ -57,16 +55,14 @@ pmg_secondary_building_wheat_farm = {
 		pm_no_secondary
 		pm_citrus_orchards
 		pm_sugar_beets
-		pm_vineyards
 	}
 }
 
 pmg_harvesting_process_building_wheat_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
-		pm_tools_disabled
 		pm_tools
-		pm_draught_animals
+		pm_draft_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
@@ -98,7 +94,7 @@ pmg_secondary_building_rice_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
 		pm_no_secondary
-		pm_fig_orchards
+		pm_fig_orchards_building_rice_farm
 		pm_palm_oil
 	}
 }
@@ -107,9 +103,8 @@ pmg_harvesting_process_building_rice_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
 		pm_tools_disabled
-		pm_tools
-		pm_draught_animals
-		pm_steam_threshers
+		pm_tools_building_rice_farm
+		pm_steam_threshers_building_rice_farm
 	}
 }
 
@@ -139,16 +134,15 @@ pmg_secondary_building_maize_farm = {
 	production_methods = {
 		pm_no_secondary
 		pm_citrus_orchards
-		pm_vineyards_building_maize_farm
+		#pm_corn_syrup
 	}
 }
 
 pmg_harvesting_process_building_maize_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
-		pm_tools_disabled
 		pm_tools
-		pm_draught_animals
+		pm_draft_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
@@ -188,9 +182,8 @@ pmg_secondary_building_millet_farm = {
 pmg_harvesting_process_building_millet_farm = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
 	production_methods = {
-		pm_tools_disabled
 		pm_tools
-		pm_draught_animals
+		pm_draft_animals
 		pm_steam_threshers
 		pm_tractors
 		pm_compression_ignition_tractors
@@ -208,16 +201,17 @@ pmg_ownership_land_building_millet_farm = {
 	}
 }
 
-pmg_base_building_livestock_ranch = {
+pmg_sheep_ranch = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_simple_ranch
+		pm_sheep_farms
 		pm_intensive_grazing_ranch
 	}
 }
 
-pmg_slaughtering = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+pmg_base_building_livestock_ranch = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_open_air_stockyards
 		pm_butchering_tools
@@ -252,5 +246,26 @@ pmg_ownership_land_building_livestock_ranch = {
 		pm_homesteading
 		pm_government_run
 		pm_worker_cooperative_farm
+	}
+}
+
+pmg_ownership_land_building_sheep_ranch = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned
+		pm_publicly_traded
+		pm_homesteading
+		pm_government_run
+		pm_worker_cooperative_farm
+	}
+}
+
+pmg_stables = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_stables
+		pm_basic_stables
+		pm_livery_yard
+		pm_carriage_house
 	}
 }

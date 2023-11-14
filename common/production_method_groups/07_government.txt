@@ -28,6 +28,7 @@ pmg_government_administration_bureaucrat_professionalism = {
 
 	production_methods = {
 		pm_hereditary_bureaucrats
+		pm_military_bureaucrats
 		pm_professional_bureaucrats
 	}
 }
@@ -60,6 +61,7 @@ pmg_university_academia = {
 	production_methods = {
 		pm_religious_academia
 		pm_secular_academia
+		pm_military_academia
 	}
 }
 
@@ -84,15 +86,6 @@ pmg_airship_mooring_post = {
 }
 
 # Added
-
-pmg_ownership_capital_building_port = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
-	production_methods = {
-		pm_merchant_guilds_building_port
-		pm_privately_owned_building_port
-		pm_government_run_building_port
-	}
-}
 
 pmg_base_building_mint = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"

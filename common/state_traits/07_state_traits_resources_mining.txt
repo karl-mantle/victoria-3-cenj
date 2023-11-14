@@ -4,10 +4,10 @@ state_trait_bergslagen = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = 0.2
-		building_lead_mine_throughput_mult = 0.2
-		building_output_iron_mult = 0.05
-		building_output_lead_mult = 0.05
+		building_iron_mine_throughput_add = 0.2
+		building_lead_mine_throughput_add = 0.2
+		goods_output_iron_mult = 0.05
+		goods_output_lead_mult = 0.05
 	}
 }
 
@@ -17,8 +17,8 @@ state_trait_south_wales_valleys = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.1
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.1
 	}
 }
 
@@ -26,8 +26,8 @@ state_trait_lancashire_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -35,8 +35,8 @@ state_trait_south_yorkshire_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.1
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.1
 	}
 }
 
@@ -44,8 +44,8 @@ state_trait_central_belt_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -53,8 +53,8 @@ state_trait_loire_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -62,8 +62,8 @@ state_trait_nord_pas_de_calais_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -71,8 +71,8 @@ state_trait_borinage_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -80,8 +80,8 @@ state_trait_saar_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -89,8 +89,8 @@ state_trait_most_basin = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -98,8 +98,8 @@ state_trait_ruhr_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -107,8 +107,8 @@ state_trait_great_northern_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -116,8 +116,8 @@ state_trait_upper_silesia_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -125,8 +125,8 @@ state_trait_donets_coalfield = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -134,8 +134,8 @@ state_trait_waterberg_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -143,8 +143,8 @@ state_trait_alborz_coalfield = {
     icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -152,8 +152,8 @@ state_trait_zonguldak_coalfield = {
     icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -161,8 +161,8 @@ state_trait_tabas_coalfield = {
     icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -170,8 +170,8 @@ state_trait_manchurian_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -179,8 +179,8 @@ state_trait_shanxi_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -188,8 +188,8 @@ state_trait_ishikari_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -197,8 +197,8 @@ state_trait_miike_coalfield = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_coal.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -206,8 +206,8 @@ state_trait_kuznetsk_coalfield = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -221,8 +221,8 @@ state_trait_malmberget = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = 0.2
-		building_output_iron_mult = 0.1
+		building_iron_mine_throughput_add = 0.2
+		goods_output_iron_mult = 0.1
 	}
 }
 
@@ -230,7 +230,7 @@ state_trait_minette_ore = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = -0.1
+		building_iron_mine_throughput_add = -0.1
 	}
 }
 
@@ -238,8 +238,8 @@ state_trait_kryvbas = {
     icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = 0.1
-		building_output_iron_mult = 0.05
+		building_iron_mine_throughput_add = 0.1
+		goods_output_iron_mult = 0.05
 	}
 }
 
@@ -247,8 +247,8 @@ state_trait_mokta_el_hadid = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 
 	modifier = {
-		building_iron_mine_throughput_mult = 0.2
-		building_output_iron_mult = 0.1
+		building_iron_mine_throughput_add = 0.2
+		goods_output_iron_mult = 0.1
 	}
 }
 
@@ -256,8 +256,8 @@ state_trait_serra_dos_carajas = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = 0.2
-		building_output_iron_mult = 0.1
+		building_iron_mine_throughput_add = 0.2
+		goods_output_iron_mult = 0.1
 	}
 }
 
@@ -265,8 +265,8 @@ state_trait_iron_quadrangle = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = 0.2
-		building_output_iron_mult = 0.1
+		building_iron_mine_throughput_add = 0.2
+		goods_output_iron_mult = 0.1
 	}
 }
 
@@ -274,8 +274,8 @@ state_trait_el_mutun = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_iron.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_mult = 0.2
-		building_output_iron_mult = 0.1
+		building_iron_mine_throughput_add = 0.2
+		goods_output_iron_mult = 0.1
 	}
 }
 
@@ -285,8 +285,8 @@ state_trait_lead_belt = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lead.dds"
 	
 	modifier = {
-		building_lead_mine_throughput_mult = 0.2
-		building_output_lead_mult = 0.1
+		building_lead_mine_throughput_add = 0.2
+		goods_output_lead_mult = 0.1
 	}
 }
 
@@ -294,8 +294,8 @@ state_trait_paktong = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lead.dds"
 
 	modifier = {
-		building_lead_mine_throughput_mult = 0.2
-		building_output_silver_mult = 0.2
+		building_lead_mine_throughput_add = 0.2
+		goods_output_silver_mult = 0.2
 	}
 }
 
@@ -303,19 +303,19 @@ state_trait_new_caledonian_nickel = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lead.dds"
 	
 	modifier = {
-		building_lead_mine_throughput_mult = 0.1
-		building_output_lead_mult = 0.05
+		building_lead_mine_throughput_add = 0.1
+		goods_output_lead_mult = 0.05
 	}
 }
 
-# Quarries
+# Clay Pits
 
 state_trait_de_kempen = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_clay.dds"
 	
 	modifier = {
-		building_quarry_throughput_mult = 0.1
-		building_output_clay_mult = 0.05
+		building_clay_pit_throughput_add = 0.1
+		goods_output_clay_mult = 0.05
 	}
 }
 
@@ -323,8 +323,8 @@ state_trait_london_clay = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_clay.dds"
 	
 	modifier = {
-		building_quarry_throughput_mult = 0.1
-		building_output_clay_mult = 0.05
+		building_clay_pit_throughput_add = 0.1
+		goods_output_clay_mult = 0.05
 	}
 }
 
@@ -334,8 +334,8 @@ state_trait_kongsberg_silver_mine = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_silver.dds"
 	
 	modifier = {
-		building_silver_mine_throughput_mult = 0.2
-		building_output_silver_mult = 0.1
+		building_silver_mine_throughput_add = 0.2
+		goods_output_silver_mult = 0.1
 	}
 }
 
@@ -343,8 +343,8 @@ state_trait_joachimsthal = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_silver.dds"
 	
 	modifier = {
-		building_silver_mine_throughput_mult = 0.1
-		building_output_silver_mult = 0.05
+		building_silver_mine_throughput_add = 0.1
+		goods_output_silver_mult = 0.05
 	}
 }
 
@@ -354,8 +354,8 @@ state_trait_sicilian_sulfur_mines = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_sulfur.dds"
 	
 	modifier = {
-		building_sulfur_mine_throughput_mult = 0.2
-		building_output_sulfur_mult = 0.1
+		building_sulfur_mine_throughput_add = 0.2
+		goods_output_sulfur_mult = 0.1
 	}
 }
 
@@ -363,8 +363,8 @@ state_trait_bone_valley = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_sulfur.dds"
 	
 	modifier = {
-		building_sulfur_mine_throughput_mult = 0.1
-		building_output_sulfur_mult = 0.05
+		building_sulfur_mine_throughput_add = 0.1
+		goods_output_sulfur_mult = 0.05
 	}
 }
 
@@ -372,7 +372,7 @@ state_trait_chincha_islands = {
 	icon = "gfx/interface/icons/state_trait_icons/bat.dds"
 	
 	modifier = {
-		building_sulfur_mine_throughput_mult = 0.2
-		building_output_sulfur_mult = 0.1
+		building_sulfur_mine_throughput_add = 0.2
+		goods_output_sulfur_mult = 0.1
 	}
 }

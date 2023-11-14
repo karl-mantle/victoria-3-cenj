@@ -3,6 +3,7 @@
 	ai_selection = most_productive
 
 	production_methods = {
+		pm_early_trains
 		pm_steam_trains
 		pm_electric_trains
 		pm_diesel_trains
@@ -57,7 +58,7 @@ pmg_base_building_road_network = {
 
 	production_methods = {
 		pm_road_carts_roads
-		pm_draught_animal_wagons
+		pm_draft_animal_wagons
 		pm_steam_powered_wagons
 		pm_diesel_engine_wagons
 	}

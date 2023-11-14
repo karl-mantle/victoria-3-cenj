@@ -24,6 +24,10 @@ law_no_womens_rights = {
 		value = 0
 	}
 
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
 	ai_will_do = {
 		literacy_rate < 0.4
 		exists = ruler
@@ -99,6 +103,10 @@ law_women_own_property = {
 			}
 		}
 	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
 	
 	ai_will_do = {
 		OR = {
@@ -192,6 +200,10 @@ law_women_in_the_workplace = {
 			}
 		}
 	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
 	
 	ai_will_do = {
 		OR = {
@@ -236,6 +248,7 @@ law_womens_suffrage = {
 		law_wealth_voting
 		law_universal_suffrage
 		law_single_party_state
+		law_anarchy
 	}
 	
 	on_enact = {
@@ -275,6 +288,10 @@ law_womens_suffrage = {
 			}
 		}
 	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0

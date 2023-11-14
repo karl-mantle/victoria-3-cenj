@@ -2,6 +2,8 @@
 
 victoria-3-cenj is an experimental overhaul mod for Victoria 3.
 
+Was 775mb.
+
 ## Features
 
 Still under development.
@@ -10,7 +12,7 @@ Still under development.
 - Major unification for South Africa and greatly expanded flavour for the region with new journal entries, characters, events, nations, etc.
 - North American flavour, new events, nations and cultures.
 - Russia flavour new nations and cultures - new journals and events to do.
-- Integrated several other flavour mods
+- Integrated and updated several other flavour mods
 
 ## Installation
 
@@ -18,7 +20,7 @@ Download the repository as a .zip and extract it, or clone the repo and move the
 
 ## Compatibility
 
-This mod is compatible with Victoria 3 patch version 1.3.6
+This mod is compatible with Victoria 3 patch version 1.5.5 open beta. It may require the VotP DLC to work correctly.
 
 ## Translation
 

@@ -78,13 +78,13 @@ building_opium_plantation = {
 	can_build_government = {
 		error_check = {
 			severity = fail
-			owner = { NOT = { is_banning_goods = g:opium } }
+			owner = { NOT = { has_law = law_type:law_opium_ban } }
 		}
 	}
 	can_build_private = {
 		error_check = {
 			severity = fail
-			owner = { NOT = { is_banning_goods = g:opium } }
+			owner = { NOT = { has_law = law_type:law_opium_ban } }
 		}
 	}	
 }
@@ -181,5 +181,76 @@ building_silk_plantation = {
 		pmg_base_building_silk_plantation
 		pmg_train_automation_building_silk_plantation
 		pmg_ownership_land_building_silk_plantation
+	}
+}
+
+building_cocoa_plantation = {
+	building_group = bg_cocoa_plantations
+	texture = "gfx/interface/icons/building_icons/cocoa_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_cocoa_plantation
+		pmg_train_automation_building_cocoa_plantation
+		pmg_ownership_land_building_cocoa_plantation
+	}
+}
+
+building_hemp_plantation = {
+	building_group = bg_hemp_plantations
+	texture = "gfx/interface/icons/building_icons/hemp_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_hemp_plantation
+		pmg_secondary_building_hemp_plantation
+		pmg_train_automation_building_hemp_plantation
+		pmg_ownership_land_building_hemp_plantation
+	}
+
+	can_build_government = {
+		error_check = {
+			severity = fail
+			owner = { NOT = { has_law = law_type:law_opium_ban } }
+		}
+	}
+	can_build_private = {
+		error_check = {
+			severity = fail
+			owner = { NOT = { has_law = law_type:law_opium_ban } }
+		}
+	}	
+}
+
+building_spice_plantation = {
+	building_group = bg_spice_plantations
+	texture = "gfx/interface/icons/building_icons/spice_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_spice_plantation
+		pmg_train_automation_building_spice_plantation
+		pmg_ownership_land_building_spice_plantation
 	}
 }

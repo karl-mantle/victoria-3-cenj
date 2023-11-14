@@ -1,0 +1,4057 @@
+﻿
+# Canada - CAN
+
+	can_macdonald_character_template = {
+		first_name = John_A
+		last_name = Macdonald
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_republican_leader
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_john_a_macdonald
+		birth_date = 1815.1.10
+		traits = { expert_political_operator tactful bigoted }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CAN
+				this = c:CAN
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			earliest_usage_date = 1844.1.1
+			latest_usage_date = 1891.6.6
+			chance = 90
+		}
+	}
+	can_laurier_character_template = {
+		first_name = Wilfrid
+		last_name = Laurier
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_intelligentsia
+		dna = dna_wilfrid_laurier
+		birth_date = 1841.11.20
+		traits = { tactful experienced_diplomat expert_political_operator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CAN
+				this = c:CAN
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1874.1.1
+			latest_usage_date = 1891.6.6
+			chance = 90
+		}
+	}
+	can_king_character_template = {
+		first_name = Mackenzie
+		last_name = King
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_intelligentsia
+		dna = dna_mackenzie_king
+		birth_date = 1874.12.17
+		traits = { innovative basic_diplomat meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CAN
+				this = c:CAN
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1908.1.1
+			latest_usage_date = 1950.7.22
+			chance = 90
+		}
+	}
+	can_riel_character_template = {
+		first_name = Louis
+		last_name = Riel
+		historical = yes
+		culture = cu:metis
+		female = no
+		religion = catholic
+		ideology = ideology_radical
+		interest_group = ig_rural_folk
+		dna = dna_louis_riel
+		birth_date = 1844.10.22
+		traits = { charismatic devout psychological_affliction popular_commander }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CAN
+				this = c:CAN
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_rural_folk
+			}
+			earliest_usage_date = 1869.1.1
+			latest_usage_date = 1885.11.16
+			chance = 90
+		}
+	}
+	can_massey_character_template = {
+		first_name = Hart
+		last_name = Massey
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_industrialists
+		birth_date = 1823.4.29
+		dna = dna_hart_massey
+		traits = { expensive_tastes innovative }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CAN
+				this = c:CAN
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1856.1.1
+			latest_usage_date = 1896.2.20
+			chance = 90
+		}
+	}
+	can_van_horne_character_template = {
+		first_name = William_C
+		last_name = Van_Horne
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_industrialists
+		dna = dna_william_van_horne
+		birth_date = 1843.2.3
+		traits = { meticulous ambitious innovative }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CAN
+				this = c:CAN
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1888.1.1
+			latest_usage_date = 1915.9.11
+			chance = 90
+		}
+	}
+
+
+# Confederate States of America - CSA
+
+	usa_jefferson_davis_character_template = {
+		first_name = Jefferson
+		last_name = Davis
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1808.6.3
+		dna = dna_jefferson_davis
+		traits = {
+			military_officer
+			experienced_political_operator
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1862.2.22
+			latest_usage_date = 1889.12.6
+			chance = 90
+		}
+	}
+	usa_stephens_character_template = {
+		first_name = Alexander_H
+		last_name = Stephens
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant # Presbyterian
+		ideology = ideology_slaver
+		interest_group = ig_landowners # ig_southern_planters
+		birth_date = 1812.2.11
+		dna = dna_alexander_stephens
+		traits = {
+			lawyer
+			basic_political_operator
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					c:CSA ?= this
+					AND = {
+						NOT = { exists = c:CSA }
+						c:USA ?= this
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1862.2.22
+			latest_usage_date = 1883.3.4
+			chance = 90
+		}
+	}
+	usa_ferguson_character_template = {
+		first_name = Champ
+		last_name = Ferguson
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		dna = dna_champ_ferguson
+		birth_date = 1821.11.29
+		traits = { war_criminal bigoted pillager resupply_commander }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			role = general
+			earliest_usage_date = 1858.1.1
+			latest_usage_date = 1865.10.20
+			chance = 90
+		}
+	}
+	usa_wirz_character_template = {
+		first_name = Henry
+		last_name = Wirz
+		culture = cu:alemannic
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		dna = dna_henry_wirz
+		birth_date = 1823.11.25
+		traits = { war_criminal cruel direct }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			role = general
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1865.11.10
+			chance = 90
+		}
+	}
+	usa_forrest_character_template = {
+		first_name = Nathan_Bedford
+		last_name = Forrest
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_ethno_nationalist
+		interest_group = ig_armed_forces
+		dna = dna_nathan_bedford_forrest
+		birth_date = 1821.7.13
+		traits = { bigoted cruel wrathful experienced_offensive_planner }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			role = general
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1877.10.29
+			chance = 90
+		}
+	}
+	csa_augustus_garland_character_template = {
+		first_name = Augustus
+		last_name = Garland
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1832.6.11
+		traits = {
+			lawyer
+			appeaser
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					c:CSA ?= this
+					c:USA ?= this
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_landowners
+				} 
+			}
+			earliest_usage_date = 1842.1.1
+			latest_usage_date = 1899.1.29
+			chance = 75
+		}   
+	}
+	csa_augustus_maxwell_character_template = {
+		first_name = Augustus
+		last_name = Maxwell
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_patriotic_leader
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1820.9.21
+		traits = {
+			lawyer
+			corrupt
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				} 
+			}   
+			earliest_usage_date = 1846.1.1
+			latest_usage_date = 1903.5.5
+			chance = 75
+		}   
+	}
+	csa_benjamin_harvey_hill_character_template = {
+		first_name = Benjamin_Harvey
+		last_name = Hill
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1823.9.14
+		traits = {
+			lawyer
+			bigoted
+			inspirational_orator
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				} 
+			}   
+			earliest_usage_date = 1852.1.1
+			latest_usage_date = 1882.8.16
+			chance = 75
+		}   
+	}
+	csa_charles_mitchel_character_template = {
+		first_name = Charles
+		last_name = Mitchel
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_jacksonian_democrat
+		interest_group = ig_rural_folk
+		birth_date = 1815.9.15
+		traits = {
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+				} 
+			}   
+			earliest_usage_date = 1842.1.1
+			latest_usage_date = 1864.9.20
+			chance = 75
+		}   
+	}
+	csa_christopher_memminger_character_template = {
+		first_name = Christopher
+		last_name = Memminger
+		culture = cu:german_american
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1803.1.9
+		traits = {
+			lawyer
+			bigoted
+			arbitrary
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1888.3.7
+			chance = 75
+		}   
+	}
+	csa_edward_sparrow_character_template = {
+		first_name = Edward
+		last_name = Sparrow
+		culture = cu:irish_american
+		historical = yes
+		religion = catholic
+		ideology = ideology_plutocratic_leader
+		interest_group = ig_landowners
+		birth_date = 1810.12.29
+		traits = {
+			persistent
+			alcoholic
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_landowners
+	
+				} 
+			}   
+			earliest_usage_date = 1842.1.1
+			latest_usage_date = 1882.7.4
+			chance = 75
+		}   
+	}
+	csa_herschel_johnson_character_template = {
+		first_name = Herschel_V
+		last_name = Johnson
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1812.9.18
+		traits = {
+			lawyer
+			bigoted
+			honorable
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				} 
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1880.8.16
+			chance = 75
+		}   
+	}
+	csa_james_phelan_character_template = {
+		first_name = James
+		last_name = Phelan
+		culture = cu:irish_american
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		birth_date = 1821.10.11
+		traits = {
+			lawyer
+			innovative
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_industrialists
+				} 
+			}   
+			earliest_usage_date = 1842.1.1
+			latest_usage_date = 1873.5.17
+			chance = 75
+		}   
+	}
+	csa_john_mcrae_character_template = {
+		first_name = John_J
+		last_name = McRae
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1815.1.10
+		traits = {
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1868.5.31
+			chance = 75
+		}   
+	}
+	csa_john_reagan_character_template = {
+		first_name = John_H
+		last_name = Reagan
+		culture = cu:texan
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		birth_date = 1818.10.8
+		traits = {
+			lawyer
+			meticulous
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					c:CSA ?= this
+					c:USA ?= this
+					c:TEX ?= this
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				} 
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1905.3.6
+			chance = 75
+		}   
+	}
+	csa_leroy_walker_character_template = {
+		first_name = LeRoy
+		last_name = Walker
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_armed_forces
+		birth_date = 1817.2.17
+		traits = {
+			lawyer
+			ambitious
+			sickly
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_armed_forces
+				} 
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1884.8.23
+			chance = 75
+		}   
+	}
+	csa_robert_toombs_character_template = {
+		first_name = Robert
+		last_name = Toombs
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		birth_date = 1810.7.2
+		traits = {
+			lawyer
+			innovative
+			uncouth
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+				} 
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1885.12.15
+			chance = 75
+		}   
+	}
+	csa_william_yancey_character_template = {
+		first_name = William
+		last_name = Yancey
+		culture = cu:dixie
+		historical = yes
+		religion = catholic
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1823.9.14
+		traits = {
+			landed_elite
+			wrathful
+			reckless
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:CSA
+				this = c:CSA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				}
+			}   
+			earliest_usage_date = 1852.1.1
+			latest_usage_date = 1882.8.16
+			chance = 75
+		}   
+	}
+
+
+# Mexico - MEX
+	mex_juarez_character_template = {
+		first_name = Benito
+		last_name = Juarez
+		historical = yes
+		culture = cu:zapotec
+		religion = catholic
+		ideology = ideology_market_liberal
+		interest_group = ig_intelligentsia
+		birth_date = 1806.3.21
+		traits = {
+			experienced_political_operator
+			direct
+			persistent
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_rural_folk
+				} 
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1872.1.1
+			chance = 75
+		}   
+	}
+	mex_agustin_jeronimo_character_template = {
+		first_name = Agustin # Agustín
+		last_name = Jeronimo # Jerónimo
+		culture = cu:mexican
+		historical = yes
+		religion = catholic
+		ideology = ideology_royalist
+		interest_group = ig_landowners
+		birth_date = 1807.9.30
+		traits = {
+			military_officer
+			charismatic
+			ambitious
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1866.12.11
+			chance = 75
+		}   
+	}
+	mex_francisco_echeverria_character_template = {
+		first_name = Francisco
+		last_name = Echeverria # Echverría
+		culture = cu:mexican
+		historical = yes
+		religion = catholic
+		ideology = ideology_patriotic_leader
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1797.7.2
+		traits = {
+			clerk
+			cautious
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1852.9.17
+			chance = 75
+		}   
+	}
+	mex_jose_salas_character_template = {
+		first_name = Jose
+		last_name = Mariano_Salas
+		culture = cu:mexican
+		historical = yes
+		religion = catholic
+		ideology = ideology_moderate
+		interest_group = ig_armed_forces
+		birth_date = 1797.5.11
+		traits = {
+			soldier
+			honorable
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_armed_forces
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1867.12.24
+			chance = 75
+		}   
+	}
+	mex_miguel_barragan_template = {
+		# Miguel Barragan, notionally president of Mexico
+		first_name = Miguel
+		last_name = Barragan
+		historical = yes
+		ruler = yes
+		#ig_leader = yes
+		interest_group = ig_armed_forces
+		ideology = ideology_moderate
+		birth_date = 1789.3.8
+		dna = dna_miguel_barragan
+		traits = {
+			reserved # Santa Anna's puppet
+			wounded # Probably contracted typhus, just needed something to make him less healthy here. Resigned February 27th, 1836, died March 1st, 1836
+		}
+	}
+	mex_nicolas_bravo_character_template = {
+		first_name = Nicolas # Nicolás
+		last_name = Bravo
+		culture = cu:mexican
+		historical = yes
+		religion = catholic
+		ideology = ideology_radical # can't remember why it's this
+		interest_group = ig_landowners
+		birth_date = 1786.9.10
+		traits = {
+			military_officer
+			persistent
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1854.4.22
+			chance = 75
+		}   
+	}
+	mex_pedro_anaya_character_template = {
+		first_name = Pedro
+		last_name = Maria_Anaya
+		culture = cu:mexican
+		historical = yes
+		religion = catholic
+		ideology = ideology_moderate
+		interest_group = ig_armed_forces
+		birth_date = 1795.5.20
+		traits = {
+			soldier
+			brave
+			honorable
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1854.3.21
+			chance = 75
+		}   
+	}
+	mex_valentin_farias_character_template = {
+		first_name = Valentin # Valentín
+		last_name = Gomez_Farias # Gómez Farías
+		culture = cu:mexican
+		historical = yes
+		religion = catholic
+		ideology = ideology_liberal
+		interest_group = ig_intelligentsia
+		birth_date = 1781.2.14
+		traits = {
+			doctor
+			basic_political_operator
+			charismatic
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_intelligentsia
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1858.7.5
+			chance = 75
+		}   
+	}
+
+# Native American - SEQ / LKT / APC / NZP / IRC
+
+	seq_sequoyah_character_template = {
+		first_name = Sequoyah
+		last_name = EmptySequoyah
+		historical = yes
+		culture = cu:cherokee
+		female = no
+		religion = animist
+		ideology = ideology_reformer
+		interest_group = ig_intelligentsia
+		birth_date = 1770.11.11
+		traits = { innovative experienced_diplomat tactful }
+		dna = dna_sequoyah
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:SEQ
+				this = c:SEQ
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1843.8.21
+			chance = 90
+		}
+	}
+	lkt_red_cloud_character_template = {
+		first_name = Red_Cloud
+		last_name = EmptyRed_Cloud
+		historical = yes
+		culture = cu:dakota
+		female = no
+		religion = animist
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_red_cloud
+		birth_date = 1822.10.15
+		traits = { plains_commander experienced_diplomat direct }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:LKT }
+					}
+					AND = {
+						exists = c:LKT
+						this = c:LKT
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1865.1.1
+			latest_usage_date = 1909.12.10
+			chance = 90
+		}
+	}
+	lkt_sitting_bull_character_template = {
+		first_name = Sitting_Bull
+		last_name = EmptySitting_Bull
+		historical = yes
+		culture = cu:dakota
+		female = no
+		religion = animist
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_sitting_bull
+		birth_date = 1822.10.15
+		traits = { plains_commander popular_commander explorer experienced_offensive_planner }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:LKT }
+					}
+					AND = {
+						exists = c:LKT
+						this = c:LKT
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1865.1.1
+			latest_usage_date = 1890.12.15
+			chance = 90
+		}
+	}
+	lkt_crazy_horse_character_template = {
+		first_name = Crazy_Horse
+		last_name = EmptyCrazy_Horse
+		historical = yes
+		culture = cu:dakota
+		female = no
+		religion = animist
+		ideology = ideology_traditionalist
+		interest_group = ig_armed_forces
+		dna = dna_crazy_horse
+		birth_date = 1840.9.14
+		traits = { plains_commander reserved pious brave }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:LKT }
+					}
+					AND = {
+						exists = c:LKT
+						this = c:LKT
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1877.9.5
+			chance = 90
+		}
+	}
+	apc_geronimo_character_template = {
+		first_name = Geronimo
+		last_name = EmptyGeronimo
+		historical = yes
+		culture = cu:pueblo
+		female = no
+		religion = animist
+		ideology = ideology_theocrat
+		interest_group = ig_devout
+		dna = dna_geronimo
+		birth_date = 1829.6.16
+		traits = { plains_commander mountain_commander experienced_diplomat pillager }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:APC }
+					}
+					AND = {
+						exists = c:APC
+						this = c:APC
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1850.1.1
+			latest_usage_date = 1909.2.17
+			chance = 90
+		}
+	}
+	nzp_chief_joseph_character_template = {
+		first_name = Chief_Joseph
+		last_name = EmptyChief_Joseph
+		historical = yes
+		culture = cu:nez_perce
+		female = no
+		religion = animist
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		dna = dna_chief_joseph
+		birth_date = 1840.3.3
+		traits = { plains_commander mountain_commander brave stalwart_defender }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:NZP }
+					}
+					AND = {
+						exists = c:NZP
+						this = c:NZP
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1875.1.1
+			latest_usage_date = 1904.9.21
+			chance = 90
+		}
+	}
+	apc_victorio_character_template = {
+		first_name = Victorio
+		last_name = EmptyVictorio
+		historical = yes
+		culture = cu:pueblo
+		female = no
+		religion = animist
+		ideology = ideology_traditionalist
+		interest_group = ig_armed_forces
+		dna = dna_victorio
+		birth_date = 1825.8.2
+		traits = { surveyor pillager resupply_commander }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:APC }
+					}
+					AND = {
+						exists = c:APC
+						this = c:APC
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1870.1.1
+			latest_usage_date = 1880.10.14
+			chance = 90
+		}
+	}
+	apc_cochise_character_template = {
+		first_name = Cochise
+		last_name = EmptyCochise
+		historical = yes
+		culture = cu:pueblo
+		female = no
+		religion = animist
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		dna = dna_cochise
+		birth_date = 1805.8.21
+		traits = { mountain_commander persistent popular_commander }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:APC }
+					}
+					AND = {
+						exists = c:APC
+						this = c:APC
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1860.1.1
+			latest_usage_date = 1874.6.8
+			chance = 90
+		}
+	}
+	apc_mangas_coloradas_character_template = {
+		first_name = Mangas_Coloradas
+		last_name = EmptyMangas_Coloradas
+		historical = yes
+		culture = cu:pueblo
+		female = no
+		religion = animist
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		dna = dna_mangas_coloradas
+		birth_date = 1793.4.28
+		traits = { mountain_commander traditionalist_commander wrathful }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:SEQ
+						this = c:SEQ
+						NOT = { exists = c:APC }
+					}
+					AND = {
+						exists = c:APC
+						this = c:APC
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1845.1.1
+			latest_usage_date = 1863.1.21
+			chance = 90
+		}
+	}
+	irc_poundmaker_character_template = {
+		first_name = Poundmaker
+		last_name = EmptyPoundmaker
+		historical = yes
+		culture = cu:cree
+		female = no
+		religion = animist
+		ideology = ideology_pacifist
+		interest_group = ig_landowners
+		dna = dna_poundmaker
+		birth_date = 1842.4.23
+		traits = { basic_diplomat surveyor plains_commander }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:IRC
+				this = c:IRC
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1880.1.1
+			latest_usage_date = 1886.7.4
+			chance = 90
+		}
+	}
+# Nova Scotia - NVS
+
+	nvs_howe_character_template = {
+		first_name = Joseph
+		last_name = Howe
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_rural_folk
+		dna = dna_joseph_howe
+		birth_date = 1804.12.13
+		traits = { persistent romantic wrathful }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:NVS
+				this = c:NVS
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1873.6.1
+			chance = 90
+		}
+	}
+
+# Ontario - ONT
+
+	ont_robinson_character_template = {
+		first_name = John
+		last_name = Robinson
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_john_robinson
+		birth_date = 1791.7.26
+		traits = { expensive_tastes imperious hedonist }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:ONT
+				this = c:ONT
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1863.1.31
+			chance = 90
+		}
+	}
+	ont_mowat_character_template = {
+		first_name = Oliver
+		last_name = Mowat
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_oliver_mowat
+		birth_date = 1820.7.22
+		traits = { experienced_political_operator demagogue tactful }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:ONT
+				this = c:ONT
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1857.1.1
+			latest_usage_date = 1903.4.19
+			chance = 90
+		}
+	}
+
+# Oregon - ORG
+
+	org_douglas_character_template = {
+		first_name = James
+		last_name = Douglas
+		historical = yes
+		culture = cu:scottish
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_james_douglas
+		birth_date = 1803.8.15
+		traits = { experienced_colonial_administrator meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ORG
+						this = c:ORG
+						c:ORG = { owns_entire_state_region = STATE_BRITISH_COLUMBIA }
+						NOT = { 
+							exists = c:COL
+							exists = c:CSC
+						}
+					}
+					AND = {
+						exists = c:CSC
+						this = c:CSC
+						NOT = { exists = c:COL }
+					}
+					AND = {
+						exists = c:COL
+						this = c:COL
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_industrialists
+				}
+			}
+			earliest_usage_date = 1849.1.1
+			latest_usage_date = 1877.8.2
+			chance = 90
+		}
+	}
+	org_de_cosmos_character_template = {
+		first_name = Amor
+		last_name = De_Cosmos
+		historical = yes
+		culture = cu:anglo_canadian
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_intelligentsia
+		dna = dna_amor_de_cosmos
+		birth_date = 1825.8.20
+		traits = { psychological_affliction meticulous imperious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ORG
+						this = c:ORG
+						c:ORG = { owns_entire_state_region = STATE_BRITISH_COLUMBIA }
+						NOT = { 
+							exists = c:COL
+							exists = c:CSC
+						}
+					}
+					AND = {
+						exists = c:CSC
+						this = c:CSC
+						NOT = { exists = c:COL }
+					}
+					AND = {
+						exists = c:COL
+						this = c:COL
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			earliest_usage_date = 1863.1.1
+			latest_usage_date = 1897.7.4
+			chance = 90
+		}
+	}
+
+# Quebec - QUE
+
+	que_lambton_character_template = {
+		first_name = John
+		last_name = Lambton
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_rural_folk
+		dna = dna_john_lambton
+		birth_date = 1792.4.12
+		traits = { expert_colonial_administrator romantic expensive_tastes }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:QUE
+				this = c:QUE
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_rural_folk
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1840.7.28
+			chance = 90
+		}
+	}
+	que_nelson_character_template = {
+		first_name = Robert
+		last_name = Nelson
+		historical = yes
+		culture = cu:franco_canadian
+		female = no
+		religion = catholic
+		ideology = ideology_radical
+		interest_group = ig_rural_folk
+		dna = dna_robert_nelson
+		birth_date = 1794.8.8
+		traits = { persistent reckless ambitious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:QUE
+				this = c:QUE
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1873.3.1
+			chance = 90
+		}
+	}
+	que_bowen_character_template = {
+		first_name = Edward
+		last_name = Bowen
+		historical = yes
+		culture = cu:irish
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_edward_bowen
+		birth_date = 1780.12.1
+		traits = { expensive_tastes arrogant basic_colonial_administrator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:QUE
+				this = c:QUE
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1866.4.11
+			chance = 90
+		}
+	}
+	que_cartier_character_template = {
+		first_name = George-Etienne
+		last_name = Cartier
+		historical = yes
+		culture = cu:franco_canadian
+		female = no
+		religion = catholic
+		ideology = ideology_republican_leader
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_george_etienne_cartier
+		birth_date = 1814.9.6
+		traits = { kidney_stones tactful romantic }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:QUE
+				this = c:QUE
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1838.1.1
+			latest_usage_date = 1873.5.20
+			chance = 90
+		}
+	}
+
+# Texas - TEX
+	tex_de_zavala_character_template = {
+		first_name = Lorenzo
+		last_name = de_Zavala
+		culture = cu:mexican
+		female = no
+		historical = yes
+		religion = catholic
+		ideology = ideology_populist_leader
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1788.10.3
+		dna = dna_lorenzo_de_zavala
+		traits = {
+			doctor
+			persistent
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					c:TEX ?= this
+					c:MEX ?= this
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1836.11.15
+			chance = 75
+		}
+	}
+	tex_crockett_character_template = {
+		first_name = Davy
+		last_name = Crockett
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_rural_folk
+		birth_date = 1786.8.17
+		dna = dna_dacy_crockett
+		traits = { explorer brave romantic mountain_commander }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:TEX
+				this = c:TEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1836.3.6
+			chance = 75
+		}
+	}
+	tex_anson_jones_character_template = {
+		first_name = Anson
+		last_name = Jones
+		culture = cu:texan
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1798.1.20
+		traits = {
+			doctor
+			ambitious
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:TEX
+				this = c:TEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1858.1.9
+			chance = 75
+		}   
+	}
+	tex_edward_burleson_character_template = {
+		first_name = Edward
+		last_name = Burleson
+		culture = cu:texan
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_rural_folk
+		birth_date = 1798.12.15
+		traits = {
+			soldier
+			brave
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:TEX
+				this = c:TEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_rural_folk
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1851.12.26
+			chance = 75
+		}   
+	}
+	tex_kaufman_character_template = {
+		first_name = David
+		last_name = Kaufman
+		culture = cu:german_american
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		birth_date = 1807.4.20
+		traits = {
+			lawyer
+			direct
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:MEX
+				this = c:MEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1861.1.31
+			chance = 75
+		}   
+	}
+	tex_kenneth_anderson_character_template = {
+		first_name = Kenneth
+		last_name = Anderson
+		culture = cu:texan
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1805.9.11
+		traits = {
+			lawyer
+			meticulous
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:TEX
+				this = c:TEX
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1865.7.3
+			chance = 99
+		}   
+	}
+	tex_nicholas_darnell_character_template = {
+		first_name = Nicholas
+		last_name = Darnell
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_armed_forces
+		birth_date = 1807.4.20
+		traits = {
+			farmer
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					c:TEX ?= this
+					c:CSA ?= this
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_armed_forces
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1885.7.16
+			chance = 75
+		}   
+	}
+
+
+# United States - USA 
+	# Presidents
+	usa_adams_character_template = {
+		first_name = John_Quincy
+		last_name = Adams
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant # Nontrinitarian
+		ideology = ideology_abolitionist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1767.7.11
+		dna = dna_john_qunicy_adams
+		traits = { meticulous ambitious experienced_political_operator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:NEN }
+					}
+					AND = {
+						exists = c:NEN
+						this = c:NEN
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1848.2.23
+			chance = 75
+		}
+	}
+	usa_andrew_jackson_template = {
+		first_name = Andrew
+		last_name = Jackson
+		historical = yes
+		culture = cu:dixie
+		ruler = yes
+		ig_leader = yes
+		interest_group = ig_rural_folk
+		ideology = ideology_jacksonian_democrat
+		birth_date = 1767.3.15
+		dna = dna_andrew_jackson
+		traits = {
+			bigoted
+			demagogue
+			expert_political_operator
+		}
+		on_created = {
+			set_variable = {
+				name = is_andrew_jackson
+			}               
+		}
+	}
+	usa_van_buren_character_template = {
+		first_name = Martin
+		last_name = Van_Buren
+		culture = cu:yankee # cu:american_dutch
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_abolitionist # Free Soil Party
+		interest_group = ig_rural_folk
+		birth_date = 1782.12.5
+		dna = dna_martin_van_buren
+		traits = {
+			lawyer
+			cautious
+			basic_diplomat
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_rural_folk
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1862.7.24
+			chance = 75
+		}
+	}
+	usa_w_harrison_character_template = {
+		first_name = William_H
+		last_name = Harrison
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant # Anglican
+		ideology = ideology_republican_leader # Whig party
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1773.2.9
+		dna = dna_william_henry_harrison
+		traits = { experienced_diplomat tactful innovative }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1841.4.7
+			chance = 75
+		}
+	}
+	usa_tyler_character_template = {
+		first_name = John
+		last_name = Tyler
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1790.3.29
+		dna = dna_john_tyler
+		traits = {
+			political_dynasty
+			arrogant
+			absent_minded
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_landowners
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1862.1.18
+			chance = 75
+		}
+	}
+	usa_polk_character_template = {
+		first_name = James_K
+		last_name = Polk
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_rural_folk
+		birth_date = 1795.11.2
+		dna = dna_james_k_polk
+		traits = { wrathful reckless ambitious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1849.6.15
+			chance = 75
+		}
+	}
+	# Zachary Taylor is a general
+	usa_fillmore_template = {
+		first_name = Millard
+		last_name = Fillmore
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant # Nontrinitarian
+		ideology = ideology_ethno_nationalist # Know Nothing Party
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1800.1.7
+		dna = dna_millard_fillmore
+		traits = { bigoted demagogue cautious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1874.3.8
+			chance = 75
+		}
+	}
+	usa_pierce_character_template = {
+		first_name = Franklin
+		last_name = Pierce
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant # Anglican
+		ideology = ideology_traditionalist
+		interest_group = ig_rural_folk
+		birth_date = 1804.11.23
+		dna = dna_franklin_pierce
+		traits = {
+			political_dynasty
+			alcoholic
+			charismatic
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:NEN }
+					}
+					AND = {
+						exists = c:NEN
+						this = c:NEN
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_rural_folk
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1869.10.8
+			chance = 75
+		}
+	}
+	usa_buchanan_character_template = {
+		first_name = James
+		last_name = Buchanan
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1791.4.23
+		dna = dna_james_buchanan
+		traits = {
+			lawyer
+			basic_political_operator
+			arrogant
+		}  
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_landowners
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1868.6.1
+			chance = 75
+		}
+	}
+	usa_lincoln_character_template = {
+		first_name = Abraham
+		last_name = Lincoln
+		historical = yes
+		culture = cu:yankee
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1809.2.12
+		dna = dna_abraham_lincoln
+		traits = {
+			experienced_political_operator
+			inspirational_orator
+			tactful
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				} 
+			}   
+			earliest_usage_date = 1844.2.12
+			latest_usage_date = 1890.1.1
+			chance = 75
+		}   
+	}
+	usa_johnson_character_template = {
+		first_name = Andrew
+		last_name = Johnson
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_individualist_leader
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1808.12.29
+		dna = dna_andrew_johnson
+		traits = {
+			entrepreneur
+			basic_political_operator
+			imperious
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1853.10.17
+			latest_usage_date = 1875.7.31
+			chance = 75
+		}
+	}
+	# Grant is a general
+	usa_hayes_character_template = {
+		first_name = Rutherford_B
+		last_name = Hayes
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1822.10.4
+		dna = dna_rutherford_b_hayes
+		traits = { persistent charismatic arrogant }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1865.3.4
+			latest_usage_date = 1893.1.17
+			chance = 75
+		}
+	}
+	usa_garfield_character_template = {
+		first_name = James_A
+		last_name = Garfield
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1831.11.19
+		dna = dna_james_garfield
+		traits = { ambitious imperious persistent }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1863.3.4
+			latest_usage_date = 1881.9.19
+			chance = 75
+		}
+	}
+	usa_arthur_character_template = {
+		first_name = Chester_A
+		last_name = Arthur
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1829.10.5
+		dna = dna_chester_arthur
+		traits = { kidney_stones reserved cautious}
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:NEN }
+					}
+					AND = {
+						exists = c:NEN
+						this = c:NEN
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1871.12.1
+			latest_usage_date = 1886.11.18
+			chance = 75
+		}
+	}
+	usa_cleveland_character_template = {
+		first_name = Grover
+		last_name = Cleveland
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_industrialists
+		birth_date = 1837.3.18
+		dna = dna_grover_cleveland
+		traits = {
+			expert_political_operator
+			honorable
+			persistent
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1883.1.1
+			latest_usage_date = 1908.6.24
+			chance = 75
+		}
+	}
+	usa_b_harrison_character_template = {
+		first_name = Benjamin
+		last_name = Harrison
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_protectionist
+		interest_group = ig_industrialists
+		birth_date = 1833.8.20
+		dna = dna_benjamin_harrison
+		traits = {
+			political_dynasty
+			expensive_tastes
+			persistent
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1881.3.4
+			latest_usage_date = 1901.3.13
+			chance = 75
+		}
+	}
+	usa_mckinley_character_template = {
+		first_name = William
+		last_name = McKinley
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1843.1.29
+		dna = dna_william_mckinley
+		traits = { direct ambitious meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1885.3.4
+			latest_usage_date = 1901.9.14
+			chance = 75
+		}
+	}
+	usa_roosevelt_character_template = {
+		first_name = Theodore_2
+		last_name = Roosevelt
+		historical = yes
+		culture = cu:yankee
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_industrialists
+		birth_date = 1858.8.28
+		traits = {
+			celebrity_commander
+			explorer
+			brave
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_rural_folk
+				} 
+			}   
+			earliest_usage_date = 1882.1.1
+			latest_usage_date = 1919.1.1
+			chance = 75
+		}   
+	}
+	usa_taft_character_template = {
+		first_name = William_Howard
+		last_name = Taft
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant # Nontrinitarian
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_william_howard_taft
+		birth_date = 1857.9.15
+		traits = { kidney_stones reckless expensive_tastes }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1890.2.4
+			latest_usage_date = 1930.3.8
+			chance = 75
+		}
+	}
+	usa_wilson_character_template = {
+		first_name = Woodrow
+		last_name = Wilson
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_rural_folk
+		birth_date = 1856.12.28
+		dna = dna_woodrow_wilson
+		traits = { bigoted masterful_diplomat }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1911.1.17
+			latest_usage_date = 1924.2.3
+			chance = 75
+		}
+	}
+	usa_harding_character_template = {
+		first_name = Warren_G
+		last_name = Harding
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_pacifist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1865.11.2
+		dna = dna_warren_harding
+		traits = { charismatic persistent expensive_tastes }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			earliest_usage_date = 1904.1.11
+			latest_usage_date = 1923.8.2
+			chance = 75
+		}
+	}
+	usa_coolidge_character_template = {
+		first_name = Calvin
+		last_name = Coolidge
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_individualist_leader
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1872.7.4
+		dna = dna_calvin_coolidge
+		traits = {
+			lawyer
+			direct
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:NEN }
+					}
+					AND = {
+						exists = c:NEN
+						this = c:NEN
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1914.1.7
+			latest_usage_date = 1933.1.5
+			chance = 75
+		}
+	}
+	usa_hoover_character_template = {
+		first_name = Herbert
+		last_name = Hoover
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_herbert_hoover
+		birth_date = 1874.8.10
+		traits = { bigoted cautious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			earliest_usage_date = 1914.10.22
+			latest_usage_date = 1964.10.20
+			chance = 75
+		}
+	}
+	usa_f_roosevelt_character_template = {
+		first_name = Franklin_D
+		last_name = Roosevelt
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_rural_folk
+		dna = dna_franklin_roosevelt
+		birth_date = 1882.1.30
+		traits = { wounded expert_political_operator masterful_diplomat }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1913.3.17
+			latest_usage_date = 1945.4.12
+			chance = 75
+		}
+	}
+
+	# Presidential Canditates and Vice Presidents
+	usa_fremont_character_template = {
+		first_name = John_C
+		last_name = Fremont
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1813.1.21
+		dna = dna_john_c_fremont
+		traits = { celebrity_commander explorer imperious reckless war_criminal }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CAL }
+					}
+					AND = {
+						exists = c:CAL
+						this = c:CAL
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1847.1.19
+			latest_usage_date = 1890.7.13
+			chance = 50
+		}
+	}
+	usa_hannibal_hamlin_character_template = { # 15th Vice President
+		first_name = Hannibal
+		last_name = Hamlin
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_intelligentsia
+		birth_date = 1809.8.27
+		traits = {
+			lawyer
+			meticulous
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_intelligentsia
+			}   
+			earliest_usage_date = 1845.1.1
+			latest_usage_date = 1881.7.4
+			chance = 50
+		}   
+	}
+	usa_alton_parker_character_template = {
+		first_name = Alton_B
+		last_name = Parker
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		birth_date = 1852.5.14
+		traits = {
+			lawyer
+			meticulous
+			arrogant
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1899.1.1
+			latest_usage_date = 1926.5.10
+			chance = 50
+		}   
+	}
+	usa_adlai_stevenson_character_template = { # 23rd Vice President
+		first_name = Adlai
+		last_name = Stevenson
+		culture = cu:yankee # Scots-Irish
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate # ideology_free_silver
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1835.10.23
+		traits = {
+			lawyer
+			ambitious
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+				} 
+			}   
+			earliest_usage_date = 1875.03.04
+			latest_usage_date = 1897.03.04
+			chance = 50
+		}
+	}
+
+	# Senators
+	usa_long_character_template = {
+		first_name = Huey
+		last_name = Long
+		culture = cu:dixie
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_rural_folk
+		birth_date = 1893.8.30
+		dna = dna_huey_long
+		traits = { demagogue firebrand charismatic }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CSA }
+					}
+					AND = {
+						exists = c:CSA
+						this = c:CSA
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1928.5.21
+			latest_usage_date = 1935.9.10
+			chance = 30
+		}
+	}
+	usa_allen_thurman_character_template = {
+		first_name = Allen_G
+		last_name = Thurman
+		culture = cu:dixie
+		historical = yes
+		religion = protestant
+		ideology = ideology_jacksonian_democrat
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1813.11.13
+		traits = {
+			lawyer
+			bigoted
+			basic_political_operator
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}   
+			earliest_usage_date = 1845.1.1
+			latest_usage_date = 1890.1.1
+			chance = 30
+		}   
+	}
+	usa_charles_sumner_character_template = {
+		first_name = Charles
+		last_name = Sumner
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_intelligentsia
+		birth_date = 1811.1.6
+		traits = {
+			experienced_political_operator
+			persistent
+			eccentric
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_intelligentsia
+			}
+			earliest_usage_date = 1854.1.1
+			latest_usage_date = 1874.3.11
+			chance = 30
+		}   
+	}
+	usa_daniel_webster_character_template = {
+		first_name = Daniel
+		last_name = Webster
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_authoritarian
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1782.1.18
+		traits = {
+			lawyer
+			experienced_political_operator
+			persistent
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1852.10.24
+			chance = 30
+		}   
+	}
+	usa_elihu_root_character_template = {
+		first_name = Elihu
+		last_name = Root
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1854.7.30
+		traits = {
+			academic
+			expert_political_operator
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}   
+			earliest_usage_date = 1895.1.1
+			latest_usage_date = 1932.9.27
+			chance = 30
+		}   
+	}
+	usa_george_boutwell_character_template = {
+		first_name = George
+		last_name = Boutwell
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_intelligentsia
+		birth_date = 1818.1.28
+		traits = {
+			lawyer
+			basic_political_operator
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_intelligentsia
+			}   
+			earliest_usage_date = 1851.1.1
+			latest_usage_date = 1905.2.27
+			chance = 30
+		}   
+	}
+	usa_henry_teller_character_template = {
+		first_name = Henry
+		last_name = Teller
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_populist_leader
+		interest_group = ig_rural_folk
+		birth_date = 1830.5.23
+		traits = {
+			lawyer
+			ambitious
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_rural_folk
+			}   
+			earliest_usage_date = 1882.1.1
+			latest_usage_date = 1912.1.1
+			chance = 30
+		}   
+	}
+	usa_james_blaine_character_template = {
+		first_name = James_G
+		last_name = Blaine
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_market_liberal
+		interest_group = ig_industrialists
+		birth_date = 1830.1.31
+		traits = {
+			inspirational_orator
+			charismatic
+			corrupt
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_industrialists
+			}   
+			earliest_usage_date = 1869.3.4
+			latest_usage_date = 1893.1.27
+			chance = 30
+		}   
+	}
+	usa_james_guthrie_character_template = {
+		first_name = James
+		last_name = Guthrie
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_individualist_leader
+		interest_group = ig_landowners
+		birth_date = 1792.12.5
+		traits = {
+			lawyer
+			basic_political_operator
+			meticulous
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1855.1.1
+			latest_usage_date = 1869.3.12
+			chance = 30
+		}   
+	}
+	usa_seward_character_template = {
+		first_name = William_H
+		last_name = Seward
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_rural_folk
+		dna = dna_william_h_seward
+		birth_date = 1801.5.16
+		traits = { brave persistent }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1939.1.1
+			latest_usage_date = 1872.10.10
+			chance = 90
+		}
+	}
+
+	# State Governors
+	usa_archibald_yell_character_template = {
+		first_name = Archibald
+		last_name = Yell
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_jacksonian_democrat
+		interest_group = ig_rural_folk
+		birth_date = 1797.8.9
+		traits = {
+			lawyer
+			charismatic
+			basic_political_operator
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+				} 
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1847.2.23
+			chance = 25
+		}   
+	}
+	usa_claiborne_jackson_character_template = {
+		first_name = Claiborne_Fox
+		last_name = Jackson
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_landowners
+		birth_date = 1806.4.4
+		traits = {
+			mill_owner # actually Quinine pill manufacturing
+			basic_political_operator
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+					is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1850.1.1
+			latest_usage_date = 1862.12.6
+			chance = 25
+		}   
+	}
+	usa_hancock_jackson_character_template = {
+		first_name = Hancock
+		last_name = Jackson
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_rural_folk
+		birth_date = 1796.5.12
+		traits = {
+			farmer
+			basic_political_operator
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_devout
+				} 
+			}   
+			earliest_usage_date = 1845.1.1
+			latest_usage_date = 1876.3.19
+			chance = 25
+		}   
+	}
+	usa_henry_rector_character_template = {
+		first_name = Henry_Massie
+		last_name = Rector
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_rural_folk
+		birth_date = 1816.5.1
+		traits = {
+			police_chief
+			bigoted
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_rural_folk
+			}   
+			earliest_usage_date = 1852.1.1
+			latest_usage_date = 1899.8.12
+			chance = 25
+		}   
+	}
+	usa_horace_boies_character_template = {
+		first_name = Horace
+		last_name = Boies
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_populist_leader
+		interest_group = ig_rural_folk
+		birth_date = 1782.10.9
+		traits = {
+			lawyer
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_rural_folk
+			}   
+			earliest_usage_date = 1891.1.1
+			latest_usage_date = 1910.4.4
+			chance = 25
+		}   
+	}
+	usa_isaac_gray_character_template = {
+		first_name = Isaac
+		last_name = Gray
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		birth_date = 1828.8.18
+		traits = {
+			tactful
+			imperious
+			basic_political_operator
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_landowners
+			}   
+			earliest_usage_date = 1875.1.1
+			latest_usage_date = 1895.2.14
+			chance = 25
+		}   
+	}
+	usa_isaac_murphy_character_template = {
+		first_name = Isaac
+		last_name = Murphy
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_rural_folk
+		birth_date = 1799.10.1
+		traits = {
+			basic_political_operator
+			honorable
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_rural_folk
+				} 
+			}   
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1882.9.8
+			chance = 25
+		}   
+	}
+
+	# Representatives
+	usa_edward_stanly_character_template = {
+		first_name = Edward
+		last_name = Stanly
+		culture = cu:dixie
+		female = no
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_rural_folk
+		birth_date = 1810.1.10
+		traits = {
+			lawyer
+			reserved
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_rural_folk
+			}   
+			earliest_usage_date = 1840.1.1
+			latest_usage_date = 1872.7.12
+			chance = 10
+		}   
+	}
+	usa_elihu_washburne_character_template = {
+		first_name = Elihu
+		last_name = Washburne
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1816.9.23
+		traits = {
+			lawyer
+			basic_diplomat
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_petty_bourgeoisie
+			}   
+			earliest_usage_date = 1853.1.1
+			latest_usage_date = 1887.10.22
+			chance = 10
+		}   
+	}
+	usa_fernando_wood_character_template = {
+		first_name = Fernando
+		last_name = Wood
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_slaver
+		interest_group = ig_industrialists
+		birth_date = 1812.6.14
+		traits = {
+			merchant
+			corrupt
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_industrialists
+			}   
+			earliest_usage_date = 1841.1.1
+			latest_usage_date = 1881.2.13
+			chance = 10
+		}   
+	}
+	usa_henry_winter_davis_character_template = {
+		first_name = Henry_Winter
+		last_name = Davis
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_intelligentsia
+		birth_date = 1817.8.16
+		traits = {
+			lawyer
+			wrathful
+			meticulous
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_intelligentsia
+			}   
+			earliest_usage_date = 1856.8.16
+			latest_usage_date = 1865.12.30
+			chance = 10
+		}   
+	}
+	usa_horace_greeley_character_template = {
+		first_name = Horace
+		last_name = Greeley
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_individualist_leader
+		interest_group = ig_intelligentsia
+		birth_date = 1811.2.3
+		traits = {
+			entrepreneur
+			ambitious
+			eccentric
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_intelligentsia
+			}   
+			earliest_usage_date = 1849.12.4
+			latest_usage_date = 1872.10.29
+			chance = 10
+		}   
+	}
+
+	# Industrialists
+	usa_astor_character_template = {
+		first_name = John_Jacob
+		last_name = Astor
+		culture = cu:german_american
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_landowners
+		birth_date = 1763.7.17
+		dna = dna_john_jacob_astor
+		traits = { 
+			expensive_tastes
+			ambitious
+			meticulous
+		}
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1848.3.29
+			chance = 50
+		}
+	}
+	usa_morgan_character_template = {
+		first_name = J_P
+		last_name = Morgan
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_industrialists
+		birth_date = 1837.4.17
+		dna = dna_j_p_morgan
+		traits = { meticulous tactful persistent }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1895.1.1
+			latest_usage_date = 1913.3.31
+			chance = 50
+		}
+	}
+	usa_rockefeller_character_template = {
+		first_name = John_D
+		last_name = Rockefeller
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_industrialists
+		dna = dna_john_rockefeller
+		birth_date = 1839.7.8
+		traits = { pious arrogant expensive_tastes }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1874.1.1
+			latest_usage_date = 1937.5.23
+			chance = 50
+		}
+	}
+	usa_hearst_character_template = {
+		first_name = William_Randolph
+		last_name = Hearst
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_industrialists
+		dna = dna_william_randolph_hearst
+		birth_date = 1863.4.29
+		traits = { cautious imperious romantic }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CAL }
+					}
+					AND = {
+						exists = c:CAL
+						this = c:CAL
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			earliest_usage_date = 1895.1.1
+			latest_usage_date = 1951.8.14
+			chance = 50
+		}
+	}
+	usa_edison_character_template = {
+		first_name = Thomas
+		last_name = Edison
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_feminist
+		interest_group = ig_industrialists
+		birth_date = 1847.2.11
+		dna = dna_thomas_edison
+		traits = { grifter innovative arrogant }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1877.1.1
+			latest_usage_date = 1931.10.18
+			chance = 50
+		}
+	}
+	usa_westinghouse_character_template = {
+		first_name = George
+		last_name = Westinghouse
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_market_liberal
+		interest_group = ig_industrialists
+		dna = dna_george_westinghouse
+		birth_date = 1846.10.6
+		traits = { persistent innovative }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1880.1.1
+			latest_usage_date = 1914.3.12
+			chance = 50
+		}
+	}
+	usa_colt_character_template = {
+		first_name = Samuel
+		last_name = Colt
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_industrialists
+		dna = dna_samuel_colt
+		birth_date = 1814.7.19
+		traits = { innovative persistent kidney_stones }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1847.1.1
+			latest_usage_date = 1862.1.10
+			chance = 50
+		}
+	}
+	usa_chrysler_character_template = {
+		first_name = Walter
+		last_name = Chrysler
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_market_liberal
+		interest_group = ig_industrialists
+		dna = dna_walter_chrysler
+		birth_date = 1875.4.2
+		traits = { arrogant persistent expensive_tastes }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1915.1.1
+			latest_usage_date = 1940.8.18
+			chance = 50
+		}
+	}
+	cal_strauss_character_template = {
+		first_name = Levi
+		last_name = Strauss
+		culture = cu:german_american
+		female = no
+		historical = yes
+		religion = jewish
+		ideology = ideology_market_liberal
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_levi_strauss
+		birth_date = 1829.2.26
+		traits = { innovative direct }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					c:CAL ?= this
+					AND = {
+						NOT = { exists = c:CAL }
+						c:USA ?= this
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_industrialists
+				}
+			}
+			earliest_usage_date = 1870.1.1
+			latest_usage_date = 1902.9.26
+			chance = 50
+		}
+	}
+	usa_browning_character_template = {
+		first_name = John
+		last_name = Browning
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_industrialists
+		dna = dna_john_browning
+		birth_date = 1855.1.23
+		traits = { innovative meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:DES }
+					}
+					AND = {
+						exists = c:DES
+						this = c:DES
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1880.1.1
+			latest_usage_date = 1926.11.26
+			chance = 50
+		}
+	}
+
+	# Union Leaders
+	usa_george_meany_character_template = {
+		first_name = George
+		last_name = Meany
+		culture = cu:yankee
+		female = no
+		religion = catholic
+		ideology = ideology_moderate
+		interest_group = ig_trade_unions
+		birth_date = 1894.8.16
+		traits = {
+			labourer
+			persistent
+			honorable
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_trade_unions
+			}   
+			earliest_usage_date = 1925.1.1
+			latest_usage_date = 1936.1.1
+			chance = 50
+		}   
+	}
+	usa_thomas_character_template = {
+		first_name = Norman
+		last_name = Thomas
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_trade_unions
+		dna = dna_norman_thomas
+		birth_date = 1884.11.20
+		traits = { pious charismatic tactful }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_trade_unions
+			}
+			earliest_usage_date = 1922.1.1
+			latest_usage_date = 1968.12.19
+			chance = 50
+		}
+	}
+	usa_foster_character_template = {
+		first_name = William_Z
+		last_name = Foster
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_communist
+		interest_group = ig_trade_unions
+		dna = dna_william_z_foster
+		birth_date = 1881.2.25
+		traits = { persistent direct }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:NEN }
+					}
+					AND = {
+						exists = c:NEN
+						this = c:NEN
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_trade_unions
+			}
+			earliest_usage_date = 1924.1.1
+			latest_usage_date = 1961.9.1
+			chance = 50
+		}
+	}
+	usa_browder_character_template = {
+		first_name = Earl
+		last_name = Browder
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_communist
+		interest_group = ig_trade_unions
+		dna = dna_earl_browder
+		birth_date = 1891.5.20
+		traits = { imperious firebrand reckless }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_trade_unions
+			}
+			earliest_usage_date = 1919.1.1
+			latest_usage_date = 1973.1.27
+			chance = 50
+		}
+	}
+	usa_hill_character_template = {
+		first_name = Joe
+		last_name = Hill
+		culture = cu:swedish
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_social_democrat
+		interest_group = ig_trade_unions
+		dna = dna_joe_hill
+		birth_date = 1879.10.7
+		traits = { romantic demagogue }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:DES }
+					}
+					AND = {
+						exists = c:DES
+						this = c:DES
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1910.1.1
+			latest_usage_date = 1905.4.3
+			chance = 50
+		}
+	}
+	# End
+	usa_norton_character_template = { # Emperor Norton
+		first_name = Joshua
+		last_name = Norton
+		culture = cu:british
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_royalist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1818.2.4
+		dna = dna_emperor_norton
+		traits = { psychological_affliction imperious romantic }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CAL }
+					}
+					AND = {
+						exists = c:CAL
+						this = c:CAL
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			earliest_usage_date = 1859.9.1
+			latest_usage_date = 1880.1.8
+			chance = 10
+		}
+	}
+	des_joseph_smith_character_template = {
+		first_name = Joseph
+		last_name = Smith
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant # Mormon
+		ideology = ideology_theocrat
+		interest_group = ig_devout
+		dna = dna_joseph_smith
+		birth_date = 1805.12.23
+		traits = { hedonist ambitious inspirational_orator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:DES }
+					}
+					AND = {
+						exists = c:DES
+						this = c:DES
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_devout
+			}
+			earliest_usage_date = 1936.1.1
+			latest_usage_date = 1844.6.27
+			chance = 75
+		}
+	}
+	des_brigham_young_character_template = {
+		first_name = Brigham
+		last_name = Young
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant # Mormon
+		ideology = ideology_theocrat
+		interest_group = ig_devout
+		dna = dna_brigham_young
+		birth_date = 1801.6.1
+		traits = { bigoted hedonist persistent }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:DES }
+					}
+					AND = {
+						exists = c:DES
+						this = c:DES
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_devout
+			}
+			earliest_usage_date = 1847.1.1
+			latest_usage_date = 1877.8.29
+			chance = 75
+		}
+	}
+	usa_alphonso_taft_character_template = {
+		first_name = Alphonso
+		last_name = Taft
+		culture = cu:yankee
+		historical = yes
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_petty_bourgeoisie
+		birth_date = 1833.8.20
+		traits = {
+			academic
+			family_ties
+			experienced_diplomat
+		}   
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_petty_bourgeoisie
+				} 
+			}   
+			earliest_usage_date = 1876.5.22
+			latest_usage_date = 1887.5.21
+			chance = 15
+		}   
+	}
+	usa_moody_character_template = {
+		first_name = Dwight_L
+		last_name = Moody
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_theocrat
+		interest_group = ig_devout
+		birth_date = 1837.2.5
+		traits = { inspirational_orator charismatic ambitious }
+		dna = dna_dwight_l_moody
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:NEN }
+					}
+					AND = {
+						exists = c:NEN
+						this = c:NEN
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_devout
+			}
+			earliest_usage_date = 1871.1.1
+			latest_usage_date = 1899.12.26
+			chance = 75
+		}
+	}
+	usa_emerson_character_template = {
+		first_name = Ralph_Waldo
+		last_name = Emerson
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_individualist_leader
+		interest_group = ig_intelligentsia
+		birth_date = 1803.5.25
+		dna = dna_ralph_emerson
+		traits = { tactful charismatic romantic }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:NEN }
+					}
+					AND = {
+						exists = c:NEN
+						this = c:NEN
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			earliest_usage_date = 1852.1.1
+			latest_usage_date = 1882.4.27
+			chance = 90
+		}
+	}
+	usa_lindbergh_character_template = {
+		first_name = Charles
+		last_name = Lindbergh
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		birth_date = 1902.2.4
+		dna = dna_charles_linbergh
+		traits = { explorer brave romantic }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:UOM }
+					}
+					AND = {
+						exists = c:UOM
+						this = c:UOM
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			earliest_usage_date = 1927.1.1
+			latest_usage_date = 1974.8.26
+			chance = 90
+		}
+	}
+	usa_barnum_character_template = {
+		first_name = P_T
+		last_name = Barnum
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_intelligentsia
+		birth_date = 1810.7.5
+		dna = dna_p_t_barnum
+		traits = { innovative meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:USA
+				this = c:USA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_industrialists
+				}
+			}
+			earliest_usage_date = 1865.1.1
+			latest_usage_date = 1891.4.7
+			chance = 90
+		}
+	}
+	usa_patton_character_template = {
+		first_name = George_S
+		last_name = Patton
+		culture = cu:yankee
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_armed_forces
+		dna = dna_george_s_patton
+		birth_date = 1885.11.11
+		traits = { direct wrathful bigoted basic_offensive_planner }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:USA
+						this = c:USA
+						NOT = { exists = c:CAL }
+					}
+					AND = {
+						exists = c:CAL
+						this = c:CAL
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1915.1.1
+			latest_usage_date = 1945.12.21
+			chance = 50
+		}
+	}
+	asa_delany_character_template = {
+		first_name = Martin
+		last_name = Delany
+		culture = cu:afro_american
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_abolitionist
+		interest_group = ig_armed_forces
+		dna = dna_martin_delany
+		birth_date = 1812.5.6
+		traits = { innovative firebrand expensive_tastes }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:ASA
+				this = c:ASA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1852.1.1
+			latest_usage_date = 1885.1.24
+			chance = 50
+		}
+	}
+	asa_turner_character_template = {
+		first_name = Henry_McNeal
+		last_name = Turner
+		culture = cu:afro_american
+		female = no
+		historical = yes
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_devout
+		dna = dna_henry_turner
+		birth_date = 1834.2.1
+		traits = { pious tactful reserved }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:ASA
+				this = c:ASA
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				is_interest_group_type = ig_devout
+			}
+			earliest_usage_date = 1862.4.1
+			latest_usage_date = 1915.5.8
+			chance = 50
+		}
+	}

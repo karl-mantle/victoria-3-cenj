@@ -87,7 +87,7 @@
 		"generic_rural_mining_processing_01_mesh"
 	}
 	# Added
-	building_copper_fields = {
+	building_clay_pit = {
 		"generic_rural_mining_processing_01_mesh"
 	}
 	building_copper_mine = {
@@ -99,7 +99,7 @@
 	building_silver_mine = {
 		"generic_rural_mining_coaldepo_02_mesh"
 	}
-	building_quarry = {
+	building_stone_quarry = {
 		"generic_rural_mining_processing_01_mesh"
 	}
 }

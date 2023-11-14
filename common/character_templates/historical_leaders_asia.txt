@@ -1,0 +1,1911 @@
+﻿# Ainu - AIN
+
+    ain_imekanu_character_template = {
+        first_name = Imekanu
+        last_name = EmptyImekanu
+        historical = yes
+        culture = cu:ainu
+        female = yes
+        religion = protestant
+        ideology = ideology_theocrat
+        interest_group = ig_devout
+        dna = dna_imekanu
+        birth_date = 1875.11.10
+        traits = { meticulous romantic }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:EZO
+                        this = c:EZO
+                        NOT = { exists = c:AIN }
+                    }
+                    AND = {
+                        exists = c:AIN
+                        this = c:AIN
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_devout
+                }
+            }
+            earliest_usage_date = 1892.1.1
+            latest_usage_date = 1961.4.6
+            chance = 90
+        }
+    }
+    ain_batchelor_character_template = {
+        first_name = Yaeko
+        last_name = Batchelor
+        historical = yes
+        culture = cu:ainu
+        female = yes
+        religion = protestant
+        ideology = ideology_moderate
+        interest_group = ig_intelligentsia
+        dna = dna_yaeko_batchelor
+        birth_date = 1884.6.13
+        traits = { romantic brave }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:EZO
+                        this = c:EZO
+                        NOT = { exists = c:AIN }
+                    }
+                    AND = {
+                        exists = c:AIN
+                        this = c:AIN
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_devout
+                }
+            }
+            earliest_usage_date = 1906.1.1
+            latest_usage_date = 1962.4.29
+            chance = 90
+        }
+    }
+
+# Awadh - AWA
+
+    awa_hazrat_mahal_character_template = {
+        first_name = Hazrat
+        last_name = Mahal
+        historical = yes
+        culture = cu:avadhi
+        female = yes
+        religion = shiite
+        ideology = ideology_traditionalist
+        interest_group = ig_landowners
+        dna = dna_hazrat_mahal
+        birth_date = 1820.4.7
+        traits = { charismatic tactful }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:AWA
+                this = c:AWA
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_petty_bourgeoisie
+                    is_interest_group_type = ig_rural_folk
+                }
+            }
+            earliest_usage_date = 1855.1.1
+            latest_usage_date = 1879.4.7
+            chance = 90
+        }
+    }
+
+# Ceylon - CEY
+
+    cey_senanayake_character_template = {
+        first_name = Don_Stephen
+        last_name = Senanayake
+        historical = yes
+        culture = cu:sinhala
+        female = no
+        religion = theravada
+        ideology = ideology_republican_leader
+        interest_group = ig_rural_folk
+        dna = dna_d_s_senanayake
+        birth_date = 1884.10.21
+        traits = { pious experienced_political_operator experienced_diplomat }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CEY
+                this = c:CEY
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1920.1.1
+            latest_usage_date = 1952.3.22
+            chance = 90
+        }
+    }
+
+# China - CHI
+
+    chi_sun_character_template = { # Sun Yat-sen
+        first_name = Wen
+        last_name = Sun
+        historical = yes
+        culture = cu:hakka
+        female = no
+        religion = protestant # Converted to Christianity in the 80s.
+        ideology = ideology_republican_leader
+        interest_group = ig_intelligentsia
+        birth_date = 1866.11.12
+        traits = {
+            ambitious
+            persistent
+            inspirational_orator
+        }   
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_trade_unions
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+            }
+            earliest_usage_date = 1888.1.1
+            latest_usage_date = 1925.1.1
+            chance = 50
+        }   
+    }
+    chi_gong_character_template = {
+        first_name = Prince_Gong
+        last_name = Aisin_Gioro
+        historical = yes
+        culture = cu:manchu
+        female = no
+        ideology = ideology_royalist
+        interest_group = ig_landowners
+        birth_date = 1833.1.11
+        traits = {
+            experienced_diplomat
+            expensive_tastes
+        }   
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+                c:CHI = { has_law = law_type:law_monarchy }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                is_interest_group_type = ig_landowners
+            }
+            earliest_usage_date = 1853.1.1
+            latest_usage_date = 1898.1.1
+            chance = 50
+        }   
+    }
+    chi_daoguang_template = {
+        # The Daoguang Emperor
+        first_name = Daoguang
+        last_name = "Aisin_Gioro" # Not used by the emperor himself but there's got to be something here
+        historical = yes
+        ruler = yes
+        birth_date = 1782.9.16
+        dna = dna_daoguang_emperor
+        culture = cu:manchu
+        interest_group = ig_landowners
+        ideology = ideology_traditionalist
+        traits = {
+            cautious
+        }
+    }
+    chi_xianfeng_template = {
+        # Prince Yizhu, the future Xianfeng Emperor
+        first_name = "Yizhu"
+        last_name = "Aisin_Gioro"
+        historical = yes
+        heir = yes
+        birth_date = 1831.7.17
+        culture = cu:manchu
+        interest_group = ig_landowners
+        ideology = ideology_traditionalist
+        traits = {
+            trait_child
+        }
+    }
+    chi_cixi_character_template = {
+        first_name = Dowager_Cixi
+        last_name = Yehe_Nara
+        historical = yes
+        culture = cu:manchu
+        female = yes
+        religion = mahayana
+        ideology = ideology_traditionalist
+        interest_group = ig_landowners
+        dna = dna_cixi
+        birth_date = 1835.11.29
+        traits = { ambitious hedonist senile }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_landowners
+            }
+            earliest_usage_date = 1861.1.1
+            latest_usage_date = 1908.11.15
+            chance = 90
+        }
+    }
+    chi_li_hongzhang_character_template = {
+        first_name = Hongzhang
+        last_name = Li
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_landowners
+        dna = dna_li_hongzhang
+        birth_date = 1823.2.15
+        traits = { masterful_diplomat reserved experienced_political_operator }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1868.1.1
+            latest_usage_date = 1901.11.7
+            chance = 90
+        }
+    }
+    chi_yikuang_character_template = {
+        first_name = Yikuang
+        last_name = Aisin_Gioro
+        historical = yes
+        culture = cu:manchu
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_landowners
+        birth_date = 1838.11.16
+        traits = { reserved grifter basic_political_operator }
+        dna = dna_yikuang
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_landowners
+            }
+            earliest_usage_date = 1872.1.1
+            latest_usage_date = 1917.1.28
+            chance = 90
+        }
+    }
+    chi_zhang_zhidong_character_template = {
+        first_name = Zhidong
+        last_name = Zhang
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_reformer
+        interest_group = ig_landowners
+        dna = dna_zhang_zhidong
+        birth_date = 1837.9.4
+        traits = { innovative direct }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:GUI }
+                    }
+                    AND = {
+                        exists = c:GUI
+                        this = c:GUI
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_armed_forces
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+            }
+            earliest_usage_date = 1880.1.1
+            latest_usage_date = 1909.10.5
+            chance = 90
+        }
+    }
+    chi_ronglu_character_template = {
+        first_name = Ronglu
+        last_name = Guwalgiya
+        historical = yes
+        culture = cu:manchu
+        female = no
+        religion = mahayana
+        ideology = ideology_traditionalist
+        interest_group = ig_landowners
+        dna = dna_ronglu
+        birth_date = 1836.4.6
+        traits = { experienced_political_operator imperious }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+            }
+            earliest_usage_date = 1890.1.1
+            latest_usage_date = 1903.4.11
+            chance = 90
+        }
+    }
+    chi_liang_qichao_character_template = {
+        first_name = Qichao
+        last_name = Liang
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_reformer
+        interest_group = ig_intelligentsia
+        dna = dna_liang_qichao
+        birth_date = 1873.2.23
+        traits = { romantic persistent }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:YUE }
+                    }
+                    AND = {
+                        exists = c:YUE
+                        this = c:YUE
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_intelligentsia
+            }
+            earliest_usage_date = 1897.1.1
+            latest_usage_date = 1929.1.19
+            chance = 90
+        }
+    }
+    chi_cai_yuanpei_character_template = {
+        first_name = Yuanpei
+        last_name = Cai
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_radical
+        interest_group = ig_intelligentsia
+        dna = dna_cai_yuanpei
+        birth_date = 1868.1.11
+        traits = { romantic innovative }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_intelligentsia
+            }
+            earliest_usage_date = 1915.1.1
+            latest_usage_date = 1940.3.5
+            chance = 90
+        }
+    }
+    chi_huang_xing_character_template = {
+        first_name = Xing
+        last_name = Huang
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_republican_leader
+        interest_group = ig_intelligentsia
+        dna = dna_huang_xing
+        birth_date = 1874.10.25
+        traits = { brave direct }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_intelligentsia
+            }
+            earliest_usage_date = 1903.1.1
+            latest_usage_date = 1916.10.31
+            chance = 90
+        }
+    }
+    chi_hu_shih_character_template = {
+        first_name = Shih_2
+        last_name = Hu
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_radical
+        interest_group = ig_intelligentsia
+        dna = dna_hu_shih
+        birth_date = 1891.12.17
+        traits = { romantic reserved }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_intelligentsia
+            }
+            earliest_usage_date = 1920.1.1
+            latest_usage_date = 1962.2.24
+            chance = 90
+        }
+    }
+    chi_chiang_kai_shek_character_template = {
+        first_name = Kai-shek
+        last_name = Chiang
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_jingoist_leader
+        interest_group = ig_armed_forces
+        dna = dna_chiang_kai_shek
+        birth_date = 1887.10.31
+        traits = { cruel pillager ambitious wrathful }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+            earliest_usage_date = 1924.1.1
+            latest_usage_date = 1975.4.5
+            chance = 90
+        }
+    }
+    chi_zhang_zuolin_character_template = {
+        first_name = Zuolin
+        last_name = Zhang
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_rural_folk
+        dna = dna_zhang_zuolin
+        birth_date = 1875.3.19
+        traits = { ambitious meticulous experienced_diplomat }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:MCH }
+                    }
+                    AND = {
+                        exists = c:MCH
+                        this = c:MCH
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+            earliest_usage_date = 1920.1.1
+            latest_usage_date = 1928.6.4
+            chance = 90
+        }
+    }
+    chi_yan_xishan_character_template = {
+        first_name = Xishan
+        last_name = Yan
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_reformer
+        interest_group = ig_armed_forces
+        dna = dna_yan_xishan
+        birth_date = 1883.10.8
+        traits = { innovative persistent stalwart_defender }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:SHN }
+                    }
+                    AND = {
+                        exists = c:SHN
+                        this = c:SHN
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_armed_forces
+                    is_interest_group_type = ig_rural_folk
+                }
+            }
+            earliest_usage_date = 1915.1.1
+            latest_usage_date = 1960.7.22
+            chance = 90
+        }
+    }
+    chi_xu_shicang_character_template = {
+        first_name = Shichang
+        last_name = Xu
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_rural_folk
+        dna = dna_xu_shichang
+        birth_date = 1855.10.20
+        traits = { cautious tactful }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:AHU }
+                    }
+                    AND = {
+                        exists = c:AHU
+                        this = c:AHU
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_petty_bourgeoisie
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1915.1.1
+            latest_usage_date = 1960.7.22
+            chance = 90
+        }
+    }
+    chi_ma_fuxiang_character_template = {
+        first_name = Fuxiang
+        last_name = Ma
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = sunni
+        ideology = ideology_moderate
+        interest_group = ig_armed_forces
+        dna = dna_ma_fuxiang
+        birth_date = 1876.2.4
+        traits = { innovative basic_diplomat tactful }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:XIB }
+                    }
+                    AND = {
+                        exists = c:XIB
+                        this = c:XIB
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_armed_forces
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1910.1.1
+            latest_usage_date = 1932.8.19
+            chance = 90
+        }
+    }
+    chi_li_yuanhong_character_template = {
+        first_name = Yuanhong
+        last_name = Li_2
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_armed_forces
+        dna = dna_li_yuanhong
+        birth_date = 1864.10.19
+        traits = { experienced_naval_commander reserved }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_armed_forces
+                    is_interest_group_type = ig_landowners
+                }
+            }
+            earliest_usage_date = 1910.1.1
+            latest_usage_date = 1928.6.3
+            chance = 90
+        }
+    }
+    chi_duan_qirui_character_template = {
+        first_name = Qirui
+        last_name = Duan
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_armed_forces
+        dna = dna_duan_qirui
+        birth_date = 1865.3.6
+        traits = { pious reserved ambitious experienced_defensive_strategist }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:AHU }
+                    }
+                    AND = {
+                        exists = c:AHU
+                        this = c:AHU
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_armed_forces
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+            }
+            earliest_usage_date = 1910.1.1
+            latest_usage_date = 1936.11.2
+            chance = 90
+        }
+    }
+    chi_mao_zedong_character_template = {
+        first_name = Zedong
+        last_name = Mao
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_communist
+        interest_group = ig_rural_folk
+        dna = dna_mao_zedong
+        birth_date = 1893.12.26
+        traits = { cruel experienced_political_operator wrathful direct }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:HNA }
+                    }
+                    AND = {
+                        exists = c:HNA
+                        this = c:HNA
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_trade_unions
+                }
+            }
+            earliest_usage_date = 1925.1.1
+            latest_usage_date = 1976.9.9
+            chance = 90
+        }
+    }
+    # Heavenly Kingdom
+    tpg_hong_xiuquan_character_template = {
+        first_name = Xiuquan
+        last_name = Hong
+        historical = yes
+        culture = cu:hakka
+        female = no
+        religion = protestant
+        ideology = ideology_theocrat
+        interest_group = ig_devout
+        dna = dna_hong_xiuquan
+        birth_date = 1814.1.1
+        traits = { pious romantic popular_commander psychological_affliction }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:TPG
+                this = c:TPG
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_devout
+                    is_interest_group_type = ig_rural_folk
+                }
+            }
+            earliest_usage_date = 1850.1.1
+            latest_usage_date = 1864.6.1
+            chance = 90
+        }
+    }
+    # WW2
+    chi_wellington_koo_character_template = {
+        first_name = VK_Wellington
+        last_name = Koo
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_petty_bourgeoisie
+        dna = dna_wellington_koo
+        birth_date = 1888.1.29
+        traits = { masterful_diplomat tactful }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_petty_bourgeoisie
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1915.1.1
+            latest_usage_date = 1985.11.14
+            chance = 90
+        }
+    }
+    chi_wang_jingwei_character_template = {
+        first_name = Jingwei
+        last_name = Wang_2
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_petty_bourgeoisie
+        dna = dna_wang_jingwei
+        birth_date = 1883.5.4
+        traits = { ambitious bandit }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:CHI
+                        this = c:CHI
+                        NOT = { exists = c:YUE }
+                    }
+                    AND = {
+                        exists = c:YUE
+                        this = c:YUE
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_petty_bourgeoisie
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1925.1.1
+            latest_usage_date = 1944.11.10
+            chance = 90
+        }
+    }
+    chi_lu_xun_character_template = {
+        first_name = Lu_2
+        last_name = Xun_3
+        historical = yes
+        culture = cu:han
+        female = no
+        religion = mahayana
+        ideology = ideology_social_democrat
+        interest_group = ig_intelligentsia
+        dna = dna_lu_xun
+        birth_date = 1881.9.25
+        traits = { charismatic romantic }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:CHI
+                this = c:CHI
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_intelligentsia
+            }
+            earliest_usage_date = 1920.1.1
+            latest_usage_date = 1936.10.19
+            chance = 90
+        }
+    }
+
+# Dai Nam - DAI
+
+    dai_truong_dinh_character_template = {
+        first_name = Dinh
+        last_name = Truong
+        historical = yes
+        culture = cu:vietnamese
+        female = no
+        religion = mahayana
+        ideology = ideology_traditionalist
+        interest_group = ig_rural_folk
+        dna = dna_truong_dinh
+        birth_date = 1820.10.5
+        traits = { romantic brave pious resupply_commander }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:DAI
+                this = c:DAI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_devout
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+            earliest_usage_date = 1855.1.1
+            latest_usage_date = 1864.8.19
+            chance = 90
+        }
+    }
+    dai_nguyen_trung_truc_character_template = {
+        first_name = Trung_Truc
+        last_name = Nguyen
+        historical = yes
+        culture = cu:vietnamese
+        female = no
+        religion = mahayana
+        ideology = ideology_traditionalist
+        interest_group = ig_rural_folk
+        dna = dna_nguyen_trung_truc
+        birth_date = 1838.5.22
+        traits = { basic_naval_commander brave ambitious }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:DAI
+                this = c:DAI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+            earliest_usage_date = 1860.1.1
+            latest_usage_date = 1868.10.27
+            chance = 90
+        }
+    }
+    dai_phan_dinh_phung_character_template = {
+        first_name = Dinh_Phung
+        last_name = Phan
+        historical = yes
+        culture = cu:vietnamese
+        female = no
+        religion = mahayana
+        ideology = ideology_traditionalist
+        interest_group = ig_rural_folk
+        dna = dna_phan_dinh_phung
+        birth_date = 1847.1.21
+        traits = { imperious pious resupply_commander forest_commander }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:DAI
+                this = c:DAI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1877.1.1
+            latest_usage_date = 1896.1.21
+            chance = 90
+        }
+    }
+    dai_cao_ba_quat_character_template = {
+        first_name = Ba_Quat
+        last_name = Cao
+        historical = yes
+        culture = cu:vietnamese
+        female = no
+        religion = mahayana
+        ideology = ideology_radical
+        interest_group = ig_rural_folk
+        dna = dna_cao_ba_quat
+        birth_date = 1809.4.17
+        traits = { romantic reckless }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:DAI
+                this = c:DAI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1847.1.1
+            latest_usage_date = 1855.10.12
+            chance = 90
+        }
+    }
+    dai_ho_chi_minh_character_template = {
+        first_name = Chi_Minh
+        last_name = Ho
+        historical = yes
+        culture = cu:vietnamese
+        female = no
+        religion = mahayana
+        ideology = ideology_communist
+        interest_group = ig_rural_folk
+        dna = dna_ho_chi_minh
+        birth_date = 1890.5.19
+        traits = { persistent forest_commander resupply_commander demagogue }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:DAI
+                this = c:DAI
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_trade_unions
+                }
+            }
+            earliest_usage_date = 1920.1.1
+            latest_usage_date = 1969.9.2
+            chance = 90
+        }
+    }
+
+# Formosa - FRS
+
+    frs_tai_chao_chuen_character_template = {
+        first_name = Chao-chuen
+        last_name = Tai
+        historical = yes
+        culture = cu:min
+        female = no
+        religion = mahayana
+        ideology = ideology_republican_leader
+        interest_group = ig_rural_folk
+        dna = dna_tai_chaochuen
+        birth_date = 1825.7.19
+        traits = { romantic demagogue ambitious }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:FRS
+                this = c:FRS
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1860.1.1
+            latest_usage_date = 1864.1.29
+            chance = 90
+        }
+    }
+    frs_mona_rudao_character_template = {
+        first_name = Mona_Rudao
+        last_name = Mahebo
+        historical = yes
+        culture = cu:polynesian
+        female = no
+        religion = animist
+        ideology = ideology_radical
+        interest_group = ig_rural_folk
+        dna = dna_mona_rudao
+        birth_date = 1880.5.21
+        traits = { romantic brave demagogue }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:FRS
+                this = c:FRS
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_rural_folk
+            }
+            earliest_usage_date = 1910.1.1
+            latest_usage_date = 1930.11.5
+            chance = 90
+        }
+    }
+
+# Gwalior - GWA
+
+    gwa_rani_character_template = {
+        first_name = Lakshmibai # Rani of Jhansi
+        last_name = Newalkar
+        historical = yes
+        culture = cu:marathi
+        female = yes
+        religion = hindu
+        ideology = ideology_royalist
+        interest_group = ig_landowners
+        dna = dna_rani_of_jhansi
+        birth_date = 1828.11.19
+        traits = { demagogue inspirational_orator charismatic }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:GWA
+                this = c:GWA
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_landowners
+            }
+            earliest_usage_date = 1855.1.1
+            latest_usage_date = 1858.6.18
+            chance = 90
+        }
+    }
+
+# India - BHT
+
+    bht_tata_character_template = {
+        first_name = Jamsetji
+        last_name = Tata
+        historical = yes
+        culture = cu:gujarati
+        female = no
+        religion = animist # Zoroastrian
+        ideology = ideology_moderate
+        interest_group = ig_industrialists
+        dna = dna_jamsetji_tata
+        birth_date = 1839.3.3
+        traits = { innovative ambitious persistent }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:BIC
+                        this = c:BIC
+                        NOT = {
+                            exists = c:BHT
+                            exists = c:BER
+                        }
+                    }
+                    AND = {
+                        exists = c:BER
+                        this = c:BER
+                        NOT = { exists = c:BHT }
+                    }
+                    AND = {
+                        exists = c:BHT
+                        this = c:BHT
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_industrialists
+                    is_interest_group_type = ig_landowners
+                }
+            }
+            earliest_usage_date = 1874.1.1
+            latest_usage_date = 1904.5.19
+            chance = 90
+        }
+    }
+    bht_nehru_character_template = {
+        first_name = Jawaharlal
+        last_name = Nehru
+        historical = yes
+        culture = cu:kashmiri
+        female = no
+        religion = hindu
+        ideology = ideology_republican_leader
+        interest_group = ig_intelligentsia
+        dna = dna_jawaharlal_nehru
+        birth_date = 1889.11.14
+        traits = { masterful_diplomat meticulous direct }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:BIC
+                        this = c:BIC
+                        NOT = {
+                            exists = c:BHT
+                            exists = c:HND
+                        }
+                    }
+                    AND = {
+                        exists = c:HND
+                        this = c:HND
+                        NOT = { exists = c:BHT }
+                    }
+                    AND = {
+                        exists = c:BHT
+                        this = c:BHT
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_trade_unions
+                }
+            }
+            earliest_usage_date = 1912.1.1
+            latest_usage_date = 1964.5.27
+            chance = 90
+        }
+    }
+    bht_malaviya_character_template = {					
+        first_name = Madan_Mohan					
+        last_name = Malaviya					
+        historical = yes
+        culture = cu:gujarati					
+        female = no					
+        religion = hindu					
+        ideology = ideology_moderate					
+        interest_group = ig_intelligentsia
+        dna = dna_madan_mohan_malaviya
+        birth_date = 1861.12.25					
+        traits = { romantic meticulous }   					
+        interest_group_leader_usage = {					
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:BIC
+                        this = c:BIC
+                        NOT = {
+                            exists = c:BHT
+                            exists = c:HND
+                        }
+                    }
+                    AND = {
+                        exists = c:HND
+                        this = c:HND
+                        NOT = { exists = c:BHT }
+                    }
+                    AND = {
+                        exists = c:BHT
+                        this = c:BHT
+                    }
+                }
+            }				
+            interest_group_trigger = {							
+                is_interest_group_type = ig_intelligentsia					
+            }					
+            earliest_usage_date = 1915.1.1					
+            latest_usage_date = 1946.11.12					
+            chance = 90					
+        }  					
+    }					
+
+# Japan - JAP
+
+    jap_ienari_tokugawa_template = {
+        ruler = yes
+        first_name = Ienari
+        last_name = Tokugawa
+        historical = yes
+        birth_date = 1773.11.18
+        dna = dna_shogun_tokugawa_ienari
+        interest_group = ig_landowners
+        ideology = ideology_traditionalist
+        traits = {
+            arrogant
+            expensive_tastes # bit of corruption
+        }
+    }
+    jap_meiji_yamato_template = {
+        first_name = "Meiji"
+        last_name = "Yamato"
+        historical = yes
+        heir = yes
+        birth_date = 1852.1.1
+        dna = dna_emperor_meiji
+        interest_group = ig_industrialists
+        traits = {
+            innovative
+            charismatic
+        }
+    }
+    jap_komei_yamato_template = {
+        first_name = "Komei"
+        last_name = "Yamato"
+        historical = yes
+        ruler = yes
+        birth_date = 1831.1.1
+        dna = dna_emperor_komei
+        interest_group = ig_armed_forces
+        traits = {
+            reserved # ditto
+        }
+    }
+    jap_sakamoto_character_template = {
+        first_name = Ryoma
+        last_name = Sakamoto
+        historical = yes
+        culture = cu:japanese
+        female = no
+        religion = shinto
+        ideology = ideology_reformer
+        interest_group = ig_rural_folk
+        dna = dna_sakamoto_ryoma
+        birth_date = 1836.1.3
+        traits = { innovative romantic charismatic celebrity_commander }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:JAP
+                this = c:JAP
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1864.1.1
+            latest_usage_date = 1867.12.10
+            chance = 90
+        }
+    }
+    jap_enomoto_character_template = {
+        first_name = Takeaki
+        last_name = Enomoto
+        historical = yes
+        culture = cu:japanese
+        female = no
+        religion = shinto
+        ideology = ideology_traditionalist
+        interest_group = ig_petty_bourgeoisie
+        dna = dna_enomoto_takeaki
+        birth_date = 1836.10.5
+        traits = { experienced_naval_commander experienced_diplomat persistent }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:JAP
+                        this = c:JAP
+                        NOT = { exists = c:EZO }
+                    }
+                    AND = {
+                        exists = c:EZO
+                        this = c:EZO
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_petty_bourgeoisie
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+            earliest_usage_date = 1867.1.1
+            latest_usage_date = 1908.10.26
+            chance = 90
+        }
+    }
+    jap_itagaki_character_template = {
+        first_name = Taisuke
+        last_name = Itagaki
+        historical = yes
+        culture = cu:japanese
+        female = no
+        religion = shinto
+        ideology = ideology_radical
+        interest_group = ig_intelligentsia
+        dna = dna_itagaki_taisuke
+        birth_date = 1837.5.21
+        traits = { innovative arrogant experienced_political_operator }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:JAP
+                this = c:JAP
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_intelligentsia
+            }
+            earliest_usage_date = 1869.1.1
+            latest_usage_date = 1919.7.16
+            chance = 90
+        }
+    }
+    jap_ito_character_template = {
+        first_name = Hirobumi
+        last_name = Ito
+        historical = yes
+        culture = cu:japanese
+        female = no
+        religion = shinto
+        ideology = ideology_moderate
+        interest_group = ig_landowners
+        dna = dna_ito_hirobumi
+        birth_date = 1841.10.16
+        traits = { masterful_diplomat ambitious expert_political_operator }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:JAP
+                this = c:JAP
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+            earliest_usage_date = 1880.1.1
+            latest_usage_date = 1909.10.26
+            chance = 90
+        }
+    }
+    jap_saionji_character_template = {
+        first_name = Kinmochi
+        last_name = Saionji
+        historical = yes
+        culture = cu:japanese
+        female = no
+        religion = shinto
+        ideology = ideology_reformer
+        interest_group = ig_landowners
+        dna = dna_saionji_kinmochi
+        birth_date = 1849.12.7
+        traits = { traditionalist_commander stalwart_defender meticulous }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:JAP
+                this = c:JAP
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_armed_forces
+                }
+            }
+            earliest_usage_date = 1900.1.1
+            latest_usage_date = 1940.11.24
+            chance = 90
+        }
+    }
+    jap_shibusawa_character_template = {
+        first_name = Eiichi
+        last_name = Shibusawa
+        historical = yes
+        culture = cu:japanese
+        female = no
+        religion = shinto
+        ideology = ideology_market_liberal
+        interest_group = ig_industrialists
+        dna = dna_shibusawa_eiichi
+        birth_date = 1840.3.16
+        traits = { ambitious meticulous }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:JAP
+                this = c:JAP
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_industrialists
+            }
+            earliest_usage_date = 1870.1.1
+            latest_usage_date = 1931.11.11
+            chance = 90
+        }
+    }
+    jap_fukuba_character_template = {
+        first_name = Bisei
+        last_name = Fukuba
+        historical = yes
+        culture = cu:japanese
+        female = no
+        religion = shinto
+        ideology = ideology_theocrat
+        interest_group = ig_devout
+        dna = dna_fukuba_bisei
+        birth_date = 1831.8.24
+        traits = { pious arrogant scarred }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:JAP
+                this = c:JAP
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_devout
+            }
+            earliest_usage_date = 1865.1.1
+            latest_usage_date = 1907.8.14
+            chance = 90
+        }
+    }
+
+# Kazakhstan - KAZ
+
+    kaz_bukeikhanov_character_template = {
+        first_name = Alikhan
+        last_name = Bukeikhanov
+        historical = yes
+        culture = cu:kazak
+        female = no
+        religion = sunni
+        ideology = ideology_republican_leader
+        interest_group = ig_intelligentsia
+        dna = dna_alikhan_bukeikhanov
+        birth_date = 1866.3.5
+        traits = { romantic reckless persistent surveyor }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:KAZ
+                this = c:KAZ
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_trade_unions
+                }
+            }
+            earliest_usage_date = 1900.1.1
+            latest_usage_date = 1937.9.27
+            chance = 90
+        }
+    }
+
+# Korea - KOR
+
+    kor_myeongseong_character_template = {
+        first_name = Ja-yeong # Empress Myeongseong
+        last_name = Min
+        historical = yes
+        culture = cu:korean
+        female = yes
+        religion = mahayana
+        ideology = ideology_traditionalist
+        interest_group = ig_landowners
+        dna = dna_myeongseong
+        birth_date = 1851.11.17
+        traits = { pious persistent ambitious }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:KOR
+                this = c:KOR
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_landowners
+            }
+            earliest_usage_date = 1866.1.1
+            latest_usage_date = 1895.10.8
+            chance = 90
+        }
+    }
+    kor_daewongun_character_template = {
+        first_name = Ha-eung # Heungseon Daewongun
+        last_name = Yi
+        historical = yes
+        culture = cu:korean
+        female = no
+        religion = mahayana
+        ideology = ideology_moderate
+        interest_group = ig_landowners
+        dna = dna_daewongun
+        birth_date = 1820.12.21
+        traits = { cruel cautious romantic experienced_political_operator }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:KOR
+                this = c:KOR
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1864.1.1
+            latest_usage_date = 1898.2.22
+            chance = 90
+        }
+    }
+    kor_jeon_bongjun_character_template = {
+        first_name = Bong-jun
+        last_name = Jeon
+        historical = yes
+        culture = cu:korean
+        female = no
+        religion = mahayana
+        ideology = ideology_traditionalist
+        interest_group = ig_rural_folk
+        dna = dna_jeon_bongjun
+        birth_date = 1855.1.10
+        traits = { pious romantic brave }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:KOR
+                this = c:KOR
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_rural_folk
+                    is_interest_group_type = ig_petty_bourgeoisie
+                }
+            }
+            earliest_usage_date = 1890.1.1
+            latest_usage_date = 1895.4.24
+            chance = 90
+        }
+    }
+    kor_son_byonghi_character_template = {
+        first_name = Byong-hi
+        last_name = Son
+        historical = yes
+        culture = cu:korean
+        female = no
+        religion = mahayana
+        ideology = ideology_theocrat
+        interest_group = ig_devout
+        dna = dna_song_byong_hi
+        birth_date = 1861.4.8
+        traits = { pious innovative }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:KOR
+                this = c:KOR
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_devout
+                    is_interest_group_type = ig_rural_folk
+                }
+            }
+            earliest_usage_date = 1890.1.1
+            latest_usage_date = 1922.5.19
+            chance = 90
+        }
+    }
+
+# Mongolia - MGL
+
+    mgl_bogd_khan_character_template = {
+        first_name = Bogd
+        last_name = Khan
+        historical = yes
+        culture = cu:tibetan
+        female = no
+        religion = gelugpa
+        ideology = ideology_traditionalist
+        interest_group = ig_devout
+        dna = dna_bogd_khan
+        birth_date = 1869.6.9
+        traits = { imperious wrathful experienced_political_operator }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:MGL
+                this = c:MGL
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_devout
+                    is_interest_group_type = ig_landowners
+                }
+            }
+            earliest_usage_date = 1910.1.1
+            latest_usage_date = 1924.5.20
+            chance = 90
+        }
+    }
+    mgl_khanddorj_character_template = {
+        first_name = Khanddorj
+        last_name = Mijiddorjiin
+        historical = yes
+        culture = cu:mongol
+        female = no
+        religion = gelugpa
+        ideology = ideology_moderate
+        interest_group = ig_landowners
+        dna = dna_mijiddorjiin_khanddorj
+        birth_date = 1869.5.20
+        traits = { basic_diplomat arrogant }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:MGL
+                this = c:MGL
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1900.1.1
+            latest_usage_date = 1915.6.28
+            chance = 90
+        }
+    }
+    mgl_namnansuren_character_template = {
+        first_name = Namnansuren
+        last_name = Togs-Ochiryn
+        historical = yes
+        culture = cu:mongol
+        female = no
+        religion = gelugpa
+        ideology = ideology_moderate
+        interest_group = ig_landowners
+        dna = dna_togs_ochiryn_namnansuren
+        birth_date = 1878.3.7
+        traits = { experienced_diplomat expensive_tastes }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:MGL
+                this = c:MGL
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_landowners
+                    is_interest_group_type = ig_intelligentsia
+                }
+            }
+            earliest_usage_date = 1900.1.1
+            latest_usage_date = 1919.4.13
+            chance = 90
+        }
+    }
+
+# Sindh - SIN
+
+    sin_jinnah_character_template = {
+        first_name = Muhammad_Ali
+        last_name = Jinnah
+        historical = yes
+        culture = cu:gujarati
+        female = no
+        religion = sunni
+        ideology = ideology_republican_leader
+        interest_group = ig_intelligentsia
+        dna = dna_muhammad_ali_jinnah
+        birth_date = 1876.12.25
+        traits = { tactful romantic demagogue }
+        interest_group_leader_usage = {
+            country_trigger = {
+                OR = {
+                    AND = {
+                        exists = c:KAL
+                        this = c:KAL
+                        NOT = {
+                            exists = c:MAK
+                            exists = c:SIN
+                        }
+                    }
+                    AND = {
+                        exists = c:MAK
+                        this = c:MAK
+                        NOT = { exists = c:SIN }
+                    }
+                    AND = {
+                        exists = c:SIN
+                        this = c:SIN
+                    }
+                }
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_intelligentsia
+            }
+            earliest_usage_date = 1910.1.1
+            latest_usage_date = 1948.9.11
+            chance = 90
+        }
+    }
+
+# Tibet - TIB
+
+    tib_dorzhiev_character_template = {
+        first_name = Agvan
+        last_name = Dorzhiev
+        historical = yes
+        culture = cu:siberian	#Buryat
+        female = no
+        religion = gelugpa
+        ideology = ideology_theocrat
+        interest_group = ig_intelligentsia
+        dna = dna_agvan_dorzhiev
+        birth_date = 1854.4.15
+        traits = { experienced_diplomat surveyor pious }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:TIB
+                this = c:TIB
+            }
+            interest_group_trigger = {
+                is_marginal = no
+                OR = {
+                    is_interest_group_type = ig_intelligentsia
+                    is_interest_group_type = ig_landowners
+                }
+            }
+            earliest_usage_date = 1900.1.1
+            latest_usage_date = 1938.1.29
+            chance = 90
+        }
+    }
+    # Dalai Lama - Selected at a young age, they are supposed to spawn as babies, if needed
+    tib_11_dalai_lama_character_template = {
+        first_name = Khedrup
+        last_name = Gyatso
+        historical = yes
+        culture = cu:tibetan
+        female = no
+        religion = gelugpa
+        ideology = ideology_theocrat
+        interest_group = ig_devout
+        dna = dna_khedrup_gyatso
+        birth_date = 1838.11.1
+        traits = { reserved romantic }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:TIB
+                this = c:TIB
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_devout
+            }
+            earliest_usage_date = 1842.1.1
+            latest_usage_date = 1856.1.31
+            chance = 90
+        }
+    }
+    tib_12_dalai_lama_character_template = {
+        first_name = Trinley
+        last_name = Gyatso
+        historical = yes
+        culture = cu:tibetan
+        female = no
+        religion = gelugpa
+        ideology = ideology_theocrat
+        interest_group = ig_devout
+        dna = dna_trinley_gyatso
+        birth_date = 1857.1.26
+        traits = { basic_diplomat cancer }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:TIB
+                this = c:TIB
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_devout
+            }
+            earliest_usage_date = 1858.1.1
+            latest_usage_date = 1875.4.25
+            chance = 90
+        }
+    }
+    tib_13_dalai_lama_character_template = {
+        first_name = Thubten
+        last_name = Gyatso
+        historical = yes
+        culture = cu:tibetan
+        female = no
+        religion = gelugpa
+        ideology = ideology_theocrat
+        interest_group = ig_devout
+        dna = dna_thubten_gyatso
+        birth_date = 1876.2.12
+        traits = { masterful_diplomat innovative wrathful }
+        interest_group_leader_usage = {
+            country_trigger = {
+                exists = c:TIB
+                this = c:TIB
+            }
+            interest_group_trigger = {
+                is_interest_group_type = ig_devout
+            }
+            earliest_usage_date = 1878.1.1
+            latest_usage_date = 1933.12.17
+            chance = 90
+        }
+    }

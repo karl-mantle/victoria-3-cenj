@@ -122,4 +122,20 @@
 	building_banana_plantation = {
 		"french_farm_plantation_01_mesh"
 	}
+	building_vineyard_plantation = {
+		"french_farm_plantation_01_mesh"
+	}
+	# Added
+	building_cocoa_plantation = {
+		"french_farm_plantation_01_mesh"
+	}
+	building_hemp_plantation = {
+		"french_farm_plantation_01_mesh"
+	}
+	building_spice_plantation = {
+		"french_farm_plantation_01_mesh"
+	}
+	building_sheep_ranch = {
+		"french_farm_ranch_01_mesh"
+	}
 }

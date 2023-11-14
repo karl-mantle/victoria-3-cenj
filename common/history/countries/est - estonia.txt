@@ -16,9 +16,5 @@
 			institution = institution_schools
 			level = 1
 		}
-
-		ig:ig_landowners = {
-			set_interest_group_name = ig_gentry_assembly
-		}
 	}
 }

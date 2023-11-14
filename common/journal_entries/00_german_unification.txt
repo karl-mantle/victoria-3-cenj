@@ -32,9 +32,9 @@
 				NOT = { c:HOL ?= this }
 				NOT = { c:SCH ?= this }
 				exists = c:DEN
-			}		
-				custom_tooltip = {
-					text = je_schleswig_holstein_question_state_ownership_desc
+			}
+			custom_tooltip = {
+				text = je_schleswig_holstein_question_state_ownership_desc
 				any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
 				s:STATE_SCHLESWIG_HOLSTEIN = {
 					NOT = {
@@ -44,16 +44,16 @@
 									owner = {
 										OR = {
 											country_has_primary_culture = cu:north_german
-											country_has_primary_culture = cu:south_german						
-										}						
+											country_has_primary_culture = cu:south_german
+										}
 									}
-								}				
+								}
 								owner = {
 									is_subject_of = c:DEN
-								}					
-							}				
+								}
+							}
 						}
-					}		
+					}
 				}
 			}
 		}
@@ -109,7 +109,7 @@ je_german_unification_idea = {
 			country_has_primary_culture = cu:south_german
 		}	
 	}
-	
+ 
 	complete = {		
 		any_country = {
 			filter = {
@@ -275,18 +275,6 @@ je_north_german_unification = {
 		}				
 	}
 
-	fail = {
-		custom_tooltip = {
-			text = je_german_unification_german_hegemony_has_been_decided
-			any_country = {
-				has_variable = je_german_confederate_unifier
-			}	
-		}	
-	}
-
-	on_fail = {
-	}
-
 	on_monthly_pulse = {
 		events = {
 			german_unification.3 # Bismarck
@@ -305,14 +293,6 @@ je_north_german_unification = {
 		remove_variable = je_unification_progress
 	}
 
-	invalid = {
-		OR = {
-			exists = c:GER
-			exists = c:SGF
-			exists = c:NGF
-		}
-    }
-
 	status_desc = {
 		first_valid = {
 			triggered_desc = { 
@@ -327,18 +307,6 @@ je_north_german_unification = {
 
 je_south_german_unification = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	fail = {
-		custom_tooltip = {
-			text = je_german_unification_german_hegemony_has_been_decided
-			any_country = {
-				has_variable = je_german_confederate_unifier
-			}	
-		}	
-	}
-
-	on_fail = {
-	}
 
 	complete = {
 		custom_tooltip = {
@@ -421,7 +389,7 @@ je_german_unification = {
 
 	complete = {
 		custom_tooltip = {
-			this = c:GER
+			c:GER ?= this
 			text = je_german_unification_complete_trigger_desc
 		}	
 	}

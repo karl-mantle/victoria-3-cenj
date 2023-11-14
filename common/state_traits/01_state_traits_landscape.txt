@@ -5,9 +5,9 @@ state_trait_tundra = {
 	modifier = {
 		state_infrastructure_mult = -0.25
 
-		building_group_bg_agriculture_throughput_mult = -0.25
-		building_group_bg_plantations_throughput_mult = -0.25
-		building_group_bg_ranching_throughput_mult = 0.25
+		building_group_bg_agriculture_throughput_add = -0.25
+		building_group_bg_plantations_throughput_add = -0.25
+		building_group_bg_ranching_throughput_add = 0.25
 	}
 }
 
@@ -115,8 +115,8 @@ state_trait_ural_mountains = {
 	modifier = {
 		state_infrastructure_mult = -0.2
 
-		building_iron_mine_throughput_mult = 0.1
-		building_output_iron_mult = 0.05
+		building_iron_mine_throughput_add = 0.1
+		goods_output_iron_mult = 0.05
 	}
 }
 
@@ -150,8 +150,8 @@ state_trait_appalachia = {
 	modifier = {
 		state_infrastructure_mult = -0.15
 
-		building_coal_mine_throughput_mult = 0.1
-		building_output_coal_mult = 0.05
+		building_coal_mine_throughput_add = 0.1
+		goods_output_coal_mult = 0.05
 	}
 }
 
@@ -161,8 +161,8 @@ state_trait_cascades = {
 	modifier = {
 		state_infrastructure_mult = -0.15
 
-		building_group_bg_logging_throughput_mult = 0.1
-		building_output_wood_mult = 0.05
+		building_group_bg_logging_throughput_add = 0.1
+		goods_output_wood_mult = 0.05
 	}
 }
 

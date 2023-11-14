@@ -1,0 +1,870 @@
+﻿# Australia - AST
+
+	ast_parkes_character_template = {
+		first_name = Henry
+		last_name = Parkes
+		historical = yes
+		culture = cu:australian
+		female = no
+		religion = protestant
+		ideology = ideology_republican_leader
+		interest_group = ig_intelligentsia
+		dna = dna_henry_parkes
+		birth_date = 1815.5.27
+		traits = { inspirational_orator brave imperious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:AST
+						this = c:AST
+						NOT = { exists = c:NSW }
+					}
+					AND = {
+						exists = c:NSW
+						this = c:NSW
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1855.1.1
+			latest_usage_date = 1896.4.27
+			chance = 90
+		}
+	}
+	ast_hughes_character_template = {
+		first_name = Billy
+		last_name = Hughes
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_rural_folk
+		dna = dna_billy_hughes
+		birth_date = 1862.9.25
+		traits = { imperious firebrand wrathful }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:AST
+				this = c:AST
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1900.1.1
+			latest_usage_date = 1952.10.28
+			chance = 90
+		}
+	}
+	ast_barton_character_template = {
+		first_name = Edmund
+		last_name = Barton
+		historical = yes
+		culture = cu:australian
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_edmund_barton
+		birth_date = 1849.1.18
+		traits = { bigoted experienced_political_operator persistent }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:AST
+						this = c:AST
+						NOT = { exists = c:NSW }
+					}
+					AND = {
+						exists = c:NSW
+						this = c:NSW
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1878.1.1
+			latest_usage_date = 1920.1.7
+			chance = 90
+		}
+	}
+	ast_deakin_character_template = {
+		first_name = Alfred
+		last_name = Deakin
+		historical = yes
+		culture = cu:australian
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_alfred_deakin
+		birth_date = 1856.8.3
+		traits = { bigoted arrogant meticulous direct }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:AST
+				this = c:AST
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1878.1.1
+			latest_usage_date = 1919.10.7
+			chance = 90
+		}
+	}
+	ast_curtin_character_template = {
+		first_name = John
+		last_name = Curtin
+		historical = yes
+		culture = cu:australian
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_rural_folk
+		dna = dna_john_curtin
+		birth_date = 1885.1.8
+		traits = { bigoted innovative experienced_diplomat }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:AST
+				this = c:AST
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1927.1.1
+			latest_usage_date = 1945.7.5
+			chance = 90
+		}
+	}
+	ast_kelly_character_template = {
+		first_name = Ned
+		last_name = Kelly
+		historical = yes
+		culture = cu:australian
+		female = no
+		religion = protestant
+		ideology = ideology_jingoist_leader
+		interest_group = ig_rural_folk
+		dna = dna_ned_kelly
+		birth_date = 1854.12.22
+		traits = { cruel bandit demagogue pillager romantic }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:AST
+				this = c:AST
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_rural_folk
+			}
+			earliest_usage_date = 1875.1.1
+			latest_usage_date = 1880.11.11
+			chance = 10
+		}
+	}
+	# Aboriginal leaders
+	ulr_wonga_character_template = {
+		first_name = Simon
+		last_name = Wonga
+		historical = yes
+		culture = cu:aborigine
+		female = no
+		religion = animist
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		dna = dna_simon_wonga
+		birth_date = 1824.2.5
+		traits = { experienced_diplomat surveyor }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ULR
+						this = c:ULR
+						NOT = { exists = c:GML }
+					}
+					AND = {
+						exists = c:GML
+						this = c:GML
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1848.1.1
+			latest_usage_date = 1875.1.1
+			chance = 90
+		}
+	}
+	ulr_biraban_character_template = {
+		first_name = Biraban
+		last_name = EmptyBiraban
+		historical = yes
+		culture = cu:aborigine
+		female = no
+		religion = protestant
+		ideology = ideology_pacifist
+		interest_group = ig_intelligentsia
+		dna = dna_biraban
+		birth_date = 1800.2.21
+		traits = { tactful innovative }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ULR
+						this = c:ULR
+						NOT = { exists = c:GML }
+					}
+					AND = {
+						exists = c:GML
+						this = c:GML
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1846.4.14
+			chance = 90
+		}
+	}
+	ulr_barak_character_template = {
+		first_name = William
+		last_name = Barak
+		historical = yes
+		culture = cu:aborigine
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_intelligentsia
+		birth_date = 1823.3.15
+		dna = dna_william_barak
+		traits = { romantic surveyor explorer }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:ULR
+						this = c:ULR
+						NOT = { exists = c:GML }
+					}
+					AND = {
+						exists = c:GML
+						this = c:GML
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1874.1.1
+			latest_usage_date = 1903.8.15
+			chance = 90
+		}
+	}
+
+
+# Hawaii - HAW
+
+	haw_malo_character_template = {
+		first_name = David
+		last_name = Malo
+		historical = yes
+		culture = cu:hawaiian
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_devout
+		dna = dna_david_malo
+		birth_date = 1795.10.25
+		traits = { pious meticulous }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:HAW
+				this = c:HAW
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_devout
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1853.10.25
+			chance = 90
+		}
+	}
+	haw_james_dole_character_template = {
+		first_name = James
+		last_name = Dole
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_traditionalist
+		interest_group = ig_industrialists
+		dna = dna_james_dole
+		birth_date = 1877.9.27
+		traits = { meticulous grifter }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:HAW
+				this = c:HAW
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1900.1.1
+			latest_usage_date = 1958.5.20
+			chance = 90
+		}
+	}
+	haw_dole_character_template = {
+		first_name = Sanford_B
+		last_name = Dole
+		historical = yes
+		culture = cu:yankee
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_landowners
+		dna = dna_sanford_b_dole
+		birth_date = 1844.4.23
+		traits = { pious grifter masterful_diplomat }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:HAW
+				this = c:HAW
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			earliest_usage_date = 1880.1.1
+			latest_usage_date = 1926.6.9
+			chance = 90
+		}
+	}
+
+# Johore - JOH
+
+	joh_aw_character_template = {
+		first_name = Boon-Haw
+		last_name = Aw
+		historical = yes
+		culture = cu:hakka
+		female = no
+		religion = mahayana
+		ideology = ideology_market_liberal
+		interest_group = ig_industrialists
+		dna = dna_aw_boon_haw
+		birth_date = 1882.12.11
+		traits = { innovative meticulous demagogue }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:BUR
+						this = c:BUR
+						NOT = { exists = c:JOH }
+					}
+					AND = {
+						exists = c:JOH
+						this = c:JOH
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_industrialists
+			}
+			earliest_usage_date = 1925.1.1
+			latest_usage_date = 1954.9.4
+			chance = 90
+		}
+	}
+
+# New Zealand - NZL
+
+	nzl_sewell_character_template = {
+		first_name = Henry
+		last_name = Sewell
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_pacifist
+		interest_group = ig_intelligentsia
+		dna = dna_henry_sewell
+		birth_date = 1807.9.7
+		traits = { romantic persistent basic_colonial_administrator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:NZL
+				this = c:NZL
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_rural_folk
+				}
+			}
+			earliest_usage_date = 1850.1.1
+			latest_usage_date = 1879.5.14
+			chance = 90
+		}
+	}
+	nzl_fox_character_template = {
+		first_name = William
+		last_name = Fox
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_republican_leader
+		interest_group = ig_petty_bourgeoisie
+		dna = dna_william_fox
+		birth_date = 1812.1.20
+		traits = { innovative bigoted wrathful direct }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:NZL
+				this = c:NZL
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1855.1.1
+			latest_usage_date = 1893.6.23
+			chance = 90
+		}
+	}
+	nzl_savage_character_template = {
+		first_name = Michael_Joseph
+		last_name = Savage
+		historical = yes
+		culture = cu:australian
+		female = no
+		religion = protestant
+		ideology = ideology_social_democrat
+		interest_group = ig_trade_unions
+		dna = dna_michael_joseph_savage
+		birth_date = 1872.3.23
+		traits = { cancer romantic charismatic experienced_political_operator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:NZL
+				this = c:NZL
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1910.1.1
+			latest_usage_date = 1940.3.27
+			chance = 90
+		}
+	}
+	nzl_seddon_character_template = {
+		first_name = Richard
+		last_name = Seddon
+		historical = yes
+		culture = cu:british
+		female = no
+		religion = protestant
+		ideology = ideology_moderate
+		interest_group = ig_rural_folk
+		dna = dna_richard_seddon
+		birth_date = 1845.6.22
+		traits = { charismatic demagogue direct ambitious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:NZL
+				this = c:NZL
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1878.1.1
+			latest_usage_date = 1906.6.10
+			chance = 90
+		}
+	}
+	nzl_ballance_character_template = {
+		first_name = John
+		last_name = Ballance
+		historical = yes
+		culture = cu:irish
+		female = no
+		religion = protestant
+		ideology = ideology_reformer
+		interest_group = ig_rural_folk
+		dna = dna_john_ballance
+		birth_date = 1839.3.27
+		traits = { kidney_stones experienced_political_operator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:NZL
+				this = c:NZL
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_trade_unions
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1875.1.1
+			latest_usage_date = 1893.4.27
+			chance = 90
+		}
+	}
+	# Maori
+	aot_heke_character_template = {
+		first_name = Hone
+		last_name = Heke
+		historical = yes
+		culture = cu:maori
+		female = no
+		religion = animist
+		ideology = ideology_jingoist_leader
+		interest_group = ig_armed_forces
+		dna = dna_hone_heke
+		birth_date = 1807.8.7
+		traits = { experienced_defensive_strategist traditionalist_commander }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:AOT
+						this = c:AOT
+						NOT = {
+							exists = c:NTO
+							exists = c:UNT
+						}
+					}
+					AND = {
+						exists = c:UNT
+						this = c:UNT
+						NOT = { exists = c:NTO }
+					}
+					AND = {
+						exists = c:NTO
+						this = c:NTO
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_landowners
+				}
+			}
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1850.8.7
+			chance = 90
+		}
+	}
+	aot_kawiti_character_template = {
+		first_name = Te_Ruki
+		last_name = Kawiti
+		historical = yes
+		culture = cu:maori
+		female = no
+		religion = animist
+		ideology = ideology_traditionalist
+		interest_group = ig_armed_forces
+		dna = dna_te_ruki_kawiti
+		birth_date = 1775.5.5
+		traits = { basic_defensive_strategist popular_commander }
+		commander_rank = default
+		commander_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:AOT
+						this = c:AOT
+						NOT = {
+							exists = c:NTO
+							exists = c:UNT
+						}
+					}
+					AND = {
+						exists = c:UNT
+						this = c:UNT
+						NOT = { exists = c:NTO }
+					}
+					AND = {
+						exists = c:NTO
+						this = c:NTO
+					}
+				}
+			}
+			role = general
+			earliest_usage_date = 1836.1.1
+			latest_usage_date = 1854.5.5
+			chance = 90
+		}
+	}
+	aot_o_rongomai_character_template = {
+		first_name = Te_Whiti
+		last_name = o_Rongomai
+		historical = yes
+		culture = cu:maori
+		female = no
+		religion = animist
+		ideology = ideology_theocrat
+		interest_group = ig_devout
+		dna = dna_te_whiti_o_rongomai
+		birth_date = 1832.11.18
+		traits = { pious meticulous persistent }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:AOT
+						this = c:AOT
+						NOT = {
+							exists = c:NTO
+							exists = c:UNT
+						}
+					}
+					AND = {
+						exists = c:UNT
+						this = c:UNT
+						NOT = { exists = c:NTO }
+					}
+					AND = {
+						exists = c:NTO
+						this = c:NTO
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			earliest_usage_date = 1867.1.1
+			latest_usage_date = 1907.11.18
+			chance = 90
+		}
+	}
+	# Moriori
+	aot_solomon_character_template = {
+		first_name = Tommy
+		last_name = Solomon
+		historical = yes
+		culture = cu:polynesian
+		female = no
+		religion = animist
+		ideology = ideology_pacifist
+		interest_group = ig_rural_folk
+		dna = dna_tommy_solomon
+		birth_date = 1884.5.7
+		traits = { reserved cautious }
+		interest_group_leader_usage = {
+			country_trigger = {
+				OR = {
+					AND = {
+						exists = c:AOT
+						this = c:AOT
+						NOT = {
+							exists = c:NTO
+							exists = c:UNT
+						}
+					}
+					AND = {
+						exists = c:UNT
+						this = c:UNT
+						NOT = { exists = c:NTO }
+					}
+					AND = {
+						exists = c:NTO
+						this = c:NTO
+					}
+				}
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_rural_folk
+			}
+			earliest_usage_date = 1910.1.1
+			latest_usage_date = 1933.3.19
+			chance = 90
+		}
+	}
+
+# Philippines - PHI
+
+	phi_bonifacio_character_template = {
+		first_name = Andres
+		last_name = Bonifacio
+		historical = yes
+		culture = cu:filipino
+		female = no
+		religion = catholic
+		ideology = ideology_republican_leader
+		interest_group = ig_intelligentsia
+		dna = dna_andres_bonifacio
+		birth_date = 1863.11.30
+		traits = { popular_commander romantic persistent }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:PHI
+				this = c:PHI
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			earliest_usage_date = 1892.1.1
+			latest_usage_date = 1897.5.10
+			chance = 90
+		}
+	}
+	phi_aguinaldo_character_template = {
+		first_name = Emilio
+		last_name = Aguinaldo
+		historical = yes
+		culture = cu:filipino
+		female = no
+		religion = catholic
+		ideology = ideology_reformer
+		interest_group = ig_landowners
+		dna = dna_emilio_aguinaldo
+		birth_date = 1869.3.22
+		traits = { cruel ambitious tactful basic_diplomat forest_commander }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:PHI
+				this = c:PHI
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			earliest_usage_date = 1895.1.1
+			latest_usage_date = 1964.2.6
+			chance = 90
+		}
+	}
+	phi_rizal_character_template = {
+		first_name = Jose
+		last_name = Rizal
+		historical = yes
+		culture = cu:filipino
+		female = no
+		religion = catholic
+		ideology = ideology_reformer
+		interest_group = ig_intelligentsia
+		dna = dna_jose_rizal
+		birth_date = 1861.6.19
+		traits = { romantic tactful inspirational_orator }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:PHI
+				this = c:PHI
+			}
+			interest_group_trigger = {
+				is_interest_group_type = ig_intelligentsia
+			}
+			earliest_usage_date = 1890.1.1
+			latest_usage_date = 1896.12.30
+			chance = 90
+		}
+	}
+
+
+# Polynesia - PLY
+
+	ply_gauguin_character_template = {
+		first_name = Paul
+		last_name = Gauguin
+		historical = yes
+		culture = cu:french
+		female = no
+		religion = catholic
+		ideology = ideology_traditionalist
+		interest_group = ig_intelligentsia
+		dna = dna_paul_gauguin
+		birth_date = 1848.6.7
+		traits = { romantic imperious hedonist }
+		interest_group_leader_usage = {
+			country_trigger = {
+				exists = c:PLY
+				this = c:PLY
+			}
+			interest_group_trigger = {
+				is_marginal = no
+				OR = {
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			earliest_usage_date = 1895.1.1
+			latest_usage_date = 1903.5.8
+			chance = 25
+		}
+	}
+

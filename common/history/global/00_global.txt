@@ -5,7 +5,7 @@ GLOBAL = {
 		limit = { NOT = { has_law = law_type:law_slavery_banned } }
 		ig:ig_landowners = { add_ideology = ideology_pro_slavery }
 	}
-
+	
 	# Jack the ripper, prevents the event from happening every game
 
 	every_country = {
@@ -29,7 +29,7 @@ GLOBAL = {
 	   limit = { has_law = law_type:law_serfdom }
 	   set_variable = serfs_up_ach_possible
 	}
-
+	
 	#The Berlin Conference
 	every_country = {
 		limit = {
@@ -307,21 +307,21 @@ GLOBAL = {
 	
 	s:STATE_DISTRICT_OF_COLUMBIA = {	
 		set_variable = {
-			name = usa_state_flag_block
-			value = yes
-		}
+            name = usa_state_flag_block
+            value = yes
+        }
 
-		set_variable = {
-			name = district_of_columbia
-			value = yes
-		}
+        set_variable = {
+            name = district_of_columbia
+            value = yes
+        }
 	}
 	
 	s:STATE_WEST_VIRGINIA = {	
-		set_variable = {
-			name = usa_state_flag_block
-			value = yes
-		}
+        set_variable = {
+            name = usa_state_flag_block
+            value = yes
+        }
 	}
 
 	c:UCA = {
@@ -336,7 +336,7 @@ GLOBAL = {
 			days = 7
 		}
 	}
-	
+
 	c:PNI = {
 		trigger_event = {
 			id = garibaldi_events.1
@@ -346,31 +346,28 @@ GLOBAL = {
 	
 	c:RUS = {
 		every_scope_state = {
-			limit = {
-				OR = {
-					state_region = s:STATE_KUBAN
-					state_region = s:STATE_TEREK
-					state_region = s:STATE_DERBENT
-					state_region = s:STATE_STAVROPOL
-					state_region = s:STATE_BLACK_SEA_COAST
-				}
-			}
+            limit = {
+                OR = {
+                    state_region = s:STATE_KUBAN
+                    state_region = s:STATE_TEREK 
+                }
+            }
+            add_radicals_in_state = {
+                value = 1.5
+                culture = cu:circassian
+            }
 			add_radicals_in_state = {
-				value = 1.5
-				culture = cu:circassian
-			}
+                value = very_large_radicals
+            }
+            add_radicals_in_state = {
+                value = 0.75
+                culture = cu:chechen
+            }
 			add_radicals_in_state = {
-				value = very_large_radicals
-			}
-			add_radicals_in_state = {
-				value = 0.75
-				culture = cu:chechen
-			}
-			add_radicals_in_state = {
-				value = very_large_radicals
-			}
-		}
-		create_truce = {
+                value = very_large_radicals
+            }
+        }
+        create_truce = {
 			country = c:CIR
 			months = 60
 		}
@@ -386,27 +383,27 @@ GLOBAL = {
 				state_region = s:STATE_SICHUAN
 			}
 			add_radicals_in_state = {
-				value = large_radicals
-				culture = cu:han
-			}
+                value = large_radicals
+                culture = cu:han
+            }
 		}
 		random_scope_state = {
 			limit = {	
 				state_region = s:STATE_YUNNAN
 			}
 			add_radicals_in_state = {
-				value = small_radicals
-				culture = cu:han
-			}
+                value = small_radicals
+                culture = cu:han
+            }
 		}
 		random_scope_state = {
 			limit = {	
 				state_region = s:STATE_CHONGQING
 			}
 			add_radicals_in_state = {
-				value = medium_radicals
-				culture = cu:han
-			}
+                value = medium_radicals
+                culture = cu:han
+            }
 		}
 		add_radicals = {
 			value = medium_radicals

@@ -41,6 +41,7 @@ coa_republic_trigger = {
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_parliamentary_republic
 		has_law = law_type:law_council_republic
+		has_law = law_type:law_corporatocracy
 	}
 }
 
@@ -55,7 +56,10 @@ coa_oligarchy_trigger = {
 }
 
 coa_theocracy_trigger = {
-	has_law = law_type:law_theocracy
+	OR = {
+		has_law = law_type:law_theocracy
+		has_law = law_type:law_ecclesiarchy
+	}
 }
 
 coa_multicultural_trigger = {
@@ -144,6 +148,11 @@ coa_secessionist_or_revolutionary_trigger = {
 coa_def_independent_trigger = {
 	exists = scope:actor
 	scope:actor = { is_subject = no }
+}
+
+coa_def_subject_trigger = {
+	exists = scope:actor
+	scope:actor = { is_subject = yes }
 }
 
 coa_def_lesser_subject_trigger = {
@@ -594,4 +603,10 @@ coa_def_kalmar_flag_trigger = {
 		has_law = law_type:law_monarchy
 		was_formed_from = DEN
 	}
+}
+
+coa_def_polish_ensign_trigger = {
+	exists = c:POL
+	c:POL = { save_temporary_scope_as = custom_overlord }
+	coa_def_ensign_trigger = yes
 }

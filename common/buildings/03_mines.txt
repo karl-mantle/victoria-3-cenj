@@ -122,22 +122,26 @@ building_gold_fields = {
 
 # Added
 
-building_copper_fields = {
-	building_group = bg_copper_fields
-	texture = "gfx/interface/icons/building_icons/copper_fields.dds"
+building_clay_pit = {
+	building_group = bg_clay_pits
+	texture = "gfx/interface/icons/building_icons/clay_pit.dds"
 	city_type = mine
 	levels_per_mesh = 5
-	buildable = no
-	expandable = no
+	required_construction = construction_cost_low
 	terrain_manipulator = mining
-	
+
 	unlocking_technologies = {
-		prospecting
+		enclosure
 	}
 
 	production_method_groups = {
-		pmg_base_building_copper_fields
+		pmg_mining_equipment_building_clay_pit
+		pmg_secondary_building_clay_pit
+		pmg_steam_automation_building_clay_pit
+		pmg_train_automation_building_clay_pit
+		pmg_ownership_capital_building_clay_pit
 	}
+	
 }
 
 building_copper_mine = {
@@ -162,20 +166,24 @@ building_copper_mine = {
 	
 }
 
-building_quarry = {
-	building_group = bg_quarries
-	texture = "gfx/interface/icons/building_icons/les_claypool.dds"
+building_stone_quarry = {
+	building_group = bg_stone_quarries
+	texture = "gfx/interface/icons/building_icons/stone_quarry.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_low
 	terrain_manipulator = mining
 
+	unlocking_technologies = {
+		enclosure
+	}
+
 	production_method_groups = {
-		pmg_mining_equipment_building_quarry
-		pmg_explosives_building_quarry
-		pmg_steam_automation_building_quarry
-		pmg_train_automation_building_quarry
-		pmg_ownership_capital_building_quarry
+		pmg_mining_equipment_building_stone_quarry
+		pmg_stonemasonry_building_stone_quarry
+		pmg_steam_automation_building_stone_quarry
+		pmg_train_automation_building_stone_quarry
+		pmg_ownership_capital_building_stone_quarry
 	}
 	
 }

@@ -1,0 +1,1204 @@
+﻿AAC = { # Aachen
+  	color = { 157 51 167 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_NORTH_RHINE
+}
+ABK = { # Abkhazia
+	color = { 100 200 75 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { circassian }
+	religion = orthodox
+	capital = STATE_KUTAIS
+}
+ACA = { # Achaea
+ 	color = { 255 213 51 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_PELOPONNESE
+}
+ALA = { # Alaska
+ 	color = { 185 215 255 }
+	country_type = colonial
+	tier = principality
+	cultures = { russian }
+	capital = STATE_ALASKA
+}
+ALE = { # Alençon
+ 	color = { 162 116 225 }
+	country_type = recognized
+	tier = principality
+	cultures = { orleanais }
+	capital = STATE_ORLEANS
+}
+ALS = { # Alsace
+ 	color = { 246 223 15 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_ALSACE_LORRAINE
+}
+AMG = { # Armagnac
+ 	color = { 187 206 247 }
+	country_type = recognized
+	tier = principality
+	cultures = { gascon }
+	capital = STATE_GUYENNE
+}
+ANS = { # Ansbach
+ 	color = { 130 77 119 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+AQU = { # Aquileia
+	color = { 34 30 174 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_ISTRIA
+}
+ARR = { # Aragon
+	color = { 166 68 72 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { catalan }
+	capital = STATE_ARAGON
+}
+ATR = { # Asturias
+	color = { 104 173 230 }
+	country_type = recognized
+	tier = principality
+	cultures = { spanish }
+	capital = STATE_ASTURIAS
+}
+ATH = { # Athens
+	color = { 113 112 96 }
+	country_type = recognized
+	tier = city_state
+	cultures = { greek }
+	capital = STATE_ATTICA
+}
+AUG = { # Augsburg
+	color = { 20 188 118 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+AUV = { # Auvergne
+	color = { 218 155 75 }
+	country_type = recognized
+	tier = principality
+	cultures = { auvergnat }
+	capital = STATE_AUVERGNE_LIMOUSIN
+}
+AVI = { # Avignon
+ 	color = { 205 178 107 }
+	country_type = recognized
+	tier = city_state
+	cultures = { occitan }
+	capital = STATE_PROVENCE
+}
+BAA = { # Boina
+	color = { 0 0 255 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { malagasy }
+	capital = STATE_NORTH_MADAGASCAR
+}
+BAR = { # Bar
+	color = { 178 163 143 }
+	country_type = recognized
+	tier = city_state
+	cultures = { comtois }
+	capital = STATE_FRANCHE_COMTE
+}
+BGD = { # Burgundy
+	color = { 148 30 70 }
+	country_type = recognized
+	tier = principality
+	cultures = { burgundian }
+	capital = STATE_BURGUNDY
+}
+BLN = { # Bologna
+	color = { 236 95 0 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+}
+BOU = { # Bourbonnais
+	color = { 0 140 165 }
+	country_type = recognized
+	tier = principality
+	cultures = { burgundian }
+	capital = STATE_BURGUNDY
+}
+BRB = { # Brabant
+	color = { 118 193 153 }
+	country_type = recognized
+	tier = principality
+	cultures = { flemish }
+	capital = STATE_FLANDERS
+}
+BRY = { # Berry
+	color = { 85 65 215 }
+	country_type = recognized
+	tier = principality
+	cultures = { orleanais }
+	capital = STATE_ORLEANS
+}
+BYT = { # Bayreuth
+	color = { 210 210 38 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_FRANCONIA
+}
+CEP = { # Corfu
+	color = { 211 172 185 }
+	country_type = recognized
+	tier = city_state
+	cultures = { greek }
+	capital = STATE_IONIAN_ISLANDS
+}
+CHG = { # Champagne
+	color = { 166 125 154 }
+	country_type = recognized
+	tier = principality
+	cultures = { champenois }
+	capital = STATE_CHAMPAGNE
+}
+CHR = { # Chernigov
+	color = { 190 190 190 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_CHERNIGOV
+}
+CLB = { # Calenberg
+	color = { 239 162 53 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_HESSE
+}
+CLI = { # Cilli
+	color = { 159 174 96 }
+	country_type = recognized
+	tier = city_state
+	cultures = { slovene }
+	capital = STATE_SLOVENIA
+}
+CNN = { # Clanricarde
+	color = { 193 237 85 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_CONNAUGHT
+}
+CNR = { # Canary Islands
+	color = { 255 191 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { spanish }
+	capital = STATE_CANARY_ISLANDS
+}
+COU = { # Courland
+	color = { 234 224 94 }
+	country_type = recognized
+	tier = principality
+	cultures = { baltic_german }
+	capital = STATE_COURLAND
+}
+CRN = { # Cornwall
+	color = { 155 56 0 }
+	country_type = recognized
+	tier = principality
+	cultures = { cornish }
+	capital = STATE_WEST_COUNTRY
+}
+DAL = { # Dalmatia
+	color = { 46 128 188 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_DALMATIA
+}
+DMS = { # Desmond
+	color = { 179 89 89 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_MUNSTER
+}
+DTT = { # Dithmarschen
+	color = { 72 194 212 }
+	country_type = recognized
+	tier = city_state
+	cultures = { frisian }
+	capital = STATE_SCHLESWIG_HOLSTEIN
+}
+DWT = { # Donauwörth
+	color = { 80 201 64 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+EFR = { # East Frisia
+	color = { 190 32 16 }
+	country_type = recognized
+	tier = city_state
+	cultures = { frisian }
+	capital = STATE_HANNOVER
+}
+EPI = { # Epirus
+	color = { 230 228 214 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_EPIRUS
+}
+EPR = { # East Prussia
+	#color = { 110 120 140 }
+	color = { 102 105 104 }
+	country_type = recognized
+	tier = principality
+	cultures = { baltic_german }
+	capital = STATE_EAST_PRUSSIA
+}
+ETR = { # Etruria
+	color = { 114 154 143 } 
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_TUSCANY
+}
+FEA = { # Ferrara
+	color = { 21 128 21 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+}
+FEO = { # Theodoro
+	color = { 61 8 81 } 
+	country_type = recognized
+	tier = city_state
+	cultures = { pontic_greek }
+	capital = STATE_CRIMEA
+}
+FKN = { # Franconia
+	color = { 89 128 68 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_FRANCONIA
+}
+FLO = { # Florida
+	color = { 255 128 0 }
+	tier = principality
+	country_type = colonial
+	cultures = { dixie }
+	capital = STATE_FLORIDA
+}
+FOI = { # Foix
+	color = { 105 106 182 }
+	country_type = recognized
+	tier = principality
+	cultures = { gascon }
+	capital = STATE_AQUITAINE
+}
+GAE = { # Gaeldom
+	color = { 37 113 207 }
+	country_type = recognized
+	tier = principality
+	cultures = { gaelic }
+	capital = STATE_STRATHCLYDE
+}
+GAS = { # Gascony
+	color = { 32 144 204 }
+	country_type = recognized
+	tier = principality
+	cultures = { gascon }
+	capital = STATE_AQUITAINE
+}
+GEL = { # Guelders
+	color = { 139 66 97 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch }
+	capital = STATE_GELRE
+}
+GEN = { # Genoa
+	color = { 218 215 56 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_LIGURIA
+}
+GIB = { # Gibraltar
+	color = { 218 0 12 }
+	country_type = recognized
+	tier = city_state
+	cultures = { british spanish }
+	capital = STATE_GRANADA
+}
+GNV = { # Geneva
+	color = { 255 250 138 }
+	country_type = recognized
+	tier = city_state
+	cultures = { francoprovencal }
+	capital = STATE_WEST_SWITZERLAND
+}
+GOT = { # Gotland
+	color = { 153 126 0 }
+	country_type = recognized
+	tier = city_state
+	cultures = { swedish }
+	capital = STATE_GOTLAND
+}
+GUY = { # Guyana
+	color = { 250 120 20 }
+	country_type = colonial
+	tier = principality
+	cultures = { afro_caribbean afro_antillean }
+	capital = STATE_GUAYANA
+}
+HEB = { # Hebrides
+	color = { 0 105 104 }
+	country_type = recognized
+	tier = principality
+	cultures = { gaelic }
+	capital = STATE_HIGHLANDS
+}
+HLL = { # Holland
+	color = { 156 96 100 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch }
+	capital = STATE_HOLLAND
+}
+HRZ = { # Herzegovina
+	color = { 72 113 160 }
+	country_type = recognized
+	tier = principality
+	cultures = { bosniak }
+	capital = STATE_BOSNIA
+}
+ING = { # Ingolstadt
+	color = { 67 163 215 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+IOM = { # Isle of Man
+	color = { 133 43 27 }
+	country_type = recognized
+	tier = city_state
+	cultures = { gaelic }
+	capital = STATE_LANCASHIRE
+}
+KID = { # Kildare
+	color = { 104 130 172 }
+	country_type = recognized
+	tier = city_state
+	cultures = { irish }
+	capital = STATE_LEINSTER
+}
+KIE = { # Kiev
+	color = { 81 123 210 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_KIEV
+}
+KLE = { # Cleves
+	color = { 173 176 113 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_NORTH_RHINE
+}
+KNZ = { # Konstanz
+	color = { 255 133 59 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BADEN
+}
+KOL = { # Cologne
+	color = { 84 124 48 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_NORTH_RHINE
+}
+KRL = { # Karelia
+	color = { 244 38 38 }
+	country_type = recognized
+	tier = principality
+	cultures = { karelian }
+	capital = STATE_EAST_KARELIA
+}
+LAU = { # Saxe-Lauenburg
+	color = { 79 139 99 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_SCHLESWIG_HOLSTEIN
+}
+LBV = { # Landshut
+	color = { 35 220 240 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+LEI = { # Leinster
+	color = { 48 164 51 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_LEINSTER
+}
+LIE = { # Liège
+	color = { 149 186 37 }
+	country_type = recognized
+	tier = principality
+	cultures = { wallonian }
+	capital = STATE_WALLONIA
+}
+LIV = { # Livonia
+	color = { 20 14 150 }
+	#color = { 125 30 100 }
+	country_type = recognized
+	tier = principality
+	cultures = { livonian baltic_german } # change to Latvian?
+	capital = STATE_LIVONIA
+}
+LUN = { # Lüneburg
+	color = { 135 109 147 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_ELBE
+}
+MAG = { # Magdeburg
+	color = { 189 115 99 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_ANHALT
+}
+MAI = { # Mainz
+	color = { 178 145 87 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_HESSE
+}
+MAT = { # Mantua
+	color = { 191 83 101 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+MAZ = { # Mazovia
+	color = { 195 149 155 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_MAZOVIA
+}
+MBZ = { # Montfort-Bregenz
+	color = { 101 189 23 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_TYROL
+}
+MCD = { # Macedonia
+	color = { 230 0 38 }
+	tier = principality
+	country_type = recognized
+	cultures = { greek }
+	capital = STATE_MACEDONIA
+}
+MCM = { # Munster
+	color = { 104 137 140 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_MUNSTER
+}
+MEM = { # Memmingen
+	color = { 210 37 57 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+MFA = { # Montferrat
+	color = { 96 183 6 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+MIN = { # Mingrelia
+	color = { 120 220 95  }
+	country_type = unrecognized
+	tier = principality
+	cultures = { georgian }
+	capital = STATE_KUTAIS
+}
+MLD = { # Maldives
+	color = { 180 0 20 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { sinhala }
+	capital = STATE_CEYLON
+}
+MLO = { # Milan
+	color = { 166 108 146 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+MNT = { # Thomond
+	color = { 242 249 255 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_MUNSTER
+}
+MOE = { # Morea
+	color = { 168 121 129 }
+	country_type = recognized
+	tier = principality
+	cultures = { greek }
+	capital = STATE_PELOPONNESE
+}
+MOV = { # Moravia
+	color = { 232 149 18 }
+	country_type = recognized
+	tier = principality
+	cultures = { czech }
+	capital = STATE_MORAVIA
+}
+MSV = { # Muscovy
+	color = { 206 181 97 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_MOSCOW
+}
+MTE = { # Southern Matabele
+	color = { 172 110 85 }
+	country_type = decentralized
+	tier = principality
+	cultures = { nguni shona }
+	capital = STATE_ZAMBEZI
+}
+MUN = { # Münster
+	color = { 205 103 80 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+}
+NAP = { # Naples
+	color = { 100 50 150 }
+	country_type = recognized
+	tier = principality
+	cultures = { neapolitan }
+	capital = STATE_CAMPANIA
+}
+NAX = { # Naxos
+	color = { 24 50 123 }
+	country_type = recognized
+	tier = city_state
+	cultures = { greek }
+	capital = STATE_CYCLADES
+}
+NEV = { # Nevers
+	color = { 195 104 228 }
+	country_type = recognized
+	tier = principality
+	cultures = { burgundian }
+	capital = STATE_BURGUNDY
+}
+NOL = { # Northumberland
+	color = { 83 149 105 }
+	country_type = recognized
+	tier = principality
+	cultures = { british }
+	capital = STATE_NORTHUMBRIA
+}
+NOV = { # Novgorod
+	color = { 97 126 37 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_NOVGOROD
+}
+NRM = { # Normandy
+	color = { 131 138 116 }
+	country_type = recognized
+	tier = principality
+	cultures = { norman }
+	capital = STATE_NORMANDY
+}
+NUM = { # Nuremberg
+	color = { 243 112 15 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_FRANCONIA
+}
+NZH = { # Nizhny Novgorod
+	color = { 176 72 77 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_KAZAN
+}
+ONI = { # Onilahy
+	color = { 166 255 77 }
+	country_type = decentralized
+	tier = principality
+	cultures = { malagasy }
+	capital = STATE_SOUTH_MADAGASCAR
+}
+ORL = { # Orleans
+	color = { 216 121 139 }
+	country_type = recognized
+	tier = principality
+	cultures = { orleanais }
+	capital = STATE_ORLEANS
+}
+PAD = { # Paderborn
+	color = { 214 90 79 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+}
+PDV = { # Padua
+	color = { 186 106 58 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+PIC = { # Picardy
+	color = { 184 184 122 }
+	country_type = recognized
+	tier = principality
+	cultures = { picard }
+	capital = STATE_PICARDY
+}
+PIS = { # Pisa
+	color = { 177 150 109 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_TUSCANY
+}
+PLB = { # Polabia
+	color = { 0 140 195 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polish sorb }
+	capital = STATE_SAXONY
+}
+PLL = { # The Palatinate
+	color = { 57 151 142 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_german }
+	capital = STATE_RHINELAND
+}
+PLS = { # Polotsk
+	color = { 16 113 155 }
+	country_type = recognized
+	tier = principality
+	cultures = { byelorussian }
+	capital = STATE_VITEBSK
+}
+PML = { # Pomerelia
+	color = { 250 250 95 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_WEST_PRUSSIA
+}
+POZ = { # Poznań
+	color = { 150 90 110 }
+	country_type = recognized
+	tier = principality
+	cultures = { polish }
+	capital = STATE_POSEN
+}
+PRO = { # Provence
+	color = { 93 160 163 }
+	country_type = recognized
+	tier = principality
+	cultures = { provencal }
+	capital = STATE_PROVENCE
+}
+PSK = { # Pskov
+	color = { 82 123 95 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_INGRIA
+}
+PTF = { # Potchefstroom
+	color = { 255 204 153 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+}
+RAG = { # Ragusa
+	color = { 160 82 128 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_DALMATIA
+}
+REG = { # Regensburg
+	color = { 221 41 111 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+RIG = { # Riga
+	color = { 183 176 194 }
+	country_type = recognized
+	tier = city_state
+	cultures = { baltic_german }
+	capital = STATE_LIVONIA
+}
+ROT = { # Rothenburg
+	color = { 210 15 15 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_FRANCONIA
+}
+RSO = { # Rostov
+	color = { 227 221 77 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_ROSTOV
+}
+RVA = { # Dortmund
+	color = { 187 96 193 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+}
+RYA = { # Ryazan
+	color = { 146 134 77 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_MOSCOW
+}
+RYU = { # Ryukyu Islands
+	color = { 90 138 133 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { japanese }
+	capital = STATE_RYUKYU_ISLANDS
+	is_named_from_capital = yes
+}
+RZW = { # Rozwi Empire
+	color = { 153 25 0 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { shona nguni }
+	capital = STATE_ZAMBEZI
+}
+SAA = { # Saarland
+	color = { 0 0 150 }
+	tier = principality
+	country_type = recognized
+	cultures = { south_german }
+	capital = STATE_RHINELAND
+}
+SAD = { # Sardinia
+	color = { 117 146 167 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_italian }
+	capital = STATE_SARDINIA
+}
+SEM = { # Seminole
+	color = { 108 139 208 }
+	country_type = decentralized
+	tier = principality
+	cultures = { muskogean }
+	capital = STATE_FLORIDA
+}
+SKL = { # Sicily
+	color = { 73 152 76 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_italian }
+	capital = STATE_SICILY
+}
+SLA = { # Silesia
+	color = { 84 166 93 }
+	country_type = recognized
+	tier = principality
+	cultures = { silesian }
+	capital = STATE_SILESIA
+}
+SLN = { # Sligo
+	color = { 191 155 203 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_CONNAUGHT
+}
+SLZ = { # Salzburg
+	color = { 129 109 9 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_TYROL
+}
+SMO = { # Smolensk
+	color = { 106 160 43 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_SMOLENSK
+}
+SPL = { # Spoleto
+	color = { 169 26 5 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_italian }
+	capital = STATE_UMBRIA
+}
+STE = { # Stettin
+	color = { 33 119 58 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_POMERANIA
+}
+STY = { # Styria
+	color = { 59 126 59 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_STYRIA
+}
+SVA = { # Svaneti
+	color = { 140 240 115  }
+	country_type = unrecognized
+	tier = principality
+	cultures = { georgian }
+	capital = STATE_KUTAIS
+}
+SWA = { # Swabia
+	color = { 225 98 87 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_WURTTEMBERG
+}
+SWZ = { # Swaziland
+	color = { 255 191 0 }
+	country_type = decentralized
+	tier = kingdom
+	cultures = { nguni }
+	capital = STATE_SWAZILAND
+}
+SZO = { # Saluzzo
+	color = { 137 185 203 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+TBZ = { # Trebizond
+	color = { 40 164 157 } 
+	country_type = recognized
+	tier = principality
+	cultures = { pontic_greek }
+	capital = STATE_TRABZON
+	is_named_from_capital = yes
+}
+THR = { # Thrace
+	color = { 0 128 255 }
+	tier = principality
+	country_type = recognized
+	cultures = { greek }
+	capital = STATE_EASTERN_THRACE
+}
+THU = { # Thuringia
+	color = { 66 126 157}
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_SAXONY
+}
+TIL = { # Tirol
+	color = { 170 43 21 }
+	country_type = recognized
+	tier = principality
+	cultures = { south_german }
+	capital = STATE_TYROL
+}
+TNT = { # Trent
+	color = { 148 122 151 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_SOUTH_TYROL
+}
+TOU = { # Toulouse
+	color = { 127 170 146 }
+	country_type = recognized
+	tier = principality
+	cultures = { occitan }
+	capital = STATE_GUYENNE
+}
+TRR = { # Trier
+	color = { 208 104 44 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_RHINELAND
+}
+TRY = { # Tyrconnell
+	color = { 43 190 227 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_ULSTER
+}
+TTL = { # Three Leagues
+	color = { 153 240 182 }
+	country_type = recognized
+	tier = principality
+	cultures = { alemannic }
+	capital = STATE_EAST_SWITZERLAND
+}
+TVE = { # Tver
+	color = { 136 158 183 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_TVER
+}
+TYR = { # Tyrone
+	color = { 131 101 85 }
+	country_type = recognized
+	tier = principality
+	cultures = { irish }
+	capital = STATE_ULSTER
+}
+UBV = { # Munich
+	color = { 19 102 152 }
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+}
+ULM = { # Ulm
+	color = { 202 202 202}
+	country_type = recognized
+	tier = city_state
+	cultures = { south_german }
+	capital = STATE_WURTTEMBERG
+}
+UTR = { # Utrecht
+	color = { 223 198 64 }
+	country_type = recognized
+	tier = city_state
+	cultures = { dutch }
+	capital = STATE_HOLLAND
+}
+URB = { # Urbino
+	color = { 61 152 180 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_UMBRIA
+}
+VAL = { # Valencia
+	color = { 132 97 138 }
+	country_type = recognized
+	tier = city_state
+	cultures = { catalan }
+	capital = STATE_VALENCIA
+}
+VER = { # Verden
+	color = { 227 211 34 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_german }
+	capital = STATE_ELBE
+}
+VRD = { # Vardaria
+	color = { 230 191 0 }
+	tier = principality
+	country_type = recognized
+	cultures = { bulgarian }
+	capital = STATE_SKOPIA
+}
+VRM = { # Vermont
+	color = { 50 120 10 }
+	country_type = colonial
+	tier = principality
+	cultures = { yankee }
+	capital = STATE_VERMONT
+}
+VRN = { # Verona
+	color = { 121 163 114 }
+	country_type = recognized
+	tier = city_state
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+WNH = { # Windhoek
+	color = { 66 78 69 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { griqua }
+	capital = STATE_HEREROLAND
+}
+YAR = { # Yaroslavl
+	color = { 131 141 142 }
+	country_type = recognized
+	tier = principality
+	cultures = { russian }
+	capital = STATE_YAROSLAVL
+}
+ZAZ = { # Zaporizhia
+	color = { 146 146 146 }
+	country_type = recognized
+	tier = principality
+	cultures = { ukrainian }
+	capital = STATE_CHERSON
+}
+ZFY = { # Zafimanely
+	color = { 255 179 25 }
+	country_type = decentralized
+	tier = principality
+	cultures = { malagasy }
+	capital = STATE_SOUTH_MADAGASCAR
+}
+
+
+## -- scratchpad
+
+SGP = { # Singapore
+	color = { 237 41 57 }
+	country_type = recognized
+	tier = city_state
+	cultures = { malay }
+	capital = STATE_MALAYA
+}
+HKG = { # Hong Kong Placeholder
+	color = { 222 41 16 }
+	country_type = recognized
+	tier = city_state
+	cultures = { yue }
+	capital = STATE_SHAOZHOU
+}
+MCC = { # Macao
+	color = { 7 118 98 }
+	country_type = recognized
+	tier = city_state
+	cultures = { yue }
+	capital = STATE_GUANGDONG
+}
+
+KEN = { # Kenya
+	color = { 50 50 50 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { nilotic lacustrine_bantu }
+	capital = STATE_KENYA
+}
+NIG = { # Nigeria
+	color = { 0 102 51 }
+	tier = kingdom
+	country_type = unrecognized
+	cultures = { hausa yoruba ibo }
+	capital = STATE_EAST_HAUSALAND
+}
+NMB = { # Namibia
+	color = { 255 234 128 }
+	tier = principality
+	country_type = unrecognized
+	cultures = { herero khoisan }
+	capital = STATE_HEREROLAND
+}
+
+# Pirates
+
+NSS = { # New Providence
+	color = { 66 51 70 }
+	country_type = colonial
+	tier = principality
+	cultures = { british }
+	capital = STATE_BAHAMAS
+}
+PRY = { # Port Royal
+	color = { 151 47 32 }
+	country_type = colonial
+	tier = principality
+	cultures = { british }
+	capital = STATE_JAMAICA
+}
+TOR = { # Tortuga
+	color = { 67 81 55 }
+	country_type = colonial
+	tier = principality
+	cultures = { french british }
+	capital = STATE_HAITI
+}
+
+# Boers
+
+LYD = { # Lydenburg
+	color = { 255 255 153 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+}
+
+# Rhodes
+
+KNI = { # Knights of Rhodes
+	color = { 106 127 183 }
+	country_type = recognized
+	tier = city_state
+	cultures = { maltese greek }
+	capital = STATE_AEGEAN_ISLANDS
+}
+
+# Dauphine
